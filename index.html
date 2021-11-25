@@ -256,6 +256,7 @@
                     <li class="list-group-item">.NET 5</li>
                     <li class="list-group-item">Qt</li>
                     <li class="list-group-item">Jersey (Java)</li>
+                    <li class="list-group-item">Kafka (Java)</li>
                     <li class="list-group-item">Bootstrap</li>
                     <li class="list-group-item">Django</li>
                     <li class="list-group-item">AngularJS</li>
@@ -366,7 +367,8 @@
               <h5>July 2020 - Dec 2020</h5>
               <p><em>Agiliad Technologies Pvt Ltd, Pune, IN </em></p>
               <ul>
-                <li><a href="https://www.youtube.com/watch?v=g3SLMfGCP60" target="_blank">ConneCT 3D Bag Scanner</a></li>
+                <li><a href="https://www.youtube.com/watch?v=g3SLMfGCP60" target="_blank">ConneCT 3D Bag Scanner</a>
+                </li>
                 <ul>
                   <li>Worked on fixing bugs in Java Web Services, JSP, Servlets and JavaScript</li>
                   <li>Fixed bugs in C++/Python QML frontend, QML localization issues.</li>
@@ -384,6 +386,33 @@
                   <li>These systems were part of Anvil Game Engine, which is known for its massive open world games.
                     Also
                     contributed to Combat AI modules which involved positioning and AI fighting systems.</li>
+                  <li> Some notable systems that I built </li>
+                  <ol>
+                    <li> <b>A Fight States History System</b>
+                      This system recorded all the combat moves a character/player has performed. This would then in
+                      turn was used for achievements system where it would trigger few achievements once certain move
+                      sequence was performed by player.
+                    </li>
+
+                    <li>
+                      <b> Restriction Zones for NPC AI</b>
+                      This feature was used so that the NPCs would patrol their associated restricted zones and if an
+                      enemy enters it, they would start fighting them. Also, once an enemy has left such zones, they
+                      would wait for the enemies to return for a specified timer, and would return to patrolling once
+                      the timer expired. This system also involved interaction with non-combat AI systems,
+                    </li>
+
+                    <li>
+                      <b>Fight Achievements Tracking</b>
+                      The main purpose of the system was to track all the combat specific events which would then used
+                      as a a means of statistics. This would give insight into what kinds of moves the player likes
+                      perform, at what location, and so on.
+                    </li>
+
+                    Apart from these tasks, I also worked on debugging issues in existing Combat AI / AI systems
+                    wherever required.
+                  </ol>
+
                 </ul>
               </ul>
 
@@ -391,10 +420,25 @@
                 <li><a href="https://www.youtube.com/watch?v=RCza4n4h4yU" target="_blank">Starlink PC: Battle for
                     Atlas</a></li>
                 <ul>
-                  <li>Mentored & Lead a small team of Junior programmers on developing UI & Input systems. Worked on
-                    various domains which include- Gameplay, UI & Engine programming. </li>
-                  <li>Worked on multiple Gaming consoles which include Microsoft Xbox One, Sony PlayStation 4, PC and
-                    Nintendo Switch.</li>
+                  <li>The main tasks for the project were to port it on PC platform. The game runs on Snowdrop engine.
+                    The collaboration was with Ubisoft Toronto as a lead studio.</li>
+                  <li>I implemented following features</li>
+                  <ol>
+                    <li> Developed a system to have keyboard and mouse inputs working for Windows platforms.</li>
+                    <li> Ported UI screens so that they could work with Keyboard/Mouse Inputs. This required deliberate
+                      efforts so that these newly added input methods wouldn't interfere with Controller based inputs.
+                    </li>
+                    <li> Scaling UI screens/menus to fit different screen resolutions.</li>
+                    <li> Dynamic UI button prompt system where the button prompts would update based on the last used
+                      input device.</li>
+                    </li>
+                  </ol>
+                  <li>My other duties included</li>
+                  <ol>
+                    <li> Leading newly hired junior programmers and training them.</li>
+                    <li> Debugging and Optimizing the gameplay systems. </li>
+                    <li> Reviewing and Collaborating with lead programmers at Ubisoft Pune and Ubisoft Toronto.</li>
+                  </ol>
                 </ul>
               </ul>
             </div>
@@ -413,6 +457,28 @@
                     design changes which were accepted by designers at Ubisoft Montreal during Far Cry 5 Development
                   </li>
                 </ul>
+
+                <li>I developed following features on the project.</li>
+
+                <ol>
+                  <li> <b>Arcade Player Progression UI</b>
+                    This screen appeared when a player finished a multiplayer match in Arcade. It showed the experience
+                    points gained by the player during the session, the current level and the next achieved level of the
+                    player, rewards earned on levelling up and current player badge.
+                  </li>
+
+                  <li><b>Level/Map Scripting Tool Port to Consoles</b> 
+                    The scripting tool lets map creators provide features to create custom missions in arcade along
+                    with map editing. This feature was initially developed for PC Map Editor Tool, then eventually
+                    planned for consoles as well. Following were the tasks for it.</li>
+                  <ul>
+                    <li> Adding UI menus for the tool. </li>
+                    <li> Adding Inputs for controllers. </li>
+                    <li> Integrating with the existing gameplay system of the tool which was available for PC Map editor
+                      tool.</li>
+                    <li> Debugging and polishing the implemented system.</li>
+                  </ul>
+                </ol>
               </ul>
             </div>
 
