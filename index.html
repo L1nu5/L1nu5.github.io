@@ -370,8 +370,10 @@
                 </li>
                 <h5>May 2022 - Present</h5>
                 <ul>
-                  <li>Rolled out a few major visualization beta features into production</li>
+                  <li>Rolled out a few major visualization beta features into production to improve chart loading performance</li>
+                  <li>Re-engineered the error boundary system in React.js to specify the details of a chart loading error</li>
                   <li>Worked on maintenance of existing features in backend</li>
+                  <li>Added unit tests and snapshot tests in Cypress and Jest for chart visualization features</li>
                   <li>Technologies used: Python, Javascript, React, Go, PostgreSQL</li>
                 </ul>
               </ul>
@@ -425,6 +427,13 @@
                       The main purpose of the system was to track all the combat specific events which would then used
                       as a a means of statistics. This would give insight into what kinds of moves the player likes
                       perform, at what location, and so on.
+                    </li>
+
+                    <li>
+                      <b>AI fight targeting algorithm</b>
+                      Built a Round robin algorithm to equally distribute enemies among different targets. e.g. if there are 2 targets and 10 enemies
+                      then each target would be assigned 5 enemies. This also takes into the account newly added or removed enemies and rebalances
+                      if needed.
                     </li>
 
                     Apart from these tasks, I also worked on debugging issues in existing Combat AI / AI systems
