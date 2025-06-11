@@ -1304,3 +1304,50 @@ section {
 #music-timeline .container {
     box-sizing: border-box;
 }
+
+/* Styling for carousels within timeline events */
+.timeline-event .carousel {
+  margin-bottom: 15px; /* Add some space below the carousel before the event title/date */
+  max-width: 100%; /* Ensure carousel doesn't overflow its container */
+  border-radius: 4px; /* Optional: if images have rounded corners, match it */
+  overflow: hidden; /* Ensures content like rounded corners on items are respected */
+}
+
+.timeline-event .carousel-inner img {
+  /* Assuming images might have different aspect ratios,
+     you might want to control their height and object-fit.
+     For now, d-block w-100 handles width. Height will be auto.
+     If a fixed height is desired, uncomment and adjust:
+  */
+  /*
+  max-height: 400px;
+  object-fit: cover;
+  */
+}
+
+/* Adjustments for timeline content when a carousel is present */
+.timeline-event .timeline-content h3 {
+  margin-top: 0; /* Reset margin if carousel is directly above */
+}
+
+/* Ensure section title styling is consistent (already added, but good to keep in mind) */
+#music-timeline .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37423b; /* Example color, match with existing site */
+}
+
+#music-timeline .section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd; /* Example color, match with existing site */
+  bottom: 0;
+  left: 0; /* Align with the text or center as per design */
+}
