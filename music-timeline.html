@@ -206,6 +206,12 @@
               timelineEventDiv.appendChild(carouselDiv); // Add carousel to the event div
             }
 
+            // Create and append the date marker
+            const dateMarkerDiv = document.createElement('div');
+            dateMarkerDiv.className = 'timeline-date-marker';
+            dateMarkerDiv.textContent = event.dateMMYYYY;
+            timelineEventDiv.appendChild(dateMarkerDiv); // Appended to eventDiv, not contentDiv
+
             const timelineContentDiv = document.createElement('div');
             timelineContentDiv.classList.add('timeline-content');
 
@@ -213,9 +219,9 @@
             eventNameH3.textContent = event.eventName;
             timelineContentDiv.appendChild(eventNameH3);
 
-            const eventDateP = document.createElement('p');
-            eventDateP.textContent = event.dateMMYYYY;
-            timelineContentDiv.appendChild(eventDateP);
+            // const eventDateP = document.createElement('p'); // Old date paragraph removed
+            // eventDateP.textContent = event.dateMMYYYY;
+            // timelineContentDiv.appendChild(eventDateP);
 
             timelineEventDiv.appendChild(timelineContentDiv);
             timelineContainer.appendChild(timelineEventDiv);

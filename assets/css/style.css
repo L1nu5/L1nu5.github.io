@@ -1211,6 +1211,7 @@ section {
   width: 4px;
   background: #e9ecef; /* A light grey color, adjust as needed */
   margin-left: -2px;
+  z-index: 0; /* Ensure it's behind markers */
 }
 
 /* Updated .timeline-event styling */
@@ -1326,3 +1327,19 @@ section {
   left: 0;
 }
 */
+
+/* Styling for the Date Marker on the Timeline Axis */
+.timeline-date-marker {
+  position: absolute;
+  top: 20px; /* Align with the top padding of .timeline-event or the arrow */
+  left: -30px; /* Places the marker's left edge on the central timeline axis */
+  transform: translateX(-50%); /* Centers the marker on its new left position */
+  background-color: #0563bb; /* Match site's primary color */
+  color: #fff; /* White text */
+  padding: 5px 10px; /* Small padding */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 12px; /* Small font size for the date */
+  font-weight: bold;
+  white-space: nowrap; /* Prevent date from wrapping */
+  z-index: 1; /* Ensure it's above the timeline axis line */
+}
