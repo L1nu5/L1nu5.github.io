@@ -138,6 +138,8 @@
           events.forEach((event, index) => { // Added index for unique carousel IDs
             const timelineEventDiv = document.createElement('div');
             timelineEventDiv.classList.add('timeline-event');
+            timelineEventDiv.setAttribute('data-aos', 'fade-up');
+            timelineEventDiv.setAttribute('data-aos-delay', '100');
 
             if (event.imageUrls && event.imageUrls.length > 0) {
               const carouselId = `carousel-${index}`;

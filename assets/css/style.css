@@ -1213,21 +1213,19 @@ section {
   margin-left: -2px;
 }
 
-/* Individual timeline event */
+/* Updated .timeline-event styling */
 .timeline-event {
   position: relative;
-  margin-bottom: 40px;
-  padding: 20px;
-  background: #fff; /* White background for event boxes */
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Adjust event positioning for left/right alternating layout (optional) */
-/* This example places all events to one side for simplicity first */
-.timeline-event {
-  width: calc(50% - 40px); /* Adjust width considering padding/margins */
-  margin-left: calc(50% + 20px); /* Position to the right of the timeline axis */
+  margin-bottom: 40px; /* Keep existing margin */
+  padding: 20px; /* Keep existing padding */
+  background: #fff; /* Keep white background, common for content areas */
+  border-radius: 8px; /* Keep border-radius */
+  /* Change box-shadow to be more subtle, closer to other content block elevations */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* Add a very subtle border to define the edge, similar to some content areas */
+  border: 1px solid #eef0f2; /* A light border, adjust color as needed */
+  width: calc(50% - 40px); /* Keep existing layout */
+  margin-left: calc(50% + 20px); /* Keep existing layout */
 }
 
 /* Clearfix for floated elements if any, or use flexbox/grid for layout */
@@ -1237,80 +1235,28 @@ section {
   clear: both;
 }
 
-/* Style for images within timeline events */
-.timeline-event img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 15px;
-}
-
-/* Style for event titles */
-.timeline-event h3 {
-  font-size: 1.5rem;
-  color: #333; /* Dark grey for titles */
-  margin-bottom: 10px;
-}
-
-/* Style for event descriptions */
-.timeline-event p {
-  font-size: 1rem;
-  color: #666; /* Medium grey for text */
-  line-height: 1.6;
-}
-
-/* Add a small arrow/pointer towards the timeline axis (optional) */
+/* Ensure the arrow still looks good with the new border/shadow */
 .timeline-event::before {
   content: '';
   position: absolute;
   top: 20px; /* Adjust vertical position */
   left: -10px; /* Position to point towards the left (timeline axis) */
-  border-width: 10px;
+  width: 0;
+  height: 0;
   border-style: solid;
-  border-color: transparent #fff transparent transparent; /* Arrow pointing left */
+  border-width: 10px;
+  /* Arrow color should match the background of the event box */
+  border-color: transparent #fff transparent transparent;
+  /* Add a border to the arrow itself if the event box has a visible border */
+  /* This is tricky with pure CSS arrows. One approach: */
 }
 
-/* Specific styling for events on the left side if doing alternating layout */
-/* .timeline-event.left { margin-left: 0; margin-right: calc(50% + 20px); } */
-/* .timeline-event.left::before { left: auto; right: -10px; border-color: transparent transparent transparent #fff; } */
-
-/* Ensure the section title styling is consistent */
-#music-timeline .section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #37423b; /* Example color, match with existing site */
-}
-
-#music-timeline .section-title h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #149ddd; /* Example color, match with existing site */
-  bottom: 0;
-  left: 0; /* Align with the text or center as per design */
-}
-
-/* Add a bit of padding to the music-timeline section */
-#music-timeline {
-  padding: 60px 0;
-}
-
-#music-timeline .container {
-    box-sizing: border-box;
-}
-
-/* Styling for carousels within timeline events */
+/* Styling for carousels within timeline events - ensure it's still relevant */
 .timeline-event .carousel {
-  margin-bottom: 15px; /* Add some space below the carousel before the event title/date */
-  max-width: 100%; /* Ensure carousel doesn't overflow its container */
-  border-radius: 4px; /* Optional: if images have rounded corners, match it */
-  overflow: hidden; /* Ensures content like rounded corners on items are respected */
+  margin-bottom: 15px;
+  max-width: 100%;
+  border-radius: 4px; /* Match event's border-radius if desired, or keep smaller */
+  overflow: hidden;
 }
 
 .timeline-event .carousel-inner img {
@@ -1325,12 +1271,40 @@ section {
   */
 }
 
-/* Adjustments for timeline content when a carousel is present */
+/* timeline-content adjustments from previous steps */
 .timeline-event .timeline-content h3 {
   margin-top: 0; /* Reset margin if carousel is directly above */
+  /* Match resume item title styling more closely */
+  font-size: 18px; /* from .resume-item h4 */
+  font-weight: 600; /* from .resume-item h4 */
+  text-transform: uppercase; /* from .resume-item h4 */
+  font-family: "Poppins", sans-serif; /* from .resume-item h4 */
+  color: #0563bb; /* from .resume-item h4 */
+  margin-bottom: 10px; /* from .resume-item h4 */
 }
 
-/* Ensure section title styling is consistent (already added, but good to keep in mind) */
+.timeline-event .timeline-content p { /* This is used for the date */
+  /* Match resume item h5 styling for date/subtitle */
+  font-size: 16px; /* from .resume-item h5 */
+  background: #f7f8f9; /* from .resume-item h5 */
+  padding: 5px 15px; /* from .resume-item h5 */
+  display: inline-block; /* from .resume-item h5 */
+  font-weight: 600; /* from .resume-item h5 */
+  margin-bottom: 10px; /* from .resume-item h5 */
+  color: #45505b; /* Default text color, ensure it's readable on #f7f8f9 */
+  line-height: 1.4; /* Adjust if padding makes it too tall */
+}
+
+/*
+  The following #music-timeline .section-title rules are already present
+  earlier in the "Music Timeline" section.
+  Including them here again would be redundant but harmless.
+  For a cleaner diff, they are commented out from this replacement block
+  if they are indeed exact duplicates of what's already just above
+  the .timeline-event styling block.
+  Assuming they are, the replacement will focus on .timeline-event and its contents.
+*/
+/*
 #music-timeline .section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -1338,7 +1312,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37423b; /* Example color, match with existing site */
+  color: #37423b;
 }
 
 #music-timeline .section-title h2::after {
@@ -1347,7 +1321,8 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd; /* Example color, match with existing site */
+  background: #149ddd;
   bottom: 0;
-  left: 0; /* Align with the text or center as per design */
+  left: 0;
 }
+*/
