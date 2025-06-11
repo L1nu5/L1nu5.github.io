@@ -1190,3 +1190,117 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/*--------------------------------------------------------------
+# Music Timeline
+--------------------------------------------------------------*/
+/* Basic timeline container */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  list-style: none; /* If using ul/li for timeline items */
+}
+
+/* Line down the middle of the timeline (optional, but common) */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #e9ecef; /* A light grey color, adjust as needed */
+  margin-left: -2px;
+}
+
+/* Individual timeline event */
+.timeline-event {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #fff; /* White background for event boxes */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust event positioning for left/right alternating layout (optional) */
+/* This example places all events to one side for simplicity first */
+.timeline-event {
+  width: calc(50% - 40px); /* Adjust width considering padding/margins */
+  margin-left: calc(50% + 20px); /* Position to the right of the timeline axis */
+}
+
+/* Clearfix for floated elements if any, or use flexbox/grid for layout */
+.timeline-event::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style for images within timeline events */
+.timeline-event img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Style for event titles */
+.timeline-event h3 {
+  font-size: 1.5rem;
+  color: #333; /* Dark grey for titles */
+  margin-bottom: 10px;
+}
+
+/* Style for event descriptions */
+.timeline-event p {
+  font-size: 1rem;
+  color: #666; /* Medium grey for text */
+  line-height: 1.6;
+}
+
+/* Add a small arrow/pointer towards the timeline axis (optional) */
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  top: 20px; /* Adjust vertical position */
+  left: -10px; /* Position to point towards the left (timeline axis) */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent; /* Arrow pointing left */
+}
+
+/* Specific styling for events on the left side if doing alternating layout */
+/* .timeline-event.left { margin-left: 0; margin-right: calc(50% + 20px); } */
+/* .timeline-event.left::before { left: auto; right: -10px; border-color: transparent transparent transparent #fff; } */
+
+/* Ensure the section title styling is consistent */
+#music-timeline .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37423b; /* Example color, match with existing site */
+}
+
+#music-timeline .section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd; /* Example color, match with existing site */
+  bottom: 0;
+  left: 0; /* Align with the text or center as per design */
+}
+
+/* Add a bit of padding to the music-timeline section */
+#music-timeline {
+  padding: 60px 0;
+}
+
+#music-timeline .container {
+    box-sizing: border-box;
+}
