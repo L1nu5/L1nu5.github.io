@@ -152,10 +152,10 @@
             const dateB = toComparableString(b.dateMMYYYY);
 
             if (dateA < dateB) {
-              return -1; // a comes first
+              return 1;  // dateA is earlier, so it comes after dateB in descending sort
             }
             if (dateA > dateB) {
-              return 1;  // b comes first
+              return -1; // dateA is later, so it comes before dateB in descending sort
             }
             return 0; // Dates are equal, order doesn't matter
           });
