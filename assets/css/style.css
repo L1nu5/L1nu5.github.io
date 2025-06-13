@@ -508,63 +508,12 @@ section {
   color: #45505b;
 }
 
-/* Original .resume .resume-item, with timeline-specific parts removed/modified */
 .resume .resume-item {
   /* padding: 0 0 20px 20px; -- Handled by .timeline-entry */
-  /* margin-top: -2px; -- Kept, or adjust with .timeline-entry margin */
   margin-top: -2px; /* Keep this for now */
   /* border-left: 2px solid #0563bb; -- Replaced by container ::before */
   /* position: relative; -- Handled by .timeline-entry */
 }
-
-/* Original .resume .resume-item::before (dot) - REMOVED as .timeline-entry::before handles it */
-/* .resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #0563bb;
-} */
-
-/* Content styling that was part of .resume-item, now general or inside .timeline-entry context */
-.timeline-entry h4 { /* Applied to both resume and music H4 */
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #0563bb;
-  margin-bottom: 10px;
-}
-
-.timeline-entry h5 { /* Applied to both resume and music H5 */
-  font-size: 16px;
-  background: #f7f8f9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.timeline-entry ul { /* If <ul> is used in description */
-  padding-left: 20px;
-}
-
-.timeline-entry ul li {
-  padding-bottom: 10px;
-}
-
-.timeline-entry p {
-    margin-bottom: 10px; /* Add some margin to paragraphs within timeline entries */
-}
-.timeline-entry p:last-child {
-    margin-bottom: 0;
-}
-
 
 /* ----- Image Collage Styling ----- */
 .image-collage-container {
@@ -671,16 +620,49 @@ section {
   z-index: 2;
 }
 
-/* Content styling within timeline entries (applies to both resume and music) */
-/* This styles the .music-event-content div for music items */
-/* For resume items, it styles the .resume-item.timeline-entry directly if no inner wrapper */
+/* Content styling within timeline entries */
 .music-event-item .music-event-content,
-.resume-item.timeline-entry { /* Styles resume-item if it's also a timeline-entry */
+.resume-item.timeline-entry {
     background-color: #fff;
     padding: 15px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     margin-left: 5px; /* Small offset from the dot area */
+}
+
+/* Specific styling for h4/h5 inside .timeline-entry to match original .resume-item h4/h5 */
+.timeline-entry h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+
+.timeline-entry h5 {
+  font-size: 16px;
+  background: #f7f8f9; /* Original resume item date background */
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.timeline-entry ul { /* If <ul> is used in description */
+  padding-left: 20px;
+}
+
+.timeline-entry ul li {
+  padding-bottom: 10px;
+}
+
+.timeline-entry p {
+    margin-bottom: 10px;
+}
+.timeline-entry p:last-child {
+    margin-bottom: 0;
 }
 
 /* Responsive adjustments for the shared timeline bar and dots */
@@ -1482,20 +1464,24 @@ section {
 
 /* Styling for the Date Marker on the Timeline Axis */
 .timeline-date-marker {
-  position: absolute;
-  top: 20px; /* Align with the top padding of .timeline-event or the arrow */
-  left: -30px; /* Places the marker's left edge on the central timeline axis */
-  transform: translateX(-50%); /* Centers the marker on its new left position */
-  background-color: #0563bb; /* Match site's primary color */
-  color: #fff; /* White text */
-  padding: 5px 10px; /* Small padding */
-  border-radius: 4px; /* Slightly rounded corners */
-  font-size: 12px; /* Small font size for the date */
+  /* position: absolute;
+  top: 20px;
+  left: -30px;
+  transform: translateX(-50%);
+  background-color: #0563bb;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
   font-weight: bold;
-  white-space: nowrap; /* Prevent date from wrapping */
-  z-index: 1; /* Ensure it's above the timeline axis line */
+  white-space: nowrap;
+  z-index: 1;  */
+  /* This styling is now handled by .music-event-item .timeline-date-marker for music timeline,
+     and by .resume-item h5 for resume items, integrated into the content flow.
+     If a separate, absolutely positioned date marker for the common timeline is desired,
+     it would need a new common class and be positioned relative to .timeline-entry.
+     For now, we assume dates are part of the content flow (h5).
+   */
 }
 
 [end of assets/css/style.css]
-
-[end of assets/js/music-timeline-loader.js]
