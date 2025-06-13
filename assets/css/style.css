@@ -508,45 +508,17 @@ section {
   color: #45505b;
 }
 
+/* Original .resume .resume-item, with timeline-specific parts removed/modified */
 .resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #0563bb;
-  position: relative;
+  /* padding: 0 0 20px 20px; -- Handled by .timeline-entry */
+  /* margin-top: -2px; -- Kept, or adjust with .timeline-entry margin */
+  margin-top: -2px; /* Keep this for now */
+  /* border-left: 2px solid #0563bb; -- Replaced by container ::before */
+  /* position: relative; -- Handled by .timeline-entry */
 }
 
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #0563bb;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #f7f8f9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
+/* Original .resume .resume-item::before (dot) - REMOVED as .timeline-entry::before handles it */
+/* .resume .resume-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -556,7 +528,43 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #0563bb;
+} */
+
+/* Content styling that was part of .resume-item, now general or inside .timeline-entry context */
+.timeline-entry h4 { /* Applied to both resume and music H4 */
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
 }
+
+.timeline-entry h5 { /* Applied to both resume and music H5 */
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.timeline-entry ul { /* If <ul> is used in description */
+  padding-left: 20px;
+}
+
+.timeline-entry ul li {
+  padding-bottom: 10px;
+}
+
+.timeline-entry p {
+    margin-bottom: 10px; /* Add some margin to paragraphs within timeline entries */
+}
+.timeline-entry p:last-child {
+    margin-bottom: 0;
+}
+
 
 /* ----- Image Collage Styling ----- */
 .image-collage-container {
@@ -569,6 +577,7 @@ section {
     padding: 2px;
     box-sizing: border-box;
     background-color: #f9f9f9; /* Slight background for distinction */
+    margin-top: 15px; /* Add space above collage if it follows text */
 }
 
 .collage-image { /* Common style for all collage images */
@@ -583,105 +592,90 @@ section {
     height: 100%;   /* Full height of container */
 }
 
-/* Styling for small images - this will need a wrapper from JS to work as a 2x2 grid */
-/* For now, without a wrapper, they will line up horizontally after the large image */
 .collage-image-small {
-    flex: 0 0 60.5px; /* Approx 25% of width, allows for two small images next to large one if container was wider */
-                      /* Or, if they are meant to be in a separate column that wraps, this needs the wrapper */
-    height: 71px;     /* Approx 50% of height, to allow two rows if wrapped */
-    /* A margin might be useful if they are directly in the flex container */
+    flex: 0 0 60.5px;
+    height: 71px;
     margin-left: 2px;
 }
 
-/* Placeholder for small images wrapper - this will be targeted once JS creates it */
 .small-images-wrapper {
-    flex: 1; /* Takes remaining space after the large image */
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    align-content: flex-start; /* Important for 2x2 grid */
+    align-content: flex-start;
 }
 
-/* If small images are inside the wrapper, their flex-basis would be relative to it */
 .small-images-wrapper .collage-image-small {
-    flex-basis: calc(50% - 2px); /* For 2x2 grid inside wrapper, accounting for margin */
-    height: calc(50% - 2px);    /* For 2x2 grid inside wrapper, accounting for margin */
-    margin: 1px; /* Reset margin from above if they are inside a wrapper */
+    flex-basis: calc(50% - 2px);
+    height: calc(50% - 2px);
+    margin: 1px;
 }
 
-/* --- Fallback & Special Cases (based on current JS output) --- */
-
-/* If only one image (it will have collage-image-large) - make it fill */
 .image-collage-container > .collage-image-large:only-child {
-    flex: 0 0 100%; /* Take full width of container */
+    flex: 0 0 100%;
     height: 100%;
 }
-
-/* If there are multiple small images but no wrapper, they will just line up.
-   The .small-images-wrapper CSS above will only apply once JS is updated.
-   This current CSS will make them appear, but not in the final 2x2 grid yet.
-*/
 
 /* End Image Collage Styling */
 
 /* ----- Timeline View Switcher ----- */
 .timeline-view {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out; /* Transition for fade effect */
-  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+  display: none;
 }
 
 .timeline-view-active {
-  display: block; /* Or 'flex' if its children need it, but 'block' is usually fine for a container */
+  display: block;
   opacity: 1;
 }
 
-/* Ensure the music timeline container within the view takes up space if needed */
-/* This might not be strictly necessary if its content dictates its height */
-/* #music-timeline-container-index {
-  min-height: 100px;
-} */ /* Commented out min-height as it's part of the new block */
-
-/* ----- Simple Music Timeline ----- */
+/* ----- Common Timeline Entry Styling ----- */
+#resume-view,
 #music-timeline-container-index {
     position: relative;
-    padding-left: 30px; /* Space for the timeline bar and dots */
-    padding-top: 20px; /* Add some padding top */
-    padding-bottom: 20px; /* Add some padding bottom */
+    padding-left: 30px; /* Make space for the bar itself and content alignment */
+    padding-top: 20px; /* Consistent top padding */
+    padding-bottom: 20px; /* Consistent bottom padding */
 }
 
-#music-timeline-container-index::before {
+#resume-view::before,
+#music-timeline-container-index::before { /* Continuous bar */
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 10px; /* Position of the bar from the container's left edge */
-    width: 3px;
-    background-color: #0563bb; /* Primary color for the bar */
-    z-index: 1;
+    left: 10px; /* Position of the bar from container's left edge */
+    width: 3px; /* Width of the bar */
+    background-color: #0563bb; /* Using primary color from template */
+    z-index: 1; /* Behind dots */
 }
 
-.music-event-item {
-    position: relative;
-    padding-left: 25px; /* Space for content to be to the right of the dot */
-    margin-bottom: 25px;
+.timeline-entry {
+  position: relative;
+  padding-left: 25px; /* Space for content to be to the right of the dot */
+  margin-bottom: 20px;
 }
 
-.music-event-item::before { /* Dot for each music event item */
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: white;
-    border: 3px solid #0563bb; /* Dot border color */
-    top: 5px; /* Adjust to align with content */
-    left: -26px; /* Calculated to center 15px dot on 3px bar at 10px from container edge */
-    z-index: 2;
+.timeline-entry::before { /* This is the DOT */
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid #0563bb; /* Using primary color from template */
+  top: 5px;  /* Adjust for vertical alignment (e.g., with h4/h5 text) */
+  left: -26px;
+  z-index: 2;
 }
 
-/* Styling for the content block within each music-event-item */
-.music-event-item .music-event-content { /* Targets the div with class 'music-event-content' */
+/* Content styling within timeline entries (applies to both resume and music) */
+/* This styles the .music-event-content div for music items */
+/* For resume items, it styles the .resume-item.timeline-entry directly if no inner wrapper */
+.music-event-item .music-event-content,
+.resume-item.timeline-entry { /* Styles resume-item if it's also a timeline-entry */
     background-color: #fff;
     padding: 15px;
     border-radius: 6px;
@@ -689,50 +683,32 @@ section {
     margin-left: 5px; /* Small offset from the dot area */
 }
 
-/* Adjustments for date marker and title if they are directly in music-event-content */
-.music-event-item .timeline-date-marker {
-    display: block;
-    font-size: 0.9em;
-    color: #6c757d;
-    margin-bottom: 5px;
-    position: static;
-    transform: none;
-    background: none;
-    padding: 0;
-    font-weight: normal;
-    white-space: normal;
-}
-
-.music-event-item .timeline-content h3 {
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #0563bb;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-/* Responsive adjustments for simple timeline */
+/* Responsive adjustments for the shared timeline bar and dots */
 @media (max-width: 767px) {
+  #resume-view,
   #music-timeline-container-index {
     padding-left: 25px;
   }
+  #resume-view::before,
   #music-timeline-container-index::before {
     left: 5px;
   }
-  .music-event-item {
+  .timeline-entry {
     padding-left: 20px;
     margin-bottom: 20px;
   }
-  .music-event-item::before {
+  .timeline-entry::before {
     left: -21px;
     width: 13px;
     height: 13px;
     border-width: 2px;
   }
-  .music-event-item .music-event-content {
+   .music-event-item .music-event-content,
+   .resume-item.timeline-entry {
     margin-left: 3px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1521,3 +1497,5 @@ section {
 }
 
 [end of assets/css/style.css]
+
+[end of assets/js/music-timeline-loader.js]
