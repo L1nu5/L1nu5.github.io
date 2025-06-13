@@ -142,68 +142,50 @@
             timelineEventDiv.setAttribute('data-aos-delay', '100');
 
             if (event.imageUrls && event.imageUrls.length > 0) {
-              const carouselId = `carousel-${index}`;
-              const carouselDiv = document.createElement('div');
-              carouselDiv.id = carouselId;
-              carouselDiv.classList.add('carousel', 'slide');
-              carouselDiv.setAttribute('data-ride', 'carousel'); // Bootstrap 4 attribute
+              // Create a container for the image collage
+              const collageId = `collage-${index}`;
+              const collageContainer = document.createElement('div');
+              collageContainer.id = collageId;
+              collageContainer.classList.add('image-collage-container');
+              timelineEventDiv.appendChild(collageContainer); // Add collage container to the event div
 
-              // Carousel Indicators
-              if (event.imageUrls.length > 1) { // Only add indicators if more than one image
-                const indicatorsOl = document.createElement('ol');
-                indicatorsOl.classList.add('carousel-indicators');
-                event.imageUrls.forEach((_, imageIndex) => {
-                  const indicatorLi = document.createElement('li');
-                  indicatorLi.setAttribute('data-target', `#${carouselId}`);
-                  indicatorLi.setAttribute('data-slide-to', imageIndex.toString());
-                  if (imageIndex === 0) {
-                    indicatorLi.classList.add('active');
-                  }
-                  indicatorsOl.appendChild(indicatorLi);
-                });
-                carouselDiv.appendChild(indicatorsOl);
-              }
+              let imagesToProcess = event.imageUrls.slice(0, 5); // Max 5 images
 
-              // Carousel Inner
-              const carouselInnerDiv = document.createElement('div');
-              carouselInnerDiv.classList.add('carousel-inner');
-              event.imageUrls.forEach((imageUrl, imageIndex) => {
-                const carouselItemDiv = document.createElement('div');
-                carouselItemDiv.classList.add('carousel-item');
-                if (imageIndex === 0) {
-                  carouselItemDiv.classList.add('active');
+              if (imagesToProcess.length === 1) {
+                collageContainer.classList.add('single-image');
+                let img = document.createElement('img');
+                img.src = `assets/music/images/${imagesToProcess[0]}`;
+                img.alt = `${event.eventName} collage image`;
+                img.classList.add('collage-image');
+                collageContainer.appendChild(img);
+              } else if (imagesToProcess.length > 1) {
+                collageContainer.classList.add('standard-layout');
+
+                // Large image
+                let largeImg = document.createElement('img');
+                largeImg.src = `assets/music/images/${imagesToProcess[0]}`;
+                largeImg.alt = `${event.eventName} main image`;
+                largeImg.classList.add('collage-image', 'collage-image-large');
+                collageContainer.appendChild(largeImg);
+
+                // Small images wrapper and images
+                let smallImagesWrapper = document.createElement('div');
+                smallImagesWrapper.classList.add('small-images-wrapper');
+
+                let numSmallImages = imagesToProcess.length - 1;
+                if (numSmallImages > 0) { // Ensure there are small images to create a wrapper for
+                    smallImagesWrapper.classList.add('count-' + numSmallImages);
+
+                    for (let j = 1; j < imagesToProcess.length; j++) {
+                        let smallImg = document.createElement('img');
+                        smallImg.src = `assets/music/images/${imagesToProcess[j]}`;
+                        smallImg.alt = `${event.eventName} thumbnail ${j}`;
+                        smallImg.classList.add('collage-image', 'collage-image-small');
+                        smallImagesWrapper.appendChild(smallImg);
+                    }
+                    collageContainer.appendChild(smallImagesWrapper);
                 }
-
-                const imgElement = document.createElement('img');
-                imgElement.src = `assets/music/images/${imageUrl}`;
-                imgElement.classList.add('d-block', 'w-100');
-                imgElement.alt = `${event.eventName} image ${imageIndex + 1}`;
-
-                carouselItemDiv.appendChild(imgElement);
-                carouselInnerDiv.appendChild(carouselItemDiv);
-              });
-              carouselDiv.appendChild(carouselInnerDiv);
-
-              // Carousel Controls
-              if (event.imageUrls.length > 1) { // Only add controls if more than one image
-                const prevControl = document.createElement('a');
-                prevControl.classList.add('carousel-control-prev');
-                prevControl.href = `#${carouselId}`;
-                prevControl.setAttribute('role', 'button');
-                prevControl.setAttribute('data-slide', 'prev');
-                prevControl.innerHTML = '<span class="carousel-control-prev-icon" aria-hidden="true"></span>'; // Removed sr-only span
-                carouselDiv.appendChild(prevControl);
-
-                const nextControl = document.createElement('a');
-                nextControl.classList.add('carousel-control-next');
-                nextControl.href = `#${carouselId}`;
-                nextControl.setAttribute('role', 'button');
-                nextControl.setAttribute('data-slide', 'next');
-                nextControl.innerHTML = '<span class="carousel-control-next-icon" aria-hidden="true"></span>'; // Removed sr-only span
-                carouselDiv.appendChild(nextControl);
               }
-
-              timelineEventDiv.appendChild(carouselDiv); // Add carousel to the event div
             }
 
             // Create and append the date marker

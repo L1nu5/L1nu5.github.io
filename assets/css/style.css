@@ -558,6 +558,72 @@ section {
   border: 2px solid #0563bb;
 }
 
+/* ----- Image Collage Styling ----- */
+.image-collage-container {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: row; /* Default, but explicit */
+    overflow: hidden;
+    border: 1px solid #f0f0f0; /* Light border for the container */
+    padding: 2px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Slight background for distinction */
+}
+
+.collage-image { /* Common style for all collage images */
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0; /* Light border for individual images */
+}
+
+/* Style for the large image */
+.collage-image-large {
+    flex: 0 0 121px; /* Approx 50% of width (250/2 - some padding), fixed width */
+    height: 100%;   /* Full height of container */
+}
+
+/* Styling for small images - this will need a wrapper from JS to work as a 2x2 grid */
+/* For now, without a wrapper, they will line up horizontally after the large image */
+.collage-image-small {
+    flex: 0 0 60.5px; /* Approx 25% of width, allows for two small images next to large one if container was wider */
+                      /* Or, if they are meant to be in a separate column that wraps, this needs the wrapper */
+    height: 71px;     /* Approx 50% of height, to allow two rows if wrapped */
+    /* A margin might be useful if they are directly in the flex container */
+    margin-left: 2px;
+}
+
+/* Placeholder for small images wrapper - this will be targeted once JS creates it */
+.small-images-wrapper {
+    flex: 1; /* Takes remaining space after the large image */
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-content: flex-start; /* Important for 2x2 grid */
+}
+
+/* If small images are inside the wrapper, their flex-basis would be relative to it */
+.small-images-wrapper .collage-image-small {
+    flex-basis: calc(50% - 2px); /* For 2x2 grid inside wrapper, accounting for margin */
+    height: calc(50% - 2px);    /* For 2x2 grid inside wrapper, accounting for margin */
+    margin: 1px; /* Reset margin from above if they are inside a wrapper */
+}
+
+/* --- Fallback & Special Cases (based on current JS output) --- */
+
+/* If only one image (it will have collage-image-large) - make it fill */
+.image-collage-container > .collage-image-large:only-child {
+    flex: 0 0 100%; /* Take full width of container */
+    height: 100%;
+}
+
+/* If there are multiple small images but no wrapper, they will just line up.
+   The .small-images-wrapper CSS above will only apply once JS is updated.
+   This current CSS will make them appear, but not in the final 2x2 grid yet.
+*/
+
+/* End Image Collage Styling */
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
