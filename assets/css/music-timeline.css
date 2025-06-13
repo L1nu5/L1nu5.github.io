@@ -1,0 +1,137 @@
+/* ----- General Timeline Container Setup ----- */
+#resume-view,
+#music-timeline-container-index {
+    position: relative;
+    padding-left: 30px; /* Space for the bar itself and some content gap */
+    /* Add any other container-level styling if needed, e.g., margin-top */
+}
+
+/* Continuous Vertical Timeline Bar */
+#resume-view::before,
+#music-timeline-container-index::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px; /* Position of the bar from container's left edge */
+    width: 3px; /* Width of the bar */
+    background-color: #007bff; /* Primary color for the bar */
+    z-index: 1; /* Behind dots */
+}
+
+/* ----- Common Timeline Entry Styling ----- */
+.timeline-entry {
+  position: relative;
+  padding-left: 25px; /* Space for content to be to the right of the dot (dot is -26px, so 25px gives space around dot) */
+  margin-bottom: 20px;
+}
+
+/* Dot for each timeline entry */
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white; /* Dot background to sit visually on the bar */
+  border: 3px solid #007bff; /* Dot border color */
+  top: 5px;  /* Adjust for vertical alignment; e.g., align with the first line of text or H4 */
+  /* Calculation for left:
+     Assumes parent container (#resume-view or #music-timeline-container-index) has padding-left: 30px.
+     Assumes bar (sibling ::before of parent) is at left: 10px within that parent.
+     .timeline-entry's own padding-left is 25px.
+     The dot needs to be centered on the bar. Bar's center is at 10px + (3px/2) = 11.5px from parent's true left edge.
+     .timeline-entry's content box starts 30px (parent padding) + 25px (item padding) = 55px from parent's true left edge.
+     This is not what we want. The dot is relative to .timeline-entry's padding box.
+     If .timeline-entry has padding-left: 25px, its content starts at 25px from its own left edge.
+     The dot needs to be placed at -26px from the start of .timeline-entry's padding box (as calculated before)
+     to align with the bar at parent's left: 10px, assuming parent's padding-left: 30px.
+     Dot's left edge relative to .timeline-entry's border-box start should be:
+     10px (bar's absolute left) - 30px (timeline-entry's effective start due to parent padding) = -20px.
+     To center the 15px dot (whose own center is 7.5px) on the 3px bar (whose center is 1.5px):
+     left: -20px - (15px/2) + (3px/2) = -20px - 7.5px + 1.5px = -26px.
+  */
+  left: -26px;
+  z-index: 2; /* Above the continuous bar */
+}
+
+/* ----- Music Event Item Specific Content Styling (if any beyond .timeline-entry) ----- */
+.music-event-item h4 {
+  font-size: 1.1em; /* Example */
+  margin-bottom: 5px;
+}
+.music-event-item h5 {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+.music-event-item p {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+}
+.music-event-item p em {
+  font-style: italic;
+  color: #555;
+}
+
+
+/* ----- Image Collage Styling (Copied/Moved from style.css or previous versions) ----- */
+.image-collage-container {
+    width: 250px; /* As designed previously */
+    height: 150px; /* As designed previously */
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+    padding: 2px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    margin-top: 10px; /* Space above collage */
+}
+
+.collage-image {
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+}
+
+/* Case 1: Single image fills the container */
+.image-collage-container.single-image .collage-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Case 2: Standard layout (1 large, up to 4 small) */
+.image-collage-container.standard-layout .collage-image-large {
+    flex: 0 0 121px; /* Approx half width */
+    height: 100%;
+}
+
+.image-collage-container.standard-layout .small-images-wrapper {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-content: flex-start; /* Crucial for 2x2 grid */
+}
+
+.image-collage-container.standard-layout .collage-image-small {
+    flex-basis: calc(50% - 2px); /* Allows for margin/border */
+    height: calc(50% - 2px);   /* Allows for margin/border */
+    margin: 1px;
+}
+
+/* Optional: Specific handling if exactly 2 small images */
+.image-collage-container.standard-layout .small-images-wrapper.count-2 .collage-image-small {
+    flex-basis: calc(100% - 2px);
+    height: calc(50% - 2px);
+}
+
+/* Optional: Specific handling if exactly 3 small images */
+.image-collage-container.standard-layout .small-images-wrapper.count-3 .collage-image-small:first-child {
+    flex-basis: calc(100% - 2px);
+    height: calc(50% - 2px);
+}
+.image-collage-container.standard-layout .small-images-wrapper.count-3 .collage-image-small { /* Subsequent ones */
+    flex-basis: calc(50% - 2px);
+    height: calc(50% - 2px);
+}

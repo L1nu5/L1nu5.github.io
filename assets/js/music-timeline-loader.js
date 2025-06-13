@@ -46,13 +46,40 @@ function loadMusicTimeline() {
 
       const createEventElement = (currentEvent, imagePaths, eventIndex) => {
         const timelineEventDiv = document.createElement('div');
-        timelineEventDiv.classList.add('timeline-event');
         timelineEventDiv.setAttribute('data-aos', 'fade-up');
         timelineEventDiv.setAttribute('data-aos-delay', '100');
+        timelineEventDiv.classList.add('music-event-item', 'timeline-entry');
 
+        // Event Name
+        let eventNameEl = document.createElement('h4');
+        eventNameEl.textContent = currentEvent.eventName || 'Unnamed Event';
+        timelineEventDiv.appendChild(eventNameEl);
+
+        // Event Date
+        let dateEl = document.createElement('h5');
+        dateEl.textContent = currentEvent.dateMMYYYY || 'Date N/A';
+        timelineEventDiv.appendChild(dateEl);
+
+        // Venue Name
+        if (currentEvent.venueName && currentEvent.venueName.trim() !== '') {
+            let venueEl = document.createElement('p');
+            let venueEm = document.createElement('em');
+            venueEm.textContent = currentEvent.venueName;
+            venueEl.appendChild(venueEm);
+            timelineEventDiv.appendChild(venueEl);
+        }
+
+        // Event Description
+        if (currentEvent.eventDescription && currentEvent.eventDescription.trim() !== '') {
+            let descriptionEl = document.createElement('p');
+            descriptionEl.textContent = currentEvent.eventDescription;
+            timelineEventDiv.appendChild(descriptionEl);
+        }
+
+        // Image Collage
         if (imagePaths && imagePaths.length > 0) {
           const collageId = `collage-${eventIndex}`;
-          const collageContainerElement = document.createElement('div'); // Renamed to avoid conflict
+          const collageContainerElement = document.createElement('div');
           collageContainerElement.id = collageId;
           collageContainerElement.classList.add('image-collage-container');
 
@@ -88,18 +115,6 @@ function loadMusicTimeline() {
           }
           timelineEventDiv.appendChild(collageContainerElement);
         }
-
-        const dateMarkerDiv = document.createElement('div');
-        dateMarkerDiv.className = 'timeline-date-marker';
-        dateMarkerDiv.textContent = currentEvent.dateMMYYYY;
-        timelineEventDiv.appendChild(dateMarkerDiv);
-
-        const timelineContentDiv = document.createElement('div');
-        timelineContentDiv.classList.add('timeline-content');
-        const eventNameH3 = document.createElement('h3');
-        eventNameH3.textContent = currentEvent.eventName;
-        timelineContentDiv.appendChild(eventNameH3);
-        timelineEventDiv.appendChild(timelineContentDiv);
 
         return timelineEventDiv;
       };
