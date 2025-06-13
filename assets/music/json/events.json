@@ -2,16 +2,16 @@
   {
     "eventName": "Concert A",
     "dateMMYYYY": "03/2023",
-    "imageUrls": ["placeholder1.jpg"]
+    "imageDir": "example_event_dir_1"
   },
   {
     "eventName": "Festival B",
     "dateMMYYYY": "07/2023",
-    "imageUrls": ["placeholder2.jpg", "placeholder3.jpg"]
+    "imageDir": "example_event_dir_2"
   },
   {
     "eventName": "Open Mic Night C",
     "dateMMYYYY": "11/2023",
-    "imageUrls": []
+    "imageDir": "example_event_dir_3_empty"
   }
 ]

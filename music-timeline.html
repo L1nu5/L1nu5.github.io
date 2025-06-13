@@ -135,78 +135,108 @@
           return response.json();
         })
         .then(events => {
-          events.forEach((event, index) => { // Added index for unique carousel IDs
-            const timelineEventDiv = document.createElement('div');
-            timelineEventDiv.classList.add('timeline-event');
-            timelineEventDiv.setAttribute('data-aos', 'fade-up');
-            timelineEventDiv.setAttribute('data-aos-delay', '100');
-
-            if (event.imageUrls && event.imageUrls.length > 0) {
-              // Create a container for the image collage
-              const collageId = `collage-${index}`;
-              const collageContainer = document.createElement('div');
-              collageContainer.id = collageId;
-              collageContainer.classList.add('image-collage-container');
-              timelineEventDiv.appendChild(collageContainer); // Add collage container to the event div
-
-              let imagesToProcess = event.imageUrls.slice(0, 5); // Max 5 images
-
-              if (imagesToProcess.length === 1) {
-                collageContainer.classList.add('single-image');
-                let img = document.createElement('img');
-                img.src = `assets/music/images/${imagesToProcess[0]}`;
-                img.alt = `${event.eventName} collage image`;
-                img.classList.add('collage-image');
-                collageContainer.appendChild(img);
-              } else if (imagesToProcess.length > 1) {
-                collageContainer.classList.add('standard-layout');
-
-                // Large image
-                let largeImg = document.createElement('img');
-                largeImg.src = `assets/music/images/${imagesToProcess[0]}`;
-                largeImg.alt = `${event.eventName} main image`;
-                largeImg.classList.add('collage-image', 'collage-image-large');
-                collageContainer.appendChild(largeImg);
-
-                // Small images wrapper and images
-                let smallImagesWrapper = document.createElement('div');
-                smallImagesWrapper.classList.add('small-images-wrapper');
-
-                let numSmallImages = imagesToProcess.length - 1;
-                if (numSmallImages > 0) { // Ensure there are small images to create a wrapper for
-                    smallImagesWrapper.classList.add('count-' + numSmallImages);
-
-                    for (let j = 1; j < imagesToProcess.length; j++) {
-                        let smallImg = document.createElement('img');
-                        smallImg.src = `assets/music/images/${imagesToProcess[j]}`;
-                        smallImg.alt = `${event.eventName} thumbnail ${j}`;
-                        smallImg.classList.add('collage-image', 'collage-image-small');
-                        smallImagesWrapper.appendChild(smallImg);
-                    }
-                    collageContainer.appendChild(smallImagesWrapper);
-                }
+          events.forEach((event, index) => {
+            let imagesToProcess = [];
+            if (event.imageDir && typeof event.imageDir === 'string' && event.imageDir.trim() !== '') {
+              for (let i = 1; i <= 5; i++) {
+                imagesToProcess.push(`assets/img/events/${event.imageDir}/${i}.jpg`);
               }
+            } else if (event.imageUrls && Array.isArray(event.imageUrls) && event.imageUrls.length > 0) {
+              // Fallback for old events that still use imageUrls
+              imagesToProcess = event.imageUrls.slice(0, 5).map(imgName => `assets/music/images/${imgName}`);
             }
 
-            // Create and append the date marker
-            const dateMarkerDiv = document.createElement('div');
-            dateMarkerDiv.className = 'timeline-date-marker';
-            dateMarkerDiv.textContent = event.dateMMYYYY;
-            timelineEventDiv.appendChild(dateMarkerDiv); // Appended to eventDiv, not contentDiv
+            // Function to build and append the event content (including collage)
+            const buildAndAppendEvent = (currentEvent, imagePaths) => {
+              const timelineEventDiv = document.createElement('div');
+              timelineEventDiv.classList.add('timeline-event');
+              timelineEventDiv.setAttribute('data-aos', 'fade-up');
+              timelineEventDiv.setAttribute('data-aos-delay', '100');
 
-            const timelineContentDiv = document.createElement('div');
-            timelineContentDiv.classList.add('timeline-content');
+              // Create and append collage if imagePaths exist and are not empty
+              if (imagePaths && imagePaths.length > 0) {
+                const collageId = `collage-${index}`;
+                const collageContainer = document.createElement('div');
+                collageContainer.id = collageId;
+                collageContainer.classList.add('image-collage-container');
 
-            const eventNameH3 = document.createElement('h3');
-            eventNameH3.textContent = event.eventName;
-            timelineContentDiv.appendChild(eventNameH3);
+                // Apply layout classes based on the number of actual images to display
+                // This assumes imagePaths here are confirmed or potential paths to be rendered
+                if (imagePaths.length === 1) {
+                  collageContainer.classList.add('single-image');
+                  let img = document.createElement('img');
+                  img.src = imagePaths[0];
+                  img.alt = `${currentEvent.eventName} collage image`;
+                  img.classList.add('collage-image');
+                  collageContainer.appendChild(img);
+                } else { // More than 1 image implies standard layout
+                  collageContainer.classList.add('standard-layout');
+                  let largeImg = document.createElement('img');
+                  largeImg.src = imagePaths[0];
+                  largeImg.alt = `${currentEvent.eventName} main image`;
+                  largeImg.classList.add('collage-image', 'collage-image-large');
+                  collageContainer.appendChild(largeImg);
 
-            // const eventDateP = document.createElement('p'); // Old date paragraph removed
-            // eventDateP.textContent = event.dateMMYYYY;
-            // timelineContentDiv.appendChild(eventDateP);
+                  if (imagePaths.length > 1) {
+                    let smallImagesWrapper = document.createElement('div');
+                    smallImagesWrapper.classList.add('small-images-wrapper');
+                    let numSmallImages = imagePaths.length - 1;
+                    smallImagesWrapper.classList.add('count-' + numSmallImages);
+                    for (let j = 1; j < imagePaths.length; j++) {
+                      let smallImg = document.createElement('img');
+                      smallImg.src = imagePaths[j];
+                      smallImg.alt = `${currentEvent.eventName} thumbnail ${j}`;
+                      smallImg.classList.add('collage-image', 'collage-image-small');
+                      smallImagesWrapper.appendChild(smallImg);
+                    }
+                    collageContainer.appendChild(smallImagesWrapper);
+                  }
+                }
+                timelineEventDiv.appendChild(collageContainer);
+              }
 
-            timelineEventDiv.appendChild(timelineContentDiv);
-            timelineContainer.appendChild(timelineEventDiv);
+              // Create and append the date marker
+              const dateMarkerDiv = document.createElement('div');
+              dateMarkerDiv.className = 'timeline-date-marker';
+              dateMarkerDiv.textContent = currentEvent.dateMMYYYY;
+              timelineEventDiv.appendChild(dateMarkerDiv);
+
+              const timelineContentDiv = document.createElement('div');
+              timelineContentDiv.classList.add('timeline-content');
+              const eventNameH3 = document.createElement('h3');
+              eventNameH3.textContent = currentEvent.eventName;
+              timelineContentDiv.appendChild(eventNameH3);
+              timelineEventDiv.appendChild(timelineContentDiv);
+
+              timelineContainer.appendChild(timelineEventDiv);
+            };
+
+            if (event.imageDir && typeof event.imageDir === 'string' && event.imageDir.trim() !== '' && imagesToProcess.length > 0) {
+              // Event uses imageDir, check existence of the first image
+              let primaryImage = new Image();
+              primaryImage.onload = function() {
+                console.log('Primary image loaded for imageDir event:', event.eventName, 'Path:', imagesToProcess[0]);
+                // At this point, imagesToProcess contains potential paths.
+                // A more robust solution would be to check existence of all needed images here,
+                // or pass only existing ones to buildAndAppendEvent.
+                // For now, we pass all potential paths as per current design.
+                buildAndAppendEvent(event, imagesToProcess);
+              };
+              primaryImage.onerror = function() {
+                console.warn('Primary image NOT loaded for imageDir event:', event.eventName, 'Skipping event. Path:', imagesToProcess[0]);
+                // Optionally, display event without collage if primary image fails but others might exist,
+                // or if event should always display its text info. For now, skipping the whole event.
+              };
+              primaryImage.src = imagesToProcess[0]; // Attempt to load the first image
+            } else if (imagesToProcess.length > 0) {
+              // Fallback for events using imageUrls (imagesToProcess was populated from it)
+              console.log('Displaying event with imageUrls (fallback):', event.eventName);
+              buildAndAppendEvent(event, imagesToProcess);
+            } else {
+              // Event has no images for collage
+              console.log('Displaying event without collage:', event.eventName);
+              buildAndAppendEvent(event, []); // Pass empty array for images
+            }
           });
         })
         .catch(error => {
