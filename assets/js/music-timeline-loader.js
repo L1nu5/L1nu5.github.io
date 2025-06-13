@@ -50,19 +50,24 @@ function loadMusicTimeline() {
         timelineEventDiv.setAttribute('data-aos', 'fade-up');
         timelineEventDiv.setAttribute('data-aos-delay', '100');
 
-        // Add common and alternating classes for new timeline styling
-        timelineEventDiv.classList.add('timeline-item'); // Common class for all new timeline items
-        if (eventIndex % 2 === 0) {
-          timelineEventDiv.classList.add('timeline-item-left');
-        } else {
-          timelineEventDiv.classList.add('timeline-item-right');
-        }
-        // Optionally, retain col-md-6 if using Bootstrap grid for width control,
-        // or manage width entirely via timeline-item-left/right CSS.
-        // timelineEventDiv.classList.add('col-md-6');
+        // Add the new class for simple timeline styling
+        timelineEventDiv.classList.add('music-event-item');
 
-        const contentWrapper = document.createElement('div');
-        contentWrapper.classList.add('timeline-content-wrapper');
+        // The 'card' div will act as the main content container for styling, similar to .timeline-content-wrapper
+        // If a specific 'card' class is not desired for some reason, this could be a generic div
+        // or the styling could target .music-event-item > div directly.
+        // For now, let's assume a 'card'-like structure or that styling will handle it.
+        // The prompt asks for the card to be appended directly to eventDiv.
+        // We will create a 'card' div here to hold all content.
+
+        const cardDiv = document.createElement('div');
+        // cardDiv.classList.add('card'); // Add 'card' class if Bootstrap card styling is desired, or style via .music-event-item .card
+        // For now, let's rely on the CSS provided for `.music-event-item .card`
+        // and assume the JS should create a div that will be styled as a card by that CSS.
+        // If no specific card class is added by JS, the CSS needs to be general enough,
+        // e.g. styling the first div child of .music-event-item or a specific class we add here.
+        // Let's add a generic content holder class that CSS can target if '.card' isn't automatically used.
+        cardDiv.classList.add('music-event-content'); // A generic class for the content block
 
         if (imagePaths && imagePaths.length > 0) {
           const collageId = `collage-${eventIndex}`;
@@ -100,35 +105,22 @@ function loadMusicTimeline() {
               collageContainerElement.appendChild(smallImagesWrapper);
             }
           }
-          contentWrapper.appendChild(collageContainerElement); // Append collage to wrapper
+          cardDiv.appendChild(collageContainerElement);
         }
 
-        // Note: The dateMarkerDiv is part of the overall timeline item structure,
-        // but visually it's usually outside the main "content box" (card/wrapper).
-        // The CSS positions it using .timeline-item::after for the dot,
-        // and .timeline-date-marker is positioned relative to .timeline-item.
-        // So, dateMarkerDiv and timelineContent (H3 name) should be siblings to collage within the contentWrapper,
-        // or dateMarker could be outside contentWrapper if CSS for dot assumes that.
-        // Given current CSS, dot is on .timeline-item, dateMarker is separate.
-        // Let's keep dateMarker and title (timelineContentDiv) inside the contentWrapper for styling consistency of the box.
-
         const dateMarkerDiv = document.createElement('div');
-        dateMarkerDiv.className = 'timeline-date-marker'; // This class is styled relative to timeline-item
+        dateMarkerDiv.className = 'timeline-date-marker';
         dateMarkerDiv.textContent = currentEvent.dateMMYYYY;
-        // It might be better placed directly in timelineEventDiv if its CSS positions it absolutely to timeline-item.
-        // However, the original .timeline-event (from resume) had date *inside* the content box.
-        // Let's keep it inside contentWrapper for now. If CSS positions it outside, that's fine.
-        contentWrapper.appendChild(dateMarkerDiv);
+        cardDiv.appendChild(dateMarkerDiv);
 
-
-        const timelineContentElement = document.createElement('div'); // Renamed from timelineContentDiv to avoid confusion
-        timelineContentElement.classList.add('timeline-content'); // This class is from template, for text styling
+        const timelineContentElement = document.createElement('div');
+        timelineContentElement.classList.add('timeline-content');
         const eventNameH3 = document.createElement('h3');
         eventNameH3.textContent = currentEvent.eventName;
         timelineContentElement.appendChild(eventNameH3);
-        contentWrapper.appendChild(timelineContentElement); // Append text content to wrapper
+        cardDiv.appendChild(timelineContentElement);
 
-        timelineEventDiv.appendChild(contentWrapper); // Append wrapper to the main event div
+        timelineEventDiv.appendChild(cardDiv); // Append the card (or content block) to the main event div
         return timelineEventDiv;
       };
 
