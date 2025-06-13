@@ -135,6 +135,31 @@
           return response.json();
         })
         .then(events => {
+          // Sort events by dateMMYYYY in ascending order (oldest first)
+          events.sort((a, b) => {
+            // Function to convert "MM/YYYY" to "YYYYMM" for comparison
+            const toComparableString = (dateStr) => {
+              if (!dateStr || typeof dateStr !== 'string' || !dateStr.includes('/')) {
+                return '000000'; // Fallback for invalid/missing dates, sorts them to the beginning
+              }
+              const parts = dateStr.split('/');
+              const month = parts[0].padStart(2, '0');
+              const year = parts[1];
+              return year + month;
+            };
+
+            const dateA = toComparableString(a.dateMMYYYY);
+            const dateB = toComparableString(b.dateMMYYYY);
+
+            if (dateA < dateB) {
+              return -1; // a comes first
+            }
+            if (dateA > dateB) {
+              return 1;  // b comes first
+            }
+            return 0; // Dates are equal, order doesn't matter
+          });
+
           events.forEach((event, index) => {
             let imagesToProcess = [];
             if (event.imageDir && typeof event.imageDir === 'string' && event.imageDir.trim() !== '') {
