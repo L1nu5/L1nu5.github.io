@@ -46,13 +46,27 @@ function loadMusicTimeline() {
 
       const createEventElement = (currentEvent, imagePaths, eventIndex) => {
         const timelineEventDiv = document.createElement('div');
-        timelineEventDiv.classList.add('timeline-event');
+        // timelineEventDiv.classList.add('timeline-event'); // Original class from resume items
         timelineEventDiv.setAttribute('data-aos', 'fade-up');
         timelineEventDiv.setAttribute('data-aos-delay', '100');
 
+        // Add common and alternating classes for new timeline styling
+        timelineEventDiv.classList.add('timeline-item'); // Common class for all new timeline items
+        if (eventIndex % 2 === 0) {
+          timelineEventDiv.classList.add('timeline-item-left');
+        } else {
+          timelineEventDiv.classList.add('timeline-item-right');
+        }
+        // Optionally, retain col-md-6 if using Bootstrap grid for width control,
+        // or manage width entirely via timeline-item-left/right CSS.
+        // timelineEventDiv.classList.add('col-md-6');
+
+        const contentWrapper = document.createElement('div');
+        contentWrapper.classList.add('timeline-content-wrapper');
+
         if (imagePaths && imagePaths.length > 0) {
           const collageId = `collage-${eventIndex}`;
-          const collageContainerElement = document.createElement('div'); // Renamed to avoid conflict
+          const collageContainerElement = document.createElement('div');
           collageContainerElement.id = collageId;
           collageContainerElement.classList.add('image-collage-container');
 
@@ -86,21 +100,35 @@ function loadMusicTimeline() {
               collageContainerElement.appendChild(smallImagesWrapper);
             }
           }
-          timelineEventDiv.appendChild(collageContainerElement);
+          contentWrapper.appendChild(collageContainerElement); // Append collage to wrapper
         }
 
-        const dateMarkerDiv = document.createElement('div');
-        dateMarkerDiv.className = 'timeline-date-marker';
-        dateMarkerDiv.textContent = currentEvent.dateMMYYYY;
-        timelineEventDiv.appendChild(dateMarkerDiv);
+        // Note: The dateMarkerDiv is part of the overall timeline item structure,
+        // but visually it's usually outside the main "content box" (card/wrapper).
+        // The CSS positions it using .timeline-item::after for the dot,
+        // and .timeline-date-marker is positioned relative to .timeline-item.
+        // So, dateMarkerDiv and timelineContent (H3 name) should be siblings to collage within the contentWrapper,
+        // or dateMarker could be outside contentWrapper if CSS for dot assumes that.
+        // Given current CSS, dot is on .timeline-item, dateMarker is separate.
+        // Let's keep dateMarker and title (timelineContentDiv) inside the contentWrapper for styling consistency of the box.
 
-        const timelineContentDiv = document.createElement('div');
-        timelineContentDiv.classList.add('timeline-content');
+        const dateMarkerDiv = document.createElement('div');
+        dateMarkerDiv.className = 'timeline-date-marker'; // This class is styled relative to timeline-item
+        dateMarkerDiv.textContent = currentEvent.dateMMYYYY;
+        // It might be better placed directly in timelineEventDiv if its CSS positions it absolutely to timeline-item.
+        // However, the original .timeline-event (from resume) had date *inside* the content box.
+        // Let's keep it inside contentWrapper for now. If CSS positions it outside, that's fine.
+        contentWrapper.appendChild(dateMarkerDiv);
+
+
+        const timelineContentElement = document.createElement('div'); // Renamed from timelineContentDiv to avoid confusion
+        timelineContentElement.classList.add('timeline-content'); // This class is from template, for text styling
         const eventNameH3 = document.createElement('h3');
         eventNameH3.textContent = currentEvent.eventName;
-        timelineContentDiv.appendChild(eventNameH3);
-        timelineEventDiv.appendChild(timelineContentDiv);
+        timelineContentElement.appendChild(eventNameH3);
+        contentWrapper.appendChild(timelineContentElement); // Append text content to wrapper
 
+        timelineEventDiv.appendChild(contentWrapper); // Append wrapper to the main event div
         return timelineEventDiv;
       };
 
