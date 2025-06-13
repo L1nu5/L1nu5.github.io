@@ -261,4 +261,69 @@
     })
   });
 
+  // ---- Timeline Switcher Logic ----
+  document.addEventListener('DOMContentLoaded', () => {
+    const navResume = document.getElementById('nav-resume');
+    const navMusicTimeline = document.getElementById('nav-music-timeline');
+    const resumeView = document.getElementById('resume-view');
+    const musicTimelineView = document.getElementById('music-timeline-view');
+    const timelineTitle = document.getElementById('timeline-title');
+
+    // Ensure all elements are present before proceeding
+    if (!navResume || !navMusicTimeline || !resumeView || !musicTimelineView || !timelineTitle) {
+        console.error('Timeline switcher elements not found. Aborting switcher setup.');
+        return;
+    }
+
+    let isMusicTimelineLoaded = false;
+
+    // Add initial classes for CSS transitions
+    resumeView.classList.add('timeline-view');
+    musicTimelineView.classList.add('timeline-view');
+
+    function showResumeView() {
+        musicTimelineView.classList.remove('timeline-view-active');
+        resumeView.classList.add('timeline-view-active');
+
+        timelineTitle.textContent = 'Resume';
+        if (navResume) navResume.classList.add('active'); // Check if element exists
+        if (navMusicTimeline) navMusicTimeline.classList.remove('active');
+    }
+
+    function showMusicTimelineView() {
+        resumeView.classList.remove('timeline-view-active');
+        musicTimelineView.classList.add('timeline-view-active');
+
+        timelineTitle.textContent = 'Music Timeline';
+        if (navMusicTimeline) navMusicTimeline.classList.add('active'); // Check if element exists
+        if (navResume) navResume.classList.remove('active');
+
+        if (!isMusicTimelineLoaded) {
+            if (typeof loadMusicTimeline === 'function') {
+                loadMusicTimeline();
+                isMusicTimelineLoaded = true;
+            } else {
+                console.error('loadMusicTimeline function is not defined.');
+            }
+        }
+    }
+
+    if (navResume) { // Check if element exists before adding listener
+        navResume.addEventListener('click', function(e) {
+            e.preventDefault();
+            showResumeView();
+        });
+    }
+
+    if (navMusicTimeline) { // Check if element exists before adding listener
+        navMusicTimeline.addEventListener('click', function(e) {
+            e.preventDefault();
+            showMusicTimelineView();
+        });
+    }
+
+    // Set default view
+    showResumeView();
+  });
+
 })()

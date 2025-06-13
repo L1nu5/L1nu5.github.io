@@ -624,6 +624,24 @@ section {
 
 /* End Image Collage Styling */
 
+/* ----- Timeline View Switcher ----- */
+.timeline-view {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Transition for fade effect */
+  display: none; /* Initially hidden */
+}
+
+.timeline-view-active {
+  display: block; /* Or 'flex' if its children need it, but 'block' is usually fine for a container */
+  opacity: 1;
+}
+
+/* Ensure the music timeline container within the view takes up space if needed */
+/* This might not be strictly necessary if its content dictates its height */
+#music-timeline-container-index {
+  min-height: 100px; /* Example: give it some minimum height or let content define it */
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/

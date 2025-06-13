@@ -50,8 +50,8 @@
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-bulb"></i> <span>Skills</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="music-timeline.html" class="nav-link scrollto"><i class="bx bx-music"></i> <span>Music Timeline</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto" id="nav-resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto" id="nav-music-timeline"><i class="bx bx-music"></i> <span>Music Timeline</span></a></li>
         <li><a href="#achievements" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Achievements &
               Awards</span></a></li>
       </ul>
@@ -329,208 +329,213 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Resume</h2>
+          <h2 id="timeline-title">Resume</h2>
         </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Masters in Computer Software Engineering</h4>
-              <h5>Jan 2021 - Dec 2022</h5>
-              <p><em>Arizona State University, Tempe, AZ</em></p>
-              <p>GPA: 4.0/4.0 </p>
-              <p>Currently pursuing the masters program, started in Spring 2021</p>
-              <b>Graduate Services Assistant</b>
-              <p>Web Application Programming and Security [Node.js, Java, Spring Boot, JavaScript] (SER 421, SER 422)</p>
-              <b>Software Developer</b>
-              <p>Worked as Software Developer on a Biodesign project, Python/C++/Qt</p>
-              <b>Relevant Coursework:</b>
-              <p>Advanced Data structures and algorithms, Software Design, Foundations of Software Engineering, 
-                Distributed database systems, Internet Enabled Embedded devices
-              </p>
+        <div id="resume-view">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Summary</h3>
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Masters in Computer Software Engineering</h4>
+                <h5>Jan 2021 - Dec 2022</h5>
+                <p><em>Arizona State University, Tempe, AZ</em></p>
+                <p>GPA: 4.0/4.0 </p>
+                <p>Currently pursuing the masters program, started in Spring 2021</p>
+                <b>Graduate Services Assistant</b>
+                <p>Web Application Programming and Security [Node.js, Java, Spring Boot, JavaScript] (SER 421, SER 422)</p>
+                <b>Software Developer</b>
+                <p>Worked as Software Developer on a Biodesign project, Python/C++/Qt</p>
+                <b>Relevant Coursework:</b>
+                <p>Advanced Data structures and algorithms, Software Design, Foundations of Software Engineering,
+                  Distributed database systems, Internet Enabled Embedded devices
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>Bachelor of Engineering, Computer Engineering</h4>
+                <h5>2014 - 2017</h5>
+                <p><em>Pune Institute of Computer Technology, Pune, India</em></p>
+                <p>GPA: 9.30/10</p>
+                <p>Graduated with First Class and Distinction.</p>
+                <b>Relevant Coursework:</b>
+                <p> Data Structures, Principles of Modern Compiler Design, Computer Networks, Cloud Computing, Operating
+                  Systems and Design, High Performance Computing, Object Oriented Programming, Design and Analysis of
+                  Algorithms</p>
+              </div>
             </div>
-            <div class="resume-item">
-              <h4>Bachelor of Engineering, Computer Engineering</h4>
-              <h5>2014 - 2017</h5>
-              <p><em>Pune Institute of Computer Technology, Pune, India</em></p>
-              <p>GPA: 9.30/10</p>
-              <p>Graduated with First Class and Distinction.</p>
-              <b>Relevant Coursework:</b>
-              <p> Data Structures, Principles of Modern Compiler Design, Computer Networks, Cloud Computing, Operating
-                Systems and Design, High Performance Computing, Object Oriented Programming, Design and Analysis of
-                Algorithms</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Professional Experience</h3>
 
-            <div class="resume-item">
-              <h4>Software Engineer</h4>
-              <p><em>MathWorks Inc., Natick, MA</em></p>
-              <ul>
-                <li><a href="https://www.mathworks.com/" target="_blank">MathWorks</a>
-                </li>
-                <h5>Feb 2023 - Present</h5>
+              <div class="resume-item">
+                <h4>Software Engineer</h4>
+                <p><em>MathWorks Inc., Natick, MA</em></p>
                 <ul>
-                  <li>Engaged in the migration of backend API framework for <a href="https://www.mathworks.com/help/simulink/slref/simulink.configset.html">Simulink.ConfigSet</a></li>
-                  <li>Added unit tests for the frontend and backend for Simulink in C++ and MATLAB</li>
-                  <li>Technologies used: C++, JavaScript, MATLAB, Simulink</li>
-                </ul>
-              </ul>
-            </div>
-            
-            <div class="resume-item">
-              <h4>Software Engineering Intern</h4>
-              <p><em>DataChat Inc. Madison, WI </em></p>
-              <ul>
-                <li><a href="https://datachat.ai/" target="_blank">DataChat</a>
-                </li>
-                <h5>May 2022 - Dec 2022</h5>
-                <ul>
-                  <li>Rolled out a few major visualization beta features into production to improve chart loading performance</li>
-                  <li>Re-engineered the error boundary system in React.js to specify the details of a chart loading error</li>
-                  <li>Worked on maintenance of existing features in backend</li>
-                  <li>Added unit tests and snapshot tests in Cypress and Jest for chart visualization features</li>
-                  <li>Technologies used: Python, Javascript, React, Go, PostgreSQL</li>
-                </ul>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Senior Software Engineer</h4>
-              <p><em>Agiliad Technologies Pvt Ltd, Pune, IN </em></p>
-              <ul>
-                <li><a href="https://www.youtube.com/watch?v=g3SLMfGCP60" target="_blank">ConneCT 3D Bag Scanner</a>
-                </li>
-                <h5>July 2020 - Dec 2020</h5>
-                <ul>
-                  <li>Worked on a High Speed CT scanning - Aviation security product, installed at 1200+ Airport security checkpoints.</li>
-                  <li>Participated in backend tasks in Java and MySQL which included data migration, and database partitioning across multiple nodes
-                    on the intranet which decreased the load by 5%</li>
-                  <li>Created a logging module in C++ to track UI actions, participated in code reviews, and system design documents for the features.</li>
-                  <li>Enhanced the existing UI system to match with the modern UI design trends, which resulted in a strong positive client feedbacks</li>
-                  <li>Technologies used: C++, Qt, QML, Linux, Java</li>
-                </ul>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Programmer</h4>
-              <p><em>Ubisoft Pune, IN</em></p>
-              <ul>
-                <li><a href="https://www.youtube.com/watch?v=htzq7EEXQs8" target="_blank">Prince of Persia </a></li>
-                <h5>April 2019 - June 2020</h5>
-                <ul>
-                  <li>Worked as an AI Programmer, the core tasks were to implement, debug and maintain AI systems.</li>
-                  <li>These systems were part of Anvil Game Engine, which is known for its massive open world games.
-                    Also
-                    contributed to Combat AI modules which involved positioning and AI fighting systems.</li>
-                  <li> Some notable systems that I built </li>
-                  <ol>
-                    <li> <b>A Fight States History System</b>
-                      This system recorded all the combat moves a character/player has performed. This would then in
-                      turn was used for achievements system where it would trigger few achievements once certain move
-                      sequence was performed by player.
-                    </li>
-
-                    <li>
-                      <b> Restriction Zones for NPC AI</b>
-                      This feature was used so that the NPCs would patrol their associated restricted zones and if an
-                      enemy enters it, they would start fighting them. Also, once an enemy has left such zones, they
-                      would wait for the enemies to return for a specified timer, and would return to patrolling once
-                      the timer expired. This system also involved interaction with non-combat AI systems,
-                    </li>
-
-                    <li>
-                      <b>Fight Achievements Tracking</b>
-                      The main purpose of the system was to track all the combat specific events which would then used
-                      as a a means of statistics. This would give insight into what kinds of moves the player likes
-                      perform, at what location, and so on.
-                    </li>
-
-                    <li>
-                      <b>AI fight targeting algorithm</b>
-                      Built a Round robin algorithm to equally distribute enemies among different targets. e.g. if there are 2 targets and 10 enemies
-                      then each target would be assigned 5 enemies. This also takes into the account newly added or removed enemies and rebalances
-                      if needed.
-                    </li>
-
-                    Apart from these tasks, I also worked on debugging issues in existing Combat AI / AI systems
-                    wherever required.
-                  </ol>
-
-                </ul>
-              </ul>
-              <ul>
-                <li><a href="https://www.youtube.com/watch?v=RCza4n4h4yU" target="_blank">Starlink PC: Battle for
-                  Atlas</a></li>
-                <h5>May 2018 - May 2019</h5>
-                <ul>
-                  <li>The main tasks for the project were to port it on PC platform. The game runs on Snowdrop engine.
-                    The collaboration was with Ubisoft Toronto as a lead studio.</li>
-                  <li>I implemented following features</li>
-                  <ol>
-                    <li> Developed a system to have keyboard and mouse inputs working for Windows platforms.</li>
-                    <li> Ported UI screens so that they could work with Keyboard/Mouse Inputs. This required deliberate
-                      efforts so that these newly added input methods wouldn't interfere with Controller based inputs.
-                    </li>
-                    <li> Scaling UI screens/menus to fit different screen resolutions.</li>
-                    <li> Dynamic UI button prompt system where the button prompts would update based on the last used
-                      input device.</li>
-                    </li>
-                  </ol>
-                  <li>My other duties included</li>
-                  <ol>
-                    <li> Leading newly hired junior programmers and training them.</li>
-                    <li> Debugging and Optimizing the gameplay systems. </li>
-                    <li> Reviewing and Collaborating with lead programmers at Ubisoft Pune and Ubisoft Toronto.</li>
-                  </ol>
-                </ul>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Junior Programmer</h4>
-              <p><em>Ubisoft Pune, IN</em></p>
-              <ul>
-                <li><a href="https://www.youtube.com/watch?v=Kdaoe4hbMso" target="_blank">Far Cry 5</a></li>
-                <h5>July 2017 - April 2018</h5>
-                <ul>
-                  <li>Collaborated with Ubisoft Montreal, Toronto & Kiev for AAA games, I worked with designers, artists
-                    &amp; programmers during the collaboration. Worked on Arcade Player Progression system and Map
-                    Editor tool.</li>
-                  <li>Was awarded as a Best Performer for the August 2018 quarter, for taking Initiative in providing
-                    various
-                    design changes which were accepted by designers at Ubisoft Montreal during Far Cry 5 Development
+                  <li><a href="https://www.mathworks.com/" target="_blank">MathWorks</a>
                   </li>
-                </ul>
-
-                <li>I developed following features on the project.</li>
-
-                <ol>
-                  <li> <b>Arcade Player Progression UI</b>
-                    This screen appeared when a player finished a multiplayer match in Arcade. It showed the experience
-                    points gained by the player during the session, the current level and the next achieved level of the
-                    player, rewards earned on levelling up and current player badge.
-                  </li>
-
-                  <li><b>Level/Map Scripting Tool Port to Consoles</b> 
-                    The scripting tool lets map creators provide features to create custom missions in arcade along
-                    with map editing. This feature was initially developed for PC Map Editor Tool, then eventually
-                    planned for consoles as well. Following were the tasks for it.</li>
+                  <h5>Feb 2023 - Present</h5>
                   <ul>
-                    <li> Adding UI menus for the tool. </li>
-                    <li> Adding Inputs for controllers. </li>
-                    <li> Integrating with the existing gameplay system of the tool which was available for PC Map editor
-                      tool.</li>
-                    <li> Debugging and polishing the implemented system.</li>
+                    <li>Engaged in the migration of backend API framework for <a href="https://www.mathworks.com/help/simulink/slref/simulink.configset.html">Simulink.ConfigSet</a></li>
+                    <li>Added unit tests for the frontend and backend for Simulink in C++ and MATLAB</li>
+                    <li>Technologies used: C++, JavaScript, MATLAB, Simulink</li>
                   </ul>
-                </ol>
-              </ul>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Software Engineering Intern</h4>
+                <p><em>DataChat Inc. Madison, WI </em></p>
+                <ul>
+                  <li><a href="https://datachat.ai/" target="_blank">DataChat</a>
+                  </li>
+                  <h5>May 2022 - Dec 2022</h5>
+                  <ul>
+                    <li>Rolled out a few major visualization beta features into production to improve chart loading performance</li>
+                    <li>Re-engineered the error boundary system in React.js to specify the details of a chart loading error</li>
+                    <li>Worked on maintenance of existing features in backend</li>
+                    <li>Added unit tests and snapshot tests in Cypress and Jest for chart visualization features</li>
+                    <li>Technologies used: Python, Javascript, React, Go, PostgreSQL</li>
+                  </ul>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Senior Software Engineer</h4>
+                <p><em>Agiliad Technologies Pvt Ltd, Pune, IN </em></p>
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=g3SLMfGCP60" target="_blank">ConneCT 3D Bag Scanner</a>
+                  </li>
+                  <h5>July 2020 - Dec 2020</h5>
+                  <ul>
+                    <li>Worked on a High Speed CT scanning - Aviation security product, installed at 1200+ Airport security checkpoints.</li>
+                    <li>Participated in backend tasks in Java and MySQL which included data migration, and database partitioning across multiple nodes
+                      on the intranet which decreased the load by 5%</li>
+                    <li>Created a logging module in C++ to track UI actions, participated in code reviews, and system design documents for the features.</li>
+                    <li>Enhanced the existing UI system to match with the modern UI design trends, which resulted in a strong positive client feedbacks</li>
+                    <li>Technologies used: C++, Qt, QML, Linux, Java</li>
+                  </ul>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Programmer</h4>
+                <p><em>Ubisoft Pune, IN</em></p>
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=htzq7EEXQs8" target="_blank">Prince of Persia </a></li>
+                  <h5>April 2019 - June 2020</h5>
+                  <ul>
+                    <li>Worked as an AI Programmer, the core tasks were to implement, debug and maintain AI systems.</li>
+                    <li>These systems were part of Anvil Game Engine, which is known for its massive open world games.
+                      Also
+                      contributed to Combat AI modules which involved positioning and AI fighting systems.</li>
+                    <li> Some notable systems that I built </li>
+                    <ol>
+                      <li> <b>A Fight States History System</b>
+                        This system recorded all the combat moves a character/player has performed. This would then in
+                        turn was used for achievements system where it would trigger few achievements once certain move
+                        sequence was performed by player.
+                      </li>
+
+                      <li>
+                        <b> Restriction Zones for NPC AI</b>
+                        This feature was used so that the NPCs would patrol their associated restricted zones and if an
+                        enemy enters it, they would start fighting them. Also, once an enemy has left such zones, they
+                        would wait for the enemies to return for a specified timer, and would return to patrolling once
+                        the timer expired. This system also involved interaction with non-combat AI systems,
+                      </li>
+
+                      <li>
+                        <b>Fight Achievements Tracking</b>
+                        The main purpose of the system was to track all the combat specific events which would then used
+                        as a a means of statistics. This would give insight into what kinds of moves the player likes
+                        perform, at what location, and so on.
+                      </li>
+
+                      <li>
+                        <b>AI fight targeting algorithm</b>
+                        Built a Round robin algorithm to equally distribute enemies among different targets. e.g. if there are 2 targets and 10 enemies
+                        then each target would be assigned 5 enemies. This also takes into the account newly added or removed enemies and rebalances
+                        if needed.
+                      </li>
+
+                      Apart from these tasks, I also worked on debugging issues in existing Combat AI / AI systems
+                      wherever required.
+                    </ol>
+
+                  </ul>
+                </ul>
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=RCza4n4h4yU" target="_blank">Starlink PC: Battle for
+                    Atlas</a></li>
+                  <h5>May 2018 - May 2019</h5>
+                  <ul>
+                    <li>The main tasks for the project were to port it on PC platform. The game runs on Snowdrop engine.
+                      The collaboration was with Ubisoft Toronto as a lead studio.</li>
+                    <li>I implemented following features</li>
+                    <ol>
+                      <li> Developed a system to have keyboard and mouse inputs working for Windows platforms.</li>
+                      <li> Ported UI screens so that they could work with Keyboard/Mouse Inputs. This required deliberate
+                        efforts so that these newly added input methods wouldn't interfere with Controller based inputs.
+                      </li>
+                      <li> Scaling UI screens/menus to fit different screen resolutions.</li>
+                      <li> Dynamic UI button prompt system where the button prompts would update based on the last used
+                        input device.</li>
+                      </li>
+                    </ol>
+                    <li>My other duties included</li>
+                    <ol>
+                      <li> Leading newly hired junior programmers and training them.</li>
+                      <li> Debugging and Optimizing the gameplay systems. </li>
+                      <li> Reviewing and Collaborating with lead programmers at Ubisoft Pune and Ubisoft Toronto.</li>
+                    </ol>
+                  </ul>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Junior Programmer</h4>
+                <p><em>Ubisoft Pune, IN</em></p>
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=Kdaoe4hbMso" target="_blank">Far Cry 5</a></li>
+                  <h5>July 2017 - April 2018</h5>
+                  <ul>
+                    <li>Collaborated with Ubisoft Montreal, Toronto & Kiev for AAA games, I worked with designers, artists
+                      &amp; programmers during the collaboration. Worked on Arcade Player Progression system and Map
+                      Editor tool.</li>
+                    <li>Was awarded as a Best Performer for the August 2018 quarter, for taking Initiative in providing
+                      various
+                      design changes which were accepted by designers at Ubisoft Montreal during Far Cry 5 Development
+                    </li>
+                  </ul>
+
+                  <li>I developed following features on the project.</li>
+
+                  <ol>
+                    <li> <b>Arcade Player Progression UI</b>
+                      This screen appeared when a player finished a multiplayer match in Arcade. It showed the experience
+                      points gained by the player during the session, the current level and the next achieved level of the
+                      player, rewards earned on levelling up and current player badge.
+                    </li>
+
+                    <li><b>Level/Map Scripting Tool Port to Consoles</b>
+                      The scripting tool lets map creators provide features to create custom missions in arcade along
+                      with map editing. This feature was initially developed for PC Map Editor Tool, then eventually
+                      planned for consoles as well. Following were the tasks for it.</li>
+                    <ul>
+                      <li> Adding UI menus for the tool. </li>
+                      <li> Adding Inputs for controllers. </li>
+                      <li> Integrating with the existing gameplay system of the tool which was available for PC Map editor
+                        tool.</li>
+                      <li> Debugging and polishing the implemented system.</li>
+                    </ul>
+                  </ol>
+                </ul>
+              </div>
+
             </div>
-
           </div>
+        </div> <!-- End of #resume-view's inner row -->
+        <div id="music-timeline-view">
+            <div id="music-timeline-container-index">
+                <!-- Music events will be loaded here by JavaScript -->
+            </div>
         </div>
-
       </div>
     </section><!-- End Resume Section -->
 
@@ -604,5 +609,6 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/moment.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/music-timeline-loader.js"></script>
 </body>
 </html>
