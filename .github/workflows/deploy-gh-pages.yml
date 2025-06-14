@@ -18,12 +18,12 @@ jobs:
           node-version: 18 # Or your Node.js version
       - name: Install dependencies
         run: npm install # Or yarn install
-        working-directory: portfolio-adeore
+        working-directory: portfolio
       - name: Build application
         run: npm run build # Or yarn build
-        working-directory: portfolio-adeore
+        working-directory: portfolio
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: portfolio-adeore/build # Or your build output directory (e.g., ./dist)
+          publish_dir: portfolio/build # Or your build output directory (e.g., ./dist)
