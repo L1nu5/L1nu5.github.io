@@ -1,0 +1,51 @@
+# General OS files
+.DS_Store
+Thumbs.db
+
+# Node.js and npm files
+node_modules/
+package-lock.json
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Build artifacts
+build/
+dist/
+out/
+.parcel-cache/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Dependency directories (if you have them at the root)
+jspm_packages/
+web_modules/
+
+# Temporary files
+tmp/
+temp/
+
+# Logs
+logs/
+
+# Coverage data
+coverage/
+
+# Optional: Ignore your editor backup files
+*~
+# Hidden files
+.*
+!.github
+!.gitignore
