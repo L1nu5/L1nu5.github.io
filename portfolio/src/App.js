@@ -1,11 +1,11 @@
 import React from 'react';
 import { Tab, Tabs } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from '.tabs/Home';
-import Socials from '.tabs/Socials';
-import Education from '.tabs/Education';
-import Resume from '.tabs/Resume';
-import MusicEvents from '.tabs/MusicEvents';
+import Home from './src/tabs/Home';
+import Socials from './src/tabs/Socials';
+import Education from './src/tabs/Education';
+import Resume from './src/tabs/Resume';
+import MusicEvents from './src/tabs/MusicEvents';
 
 function App() {
   return (
