@@ -24,8 +24,28 @@ function App() {
           color: 'white'
         }}>
           <Card.Body className="text-center py-5">
+            {/* Visual Icons representing interests */}
             <h1 className="display-3 mb-2">{personalInfo.name}</h1>
             <p className="lead mb-0">{personalInfo.tagline}</p>
+            <div className="mb-4">
+              <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 mb-3">
+                <div className="text-center">
+                  <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>♟️</div>
+                </div>
+                <div className="text-center">
+                  <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>💻</div>
+                </div>
+                <div className="text-center">
+                  <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🎵</div>
+                </div>
+                <div className="text-center">
+                  <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🧩</div>
+                </div>
+                <div className="text-center">
+                  <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🎮</div>
+                </div>
+              </div>
+            </div>
           </Card.Body>
         </Card>
 
@@ -35,7 +55,7 @@ function App() {
             <Tabs 
               defaultActiveKey="home" 
               id="portfolio-tabs"
-              className="border-0"
+              className="border-0 justify-content-center"
               style={{ 
                 '--bs-nav-tabs-border-color': 'transparent',
                 '--bs-nav-tabs-link-active-bg': theme.lightBlue,
