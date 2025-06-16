@@ -1,0 +1,108 @@
+{
+  "description": "I'm active on various social platforms. Whether you want to discuss professional opportunities, collaborate on projects, or just say hello, I'd love to hear from you!",
+  "socialLinks": [
+    {
+      "id": 1,
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/yourprofile",
+      "description": "Connect with me professionally",
+      "variant": "primary",
+      "icon": "💼",
+      "username": "@yourlinkedin",
+      "followers": "500+"
+    },
+    {
+      "id": 2,
+      "platform": "GitHub",
+      "url": "https://github.com/yourusername",
+      "description": "Check out my code repositories",
+      "variant": "dark",
+      "icon": "💻",
+      "username": "@yourusername",
+      "followers": "150+"
+    },
+    {
+      "id": 3,
+      "platform": "Twitter",
+      "url": "https://twitter.com/yourhandle",
+      "description": "Follow my thoughts and updates",
+      "variant": "info",
+      "icon": "🐦",
+      "username": "@yourhandle",
+      "followers": "300+"
+    },
+    {
+      "id": 4,
+      "platform": "Instagram",
+      "url": "https://instagram.com/yourhandle",
+      "description": "See my photography and daily life",
+      "variant": "warning",
+      "icon": "📸",
+      "username": "@yourhandle",
+      "followers": "200+"
+    },
+    {
+      "id": 5,
+      "platform": "YouTube",
+      "url": "https://youtube.com/@yourchannel",
+      "description": "Watch my coding tutorials and vlogs",
+      "variant": "danger",
+      "icon": "🎥",
+      "username": "@yourchannel",
+      "followers": "1K+"
+    },
+    {
+      "id": 6,
+      "platform": "Discord",
+      "url": "#",
+      "description": "Join my coding community",
+      "variant": "secondary",
+      "icon": "🎮",
+      "username": "YourName#1234",
+      "followers": "Community"
+    }
+  ],
+  "contactInfo": {
+    "email": "your.email@example.com",
+    "location": "Your City, Country",
+    "timezone": "EST (UTC-5)",
+    "availability": "Networking, Collaborations, Opportunities",
+    "preferredContact": "Email or LinkedIn",
+    "responseTime": "Usually within 24 hours"
+  },
+  "socialStats": {
+    "totalFollowers": "2K+",
+    "platformsActive": 6,
+    "contentCreated": "50+ posts",
+    "engagementRate": "8.5%"
+  },
+  "featuredContent": [
+    {
+      "id": 1,
+      "title": "My Journey into Web Development",
+      "platform": "LinkedIn",
+      "type": "Article",
+      "date": "2024-11-15",
+      "engagement": "150 likes, 25 comments",
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "title": "React Best Practices Tutorial",
+      "platform": "YouTube",
+      "type": "Video",
+      "date": "2024-10-20",
+      "engagement": "500 views, 45 likes",
+      "url": "#"
+    },
+    {
+      "id": 3,
+      "title": "Open Source Contribution Guide",
+      "platform": "GitHub",
+      "type": "Repository",
+      "date": "2024-09-10",
+      "engagement": "25 stars, 8 forks",
+      "url": "#"
+    }
+  ]
+}

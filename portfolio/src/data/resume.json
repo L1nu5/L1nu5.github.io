@@ -1,0 +1,139 @@
+{
+  "personalInfo": {
+    "name": "Your Name",
+    "title": "Software Developer",
+    "email": "your.email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "Your City, Country",
+    "website": "https://yourwebsite.com",
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "github": "https://github.com/yourusername"
+  },
+  "summary": "Passionate software developer with experience in full-stack web development. Skilled in modern JavaScript frameworks and committed to writing clean, efficient code. Strong problem-solving abilities and excellent team collaboration skills.",
+  "workExperience": [
+    {
+      "id": 1,
+      "company": "Tech Solutions Inc.",
+      "position": "Software Developer",
+      "period": "2024 - Present",
+      "type": "Full-time",
+      "location": "New York, NY",
+      "responsibilities": [
+        "Developed responsive web applications using React and Node.js",
+        "Collaborated with cross-functional teams to deliver high-quality software",
+        "Implemented RESTful APIs and database optimization",
+        "Mentored junior developers and conducted code reviews"
+      ],
+      "technologies": ["React", "Node.js", "MongoDB", "AWS", "Git"],
+      "achievements": [
+        "Improved application performance by 40%",
+        "Led migration to microservices architecture",
+        "Reduced bug reports by 60% through comprehensive testing"
+      ]
+    },
+    {
+      "id": 2,
+      "company": "StartupXYZ",
+      "position": "Frontend Developer Intern",
+      "period": "2023 - 2024",
+      "type": "Internship",
+      "location": "San Francisco, CA",
+      "responsibilities": [
+        "Built user interfaces using React and Bootstrap",
+        "Participated in agile development processes",
+        "Contributed to code reviews and testing procedures",
+        "Collaborated with design team on UI/UX improvements"
+      ],
+      "technologies": ["React", "JavaScript", "CSS3", "Bootstrap", "Figma"],
+      "achievements": [
+        "Delivered 15+ feature implementations",
+        "Improved user engagement by 25%",
+        "Received outstanding intern evaluation"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "E-commerce Platform",
+      "description": "Full-stack web application with user authentication and payment integration",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
+      "features": [
+        "User authentication and authorization",
+        "Product catalog with search and filtering",
+        "Shopping cart and checkout process",
+        "Payment processing with Stripe",
+        "Admin dashboard for inventory management"
+      ],
+      "githubUrl": "https://github.com/yourusername/ecommerce-platform",
+      "liveUrl": "https://your-ecommerce-demo.com",
+      "status": "Completed",
+      "duration": "3 months"
+    },
+    {
+      "id": 2,
+      "name": "Task Management App",
+      "description": "Real-time collaborative task management tool with drag-and-drop functionality",
+      "technologies": ["React", "Firebase", "Material-UI"],
+      "features": [
+        "Real-time collaboration",
+        "Drag-and-drop task organization",
+        "Team member management",
+        "Progress tracking and analytics",
+        "Mobile-responsive design"
+      ],
+      "githubUrl": "https://github.com/yourusername/task-manager",
+      "liveUrl": "https://your-task-manager-demo.com",
+      "status": "Completed",
+      "duration": "2 months"
+    },
+    {
+      "id": 3,
+      "name": "Weather Dashboard",
+      "description": "Interactive weather application with location-based forecasts",
+      "technologies": ["React", "OpenWeather API", "Chart.js"],
+      "features": [
+        "Current weather conditions",
+        "5-day weather forecast",
+        "Interactive weather maps",
+        "Location-based search",
+        "Weather data visualization"
+      ],
+      "githubUrl": "https://github.com/yourusername/weather-dashboard",
+      "liveUrl": "https://your-weather-demo.com",
+      "status": "In Progress",
+      "duration": "1 month"
+    }
+  ],
+  "skills": {
+    "frontend": {
+      "category": "Frontend",
+      "skills": ["React", "HTML5", "CSS3", "JavaScript", "TypeScript", "Bootstrap", "Material-UI"],
+      "color": "primary"
+    },
+    "backend": {
+      "category": "Backend",
+      "skills": ["Node.js", "Express", "RESTful APIs", "GraphQL", "Python", "Django"],
+      "color": "success"
+    },
+    "database": {
+      "category": "Database",
+      "skills": ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Redis"],
+      "color": "info"
+    },
+    "tools": {
+      "category": "Tools & DevOps",
+      "skills": ["Git", "Docker", "AWS", "VS Code", "Postman", "Jest", "Webpack"],
+      "color": "warning"
+    },
+    "soft": {
+      "category": "Soft Skills",
+      "skills": ["Team Collaboration", "Problem Solving", "Communication", "Leadership", "Agile/Scrum"],
+      "color": "secondary"
+    }
+  },
+  "downloadLinks": {
+    "pdfResume": "/documents/resume.pdf",
+    "portfolioPdf": "/documents/portfolio.pdf"
+  }
+}

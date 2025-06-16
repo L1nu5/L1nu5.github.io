@@ -1,0 +1,77 @@
+{
+  "personal": {
+    "name": "Your Name",
+    "title": "Software Developer & Music Enthusiast",
+    "tagline": "Building digital experiences and collecting musical memories",
+    "email": "your.email@example.com",
+    "location": "Your City, Country",
+    "website": "https://yourportfolio.com",
+    "avatar": "/images/profile/avatar.jpg"
+  },
+  "theme": {
+    "primaryColor": "#007bff",
+    "secondaryColor": "#28a745",
+    "lightBlue": "#e3f2fd",
+    "lightGreen": "#e8f5e8",
+    "backgroundColor": "#f8f9fa",
+    "gradientStart": "#007bff",
+    "gradientEnd": "#28a745"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "key": "home",
+        "title": "🏠 Home",
+        "component": "Home"
+      },
+      {
+        "key": "socials",
+        "title": "🌐 Socials",
+        "component": "Socials"
+      },
+      {
+        "key": "education",
+        "title": "🎓 Education",
+        "component": "Education"
+      },
+      {
+        "key": "resume",
+        "title": "📄 Resume",
+        "component": "Resume"
+      },
+      {
+        "key": "musicEvents",
+        "title": "🎵 Music Events",
+        "component": "MusicEvents"
+      }
+    ]
+  },
+  "home": {
+    "welcomeTitle": "Welcome to My Portfolio",
+    "welcomeSubtitle": "Discover my journey, skills, and achievements",
+    "introText": "Welcome to my personal portfolio website. Here you'll find information about my education, professional experience, social connections, and upcoming music events.",
+    "aboutMe": {
+      "title": "About Me",
+      "description": "I'm passionate about technology, music, and continuous learning. This portfolio showcases my professional journey and personal interests."
+    },
+    "quickNavigation": {
+      "title": "Quick Navigation",
+      "description": "Use the tabs above to explore different sections of my portfolio, from my educational background to upcoming music events."
+    },
+    "callToAction": {
+      "resumeButton": "View Resume",
+      "connectButton": "Connect With Me"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 My Portfolio",
+    "builtWith": "Built with React & Bootstrap",
+    "designNote": "Designed with passion"
+  },
+  "seo": {
+    "title": "Your Name - Software Developer Portfolio",
+    "description": "Full-stack developer passionate about creating innovative web applications and attending amazing music events.",
+    "keywords": ["software developer", "react", "javascript", "portfolio", "music", "concerts"],
+    "author": "Your Name"
+  }
+}

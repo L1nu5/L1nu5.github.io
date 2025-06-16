@@ -1,0 +1,169 @@
+{
+  "upcomingEvents": [
+    {
+      "id": 1,
+      "title": "Summer Music Festival 2025",
+      "date": "2025-07-15",
+      "time": "6:00 PM",
+      "venue": "Central Park Amphitheater",
+      "location": "City Center",
+      "type": "Festival",
+      "status": "Planning to Attend",
+      "description": "Multi-day festival featuring indie rock, electronic, and folk artists",
+      "artists": ["Arctic Monkeys", "Tame Impala", "Bon Iver"],
+      "ticketUrl": "#",
+      "website": "#"
+    },
+    {
+      "id": 2,
+      "title": "Jazz at Lincoln Center",
+      "date": "2025-08-20",
+      "time": "8:00 PM",
+      "venue": "Rose Theater",
+      "location": "Lincoln Center",
+      "type": "Concert",
+      "status": "Tickets Purchased",
+      "description": "Evening of contemporary jazz with renowned musicians",
+      "artists": ["Wynton Marsalis", "Esperanza Spalding"],
+      "ticketUrl": "#",
+      "website": "#"
+    },
+    {
+      "id": 3,
+      "title": "Local Indie Showcase",
+      "date": "2025-09-10",
+      "time": "7:30 PM",
+      "venue": "The Mercury Lounge",
+      "location": "Lower East Side",
+      "type": "Showcase",
+      "status": "Interested",
+      "description": "Featuring up-and-coming local indie bands",
+      "artists": ["The Midnight Echoes", "Velvet Horizon"],
+      "ticketUrl": "#",
+      "website": "#"
+    }
+  ],
+  "pastEvents": [
+    {
+      "id": 1,
+      "title": "Radiohead - OK Computer Anniversary Tour",
+      "date": "2024-12-15",
+      "venue": "Madison Square Garden",
+      "location": "New York, NY",
+      "type": "Concert",
+      "rating": 5,
+      "review": "Absolutely incredible performance. The visuals were stunning and they played the entire OK Computer album. Thom Yorke's voice was haunting and the light show was mesmerizing.",
+      "highlights": ["Paranoid Android", "Karma Police", "No Surprises", "Exit Music"],
+      "images": [
+        "/images/concerts/radiohead-stage-lights.jpg",
+        "/images/concerts/radiohead-crowd-shot.jpg",
+        "/images/concerts/radiohead-band-performance.jpg",
+        "/images/concerts/radiohead-venue-exterior.jpg"
+      ],
+      "ticketPrice": "$150",
+      "duration": "2.5 hours"
+    },
+    {
+      "id": 2,
+      "title": "Coachella 2024",
+      "date": "2024-04-14",
+      "venue": "Empire Polo Club",
+      "location": "Indio, CA",
+      "type": "Festival",
+      "rating": 4,
+      "review": "Great lineup and atmosphere. Highlights were Tyler, The Creator and Doja Cat. The desert setting was perfect and the art installations were amazing.",
+      "highlights": ["Tyler, The Creator", "Doja Cat", "Bad Bunny", "Billie Eilish"],
+      "images": [
+        "/images/festivals/coachella-festival-crowd.jpg",
+        "/images/festivals/coachella-main-stage.jpg",
+        "/images/festivals/coachella-art-installation.jpg",
+        "/images/festivals/coachella-sunset-performance.jpg"
+      ],
+      "ticketPrice": "$400",
+      "duration": "3 days"
+    },
+    {
+      "id": 3,
+      "title": "The Strokes - New Abnormal Tour",
+      "date": "2024-09-22",
+      "venue": "Barclays Center",
+      "location": "Brooklyn, NY",
+      "type": "Concert",
+      "rating": 5,
+      "review": "Julian Casablancas was in top form. They played a perfect mix of old classics and new material. The energy was electric throughout the entire show.",
+      "highlights": ["Last Nite", "Reptilia", "The Adults Are Talking", "Hard to Explain"],
+      "images": [
+        "/images/concerts/strokes-stage.jpg",
+        "/images/concerts/strokes-julian-singing.jpg",
+        "/images/concerts/strokes-guitar-solo.jpg",
+        "/images/concerts/strokes-crowd-energy.jpg"
+      ],
+      "ticketPrice": "$85",
+      "duration": "2 hours"
+    },
+    {
+      "id": 4,
+      "title": "Local Coffee Shop Sessions",
+      "date": "2024-11-08",
+      "venue": "Blue Note Cafe",
+      "location": "Greenwich Village, NY",
+      "type": "Acoustic",
+      "rating": 4,
+      "review": "Intimate setting with amazing acoustic performances by local artists. Discovered some incredible new talent in a cozy atmosphere.",
+      "highlights": ["Sarah Chen", "The Acoustic Collective", "Mike Rodriguez", "Open Mic"],
+      "images": [
+        "/images/acoustic/coffee-acoustic-guitar.jpg",
+        "/images/acoustic/coffee-shop-stage.jpg",
+        "/images/acoustic/coffee-intimate-crowd.jpg",
+        "/images/acoustic/coffee-artist-closeup.jpg"
+      ],
+      "ticketPrice": "$15",
+      "duration": "3 hours"
+    },
+    {
+      "id": 5,
+      "title": "Lollapalooza 2024",
+      "date": "2024-08-03",
+      "venue": "Grant Park",
+      "location": "Chicago, IL",
+      "type": "Festival",
+      "rating": 4,
+      "review": "Four days of incredible music in Chicago. The diversity of genres was impressive and the food was amazing. Muddy but worth every minute!",
+      "highlights": ["Foo Fighters", "Lana Del Rey", "Childish Gambino", "The 1975"],
+      "images": [
+        "/images/festivals/lolla-main-stage.jpg",
+        "/images/festivals/lolla-chicago-skyline.jpg",
+        "/images/festivals/lolla-festival-food.jpg",
+        "/images/festivals/lolla-muddy-boots.jpg"
+      ],
+      "ticketPrice": "$350",
+      "duration": "4 days"
+    },
+    {
+      "id": 6,
+      "title": "Arctic Monkeys - The Car Tour",
+      "date": "2024-06-18",
+      "venue": "Forest Hills Stadium",
+      "location": "Queens, NY",
+      "type": "Concert",
+      "rating": 5,
+      "review": "Alex Turner's voice has aged like fine wine. The new material sounded incredible live and they still know how to rock the classics.",
+      "highlights": ["Do I Wanna Know?", "R U Mine?", "Body Paint", "I Bet You Look Good on the Dancefloor"],
+      "images": [
+        "/images/concerts/arctic-alex-turner.jpg",
+        "/images/concerts/arctic-forest-hills.jpg",
+        "/images/concerts/arctic-guitar-riff.jpg",
+        "/images/concerts/arctic-stadium-lights.jpg"
+      ],
+      "ticketPrice": "$120",
+      "duration": "2.5 hours"
+    }
+  ],
+  "settings": {
+    "favoriteGenre": "Indie Rock",
+    "totalConcertsAttended": 25,
+    "totalFestivalsAttended": 8,
+    "bestConcertEver": "Radiohead",
+    "musicPassionDescription": "Music has always been a huge part of my life. I love discovering new artists, attending live concerts, and experiencing the energy of music festivals. From intimate acoustic sessions to massive stadium shows, each event offers a unique experience that connects people through the power of music."
+  }
+}

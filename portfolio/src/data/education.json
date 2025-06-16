@@ -1,0 +1,98 @@
+{
+  "philosophy": "I believe in combining theoretical knowledge with practical application. My educational journey reflects a commitment to both formal learning and continuous skill development in the ever-evolving tech landscape.",
+  "institutions": [
+    {
+      "id": 1,
+      "institution": "University of Example",
+      "degree": "Bachelor of Science in Computer Science",
+      "period": "2020 - 2024",
+      "gpa": "3.8/4.0",
+      "status": "Completed",
+      "highlights": [
+        "Data Structures & Algorithms",
+        "Software Engineering",
+        "Database Systems",
+        "Web Development"
+      ],
+      "location": "Example City, State",
+      "achievements": [
+        "Dean's List for 6 semesters",
+        "Computer Science Honor Society",
+        "Senior Capstone Project: E-commerce Platform"
+      ]
+    },
+    {
+      "id": 2,
+      "institution": "Online Learning Platform",
+      "degree": "Full Stack Development Certification",
+      "period": "2023 - 2024",
+      "gpa": "Certificate",
+      "status": "Completed",
+      "highlights": [
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "RESTful APIs"
+      ],
+      "location": "Online",
+      "achievements": [
+        "Completed 40+ coding projects",
+        "Built 5 full-stack applications",
+        "Mentored 10+ junior developers"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": 90,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "React",
+      "level": 85,
+      "category": "Frontend Frameworks"
+    },
+    {
+      "name": "Python",
+      "level": 80,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "SQL",
+      "level": 75,
+      "category": "Databases"
+    },
+    {
+      "name": "Git/GitHub",
+      "level": 85,
+      "category": "Tools"
+    },
+    {
+      "name": "Node.js",
+      "level": 80,
+      "category": "Backend Technologies"
+    },
+    {
+      "name": "MongoDB",
+      "level": 75,
+      "category": "Databases"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer",
+      "issuer": "Amazon Web Services",
+      "date": "2024-03-15",
+      "credentialId": "AWS-DEV-2024-001",
+      "validUntil": "2027-03-15"
+    },
+    {
+      "name": "React Developer Certification",
+      "issuer": "Meta",
+      "date": "2023-11-20",
+      "credentialId": "META-REACT-2023-456",
+      "validUntil": "2026-11-20"
+    }
+  ]
+}
