@@ -5,7 +5,6 @@ import dataService from '../services/dataService';
 
 function Resume() {
   // Get data from the data service
-  const resumeData = dataService.getResume();
   const workExperience = dataService.getWorkExperience();
   const projects = dataService.getProjects();
   const skills = dataService.getResumeSkills();
