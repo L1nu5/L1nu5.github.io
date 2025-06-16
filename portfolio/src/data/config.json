@@ -1,12 +1,15 @@
 {
   "personal": {
-    "name": "Your Name",
-    "title": "Software Developer & Music Enthusiast",
-    "tagline": "Building digital experiences and collecting musical memories",
-    "email": "your.email@example.com",
-    "location": "Your City, Country",
-    "website": "https://yourportfolio.com",
-    "avatar": "/images/profile/avatar.jpg"
+    "name": "Abhishek Deore",
+    "title": "Software Engineer & Chess Enthusiast",
+    "tagline": "Building innovative software solutions and exploring new technologies",
+    "email": "abhishek.deore@example.com",
+    "location": "Natick, MA",
+    "website": "https://l1nu5.github.io",
+    "avatar": "/images/profile/profile-img.jpg",
+    "birthday": "29 March 1995",
+    "age": "29",
+    "degree": "Masters"
   },
   "theme": {
     "primaryColor": "#007bff",
@@ -49,14 +52,14 @@
   "home": {
     "welcomeTitle": "Welcome to My Portfolio",
     "welcomeSubtitle": "Discover my journey, skills, and achievements",
-    "introText": "Welcome to my personal portfolio website. Here you'll find information about my education, professional experience, social connections, and upcoming music events.",
+    "introText": "Welcome to my personal portfolio website. Here you'll find information about my education, professional experience, social connections, and music events I've attended.",
     "aboutMe": {
       "title": "About Me",
-      "description": "I'm passionate about technology, music, and continuous learning. This portfolio showcases my professional journey and personal interests."
+      "description": "I'm a highly motivated and passionate Software Engineer with expertise in Game Development using C++. I'm also a strong Chess player and enjoy writing blogs on Gaming."
     },
     "quickNavigation": {
       "title": "Quick Navigation",
-      "description": "Use the tabs above to explore different sections of my portfolio, from my educational background to upcoming music events."
+      "description": "Use the tabs above to explore different sections of my portfolio, from my educational background at ASU to my professional experience at companies like Ubisoft and MathWorks."
     },
     "callToAction": {
       "resumeButton": "View Resume",
@@ -64,14 +67,14 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 My Portfolio",
+    "copyright": "© 2025 Abhishek Deore",
     "builtWith": "Built with React & Bootstrap",
     "designNote": "Designed with passion"
   },
   "seo": {
-    "title": "Your Name - Software Developer Portfolio",
-    "description": "Full-stack developer passionate about creating innovative web applications and attending amazing music events.",
-    "keywords": ["software developer", "react", "javascript", "portfolio", "music", "concerts"],
-    "author": "Your Name"
+    "title": "Abhishek Deore - Software Engineer Portfolio",
+    "description": "Software Engineer with expertise in Game Development, C++, and AI systems. Experience at Ubisoft, MathWorks, and DataChat. Masters from Arizona State University.",
+    "keywords": ["software engineer", "game development", "c++", "ubisoft", "mathworks", "chess", "ai systems", "portfolio"],
+    "author": "Abhishek Deore"
   }
 }

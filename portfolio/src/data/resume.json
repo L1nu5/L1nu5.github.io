@@ -1,54 +1,135 @@
 {
   "personalInfo": {
-    "name": "Your Name",
-    "title": "Software Developer",
-    "email": "your.email@example.com",
+    "name": "Abhishek Deore",
+    "title": "Software Engineer",
+    "email": "abhishek.deore@example.com",
     "phone": "+1 (555) 123-4567",
-    "location": "Your City, Country",
-    "website": "https://yourwebsite.com",
-    "linkedin": "https://linkedin.com/in/yourprofile",
-    "github": "https://github.com/yourusername"
+    "location": "Natick, MA",
+    "website": "https://l1nu5.github.io",
+    "linkedin": "https://linkedin.com/in/abhishekdeore",
+    "github": "https://github.com/L1nu5"
   },
-  "summary": "Passionate software developer with experience in full-stack web development. Skilled in modern JavaScript frameworks and committed to writing clean, efficient code. Strong problem-solving abilities and excellent team collaboration skills.",
+  "summary": "Computer Software Engineering graduate student at Arizona State University with 3.5 years of professional experience. Highly motivated and passionate Software Engineer with expertise in Game Development using C++. Quick learner when it comes to exploring new tools, technologies and programming languages.",
   "workExperience": [
     {
       "id": 1,
-      "company": "Tech Solutions Inc.",
-      "position": "Software Developer",
-      "period": "2024 - Present",
+      "company": "MathWorks Inc.",
+      "position": "Software Engineer",
+      "period": "Feb 2023 - Present",
       "type": "Full-time",
-      "location": "New York, NY",
+      "location": "Natick, MA",
       "responsibilities": [
-        "Developed responsive web applications using React and Node.js",
-        "Collaborated with cross-functional teams to deliver high-quality software",
-        "Implemented RESTful APIs and database optimization",
-        "Mentored junior developers and conducted code reviews"
+        "Engaged in the migration of backend API framework for Simulink.ConfigSet",
+        "Added unit tests for the frontend and backend for Simulink in C++ and MATLAB",
+        "Worked on improving Simulink configuration management systems",
+        "Collaborated with cross-functional teams on MATLAB/Simulink products"
       ],
-      "technologies": ["React", "Node.js", "MongoDB", "AWS", "Git"],
+      "technologies": ["C++", "JavaScript", "MATLAB", "Simulink"],
       "achievements": [
-        "Improved application performance by 40%",
-        "Led migration to microservices architecture",
-        "Reduced bug reports by 60% through comprehensive testing"
+        "Successfully migrated critical backend API framework",
+        "Improved test coverage for Simulink components",
+        "Enhanced configuration management reliability"
       ]
     },
     {
       "id": 2,
-      "company": "StartupXYZ",
-      "position": "Frontend Developer Intern",
-      "period": "2023 - 2024",
+      "company": "DataChat Inc.",
+      "position": "Software Engineering Intern",
+      "period": "May 2022 - Dec 2022",
       "type": "Internship",
-      "location": "San Francisco, CA",
+      "location": "Madison, WI",
       "responsibilities": [
-        "Built user interfaces using React and Bootstrap",
-        "Participated in agile development processes",
-        "Contributed to code reviews and testing procedures",
-        "Collaborated with design team on UI/UX improvements"
+        "Rolled out major visualization beta features into production to improve chart loading performance",
+        "Re-engineered the error boundary system in React.js to specify chart loading error details",
+        "Worked on maintenance of existing features in backend",
+        "Added unit tests and snapshot tests in Cypress and Jest for chart visualization features"
       ],
-      "technologies": ["React", "JavaScript", "CSS3", "Bootstrap", "Figma"],
+      "technologies": ["Python", "JavaScript", "React", "Go", "PostgreSQL", "Cypress", "Jest"],
       "achievements": [
-        "Delivered 15+ feature implementations",
-        "Improved user engagement by 25%",
-        "Received outstanding intern evaluation"
+        "Improved chart loading performance significantly",
+        "Enhanced error handling and user experience",
+        "Increased test coverage for visualization features"
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Agiliad Technologies Pvt Ltd",
+      "position": "Senior Software Engineer",
+      "period": "July 2020 - Dec 2020",
+      "type": "Full-time",
+      "location": "Pune, IN",
+      "responsibilities": [
+        "Worked on High Speed CT scanning - Aviation security product, installed at 1200+ Airport security checkpoints",
+        "Participated in backend tasks in Java and MySQL including data migration and database partitioning",
+        "Created a logging module in C++ to track UI actions and participated in code reviews",
+        "Enhanced existing UI system to match modern UI design trends"
+      ],
+      "technologies": ["C++", "Qt", "QML", "Linux", "Java", "MySQL"],
+      "achievements": [
+        "Deployed at 1200+ airport security checkpoints worldwide",
+        "Decreased database load by 5% through optimization",
+        "Received strong positive client feedback for UI improvements"
+      ]
+    },
+    {
+      "id": 4,
+      "company": "Ubisoft Pune",
+      "position": "Programmer",
+      "period": "April 2019 - June 2020",
+      "type": "Full-time",
+      "location": "Pune, IN",
+      "responsibilities": [
+        "Worked as AI Programmer implementing, debugging and maintaining AI systems for Prince of Persia",
+        "Built Fight States History System for combat move tracking and achievements",
+        "Developed Restriction Zones for NPC AI patrol and combat systems",
+        "Implemented Fight Achievements Tracking system for player statistics",
+        "Created AI fight targeting algorithm using Round robin distribution"
+      ],
+      "technologies": ["C++", "Anvil Game Engine", "AI Systems", "Combat Systems"],
+      "achievements": [
+        "Built multiple core AI systems for AAA game development",
+        "Contributed to Prince of Persia game development",
+        "Implemented innovative AI targeting algorithms"
+      ]
+    },
+    {
+      "id": 5,
+      "company": "Ubisoft Pune",
+      "position": "Programmer",
+      "period": "May 2018 - May 2019",
+      "type": "Full-time",
+      "location": "Pune, IN",
+      "responsibilities": [
+        "Ported Starlink: Battle for Atlas to PC platform using Snowdrop engine",
+        "Developed keyboard and mouse input system for Windows platforms",
+        "Ported UI screens to work with Keyboard/Mouse inputs without interfering with Controller inputs",
+        "Implemented UI scaling for different screen resolutions and dynamic button prompt system"
+      ],
+      "technologies": ["C++", "Snowdrop Engine", "UI Systems", "Input Systems"],
+      "achievements": [
+        "Successfully ported console game to PC platform",
+        "Led and trained newly hired junior programmers",
+        "Collaborated effectively with Ubisoft Toronto as lead studio"
+      ]
+    },
+    {
+      "id": 6,
+      "company": "Ubisoft Pune",
+      "position": "Junior Programmer",
+      "period": "July 2017 - April 2018",
+      "type": "Full-time",
+      "location": "Pune, IN",
+      "responsibilities": [
+        "Collaborated with Ubisoft Montreal, Toronto & Kiev for Far Cry 5 development",
+        "Developed Arcade Player Progression UI system showing XP, levels, and rewards",
+        "Ported Level/Map Scripting Tool from PC to consoles with UI menus and controller inputs",
+        "Worked on Map Editor tool and Arcade Player Progression system"
+      ],
+      "technologies": ["C++", "Dunia Engine", "UI Systems", "Game Tools"],
+      "achievements": [
+        "Awarded Best Performer for August 2018 quarter",
+        "Provided design changes accepted by Ubisoft Montreal designers",
+        "Successfully delivered features for AAA game Far Cry 5"
       ]
     }
   ],

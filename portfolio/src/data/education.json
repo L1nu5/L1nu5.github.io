@@ -1,82 +1,216 @@
 {
-  "philosophy": "I believe in combining theoretical knowledge with practical application. My educational journey reflects a commitment to both formal learning and continuous skill development in the ever-evolving tech landscape.",
+  "philosophy": "I'm a highly motivated and passionate Software Engineer. As a professional, I have mainly worked on Game Development in C++. However, I'm pretty comfortable and a quick learner when it comes to exploring new tools, technologies and programming languages. I like to play Chess, and I'm a strong Chess player.",
   "institutions": [
     {
       "id": 1,
-      "institution": "University of Example",
-      "degree": "Bachelor of Science in Computer Science",
-      "period": "2020 - 2024",
-      "gpa": "3.8/4.0",
+      "institution": "Arizona State University",
+      "degree": "Masters in Computer Software Engineering",
+      "period": "Jan 2021 - Dec 2022",
+      "gpa": "4.0/4.0",
       "status": "Completed",
       "highlights": [
-        "Data Structures & Algorithms",
-        "Software Engineering",
-        "Database Systems",
-        "Web Development"
+        "Advanced Data Structures and Algorithms",
+        "Software Design",
+        "Foundations of Software Engineering",
+        "Distributed Database Systems",
+        "Internet Enabled Embedded Devices"
       ],
-      "location": "Example City, State",
+      "location": "Tempe, AZ",
       "achievements": [
-        "Dean's List for 6 semesters",
-        "Computer Science Honor Society",
-        "Senior Capstone Project: E-commerce Platform"
+        "Graduate Services Assistant for Web Application Programming and Security",
+        "Software Engineer on Biodesign project (Python/C++/Qt)",
+        "Perfect GPA of 4.0/4.0"
       ]
     },
     {
       "id": 2,
-      "institution": "Online Learning Platform",
-      "degree": "Full Stack Development Certification",
-      "period": "2023 - 2024",
-      "gpa": "Certificate",
+      "institution": "Pune Institute of Computer Technology",
+      "degree": "Bachelor of Engineering, Computer Engineering",
+      "period": "2014 - 2017",
+      "gpa": "9.30/10",
       "status": "Completed",
       "highlights": [
-        "React.js",
-        "Node.js",
-        "MongoDB",
-        "RESTful APIs"
+        "Data Structures",
+        "Principles of Modern Compiler Design",
+        "Computer Networks",
+        "Cloud Computing",
+        "Operating Systems and Design",
+        "High Performance Computing",
+        "Object Oriented Programming",
+        "Design and Analysis of Algorithms"
       ],
-      "location": "Online",
+      "location": "Pune, India",
       "achievements": [
-        "Completed 40+ coding projects",
-        "Built 5 full-stack applications",
-        "Mentored 10+ junior developers"
+        "Graduated with First Class and Distinction",
+        "GPA: 9.30/10"
       ]
     }
   ],
   "skills": [
     {
-      "name": "JavaScript",
+      "name": "C++",
       "level": 90,
       "category": "Programming Languages"
     },
     {
-      "name": "React",
-      "level": 85,
-      "category": "Frontend Frameworks"
+      "name": "Java",
+      "level": 75,
+      "category": "Programming Languages"
     },
     {
       "name": "Python",
+      "level": 70,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "PHP",
+      "level": 60,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "JavaScript",
+      "level": 75,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "MATLAB",
       "level": 80,
       "category": "Programming Languages"
     },
     {
-      "name": "SQL",
-      "level": 75,
-      "category": "Databases"
-    },
-    {
-      "name": "Git/GitHub",
-      "level": 85,
-      "category": "Tools"
-    },
-    {
-      "name": "Node.js",
-      "level": 80,
-      "category": "Backend Technologies"
-    },
-    {
       "name": "MongoDB",
+      "level": 90,
+      "category": "Databases"
+    },
+    {
+      "name": "SQL",
+      "level": 70,
+      "category": "Databases"
+    },
+    {
+      "name": "PostgreSQL",
       "level": 75,
       "category": "Databases"
+    },
+    {
+      "name": "Debugging",
+      "level": 90,
+      "category": "Primary Skills"
+    },
+    {
+      "name": "Data Structures & Algorithms",
+      "level": 90,
+      "category": "Primary Skills"
+    },
+    {
+      "name": "Software Design",
+      "level": 85,
+      "category": "Primary Skills"
+    },
+    {
+      "name": "Game Development",
+      "level": 85,
+      "category": "Primary Skills"
+    },
+    {
+      "name": "Web Development",
+      "level": 80,
+      "category": "Primary Skills"
+    },
+    {
+      "name": "Visual Studio",
+      "level": 85,
+      "category": "Tools & IDEs"
+    },
+    {
+      "name": "Visual Studio Code",
+      "level": 85,
+      "category": "Tools & IDEs"
+    },
+    {
+      "name": "Qt Creator",
+      "level": 80,
+      "category": "Tools & IDEs"
+    },
+    {
+      "name": "Eclipse",
+      "level": 75,
+      "category": "Tools & IDEs"
+    },
+    {
+      "name": "Git",
+      "level": 85,
+      "category": "Tools & IDEs"
+    },
+    {
+      "name": "Perforce",
+      "level": 80,
+      "category": "Tools & IDEs"
+    },
+    {
+      "name": "Docker",
+      "level": 75,
+      "category": "Build Tools"
+    },
+    {
+      "name": "Maven",
+      "level": 70,
+      "category": "Build Tools"
+    },
+    {
+      "name": "Gradle",
+      "level": 70,
+      "category": "Build Tools"
+    },
+    {
+      "name": ".NET 5",
+      "level": 75,
+      "category": "Frameworks"
+    },
+    {
+      "name": "Qt",
+      "level": 85,
+      "category": "Frameworks"
+    },
+    {
+      "name": "React",
+      "level": 75,
+      "category": "Frameworks"
+    },
+    {
+      "name": "Bootstrap",
+      "level": 80,
+      "category": "Frameworks"
+    },
+    {
+      "name": "Django",
+      "level": 70,
+      "category": "Frameworks"
+    },
+    {
+      "name": "AngularJS",
+      "level": 70,
+      "category": "Frameworks"
+    },
+    {
+      "name": "Anvil Engine (Ubisoft)",
+      "level": 85,
+      "category": "Game Development"
+    },
+    {
+      "name": "Snowdrop Engine (Ubisoft)",
+      "level": 80,
+      "category": "Game Development"
+    },
+    {
+      "name": "Dunia Engine (Ubisoft)",
+      "level": 80,
+      "category": "Game Development"
+    },
+    {
+      "name": "Unity Editor",
+      "level": 75,
+      "category": "Game Development"
     }
   ],
   "certifications": [

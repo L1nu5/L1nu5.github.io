@@ -1,45 +1,16 @@
 import React from 'react';
 import { Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
+import dataService from '../services/dataService';
 
 function Resume() {
-  const workExperience = [
-    {
-      company: 'Tech Solutions Inc.',
-      position: 'Software Developer',
-      period: '2024 - Present',
-      type: 'Full-time',
-      responsibilities: [
-        'Developed responsive web applications using React and Node.js',
-        'Collaborated with cross-functional teams to deliver high-quality software',
-        'Implemented RESTful APIs and database optimization'
-      ]
-    },
-    {
-      company: 'StartupXYZ',
-      position: 'Frontend Developer Intern',
-      period: '2023 - 2024',
-      type: 'Internship',
-      responsibilities: [
-        'Built user interfaces using React and Bootstrap',
-        'Participated in agile development processes',
-        'Contributed to code reviews and testing procedures'
-      ]
-    }
-  ];
-
-  const projects = [
-    {
-      name: 'E-commerce Platform',
-      tech: ['React', 'Node.js', 'MongoDB'],
-      description: 'Full-stack web application with user authentication and payment integration'
-    },
-    {
-      name: 'Task Management App',
-      tech: ['React', 'Firebase'],
-      description: 'Real-time collaborative task management tool with drag-and-drop functionality'
-    }
-  ];
+  // Get data from the data service
+  const resumeData = dataService.getResume();
+  const workExperience = dataService.getWorkExperience();
+  const projects = dataService.getProjects();
+  const skills = dataService.getResumeSkills();
+  const summary = dataService.getSummary();
+  const downloadLinks = dataService.getDownloadLinks();
 
   return (
     <PageTemplate 
@@ -53,14 +24,12 @@ function Resume() {
             <Card.Body className="text-center">
               <Card.Title className="text-primary">Professional Summary</Card.Title>
               <Card.Text>
-                Passionate software developer with experience in full-stack web development. 
-                Skilled in modern JavaScript frameworks and committed to writing clean, 
-                efficient code. Strong problem-solving abilities and excellent team collaboration skills.
+                {summary}
               </Card.Text>
-              <Button variant="primary" size="lg" className="me-3">
+              <Button variant="primary" size="lg" className="me-3" href={downloadLinks.pdfResume}>
                 Download PDF Resume
               </Button>
-              <Button variant="outline-success" size="lg">
+              <Button variant="outline-success" size="lg" href={downloadLinks.portfolioPdf}>
                 View Online Version
               </Button>
             </Card.Body>
@@ -76,11 +45,12 @@ function Resume() {
             </Card.Header>
             <Card.Body>
               {workExperience.map((job, index) => (
-                <div key={index} className={index > 0 ? 'mt-4 pt-4 border-top' : ''}>
+                <div key={job.id} className={index > 0 ? 'mt-4 pt-4 border-top' : ''}>
                   <div className="d-flex justify-content-between align-items-start mb-2">
                     <div>
                       <h5 className="mb-1">{job.position}</h5>
                       <h6 className="text-primary">{job.company}</h6>
+                      <small className="text-muted">{job.location}</small>
                     </div>
                     <div className="text-end">
                       <Badge bg="secondary" className="mb-1">{job.period}</Badge>
@@ -90,11 +60,33 @@ function Resume() {
                       </Badge>
                     </div>
                   </div>
-                  <ul>
+                  <ul className="mb-2">
                     {job.responsibilities.map((resp, idx) => (
                       <li key={idx}>{resp}</li>
                     ))}
                   </ul>
+                  {job.technologies && (
+                    <div className="mb-2">
+                      <strong>Technologies:</strong>
+                      <div className="mt-1">
+                        {job.technologies.map((tech, idx) => (
+                          <Badge key={idx} bg="outline-secondary" className="me-1 mb-1">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  {job.achievements && (
+                    <div>
+                      <strong>Key Achievements:</strong>
+                      <ul className="mt-1">
+                        {job.achievements.map((achievement, idx) => (
+                          <li key={idx}>{achievement}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               ))}
             </Card.Body>
@@ -108,26 +100,12 @@ function Resume() {
             </Card.Header>
             <Card.Body>
               <ListGroup variant="flush">
-                <ListGroup.Item className="px-0">
-                  <Badge bg="primary" className="me-2">Frontend</Badge>
-                  React, HTML5, CSS3, JavaScript
-                </ListGroup.Item>
-                <ListGroup.Item className="px-0">
-                  <Badge bg="success" className="me-2">Backend</Badge>
-                  Node.js, Express, RESTful APIs
-                </ListGroup.Item>
-                <ListGroup.Item className="px-0">
-                  <Badge bg="info" className="me-2">Database</Badge>
-                  MongoDB, MySQL, Firebase
-                </ListGroup.Item>
-                <ListGroup.Item className="px-0">
-                  <Badge bg="warning" className="me-2">Tools</Badge>
-                  Git, VS Code, Postman
-                </ListGroup.Item>
-                <ListGroup.Item className="px-0">
-                  <Badge bg="secondary" className="me-2">Soft Skills</Badge>
-                  Team Collaboration, Problem Solving
-                </ListGroup.Item>
+                {Object.values(skills).map((skillCategory, index) => (
+                  <ListGroup.Item key={index} className="px-0">
+                    <Badge bg={skillCategory.color} className="me-2">{skillCategory.category}</Badge>
+                    {skillCategory.skills.join(', ')}
+                  </ListGroup.Item>
+                ))}
               </ListGroup>
             </Card.Body>
           </Card>
@@ -142,18 +120,40 @@ function Resume() {
             </Card.Header>
             <Card.Body>
               <Row className="g-3">
-                {projects.map((project, index) => (
-                  <Col md={6} key={index}>
+                {projects.map((project) => (
+                  <Col md={6} key={project.id}>
                     <Card className="h-100 border-0" style={{ backgroundColor: '#ffffff' }}>
                       <Card.Body>
                         <Card.Title className="h5 text-primary">{project.name}</Card.Title>
                         <Card.Text>{project.description}</Card.Text>
-                        <div>
-                          {project.tech.map((tech, idx) => (
+                        <div className="mb-2">
+                          {project.technologies.map((tech, idx) => (
                             <Badge key={idx} bg="outline-secondary" className="me-1 mb-1">
                               {tech}
                             </Badge>
                           ))}
+                        </div>
+                        {project.features && (
+                          <div className="mb-2">
+                            <strong>Features:</strong>
+                            <ul className="mt-1">
+                              {project.features.slice(0, 3).map((feature, idx) => (
+                                <li key={idx} className="small">{feature}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                        <div className="d-flex gap-2">
+                          {project.githubUrl && (
+                            <Button variant="outline-primary" size="sm" href={project.githubUrl} target="_blank">
+                              GitHub
+                            </Button>
+                          )}
+                          {project.liveUrl && (
+                            <Button variant="outline-success" size="sm" href={project.liveUrl} target="_blank">
+                              Live Demo
+                            </Button>
+                          )}
                         </div>
                       </Card.Body>
                     </Card>
