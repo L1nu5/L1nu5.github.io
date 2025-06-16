@@ -10,8 +10,6 @@ function MusicEvents() {
   // Get data from the data service
   const upcomingEvents = dataService.getUpcomingEvents();
   const pastEvents = dataService.getPastEvents();
-  const musicSettings = dataService.getMusicSettings();
-  const musicStats = dataService.getMusicStats();
 
   // Sort past events by date (most recent first) for timeline
   const timelineEvents = [...pastEvents].sort((a, b) => new Date(b.date) - new Date(a.date));

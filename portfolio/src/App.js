@@ -10,7 +10,6 @@ import dataService from './services/dataService';
 
 function App() {
   // Get data from the data service
-  const config = dataService.getConfig();
   const personalInfo = dataService.getPersonalInfo();
   const theme = dataService.getTheme();
   const navigation = dataService.getNavigation();

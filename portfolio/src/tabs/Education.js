@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Card, ProgressBar, Badge, ListGroup } from 'react-bootstrap';
+import { Row, Col, Card, ProgressBar, Badge } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import dataService from '../services/dataService';
 
@@ -7,7 +7,6 @@ function Education() {
   // Get data from the data service
   const education = dataService.getEducation();
   const institutions = dataService.getInstitutions();
-  const skills = dataService.getSkills();
   const certifications = dataService.getCertifications();
   const skillsByCategory = dataService.getSkillsByCategory();
 

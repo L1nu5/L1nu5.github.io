@@ -5,7 +5,6 @@ import dataService from '../services/dataService';
 
 function Socials() {
   // Get data from the data service
-  const socials = dataService.getSocials();
   const socialLinks = dataService.getSocialLinks();
   const contactInfo = dataService.getContactInfo();
   const socialStats = dataService.getSocialStats();

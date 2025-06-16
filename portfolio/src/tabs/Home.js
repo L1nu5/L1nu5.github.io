@@ -6,7 +6,6 @@ import dataService from '../services/dataService';
 function Home() {
   // Get data from the data service
   const homeContent = dataService.getHomeContent();
-  const personalInfo = dataService.getPersonalInfo();
 
   return (
     <PageTemplate 
