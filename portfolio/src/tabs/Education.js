@@ -30,7 +30,7 @@ function Education() {
       </Row>
 
       <Row className="g-4 mb-4">
-        <Col lg={8}>
+        <Col lg={certifications.length > 0 ? 8 : 12}>
           <Card className="h-100">
             <Card.Header style={{ backgroundColor: '#e3f2fd', border: 'none' }}>
               <h4 className="text-primary mb-0">Educational Background</h4>
@@ -56,7 +56,7 @@ function Education() {
                       <strong>Key Coursework:</strong>
                       <div className="mt-1">
                         {institution.highlights.map((highlight, idx) => (
-                          <Badge key={idx} bg="outline-secondary" className="me-1 mb-1">
+                          <Badge key={idx} bg="info" className="me-1 mb-1">
                             {highlight}
                           </Badge>
                         ))}
@@ -80,25 +80,27 @@ function Education() {
           </Card>
         </Col>
 
-        <Col lg={4}>
-          <Card className="h-100">
-            <Card.Header style={{ backgroundColor: '#f8f9fa', border: 'none' }}>
-              <h4 className="text-success mb-0">Certifications</h4>
-            </Card.Header>
-            <Card.Body>
-              {certifications.map((cert, index) => (
-                <div key={index} className={index > 0 ? 'mt-3 pt-3 border-top' : ''}>
-                  <h6 className="mb-1">{cert.name}</h6>
-                  <small className="text-muted d-block">{cert.issuer}</small>
-                  <small className="text-muted d-block">Issued: {new Date(cert.date).toLocaleDateString()}</small>
-                  {cert.validUntil && (
-                    <small className="text-muted d-block">Valid until: {new Date(cert.validUntil).toLocaleDateString()}</small>
-                  )}
-                </div>
-              ))}
-            </Card.Body>
-          </Card>
-        </Col>
+        {certifications.length > 0 && (
+          <Col lg={4}>
+            <Card className="h-100">
+              <Card.Header style={{ backgroundColor: '#f8f9fa', border: 'none' }}>
+                <h4 className="text-success mb-0">Certifications</h4>
+              </Card.Header>
+              <Card.Body>
+                {certifications.map((cert, index) => (
+                  <div key={index} className={index > 0 ? 'mt-3 pt-3 border-top' : ''}>
+                    <h6 className="mb-1">{cert.name}</h6>
+                    <small className="text-muted d-block">{cert.issuer}</small>
+                    <small className="text-muted d-block">Issued: {new Date(cert.date).toLocaleDateString()}</small>
+                    {cert.validUntil && (
+                      <small className="text-muted d-block">Valid until: {new Date(cert.validUntil).toLocaleDateString()}</small>
+                    )}
+                  </div>
+                ))}
+              </Card.Body>
+            </Card>
+          </Col>
+        )}
       </Row>
 
       <Row>
