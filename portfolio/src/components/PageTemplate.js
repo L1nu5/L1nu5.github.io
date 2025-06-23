@@ -1,20 +1,29 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { useTheme } from '../contexts/ThemeContext';
 
 function PageTemplate({ title, children, headerContent, footerContent }) {
+  const { theme } = useTheme();
+
   return (
     <Container fluid className="page-template">
       {/* Main Content Section with integrated header */}
       <Row className="justify-content-center">
         <Col lg={10} xl={8}>
-          <Card className="shadow-sm border-0">
+          <Card className="shadow-sm border-0" style={{
+            backgroundColor: theme.cardBackground,
+            borderColor: theme.borderColor
+          }}>
             {/* Integrated Header - like a table header */}
-            <Card.Header className="bg-light border-bottom" style={{ 
-              borderLeft: '4px solid #007bff'
+            <Card.Header className="border-bottom" style={{ 
+              borderLeft: `4px solid ${theme.primaryColor}`,
+              backgroundColor: theme.lightBlue,
+              borderBottomColor: theme.borderColor,
+              color: theme.textColor
             }}>
-              <h4 className="mb-1 text-primary">{title}</h4>
+              <h4 className="mb-1" style={{ color: theme.primaryColor }}>{title}</h4>
               {headerContent && (
-                <small className="text-muted">
+                <small style={{ color: theme.mutedText }}>
                   {headerContent}
                 </small>
               )}
@@ -22,7 +31,8 @@ function PageTemplate({ title, children, headerContent, footerContent }) {
             
             {/* Content Body */}
             <Card.Body className="p-4" style={{ 
-              backgroundColor: '#f8f9fa'
+              backgroundColor: theme.backgroundColor,
+              color: theme.textColor
             }}>
               {children}
             </Card.Body>
@@ -35,11 +45,12 @@ function PageTemplate({ title, children, headerContent, footerContent }) {
         <Row className="mt-4">
           <Col>
             <Card className="border-0" style={{ 
-              backgroundColor: '#e8f5e8',
-              borderTop: '3px solid #28a745'
+              backgroundColor: theme.lightGreen,
+              borderTop: `3px solid ${theme.secondaryColor}`,
+              borderColor: theme.borderColor
             }}>
               <Card.Body className="text-center py-3">
-                <small className="text-muted">
+                <small style={{ color: theme.mutedText }}>
                   {footerContent}
                 </small>
               </Card.Body>

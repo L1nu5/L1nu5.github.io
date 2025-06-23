@@ -2,10 +2,12 @@ import React from 'react';
 import { Row, Col, Alert, Button } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import dataService from '../services/dataService';
+import { useTheme } from '../contexts/ThemeContext';
 
 function Home() {
   // Get data from the data service
   const homeContent = dataService.getHomeContent();
+  const { theme } = useTheme();
 
   return (
     <PageTemplate 
@@ -25,17 +27,25 @@ function Home() {
       
       <Row className="g-4">
         <Col md={6}>
-          <div className="p-3 border rounded" style={{ backgroundColor: '#e3f2fd' }}>
-            <h4 className="text-primary">{homeContent.aboutMe.title}</h4>
-            <p>
+          <div className="p-3 border rounded" style={{ 
+            backgroundColor: theme.lightBlue,
+            borderColor: theme.borderColor,
+            color: theme.textColor
+          }}>
+            <h4 style={{ color: theme.primaryColor }}>{homeContent.aboutMe.title}</h4>
+            <p style={{ color: theme.textColor }}>
               {homeContent.aboutMe.description}
             </p>
           </div>
         </Col>
         <Col md={6}>
-          <div className="p-3 border rounded" style={{ backgroundColor: '#e8f5e8' }}>
-            <h4 className="text-success">{homeContent.quickNavigation.title}</h4>
-            <p>
+          <div className="p-3 border rounded" style={{ 
+            backgroundColor: theme.lightGreen,
+            borderColor: theme.borderColor,
+            color: theme.textColor
+          }}>
+            <h4 style={{ color: theme.secondaryColor }}>{homeContent.quickNavigation.title}</h4>
+            <p style={{ color: theme.textColor }}>
               {homeContent.quickNavigation.description}
             </p>
           </div>

@@ -1,7 +1,10 @@
 import React from 'react';
 import { Card, Badge, Row, Col } from 'react-bootstrap';
+import { useTheme } from '../contexts/ThemeContext';
 
 function MusicTimeline({ events }) {
+  const { theme } = useTheme();
+
   const getTypeIcon = (type) => {
     switch (type) {
       case 'Festival': return '🎪';
@@ -15,8 +18,8 @@ function MusicTimeline({ events }) {
   const getTypeColor = (type) => {
     switch (type) {
       case 'Festival': return '#17a2b8';
-      case 'Concert': return '#007bff';
-      case 'Acoustic': return '#28a745';
+      case 'Concert': return theme.primaryColor;
+      case 'Acoustic': return theme.secondaryColor;
       case 'Showcase': return '#6c757d';
       default: return '#6f42c1';
     }
@@ -37,12 +40,12 @@ function MusicTimeline({ events }) {
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               borderRadius: '8px',
-              border: '2px solid #e9ecef',
+              border: `2px solid ${theme.borderColor}`,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundColor: '#f8f9fa',
-              color: '#6c757d',
+              backgroundColor: theme.cardBackground,
+              color: theme.mutedText,
               fontSize: '12px',
               textAlign: 'center'
             }}
@@ -85,7 +88,7 @@ function MusicTimeline({ events }) {
                     style={{
                       width: '2px',
                       height: '100px',
-                      backgroundColor: '#e9ecef',
+                      backgroundColor: theme.borderColor,
                       margin: '0 auto',
                       position: 'relative',
                       top: '10px'
@@ -97,14 +100,25 @@ function MusicTimeline({ events }) {
 
             {/* Event Content */}
             <Col xs={10} md={11}>
-              <Card className="shadow-sm mb-3" style={{ border: `2px solid ${getTypeColor(event.type)}20` }}>
-                <Card.Header style={{ backgroundColor: `${getTypeColor(event.type)}10`, border: 'none' }}>
+              <Card 
+                className="shadow-sm mb-3" 
+                style={{ 
+                  border: `2px solid ${getTypeColor(event.type)}20`,
+                  backgroundColor: theme.cardBackground,
+                  color: theme.textColor
+                }}
+              >
+                <Card.Header style={{ 
+                  backgroundColor: `${getTypeColor(event.type)}10`, 
+                  border: 'none',
+                  color: theme.textColor
+                }}>
                   <div className="d-flex justify-content-between align-items-center">
                     <div>
                       <h5 className="mb-1" style={{ color: getTypeColor(event.type) }}>
                         {event.title}
                       </h5>
-                      <small className="text-muted">
+                      <small style={{ color: theme.mutedText }}>
                         📍 {event.venue} • {new Date(event.date).toLocaleDateString('en-US', { 
                           year: 'numeric', 
                           month: 'long', 
@@ -118,7 +132,7 @@ function MusicTimeline({ events }) {
                   </div>
                 </Card.Header>
 
-                <Card.Body>
+                <Card.Body style={{ color: theme.textColor }}>
                   {/* Image Collage */}
                   <ImageCollage 
                     images={event.images || []} 
@@ -130,13 +144,19 @@ function MusicTimeline({ events }) {
                     <span className="text-warning me-2" style={{ fontSize: '18px' }}>
                       {renderStars(event.rating)}
                     </span>
-                    <small className="text-muted">({event.rating}/5)</small>
+                    <small style={{ color: theme.mutedText }}>({event.rating}/5)</small>
                   </div>
 
                   {/* Review */}
-                  <Card className="border-0 mb-3" style={{ backgroundColor: '#f8f9fa' }}>
+                  <Card 
+                    className="border-0 mb-3" 
+                    style={{ 
+                      backgroundColor: theme.lightBlue,
+                      color: theme.textColor
+                    }}
+                  >
                     <Card.Body className="p-3">
-                      <Card.Text className="mb-0 fst-italic">
+                      <Card.Text className="mb-0 fst-italic" style={{ color: theme.textColor }}>
                         "{event.review}"
                       </Card.Text>
                     </Card.Body>
@@ -145,7 +165,7 @@ function MusicTimeline({ events }) {
                   {/* Artists/Highlights */}
                   {event.highlights && (
                     <div>
-                      <strong className="text-success">Highlights:</strong>
+                      <strong style={{ color: theme.secondaryColor }}>Highlights:</strong>
                       <div className="mt-2">
                         {event.highlights.map((highlight, idx) => (
                           <Badge key={idx} bg="outline-secondary" className="me-1 mb-1">

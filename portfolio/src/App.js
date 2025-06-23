@@ -7,13 +7,17 @@ import Education from './tabs/Education';
 import Resume from './tabs/Resume';
 import MusicEvents from './tabs/MusicEvents';
 import dataService from './services/dataService';
+import { ThemeProvider, useTheme } from './contexts/ThemeContext';
+import ThemeToggle from './components/ThemeToggle';
 
-function App() {
+function AppContent() {
   // Get data from the data service
   const personalInfo = dataService.getPersonalInfo();
-  const theme = dataService.getTheme();
   const navigation = dataService.getNavigation();
   const footerContent = dataService.getFooterContent();
+  
+  // Use theme from context
+  const { theme } = useTheme();
 
   return (
     <div style={{ backgroundColor: theme.backgroundColor, minHeight: '100vh' }}>
@@ -50,7 +54,10 @@ function App() {
         </Card>
 
         {/* Navigation Tabs */}
-        <Card className="shadow-sm border-0">
+        <Card className="shadow-sm border-0" style={{ 
+          backgroundColor: theme.cardBackground,
+          color: theme.textColor
+        }}>
           <Card.Body className="p-0">
             <Tabs 
               defaultActiveKey="home" 
@@ -91,7 +98,18 @@ function App() {
           </Card.Body>
         </Card>
       </Container>
+      
+      {/* Theme Toggle Button */}
+      <ThemeToggle />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 }
 
