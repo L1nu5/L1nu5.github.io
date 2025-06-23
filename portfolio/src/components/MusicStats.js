@@ -104,12 +104,12 @@ const MusicStats = () => {
         <div className="top-section">
           <h3>Top Artists</h3>
           <div className="top-list">
-            {musicData.artists.items.slice(0, 5).map((artist, index) => (
-              <div key={artist.id || index} className="top-item">
+            {musicData.artists.items.slice(0, 5).map((artistItem, index) => (
+              <div key={artistItem.artist?.id || index} className="top-item">
                 <span className="rank">#{index + 1}</span>
                 <div className="item-info">
-                  <span className="item-name">{artist.name}</span>
-                  <span className="item-plays">{artist.playcount} plays</span>
+                  <span className="item-name">{artistItem.artist?.name || 'Unknown Artist'}</span>
+                  <span className="item-plays">{artistItem.streams} streams</span>
                 </div>
               </div>
             ))}
@@ -122,13 +122,13 @@ const MusicStats = () => {
         <div className="top-section">
           <h3>Top Tracks</h3>
           <div className="top-list">
-            {musicData.tracks.items.slice(0, 5).map((track, index) => (
-              <div key={track.id || index} className="top-item">
+            {musicData.tracks.items.slice(0, 5).map((trackItem, index) => (
+              <div key={trackItem.track?.id || index} className="top-item">
                 <span className="rank">#{index + 1}</span>
                 <div className="item-info">
-                  <span className="item-name">{track.name}</span>
-                  <span className="item-artist">by {track.artists?.[0]?.name || 'Unknown Artist'}</span>
-                  <span className="item-plays">{track.playcount} plays</span>
+                  <span className="item-name">{trackItem.track?.name || 'Unknown Track'}</span>
+                  <span className="item-artist">by {trackItem.track?.artists?.[0]?.name || 'Unknown Artist'}</span>
+                  <span className="item-plays">{trackItem.streams} streams</span>
                 </div>
               </div>
             ))}
@@ -142,8 +142,8 @@ const MusicStats = () => {
           <h3>Top Genres</h3>
           <div className="genre-tags">
             {musicData.genres.items.slice(0, 8).map((genre, index) => (
-              <span key={genre.genre || index} className="genre-tag">
-                {genre.genre} ({genre.playcount})
+              <span key={genre.genre?.tag || index} className="genre-tag">
+                {genre.genre?.tag || 'Unknown'} ({genre.streams})
               </span>
             ))}
           </div>
@@ -155,13 +155,13 @@ const MusicStats = () => {
         <div className="top-section">
           <h3>Top Albums</h3>
           <div className="top-list">
-            {musicData.albums.items.slice(0, 3).map((album, index) => (
-              <div key={album.id || index} className="top-item">
+            {musicData.albums.items.slice(0, 3).map((albumItem, index) => (
+              <div key={albumItem.album?.id || index} className="top-item">
                 <span className="rank">#{index + 1}</span>
                 <div className="item-info">
-                  <span className="item-name">{album.name}</span>
-                  <span className="item-artist">by {album.artists?.[0]?.name || 'Unknown Artist'}</span>
-                  <span className="item-plays">{album.playcount} plays</span>
+                  <span className="item-name">{albumItem.album?.name || 'Unknown Album'}</span>
+                  <span className="item-artist">by {albumItem.album?.artists?.[0]?.name || 'Unknown Artist'}</span>
+                  <span className="item-plays">{albumItem.streams} streams</span>
                 </div>
               </div>
             ))}
