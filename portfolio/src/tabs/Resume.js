@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import dataService from '../services/dataService';
+import { useTheme } from '../contexts/ThemeContext';
 
 function Resume() {
   // Get data from the data service
@@ -10,6 +11,7 @@ function Resume() {
   const skills = dataService.getResumeSkills();
   const summary = dataService.getSummary();
   const downloadLinks = dataService.getDownloadLinks();
+  const { theme } = useTheme();
 
   return (
     <PageTemplate 
@@ -19,10 +21,14 @@ function Resume() {
     >
       <Row className="mb-4">
         <Col>
-          <Card style={{ backgroundColor: '#e3f2fd', border: '1px solid #007bff' }}>
+          <Card style={{ 
+            backgroundColor: theme.lightBlue, 
+            border: `1px solid ${theme.primaryColor}`,
+            color: theme.textColor
+          }}>
             <Card.Body className="text-center">
-              <Card.Title className="text-primary">Professional Summary</Card.Title>
-              <Card.Text>
+              <Card.Title style={{ color: theme.primaryColor }}>Professional Summary</Card.Title>
+              <Card.Text style={{ color: theme.textColor }}>
                 {summary}
               </Card.Text>
               <Button variant="primary" size="lg" className="me-3" href={downloadLinks.pdfResume}>
@@ -38,18 +44,26 @@ function Resume() {
 
       <Row className="g-4 mb-4">
         <Col lg={8}>
-          <Card className="h-100">
-            <Card.Header style={{ backgroundColor: '#e8f5e8', border: 'none' }}>
-              <h4 className="text-success mb-0">Work Experience</h4>
+          <Card className="h-100" style={{
+            backgroundColor: theme.cardBackground,
+            borderColor: theme.borderColor,
+            color: theme.textColor
+          }}>
+            <Card.Header style={{ 
+              backgroundColor: theme.lightGreen, 
+              border: 'none',
+              color: theme.textColor
+            }}>
+              <h4 style={{ color: theme.secondaryColor }} className="mb-0">Work Experience</h4>
             </Card.Header>
-            <Card.Body>
+            <Card.Body style={{ color: theme.textColor }}>
               {workExperience.map((job, index) => (
                 <div key={job.id} className={index > 0 ? 'mt-4 pt-4 border-top' : ''}>
                   <div className="d-flex justify-content-between align-items-start mb-2">
                     <div>
-                      <h5 className="mb-1">{job.position}</h5>
-                      <h6 className="text-primary">{job.company}</h6>
-                      <small className="text-muted">{job.location}</small>
+                      <h5 className="mb-1" style={{ color: theme.textColor }}>{job.position}</h5>
+                      <h6 style={{ color: theme.primaryColor }}>{job.company}</h6>
+                      <small style={{ color: theme.mutedText }}>{job.location}</small>
                     </div>
                     <div className="text-end">
                       <Badge bg="secondary" className="mb-1">{job.period}</Badge>
@@ -59,14 +73,14 @@ function Resume() {
                       </Badge>
                     </div>
                   </div>
-                  <ul className="mb-2">
+                  <ul className="mb-2" style={{ color: theme.textColor }}>
                     {job.responsibilities.map((resp, idx) => (
                       <li key={idx}>{resp}</li>
                     ))}
                   </ul>
                   {job.technologies && (
                     <div className="mb-2">
-                      <strong>Technologies:</strong>
+                      <strong style={{ color: theme.textColor }}>Technologies:</strong>
                       <div className="mt-1">
                         {job.technologies.map((tech, idx) => (
                           <Badge key={idx} bg="outline-secondary" className="me-1 mb-1">
@@ -78,8 +92,8 @@ function Resume() {
                   )}
                   {job.achievements && (
                     <div>
-                      <strong>Key Achievements:</strong>
-                      <ul className="mt-1">
+                      <strong style={{ color: theme.textColor }}>Key Achievements:</strong>
+                      <ul className="mt-1" style={{ color: theme.textColor }}>
                         {job.achievements.map((achievement, idx) => (
                           <li key={idx}>{achievement}</li>
                         ))}
@@ -93,16 +107,28 @@ function Resume() {
         </Col>
 
         <Col lg={4}>
-          <Card className="h-100">
-            <Card.Header style={{ backgroundColor: '#f8f9fa', border: 'none' }}>
-              <h4 className="text-primary mb-0">Key Skills</h4>
+          <Card className="h-100" style={{
+            backgroundColor: theme.cardBackground,
+            borderColor: theme.borderColor,
+            color: theme.textColor
+          }}>
+            <Card.Header style={{ 
+              backgroundColor: theme.lightBlue, 
+              border: 'none',
+              color: theme.textColor
+            }}>
+              <h4 style={{ color: theme.primaryColor }} className="mb-0">Key Skills</h4>
             </Card.Header>
-            <Card.Body>
+            <Card.Body style={{ color: theme.textColor }}>
               <ListGroup variant="flush">
                 {Object.values(skills).map((skillCategory, index) => (
-                  <ListGroup.Item key={index} className="px-0">
+                  <ListGroup.Item key={index} className="px-0" style={{
+                    backgroundColor: 'transparent',
+                    borderColor: theme.borderColor,
+                    color: theme.textColor
+                  }}>
                     <Badge bg={skillCategory.color} className="me-2">{skillCategory.category}</Badge>
-                    {skillCategory.skills.join(', ')}
+                    <span style={{ color: theme.textColor }}>{skillCategory.skills.join(', ')}</span>
                   </ListGroup.Item>
                 ))}
               </ListGroup>
@@ -113,18 +139,29 @@ function Resume() {
 
       <Row>
         <Col>
-          <Card style={{ backgroundColor: '#f8f9fa', border: '1px solid #28a745' }}>
-            <Card.Header style={{ backgroundColor: '#e8f5e8', border: 'none' }}>
-              <h4 className="text-success mb-0">Featured Projects</h4>
+          <Card style={{ 
+            backgroundColor: theme.cardBackground, 
+            border: `1px solid ${theme.secondaryColor}`,
+            color: theme.textColor
+          }}>
+            <Card.Header style={{ 
+              backgroundColor: theme.lightGreen, 
+              border: 'none',
+              color: theme.textColor
+            }}>
+              <h4 style={{ color: theme.secondaryColor }} className="mb-0">Featured Projects</h4>
             </Card.Header>
-            <Card.Body>
+            <Card.Body style={{ color: theme.textColor }}>
               <Row className="g-3">
                 {projects.map((project) => (
                   <Col md={6} key={project.id}>
-                    <Card className="h-100 border-0" style={{ backgroundColor: '#ffffff' }}>
+                    <Card className="h-100 border-0" style={{ 
+                      backgroundColor: theme.backgroundColor,
+                      color: theme.textColor
+                    }}>
                       <Card.Body>
-                        <Card.Title className="h5 text-primary">{project.name}</Card.Title>
-                        <Card.Text>{project.description}</Card.Text>
+                        <Card.Title className="h5" style={{ color: theme.primaryColor }}>{project.name}</Card.Title>
+                        <Card.Text style={{ color: theme.textColor }}>{project.description}</Card.Text>
                         <div className="mb-2">
                           {project.technologies.map((tech, idx) => (
                             <Badge key={idx} bg="outline-secondary" className="me-1 mb-1">
@@ -134,8 +171,8 @@ function Resume() {
                         </div>
                         {project.features && (
                           <div className="mb-2">
-                            <strong>Features:</strong>
-                            <ul className="mt-1">
+                            <strong style={{ color: theme.textColor }}>Features:</strong>
+                            <ul className="mt-1" style={{ color: theme.textColor }}>
                               {project.features.slice(0, 3).map((feature, idx) => (
                                 <li key={idx} className="small">{feature}</li>
                               ))}

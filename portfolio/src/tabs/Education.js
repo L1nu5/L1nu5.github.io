@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Card, ProgressBar, Badge } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import dataService from '../services/dataService';
+import { useTheme } from '../contexts/ThemeContext';
 
 function Education() {
   // Get data from the data service
@@ -9,6 +10,7 @@ function Education() {
   const institutions = dataService.getInstitutions();
   const certifications = dataService.getCertifications();
   const skillsByCategory = dataService.getSkillsByCategory();
+  const { theme } = useTheme();
 
   return (
     <PageTemplate 
@@ -18,10 +20,14 @@ function Education() {
     >
       <Row className="mb-4">
         <Col>
-          <Card style={{ backgroundColor: '#e8f5e8', border: '1px solid #28a745' }}>
+          <Card style={{ 
+            backgroundColor: theme.lightGreen, 
+            border: `1px solid ${theme.secondaryColor}`,
+            color: theme.textColor
+          }}>
             <Card.Body>
-              <Card.Title className="text-success">Educational Philosophy</Card.Title>
-              <Card.Text>
+              <Card.Title style={{ color: theme.secondaryColor }}>Educational Philosophy</Card.Title>
+              <Card.Text style={{ color: theme.textColor }}>
                 {education.philosophy}
               </Card.Text>
             </Card.Body>
@@ -31,18 +37,26 @@ function Education() {
 
       <Row className="g-4 mb-4">
         <Col lg={certifications.length > 0 ? 8 : 12}>
-          <Card className="h-100">
-            <Card.Header style={{ backgroundColor: '#e3f2fd', border: 'none' }}>
-              <h4 className="text-primary mb-0">Educational Background</h4>
+          <Card className="h-100" style={{
+            backgroundColor: theme.cardBackground,
+            borderColor: theme.borderColor,
+            color: theme.textColor
+          }}>
+            <Card.Header style={{ 
+              backgroundColor: theme.lightBlue, 
+              border: 'none',
+              color: theme.textColor
+            }}>
+              <h4 style={{ color: theme.primaryColor }} className="mb-0">Educational Background</h4>
             </Card.Header>
-            <Card.Body>
+            <Card.Body style={{ color: theme.textColor }}>
               {institutions.map((institution, index) => (
                 <div key={institution.id} className={index > 0 ? 'mt-4 pt-4 border-top' : ''}>
                   <div className="d-flex justify-content-between align-items-start mb-2">
                     <div>
-                      <h5 className="mb-1">{institution.degree}</h5>
-                      <h6 className="text-primary">{institution.institution}</h6>
-                      <small className="text-muted">{institution.location}</small>
+                      <h5 className="mb-1" style={{ color: theme.textColor }}>{institution.degree}</h5>
+                      <h6 style={{ color: theme.primaryColor }}>{institution.institution}</h6>
+                      <small style={{ color: theme.mutedText }}>{institution.location}</small>
                     </div>
                     <div className="text-end">
                       <Badge bg="secondary" className="mb-1">{institution.period}</Badge>
@@ -53,7 +67,7 @@ function Education() {
                   
                   {institution.highlights && (
                     <div className="mb-2">
-                      <strong>Key Coursework:</strong>
+                      <strong style={{ color: theme.textColor }}>Key Coursework:</strong>
                       <div className="mt-1">
                         {institution.highlights.map((highlight, idx) => (
                           <Badge key={idx} bg="info" className="me-1 mb-1">
@@ -66,8 +80,8 @@ function Education() {
                   
                   {institution.achievements && (
                     <div>
-                      <strong>Achievements:</strong>
-                      <ul className="mt-1">
+                      <strong style={{ color: theme.textColor }}>Achievements:</strong>
+                      <ul className="mt-1" style={{ color: theme.textColor }}>
                         {institution.achievements.map((achievement, idx) => (
                           <li key={idx}>{achievement}</li>
                         ))}
@@ -82,18 +96,26 @@ function Education() {
 
         {certifications.length > 0 && (
           <Col lg={4}>
-            <Card className="h-100">
-              <Card.Header style={{ backgroundColor: '#f8f9fa', border: 'none' }}>
-                <h4 className="text-success mb-0">Certifications</h4>
+            <Card className="h-100" style={{
+              backgroundColor: theme.cardBackground,
+              borderColor: theme.borderColor,
+              color: theme.textColor
+            }}>
+              <Card.Header style={{ 
+                backgroundColor: theme.lightGreen, 
+                border: 'none',
+                color: theme.textColor
+              }}>
+                <h4 style={{ color: theme.secondaryColor }} className="mb-0">Certifications</h4>
               </Card.Header>
-              <Card.Body>
+              <Card.Body style={{ color: theme.textColor }}>
                 {certifications.map((cert, index) => (
                   <div key={index} className={index > 0 ? 'mt-3 pt-3 border-top' : ''}>
-                    <h6 className="mb-1">{cert.name}</h6>
-                    <small className="text-muted d-block">{cert.issuer}</small>
-                    <small className="text-muted d-block">Issued: {new Date(cert.date).toLocaleDateString()}</small>
+                    <h6 className="mb-1" style={{ color: theme.textColor }}>{cert.name}</h6>
+                    <small style={{ color: theme.mutedText }} className="d-block">{cert.issuer}</small>
+                    <small style={{ color: theme.mutedText }} className="d-block">Issued: {new Date(cert.date).toLocaleDateString()}</small>
                     {cert.validUntil && (
-                      <small className="text-muted d-block">Valid until: {new Date(cert.validUntil).toLocaleDateString()}</small>
+                      <small style={{ color: theme.mutedText }} className="d-block">Valid until: {new Date(cert.validUntil).toLocaleDateString()}</small>
                     )}
                   </div>
                 ))}
@@ -105,24 +127,39 @@ function Education() {
 
       <Row>
         <Col>
-          <Card style={{ backgroundColor: '#f8f9fa', border: '1px solid #007bff' }}>
-            <Card.Header style={{ backgroundColor: '#e3f2fd', border: 'none' }}>
-              <h4 className="text-primary mb-0">Technical Skills</h4>
+          <Card style={{ 
+            backgroundColor: theme.cardBackground, 
+            border: `1px solid ${theme.primaryColor}`,
+            color: theme.textColor
+          }}>
+            <Card.Header style={{ 
+              backgroundColor: theme.lightBlue, 
+              border: 'none',
+              color: theme.textColor
+            }}>
+              <h4 style={{ color: theme.primaryColor }} className="mb-0">Technical Skills</h4>
             </Card.Header>
-            <Card.Body>
+            <Card.Body style={{ color: theme.textColor }}>
               <Row className="g-4">
                 {Object.entries(skillsByCategory).map(([category, categorySkills]) => (
                   <Col md={6} lg={4} key={category}>
-                    <Card className="h-100 border-0" style={{ backgroundColor: '#ffffff' }}>
-                      <Card.Header className="bg-light border-0">
-                        <h6 className="mb-0 text-primary">{category}</h6>
+                    <Card className="h-100 border-0" style={{ 
+                      backgroundColor: theme.backgroundColor,
+                      color: theme.textColor
+                    }}>
+                      <Card.Header style={{
+                        backgroundColor: theme.lightBlue,
+                        border: 'none',
+                        color: theme.textColor
+                      }}>
+                        <h6 className="mb-0" style={{ color: theme.primaryColor }}>{category}</h6>
                       </Card.Header>
-                      <Card.Body className="p-3">
+                      <Card.Body className="p-3" style={{ color: theme.textColor }}>
                         {categorySkills.map((skill, idx) => (
                           <div key={idx} className="mb-3">
                             <div className="d-flex justify-content-between align-items-center mb-1">
-                              <span className="small fw-bold">{skill.name}</span>
-                              <span className="small text-muted">{skill.level}%</span>
+                              <span className="small fw-bold" style={{ color: theme.textColor }}>{skill.name}</span>
+                              <span className="small" style={{ color: theme.mutedText }}>{skill.level}%</span>
                             </div>
                             <ProgressBar 
                               now={skill.level} 

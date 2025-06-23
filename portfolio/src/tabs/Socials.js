@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import dataService from '../services/dataService';
+import { useTheme } from '../contexts/ThemeContext';
 
 function Socials() {
   // Get data from the data service
@@ -10,6 +11,7 @@ function Socials() {
   const socialStats = dataService.getSocialStats();
   const featuredContent = dataService.getFeaturedContent();
   const description = dataService.getSocialsDescription();
+  const { theme } = useTheme();
 
   return (
     <PageTemplate 
@@ -19,10 +21,14 @@ function Socials() {
     >
       <Row className="mb-4">
         <Col>
-          <Card style={{ backgroundColor: '#e3f2fd', border: '1px solid #007bff' }}>
+          <Card style={{ 
+            backgroundColor: theme.lightBlue, 
+            border: `1px solid ${theme.primaryColor}`,
+            color: theme.textColor
+          }}>
             <Card.Body>
-              <Card.Title className="text-primary">Let's Connect!</Card.Title>
-              <Card.Text>
+              <Card.Title style={{ color: theme.primaryColor }}>Let's Connect!</Card.Title>
+              <Card.Text style={{ color: theme.textColor }}>
                 {description}
               </Card.Text>
             </Card.Body>
@@ -32,21 +38,32 @@ function Socials() {
 
       <Row className="g-4 mb-4">
         <Col lg={8}>
-          <Card className="h-100">
-            <Card.Header style={{ backgroundColor: '#e8f5e8', border: 'none' }}>
-              <h4 className="text-success mb-0">Social Media Platforms</h4>
+          <Card className="h-100" style={{
+            backgroundColor: theme.cardBackground,
+            borderColor: theme.borderColor,
+            color: theme.textColor
+          }}>
+            <Card.Header style={{ 
+              backgroundColor: theme.lightGreen, 
+              border: 'none',
+              color: theme.textColor
+            }}>
+              <h4 style={{ color: theme.secondaryColor }} className="mb-0">Social Media Platforms</h4>
             </Card.Header>
-            <Card.Body>
+            <Card.Body style={{ color: theme.textColor }}>
               <Row className="g-3">
                 {socialLinks.map((social) => (
                   <Col md={6} key={social.id}>
-                    <Card className="h-100 border-0" style={{ backgroundColor: '#f8f9fa' }}>
+                    <Card className="h-100 border-0" style={{ 
+                      backgroundColor: theme.backgroundColor,
+                      color: theme.textColor
+                    }}>
                       <Card.Body className="text-center">
                         <div className="mb-3" style={{ fontSize: '2rem' }}>
                           {social.icon}
                         </div>
-                        <Card.Title className="h5">{social.platform}</Card.Title>
-                        <Card.Text className="text-muted small">
+                        <Card.Title className="h5" style={{ color: theme.textColor }}>{social.platform}</Card.Title>
+                        <Card.Text className="small" style={{ color: theme.mutedText }}>
                           {social.description}
                         </Card.Text>
                         <div className="mb-2">
@@ -77,25 +94,49 @@ function Socials() {
         </Col>
 
         <Col lg={4}>
-          <Card className="h-100">
-            <Card.Header style={{ backgroundColor: '#f8f9fa', border: 'none' }}>
-              <h4 className="text-primary mb-0">Contact Information</h4>
+          <Card className="h-100" style={{
+            backgroundColor: theme.cardBackground,
+            borderColor: theme.borderColor,
+            color: theme.textColor
+          }}>
+            <Card.Header style={{ 
+              backgroundColor: theme.lightBlue, 
+              border: 'none',
+              color: theme.textColor
+            }}>
+              <h4 style={{ color: theme.primaryColor }} className="mb-0">Contact Information</h4>
             </Card.Header>
-            <Card.Body>
+            <Card.Body style={{ color: theme.textColor }}>
               <ListGroup variant="flush">
-                <ListGroup.Item className="px-0 d-flex justify-content-between">
+                <ListGroup.Item className="px-0 d-flex justify-content-between" style={{
+                  backgroundColor: 'transparent',
+                  borderColor: theme.borderColor,
+                  color: theme.textColor
+                }}>
                   <span><strong>Email:</strong></span>
                   <span className="text-end">{contactInfo.email}</span>
                 </ListGroup.Item>
-                <ListGroup.Item className="px-0 d-flex justify-content-between">
+                <ListGroup.Item className="px-0 d-flex justify-content-between" style={{
+                  backgroundColor: 'transparent',
+                  borderColor: theme.borderColor,
+                  color: theme.textColor
+                }}>
                   <span><strong>Location:</strong></span>
                   <span className="text-end">{contactInfo.location}</span>
                 </ListGroup.Item>
-                <ListGroup.Item className="px-0 d-flex justify-content-between">
+                <ListGroup.Item className="px-0 d-flex justify-content-between" style={{
+                  backgroundColor: 'transparent',
+                  borderColor: theme.borderColor,
+                  color: theme.textColor
+                }}>
                   <span><strong>Timezone:</strong></span>
                   <span className="text-end">{contactInfo.timezone}</span>
                 </ListGroup.Item>
-                <ListGroup.Item className="px-0">
+                <ListGroup.Item className="px-0" style={{
+                  backgroundColor: 'transparent',
+                  borderColor: theme.borderColor,
+                  color: theme.textColor
+                }}>
                   <strong>Available for:</strong>
                   <div className="mt-1">
                     <Badge bg="success" className="me-1 mb-1">Networking</Badge>
@@ -104,13 +145,21 @@ function Socials() {
                     <Badge bg="secondary" className="me-1 mb-1">Gaming Discussions</Badge>
                   </div>
                 </ListGroup.Item>
-                <ListGroup.Item className="px-0">
+                <ListGroup.Item className="px-0" style={{
+                  backgroundColor: 'transparent',
+                  borderColor: theme.borderColor,
+                  color: theme.textColor
+                }}>
                   <strong>Preferred Contact:</strong>
-                  <div className="mt-1 text-muted">{contactInfo.preferredContact}</div>
+                  <div className="mt-1" style={{ color: theme.mutedText }}>{contactInfo.preferredContact}</div>
                 </ListGroup.Item>
-                <ListGroup.Item className="px-0">
+                <ListGroup.Item className="px-0" style={{
+                  backgroundColor: 'transparent',
+                  borderColor: theme.borderColor,
+                  color: theme.textColor
+                }}>
                   <strong>Response Time:</strong>
-                  <div className="mt-1 text-muted">{contactInfo.responseTime}</div>
+                  <div className="mt-1" style={{ color: theme.mutedText }}>{contactInfo.responseTime}</div>
                 </ListGroup.Item>
               </ListGroup>
             </Card.Body>
@@ -120,36 +169,44 @@ function Socials() {
 
       <Row className="g-4">
         <Col lg={6}>
-          <Card style={{ backgroundColor: '#f8f9fa', border: '1px solid #28a745' }}>
-            <Card.Header style={{ backgroundColor: '#e8f5e8', border: 'none' }}>
-              <h4 className="text-success mb-0">Social Media Stats</h4>
+          <Card style={{ 
+            backgroundColor: theme.cardBackground, 
+            border: `1px solid ${theme.secondaryColor}`,
+            color: theme.textColor
+          }}>
+            <Card.Header style={{ 
+              backgroundColor: theme.lightGreen, 
+              border: 'none',
+              color: theme.textColor
+            }}>
+              <h4 style={{ color: theme.secondaryColor }} className="mb-0">Social Media Stats</h4>
             </Card.Header>
-            <Card.Body>
+            <Card.Body style={{ color: theme.textColor }}>
               <Row className="text-center">
                 <Col>
                   <div className="mb-2">
-                    <h3 className="text-primary mb-0">{socialStats.totalFollowers}</h3>
-                    <small className="text-muted">Total Followers</small>
+                    <h3 style={{ color: theme.primaryColor }} className="mb-0">{socialStats.totalFollowers}</h3>
+                    <small style={{ color: theme.mutedText }}>Total Followers</small>
                   </div>
                 </Col>
                 <Col>
                   <div className="mb-2">
-                    <h3 className="text-success mb-0">{socialStats.platformsActive}</h3>
-                    <small className="text-muted">Active Platforms</small>
+                    <h3 style={{ color: theme.secondaryColor }} className="mb-0">{socialStats.platformsActive}</h3>
+                    <small style={{ color: theme.mutedText }}>Active Platforms</small>
                   </div>
                 </Col>
               </Row>
               <Row className="text-center">
                 <Col>
                   <div className="mb-2">
-                    <h3 className="text-info mb-0">{socialStats.contentCreated}</h3>
-                    <small className="text-muted">Content Created</small>
+                    <h3 style={{ color: '#74c0fc' }} className="mb-0">{socialStats.contentCreated}</h3>
+                    <small style={{ color: theme.mutedText }}>Content Created</small>
                   </div>
                 </Col>
                 <Col>
                   <div className="mb-2">
-                    <h3 className="text-warning mb-0">{socialStats.engagementRate}</h3>
-                    <small className="text-muted">Engagement Rate</small>
+                    <h3 style={{ color: '#ffd43b' }} className="mb-0">{socialStats.engagementRate}</h3>
+                    <small style={{ color: theme.mutedText }}>Engagement Rate</small>
                   </div>
                 </Col>
               </Row>
@@ -158,21 +215,29 @@ function Socials() {
         </Col>
 
         <Col lg={6}>
-          <Card style={{ backgroundColor: '#f8f9fa', border: '1px solid #007bff' }}>
-            <Card.Header style={{ backgroundColor: '#e3f2fd', border: 'none' }}>
-              <h4 className="text-primary mb-0">Featured Content</h4>
+          <Card style={{ 
+            backgroundColor: theme.cardBackground, 
+            border: `1px solid ${theme.primaryColor}`,
+            color: theme.textColor
+          }}>
+            <Card.Header style={{ 
+              backgroundColor: theme.lightBlue, 
+              border: 'none',
+              color: theme.textColor
+            }}>
+              <h4 style={{ color: theme.primaryColor }} className="mb-0">Featured Content</h4>
             </Card.Header>
-            <Card.Body>
+            <Card.Body style={{ color: theme.textColor }}>
               {featuredContent.map((content, index) => (
                 <div key={content.id} className={index > 0 ? 'mt-3 pt-3 border-top' : ''}>
                   <div className="d-flex justify-content-between align-items-start mb-1">
-                    <h6 className="mb-0">{content.title}</h6>
+                    <h6 className="mb-0" style={{ color: theme.textColor }}>{content.title}</h6>
                     <Badge bg="outline-secondary">{content.platform}</Badge>
                   </div>
-                  <small className="text-muted d-block mb-1">
+                  <small style={{ color: theme.mutedText }} className="d-block mb-1">
                     {content.type} • {new Date(content.date).toLocaleDateString()}
                   </small>
-                  <small className="text-success d-block">
+                  <small style={{ color: theme.secondaryColor }} className="d-block">
                     {content.engagement}
                   </small>
                 </div>
