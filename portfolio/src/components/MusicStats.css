@@ -1,0 +1,227 @@
+.music-stats {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.music-stats h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.music-stats h3 {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+/* Loading and Error States */
+.music-stats-loading,
+.music-stats-error {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.music-stats-error {
+  color: #d32f2f;
+}
+
+/* Stats Section */
+.stats-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.stats-section h3 {
+  color: white;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Top Sections */
+.top-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.top-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.top-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.top-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.rank {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #667eea;
+  margin-right: 15px;
+  min-width: 30px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.item-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.item-artist {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.item-plays {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Genre Tags */
+.genre-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.genre-tag {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Footer */
+.music-stats-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.music-stats-footer p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.music-stats-footer a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.music-stats-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .music-stats {
+    padding: 15px;
+  }
+  
+  .music-stats h2 {
+    font-size: 1.6rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .top-item {
+    padding: 12px;
+  }
+  
+  .rank {
+    font-size: 1rem;
+    min-width: 25px;
+  }
+  
+  .genre-tags {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .music-stats {
+    padding: 10px;
+  }
+  
+  .stats-section,
+  .top-section {
+    padding: 15px;
+  }
+  
+  .music-stats h2 {
+    font-size: 1.4rem;
+  }
+  
+  .music-stats h3 {
+    font-size: 1.1rem;
+  }
+}

@@ -49,3 +49,6 @@ coverage/
 .*
 !.github
 !.gitignore
+
+# Include data directory for music data
+!data/

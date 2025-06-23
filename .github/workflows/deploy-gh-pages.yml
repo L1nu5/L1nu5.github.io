@@ -4,26 +4,36 @@ on:
   push:
     branches:
       - main  # Trigger deployment on pushes to the main branch
+  schedule:
+    - cron: '0 0 * * 0'  # Run weekly on Sundays at midnight UTC
 
-# ... existing code ...
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 # Or your Node.js version
+          node-version: 18
+          
+      - name: Fetch Stats.fm Music Data
+        run: node scripts/fetch-music-data.js
+        env:
+          STATS_FM_TOKEN: ${{ secrets.STATS_FM_TOKEN }}
+          
       - name: Install dependencies
-        run: npm install # Or yarn install
+        run: npm install
         working-directory: portfolio
+        
       - name: Build application
-        run: npm run build # Or yarn build
+        run: npm run build
         working-directory: portfolio
+        
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: portfolio/build # Or your build output directory (e.g., ./dist)
+          publish_dir: portfolio/build
