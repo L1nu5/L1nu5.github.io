@@ -141,9 +141,19 @@ const MusicStats = () => {
             {musicData.artists.items.slice(0, 5).map((artistItem, index) => (
               <div key={artistItem.artist?.id || index} className="top-item">
                 <span className="rank">#{index + 1}</span>
+                {artistItem.artist?.image && (
+                  <img 
+                    src={artistItem.artist.image} 
+                    alt={artistItem.artist?.name || 'Artist'} 
+                    className="item-image"
+                  />
+                )}
                 <div className="item-info">
                   <span className="item-name">{artistItem.artist?.name || 'Unknown Artist'}</span>
                   <span className="item-plays">{artistItem.streams} streams</span>
+                  {artistItem.playedMs && (
+                    <span className="item-time">{Math.round(artistItem.playedMs / 1000 / 60)} minutes</span>
+                  )}
                 </div>
               </div>
             ))}
@@ -159,10 +169,20 @@ const MusicStats = () => {
             {musicData.tracks.items.slice(0, 5).map((trackItem, index) => (
               <div key={trackItem.track?.id || index} className="top-item">
                 <span className="rank">#{index + 1}</span>
+                {trackItem.track?.albums?.[0]?.image && (
+                  <img 
+                    src={trackItem.track.albums[0].image} 
+                    alt={trackItem.track?.name || 'Track'} 
+                    className="item-image"
+                  />
+                )}
                 <div className="item-info">
                   <span className="item-name">{trackItem.track?.name || 'Unknown Track'}</span>
                   <span className="item-artist">by {trackItem.track?.artists?.[0]?.name || 'Unknown Artist'}</span>
                   <span className="item-plays">{trackItem.streams} streams</span>
+                  {trackItem.playedMs && (
+                    <span className="item-time">{Math.round(trackItem.playedMs / 1000 / 60)} minutes</span>
+                  )}
                 </div>
               </div>
             ))}
@@ -192,10 +212,20 @@ const MusicStats = () => {
             {musicData.albums.items.slice(0, 3).map((albumItem, index) => (
               <div key={albumItem.album?.id || index} className="top-item">
                 <span className="rank">#{index + 1}</span>
+                {albumItem.album?.image && (
+                  <img 
+                    src={albumItem.album.image} 
+                    alt={albumItem.album?.name || 'Album'} 
+                    className="item-image"
+                  />
+                )}
                 <div className="item-info">
                   <span className="item-name">{albumItem.album?.name || 'Unknown Album'}</span>
                   <span className="item-artist">by {albumItem.album?.artists?.[0]?.name || 'Unknown Artist'}</span>
                   <span className="item-plays">{albumItem.streams} streams</span>
+                  {albumItem.playedMs && (
+                    <span className="item-time">{Math.round(albumItem.playedMs / 1000 / 60)} minutes</span>
+                  )}
                 </div>
               </div>
             ))}
