@@ -2,9 +2,9 @@
   "items": [
     {
       "position": 1,
-      "streams": 15787,
-      "playedMs": 3986473161,
-      "indicator": null,
+      "streams": 16234,
+      "playedMs": 4077279577,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 1,
@@ -109,122 +109,9 @@
     },
     {
       "position": 2,
-      "streams": 4512,
-      "playedMs": 1225278275,
-      "indicator": null,
-      "previewArtists": [
-        {
-          "position": 13,
-          "streams": 531,
-          "playedMs": 139240673,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "1wRPtKGflJrBx9BmLsSwlU"
-              ],
-              "appleMusic": [
-                "213157068"
-              ]
-            },
-            "followers": 52766048,
-            "genres": [
-              "bollywood",
-              "hindi pop",
-              "desi",
-              "sufi"
-            ],
-            "id": 12997,
-            "image": "https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca",
-            "name": "Pritam",
-            "spotifyPopularity": 90
-          }
-        },
-        {
-          "position": 24,
-          "streams": 238,
-          "playedMs": 73339877,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "5GnnSrwNCGyfAU4zuIytiS"
-              ],
-              "appleMusic": [
-                "217695869"
-              ]
-            },
-            "followers": 13126337,
-            "genres": [
-              "bollywood",
-              "hindi pop",
-              "sufi",
-              "desi"
-            ],
-            "id": 13156,
-            "image": "https://i.scdn.co/image/ab6761610000517416691117e2ba803946b203ba",
-            "name": "Mohit Chauhan",
-            "spotifyPopularity": 76
-          }
-        },
-        {
-          "position": 26,
-          "streams": 225,
-          "playedMs": 70952303,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "70B80Lwx2sxti0M1Ng9e8K"
-              ],
-              "appleMusic": [
-                "18485031"
-              ]
-            },
-            "followers": 19659817,
-            "genres": [
-              "bollywood",
-              "hindi pop",
-              "desi"
-            ],
-            "id": 3710,
-            "image": "https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4",
-            "name": "Udit Narayan",
-            "spotifyPopularity": 83
-          }
-        },
-        {
-          "position": 41,
-          "streams": 152,
-          "playedMs": 49664494,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [],
-              "appleMusic": [
-                "3579411"
-              ]
-            },
-            "followers": 0,
-            "genres": [
-              "bollywood"
-            ],
-            "id": 15134,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/bb/d8/84/bbd884e8-5c87-0e39-489e-d9fed0f089c5/mzl.uknqjkqg.jpg/768x768bb.jpg",
-            "name": "Alka Yagnik",
-            "spotifyPopularity": 0
-          }
-        }
-      ],
-      "genre": {
-        "tag": "bollywood"
-      }
-    },
-    {
-      "position": 3,
-      "streams": 5317,
-      "playedMs": 1219254104,
-      "indicator": null,
+      "streams": 5764,
+      "playedMs": 1310060520,
+      "indicator": "UP",
       "previewArtists": [
         {
           "position": 4,
@@ -334,10 +221,123 @@
       }
     },
     {
+      "position": 3,
+      "streams": 4512,
+      "playedMs": 1225278275,
+      "indicator": "DOWN",
+      "previewArtists": [
+        {
+          "position": 13,
+          "streams": 531,
+          "playedMs": 139240673,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "1wRPtKGflJrBx9BmLsSwlU"
+              ],
+              "appleMusic": [
+                "213157068"
+              ]
+            },
+            "followers": 52766048,
+            "genres": [
+              "bollywood",
+              "hindi pop",
+              "desi",
+              "sufi"
+            ],
+            "id": 12997,
+            "image": "https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca",
+            "name": "Pritam",
+            "spotifyPopularity": 90
+          }
+        },
+        {
+          "position": 24,
+          "streams": 238,
+          "playedMs": 73339877,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "5GnnSrwNCGyfAU4zuIytiS"
+              ],
+              "appleMusic": [
+                "217695869"
+              ]
+            },
+            "followers": 13126337,
+            "genres": [
+              "bollywood",
+              "hindi pop",
+              "sufi",
+              "desi"
+            ],
+            "id": 13156,
+            "image": "https://i.scdn.co/image/ab6761610000517416691117e2ba803946b203ba",
+            "name": "Mohit Chauhan",
+            "spotifyPopularity": 76
+          }
+        },
+        {
+          "position": 26,
+          "streams": 225,
+          "playedMs": 70952303,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "70B80Lwx2sxti0M1Ng9e8K"
+              ],
+              "appleMusic": [
+                "18485031"
+              ]
+            },
+            "followers": 19659817,
+            "genres": [
+              "bollywood",
+              "hindi pop",
+              "desi"
+            ],
+            "id": 3710,
+            "image": "https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4",
+            "name": "Udit Narayan",
+            "spotifyPopularity": 83
+          }
+        },
+        {
+          "position": 41,
+          "streams": 152,
+          "playedMs": 49664494,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [],
+              "appleMusic": [
+                "3579411"
+              ]
+            },
+            "followers": 0,
+            "genres": [
+              "bollywood"
+            ],
+            "id": 15134,
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/bb/d8/84/bbd884e8-5c87-0e39-489e-d9fed0f089c5/mzl.uknqjkqg.jpg/768x768bb.jpg",
+            "name": "Alka Yagnik",
+            "spotifyPopularity": 0
+          }
+        }
+      ],
+      "genre": {
+        "tag": "bollywood"
+      }
+    },
+    {
       "position": 4,
       "streams": 3088,
       "playedMs": 957420412,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 1,
@@ -454,7 +454,7 @@
       "position": 5,
       "streams": 3093,
       "playedMs": 812414638,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 13,
@@ -575,7 +575,7 @@
       "position": 6,
       "streams": 3086,
       "playedMs": 731034272,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 3,
@@ -686,7 +686,7 @@
       "position": 7,
       "streams": 2725,
       "playedMs": 703234607,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 13,
@@ -807,7 +807,7 @@
       "position": 8,
       "streams": 2250,
       "playedMs": 634611109,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 9,
@@ -929,10 +929,36 @@
     },
     {
       "position": 9,
-      "streams": 1851,
-      "playedMs": 485826779,
-      "indicator": null,
+      "streams": 2298,
+      "playedMs": 576633195,
+      "indicator": "SAME",
       "previewArtists": [
+        {
+          "position": 18,
+          "streams": 447,
+          "playedMs": 90806416,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "2o5jDhtHVPhrJdv3cEQ99Z"
+              ],
+              "appleMusic": []
+            },
+            "followers": 7866024,
+            "genres": [
+              "edm",
+              "trance",
+              "big room",
+              "house",
+              "dance"
+            ],
+            "id": 10732,
+            "image": "https://i.scdn.co/image/ab67616100005174e84e08fb1dfa2bf9b5a61563",
+            "name": "Tiësto",
+            "spotifyPopularity": 84
+          }
+        },
         {
           "position": 19,
           "streams": 404,
@@ -1010,31 +1036,6 @@
             "name": "Above & Beyond",
             "spotifyPopularity": 64
           }
-        },
-        {
-          "position": 81,
-          "streams": 103,
-          "playedMs": 29892858,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "1C60viSZv6BoYtrnkZ44g5"
-              ],
-              "appleMusic": [
-                "75660765"
-              ]
-            },
-            "followers": 104947,
-            "genres": [
-              "trance",
-              "dance"
-            ],
-            "id": 12284,
-            "image": "https://i.scdn.co/image/ab676161000051748cd36870d957e2caaf831ab1",
-            "name": "Nadia Ali",
-            "spotifyPopularity": 55
-          }
         }
       ],
       "genre": {
@@ -1045,7 +1046,7 @@
       "position": 10,
       "streams": 1727,
       "playedMs": 384961269,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 57,
@@ -1155,7 +1156,7 @@
       "position": 11,
       "streams": 1435,
       "playedMs": 373102506,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 32,
@@ -1266,7 +1267,7 @@
       "position": 12,
       "streams": 990,
       "playedMs": 322254684,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 11,
@@ -1385,7 +1386,7 @@
       "position": 13,
       "streams": 1116,
       "playedMs": 310402037,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 13,
@@ -1508,7 +1509,7 @@
       "position": 14,
       "streams": 1078,
       "playedMs": 290412244,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 14,
@@ -1630,7 +1631,7 @@
       "position": 15,
       "streams": 1207,
       "playedMs": 276041135,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 19,
@@ -1751,7 +1752,7 @@
       "position": 16,
       "streams": 808,
       "playedMs": 258179051,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 11,
@@ -1872,7 +1873,7 @@
       "position": 17,
       "streams": 1128,
       "playedMs": 253847101,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 6,
@@ -1955,7 +1956,7 @@
       "position": 18,
       "streams": 611,
       "playedMs": 217518279,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 11,
@@ -2048,9 +2049,125 @@
     },
     {
       "position": 19,
+      "streams": 1005,
+      "playedMs": 217070069,
+      "indicator": "UP",
+      "previewArtists": [
+        {
+          "position": 18,
+          "streams": 447,
+          "playedMs": 90806416,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "2o5jDhtHVPhrJdv3cEQ99Z"
+              ],
+              "appleMusic": []
+            },
+            "followers": 7866024,
+            "genres": [
+              "edm",
+              "trance",
+              "big room",
+              "house",
+              "dance"
+            ],
+            "id": 10732,
+            "image": "https://i.scdn.co/image/ab67616100005174e84e08fb1dfa2bf9b5a61563",
+            "name": "Tiësto",
+            "spotifyPopularity": 84
+          }
+        },
+        {
+          "position": 48,
+          "streams": 204,
+          "playedMs": 44767061,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "3XINWZaloea97SIRiyTJxX"
+              ],
+              "appleMusic": [
+                "453713844"
+              ]
+            },
+            "followers": 323797,
+            "genres": [
+              "progressive house",
+              "big room",
+              "edm",
+              "dance"
+            ],
+            "id": 8001,
+            "image": "https://i.scdn.co/image/ab6761610000517448f4bc0f481bcc07988acf4d",
+            "name": "DubVision",
+            "spotifyPopularity": 57
+          }
+        },
+        {
+          "position": 96,
+          "streams": 115,
+          "playedMs": 26941768,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "73jBynjsVtofjRpdpRAJGk"
+              ],
+              "appleMusic": []
+            },
+            "followers": 3572278,
+            "genres": [
+              "big room",
+              "electronica",
+              "edm",
+              "electro"
+            ],
+            "id": 12339,
+            "image": "https://i.scdn.co/image/ab67616100005174c67ffae065558fd7f08a845c",
+            "name": "Dimitri Vegas & Like Mike",
+            "spotifyPopularity": 75
+          }
+        },
+        {
+          "position": 118,
+          "streams": 102,
+          "playedMs": 22118998,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "2QMCcKIPHnjQaPPgoEst88"
+              ],
+              "appleMusic": [
+                "445823323"
+              ]
+            },
+            "followers": 149363,
+            "genres": [
+              "progressive house",
+              "edm",
+              "big room",
+              "dance"
+            ],
+            "id": 69694,
+            "image": "https://i.scdn.co/image/ab6761610000517439c52cbbd9033dc5d2f04aa4",
+            "name": "Matisse & Sadko",
+            "spotifyPopularity": 53
+          }
+        }
+      ],
+      "genre": {
+        "tag": "big room"
+      }
+    },
+    {
+      "position": 20,
       "streams": 942,
       "playedMs": 216121003,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 31,
@@ -2170,10 +2287,10 @@
       }
     },
     {
-      "position": 20,
+      "position": 21,
       "streams": 623,
       "playedMs": 207526727,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 11,
@@ -2291,10 +2408,10 @@
       }
     },
     {
-      "position": 21,
+      "position": 22,
       "streams": 800,
       "playedMs": 206128751,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 37,
@@ -2409,10 +2526,10 @@
       }
     },
     {
-      "position": 22,
+      "position": 23,
       "streams": 597,
       "playedMs": 205504854,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 11,
@@ -2501,10 +2618,127 @@
       }
     },
     {
-      "position": 23,
+      "position": 24,
+      "streams": 874,
+      "playedMs": 201140214,
+      "indicator": "UP",
+      "previewArtists": [
+        {
+          "position": 18,
+          "streams": 447,
+          "playedMs": 90806416,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "2o5jDhtHVPhrJdv3cEQ99Z"
+              ],
+              "appleMusic": []
+            },
+            "followers": 7866024,
+            "genres": [
+              "edm",
+              "trance",
+              "big room",
+              "house",
+              "dance"
+            ],
+            "id": 10732,
+            "image": "https://i.scdn.co/image/ab67616100005174e84e08fb1dfa2bf9b5a61563",
+            "name": "Tiësto",
+            "spotifyPopularity": 84
+          }
+        },
+        {
+          "position": 52,
+          "streams": 150,
+          "playedMs": 42416610,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "4oLeXFyACqeem2VImYeBFe"
+              ],
+              "appleMusic": [
+                "1455262408"
+              ]
+            },
+            "followers": 1993883,
+            "genres": [
+              "stutter house",
+              "house",
+              "electronic"
+            ],
+            "id": 94027,
+            "image": "https://i.scdn.co/image/ab6761610000517404a3b69e7f2bf27020773d8c",
+            "name": "Fred again..",
+            "spotifyPopularity": 78
+          }
+        },
+        {
+          "position": 117,
+          "streams": 107,
+          "playedMs": 22346026,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "7kNqXtgeIwFtelmRjWv205"
+              ],
+              "appleMusic": [
+                "1387587503"
+              ]
+            },
+            "followers": 513526,
+            "genres": [
+              "house",
+              "tech house",
+              "dance"
+            ],
+            "id": 3501,
+            "image": "https://i.scdn.co/image/ab6761610000517481180f8a7fd1f2c2e657c436",
+            "name": "John Summit",
+            "spotifyPopularity": 76
+          }
+        },
+        {
+          "position": 150,
+          "streams": 62,
+          "playedMs": 18227462,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "3ABaec4jjl95VqmG1iD4k2"
+              ],
+              "appleMusic": [
+                "4638965"
+              ]
+            },
+            "followers": 250004,
+            "genres": [
+              "tech house",
+              "techno",
+              "chicago house",
+              "house",
+              "dance"
+            ],
+            "id": 20203,
+            "image": "https://i.scdn.co/image/ab67616100005174c4538f995f4e9a6e153dcb71",
+            "name": "Green Velvet",
+            "spotifyPopularity": 56
+          }
+        }
+      ],
+      "genre": {
+        "tag": "house"
+      }
+    },
+    {
+      "position": 25,
       "streams": 884,
       "playedMs": 196230128,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 31,
@@ -2622,10 +2856,10 @@
       }
     },
     {
-      "position": 24,
+      "position": 26,
       "streams": 596,
       "playedMs": 186041871,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 21,
@@ -2740,10 +2974,10 @@
       }
     },
     {
-      "position": 25,
+      "position": 27,
       "streams": 731,
       "playedMs": 181934734,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 31,
@@ -2865,10 +3099,10 @@
       }
     },
     {
-      "position": 26,
+      "position": 28,
       "streams": 631,
       "playedMs": 170581234,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 9,
@@ -2933,10 +3167,10 @@
       }
     },
     {
-      "position": 27,
+      "position": 29,
       "streams": 580,
       "playedMs": 157834752,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 9,
@@ -2974,10 +3208,10 @@
       }
     },
     {
-      "position": 28,
+      "position": 30,
       "streams": 580,
       "playedMs": 157834752,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 9,
@@ -3015,10 +3249,10 @@
       }
     },
     {
-      "position": 29,
+      "position": 31,
       "streams": 580,
       "playedMs": 157834752,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 9,
@@ -3056,10 +3290,10 @@
       }
     },
     {
-      "position": 30,
+      "position": 32,
       "streams": 580,
       "playedMs": 157834752,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 9,
@@ -3097,10 +3331,10 @@
       }
     },
     {
-      "position": 31,
+      "position": 33,
       "streams": 580,
       "playedMs": 157834752,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 9,
@@ -3138,10 +3372,10 @@
       }
     },
     {
-      "position": 32,
+      "position": 34,
       "streams": 780,
       "playedMs": 143121654,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 43,
@@ -3246,10 +3480,10 @@
       }
     },
     {
-      "position": 33,
+      "position": 35,
       "streams": 602,
       "playedMs": 130932301,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 31,
@@ -3343,10 +3577,10 @@
       }
     },
     {
-      "position": 34,
+      "position": 36,
       "streams": 602,
       "playedMs": 130932301,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 31,
@@ -3440,10 +3674,10 @@
       }
     },
     {
-      "position": 35,
+      "position": 37,
       "streams": 375,
       "playedMs": 129663188,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 21,
@@ -3507,10 +3741,10 @@
       }
     },
     {
-      "position": 36,
+      "position": 38,
       "streams": 375,
       "playedMs": 129663188,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 21,
@@ -3574,10 +3808,10 @@
       }
     },
     {
-      "position": 37,
+      "position": 39,
       "streams": 565,
       "playedMs": 128686949,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 67,
@@ -3681,10 +3915,10 @@
       }
     },
     {
-      "position": 38,
+      "position": 40,
       "streams": 523,
       "playedMs": 126629058,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 22,
@@ -3777,10 +4011,10 @@
       }
     },
     {
-      "position": 39,
+      "position": 41,
       "streams": 523,
       "playedMs": 126629058,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 22,
@@ -3873,123 +4107,10 @@
       }
     },
     {
-      "position": 40,
-      "streams": 558,
-      "playedMs": 126263653,
-      "indicator": null,
-      "previewArtists": [
-        {
-          "position": 48,
-          "streams": 204,
-          "playedMs": 44767061,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "3XINWZaloea97SIRiyTJxX"
-              ],
-              "appleMusic": [
-                "453713844"
-              ]
-            },
-            "followers": 323797,
-            "genres": [
-              "progressive house",
-              "big room",
-              "edm",
-              "dance"
-            ],
-            "id": 8001,
-            "image": "https://i.scdn.co/image/ab6761610000517448f4bc0f481bcc07988acf4d",
-            "name": "DubVision",
-            "spotifyPopularity": 57
-          }
-        },
-        {
-          "position": 96,
-          "streams": 115,
-          "playedMs": 26941768,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "73jBynjsVtofjRpdpRAJGk"
-              ],
-              "appleMusic": []
-            },
-            "followers": 3572278,
-            "genres": [
-              "big room",
-              "electronica",
-              "edm",
-              "electro"
-            ],
-            "id": 12339,
-            "image": "https://i.scdn.co/image/ab67616100005174c67ffae065558fd7f08a845c",
-            "name": "Dimitri Vegas & Like Mike",
-            "spotifyPopularity": 75
-          }
-        },
-        {
-          "position": 118,
-          "streams": 102,
-          "playedMs": 22118998,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "2QMCcKIPHnjQaPPgoEst88"
-              ],
-              "appleMusic": [
-                "445823323"
-              ]
-            },
-            "followers": 149363,
-            "genres": [
-              "progressive house",
-              "edm",
-              "big room",
-              "dance"
-            ],
-            "id": 69694,
-            "image": "https://i.scdn.co/image/ab6761610000517439c52cbbd9033dc5d2f04aa4",
-            "name": "Matisse & Sadko",
-            "spotifyPopularity": 53
-          }
-        },
-        {
-          "position": 164,
-          "streams": 81,
-          "playedMs": 17283250,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "4D75GcNG95ebPtNvoNVXhz"
-              ],
-              "appleMusic": []
-            },
-            "followers": 4016526,
-            "genres": [
-              "edm",
-              "big room"
-            ],
-            "id": 8002,
-            "image": "https://i.scdn.co/image/ab6761610000517478484e23002e1607039af9b9",
-            "name": "AFROJACK",
-            "spotifyPopularity": 76
-          }
-        }
-      ],
-      "genre": {
-        "tag": "big room"
-      }
-    },
-    {
-      "position": 41,
+      "position": 42,
       "streams": 425,
       "playedMs": 113446394,
-      "indicator": null,
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 44,
@@ -4083,128 +4204,10 @@
       }
     },
     {
-      "position": 42,
-      "streams": 427,
-      "playedMs": 110333798,
-      "indicator": null,
-      "previewArtists": [
-        {
-          "position": 52,
-          "streams": 150,
-          "playedMs": 42416610,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "4oLeXFyACqeem2VImYeBFe"
-              ],
-              "appleMusic": [
-                "1455262408"
-              ]
-            },
-            "followers": 1993883,
-            "genres": [
-              "stutter house",
-              "house",
-              "electronic"
-            ],
-            "id": 94027,
-            "image": "https://i.scdn.co/image/ab6761610000517404a3b69e7f2bf27020773d8c",
-            "name": "Fred again..",
-            "spotifyPopularity": 78
-          }
-        },
-        {
-          "position": 117,
-          "streams": 107,
-          "playedMs": 22346026,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "7kNqXtgeIwFtelmRjWv205"
-              ],
-              "appleMusic": [
-                "1387587503"
-              ]
-            },
-            "followers": 513526,
-            "genres": [
-              "house",
-              "tech house",
-              "dance"
-            ],
-            "id": 3501,
-            "image": "https://i.scdn.co/image/ab6761610000517481180f8a7fd1f2c2e657c436",
-            "name": "John Summit",
-            "spotifyPopularity": 76
-          }
-        },
-        {
-          "position": 150,
-          "streams": 62,
-          "playedMs": 18227462,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "3ABaec4jjl95VqmG1iD4k2"
-              ],
-              "appleMusic": [
-                "4638965"
-              ]
-            },
-            "followers": 250004,
-            "genres": [
-              "tech house",
-              "techno",
-              "chicago house",
-              "house",
-              "dance"
-            ],
-            "id": 20203,
-            "image": "https://i.scdn.co/image/ab67616100005174c4538f995f4e9a6e153dcb71",
-            "name": "Green Velvet",
-            "spotifyPopularity": 56
-          }
-        },
-        {
-          "position": 191,
-          "streams": 53,
-          "playedMs": 14677764,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "3534yWWzmxx8NbKVoNolsK"
-              ],
-              "appleMusic": [
-                "269315952"
-              ]
-            },
-            "followers": 204152,
-            "genres": [
-              "electro house",
-              "dubstep",
-              "house",
-              "dance"
-            ],
-            "id": 41224,
-            "image": "https://i.scdn.co/image/ab676161000051746bb7b4c18abdbbe45de23f8d",
-            "name": "Wolfgang Gartner",
-            "spotifyPopularity": 45
-          }
-        }
-      ],
-      "genre": {
-        "tag": "house"
-      }
-    },
-    {
       "position": 43,
       "streams": 421,
       "playedMs": 109489504,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 35,
@@ -4298,7 +4301,7 @@
       "position": 44,
       "streams": 373,
       "playedMs": 106692833,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 27,
@@ -4362,7 +4365,7 @@
       "position": 45,
       "streams": 404,
       "playedMs": 101065792,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 54,
@@ -4489,7 +4492,7 @@
       "position": 46,
       "streams": 391,
       "playedMs": 100637734,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 73,
@@ -4601,7 +4604,7 @@
       "position": 47,
       "streams": 290,
       "playedMs": 91954799,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 21,
@@ -4667,7 +4670,7 @@
       "position": 48,
       "streams": 410,
       "playedMs": 85720422,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 77,
@@ -4791,7 +4794,7 @@
       "position": 49,
       "streams": 448,
       "playedMs": 82867350,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 77,
@@ -4919,7 +4922,7 @@
       "position": 50,
       "streams": 315,
       "playedMs": 81917621,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 169,
@@ -5040,7 +5043,7 @@
       "position": 51,
       "streams": 281,
       "playedMs": 79995243,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 93,
@@ -5160,7 +5163,7 @@
       "position": 52,
       "streams": 275,
       "playedMs": 79127050,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 93,
@@ -5282,7 +5285,7 @@
       "position": 53,
       "streams": 310,
       "playedMs": 77831726,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 22,
@@ -5321,7 +5324,7 @@
       "position": 54,
       "streams": 310,
       "playedMs": 77831726,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 22,
@@ -5360,7 +5363,7 @@
       "position": 55,
       "streams": 303,
       "playedMs": 74080563,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 54,
@@ -5454,7 +5457,7 @@
       "position": 56,
       "streams": 240,
       "playedMs": 69984459,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 36,
@@ -5519,7 +5522,7 @@
       "position": 57,
       "streams": 250,
       "playedMs": 64467312,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 64,
@@ -5611,7 +5614,7 @@
       "position": 58,
       "streams": 217,
       "playedMs": 62796651,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 29,
@@ -5649,7 +5652,7 @@
       "position": 59,
       "streams": 208,
       "playedMs": 59977372,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 93,
@@ -5743,7 +5746,7 @@
       "position": 60,
       "streams": 279,
       "playedMs": 56313726,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 33,
@@ -5783,7 +5786,7 @@
       "position": 61,
       "streams": 209,
       "playedMs": 55750655,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 52,
@@ -5848,7 +5851,7 @@
       "position": 62,
       "streams": 248,
       "playedMs": 55654336,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 133,
@@ -5938,7 +5941,7 @@
       "position": 63,
       "streams": 201,
       "playedMs": 55485114,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 36,
@@ -5977,7 +5980,7 @@
       "position": 64,
       "streams": 201,
       "playedMs": 55485114,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 36,
@@ -6016,7 +6019,7 @@
       "position": 65,
       "streams": 201,
       "playedMs": 55485114,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 36,
@@ -6055,7 +6058,7 @@
       "position": 66,
       "streams": 159,
       "playedMs": 54561733,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 37,
@@ -6093,7 +6096,7 @@
       "position": 67,
       "streams": 216,
       "playedMs": 53645660,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 54,
@@ -6161,7 +6164,7 @@
       "position": 68,
       "streams": 129,
       "playedMs": 51002433,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 39,
@@ -6200,7 +6203,7 @@
       "position": 69,
       "streams": 189,
       "playedMs": 50537587,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 70,
@@ -6266,7 +6269,7 @@
       "position": 70,
       "streams": 188,
       "playedMs": 47420132,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 90,
@@ -6336,7 +6339,7 @@
       "position": 71,
       "streams": 188,
       "playedMs": 47420132,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 90,
@@ -6406,7 +6409,7 @@
       "position": 72,
       "streams": 158,
       "playedMs": 47283900,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 44,
@@ -6447,7 +6450,7 @@
       "position": 73,
       "streams": 158,
       "playedMs": 47283900,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 44,
@@ -6488,7 +6491,7 @@
       "position": 74,
       "streams": 202,
       "playedMs": 47019697,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 132,
@@ -6583,7 +6586,7 @@
       "position": 75,
       "streams": 159,
       "playedMs": 46678572,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 85,
@@ -6644,7 +6647,7 @@
       "position": 76,
       "streams": 183,
       "playedMs": 45127476,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 47,
@@ -6679,7 +6682,7 @@
       "position": 77,
       "streams": 321,
       "playedMs": 41875686,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 98,
@@ -6741,7 +6744,7 @@
       "position": 78,
       "streams": 197,
       "playedMs": 38640069,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 124,
@@ -6810,7 +6813,7 @@
       "position": 79,
       "streams": 175,
       "playedMs": 38381566,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 62,
@@ -6848,7 +6851,7 @@
       "position": 80,
       "streams": 175,
       "playedMs": 38381566,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 62,
@@ -6886,7 +6889,7 @@
       "position": 81,
       "streams": 142,
       "playedMs": 35535924,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 151,
@@ -6951,7 +6954,7 @@
       "position": 82,
       "streams": 140,
       "playedMs": 35112667,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 130,
@@ -7015,7 +7018,7 @@
       "position": 83,
       "streams": 175,
       "playedMs": 34627319,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 124,
@@ -7084,7 +7087,7 @@
       "position": 84,
       "streams": 145,
       "playedMs": 33163938,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 132,
@@ -7150,7 +7153,7 @@
       "position": 85,
       "streams": 122,
       "playedMs": 33091554,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 131,
@@ -7214,7 +7217,7 @@
       "position": 86,
       "streams": 120,
       "playedMs": 32805793,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 162,
@@ -7278,7 +7281,7 @@
       "position": 87,
       "streams": 109,
       "playedMs": 32680047,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 151,
@@ -7342,7 +7345,7 @@
       "position": 88,
       "streams": 158,
       "playedMs": 32157699,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 76,
@@ -7381,7 +7384,7 @@
       "position": 89,
       "streams": 158,
       "playedMs": 32157699,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 76,
@@ -7420,7 +7423,7 @@
       "position": 90,
       "streams": 158,
       "playedMs": 32157699,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 76,
@@ -7459,7 +7462,7 @@
       "position": 91,
       "streams": 164,
       "playedMs": 31461710,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 78,
@@ -7496,7 +7499,7 @@
       "position": 92,
       "streams": 164,
       "playedMs": 31461710,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 78,
@@ -7533,7 +7536,7 @@
       "position": 93,
       "streams": 164,
       "playedMs": 31461710,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 78,
@@ -7570,7 +7573,7 @@
       "position": 94,
       "streams": 137,
       "playedMs": 29366527,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 157,
@@ -7637,7 +7640,7 @@
       "position": 95,
       "streams": 108,
       "playedMs": 28571759,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 168,
@@ -7699,7 +7702,7 @@
       "position": 96,
       "streams": 92,
       "playedMs": 27780928,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 93,
@@ -7739,7 +7742,7 @@
       "position": 97,
       "streams": 104,
       "playedMs": 26903177,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 208,
@@ -7802,7 +7805,7 @@
       "position": 98,
       "streams": 126,
       "playedMs": 26695640,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 99,
@@ -7838,7 +7841,7 @@
       "position": 99,
       "streams": 68,
       "playedMs": 25165427,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 106,
@@ -7874,7 +7877,7 @@
       "position": 100,
       "streams": 68,
       "playedMs": 25165427,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 106,
@@ -7910,7 +7913,7 @@
       "position": 101,
       "streams": 76,
       "playedMs": 23569029,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 110,
@@ -7947,7 +7950,7 @@
       "position": 102,
       "streams": 99,
       "playedMs": 23345336,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 111,
@@ -7987,7 +7990,7 @@
       "position": 103,
       "streams": 99,
       "playedMs": 23345336,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 111,
@@ -8027,7 +8030,7 @@
       "position": 104,
       "streams": 99,
       "playedMs": 23345336,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 111,
@@ -8067,7 +8070,7 @@
       "position": 105,
       "streams": 99,
       "playedMs": 23345336,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 111,
@@ -8107,7 +8110,7 @@
       "position": 106,
       "streams": 99,
       "playedMs": 23345336,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 111,
@@ -8147,7 +8150,7 @@
       "position": 107,
       "streams": 65,
       "playedMs": 20835589,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 126,
@@ -8186,7 +8189,7 @@
       "position": 108,
       "streams": 65,
       "playedMs": 20835589,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 126,
@@ -8225,7 +8228,7 @@
       "position": 109,
       "streams": 87,
       "playedMs": 20434903,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 130,
@@ -8262,7 +8265,7 @@
       "position": 110,
       "streams": 63,
       "playedMs": 18941389,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 143,
@@ -8300,7 +8303,7 @@
       "position": 111,
       "streams": 119,
       "playedMs": 18752981,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 145,
@@ -8337,7 +8340,7 @@
       "position": 112,
       "streams": 92,
       "playedMs": 18736721,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 146,
@@ -8374,7 +8377,7 @@
       "position": 113,
       "streams": 92,
       "playedMs": 18736721,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 146,
@@ -8411,7 +8414,7 @@
       "position": 114,
       "streams": 70,
       "playedMs": 18664953,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 147,
@@ -8448,7 +8451,7 @@
       "position": 115,
       "streams": 70,
       "playedMs": 18664953,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 147,
@@ -8485,7 +8488,7 @@
       "position": 116,
       "streams": 62,
       "playedMs": 18227462,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 150,
@@ -8524,7 +8527,7 @@
       "position": 117,
       "streams": 70,
       "playedMs": 18180702,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 151,
@@ -8562,7 +8565,7 @@
       "position": 118,
       "streams": 72,
       "playedMs": 17964377,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 155,
@@ -8599,7 +8602,7 @@
       "position": 119,
       "streams": 72,
       "playedMs": 17964377,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 155,
@@ -8636,7 +8639,7 @@
       "position": 120,
       "streams": 72,
       "playedMs": 17355222,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 162,
@@ -8674,7 +8677,7 @@
       "position": 121,
       "streams": 47,
       "playedMs": 17226305,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 165,
@@ -8713,7 +8716,7 @@
       "position": 122,
       "streams": 47,
       "playedMs": 17226305,
-      "indicator": null,
+      "indicator": "SAME",
       "previewArtists": [
         {
           "position": 165,
@@ -8752,7 +8755,7 @@
       "position": 123,
       "streams": 59,
       "playedMs": 16533870,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 169,
@@ -8790,7 +8793,7 @@
       "position": 124,
       "streams": 48,
       "playedMs": 15450571,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 179,
@@ -8827,7 +8830,7 @@
       "position": 125,
       "streams": 48,
       "playedMs": 15450571,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 179,
@@ -8864,7 +8867,7 @@
       "position": 126,
       "streams": 119,
       "playedMs": 15113417,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 183,
@@ -8901,7 +8904,7 @@
       "position": 127,
       "streams": 119,
       "playedMs": 15113417,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 183,
@@ -8938,7 +8941,7 @@
       "position": 128,
       "streams": 60,
       "playedMs": 15084742,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 185,
@@ -8971,7 +8974,7 @@
       "position": 129,
       "streams": 62,
       "playedMs": 14870257,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 189,
@@ -9008,7 +9011,7 @@
       "position": 130,
       "streams": 51,
       "playedMs": 14762389,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 190,
@@ -9048,7 +9051,7 @@
       "position": 131,
       "streams": 51,
       "playedMs": 14762389,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 190,
@@ -9088,7 +9091,7 @@
       "position": 132,
       "streams": 60,
       "playedMs": 14324342,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 195,
@@ -9124,7 +9127,7 @@
       "position": 133,
       "streams": 57,
       "playedMs": 13743868,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 201,
@@ -9161,7 +9164,7 @@
       "position": 134,
       "streams": 76,
       "playedMs": 13678673,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 202,
@@ -9202,7 +9205,7 @@
       "position": 135,
       "streams": 44,
       "playedMs": 13294044,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 214,
@@ -9240,7 +9243,7 @@
       "position": 136,
       "streams": 54,
       "playedMs": 13183130,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 215,
@@ -9279,7 +9282,7 @@
       "position": 137,
       "streams": 51,
       "playedMs": 12746482,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 227,
@@ -9317,7 +9320,7 @@
       "position": 138,
       "streams": 52,
       "playedMs": 12247911,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 233,
@@ -9353,7 +9356,7 @@
       "position": 139,
       "streams": 54,
       "playedMs": 12096735,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 238,
@@ -9389,7 +9392,7 @@
       "position": 140,
       "streams": 79,
       "playedMs": 12002344,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 241,
@@ -9424,7 +9427,7 @@
       "position": 141,
       "streams": 39,
       "playedMs": 11675104,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 245,
@@ -9461,7 +9464,7 @@
       "position": 142,
       "streams": 58,
       "playedMs": 11570206,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 249,
@@ -9496,7 +9499,7 @@
       "position": 143,
       "streams": 60,
       "playedMs": 11538301,
-      "indicator": null,
+      "indicator": "NEW",
       "previewArtists": [
         {
           "position": 250,
