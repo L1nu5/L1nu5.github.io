@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './MusicStats.css';
 
 const MusicStats = () => {
+  const [selectedRange, setSelectedRange] = useState('weeks');
   const [musicData, setMusicData] = useState({
     genres: null,
     stats: null,
@@ -12,16 +13,24 @@ const MusicStats = () => {
     error: null
   });
 
+  const ranges = [
+    { value: 'weeks', label: 'This Week' },
+    { value: 'months', label: 'This Month' },
+    { value: 'lifetime', label: 'All Time' }
+  ];
+
   useEffect(() => {
     const loadMusicData = async () => {
+      setMusicData(prev => ({ ...prev, loading: true, error: null }));
+      
       try {
-        // Load all music data files
+        // Load all music data files for the selected range
         const [genresRes, statsRes, albumsRes, tracksRes, artistsRes] = await Promise.allSettled([
-          fetch('/data/music/latest/top-genres.json'),
-          fetch('/data/music/latest/streams-stats.json'),
-          fetch('/data/music/latest/top-albums.json'),
-          fetch('/data/music/latest/top-tracks.json'),
-          fetch('/data/music/latest/top-artists.json')
+          fetch(`/data/music/${selectedRange}/latest/top-genres.json`),
+          fetch(`/data/music/${selectedRange}/latest/streams-stats.json`),
+          fetch(`/data/music/${selectedRange}/latest/top-albums.json`),
+          fetch(`/data/music/${selectedRange}/latest/top-tracks.json`),
+          fetch(`/data/music/${selectedRange}/latest/top-artists.json`)
         ]);
 
         const data = {};
@@ -58,7 +67,15 @@ const MusicStats = () => {
     };
 
     loadMusicData();
-  }, []);
+  }, [selectedRange]);
+
+  const handleRangeChange = (event) => {
+    setSelectedRange(event.target.value);
+  };
+
+  const getCurrentRangeLabel = () => {
+    return ranges.find(range => range.value === selectedRange)?.label || 'This Week';
+  };
 
   if (musicData.loading) {
     return (
@@ -78,12 +95,29 @@ const MusicStats = () => {
 
   return (
     <div className="music-stats">
-      <h2>🎵 My Music Stats (This Week)</h2>
+      <div className="music-stats-header">
+        <h2>🎵 My Music Stats</h2>
+        <div className="range-selector">
+          <label htmlFor="range-select">Time Range:</label>
+          <select 
+            id="range-select"
+            value={selectedRange} 
+            onChange={handleRangeChange}
+            className="range-dropdown"
+          >
+            {ranges.map(range => (
+              <option key={range.value} value={range.value}>
+                {range.label}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
       
       {/* Stream Statistics */}
       {musicData.stats && (
         <div className="stats-section">
-          <h3>Listening Activity</h3>
+          <h3>Listening Activity ({getCurrentRangeLabel()})</h3>
           <div className="stats-grid">
             <div className="stat-item">
               <span className="stat-number">{musicData.stats.count || 0}</span>

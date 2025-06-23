@@ -125,9 +125,27 @@ The script includes a 1-second delay between API requests to be respectful to th
 
 To see detailed logs, check the GitHub Actions workflow run logs in your repository's Actions tab.
 
+### `verify-setup.js`
+Verification script to check if the music data automation setup is working correctly.
+
+**Usage:**
+```bash
+node scripts/verify-setup.js
+```
+
+**What it checks:**
+- Directory structure exists
+- Required files are present
+- Music data files are valid JSON
+- Environment variables are set correctly
+- GitHub workflow configuration
+- Data file sizes and timestamps
+
 ## File Descriptions
 
 - `fetch-music-data.js`: Main script that handles API requests and data management
+- `test-fetch.js`: Simple test script to verify API connectivity
+- `verify-setup.js`: Comprehensive setup verification script
 - `README.md`: This documentation file
 - `../data/music/latest/`: Directory containing the most recent data
 - `../data/music/old/`: Directory containing backup data for fallback
