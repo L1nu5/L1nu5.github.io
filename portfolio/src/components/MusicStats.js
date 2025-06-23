@@ -120,15 +120,41 @@ const MusicStats = () => {
           <h3>Listening Activity ({getCurrentRangeLabel()})</h3>
           <div className="stats-grid">
             <div className="stat-item">
-              <span className="stat-number">{musicData.stats.count || 0}</span>
+              <span className="stat-number">{musicData.stats.items?.count || 0}</span>
               <span className="stat-label">Total Streams</span>
             </div>
             <div className="stat-item">
               <span className="stat-number">
-                {musicData.stats.durationMs ? Math.round(musicData.stats.durationMs / 1000 / 60) : 0}
+                {musicData.stats.items?.durationMs ? Math.round(musicData.stats.items.durationMs / 1000 / 60 / 60 / 24) : 0}
               </span>
-              <span className="stat-label">Minutes Listened</span>
+              <span className="stat-label">Days Listened</span>
             </div>
+            <div className="stat-item">
+              <span className="stat-number">{musicData.stats.items?.cardinality?.tracks || 0}</span>
+              <span className="stat-label">Unique Tracks</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">{musicData.stats.items?.cardinality?.artists || 0}</span>
+              <span className="stat-label">Unique Artists</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">{musicData.stats.items?.cardinality?.albums || 0}</span>
+              <span className="stat-label">Unique Albums</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Top Genres */}
+      {musicData.genres && musicData.genres.items && (
+        <div className="top-section">
+          <h3>Top Genres</h3>
+          <div className="genre-tags">
+            {musicData.genres.items.slice(0, 8).map((genre, index) => (
+              <span key={genre.genre?.tag || index} className="genre-tag">
+                {genre.genre?.tag || 'Unknown'} ({genre.streams})
+              </span>
+            ))}
           </div>
         </div>
       )}
@@ -185,20 +211,6 @@ const MusicStats = () => {
                   )}
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Top Genres */}
-      {musicData.genres && musicData.genres.items && (
-        <div className="top-section">
-          <h3>Top Genres</h3>
-          <div className="genre-tags">
-            {musicData.genres.items.slice(0, 8).map((genre, index) => (
-              <span key={genre.genre?.tag || index} className="genre-tag">
-                {genre.genre?.tag || 'Unknown'} ({genre.streams})
-              </span>
             ))}
           </div>
         </div>
