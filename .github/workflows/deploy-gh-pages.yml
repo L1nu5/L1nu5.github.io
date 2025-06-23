@@ -10,6 +10,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Allow the action to push commits
+      pages: write     # Allow deployment to GitHub Pages
+      id-token: write  # Allow OIDC token generation
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -20,9 +24,25 @@ jobs:
           node-version: 18
           
       - name: Fetch Stats.fm Music Data
+        # Only fetch music data if this wasn't triggered by a GitHub Action commit
+        if: ${{ !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, 'Update music data from Stats.fm') }}
         run: node scripts/fetch-music-data.js
         env:
           STATS_FM_TOKEN: ${{ secrets.STATS_FM_TOKEN }}
+          
+      - name: Commit and push music data
+        # Only fetch and commit music data if this wasn't triggered by a GitHub Action commit
+        if: ${{ !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, 'Update music data from Stats.fm') }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update music data from Stats.fm [skip ci]"
+            git push
+          fi
           
       - name: Install dependencies
         run: npm install

@@ -64,9 +64,11 @@ data/
 ### Automatic (GitHub Actions)
 
 The script runs automatically:
-- Every time you push to the main branch
+- Every time **you** push to the main branch (not when GitHub Actions pushes)
 - Weekly on Sundays at midnight UTC
 - As part of the GitHub Pages deployment process
+
+**Smart Triggering**: The workflow only fetches fresh music data when triggered by your manual pushes, not by automated commits from GitHub Actions. This prevents infinite loops and unnecessary API calls.
 
 ### Manual (Local Development)
 
@@ -84,8 +86,11 @@ node scripts/fetch-music-data.js
 
 1. **Fresh Data Fetch**: The script attempts to fetch fresh data from all 5 Stats.fm API endpoints
 2. **Success Handling**: If successful, it saves the data to the `latest/` directory and backs up to `old/`
-3. **Failure Handling**: If the API token is expired or requests fail, it copies data from `old/` to `latest/`
-4. **Graceful Degradation**: Your website will always have data to display, even if the API is temporarily unavailable
+3. **Auto-Commit**: The GitHub Action automatically commits and pushes the fetched data back to your repository
+4. **Failure Handling**: If the API token is expired or requests fail, it copies data from `old/` to `latest/`
+5. **Graceful Degradation**: Your website will always have data to display, even if the API is temporarily unavailable
+
+**Note**: The workflow includes `[skip ci]` in commit messages to prevent infinite loops when pushing data updates.
 
 ## Error Handling
 
