@@ -30,13 +30,20 @@ jobs:
         env:
           STATS_FM_TOKEN: ${{ secrets.STATS_FM_TOKEN }}
           
+      - name: Copy music data to portfolio public folder
+        # Only copy if music data was fetched
+        if: ${{ !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, 'Update music data from Stats.fm') }}
+        run: |
+          mkdir -p portfolio/public/data/music/latest
+          cp data/music/latest/*.json portfolio/public/data/music/latest/
+          
       - name: Commit and push music data
         # Only fetch and commit music data if this wasn't triggered by a GitHub Action commit
         if: ${{ !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, 'Update music data from Stats.fm') }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/
+          git add data/ portfolio/public/data/
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

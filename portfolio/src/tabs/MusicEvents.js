@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col, Card, Badge, Button, ListGroup, Nav } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import MusicTimeline from '../components/MusicTimeline';
+import MusicStats from '../components/MusicStats';
 import dataService from '../services/dataService';
 
 function MusicEvents() {
@@ -193,102 +194,112 @@ function MusicEvents() {
       )}
 
       {activeView === 'stats' && (
-        <Row>
-          <Col lg={8}>
-            <Card style={{ backgroundColor: '#f8f9fa', border: '1px solid #007bff' }}>
-              <Card.Header style={{ backgroundColor: '#e3f2fd', border: 'none' }}>
-                <h4 className="text-primary mb-0">Recent Concerts & Events</h4>
-              </Card.Header>
-              <Card.Body>
-                {pastEvents.slice(0, 3).map((event, index) => (
-                  <div key={index} className={index > 0 ? 'mt-4 pt-4 border-top' : ''}>
-                    <div className="d-flex justify-content-between align-items-start mb-2">
-                      <div>
-                        <h6 className="mb-1">{event.title}</h6>
-                        <small className="text-muted">{event.venue}</small>
-                      </div>
-                      <div className="text-end">
-                        <Badge bg={getTypeVariant(event.type)} className="mb-1">
-                          {event.type}
-                        </Badge>
-                        <br />
-                        <small className="text-muted">
-                          {new Date(event.date).toLocaleDateString()}
-                        </small>
-                      </div>
-                    </div>
-                    <div className="mb-2">
-                      <span className="text-warning me-2">
-                        {renderStars(event.rating)}
-                      </span>
-                      <small className="text-muted">({event.rating}/5)</small>
-                    </div>
-                    <p className="text-muted mb-0 small">
-                      <em>"{event.review.substring(0, 100)}..."</em>
-                    </p>
-                  </div>
-                ))}
-                <div className="text-center mt-4">
-                  <Button 
-                    variant="outline-primary" 
-                    onClick={() => setActiveView('timeline')}
-                  >
-                    View Full Timeline
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
+        <>
+          {/* Stats.fm Music Data */}
+          <Row className="mb-4">
+            <Col>
+              <MusicStats />
+            </Col>
+          </Row>
 
-          <Col lg={4}>
-            <Card style={{ backgroundColor: '#e8f5e8', border: '1px solid #28a745' }}>
-              <Card.Header style={{ backgroundColor: '#d4edda', border: 'none' }}>
-                <h5 className="text-success mb-0">Music Stats</h5>
-              </Card.Header>
-              <Card.Body>
-                <ListGroup variant="flush">
-                  <ListGroup.Item className="px-0 d-flex justify-content-between">
-                    <span>Concerts Attended:</span>
-                    <Badge bg="primary">{pastEvents.length}</Badge>
-                  </ListGroup.Item>
-                  <ListGroup.Item className="px-0 d-flex justify-content-between">
-                    <span>Festivals Experienced:</span>
-                    <Badge bg="info">{pastEvents.filter(e => e.type === 'Festival').length}</Badge>
-                  </ListGroup.Item>
-                  <ListGroup.Item className="px-0 d-flex justify-content-between">
-                    <span>Average Rating:</span>
-                    <Badge bg="warning">
-                      {(pastEvents.reduce((sum, e) => sum + e.rating, 0) / pastEvents.length).toFixed(1)}/5
-                    </Badge>
-                  </ListGroup.Item>
-                  <ListGroup.Item className="px-0 d-flex justify-content-between">
-                    <span>Favorite Genre:</span>
-                    <Badge bg="success">Indie Rock</Badge>
-                  </ListGroup.Item>
-                  <ListGroup.Item className="px-0 d-flex justify-content-between">
-                    <span>Best Concert:</span>
-                    <Badge bg="danger">Radiohead</Badge>
-                  </ListGroup.Item>
-                </ListGroup>
-                <div className="mt-3 d-grid gap-2">
-                  <Button variant="outline-primary" size="sm">
-                    View Concert Photos
-                  </Button>
-                  <Button variant="outline-success" size="sm">
-                    Music Recommendations
-                  </Button>
-                  <Button 
-                    variant="outline-info" 
-                    size="sm"
-                    onClick={() => setActiveView('timeline')}
-                  >
-                    Explore Timeline
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
+          {/* Concert Events Stats */}
+          <Row>
+            <Col lg={8}>
+              <Card style={{ backgroundColor: '#f8f9fa', border: '1px solid #007bff' }}>
+                <Card.Header style={{ backgroundColor: '#e3f2fd', border: 'none' }}>
+                  <h4 className="text-primary mb-0">Recent Concerts & Events</h4>
+                </Card.Header>
+                <Card.Body>
+                  {pastEvents.slice(0, 3).map((event, index) => (
+                    <div key={index} className={index > 0 ? 'mt-4 pt-4 border-top' : ''}>
+                      <div className="d-flex justify-content-between align-items-start mb-2">
+                        <div>
+                          <h6 className="mb-1">{event.title}</h6>
+                          <small className="text-muted">{event.venue}</small>
+                        </div>
+                        <div className="text-end">
+                          <Badge bg={getTypeVariant(event.type)} className="mb-1">
+                            {event.type}
+                          </Badge>
+                          <br />
+                          <small className="text-muted">
+                            {new Date(event.date).toLocaleDateString()}
+                          </small>
+                        </div>
+                      </div>
+                      <div className="mb-2">
+                        <span className="text-warning me-2">
+                          {renderStars(event.rating)}
+                        </span>
+                        <small className="text-muted">({event.rating}/5)</small>
+                      </div>
+                      <p className="text-muted mb-0 small">
+                        <em>"{event.review.substring(0, 100)}..."</em>
+                      </p>
+                    </div>
+                  ))}
+                  <div className="text-center mt-4">
+                    <Button 
+                      variant="outline-primary" 
+                      onClick={() => setActiveView('timeline')}
+                    >
+                      View Full Timeline
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col lg={4}>
+              <Card style={{ backgroundColor: '#e8f5e8', border: '1px solid #28a745' }}>
+                <Card.Header style={{ backgroundColor: '#d4edda', border: 'none' }}>
+                  <h5 className="text-success mb-0">Concert Stats</h5>
+                </Card.Header>
+                <Card.Body>
+                  <ListGroup variant="flush">
+                    <ListGroup.Item className="px-0 d-flex justify-content-between">
+                      <span>Concerts Attended:</span>
+                      <Badge bg="primary">{pastEvents.length}</Badge>
+                    </ListGroup.Item>
+                    <ListGroup.Item className="px-0 d-flex justify-content-between">
+                      <span>Festivals Experienced:</span>
+                      <Badge bg="info">{pastEvents.filter(e => e.type === 'Festival').length}</Badge>
+                    </ListGroup.Item>
+                    <ListGroup.Item className="px-0 d-flex justify-content-between">
+                      <span>Average Rating:</span>
+                      <Badge bg="warning">
+                        {(pastEvents.reduce((sum, e) => sum + e.rating, 0) / pastEvents.length).toFixed(1)}/5
+                      </Badge>
+                    </ListGroup.Item>
+                    <ListGroup.Item className="px-0 d-flex justify-content-between">
+                      <span>Favorite Genre:</span>
+                      <Badge bg="success">Indie Rock</Badge>
+                    </ListGroup.Item>
+                    <ListGroup.Item className="px-0 d-flex justify-content-between">
+                      <span>Best Concert:</span>
+                      <Badge bg="danger">Radiohead</Badge>
+                    </ListGroup.Item>
+                  </ListGroup>
+                  <div className="mt-3 d-grid gap-2">
+                    <Button variant="outline-primary" size="sm">
+                      View Concert Photos
+                    </Button>
+                    <Button variant="outline-success" size="sm">
+                      Music Recommendations
+                    </Button>
+                    <Button 
+                      variant="outline-info" 
+                      size="sm"
+                      onClick={() => setActiveView('timeline')}
+                    >
+                      Explore Timeline
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </>
       )}
     </PageTemplate>
   );
