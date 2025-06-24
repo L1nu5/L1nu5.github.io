@@ -31,11 +31,48 @@ function Resume() {
               <Card.Text style={{ color: theme.textColor }}>
                 {summary}
               </Card.Text>
-              <Button variant="primary" size="lg" className="me-3" href={downloadLinks.pdfResume}>
+              <Button 
+                variant="primary" 
+                size="lg" 
+                className="me-3" 
+                href={downloadLinks.pdfResume}
+                onClick={(e) => {
+                  // Check if file exists by trying to fetch it
+                  fetch(downloadLinks.pdfResume)
+                    .then(response => {
+                      if (!response.ok) {
+                        e.preventDefault();
+                        alert('Resume PDF is not available yet. Please contact me directly for my resume.');
+                      }
+                    })
+                    .catch(() => {
+                      e.preventDefault();
+                      alert('Resume PDF is not available yet. Please contact me directly for my resume.');
+                    });
+                }}
+              >
                 Download PDF Resume
               </Button>
-              <Button variant="outline-success" size="lg" href={downloadLinks.portfolioPdf}>
-                View Online Version
+              <Button 
+                variant="outline-success" 
+                size="lg" 
+                href={downloadLinks.portfolioPdf}
+                onClick={(e) => {
+                  // Check if file exists by trying to fetch it
+                  fetch(downloadLinks.portfolioPdf)
+                    .then(response => {
+                      if (!response.ok) {
+                        e.preventDefault();
+                        alert('Portfolio PDF is not available yet. You can view the online version here.');
+                      }
+                    })
+                    .catch(() => {
+                      e.preventDefault();
+                      alert('Portfolio PDF is not available yet. You can view the online version here.');
+                    });
+                }}
+              >
+                View Portfolio PDF
               </Button>
             </Card.Body>
           </Card>
