@@ -2,8 +2,8 @@
   "items": [
     {
       "position": 1,
-      "streams": 272,
-      "playedMs": 109276997,
+      "streams": 277,
+      "playedMs": 111392608,
       "indicator": null,
       "album": {
         "name": "Imagine",
@@ -456,6 +456,42 @@
     },
     {
       "position": 13,
+      "streams": 153,
+      "playedMs": 47419935,
+      "indicator": null,
+      "album": {
+        "name": "Intense",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/46/61/17/4661174c-83f7-a89c-6890-4281d035351a/8718522020803.png/768x768bb.jpg",
+        "label": "Virgin Records Ltd",
+        "spotifyPopularity": 0,
+        "totalTracks": 15,
+        "releaseDate": 1356998400000,
+        "genres": [
+          "Dance",
+          "Music"
+        ],
+        "artists": [
+          {
+            "id": 3461,
+            "name": "Armin van Buuren",
+            "image": "https://i.scdn.co/image/ab676161000051743d13c5e2fca1a6c522616f22"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602537362011",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "0ZPZ7Kgx8P2I7fp9VTDKXu"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 16415
+      }
+    },
+    {
+      "position": 14,
       "streams": 194,
       "playedMs": 46793761,
       "indicator": null,
@@ -491,42 +527,6 @@
         },
         "type": "album",
         "id": 229491
-      }
-    },
-    {
-      "position": 14,
-      "streams": 151,
-      "playedMs": 46720015,
-      "indicator": null,
-      "album": {
-        "name": "Intense",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/46/61/17/4661174c-83f7-a89c-6890-4281d035351a/8718522020803.png/768x768bb.jpg",
-        "label": "Virgin Records Ltd",
-        "spotifyPopularity": 0,
-        "totalTracks": 15,
-        "releaseDate": 1356998400000,
-        "genres": [
-          "Dance",
-          "Music"
-        ],
-        "artists": [
-          {
-            "id": 3461,
-            "name": "Armin van Buuren",
-            "image": "https://i.scdn.co/image/ab676161000051743d13c5e2fca1a6c522616f22"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602537362011",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "0ZPZ7Kgx8P2I7fp9VTDKXu"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 16415
       }
     },
     {
@@ -766,6 +766,45 @@
     },
     {
       "position": 21,
+      "streams": 193,
+      "playedMs": 37783117,
+      "indicator": null,
+      "album": {
+        "name": "Motion",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f6/f3/15/f6f3159a-486a-390c-310b-df2c136074ed/886444820448.jpg/768x768bb.jpg",
+        "label": "Columbia",
+        "spotifyPopularity": 82,
+        "totalTracks": 15,
+        "releaseDate": 1414713600000,
+        "genres": [
+          "Dance",
+          "Music",
+          "Electronic",
+          "Rock",
+          "R&B/Soul"
+        ],
+        "artists": [
+          {
+            "id": 366,
+            "name": "Ellie Goulding",
+            "image": "https://i.scdn.co/image/ab67616100005174c3cd7dc428871e8985d62b9a"
+          }
+        ],
+        "externalIds": {
+          "upc": "886444820448",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "48zisMeiXniWLzOQghbPqS"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 542014
+      }
+    },
+    {
+      "position": 22,
       "streams": 118,
       "playedMs": 37556776,
       "indicator": null,
@@ -800,45 +839,6 @@
         },
         "type": "album",
         "id": 2762022
-      }
-    },
-    {
-      "position": 22,
-      "streams": 190,
-      "playedMs": 37151104,
-      "indicator": null,
-      "album": {
-        "name": "Motion",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f6/f3/15/f6f3159a-486a-390c-310b-df2c136074ed/886444820448.jpg/768x768bb.jpg",
-        "label": "Columbia",
-        "spotifyPopularity": 82,
-        "totalTracks": 15,
-        "releaseDate": 1414713600000,
-        "genres": [
-          "Dance",
-          "Music",
-          "Electronic",
-          "Rock",
-          "R&B/Soul"
-        ],
-        "artists": [
-          {
-            "id": 366,
-            "name": "Ellie Goulding",
-            "image": "https://i.scdn.co/image/ab67616100005174c3cd7dc428871e8985d62b9a"
-          }
-        ],
-        "externalIds": {
-          "upc": "886444820448",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "48zisMeiXniWLzOQghbPqS"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 542014
       }
     },
     {
@@ -2122,42 +2122,8 @@
     },
     {
       "position": 57,
-      "streams": 101,
-      "playedMs": 18697591,
-      "indicator": null,
-      "album": {
-        "name": "What I've Become",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f3/3f/ae/f33faed2-efc8-2ae5-ee65-ad3de34f9949/886443117167.jpg/768x768bb.jpg",
-        "label": "Fair Trade/Columbia",
-        "spotifyPopularity": 66,
-        "totalTracks": 12,
-        "releaseDate": 1314057600000,
-        "genres": [
-          "Christian",
-          "Music"
-        ],
-        "artists": [
-          {
-            "id": 180030,
-            "name": "Ashes Remain",
-            "image": "https://i.scdn.co/image/ab67616100005174dfd9103906025688a81272f4"
-          }
-        ],
-        "externalIds": {
-          "upc": "886443117167",
-          "ean": null,
-          "isrc": null,
-          "spotify": [],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 56271
-      }
-    },
-    {
-      "position": 58,
-      "streams": 113,
-      "playedMs": 18421704,
+      "streams": 116,
+      "playedMs": 18961979,
       "indicator": null,
       "album": {
         "name": "Hollow Knight (Original Soundtrack)",
@@ -2188,6 +2154,40 @@
         },
         "type": "album",
         "id": 605234
+      }
+    },
+    {
+      "position": 58,
+      "streams": 101,
+      "playedMs": 18697591,
+      "indicator": null,
+      "album": {
+        "name": "What I've Become",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f3/3f/ae/f33faed2-efc8-2ae5-ee65-ad3de34f9949/886443117167.jpg/768x768bb.jpg",
+        "label": "Fair Trade/Columbia",
+        "spotifyPopularity": 66,
+        "totalTracks": 12,
+        "releaseDate": 1314057600000,
+        "genres": [
+          "Christian",
+          "Music"
+        ],
+        "artists": [
+          {
+            "id": 180030,
+            "name": "Ashes Remain",
+            "image": "https://i.scdn.co/image/ab67616100005174dfd9103906025688a81272f4"
+          }
+        ],
+        "externalIds": {
+          "upc": "886443117167",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 56271
       }
     },
     {
@@ -2642,43 +2642,8 @@
     },
     {
       "position": 71,
-      "streams": 70,
-      "playedMs": 16777753,
-      "indicator": null,
-      "album": {
-        "name": "Parachutes",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/0f/a5/3b/0fa53b8d-b216-5086-f04d-12b10c1db0ca/dj.izqilkdj.jpg/768x768bb.jpg",
-        "label": "Parlophone UK",
-        "spotifyPopularity": 85,
-        "totalTracks": 10,
-        "releaseDate": 963187200000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
-        "externalIds": {
-          "upc": "0067003016254",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "6ZG5lRT77aJ3btmArcykra"
-          ],
-          "appleMusic": [
-            "696830354"
-          ]
-        },
-        "type": "album",
-        "id": 435566
-      }
-    },
-    {
-      "position": 72,
-      "streams": 79,
-      "playedMs": 16569198,
+      "streams": 80,
+      "playedMs": 16811878,
       "indicator": null,
       "album": {
         "name": "Talk That Talk (Explicit)",
@@ -2716,7 +2681,75 @@
       }
     },
     {
+      "position": 72,
+      "streams": 70,
+      "playedMs": 16777753,
+      "indicator": null,
+      "album": {
+        "name": "Parachutes",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/0f/a5/3b/0fa53b8d-b216-5086-f04d-12b10c1db0ca/dj.izqilkdj.jpg/768x768bb.jpg",
+        "label": "Parlophone UK",
+        "spotifyPopularity": 85,
+        "totalTracks": 10,
+        "releaseDate": 963187200000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 779,
+            "name": "Coldplay",
+            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
+          }
+        ],
+        "externalIds": {
+          "upc": "0067003016254",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "6ZG5lRT77aJ3btmArcykra"
+          ],
+          "appleMusic": [
+            "696830354"
+          ]
+        },
+        "type": "album",
+        "id": 435566
+      }
+    },
+    {
       "position": 73,
+      "streams": 73,
+      "playedMs": 16623770,
+      "indicator": null,
+      "album": {
+        "name": "Planet Pit (Deluxe Version)",
+        "image": "https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19",
+        "label": "Mr.305/Polo Grounds Music/J Records",
+        "spotifyPopularity": 81,
+        "totalTracks": 16,
+        "releaseDate": 1308268800000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 361,
+            "name": "Pitbull",
+            "image": "https://i.scdn.co/image/ab676161000051744051627b19277613e0e62a34"
+          }
+        ],
+        "externalIds": {
+          "upc": "886443007178",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4rG0MhkU6UojACJxkMHIXB"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 315483
+      }
+    },
+    {
+      "position": 74,
       "streams": 51,
       "playedMs": 16211164,
       "indicator": null,
@@ -2750,39 +2783,6 @@
         },
         "type": "album",
         "id": 777150
-      }
-    },
-    {
-      "position": 74,
-      "streams": 71,
-      "playedMs": 16162037,
-      "indicator": null,
-      "album": {
-        "name": "Planet Pit (Deluxe Version)",
-        "image": "https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19",
-        "label": "Mr.305/Polo Grounds Music/J Records",
-        "spotifyPopularity": 81,
-        "totalTracks": 16,
-        "releaseDate": 1308268800000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 361,
-            "name": "Pitbull",
-            "image": "https://i.scdn.co/image/ab676161000051744051627b19277613e0e62a34"
-          }
-        ],
-        "externalIds": {
-          "upc": "886443007178",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4rG0MhkU6UojACJxkMHIXB"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 315483
       }
     },
     {
@@ -3294,6 +3294,46 @@
     },
     {
       "position": 89,
+      "streams": 64,
+      "playedMs": 13622834,
+      "indicator": null,
+      "album": {
+        "name": "Starboy",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b5/92/bb/b592bb72-52e3-e756-9b26-9f56d08f47ab/16UMGIM67864.rgb.jpg/768x768bb.jpg",
+        "label": "Universal Republic Records",
+        "spotifyPopularity": 78,
+        "totalTracks": 18,
+        "releaseDate": 1479945600000,
+        "genres": [
+          "R&B/Soul",
+          "Music",
+          "Dance",
+          "Electronic"
+        ],
+        "artists": [
+          {
+            "id": 11615,
+            "name": "The Weeknd",
+            "image": "https://i.scdn.co/image/ab676161000051749e528993a2820267b97f6aae"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602557333671",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4AdZV63ycxFLF6Hcol0QnB"
+          ],
+          "appleMusic": [
+            "1440870373"
+          ]
+        },
+        "type": "album",
+        "id": 154345
+      }
+    },
+    {
+      "position": 90,
       "streams": 51,
       "playedMs": 13522034,
       "indicator": null,
@@ -3326,7 +3366,7 @@
       }
     },
     {
-      "position": 90,
+      "position": 91,
       "streams": 55,
       "playedMs": 13513608,
       "indicator": null,
@@ -3368,7 +3408,7 @@
       }
     },
     {
-      "position": 91,
+      "position": 92,
       "streams": 55,
       "playedMs": 13438754,
       "indicator": null,
@@ -3404,46 +3444,6 @@
         },
         "type": "album",
         "id": 379494
-      }
-    },
-    {
-      "position": 92,
-      "streams": 63,
-      "playedMs": 13392381,
-      "indicator": null,
-      "album": {
-        "name": "Starboy",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b5/92/bb/b592bb72-52e3-e756-9b26-9f56d08f47ab/16UMGIM67864.rgb.jpg/768x768bb.jpg",
-        "label": "Universal Republic Records",
-        "spotifyPopularity": 78,
-        "totalTracks": 18,
-        "releaseDate": 1479945600000,
-        "genres": [
-          "R&B/Soul",
-          "Music",
-          "Dance",
-          "Electronic"
-        ],
-        "artists": [
-          {
-            "id": 11615,
-            "name": "The Weeknd",
-            "image": "https://i.scdn.co/image/ab676161000051749e528993a2820267b97f6aae"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602557333671",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4AdZV63ycxFLF6Hcol0QnB"
-          ],
-          "appleMusic": [
-            "1440870373"
-          ]
-        },
-        "type": "album",
-        "id": 154345
       }
     },
     {
@@ -3604,6 +3604,39 @@
     },
     {
       "position": 97,
+      "streams": 59,
+      "playedMs": 12709950,
+      "indicator": null,
+      "album": {
+        "name": "Nothing but the Beat 2.0",
+        "image": "https://i.scdn.co/image/ab67616d0000b273a197a2ef3ad6704d1f44aa4e",
+        "label": "Parlophone (France)",
+        "spotifyPopularity": 69,
+        "totalTracks": 23,
+        "releaseDate": 1314144000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 2103,
+            "name": "David Guetta",
+            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
+          }
+        ],
+        "externalIds": {
+          "upc": "5099997943051",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "5aprcHwM1KJhaY9Kbxkfkn"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 1110857
+      }
+    },
+    {
+      "position": 98,
       "streams": 42,
       "playedMs": 12683031,
       "indicator": null,
@@ -3638,7 +3671,7 @@
       }
     },
     {
-      "position": 98,
+      "position": 99,
       "streams": 27,
       "playedMs": 12673537,
       "indicator": null,
@@ -3673,39 +3706,6 @@
         },
         "type": "album",
         "id": 25881318
-      }
-    },
-    {
-      "position": 99,
-      "streams": 58,
-      "playedMs": 12510270,
-      "indicator": null,
-      "album": {
-        "name": "Nothing but the Beat 2.0",
-        "image": "https://i.scdn.co/image/ab67616d0000b273a197a2ef3ad6704d1f44aa4e",
-        "label": "Parlophone (France)",
-        "spotifyPopularity": 69,
-        "totalTracks": 23,
-        "releaseDate": 1314144000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 2103,
-            "name": "David Guetta",
-            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
-          }
-        ],
-        "externalIds": {
-          "upc": "5099997943051",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "5aprcHwM1KJhaY9Kbxkfkn"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 1110857
       }
     },
     {
@@ -4650,6 +4650,43 @@
     },
     {
       "position": 125,
+      "streams": 49,
+      "playedMs": 10584676,
+      "indicator": null,
+      "album": {
+        "name": "Levels - EP",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/38/43/67384338-9ed7-fc68-5927-93f1fcf4705d/11UMGIM36900.rgb.jpg/768x768bb.jpg",
+        "label": "Universal Music AB",
+        "spotifyPopularity": 0,
+        "totalTracks": 4,
+        "releaseDate": 1322438400000,
+        "genres": [
+          "Dance",
+          "Musica",
+          "Music"
+        ],
+        "artists": [
+          {
+            "id": 2090,
+            "name": "Avicii",
+            "image": "https://i.scdn.co/image/ab67616100005174ae07171f989fb39736674113"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602527895345",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": [
+            "1440787344"
+          ]
+        },
+        "type": "album",
+        "id": 26005
+      }
+    },
+    {
+      "position": 126,
       "streams": 37,
       "playedMs": 10560277,
       "indicator": null,
@@ -4691,7 +4728,7 @@
       }
     },
     {
-      "position": 126,
+      "position": 127,
       "streams": 67,
       "playedMs": 10528268,
       "indicator": null,
@@ -4728,7 +4765,7 @@
       }
     },
     {
-      "position": 127,
+      "position": 128,
       "streams": 26,
       "playedMs": 10508361,
       "indicator": null,
@@ -4769,7 +4806,7 @@
       }
     },
     {
-      "position": 128,
+      "position": 129,
       "streams": 35,
       "playedMs": 10497108,
       "indicator": null,
@@ -4824,7 +4861,7 @@
       }
     },
     {
-      "position": 129,
+      "position": 130,
       "streams": 42,
       "playedMs": 10482714,
       "indicator": null,
@@ -4857,7 +4894,7 @@
       }
     },
     {
-      "position": 130,
+      "position": 131,
       "streams": 43,
       "playedMs": 10478895,
       "indicator": null,
@@ -4895,7 +4932,7 @@
       }
     },
     {
-      "position": 131,
+      "position": 132,
       "streams": 61,
       "playedMs": 10442702,
       "indicator": null,
@@ -4933,7 +4970,7 @@
       }
     },
     {
-      "position": 132,
+      "position": 133,
       "streams": 43,
       "playedMs": 10408538,
       "indicator": null,
@@ -4966,7 +5003,7 @@
       }
     },
     {
-      "position": 133,
+      "position": 134,
       "streams": 39,
       "playedMs": 10296732,
       "indicator": null,
@@ -4996,43 +5033,6 @@
         },
         "type": "album",
         "id": 70893
-      }
-    },
-    {
-      "position": 134,
-      "streams": 48,
-      "playedMs": 10245810,
-      "indicator": null,
-      "album": {
-        "name": "Levels - EP",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/38/43/67384338-9ed7-fc68-5927-93f1fcf4705d/11UMGIM36900.rgb.jpg/768x768bb.jpg",
-        "label": "Universal Music AB",
-        "spotifyPopularity": 0,
-        "totalTracks": 4,
-        "releaseDate": 1322438400000,
-        "genres": [
-          "Dance",
-          "Musica",
-          "Music"
-        ],
-        "artists": [
-          {
-            "id": 2090,
-            "name": "Avicii",
-            "image": "https://i.scdn.co/image/ab67616100005174ae07171f989fb39736674113"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602527895345",
-          "ean": null,
-          "isrc": null,
-          "spotify": [],
-          "appleMusic": [
-            "1440787344"
-          ]
-        },
-        "type": "album",
-        "id": 26005
       }
     },
     {
@@ -7318,6 +7318,46 @@
     },
     {
       "position": 196,
+      "streams": 29,
+      "playedMs": 7131142,
+      "indicator": null,
+      "album": {
+        "name": "Beauty Behind The Madness",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/40/cd/1a/40cd1a65-7948-eb96-74c6-1c4b3497456c/15UMGIM36513.rgb.jpg/768x768bb.jpg",
+        "label": "Universal Republic Records",
+        "spotifyPopularity": 82,
+        "totalTracks": 14,
+        "releaseDate": 1440720000000,
+        "genres": [
+          "R&B/Soul",
+          "Music",
+          "Dance",
+          "Rock"
+        ],
+        "artists": [
+          {
+            "id": 11615,
+            "name": "The Weeknd",
+            "image": "https://i.scdn.co/image/ab676161000051749e528993a2820267b97f6aae"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602547563330",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "0P3oVJBFOv3TDXlYRhGL7s"
+          ],
+          "appleMusic": [
+            "1440826239"
+          ]
+        },
+        "type": "album",
+        "id": 2634
+      }
+    },
+    {
+      "position": 197,
       "streams": 36,
       "playedMs": 7125029,
       "indicator": null,
@@ -7355,7 +7395,7 @@
       }
     },
     {
-      "position": 197,
+      "position": 198,
       "streams": 40,
       "playedMs": 7085993,
       "indicator": null,
@@ -7388,7 +7428,7 @@
       }
     },
     {
-      "position": 198,
+      "position": 199,
       "streams": 66,
       "playedMs": 7085385,
       "indicator": null,
@@ -7421,7 +7461,7 @@
       }
     },
     {
-      "position": 199,
+      "position": 200,
       "streams": 31,
       "playedMs": 7030861,
       "indicator": null,
@@ -7462,7 +7502,7 @@
       }
     },
     {
-      "position": 200,
+      "position": 201,
       "streams": 29,
       "playedMs": 7029767,
       "indicator": null,
@@ -7495,7 +7535,7 @@
       }
     },
     {
-      "position": 201,
+      "position": 202,
       "streams": 19,
       "playedMs": 7015066,
       "indicator": null,
@@ -7528,7 +7568,7 @@
       }
     },
     {
-      "position": 202,
+      "position": 203,
       "streams": 22,
       "playedMs": 7005396,
       "indicator": null,
@@ -7563,7 +7603,7 @@
       }
     },
     {
-      "position": 203,
+      "position": 204,
       "streams": 33,
       "playedMs": 6987942,
       "indicator": null,
@@ -7605,7 +7645,7 @@
       }
     },
     {
-      "position": 204,
+      "position": 205,
       "streams": 26,
       "playedMs": 6948146,
       "indicator": null,
