@@ -2,8 +2,8 @@
   "items": [
     {
       "position": 1,
-      "streams": 278,
-      "playedMs": 111842234,
+      "streams": 279,
+      "playedMs": 112291860,
       "indicator": null,
       "album": {
         "name": "Imagine",
@@ -415,8 +415,8 @@
     },
     {
       "position": 12,
-      "streams": 154,
-      "playedMs": 47769895,
+      "streams": 159,
+      "playedMs": 49519695,
       "indicator": null,
       "album": {
         "name": "Intense",
@@ -766,8 +766,8 @@
     },
     {
       "position": 21,
-      "streams": 193,
-      "playedMs": 37783117,
+      "streams": 194,
+      "playedMs": 37967397,
       "indicator": null,
       "album": {
         "name": "Motion",
@@ -1118,6 +1118,39 @@
     },
     {
       "position": 30,
+      "streams": 136,
+      "playedMs": 32339480,
+      "indicator": null,
+      "album": {
+        "name": "Forever",
+        "image": "https://i.scdn.co/image/ab67616d0000b273b804bbd11f864902d452b3a7",
+        "label": "Alesso / Def Jam",
+        "spotifyPopularity": 64,
+        "totalTracks": 14,
+        "releaseDate": 1432252800000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 2081,
+            "name": "Alesso",
+            "image": "https://i.scdn.co/image/ab676161000051742828484ea968409a0ea584a6"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602547322777",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "0tRVSbmOwilUucqjzU0fQw"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 2348216
+      }
+    },
+    {
+      "position": 31,
       "streams": 167,
       "playedMs": 30180084,
       "indicator": null,
@@ -1155,7 +1188,7 @@
       }
     },
     {
-      "position": 31,
+      "position": 32,
       "streams": 90,
       "playedMs": 30144517,
       "indicator": null,
@@ -1185,39 +1218,6 @@
         },
         "type": "album",
         "id": 1419853
-      }
-    },
-    {
-      "position": 32,
-      "streams": 125,
-      "playedMs": 30003989,
-      "indicator": null,
-      "album": {
-        "name": "Forever",
-        "image": "https://i.scdn.co/image/ab67616d0000b273b804bbd11f864902d452b3a7",
-        "label": "Alesso / Def Jam",
-        "spotifyPopularity": 64,
-        "totalTracks": 14,
-        "releaseDate": 1432252800000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 2081,
-            "name": "Alesso",
-            "image": "https://i.scdn.co/image/ab676161000051742828484ea968409a0ea584a6"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602547322777",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "0tRVSbmOwilUucqjzU0fQw"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 2348216
       }
     },
     {
@@ -1958,6 +1958,48 @@
     },
     {
       "position": 53,
+      "streams": 69,
+      "playedMs": 19740354,
+      "indicator": null,
+      "album": {
+        "name": "X&Y",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/768x768bb.jpg",
+        "label": "Parlophone Records Limited",
+        "spotifyPopularity": 77,
+        "totalTracks": 13,
+        "releaseDate": 1118102400000,
+        "genres": [
+          "Alternative",
+          "Music",
+          "Rock",
+          "Adult Alternative",
+          "Pop",
+          "Britpop"
+        ],
+        "artists": [
+          {
+            "id": 779,
+            "name": "Coldplay",
+            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
+          }
+        ],
+        "externalIds": {
+          "upc": "0724347478659",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4E7bV0pzG0LciBSWTszra6"
+          ],
+          "appleMusic": [
+            "1123076757"
+          ]
+        },
+        "type": "album",
+        "id": 902388
+      }
+    },
+    {
+      "position": 54,
       "streams": 76,
       "playedMs": 19528762,
       "indicator": null,
@@ -1997,48 +2039,6 @@
         },
         "type": "compilation",
         "id": 12815
-      }
-    },
-    {
-      "position": 54,
-      "streams": 68,
-      "playedMs": 19452720,
-      "indicator": null,
-      "album": {
-        "name": "X&Y",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/768x768bb.jpg",
-        "label": "Parlophone Records Limited",
-        "spotifyPopularity": 77,
-        "totalTracks": 13,
-        "releaseDate": 1118102400000,
-        "genres": [
-          "Alternative",
-          "Music",
-          "Rock",
-          "Adult Alternative",
-          "Pop",
-          "Britpop"
-        ],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
-        "externalIds": {
-          "upc": "0724347478659",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4E7bV0pzG0LciBSWTszra6"
-          ],
-          "appleMusic": [
-            "1123076757"
-          ]
-        },
-        "type": "album",
-        "id": 902388
       }
     },
     {
@@ -2323,13 +2323,7 @@
           "Adult Alternative",
           "Indie Rock"
         ],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
+        "artists": [],
         "externalIds": {
           "upc": "0724354050459",
           "ean": null,
@@ -2750,6 +2744,80 @@
     },
     {
       "position": 74,
+      "streams": 65,
+      "playedMs": 16453224,
+      "indicator": null,
+      "album": {
+        "name": "Viva La Vida or Death and All His Friends",
+        "image": "https://i.scdn.co/image/ab67616d0000b273e21cc1db05580b6f2d2a3b6e",
+        "label": "Parlophone UK",
+        "spotifyPopularity": 76,
+        "totalTracks": 10,
+        "releaseDate": 1211760000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 779,
+            "name": "Coldplay",
+            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
+          }
+        ],
+        "externalIds": {
+          "upc": "5099921211454",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "1CEODgTmTwLyabvwd7HBty"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 50070
+      }
+    },
+    {
+      "position": 75,
+      "streams": 41,
+      "playedMs": 16384269,
+      "indicator": null,
+      "album": {
+        "name": "In Silico",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/00/00/f0/0000f0ca-025c-a337-fcac-494fe8828988/mzi.rebebyaj.jpg/768x768bb.jpg",
+        "label": "WM UK",
+        "spotifyPopularity": 52,
+        "totalTracks": 10,
+        "releaseDate": 1210291200000,
+        "genres": [
+          "Electronic",
+          "Music",
+          "Electronica",
+          "Dance",
+          "Jungle/Drum'n'bass"
+        ],
+        "artists": [
+          {
+            "id": 14203,
+            "name": "Pendulum",
+            "image": "https://i.scdn.co/image/ab676161000051744a45def215a47635d17d8a7b"
+          }
+        ],
+        "externalIds": {
+          "upc": "825646953837",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "6eRDE48ttoLqN2VfkEpPOJ"
+          ],
+          "appleMusic": [
+            "279346512"
+          ]
+        },
+        "type": "album",
+        "id": 2330541
+      }
+    },
+    {
+      "position": 76,
       "streams": 51,
       "playedMs": 16211164,
       "indicator": null,
@@ -2786,40 +2854,7 @@
       }
     },
     {
-      "position": 75,
-      "streams": 63,
-      "playedMs": 16132118,
-      "indicator": null,
-      "album": {
-        "name": "Viva La Vida or Death and All His Friends",
-        "image": "https://i.scdn.co/image/ab67616d0000b273e21cc1db05580b6f2d2a3b6e",
-        "label": "Parlophone UK",
-        "spotifyPopularity": 76,
-        "totalTracks": 10,
-        "releaseDate": 1211760000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
-        "externalIds": {
-          "upc": "5099921211454",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "1CEODgTmTwLyabvwd7HBty"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 50070
-      }
-    },
-    {
-      "position": 76,
+      "position": 77,
       "streams": 31,
       "playedMs": 15635420,
       "indicator": null,
@@ -2857,7 +2892,7 @@
       }
     },
     {
-      "position": 77,
+      "position": 78,
       "streams": 100,
       "playedMs": 15567190,
       "indicator": null,
@@ -2900,7 +2935,7 @@
       }
     },
     {
-      "position": 78,
+      "position": 79,
       "streams": 56,
       "playedMs": 15454160,
       "indicator": null,
@@ -2933,7 +2968,7 @@
       }
     },
     {
-      "position": 79,
+      "position": 80,
       "streams": 36,
       "playedMs": 15224782,
       "indicator": null,
@@ -2966,7 +3001,7 @@
       }
     },
     {
-      "position": 80,
+      "position": 81,
       "streams": 66,
       "playedMs": 15109633,
       "indicator": null,
@@ -2999,7 +3034,7 @@
       }
     },
     {
-      "position": 81,
+      "position": 82,
       "streams": 74,
       "playedMs": 15078602,
       "indicator": null,
@@ -3029,47 +3064,6 @@
         },
         "type": "album",
         "id": 48132
-      }
-    },
-    {
-      "position": 82,
-      "streams": 38,
-      "playedMs": 15074469,
-      "indicator": null,
-      "album": {
-        "name": "In Silico",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/00/00/f0/0000f0ca-025c-a337-fcac-494fe8828988/mzi.rebebyaj.jpg/768x768bb.jpg",
-        "label": "WM UK",
-        "spotifyPopularity": 52,
-        "totalTracks": 10,
-        "releaseDate": 1210291200000,
-        "genres": [
-          "Electronic",
-          "Music",
-          "Electronica",
-          "Dance",
-          "Jungle/Drum'n'bass"
-        ],
-        "artists": [
-          {
-            "id": 14203,
-            "name": "Pendulum",
-            "image": "https://i.scdn.co/image/ab676161000051744a45def215a47635d17d8a7b"
-          }
-        ],
-        "externalIds": {
-          "upc": "825646953837",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "6eRDE48ttoLqN2VfkEpPOJ"
-          ],
-          "appleMusic": [
-            "279346512"
-          ]
-        },
-        "type": "album",
-        "id": 2330541
       }
     },
     {
@@ -5365,10 +5359,12 @@
           "ean": null,
           "isrc": null,
           "spotify": [
-            "0oFBaXLFsUVa2gEmJf4FcJ"
+            "0oFBaXLFsUVa2gEmJf4FcJ",
+            "4uxzT5LmTxYP0JNxjQGBNs"
           ],
           "appleMusic": [
-            "581774791"
+            "581774791",
+            "1846689585"
           ]
         },
         "type": "album",
@@ -7090,6 +7086,46 @@
     },
     {
       "position": 190,
+      "streams": 14,
+      "playedMs": 7383684,
+      "indicator": null,
+      "album": {
+        "name": "In Search Of Sunrise 3 - Panama",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/ad/1a/57/ad1a57e4-a0e5-1d28-538a-4b2a7885b024/8715197020725.png/768x768bb.jpg",
+        "label": "Songbird",
+        "spotifyPopularity": 27,
+        "totalTracks": 16,
+        "releaseDate": 1041379200000,
+        "genres": [
+          "Dance",
+          "Music",
+          "Electronic",
+          "Trance"
+        ],
+        "artists": [
+          {
+            "id": 10732,
+            "name": "Tiësto",
+            "image": "https://i.scdn.co/image/ab67616100005174e84e08fb1dfa2bf9b5a61563"
+          }
+        ],
+        "externalIds": {
+          "upc": "8715197020725",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "0lmGMgIkDw0WZdGItvz8Tm"
+          ],
+          "appleMusic": [
+            "346561986"
+          ]
+        },
+        "type": "album",
+        "id": 617629
+      }
+    },
+    {
+      "position": 191,
       "streams": 23,
       "playedMs": 7304167,
       "indicator": null,
@@ -7122,7 +7158,7 @@
       }
     },
     {
-      "position": 191,
+      "position": 192,
       "streams": 40,
       "playedMs": 7298099,
       "indicator": null,
@@ -7161,7 +7197,7 @@
       }
     },
     {
-      "position": 192,
+      "position": 193,
       "streams": 33,
       "playedMs": 7262422,
       "indicator": null,
@@ -7201,7 +7237,7 @@
       }
     },
     {
-      "position": 193,
+      "position": 194,
       "streams": 87,
       "playedMs": 7210490,
       "indicator": null,
@@ -7239,7 +7275,7 @@
       }
     },
     {
-      "position": 194,
+      "position": 195,
       "streams": 30,
       "playedMs": 7168785,
       "indicator": null,
@@ -7279,7 +7315,7 @@
       }
     },
     {
-      "position": 195,
+      "position": 196,
       "streams": 27,
       "playedMs": 7131318,
       "indicator": null,
@@ -7317,7 +7353,7 @@
       }
     },
     {
-      "position": 196,
+      "position": 197,
       "streams": 29,
       "playedMs": 7131142,
       "indicator": null,
@@ -7357,7 +7393,7 @@
       }
     },
     {
-      "position": 197,
+      "position": 198,
       "streams": 36,
       "playedMs": 7125029,
       "indicator": null,
@@ -7395,7 +7431,7 @@
       }
     },
     {
-      "position": 198,
+      "position": 199,
       "streams": 40,
       "playedMs": 7085993,
       "indicator": null,
@@ -7428,7 +7464,7 @@
       }
     },
     {
-      "position": 199,
+      "position": 200,
       "streams": 66,
       "playedMs": 7085385,
       "indicator": null,
@@ -7461,7 +7497,7 @@
       }
     },
     {
-      "position": 200,
+      "position": 201,
       "streams": 22,
       "playedMs": 7058466,
       "indicator": null,
@@ -7504,7 +7540,7 @@
       }
     },
     {
-      "position": 201,
+      "position": 202,
       "streams": 31,
       "playedMs": 7030861,
       "indicator": null,
@@ -7545,7 +7581,7 @@
       }
     },
     {
-      "position": 202,
+      "position": 203,
       "streams": 29,
       "playedMs": 7029767,
       "indicator": null,
@@ -7578,7 +7614,7 @@
       }
     },
     {
-      "position": 203,
+      "position": 204,
       "streams": 19,
       "playedMs": 7015066,
       "indicator": null,
@@ -7611,7 +7647,7 @@
       }
     },
     {
-      "position": 204,
+      "position": 205,
       "streams": 22,
       "playedMs": 7005396,
       "indicator": null,
@@ -7646,7 +7682,7 @@
       }
     },
     {
-      "position": 205,
+      "position": 206,
       "streams": 33,
       "playedMs": 6987942,
       "indicator": null,
