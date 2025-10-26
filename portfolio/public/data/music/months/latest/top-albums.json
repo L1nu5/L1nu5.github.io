@@ -114,8 +114,8 @@
     },
     {
       "position": 4,
-      "streams": 20,
-      "playedMs": 6941866,
+      "streams": 21,
+      "playedMs": 7291826,
       "indicator": null,
       "album": {
         "name": "Intense",
@@ -150,6 +150,47 @@
     },
     {
       "position": 5,
+      "streams": 14,
+      "playedMs": 5171412,
+      "indicator": null,
+      "album": {
+        "name": "In Silico",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/00/00/f0/0000f0ca-025c-a337-fcac-494fe8828988/mzi.rebebyaj.jpg/768x768bb.jpg",
+        "label": "WM UK",
+        "spotifyPopularity": 52,
+        "totalTracks": 10,
+        "releaseDate": 1210291200000,
+        "genres": [
+          "Electronic",
+          "Music",
+          "Electronica",
+          "Dance",
+          "Jungle/Drum'n'bass"
+        ],
+        "artists": [
+          {
+            "id": 14203,
+            "name": "Pendulum",
+            "image": "https://i.scdn.co/image/ab676161000051744a45def215a47635d17d8a7b"
+          }
+        ],
+        "externalIds": {
+          "upc": "825646953837",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "6eRDE48ttoLqN2VfkEpPOJ"
+          ],
+          "appleMusic": [
+            "279346512"
+          ]
+        },
+        "type": "album",
+        "id": 2330541
+      }
+    },
+    {
+      "position": 6,
       "streams": 34,
       "playedMs": 4894168,
       "indicator": null,
@@ -182,40 +223,82 @@
       }
     },
     {
-      "position": 6,
+      "position": 7,
       "streams": 20,
       "playedMs": 4621569,
       "indicator": null,
       "album": {
         "name": "Planet Pit (Deluxe Version)",
-        "image": "https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/90/dd/f1/90ddf169-715d-ecd2-660f-bfc9d058c813/886443007154.jpg/768x768bb.jpg",
         "label": "Mr.305/Polo Grounds Music/J Records",
-        "spotifyPopularity": 81,
+        "spotifyPopularity": 26,
         "totalTracks": 16,
-        "releaseDate": 1308268800000,
-        "genres": [],
+        "releaseDate": 1308535200000,
+        "genres": [
+          "Pop",
+          "Music",
+          "Hip-Hop/Rap",
+          "Rap",
+          "Latin Rap",
+          "R&B/Soul"
+        ],
         "artists": [
           {
             "id": 361,
             "name": "Pitbull",
-            "image": "https://i.scdn.co/image/ab676161000051744051627b19277613e0e62a34"
+            "image": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9"
           }
         ],
         "externalIds": {
-          "upc": "886443007178",
+          "upc": "886443007185",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "4rG0MhkU6UojACJxkMHIXB"
+            "6QYAJnxQVosXMMszGfVGvO"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "440733026"
+          ]
         },
         "type": "album",
         "id": 315483
       }
     },
     {
-      "position": 7,
+      "position": 8,
+      "streams": 21,
+      "playedMs": 4600036,
+      "indicator": null,
+      "album": {
+        "name": "Forever",
+        "image": "https://i.scdn.co/image/ab67616d0000b273b804bbd11f864902d452b3a7",
+        "label": "Alesso / Def Jam",
+        "spotifyPopularity": 64,
+        "totalTracks": 14,
+        "releaseDate": 1432252800000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 2081,
+            "name": "Alesso",
+            "image": "https://i.scdn.co/image/ab676161000051742828484ea968409a0ea584a6"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602547322777",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "0tRVSbmOwilUucqjzU0fQw"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 2348216
+      }
+    },
+    {
+      "position": 9,
       "streams": 12,
       "playedMs": 4183769,
       "indicator": null,
@@ -256,7 +339,48 @@
       }
     },
     {
-      "position": 8,
+      "position": 10,
+      "streams": 20,
+      "playedMs": 3981273,
+      "indicator": null,
+      "album": {
+        "name": "Nothing but the Beat 2.0",
+        "image": "https://i.scdn.co/image/ab67616d0000b273a197a2ef3ad6704d1f44aa4e",
+        "label": "Parlophone (France)",
+        "spotifyPopularity": 69,
+        "totalTracks": 23,
+        "releaseDate": 1314144000000,
+        "genres": [
+          "Dance",
+          "Music",
+          "Electronic",
+          "Rock",
+          "House"
+        ],
+        "artists": [
+          {
+            "id": 2103,
+            "name": "David Guetta",
+            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
+          }
+        ],
+        "externalIds": {
+          "upc": "5099997943051",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "5aprcHwM1KJhaY9Kbxkfkn"
+          ],
+          "appleMusic": [
+            "693290088"
+          ]
+        },
+        "type": "album",
+        "id": 1110857
+      }
+    },
+    {
+      "position": 11,
       "streams": 16,
       "playedMs": 3809688,
       "indicator": null,
@@ -295,40 +419,7 @@
       }
     },
     {
-      "position": 9,
-      "streams": 19,
-      "playedMs": 3801273,
-      "indicator": null,
-      "album": {
-        "name": "Nothing but the Beat 2.0",
-        "image": "https://i.scdn.co/image/ab67616d0000b273a197a2ef3ad6704d1f44aa4e",
-        "label": "Parlophone (France)",
-        "spotifyPopularity": 69,
-        "totalTracks": 23,
-        "releaseDate": 1314144000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 2103,
-            "name": "David Guetta",
-            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
-          }
-        ],
-        "externalIds": {
-          "upc": "5099997943051",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "5aprcHwM1KJhaY9Kbxkfkn"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 1110857
-      }
-    },
-    {
-      "position": 10,
+      "position": 12,
       "streams": 8,
       "playedMs": 3719226,
       "indicator": null,
@@ -364,7 +455,44 @@
       }
     },
     {
-      "position": 11,
+      "position": 13,
+      "streams": 18,
+      "playedMs": 3547756,
+      "indicator": null,
+      "album": {
+        "name": "18 Months",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ab/af/22/abaf2296-ed4d-6da2-c24d-503cfdfa4c1f/0617465356858.jpg/768x768bb.jpg",
+        "label": "Columbia",
+        "spotifyPopularity": 78,
+        "totalTracks": 15,
+        "releaseDate": 1351468800000,
+        "genres": [
+          "Dance",
+          "Music",
+          "Rock"
+        ],
+        "artists": [
+          {
+            "id": 366,
+            "name": "Ellie Goulding",
+            "image": "https://i.scdn.co/image/ab67616100005174c3cd7dc428871e8985d62b9a"
+          }
+        ],
+        "externalIds": {
+          "upc": "884977912999",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "7w19PFbxAjwZ7UVNp9z0uT"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 144028
+      }
+    },
+    {
+      "position": 14,
       "streams": 11,
       "playedMs": 3478123,
       "indicator": null,
@@ -397,7 +525,85 @@
       }
     },
     {
-      "position": 12,
+      "position": 15,
+      "streams": 13,
+      "playedMs": 3401811,
+      "indicator": null,
+      "album": {
+        "name": "Parachutes",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/0f/a5/3b/0fa53b8d-b216-5086-f04d-12b10c1db0ca/dj.izqilkdj.jpg/768x768bb.jpg",
+        "label": "Parlophone UK",
+        "spotifyPopularity": 83,
+        "totalTracks": 10,
+        "releaseDate": 963187200000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 779,
+            "name": "Coldplay",
+            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
+          }
+        ],
+        "externalIds": {
+          "upc": "0067003016254",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "6ZG5lRT77aJ3btmArcykra"
+          ],
+          "appleMusic": [
+            "696830354"
+          ]
+        },
+        "type": "album",
+        "id": 435566
+      }
+    },
+    {
+      "position": 16,
+      "streams": 13,
+      "playedMs": 3400302,
+      "indicator": null,
+      "album": {
+        "name": "Parachutes",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/768x768bb.jpg",
+        "label": "Parlophone UK",
+        "spotifyPopularity": 0,
+        "totalTracks": 10,
+        "releaseDate": 963187200000,
+        "genres": [
+          "Alternative",
+          "Musik",
+          "Indie-Rock",
+          "Pop",
+          "Britpop",
+          "Rock",
+          "Adult Alternative",
+          "Music",
+          "Indie Rock"
+        ],
+        "artists": [
+          {
+            "id": 779,
+            "name": "Coldplay",
+            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
+          }
+        ],
+        "externalIds": {
+          "upc": "190295978075",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": [
+            "1122782080"
+          ]
+        },
+        "type": "album",
+        "id": 25099095
+      }
+    },
+    {
+      "position": 17,
       "streams": 6,
       "playedMs": 3164436,
       "indicator": null,
@@ -437,7 +643,7 @@
       }
     },
     {
-      "position": 13,
+      "position": 18,
       "streams": 6,
       "playedMs": 3116256,
       "indicator": null,
@@ -476,43 +682,7 @@
       }
     },
     {
-      "position": 14,
-      "streams": 10,
-      "playedMs": 3097874,
-      "indicator": null,
-      "album": {
-        "name": "In Absentia",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d7/2c/51/d72c512e-2725-5aaf-7e6d-97ede043fbba/802644815961.jpg/768x768bb.jpg",
-        "label": "Kscope",
-        "spotifyPopularity": 35,
-        "totalTracks": 12,
-        "releaseDate": 1032825600000,
-        "genres": [
-          "Rock",
-          "Music",
-          "Prog-Rock/Art Rock",
-          "Classical"
-        ],
-        "artists": [
-          {
-            "id": 873,
-            "name": "Porcupine Tree",
-            "image": "https://i.scdn.co/image/ab67616100005174c4f72407be5d96db73982400"
-          }
-        ],
-        "externalIds": {
-          "upc": "802644401669",
-          "ean": null,
-          "isrc": null,
-          "spotify": [],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 614882
-      }
-    },
-    {
-      "position": 15,
+      "position": 19,
       "streams": 11,
       "playedMs": 2914406,
       "indicator": null,
@@ -520,9 +690,9 @@
         "name": "X (Expanded Edition)",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a3/3a/e3/a33ae3c7-821c-1531-0436-305fcd91f7fe/886444792073.jpg/768x768bb.jpg",
         "label": "RCA Records Label",
-        "spotifyPopularity": 72,
-        "totalTracks": 22,
-        "releaseDate": 1410825600000,
+        "spotifyPopularity": 0,
+        "totalTracks": 21,
+        "releaseDate": 1410832800000,
         "genres": [
           "R&B/Soul",
           "Music"
@@ -535,24 +705,22 @@
           }
         ],
         "externalIds": {
-          "upc": "886444792073",
+          "upc": "886444257909",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "3LByoNjO4gbuX5D0u26LDY"
+            "2Mlg0kD9v2Ba1DaQZuyKi6"
           ],
-          "appleMusic": [
-            "920685975"
-          ]
+          "appleMusic": []
         },
         "type": "album",
         "id": 329130
       }
     },
     {
-      "position": 16,
+      "position": 20,
       "streams": 10,
-      "playedMs": 2899914,
+      "playedMs": 2883395,
       "indicator": null,
       "album": {
         "name": "Duran Duran",
@@ -593,75 +761,54 @@
       }
     },
     {
-      "position": 17,
-      "streams": 13,
-      "playedMs": 2886304,
+      "position": 21,
+      "streams": 11,
+      "playedMs": 2880729,
       "indicator": null,
       "album": {
-        "name": "Forever",
-        "image": "https://i.scdn.co/image/ab67616d0000b273b804bbd11f864902d452b3a7",
-        "label": "Alesso / Def Jam",
-        "spotifyPopularity": 64,
-        "totalTracks": 14,
-        "releaseDate": 1432252800000,
-        "genres": [],
+        "name": "Immersion",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/d4/48/7e/mzi.mcaysnnz.jpg/768x768bb.jpg",
+        "label": "WM UK",
+        "spotifyPopularity": 61,
+        "totalTracks": 15,
+        "releaseDate": 1274400000000,
+        "genres": [
+          "Alternative",
+          "Music",
+          "Electronic",
+          "Rock",
+          "Dance",
+          "Trance",
+          "Jungle/Drum'n'bass",
+          "Techno",
+          "Electronica",
+          "Jazz",
+          "Big Band"
+        ],
         "artists": [
           {
-            "id": 2081,
-            "name": "Alesso",
-            "image": "https://i.scdn.co/image/ab676161000051742828484ea968409a0ea584a6"
+            "id": 14203,
+            "name": "Pendulum",
+            "image": "https://i.scdn.co/image/ab676161000051744a45def215a47635d17d8a7b"
           }
         ],
         "externalIds": {
-          "upc": "00602547322777",
+          "upc": "825646810369",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "0tRVSbmOwilUucqjzU0fQw"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 2348216
-      }
-    },
-    {
-      "position": 18,
-      "streams": 10,
-      "playedMs": 2815611,
-      "indicator": null,
-      "album": {
-        "name": "Parachutes",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/0f/a5/3b/0fa53b8d-b216-5086-f04d-12b10c1db0ca/dj.izqilkdj.jpg/768x768bb.jpg",
-        "label": "Parlophone UK",
-        "spotifyPopularity": 85,
-        "totalTracks": 10,
-        "releaseDate": 963187200000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
-        "externalIds": {
-          "upc": "0067003016254",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "6ZG5lRT77aJ3btmArcykra"
+            "3XtEGVx9uh7J46nBzEc1VS"
           ],
           "appleMusic": [
-            "696830354"
+            "369711549"
           ]
         },
         "type": "album",
-        "id": 435566
+        "id": 686687
       }
     },
     {
-      "position": 19,
+      "position": 22,
       "streams": 5,
       "playedMs": 2743306,
       "indicator": null,
@@ -700,86 +847,7 @@
       }
     },
     {
-      "position": 20,
-      "streams": 15,
-      "playedMs": 2709720,
-      "indicator": null,
-      "album": {
-        "name": "Hollywood's Bleeding",
-        "image": "https://i.scdn.co/image/ab67616d0000b2739478c87599550dd73bfa7e02",
-        "label": "Republic Records",
-        "spotifyPopularity": 83,
-        "totalTracks": 17,
-        "releaseDate": 1567728000000,
-        "genres": [
-          "Hip-Hop/Rap",
-          "Music"
-        ],
-        "artists": [
-          {
-            "id": 22346,
-            "name": "Post Malone",
-            "image": "https://i.scdn.co/image/ab67616100005174e17c0aa1714a03d62b5ce4e0"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602508327445",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4g1ZRSobMefqF6nelkgibi"
-          ],
-          "appleMusic": [
-            "1477880265"
-          ]
-        },
-        "type": "album",
-        "id": 49360
-      }
-    },
-    {
-      "position": 21,
-      "streams": 7,
-      "playedMs": 2693133,
-      "indicator": null,
-      "album": {
-        "name": "In Silico",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/00/00/f0/0000f0ca-025c-a337-fcac-494fe8828988/mzi.rebebyaj.jpg/768x768bb.jpg",
-        "label": "WM UK",
-        "spotifyPopularity": 52,
-        "totalTracks": 10,
-        "releaseDate": 1210291200000,
-        "genres": [
-          "Electronic",
-          "Music",
-          "Electronica",
-          "Dance",
-          "Jungle/Drum'n'bass"
-        ],
-        "artists": [
-          {
-            "id": 14203,
-            "name": "Pendulum",
-            "image": "https://i.scdn.co/image/ab676161000051744a45def215a47635d17d8a7b"
-          }
-        ],
-        "externalIds": {
-          "upc": "825646953837",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "6eRDE48ttoLqN2VfkEpPOJ"
-          ],
-          "appleMusic": [
-            "279346512"
-          ]
-        },
-        "type": "album",
-        "id": 2330541
-      }
-    },
-    {
-      "position": 22,
+      "position": 23,
       "streams": 8,
       "playedMs": 2537385,
       "indicator": null,
@@ -852,7 +920,7 @@
       }
     },
     {
-      "position": 23,
+      "position": 24,
       "streams": 8,
       "playedMs": 2515899,
       "indicator": null,
@@ -872,7 +940,7 @@
           {
             "id": 94027,
             "name": "Fred again..",
-            "image": "https://i.scdn.co/image/ab676161000051742302e6ba3091fcbc6fd5bb54"
+            "image": "https://i.scdn.co/image/ab67616100005174381c41adc678e4ce864eb274"
           }
         ],
         "externalIds": {
@@ -891,58 +959,17 @@
       }
     },
     {
-      "position": 24,
-      "streams": 9,
-      "playedMs": 2375649,
-      "indicator": null,
-      "album": {
-        "name": "The Wall",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/3c/b4/e3/3cb4e3d0-cd77-8f18-7465-d60e6949b435/886445635850.jpg/768x768bb.jpg",
-        "label": "Pink Floyd Records",
-        "spotifyPopularity": 78,
-        "totalTracks": 26,
-        "releaseDate": 312768000000,
-        "genres": [
-          "Rock",
-          "Music",
-          "Prog-Rock/Art Rock",
-          "Arena Rock",
-          "Hard Rock"
-        ],
-        "artists": [
-          {
-            "id": 16829,
-            "name": "Pink Floyd",
-            "image": "https://i.scdn.co/image/d011c95081cd9a329e506abd7ded47535d524a07"
-          }
-        ],
-        "externalIds": {
-          "upc": "886445613841",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "5Dbax7G8SWrP9xyzkOvy2F"
-          ],
-          "appleMusic": [
-            "1065975633"
-          ]
-        },
-        "type": "album",
-        "id": 217242
-      }
-    },
-    {
       "position": 25,
-      "streams": 11,
-      "playedMs": 2326198,
+      "streams": 12,
+      "playedMs": 2510478,
       "indicator": null,
       "album": {
         "name": "Motion",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f6/f3/15/f6f3159a-486a-390c-310b-df2c136074ed/886444820448.jpg/768x768bb.jpg",
         "label": "Columbia",
-        "spotifyPopularity": 82,
+        "spotifyPopularity": 85,
         "totalTracks": 15,
-        "releaseDate": 1414713600000,
+        "releaseDate": 1416445200000,
         "genres": [
           "Dance",
           "Music",
@@ -952,19 +979,22 @@
         ],
         "artists": [
           {
-            "id": 366,
-            "name": "Ellie Goulding",
-            "image": "https://i.scdn.co/image/ab67616100005174c3cd7dc428871e8985d62b9a"
+            "id": 2409,
+            "name": "Calvin Harris",
+            "image": "https://i.scdn.co/image/ab676161000051741e4bcd2bef1896648762dd6b"
           }
         ],
         "externalIds": {
-          "upc": "886444820448",
+          "upc": "886444906296",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "48zisMeiXniWLzOQghbPqS"
+            "5oMRPoOe5sTMdsqYLGJCwf"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "922876176",
+            "930891598"
+          ]
         },
         "type": "album",
         "id": 542014
@@ -972,49 +1002,6 @@
     },
     {
       "position": 26,
-      "streams": 9,
-      "playedMs": 2286996,
-      "indicator": null,
-      "album": {
-        "name": "Parachutes",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/768x768bb.jpg",
-        "label": "Parlophone UK",
-        "spotifyPopularity": 0,
-        "totalTracks": 10,
-        "releaseDate": 963187200000,
-        "genres": [
-          "Alternative",
-          "Musik",
-          "Indie-Rock",
-          "Pop",
-          "Britpop",
-          "Rock",
-          "Adult Alternative",
-          "Music",
-          "Indie Rock"
-        ],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
-        "externalIds": {
-          "upc": "190295978075",
-          "ean": null,
-          "isrc": null,
-          "spotify": [],
-          "appleMusic": [
-            "1122782080"
-          ]
-        },
-        "type": "album",
-        "id": 25099095
-      }
-    },
-    {
-      "position": 27,
       "streams": 10,
       "playedMs": 2277860,
       "indicator": null,
@@ -1056,6 +1043,53 @@
       }
     },
     {
+      "position": 27,
+      "streams": 10,
+      "playedMs": 2252260,
+      "indicator": null,
+      "album": {
+        "name": "Fan of A Fan The Album (Expanded Edition)",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5b/90/89/5b908989-9e30-d9e7-4287-e34002eaa878/dj.mbpiaprs.jpg/768x768bb.jpg",
+        "label": "RCA Records/Young Money Entertainment/Cash Money Records",
+        "spotifyPopularity": 1,
+        "totalTracks": 16,
+        "releaseDate": 1424739600000,
+        "genres": [
+          "Hip-Hop/Rap",
+          "Music",
+          "Rap",
+          "R&B/Soul",
+          "Contemporary R&B"
+        ],
+        "artists": [
+          {
+            "id": 2411,
+            "name": "Chris Brown",
+            "image": "https://i.scdn.co/image/ab67616100005174a48397e590a1c70e2cda7728"
+          },
+          {
+            "id": 19716,
+            "name": "Tyga",
+            "image": "https://i.scdn.co/image/ab67616100005174c0aa5c92c47f7e766074edce"
+          }
+        ],
+        "externalIds": {
+          "upc": "886445183863",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "3yYC5gYyVfycthR54Se2st"
+          ],
+          "appleMusic": [
+            "964294743",
+            "980929275"
+          ]
+        },
+        "type": "album",
+        "id": 544933
+      }
+    },
+    {
       "position": 28,
       "streams": 6,
       "playedMs": 2191104,
@@ -1091,6 +1125,88 @@
     {
       "position": 29,
       "streams": 6,
+      "playedMs": 2140154,
+      "indicator": null,
+      "album": {
+        "name": "5 Years of mau5",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/fd/30/e1fd30f7-5e6b-22e6-33ea-ed7c31ac7a6e/617465013379.jpg/768x768bb.jpg",
+        "label": "EpicWin Ltd",
+        "spotifyPopularity": 35,
+        "totalTracks": 25,
+        "releaseDate": 1416787200000,
+        "genres": [
+          "Electronic",
+          "Music",
+          "Dance"
+        ],
+        "artists": [
+          {
+            "id": 9967,
+            "name": "deadmau5",
+            "image": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7"
+          }
+        ],
+        "externalIds": {
+          "upc": "617465013379",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "0zJAZVUcNPosuA8f8AweLl"
+          ],
+          "appleMusic": [
+            "1815588277"
+          ]
+        },
+        "type": "album",
+        "id": 56470920
+      }
+    },
+    {
+      "position": 30,
+      "streams": 7,
+      "playedMs": 2112588,
+      "indicator": null,
+      "album": {
+        "name": "In Absentia",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c7/d7/cb/c7d7cb93-6292-156d-bf68-ae324c8e6424/802644401669.jpg/768x768bb.jpg",
+        "label": "Kscope",
+        "spotifyPopularity": 43,
+        "totalTracks": 12,
+        "releaseDate": 1032832800000,
+        "genres": [
+          "Rock",
+          "Music",
+          "Classical",
+          "Prog-Rock/Art Rock"
+        ],
+        "artists": [
+          {
+            "id": 873,
+            "name": "Porcupine Tree",
+            "image": "https://i.scdn.co/image/ab67616100005174c4f72407be5d96db73982400"
+          }
+        ],
+        "externalIds": {
+          "upc": "802644401669",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "60FolYyZWPaWAbUzLZW8fl",
+            "2dAYkfqPYzOTDNxDDVP2vi",
+            "4agUY2b2OmBcXEqykG13yA",
+            "5P7PsE8GmEB5TswXHMAySc"
+          ],
+          "appleMusic": [
+            "1770062036"
+          ]
+        },
+        "type": "album",
+        "id": 614882
+      }
+    },
+    {
+      "position": 31,
+      "streams": 6,
       "playedMs": 2061531,
       "indicator": null,
       "album": {
@@ -1122,51 +1238,40 @@
       }
     },
     {
-      "position": 30,
-      "streams": 9,
-      "playedMs": 2027034,
+      "position": 32,
+      "streams": 7,
+      "playedMs": 1867411,
       "indicator": null,
       "album": {
-        "name": "Fan of A Fan The Album (Expanded Edition)",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5b/90/89/5b908989-9e30-d9e7-4287-e34002eaa878/dj.mbpiaprs.jpg/768x768bb.jpg",
-        "label": "RCA Records/Young Money Entertainment/Cash Money Records",
-        "spotifyPopularity": 73,
-        "totalTracks": 16,
-        "releaseDate": 1424736000000,
-        "genres": [
-          "Hip-Hop/Rap",
-          "Music",
-          "Rap",
-          "R&B/Soul",
-          "Contemporary R&B"
-        ],
+        "name": "and it goes like this...",
+        "image": "https://i.scdn.co/image/ab67616d0000b2736a5b12c736bd77f7bdae8201",
+        "label": "Warner Music Group - X5 Music Group",
+        "spotifyPopularity": 0,
+        "totalTracks": 41,
+        "releaseDate": 1716595200000,
+        "genres": [],
         "artists": [
           {
-            "id": 2411,
-            "name": "Chris Brown",
-            "image": "https://i.scdn.co/image/ab67616100005174a48397e590a1c70e2cda7728"
-          },
-          {
-            "id": 19716,
-            "name": "Tyga",
-            "image": "https://i.scdn.co/image/ab67616100005174c0aa5c92c47f7e766074edce"
+            "id": 174,
+            "name": "Various Artists",
+            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
           }
         ],
         "externalIds": {
-          "upc": "886445048438",
+          "upc": "5059460293205",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "4neocSMt40stXKK2B8Sy2G"
+            "1xjEpsZrDUmOUIslqc7lWx"
           ],
           "appleMusic": []
         },
-        "type": "album",
-        "id": 544933
+        "type": "compilation",
+        "id": 28598382
       }
     },
     {
-      "position": 31,
+      "position": 33,
       "streams": 8,
       "playedMs": 1857488,
       "indicator": null,
@@ -1174,10 +1279,18 @@
         "name": "Black Panther The Album Music From And Inspired By",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4d/16/55/4d165549-3d11-86dc-fcbf-be7fe0bcadfb/18UMGIM00002.rgb.jpg/768x768bb.jpg",
         "label": "Black Panther (TDE/DMG) PS",
-        "spotifyPopularity": 52,
+        "spotifyPopularity": 79,
         "totalTracks": 14,
-        "releaseDate": 1518048000000,
-        "genres": [],
+        "releaseDate": 1518134400000,
+        "genres": [
+          "Soundtrack",
+          "Music",
+          "Hip-Hop/Rap",
+          "Rap",
+          "R&B/Soul",
+          "Contemporary R&B",
+          "Soundtrack"
+        ],
         "artists": [
           {
             "id": 18061,
@@ -1186,20 +1299,18 @@
           }
         ],
         "externalIds": {
-          "upc": "00602567350279",
+          "upc": "00602567359586",
           "ean": null,
           "isrc": null,
-          "spotify": [
-            "5sOSzueqgCiVpXNcpd6QpL"
-          ],
+          "spotify": [],
           "appleMusic": []
         },
-        "type": "album",
+        "type": "compilation",
         "id": 328821
       }
     },
     {
-      "position": 32,
+      "position": 34,
       "streams": 10,
       "playedMs": 1846130,
       "indicator": null,
@@ -1237,43 +1348,7 @@
       }
     },
     {
-      "position": 33,
-      "streams": 7,
-      "playedMs": 1832883,
-      "indicator": null,
-      "album": {
-        "name": "No Decoder",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/f6/d1/1a/f6d11a79-cc45-acb3-19bc-ba77cbd19683/cover.jpg/768x768bb.jpg",
-        "label": "Gentle Art Of Music",
-        "spotifyPopularity": 48,
-        "totalTracks": 12,
-        "releaseDate": 1288915200000,
-        "genres": [
-          "Rock",
-          "Music"
-        ],
-        "artists": [
-          {
-            "id": 1897801,
-            "name": "Yogi Lang",
-            "image": "https://i.scdn.co/image/ab676161000051746ab2483f5bb2ec5761c705ea"
-          }
-        ],
-        "externalIds": {
-          "upc": "0881226924420",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "1L23VrLRr7cOeqnNv6LcFC"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 2998683
-      }
-    },
-    {
-      "position": 34,
+      "position": 35,
       "streams": 13,
       "playedMs": 1822001,
       "indicator": null,
@@ -1303,53 +1378,6 @@
         },
         "type": "album",
         "id": 13937475
-      }
-    },
-    {
-      "position": 35,
-      "streams": 7,
-      "playedMs": 1808956,
-      "indicator": null,
-      "album": {
-        "name": "Immersion",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/d4/48/7e/mzi.mcaysnnz.jpg/768x768bb.jpg",
-        "label": "WM UK",
-        "spotifyPopularity": 61,
-        "totalTracks": 15,
-        "releaseDate": 1274400000000,
-        "genres": [
-          "Alternative",
-          "Music",
-          "Electronic",
-          "Rock",
-          "Dance",
-          "Trance",
-          "Jungle/Drum'n'bass",
-          "Techno",
-          "Electronica",
-          "Jazz",
-          "Big Band"
-        ],
-        "artists": [
-          {
-            "id": 14203,
-            "name": "Pendulum",
-            "image": "https://i.scdn.co/image/ab676161000051744a45def215a47635d17d8a7b"
-          }
-        ],
-        "externalIds": {
-          "upc": "825646810369",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "3XtEGVx9uh7J46nBzEc1VS"
-          ],
-          "appleMusic": [
-            "369711549"
-          ]
-        },
-        "type": "album",
-        "id": 686687
       }
     },
     {
@@ -1392,17 +1420,18 @@
       "indicator": null,
       "album": {
         "name": "Apocalyptic Love",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/9c/55/4d/9c554d8a-d3fb-a4e9-eaae-98ecd00d57e9/886443469211.jpg/768x768bb.jpg",
-        "label": "Dik Hayd Records",
-        "spotifyPopularity": 44,
+        "image": "https://i.scdn.co/image/ab67616d0000b273d747015adbaf361a99a7329b",
+        "label": "Roadrunner",
+        "spotifyPopularity": 52,
         "totalTracks": 15,
-        "releaseDate": 1339977600000,
+        "releaseDate": 1336694400000,
         "genres": [
           "Hard Rock",
-          "Music",
+          "Musik",
           "Rock",
+          "Metal",
           "Hair Metal",
-          "Metal"
+          "Arena-Rock"
         ],
         "artists": [
           {
@@ -1412,12 +1441,14 @@
           }
         ],
         "externalIds": {
-          "upc": "886443469211",
+          "upc": "016861767891",
           "ean": null,
           "isrc": null,
-          "spotify": [],
+          "spotify": [
+            "1813RzxdZZLBOJ86l7yYyI"
+          ],
           "appleMusic": [
-            "520401305"
+            "519679185"
           ]
         },
         "type": "album",
@@ -1426,122 +1457,6 @@
     },
     {
       "position": 38,
-      "streams": 10,
-      "playedMs": 1781330,
-      "indicator": null,
-      "album": {
-        "name": "F-1 Trillion",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ad/c8/95adc8ca-e583-1800-9b56-4665f186e899/24UMGIM60824.rgb.jpg/768x768bb.jpg",
-        "label": "Mercury Records/Post Malone",
-        "spotifyPopularity": 79,
-        "totalTracks": 18,
-        "releaseDate": 1723680000000,
-        "genres": [
-          "Country",
-          "Music"
-        ],
-        "artists": [
-          {
-            "id": 22346,
-            "name": "Post Malone",
-            "image": "https://i.scdn.co/image/ab67616100005174e17c0aa1714a03d62b5ce4e0"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602465895292",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4BbsHmXEghoPPevQjPnHXx"
-          ],
-          "appleMusic": [
-            "1752531522"
-          ]
-        },
-        "type": "album",
-        "id": 27186283
-      }
-    },
-    {
-      "position": 39,
-      "streams": 5,
-      "playedMs": 1780533,
-      "indicator": null,
-      "album": {
-        "name": "A Way out of Here",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/0d/6a/00/0d6a00f5-2bef-ece6-83f7-c76b047a0dc9/cover.jpg/768x768bb.jpg",
-        "label": "Gentle Art Of Music",
-        "spotifyPopularity": 41,
-        "totalTracks": 9,
-        "releaseDate": 1573171200000,
-        "genres": [
-          "Prog-Rock/Art Rock",
-          "Music",
-          "Rock"
-        ],
-        "artists": [
-          {
-            "id": 1897801,
-            "name": "Yogi Lang",
-            "image": "https://i.scdn.co/image/ab676161000051746ab2483f5bb2ec5761c705ea"
-          }
-        ],
-        "externalIds": {
-          "upc": "3616401730568",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "5NiOwAh3JkeMa9YYSkINiI"
-          ],
-          "appleMusic": [
-            "1484165195"
-          ]
-        },
-        "type": "album",
-        "id": 1509913
-      }
-    },
-    {
-      "position": 40,
-      "streams": 5,
-      "playedMs": 1780154,
-      "indicator": null,
-      "album": {
-        "name": "5 Years of mau5",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/fd/30/e1fd30f7-5e6b-22e6-33ea-ed7c31ac7a6e/617465013379.jpg/768x768bb.jpg",
-        "label": "EpicWin Ltd",
-        "spotifyPopularity": 35,
-        "totalTracks": 25,
-        "releaseDate": 1416787200000,
-        "genres": [
-          "Electronic",
-          "Music",
-          "Dance"
-        ],
-        "artists": [
-          {
-            "id": 9967,
-            "name": "deadmau5",
-            "image": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7"
-          }
-        ],
-        "externalIds": {
-          "upc": "617465013379",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "0zJAZVUcNPosuA8f8AweLl"
-          ],
-          "appleMusic": [
-            "1815588277"
-          ]
-        },
-        "type": "album",
-        "id": 56470920
-      }
-    },
-    {
-      "position": 41,
       "streams": 7,
       "playedMs": 1751316,
       "indicator": null,
@@ -1549,9 +1464,9 @@
         "name": "The Marshall Mathers LP2",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fb/dd/5e/fbdd5e55-b41c-ba25-c84c-4f07dfdb82e7/00602537542697.rgb.jpg/768x768bb.jpg",
         "label": "Aftermath",
-        "spotifyPopularity": 35,
+        "spotifyPopularity": 68,
         "totalTracks": 16,
-        "releaseDate": 1356998400000,
+        "releaseDate": 1383609600000,
         "genres": [
           "Hip-Hop/Rap",
           "Music",
@@ -1566,22 +1481,20 @@
           }
         ],
         "externalIds": {
-          "upc": "00602537619207",
+          "upc": "00602537619221",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "1YVirtsO6xC4eTfJnUL3yK"
+            "3vOgbDjgsZBAPwV2M3bNOj"
           ],
-          "appleMusic": [
-            "1440819356"
-          ]
+          "appleMusic": []
         },
         "type": "album",
         "id": 8514
       }
     },
     {
-      "position": 42,
+      "position": 39,
       "streams": 5,
       "playedMs": 1694330,
       "indicator": null,
@@ -1618,7 +1531,7 @@
       }
     },
     {
-      "position": 43,
+      "position": 40,
       "streams": 7,
       "playedMs": 1664600,
       "indicator": null,
@@ -1655,7 +1568,7 @@
       }
     },
     {
-      "position": 44,
+      "position": 41,
       "streams": 7,
       "playedMs": 1611890,
       "indicator": null,
@@ -1663,12 +1576,15 @@
         "name": "Cyberpunk 2077: Radio, Vol. 2 (Original Soundtrack)",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/1b/41/2b/1b412bef-ba81-3173-6d26-41128c0f366c/780163581720.jpg/768x768bb.jpg",
         "label": "Lakeshore Records",
-        "spotifyPopularity": 69,
+        "spotifyPopularity": 72,
         "totalTracks": 9,
         "releaseDate": 1608249600000,
         "genres": [
           "Soundtrack",
-          "Music"
+          "Music",
+          "Bandas sonoras",
+          "Música",
+          "Videojuegos"
         ],
         "artists": [
           {
@@ -1685,7 +1601,8 @@
             "1VGVJdmvOSRK2w9RKXk18A"
           ],
           "appleMusic": [
-            "1540792622"
+            "1540792622",
+            "1541001394"
           ]
         },
         "type": "compilation",
@@ -1693,17 +1610,17 @@
       }
     },
     {
-      "position": 45,
-      "streams": 6,
-      "playedMs": 1600638,
+      "position": 42,
+      "streams": 7,
+      "playedMs": 1589651,
       "indicator": null,
       "album": {
-        "name": "and it goes like this...",
-        "image": "https://i.scdn.co/image/ab67616d0000b2736a5b12c736bd77f7bdae8201",
+        "name": "lifeline sad pop",
+        "image": "https://i.scdn.co/image/ab67616d0000b27303ea240336cd1ab4a9f6432b",
         "label": "Warner Music Group - X5 Music Group",
         "spotifyPopularity": 0,
-        "totalTracks": 41,
-        "releaseDate": 1716595200000,
+        "totalTracks": 49,
+        "releaseDate": 1676422800000,
         "genres": [],
         "artists": [
           {
@@ -1713,61 +1630,101 @@
           }
         ],
         "externalIds": {
-          "upc": "5059460293205",
+          "upc": "5059460179592",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "1xjEpsZrDUmOUIslqc7lWx"
+            "0IYPKbB6Oa6fRmbO1dJ23e"
           ],
           "appleMusic": []
         },
         "type": "compilation",
-        "id": 28598382
+        "id": 12371846
       }
     },
     {
-      "position": 46,
-      "streams": 6,
-      "playedMs": 1549759,
+      "position": 43,
+      "streams": 4,
+      "playedMs": 1582529,
       "indicator": null,
       "album": {
-        "name": "Hurry Up Tomorrow",
-        "image": "https://i.scdn.co/image/ab67616d0000b2734aa8b835e86c68b78ee147d6",
-        "label": "XO / Republic Records",
-        "spotifyPopularity": 68,
-        "totalTracks": 22,
-        "releaseDate": 1738195200000,
+        "name": "Until Now",
+        "image": "https://i.scdn.co/image/ab67616d0000b273781f6dd5abe91929df0314e3",
+        "label": "Virgin Records",
+        "spotifyPopularity": 59,
+        "totalTracks": 10,
+        "releaseDate": 1325376000000,
         "genres": [],
         "artists": [
           {
-            "id": 11615,
-            "name": "The Weeknd",
-            "image": "https://i.scdn.co/image/ab676161000051749e528993a2820267b97f6aae"
+            "id": 17861,
+            "name": "Swedish House Mafia",
+            "image": "https://i.scdn.co/image/ab676161000051742a69903cac5dbe1f233ffb79"
           }
         ],
         "externalIds": {
-          "upc": "00602475916086",
+          "upc": "05099923236455",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "6iyZdOoujtOwiThdAUI8TM"
+            "4ljisoNarj0BpQSMIEv88L"
           ],
           "appleMusic": []
         },
         "type": "album",
-        "id": 50203201
+        "id": 217345
       }
     },
     {
-      "position": 47,
+      "position": 44,
+      "streams": 7,
+      "playedMs": 1551038,
+      "indicator": null,
+      "album": {
+        "name": "Talk That Talk (Explicit)",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/16/90/6e/16906e38-2538-9d48-aa30-6eba7405972c/16UMGIM59229.rgb.jpg/768x768bb.jpg",
+        "label": "Def Jam Recordings",
+        "spotifyPopularity": 0,
+        "totalTracks": 12,
+        "releaseDate": 1293843600000,
+        "genres": [
+          "Pop",
+          "Music",
+          "R&B/Soul",
+          "Contemporary R&B",
+          "Dance",
+          "Rock"
+        ],
+        "artists": [
+          {
+            "id": 18521,
+            "name": "Rihanna",
+            "image": "https://i.scdn.co/image/ab67616100005174cb565a8e684e3be458d329ac"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602527906164",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4HGUC0YUVSPBNFKUJN2aWG"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 25996
+      }
+    },
+    {
+      "position": 45,
       "streams": 6,
       "playedMs": 1518933,
       "indicator": null,
       "album": {
         "name": "Nevermind (Remastered)",
-        "image": "https://i.scdn.co/image/ab67616d0000b273fbc71c99f9c1296c56dd51b6",
+        "image": "https://i.scdn.co/image/ab67616d0000b273e175a19e530c898d167d39bf",
         "label": "Geffen",
-        "spotifyPopularity": 80,
+        "spotifyPopularity": 75,
         "totalTracks": 13,
         "releaseDate": 685843200000,
         "genres": [],
@@ -1779,11 +1736,11 @@
           }
         ],
         "externalIds": {
-          "upc": "00602527856865",
+          "upc": "00602527805641",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "2UJcKiJxNryhL050F5Z1Fk"
+            "2guirTSEqLizK7j9i1MTTZ"
           ],
           "appleMusic": []
         },
@@ -1792,7 +1749,7 @@
       }
     },
     {
-      "position": 48,
+      "position": 46,
       "streams": 7,
       "playedMs": 1512000,
       "indicator": null,
@@ -1806,9 +1763,9 @@
         "genres": [],
         "artists": [
           {
-            "id": 163635,
-            "name": "Mark Angelo",
-            "image": "https://i.scdn.co/image/ab67616d00001e02543a952db492f450cad9e5c1"
+            "id": 174,
+            "name": "Various Artists",
+            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
           }
         ],
         "externalIds": {
@@ -1825,7 +1782,7 @@
       }
     },
     {
-      "position": 49,
+      "position": 47,
       "streams": 8,
       "playedMs": 1507965,
       "indicator": null,
@@ -1864,93 +1821,99 @@
       }
     },
     {
-      "position": 50,
+      "position": 48,
       "streams": 6,
-      "playedMs": 1481548,
+      "playedMs": 1481665,
       "indicator": null,
       "album": {
-        "name": "Rolling Papers",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/9c/dc/2f/mzi.qfvfmbae.jpg/768x768bb.jpg",
-        "label": "Rostrum/Atlantic",
+        "name": "Clarity",
+        "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
+        "label": "Interscope",
         "spotifyPopularity": 68,
-        "totalTracks": 14,
-        "releaseDate": 1301364000000,
-        "genres": [
-          "Hip-hop/Rap",
-          "Musique",
-          "Rap dur",
-          "Hip-hop/Rap",
-          "Rap côte Est"
-        ],
+        "totalTracks": 10,
+        "releaseDate": 1325379600000,
+        "genres": [],
         "artists": [
           {
-            "id": 634,
-            "name": "Wiz Khalifa",
-            "image": "https://i.scdn.co/image/ab67616100005174c66b0a8c3268f0b6556f64a8"
+            "id": 2085,
+            "name": "Zedd",
+            "image": "https://i.scdn.co/image/ab67616100005174e28762aed82cde1178fb3873"
           }
         ],
         "externalIds": {
-          "upc": "075679968616",
+          "upc": "00602537160983",
           "ean": null,
           "isrc": null,
-          "spotify": [],
+          "spotify": [
+            "7juWTdmjo0vYywWu8HiQxs"
+          ],
           "appleMusic": []
         },
         "type": "album",
-        "id": 1275201
+        "id": 84614
       }
     },
     {
-      "position": 51,
-      "streams": 3,
-      "playedMs": 1441653,
+      "position": 49,
+      "streams": 8,
+      "playedMs": 1433640,
       "indicator": null,
       "album": {
-        "name": "Deadwing",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/b9/8a/e1b98ad8-51c0-89f0-a070-ce0bdcd1d1ac/802644424163.jpg/768x768bb.jpg",
-        "label": "Kscope",
-        "spotifyPopularity": 57,
-        "totalTracks": 9,
-        "releaseDate": 1111975200000,
+        "name": "Hollywood's Bleeding",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/6c/13/27/6c13279a-399b-2631-3cb2-6233a91d7a53/19UMGIM78325.rgb.jpg/768x768bb.jpg",
+        "label": "Republic Records",
+        "spotifyPopularity": 58,
+        "totalTracks": 17,
+        "releaseDate": 1570320000000,
         "genres": [
-          "Prog-Rock/Art Rock",
-          "Music",
-          "Rock",
-          "Classical"
+          "Hip-Hop/Rap",
+          "Music"
         ],
         "artists": [
           {
-            "id": 873,
-            "name": "Porcupine Tree",
-            "image": "https://i.scdn.co/image/ab67616100005174c4f72407be5d96db73982400"
+            "id": 22346,
+            "name": "Post Malone",
+            "image": "https://i.scdn.co/image/ab67616100005174e17c0aa1714a03d62b5ce4e0"
           }
         ],
         "externalIds": {
-          "upc": "802644424163",
+          "upc": "00602508327469",
           "ean": null,
           "isrc": null,
-          "spotify": [],
+          "spotify": [
+            "3xiq77UtnlDXfcRz5IJu20"
+          ],
           "appleMusic": [
-            "1770524079"
+            "1477886950"
           ]
         },
         "type": "album",
-        "id": 16129679
+        "id": 49360
       }
     },
     {
-      "position": 52,
+      "position": 50,
       "streams": 4,
       "playedMs": 1429064,
       "indicator": null,
       "album": {
         "name": "Urban Hymns (Remastered 2016)",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/02/b2/68/02b268c7-a234-cb8b-7ef3-a774340744eb/17UM1IM02768.rgb.jpg/768x768bb.jpg",
-        "label": "UMC (Universal Music Catalogue)",
-        "spotifyPopularity": 73,
+        "label": "Universal Music Group",
+        "spotifyPopularity": 0,
         "totalTracks": 13,
-        "releaseDate": 875491200000,
-        "genres": [],
+        "releaseDate": 875498400000,
+        "genres": [
+          "Rock",
+          "Music",
+          "Pop",
+          "Pop/Rock",
+          "Adult Alternative",
+          "Prog-Rock/Art Rock",
+          "Alternative",
+          "Britpop",
+          "Indie Rock"
+        ],
         "artists": [
           {
             "id": 17076,
@@ -1963,29 +1926,32 @@
           "ean": null,
           "isrc": null,
           "spotify": [
-            "52AeC4gwbxDfFlLHgK1ByD"
+            "04VeVKVfD6rWeRavrqUzM6"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "1440885112"
+          ]
         },
         "type": "album",
         "id": 1258437
       }
     },
     {
-      "position": 53,
+      "position": 51,
       "streams": 6,
       "playedMs": 1413653,
       "indicator": null,
       "album": {
         "name": "Pitbull Starring In Rebelution",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4e/c3/09/4ec3096e-4597-6469-f576-26658fff296d/mzi.botoocbc.jpg/768x768bb.jpg",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/38/1c/4d381cfb-ffa7-1979-6cbd-f22f8c4ea274/mzi.hzvqpsyi.jpg/768x768bb.jpg",
         "label": "Mr.305/Polo Grounds Music/J Records",
-        "spotifyPopularity": 70,
+        "spotifyPopularity": 72,
         "totalTracks": 14,
-        "releaseDate": 1251331200000,
+        "releaseDate": 1251676800000,
         "genres": [
           "Hip-Hop/Rap",
           "Music",
+          "R&B/Soul",
           "Rock",
           "Latin Rap"
         ],
@@ -1993,18 +1959,19 @@
           {
             "id": 361,
             "name": "Pitbull",
-            "image": "https://i.scdn.co/image/ab676161000051744051627b19277613e0e62a34"
+            "image": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9"
           }
         ],
         "externalIds": {
-          "upc": "884977264883",
+          "upc": "884977117462",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "4RaAjieYFIZRF8uh6GY43r"
+            "00zN65JStpVnpJn9ckMsQI"
           ],
           "appleMusic": [
-            "327014475"
+            "326893904",
+            "327457674"
           ]
         },
         "type": "album",
@@ -2012,13 +1979,13 @@
       }
     },
     {
-      "position": 54,
+      "position": 52,
       "streams": 5,
       "playedMs": 1413304,
       "indicator": null,
       "album": {
         "name": "Freedom (Int'l Version 2)",
-        "image": "https://i.scdn.co/image/ab67616d00004851e3406dbff130a6bf4a22e287",
+        "image": "https://i.scdn.co/image/ab67616d0000b273e3406dbff130a6bf4a22e287",
         "label": "Konvict/Upfront/SRC/Universal Records",
         "spotifyPopularity": 0,
         "totalTracks": 14,
@@ -2045,7 +2012,7 @@
       }
     },
     {
-      "position": 55,
+      "position": 53,
       "streams": 3,
       "playedMs": 1363040,
       "indicator": null,
@@ -2078,40 +2045,7 @@
       }
     },
     {
-      "position": 56,
-      "streams": 6,
-      "playedMs": 1362558,
-      "indicator": null,
-      "album": {
-        "name": "lifeline sad pop",
-        "image": "https://i.scdn.co/image/ab67616d0000b27303ea240336cd1ab4a9f6432b",
-        "label": "Warner Music Group - X5 Music Group",
-        "spotifyPopularity": 0,
-        "totalTracks": 49,
-        "releaseDate": 1676422800000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
-        "externalIds": {
-          "upc": "5059460179592",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "0IYPKbB6Oa6fRmbO1dJ23e"
-          ],
-          "appleMusic": []
-        },
-        "type": "compilation",
-        "id": 12371846
-      }
-    },
-    {
-      "position": 57,
+      "position": 54,
       "streams": 5,
       "playedMs": 1351865,
       "indicator": null,
@@ -2123,13 +2057,7 @@
         "totalTracks": 36,
         "releaseDate": 1274659200000,
         "genres": [],
-        "artists": [
-          {
-            "id": 20874,
-            "name": "4 Non Blondes",
-            "image": "https://i.scdn.co/image/ab6772690000dd22bee2b55099797d5537544010"
-          }
-        ],
+        "artists": [],
         "externalIds": {
           "upc": "5099973077053",
           "ean": null,
@@ -2144,7 +2072,7 @@
       }
     },
     {
-      "position": 58,
+      "position": 55,
       "streams": 6,
       "playedMs": 1351571,
       "indicator": null,
@@ -2164,7 +2092,7 @@
           {
             "id": 94027,
             "name": "Fred again..",
-            "image": "https://i.scdn.co/image/ab676161000051742302e6ba3091fcbc6fd5bb54"
+            "image": "https://i.scdn.co/image/ab67616100005174381c41adc678e4ce864eb274"
           }
         ],
         "externalIds": {
@@ -2183,21 +2111,18 @@
       }
     },
     {
-      "position": 59,
+      "position": 56,
       "streams": 6,
       "playedMs": 1323198,
       "indicator": null,
       "album": {
         "name": "Best Rock Vibes",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/06/b7/ca/06b7ca63-ff7e-6d00-332f-f8d96cb55d95/5059460328365.jpg/768x768bb.jpg",
+        "image": "https://i.scdn.co/image/ab67616d0000b27325aa9479b57064a96e9c81dd",
         "label": "Warner Music Group - X5 Music Group",
         "spotifyPopularity": 0,
         "totalTracks": 45,
-        "releaseDate": 1727143200000,
-        "genres": [
-          "Pop",
-          "Music"
-        ],
+        "releaseDate": 1724457600000,
+        "genres": [],
         "artists": [
           {
             "id": 174,
@@ -2209,17 +2134,17 @@
           "upc": "5059460328365",
           "ean": null,
           "isrc": null,
-          "spotify": [],
-          "appleMusic": [
-            "1764273103"
-          ]
+          "spotify": [
+            "3BjVyPIyiATnK4pofIALao"
+          ],
+          "appleMusic": []
         },
-        "type": "album",
+        "type": "compilation",
         "id": 28439339
       }
     },
     {
-      "position": 60,
+      "position": 57,
       "streams": 5,
       "playedMs": 1319346,
       "indicator": null,
@@ -2252,7 +2177,7 @@
       }
     },
     {
-      "position": 61,
+      "position": 58,
       "streams": 6,
       "playedMs": 1318463,
       "indicator": null,
@@ -2272,7 +2197,7 @@
           {
             "id": 94027,
             "name": "Fred again..",
-            "image": "https://i.scdn.co/image/ab676161000051742302e6ba3091fcbc6fd5bb54"
+            "image": "https://i.scdn.co/image/ab67616100005174381c41adc678e4ce864eb274"
           }
         ],
         "externalIds": {
@@ -2291,7 +2216,7 @@
       }
     },
     {
-      "position": 62,
+      "position": 59,
       "streams": 4,
       "playedMs": 1315758,
       "indicator": null,
@@ -2329,7 +2254,44 @@
       }
     },
     {
-      "position": 63,
+      "position": 60,
+      "streams": 5,
+      "playedMs": 1293759,
+      "indicator": null,
+      "album": {
+        "name": "Hurry Up Tomorrow",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3d/0d/06/3d0d06e6-cfd4-8f69-4a42-52b7cf33fb24/25UMGIM09490.rgb.jpg/768x768bb.jpg",
+        "label": "XO / Republic Records",
+        "spotifyPopularity": 0,
+        "totalTracks": 22,
+        "releaseDate": 1740960000000,
+        "genres": [
+          "R&B/Soul",
+          "Música",
+          "Music"
+        ],
+        "artists": [
+          {
+            "id": 11615,
+            "name": "The Weeknd",
+            "image": "https://i.scdn.co/image/ab676161000051749e528993a2820267b97f6aae"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602475830603",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": [
+            "1793654348"
+          ]
+        },
+        "type": "album",
+        "id": 50203201
+      }
+    },
+    {
+      "position": 61,
       "streams": 7,
       "playedMs": 1293181,
       "indicator": null,
@@ -2364,7 +2326,45 @@
       }
     },
     {
-      "position": 64,
+      "position": 62,
+      "streams": 7,
+      "playedMs": 1275103,
+      "indicator": null,
+      "album": {
+        "name": "F-1 Trillion",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/ad/c8/95adc8ca-e583-1800-9b56-4665f186e899/24UMGIM60824.rgb.jpg/768x768bb.jpg",
+        "label": "Mercury Records/Post Malone",
+        "spotifyPopularity": 76,
+        "totalTracks": 18,
+        "releaseDate": 1723680000000,
+        "genres": [
+          "Country",
+          "Music"
+        ],
+        "artists": [
+          {
+            "id": 22346,
+            "name": "Post Malone",
+            "image": "https://i.scdn.co/image/ab67616100005174e17c0aa1714a03d62b5ce4e0"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602465895292",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4BbsHmXEghoPPevQjPnHXx"
+          ],
+          "appleMusic": [
+            "1752531522"
+          ]
+        },
+        "type": "album",
+        "id": 27186283
+      }
+    },
+    {
+      "position": 63,
       "streams": 5,
       "playedMs": 1272291,
       "indicator": null,
@@ -2406,7 +2406,7 @@
       }
     },
     {
-      "position": 65,
+      "position": 64,
       "streams": 6,
       "playedMs": 1271850,
       "indicator": null,
@@ -2443,67 +2443,61 @@
       }
     },
     {
-      "position": 66,
-      "streams": 4,
-      "playedMs": 1269720,
+      "position": 65,
+      "streams": 5,
+      "playedMs": 1266211,
       "indicator": null,
       "album": {
-        "name": "You've Come a Long Way Baby",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/1a/16/451a1673-1aa4-63e7-cfca-8a44ce9d0779/14ULAIM03599.rgb.jpg/768x768bb.jpg",
-        "label": "Skint Records",
-        "spotifyPopularity": 63,
-        "totalTracks": 11,
-        "releaseDate": 883612800000,
+        "name": "The Wall",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/aa/88/2c/aa882ccd-d153-9901-8ee1-c246e5b704b3/dj.esjczuop.jpg/768x768bb.jpg",
+        "label": "Pink Floyd Records",
+        "spotifyPopularity": 79,
+        "totalTracks": 26,
+        "releaseDate": 312768000000,
         "genres": [
-          "Dance",
-          "Music",
-          "Jazz",
-          "Bop",
-          "Breakbeat",
           "Rock",
-          "Alternative",
-          "Electronic",
-          "Electronica"
+          "Musica",
+          "Rock progressive/Art-rock",
+          "Hard rock",
+          "Rock da stadio"
         ],
         "artists": [
           {
-            "id": 13090,
-            "name": "Fatboy Slim",
-            "image": "https://i.scdn.co/image/ab67616100005174c20ed3229eeced918966a009"
+            "id": 16829,
+            "name": "Pink Floyd",
+            "image": "https://i.scdn.co/image/ab6761610000517497885ce689d644c91dfba05c"
           }
         ],
         "externalIds": {
-          "upc": "5025425551130",
+          "upc": "5099968084950",
           "ean": null,
           "isrc": null,
-          "spotify": [
-            "0J43YxxLFPZxIrCd12LRuN"
-          ],
+          "spotify": [],
           "appleMusic": [
-            "714927896"
+            "704273346"
           ]
         },
         "type": "album",
-        "id": 812100
+        "id": 217242
       }
     },
     {
-      "position": 67,
+      "position": 66,
       "streams": 4,
       "playedMs": 1254184,
       "indicator": null,
       "album": {
         "name": "EVOL",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9e/cf/a9/9ecfa901-9d33-0a15-1eae-69f6aa784aa2/886445861846.jpg/768x768bb.jpg",
+        "image": "https://i.scdn.co/image/ab67616d00001e02626745b3aa04899001a924ad",
         "label": "Epic/Freebandz/A1",
-        "spotifyPopularity": 0,
-        "totalTracks": 11,
-        "releaseDate": 1455235200000,
+        "spotifyPopularity": 77,
+        "totalTracks": 12,
+        "releaseDate": 1460505600000,
         "genres": [
           "Hip-Hop/Rap",
           "Music",
-          "Rock",
           "Hardcore Rap",
+          "Rock",
           "Dirty South",
           "Rap"
         ],
@@ -2521,14 +2515,16 @@
           "spotify": [
             "00rLhuzj6YdBUKKnF8f4mo"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "1081197363"
+          ]
         },
         "type": "album",
         "id": 231337
       }
     },
     {
-      "position": 68,
+      "position": 67,
       "streams": 4,
       "playedMs": 1249699,
       "indicator": null,
@@ -2567,40 +2563,7 @@
       }
     },
     {
-      "position": 69,
-      "streams": 5,
-      "playedMs": 1241665,
-      "indicator": null,
-      "album": {
-        "name": "Clarity",
-        "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-        "label": "Interscope",
-        "spotifyPopularity": 68,
-        "totalTracks": 10,
-        "releaseDate": 1325379600000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 2085,
-            "name": "Zedd",
-            "image": "https://i.scdn.co/image/ab67616100005174e28762aed82cde1178fb3873"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602537160983",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "7juWTdmjo0vYywWu8HiQxs"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 84614
-      }
-    },
-    {
-      "position": 70,
+      "position": 68,
       "streams": 5,
       "playedMs": 1238390,
       "indicator": null,
@@ -2643,7 +2606,7 @@
       }
     },
     {
-      "position": 71,
+      "position": 69,
       "streams": 5,
       "playedMs": 1234701,
       "indicator": null,
@@ -2678,7 +2641,7 @@
       }
     },
     {
-      "position": 72,
+      "position": 70,
       "streams": 5,
       "playedMs": 1230265,
       "indicator": null,
@@ -2720,7 +2683,7 @@
       }
     },
     {
-      "position": 73,
+      "position": 71,
       "streams": 5,
       "playedMs": 1225343,
       "indicator": null,
@@ -2756,18 +2719,26 @@
       }
     },
     {
-      "position": 74,
+      "position": 72,
       "streams": 5,
       "playedMs": 1221359,
       "indicator": null,
       "album": {
-        "name": "Loud (Japan Version)",
-        "image": "https://i.scdn.co/image/ab67616d0000b27331548865f7c729290b96c794",
+        "name": "Loud",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d0/ad/2b/d0ad2b3d-6daf-b0ad-4a16-e8f12261f44e/10UMGIM29109.rgb.jpg/768x768bb.jpg",
         "label": "Def Jam Recordings",
-        "spotifyPopularity": 79,
+        "spotifyPopularity": 0,
         "totalTracks": 13,
-        "releaseDate": 1262304000000,
-        "genres": [],
+        "releaseDate": 1289865600000,
+        "genres": [
+          "Pop",
+          "Musik",
+          "R&B/Soul",
+          "Dance",
+          "Zeitgenössischer R&B",
+          "Rock",
+          "Soul"
+        ],
         "artists": [
           {
             "id": 18521,
@@ -2779,9 +2750,7 @@
           "upc": "00602527603636",
           "ean": null,
           "isrc": null,
-          "spotify": [
-            "5QG3tjE5L9F6O2vCAPph38"
-          ],
+          "spotify": [],
           "appleMusic": []
         },
         "type": "album",
@@ -2789,7 +2758,53 @@
       }
     },
     {
-      "position": 75,
+      "position": 73,
+      "streams": 5,
+      "playedMs": 1219399,
+      "indicator": null,
+      "album": {
+        "name": "Hurry Up, We're Dreaming",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/36/89/c9/3689c99a-f88e-d019-b7b2-83a3eb8a379b/4897028491172_Cover.jpg/768x768bb.jpg",
+        "label": "Mute",
+        "spotifyPopularity": 71,
+        "totalTracks": 22,
+        "releaseDate": 1293843600000,
+        "genres": [
+          "일렉트로닉",
+          "음악",
+          "록",
+          "재즈",
+          "빅 밴드",
+          "Electronic",
+          "Music",
+          "Rock",
+          "Jazz",
+          "Big Band"
+        ],
+        "artists": [
+          {
+            "id": 9318,
+            "name": "M83",
+            "image": "https://i.scdn.co/image/ab67616100005174961ef259d6d8101edd2f80c0"
+          }
+        ],
+        "externalIds": {
+          "upc": "4897028491172",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "7yflG4FwhqonPOcE4zmPqs"
+          ],
+          "appleMusic": [
+            "1023176741"
+          ]
+        },
+        "type": "album",
+        "id": 217982
+      }
+    },
+    {
+      "position": 74,
       "streams": 4,
       "playedMs": 1219079,
       "indicator": null,
@@ -2822,7 +2837,7 @@
       }
     },
     {
-      "position": 76,
+      "position": 75,
       "streams": 4,
       "playedMs": 1218098,
       "indicator": null,
@@ -2867,7 +2882,7 @@
       }
     },
     {
-      "position": 77,
+      "position": 76,
       "streams": 4,
       "playedMs": 1205749,
       "indicator": null,
@@ -2875,7 +2890,7 @@
         "name": "X&Y",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/768x768bb.jpg",
         "label": "Parlophone Records Limited",
-        "spotifyPopularity": 77,
+        "spotifyPopularity": 80,
         "totalTracks": 13,
         "releaseDate": 1118102400000,
         "genres": [
@@ -2901,7 +2916,8 @@
             "4E7bV0pzG0LciBSWTszra6"
           ],
           "appleMusic": [
-            "1123076757"
+            "1123076757",
+            "713912158"
           ]
         },
         "type": "album",
@@ -2909,14 +2925,14 @@
       }
     },
     {
-      "position": 78,
+      "position": 77,
       "streams": 5,
       "playedMs": 1204932,
       "indicator": null,
       "album": {
         "name": "The Fame",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a6/68/28/a66828c0-3fe3-5419-374d-ad98739f3166/08UMGIM13954.rgb.jpg/768x768bb.jpg",
-        "label": "Streamline/Interscope",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bd/7e/e6/bd7ee6bd-3cad-304a-e8a1-3ff5f1c70b0a/08UMGIM13954.rgb.jpg/768x768bb.jpg",
+        "label": "Interscope",
         "spotifyPopularity": 80,
         "totalTracks": 15,
         "releaseDate": 1199145600000,
@@ -2933,14 +2949,12 @@
           }
         ],
         "externalIds": {
-          "upc": "00602517913974",
+          "upc": "00602537984626",
           "ean": null,
           "isrc": null,
-          "spotify": [
-            "1qwlxZTNLe1jq3b0iidlue"
-          ],
+          "spotify": [],
           "appleMusic": [
-            "1440818588"
+            "1440824430"
           ]
         },
         "type": "album",
@@ -2948,7 +2962,7 @@
       }
     },
     {
-      "position": 79,
+      "position": 78,
       "streams": 3,
       "playedMs": 1201965,
       "indicator": null,
@@ -2981,7 +2995,7 @@
       }
     },
     {
-      "position": 80,
+      "position": 79,
       "streams": 5,
       "playedMs": 1200825,
       "indicator": null,
@@ -2989,9 +3003,9 @@
         "name": "Starboy",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b5/92/bb/b592bb72-52e3-e756-9b26-9f56d08f47ab/16UMGIM67864.rgb.jpg/768x768bb.jpg",
         "label": "Universal Republic Records",
-        "spotifyPopularity": 78,
+        "spotifyPopularity": 89,
         "totalTracks": 18,
-        "releaseDate": 1479945600000,
+        "releaseDate": 1480032000000,
         "genres": [
           "R&B/Soul",
           "Music",
@@ -3006,22 +3020,18 @@
           }
         ],
         "externalIds": {
-          "upc": "00602557333671",
+          "upc": "00602557333664",
           "ean": null,
           "isrc": null,
-          "spotify": [
-            "4AdZV63ycxFLF6Hcol0QnB"
-          ],
-          "appleMusic": [
-            "1440870373"
-          ]
+          "spotify": [],
+          "appleMusic": []
         },
         "type": "album",
         "id": 154345
       }
     },
     {
-      "position": 81,
+      "position": 80,
       "streams": 3,
       "playedMs": 1200073,
       "indicator": null,
@@ -3051,6 +3061,39 @@
         },
         "type": "album",
         "id": 779800
+      }
+    },
+    {
+      "position": 81,
+      "streams": 6,
+      "playedMs": 1197170,
+      "indicator": null,
+      "album": {
+        "name": "Daughtry (Deluxe Edition)",
+        "image": "https://i.scdn.co/image/ab67616d0000b27391eca63cca2e2a766e78f705",
+        "label": "RCA Records Label",
+        "spotifyPopularity": 61,
+        "totalTracks": 16,
+        "releaseDate": 1136073600000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 277456,
+            "name": "Daughtry",
+            "image": "https://i.scdn.co/image/ab67616100005174f443a26b22e52c3b3867753d"
+          }
+        ],
+        "externalIds": {
+          "upc": "884977217094",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "6ii8Ja21xLGkFH8CQ6bKjj"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 1205663
       }
     },
     {
@@ -3094,49 +3137,6 @@
     {
       "position": 83,
       "streams": 5,
-      "playedMs": 1177730,
-      "indicator": null,
-      "album": {
-        "name": "Toto",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a1/a9/ea/a1a9eaef-2d81-c2c6-9a03-82c3cbc9e598/074643531726.jpg/768x768bb.jpg",
-        "label": "Columbia",
-        "spotifyPopularity": 72,
-        "totalTracks": 10,
-        "releaseDate": 276825600000,
-        "genres": [
-          "Rock",
-          "Music",
-          "Pop",
-          "Pop/Rock",
-          "Arena Rock",
-          "Adult Contemporary",
-          "Soft Rock"
-        ],
-        "artists": [
-          {
-            "id": 6473,
-            "name": "TOTO",
-            "image": "https://i.scdn.co/image/ab67616100005174a59a5bcab211f964fe9bfb06"
-          }
-        ],
-        "externalIds": {
-          "upc": "074643531726",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "1mnu4hYvdwQgZXcNvtJ3D3"
-          ],
-          "appleMusic": [
-            "198226130"
-          ]
-        },
-        "type": "album",
-        "id": 1537167
-      }
-    },
-    {
-      "position": 84,
-      "streams": 5,
       "playedMs": 1155555,
       "indicator": null,
       "album": {
@@ -3168,7 +3168,7 @@
       }
     },
     {
-      "position": 85,
+      "position": 84,
       "streams": 5,
       "playedMs": 1147865,
       "indicator": null,
@@ -3208,6 +3208,51 @@
       }
     },
     {
+      "position": 85,
+      "streams": 6,
+      "playedMs": 1147836,
+      "indicator": null,
+      "album": {
+        "name": "Upstairs At Eric's",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/a1/32/e4a13272-7717-32b6-290f-606deb7a8dfb/4099964057829.jpg/768x768bb.jpg",
+        "label": "Rhino/Warner Records",
+        "spotifyPopularity": 52,
+        "totalTracks": 11,
+        "releaseDate": 378694800000,
+        "genres": [
+          "Pop",
+          "Music",
+          "Alternative",
+          "New Wave",
+          "Rock",
+          "Adult Alternative",
+          "Electronic",
+          "R&B/Soul",
+          "Pop/Rock",
+          "Dance",
+          "Disco"
+        ],
+        "artists": [
+          {
+            "id": 17853,
+            "name": "Yazoo",
+            "image": "https://i.scdn.co/image/ab67616100005174c948e0ba1e0c16f8c8ab6ad6"
+          }
+        ],
+        "externalIds": {
+          "upc": "4099964057829",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": [
+            "1746978493"
+          ]
+        },
+        "type": "album",
+        "id": 26852652
+      }
+    },
+    {
       "position": 86,
       "streams": 4,
       "playedMs": 1139464,
@@ -3215,10 +3260,10 @@
       "album": {
         "name": "LOVE?",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fc/57/da/fc57da34-d446-924b-f67e-478dced0471f/11UMGIM10443.rgb.jpg/768x768bb.jpg",
-        "label": "Universal Music Ltd.",
-        "spotifyPopularity": 0,
+        "label": "Nuyorican Productions / IDJ",
+        "spotifyPopularity": 56,
         "totalTracks": 12,
-        "releaseDate": 1293843600000,
+        "releaseDate": 1304035200000,
         "genres": [
           "Pop",
           "Music",
@@ -3239,11 +3284,9 @@
           "ean": null,
           "isrc": null,
           "spotify": [
-            "3a6am89aOgyMB1TI6CLFRt"
+            "1RJ3ZqXAzt0rsJhs80AqRb"
           ],
-          "appleMusic": [
-            "1443129762"
-          ]
+          "appleMusic": []
         },
         "type": "album",
         "id": 9103238
@@ -3332,46 +3375,6 @@
     {
       "position": 89,
       "streams": 5,
-      "playedMs": 1128358,
-      "indicator": null,
-      "album": {
-        "name": "Talk That Talk (Explicit)",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/16/90/6e/16906e38-2538-9d48-aa30-6eba7405972c/16UMGIM59229.rgb.jpg/768x768bb.jpg",
-        "label": "Def Jam Recordings",
-        "spotifyPopularity": 0,
-        "totalTracks": 12,
-        "releaseDate": 1293843600000,
-        "genres": [
-          "Pop",
-          "Music",
-          "R&B/Soul",
-          "Contemporary R&B",
-          "Dance",
-          "Rock"
-        ],
-        "artists": [
-          {
-            "id": 18521,
-            "name": "Rihanna",
-            "image": "https://i.scdn.co/image/ab67616100005174cb565a8e684e3be458d329ac"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602527906164",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4HGUC0YUVSPBNFKUJN2aWG"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 25996
-      }
-    },
-    {
-      "position": 90,
-      "streams": 5,
       "playedMs": 1112956,
       "indicator": null,
       "album": {
@@ -3409,7 +3412,7 @@
       }
     },
     {
-      "position": 91,
+      "position": 90,
       "streams": 3,
       "playedMs": 1109026,
       "indicator": null,
@@ -3417,10 +3420,15 @@
         "name": "Metallica (Remastered)",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b2/ca/7d/b2ca7d42-bf14-af82-b9a6-7a02554f576f/06UMGIM55727.rgb.jpg/768x768bb.jpg",
         "label": "Blackened Recordings",
-        "spotifyPopularity": 72,
+        "spotifyPopularity": 76,
         "totalTracks": 12,
         "releaseDate": 681955200000,
-        "genres": [],
+        "genres": [
+          "Metal",
+          "Music",
+          "Rock",
+          "Hard Rock"
+        ],
         "artists": [
           {
             "id": 26377,
@@ -3441,6 +3449,39 @@
         },
         "type": "album",
         "id": 1427339
+      }
+    },
+    {
+      "position": 91,
+      "streams": 3,
+      "playedMs": 1101477,
+      "indicator": null,
+      "album": {
+        "name": "> Album Title Goes Here <",
+        "image": "https://i.scdn.co/image/ab67616d0000b2734adb471799a828cea0263e65",
+        "label": "Parlophone",
+        "spotifyPopularity": 44,
+        "totalTracks": 13,
+        "releaseDate": 1325376000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 9967,
+            "name": "deadmau5",
+            "image": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7"
+          }
+        ],
+        "externalIds": {
+          "upc": "00883958011034",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "5cpwmGEav9fYtQi33w0YTj"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 131534
       }
     },
     {
@@ -3484,6 +3525,39 @@
     },
     {
       "position": 93,
+      "streams": 4,
+      "playedMs": 1093704,
+      "indicator": null,
+      "album": {
+        "name": "Höstmys",
+        "image": "https://i.scdn.co/image/ab67616d0000b273995c2e3c52f712808af2a2d5",
+        "label": "Warner Music Group - X5 Music Group",
+        "spotifyPopularity": 0,
+        "totalTracks": 50,
+        "releaseDate": 1631844000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 413,
+            "name": "Colbie Caillat",
+            "image": "https://i.scdn.co/image/ab6761610000517423f14547bfc255c739f61a35"
+          }
+        ],
+        "externalIds": {
+          "upc": "5059460098169",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "11MNzMI3Bqxu3ImKUOgJjc"
+          ],
+          "appleMusic": []
+        },
+        "type": "compilation",
+        "id": 28832151
+      }
+    },
+    {
+      "position": 94,
       "streams": 7,
       "playedMs": 1080704,
       "indicator": null,
@@ -3519,7 +3593,7 @@
       }
     },
     {
-      "position": 94,
+      "position": 95,
       "streams": 2,
       "playedMs": 1079040,
       "indicator": null,
@@ -3559,43 +3633,6 @@
       }
     },
     {
-      "position": 95,
-      "streams": 4,
-      "playedMs": 1070384,
-      "indicator": null,
-      "album": {
-        "name": "AEROSMITH",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e2/87/d9/e287d987-7b92-7749-737f-b5b8a6913f88/22UM1IM38560.rgb.jpg/768x768bb.jpg",
-        "label": "Columbia",
-        "spotifyPopularity": 0,
-        "totalTracks": 8,
-        "releaseDate": 94694400000,
-        "genres": [
-          "Hard Rock",
-          "Music",
-          "Rock"
-        ],
-        "artists": [
-          {
-            "id": 14970,
-            "name": "Aerosmith",
-            "image": "https://i.scdn.co/image/ab67616100005174c5733401b4689b2064458e7d"
-          }
-        ],
-        "externalIds": {
-          "upc": "5099747496226",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4POwouNbBP807ciWs9WIfM"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 1982600
-      }
-    },
-    {
       "position": 96,
       "streams": 5,
       "playedMs": 1064310,
@@ -3610,9 +3647,9 @@
         "genres": [],
         "artists": [
           {
-            "id": 3173,
-            "name": "Ne-Yo",
-            "image": "https://i.scdn.co/image/ab67616100005174ca118e3822061f7b7f6bc537"
+            "id": 174,
+            "name": "Various Artists",
+            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
           }
         ],
         "externalIds": {
@@ -3630,6 +3667,39 @@
     },
     {
       "position": 97,
+      "streams": 5,
+      "playedMs": 1046332,
+      "indicator": null,
+      "album": {
+        "name": "Ready For The Weekend",
+        "image": "https://i.scdn.co/image/ab67616d0000b27395dda76df9154e6b70bd9f3c",
+        "label": "Ultra Records, LLC",
+        "spotifyPopularity": 39,
+        "totalTracks": 14,
+        "releaseDate": 1230768000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 2409,
+            "name": "Calvin Harris",
+            "image": "https://i.scdn.co/image/ab676161000051741e4bcd2bef1896648762dd6b"
+          }
+        ],
+        "externalIds": {
+          "upc": "617465219559",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "46atV5Jl6hrOhQfM4Xgy1M"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 9104296
+      }
+    },
+    {
+      "position": 98,
       "streams": 4,
       "playedMs": 1038880,
       "indicator": null,
@@ -3639,7 +3709,7 @@
         "label": "LaFace Records",
         "spotifyPopularity": 0,
         "totalTracks": 18,
-        "releaseDate": 1211248800000,
+        "releaseDate": 1211594400000,
         "genres": [
           "R&B/Soul",
           "Music",
@@ -3654,11 +3724,11 @@
           }
         ],
         "externalIds": {
-          "upc": "888880570888",
+          "upc": "886973255322",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "2KgSIrARJ0HFADNsdJiRRT"
+            "4joCax1wvAvBxqi0DSuQx7"
           ],
           "appleMusic": []
         },
@@ -3667,7 +3737,7 @@
       }
     },
     {
-      "position": 98,
+      "position": 99,
       "streams": 5,
       "playedMs": 1036860,
       "indicator": null,
@@ -3700,7 +3770,7 @@
       }
     },
     {
-      "position": 99,
+      "position": 100,
       "streams": 4,
       "playedMs": 1033475,
       "indicator": null,
@@ -3733,7 +3803,40 @@
       }
     },
     {
-      "position": 100,
+      "position": 101,
+      "streams": 5,
+      "playedMs": 1027200,
+      "indicator": null,
+      "album": {
+        "name": "EDM Hits",
+        "image": "https://i.scdn.co/image/ab67616d0000b2736d8a19c3d286b89dd1f2cebb",
+        "label": "UME - Global Clearing House",
+        "spotifyPopularity": 53,
+        "totalTracks": 27,
+        "releaseDate": 1585872000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 174,
+            "name": "Various Artists",
+            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602508983405",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "37bu5iGP8qyG50MbFUKbGi"
+          ],
+          "appleMusic": []
+        },
+        "type": "compilation",
+        "id": 292635
+      }
+    },
+    {
+      "position": 102,
       "streams": 4,
       "playedMs": 1026622,
       "indicator": null,
@@ -3753,7 +3856,7 @@
           {
             "id": 94027,
             "name": "Fred again..",
-            "image": "https://i.scdn.co/image/ab676161000051742302e6ba3091fcbc6fd5bb54"
+            "image": "https://i.scdn.co/image/ab67616100005174381c41adc678e4ce864eb274"
           }
         ],
         "externalIds": {
@@ -3772,42 +3875,47 @@
       }
     },
     {
-      "position": 101,
-      "streams": 2,
-      "playedMs": 1021928,
+      "position": 103,
+      "streams": 4,
+      "playedMs": 1014307,
       "indicator": null,
       "album": {
-        "name": "The Division Bell",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9f/f8/71/9ff87132-ba8d-9fd9-627f-a379f21efcd7/5099968085353.jpg/768x768bb.jpg",
-        "label": "Pink Floyd Records",
-        "spotifyPopularity": 64,
-        "totalTracks": 11,
-        "releaseDate": 757382400000,
-        "genres": [],
+        "name": "Rolling Papers",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a0/a7/27/a0a72767-e434-6053-42a0-b506b0cc027f/075679786197.jpg/768x768bb.jpg",
+        "label": "Rostrum/Atlantic",
+        "spotifyPopularity": 68,
+        "totalTracks": 17,
+        "releaseDate": 1301356800000,
+        "genres": [
+          "Hip-Hop/Rap",
+          "Music",
+          "Hip-hop/Rap",
+          "Musique",
+          "Rap dur",
+          "Rap côte Est"
+        ],
         "artists": [
           {
-            "id": 16829,
-            "name": "Pink Floyd",
-            "image": "https://i.scdn.co/image/d011c95081cd9a329e506abd7ded47535d524a07"
+            "id": 634,
+            "name": "Wiz Khalifa",
+            "image": "https://i.scdn.co/image/ab67616100005174c66b0a8c3268f0b6556f64a8"
           }
         ],
         "externalIds": {
-          "upc": "886445613872",
+          "upc": "075679968616",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "5F0IQXuHfTV7SBvZVnXERl"
+            "7IG0Oqdhl819Dn3d1YVP8N"
           ],
-          "appleMusic": [
-            "704316542"
-          ]
+          "appleMusic": []
         },
         "type": "album",
-        "id": 1689287
+        "id": 1275201
       }
     },
     {
-      "position": 102,
+      "position": 104,
       "streams": 4,
       "playedMs": 1013373,
       "indicator": null,
@@ -3840,42 +3948,7 @@
       }
     },
     {
-      "position": 103,
-      "streams": 4,
-      "playedMs": 1008956,
-      "indicator": null,
-      "album": {
-        "name": "America",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/20/c6/c4/20c6c488-4791-6c15-323f-e7ea79a01f31/mzi.dbcrqaoq.jpg/768x768bb.jpg",
-        "label": "Warner Records",
-        "spotifyPopularity": 70,
-        "totalTracks": 12,
-        "releaseDate": 63072000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 3136,
-            "name": "America",
-            "image": "https://i.scdn.co/image/ab676161000051741918619d3b26c6cb16084997"
-          }
-        ],
-        "externalIds": {
-          "upc": "075992725767",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "0E5IKYhiKgbYQkmfsFonbZ"
-          ],
-          "appleMusic": [
-            "301027593"
-          ]
-        },
-        "type": "album",
-        "id": 230614
-      }
-    },
-    {
-      "position": 104,
+      "position": 105,
       "streams": 3,
       "playedMs": 1001220,
       "indicator": null,
@@ -3905,41 +3978,6 @@
         },
         "type": "compilation",
         "id": 1030556
-      }
-    },
-    {
-      "position": 105,
-      "streams": 3,
-      "playedMs": 1001159,
-      "indicator": null,
-      "album": {
-        "name": "A Rush of Blood to the Head",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b9/b4/2a/b9b42ad1-1e25-5096-da43-497a247e69a3/190295978051.jpg/768x768bb.jpg",
-        "label": "Parlophone Records Limited",
-        "spotifyPopularity": 82,
-        "totalTracks": 11,
-        "releaseDate": 1030406400000,
-        "genres": [
-          "Alternative",
-          "Music",
-          "Rock",
-          "Adult Alternative",
-          "Indie Rock"
-        ],
-        "artists": [],
-        "externalIds": {
-          "upc": "0724354050459",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "0RHX9XECH8IVI3LNgWDpmQ"
-          ],
-          "appleMusic": [
-            "1122775993"
-          ]
-        },
-        "type": "album",
-        "id": 55175
       }
     },
     {
@@ -4063,44 +4101,129 @@
     {
       "position": 109,
       "streams": 5,
-      "playedMs": 982144,
+      "playedMs": 983084,
       "indicator": null,
       "album": {
-        "name": "Daughtry (Deluxe Edition)",
-        "image": "https://i.scdn.co/image/ab67616d0000b27391eca63cca2e2a766e78f705",
-        "label": "RCA Records Label",
-        "spotifyPopularity": 64,
-        "totalTracks": 16,
-        "releaseDate": 1136073600000,
+        "name": "Crave – Club Edition mixed by DJ Havana Brown",
+        "image": "https://i.scdn.co/image/ab67616d0000b273d3a78c4dde7db1c956b4ac60",
+        "label": "Universal Music New Zealand Limited",
+        "spotifyPopularity": 0,
+        "totalTracks": 36,
+        "releaseDate": 1325379600000,
         "genres": [],
         "artists": [
           {
-            "id": 277456,
-            "name": "Daughtry",
-            "image": "https://i.scdn.co/image/ab67616100005174f443a26b22e52c3b3867753d"
+            "id": 174,
+            "name": "Various Artists",
+            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
           }
         ],
         "externalIds": {
-          "upc": "884977217094",
+          "upc": "00600753389843",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "6ii8Ja21xLGkFH8CQ6bKjj"
+            "58MKHIdrhmC8ObAYbU9u5s"
           ],
           "appleMusic": []
         },
-        "type": "album",
-        "id": 1205663
+        "type": "compilation",
+        "id": 28420996
       }
     },
     {
       "position": 110,
       "streams": 3,
+      "playedMs": 982533,
+      "indicator": null,
+      "album": {
+        "name": "A Rush of Blood to the Head",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b9/b4/2a/b9b42ad1-1e25-5096-da43-497a247e69a3/190295978051.jpg/768x768bb.jpg",
+        "label": "Parlophone Records Limited",
+        "spotifyPopularity": 85,
+        "totalTracks": 11,
+        "releaseDate": 1030406400000,
+        "genres": [
+          "Alternative",
+          "Music",
+          "Rock",
+          "Adult Alternative",
+          "Indie Rock"
+        ],
+        "artists": [
+          {
+            "id": 174,
+            "name": "Various Artists",
+            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
+          },
+          {
+            "id": 779,
+            "name": "Coldplay",
+            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
+          }
+        ],
+        "externalIds": {
+          "upc": "0724354050459",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "0RHX9XECH8IVI3LNgWDpmQ"
+          ],
+          "appleMusic": [
+            "1122775993",
+            "696786871"
+          ]
+        },
+        "type": "album",
+        "id": 55175
+      }
+    },
+    {
+      "position": 111,
+      "streams": 2,
+      "playedMs": 979120,
+      "indicator": null,
+      "album": {
+        "name": "Deadwing",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/b9/8a/e1b98ad8-51c0-89f0-a070-ce0bdcd1d1ac/802644424163.jpg/768x768bb.jpg",
+        "label": "Kscope",
+        "spotifyPopularity": 57,
+        "totalTracks": 9,
+        "releaseDate": 1111975200000,
+        "genres": [
+          "Prog-Rock/Art Rock",
+          "Music",
+          "Rock",
+          "Classical"
+        ],
+        "artists": [
+          {
+            "id": 873,
+            "name": "Porcupine Tree",
+            "image": "https://i.scdn.co/image/ab67616100005174c4f72407be5d96db73982400"
+          }
+        ],
+        "externalIds": {
+          "upc": "802644424163",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": [
+            "1770524079"
+          ]
+        },
+        "type": "album",
+        "id": 16129679
+      }
+    },
+    {
+      "position": 112,
+      "streams": 3,
       "playedMs": 974394,
       "indicator": null,
       "album": {
         "name": "Ten",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/e1/7c/e0e17cf0-62e5-6312-f3df-2462960cc8f1/884977724745.jpg/768x768bb.jpg",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d8/35/e5/d835e59a-a91e-d730-0c54-106049b9c2e9/21UMGIM81123.rgb.jpg/768x768bb.jpg",
         "label": "Epic",
         "spotifyPopularity": 0,
         "totalTracks": 11,
@@ -4114,20 +4237,22 @@
           }
         ],
         "externalIds": {
-          "upc": "5099746888473",
+          "upc": "888880752772",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "5fbm5VmVih9jNo9qNpx8XX"
+            "18YFjFlphCjFaMc6qHzZLj"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "1580814868"
+          ]
         },
         "type": "album",
         "id": 122725
       }
     },
     {
-      "position": 111,
+      "position": 113,
       "streams": 3,
       "playedMs": 966399,
       "indicator": null,
@@ -4160,7 +4285,7 @@
       }
     },
     {
-      "position": 112,
+      "position": 114,
       "streams": 3,
       "playedMs": 965866,
       "indicator": null,
@@ -4199,15 +4324,15 @@
       }
     },
     {
-      "position": 113,
+      "position": 115,
       "streams": 3,
       "playedMs": 964680,
       "indicator": null,
       "album": {
         "name": "Rodeo",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/71/87/78/7187786f-70af-fd36-fc7f-a4ba61b65d98/886445454987.jpg/768x768bb.jpg",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6d/fb/f1/6dfbf17d-4032-f585-35ad-f3f9b6859cd9/886445460421.jpg/768x768bb.jpg",
         "label": "Cactus Jack / Epic",
-        "spotifyPopularity": 77,
+        "spotifyPopularity": 33,
         "totalTracks": 16,
         "releaseDate": 1441324800000,
         "genres": [
@@ -4224,14 +4349,14 @@
           }
         ],
         "externalIds": {
-          "upc": "886445454987",
+          "upc": "886445460421",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "4PWBTB6NYSKQwfo79I3prg"
+            "7EGY16IWSHpPdoWazUyL9R"
           ],
           "appleMusic": [
-            "1456176981"
+            "1456179762"
           ]
         },
         "type": "album",
@@ -4239,7 +4364,7 @@
       }
     },
     {
-      "position": 114,
+      "position": 116,
       "streams": 4,
       "playedMs": 962638,
       "indicator": null,
@@ -4247,7 +4372,7 @@
         "name": "One Love",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/42/30/1b/42301be1-a4c0-0acf-5d42-ac37c3ab81db/00724354394355.jpg/768x768bb.jpg",
         "label": "Innocent",
-        "spotifyPopularity": 56,
+        "spotifyPopularity": 54,
         "totalTracks": 15,
         "releaseDate": 1009843200000,
         "genres": [
@@ -4278,7 +4403,7 @@
       }
     },
     {
-      "position": 115,
+      "position": 117,
       "streams": 3,
       "playedMs": 959720,
       "indicator": null,
@@ -4314,52 +4439,7 @@
       }
     },
     {
-      "position": 116,
-      "streams": 5,
-      "playedMs": 956530,
-      "indicator": null,
-      "album": {
-        "name": "Upstairs At Eric's",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/a1/32/e4a13272-7717-32b6-290f-606deb7a8dfb/4099964057829.jpg/768x768bb.jpg",
-        "label": "Rhino/Warner Records",
-        "spotifyPopularity": 52,
-        "totalTracks": 11,
-        "releaseDate": 378694800000,
-        "genres": [
-          "Pop",
-          "Music",
-          "Alternative",
-          "New Wave",
-          "Rock",
-          "Adult Alternative",
-          "Electronic",
-          "R&B/Soul",
-          "Pop/Rock",
-          "Dance",
-          "Disco"
-        ],
-        "artists": [
-          {
-            "id": 17853,
-            "name": "Yazoo",
-            "image": "https://i.scdn.co/image/ab67616100005174c948e0ba1e0c16f8c8ab6ad6"
-          }
-        ],
-        "externalIds": {
-          "upc": "4099964057829",
-          "ean": null,
-          "isrc": null,
-          "spotify": [],
-          "appleMusic": [
-            "1746978493"
-          ]
-        },
-        "type": "album",
-        "id": 26852652
-      }
-    },
-    {
-      "position": 117,
+      "position": 118,
       "streams": 5,
       "playedMs": 954250,
       "indicator": null,
@@ -4398,7 +4478,50 @@
       }
     },
     {
-      "position": 118,
+      "position": 119,
+      "streams": 4,
+      "playedMs": 942184,
+      "indicator": null,
+      "album": {
+        "name": "Toto",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a1/a9/ea/a1a9eaef-2d81-c2c6-9a03-82c3cbc9e598/074643531726.jpg/768x768bb.jpg",
+        "label": "Columbia",
+        "spotifyPopularity": 71,
+        "totalTracks": 10,
+        "releaseDate": 276825600000,
+        "genres": [
+          "Rock",
+          "Music",
+          "Pop",
+          "Pop/Rock",
+          "Arena Rock",
+          "Adult Contemporary",
+          "Soft Rock"
+        ],
+        "artists": [
+          {
+            "id": 6473,
+            "name": "TOTO",
+            "image": "https://i.scdn.co/image/ab67616100005174a59a5bcab211f964fe9bfb06"
+          }
+        ],
+        "externalIds": {
+          "upc": "074643531726",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "1mnu4hYvdwQgZXcNvtJ3D3"
+          ],
+          "appleMusic": [
+            "198226130"
+          ]
+        },
+        "type": "album",
+        "id": 1537167
+      }
+    },
+    {
+      "position": 120,
       "streams": 3,
       "playedMs": 937800,
       "indicator": null,
@@ -4434,44 +4557,52 @@
       }
     },
     {
-      "position": 119,
+      "position": 121,
       "streams": 3,
-      "playedMs": 925037,
+      "playedMs": 923240,
       "indicator": null,
       "album": {
-        "name": "Backlash (Martin Garrix Edit) - Single",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/37/de/dd/37dedd88-f8bf-0efb-274b-d2afaf293e21/8712944463705.jpg/768x768bb.jpg",
-        "label": "Spinnin' Records",
-        "spotifyPopularity": 0,
-        "totalTracks": 2,
-        "releaseDate": 1408586400000,
+        "name": "You've Come a Long Way Baby",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/1a/16/451a1673-1aa4-63e7-cfca-8a44ce9d0779/14ULAIM03599.rgb.jpg/768x768bb.jpg",
+        "label": "Skint Records",
+        "spotifyPopularity": 63,
+        "totalTracks": 11,
+        "releaseDate": 883612800000,
         "genres": [
-          "舞曲",
-          "音樂",
-          "浩室"
+          "Dance",
+          "Music",
+          "Jazz",
+          "Bop",
+          "Breakbeat",
+          "Rock",
+          "Alternative",
+          "Electronic",
+          "Electronica"
         ],
         "artists": [
           {
-            "id": 8001,
-            "name": "DubVision",
-            "image": "https://i.scdn.co/image/ab6761610000517448f4bc0f481bcc07988acf4d"
+            "id": 13090,
+            "name": "Fatboy Slim",
+            "image": "https://i.scdn.co/image/ab67616100005174c20ed3229eeced918966a009"
           }
         ],
         "externalIds": {
-          "upc": "190296627453",
+          "upc": "5025425551130",
           "ean": null,
           "isrc": null,
-          "spotify": [],
+          "spotify": [
+            "0J43YxxLFPZxIrCd12LRuN"
+          ],
           "appleMusic": [
-            "1586135957"
+            "714927896"
           ]
         },
         "type": "album",
-        "id": 777150
+        "id": 812100
       }
     },
     {
-      "position": 120,
+      "position": 122,
       "streams": 2,
       "playedMs": 918532,
       "indicator": null,
@@ -4509,7 +4640,7 @@
       }
     },
     {
-      "position": 121,
+      "position": 123,
       "streams": 3,
       "playedMs": 918399,
       "indicator": null,
@@ -4554,7 +4685,7 @@
       }
     },
     {
-      "position": 122,
+      "position": 124,
       "streams": 6,
       "playedMs": 907464,
       "indicator": null,
@@ -4598,7 +4729,7 @@
       }
     },
     {
-      "position": 123,
+      "position": 125,
       "streams": 3,
       "playedMs": 906000,
       "indicator": null,
@@ -4606,7 +4737,7 @@
         "name": "The Getaway",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/22/3e/ed/223eedeb-3ad1-2bd8-c863-ab6fb39d658a/093624920137.jpg/768x768bb.jpg",
         "label": "Warner Records",
-        "spotifyPopularity": 70,
+        "spotifyPopularity": 68,
         "totalTracks": 13,
         "releaseDate": 1466121600000,
         "genres": [
@@ -4639,7 +4770,7 @@
       }
     },
     {
-      "position": 124,
+      "position": 126,
       "streams": 2,
       "playedMs": 899156,
       "indicator": null,
@@ -4677,58 +4808,22 @@
       }
     },
     {
-      "position": 125,
-      "streams": 4,
-      "playedMs": 898824,
-      "indicator": null,
-      "album": {
-        "name": "beerbongs & bentleys",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/3c/4e/7e3c4ef6-daa7-cc10-57d0-45f5a562eaf5/18UMGIM22101.rgb.jpg/768x768bb.jpg",
-        "label": "Republic Records",
-        "spotifyPopularity": 79,
-        "totalTracks": 18,
-        "releaseDate": 1524787200000,
-        "genres": [
-          "Hip-Hop/Rap",
-          "Music",
-          "Rap",
-          "Alternative Rap"
-        ],
-        "artists": [
-          {
-            "id": 22346,
-            "name": "Post Malone",
-            "image": "https://i.scdn.co/image/ab67616100005174e17c0aa1714a03d62b5ce4e0"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602567673507",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "6trNtQUgC8cgbWcqoMYkOR"
-          ],
-          "appleMusic": [
-            "1373516902"
-          ]
-        },
-        "type": "album",
-        "id": 49359
-      }
-    },
-    {
-      "position": 126,
+      "position": 127,
       "streams": 3,
       "playedMs": 897720,
       "indicator": null,
       "album": {
-        "name": "Rebel Yell 2.0 - The Remixes",
-        "image": "https://i.scdn.co/image/ab67616d0000b27342001295a3378ccb3832205a",
-        "label": "UME - Global Clearing House",
-        "spotifyPopularity": 29,
+        "name": "Rebel Yell",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/47/c4/af47c4b6-acc2-1b5d-05fe-84ed9ed45b04/24UM1IM19065.rgb.jpg/768x768bb.jpg",
+        "label": "CAPITOL CATALOG MKT (C92)",
+        "spotifyPopularity": 76,
         "totalTracks": 9,
-        "releaseDate": 1731027600000,
-        "genres": [],
+        "releaseDate": 436496400000,
+        "genres": [
+          "Rock",
+          "Musica",
+          "Music"
+        ],
         "artists": [
           {
             "id": 23137,
@@ -4740,56 +4835,13 @@
           "upc": "00602475450382",
           "ean": null,
           "isrc": null,
-          "spotify": [
-            "71qPofXpNAI5a8wxOMxDIm"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 30119512
-      }
-    },
-    {
-      "position": 127,
-      "streams": 3,
-      "playedMs": 887679,
-      "indicator": null,
-      "album": {
-        "name": "Toto IV",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/69/ce/d2/69ced240-07a7-2a04-bbab-2afbacf30809/074643772822.jpg/768x768bb.jpg",
-        "label": "Columbia",
-        "spotifyPopularity": 77,
-        "totalTracks": 10,
-        "releaseDate": 387072000000,
-        "genres": [
-          "Rock",
-          "Music",
-          "Pop",
-          "Pop/Rock",
-          "Soft Rock",
-          "Adult Contemporary",
-          "Arena Rock"
-        ],
-        "artists": [
-          {
-            "id": 6473,
-            "name": "TOTO",
-            "image": "https://i.scdn.co/image/ab67616100005174a59a5bcab211f964fe9bfb06"
-          }
-        ],
-        "externalIds": {
-          "upc": "074643772822",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "62U7xIHcID94o20Of5ea4D"
-          ],
+          "spotify": [],
           "appleMusic": [
-            "185716551"
+            "1775577638"
           ]
         },
-        "type": "album",
-        "id": 397002
+        "type": "compilation",
+        "id": 30119512
       }
     },
     {
@@ -4799,12 +4851,15 @@
       "indicator": null,
       "album": {
         "name": "HEROES & VILLAINS",
-        "image": "https://i.scdn.co/image/ab67616d0000b273c4fee55d7b51479627c31f89",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/09/72/3b/09723b88-9b18-e466-7ae0-05a17688bb52/22UM1IM35114.rgb.jpg/768x768bb.jpg",
         "label": "Republic Records",
-        "spotifyPopularity": 82,
+        "spotifyPopularity": 20,
         "totalTracks": 15,
         "releaseDate": 1669939200000,
-        "genres": [],
+        "genres": [
+          "Hip-Hop/Rap",
+          "Music"
+        ],
         "artists": [
           {
             "id": 35776,
@@ -4813,12 +4868,10 @@
           }
         ],
         "externalIds": {
-          "upc": "00602455047458",
+          "upc": "00602448810441",
           "ean": null,
           "isrc": null,
-          "spotify": [
-            "7txGsnDSqVMoRl6RQ9XyZP"
-          ],
+          "spotify": [],
           "appleMusic": []
         },
         "type": "album",
@@ -4845,7 +4898,7 @@
           {
             "id": 130214,
             "name": "Grimes",
-            "image": "https://i.scdn.co/image/ab6761610000517434771f759ca81a422f5f2b57"
+            "image": "https://i.scdn.co/image/ab676161000051743da21f5c5e6956dd544c0d25"
           }
         ],
         "externalIds": {
@@ -4872,7 +4925,7 @@
         "name": "A Momentary Lapse of Reason",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/63/a2/c9/63a2c91a-0d7f-634d-b672-a38493b9e0ed/886445635935.jpg/768x768bb.jpg",
         "label": "Pink Floyd Records",
-        "spotifyPopularity": 63,
+        "spotifyPopularity": 61,
         "totalTracks": 11,
         "releaseDate": 558057600000,
         "genres": [
@@ -4885,7 +4938,7 @@
           {
             "id": 16829,
             "name": "Pink Floyd",
-            "image": "https://i.scdn.co/image/d011c95081cd9a329e506abd7ded47535d524a07"
+            "image": "https://i.scdn.co/image/ab6761610000517497885ce689d644c91dfba05c"
           }
         ],
         "externalIds": {
@@ -4905,45 +4958,6 @@
     },
     {
       "position": 131,
-      "streams": 4,
-      "playedMs": 876146,
-      "indicator": null,
-      "album": {
-        "name": "Hurry Up, We're Dreaming",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/4c/14/8d/4c148df0-9532-15b7-91c9-570bfb20531a/724596951057.jpg/768x768bb.jpg",
-        "label": "Mute",
-        "spotifyPopularity": 65,
-        "totalTracks": 22,
-        "releaseDate": 1293840000000,
-        "genres": [
-          "Electronic",
-          "Music",
-          "Rock",
-          "Jazz",
-          "Big Band"
-        ],
-        "artists": [
-          {
-            "id": 9318,
-            "name": "M83",
-            "image": "https://i.scdn.co/image/ab67616100005174961ef259d6d8101edd2f80c0"
-          }
-        ],
-        "externalIds": {
-          "upc": "724596951057",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "6R0ynY7RF20ofs9GJR5TXR"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 217982
-      }
-    },
-    {
-      "position": 132,
       "streams": 4,
       "playedMs": 871200,
       "indicator": null,
@@ -4981,15 +4995,15 @@
       }
     },
     {
-      "position": 133,
+      "position": 132,
       "streams": 3,
       "playedMs": 870562,
       "indicator": null,
       "album": {
         "name": "Country Grammar",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c9/91/fe/c991fe22-20db-ec1c-1a34-0ba31a51f8ee/06UMGIM08344.rgb.jpg/768x768bb.jpg",
-        "label": "Motown",
-        "spotifyPopularity": 71,
+        "label": "Universal Music Group",
+        "spotifyPopularity": 0,
         "totalTracks": 17,
         "releaseDate": 962064000000,
         "genres": [
@@ -5006,11 +5020,11 @@
           }
         ],
         "externalIds": {
-          "upc": "00602567828068",
+          "upc": "00601215774320",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "5v7Icroz1sQsK2sQyLrWzE"
+            "2ixev48xYzspaWS6mxTPRU"
           ],
           "appleMusic": []
         },
@@ -5019,7 +5033,7 @@
       }
     },
     {
-      "position": 134,
+      "position": 133,
       "streams": 3,
       "playedMs": 869506,
       "indicator": null,
@@ -5052,7 +5066,7 @@
       }
     },
     {
-      "position": 135,
+      "position": 134,
       "streams": 3,
       "playedMs": 868599,
       "indicator": null,
@@ -5060,17 +5074,11 @@
         "name": "Love Songs For You",
         "image": "https://i.scdn.co/image/ab67616d0000b27374981b7350145c6f0cb07369",
         "label": "Warner Music Group - X5 Music Group",
-        "spotifyPopularity": 1,
+        "spotifyPopularity": 0,
         "totalTracks": 39,
         "releaseDate": 1724803200000,
         "genres": [],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
+        "artists": [],
         "externalIds": {
           "upc": "5059460329119",
           "ean": null,
@@ -5085,7 +5093,7 @@
       }
     },
     {
-      "position": 136,
+      "position": 135,
       "streams": 3,
       "playedMs": 866261,
       "indicator": null,
@@ -5128,7 +5136,7 @@
       }
     },
     {
-      "position": 137,
+      "position": 136,
       "streams": 3,
       "playedMs": 864438,
       "indicator": null,
@@ -5161,7 +5169,7 @@
       }
     },
     {
-      "position": 138,
+      "position": 137,
       "streams": 4,
       "playedMs": 863925,
       "indicator": null,
@@ -5195,6 +5203,45 @@
         },
         "type": "album",
         "id": 1174204
+      }
+    },
+    {
+      "position": 138,
+      "streams": 4,
+      "playedMs": 863000,
+      "indicator": null,
+      "album": {
+        "name": "More Than You Know",
+        "image": "https://i.scdn.co/image/ab67616d0000b273fba6de0b38b0168d480b1a27",
+        "label": "EMI",
+        "spotifyPopularity": 72,
+        "totalTracks": 15,
+        "releaseDate": 1501200000000,
+        "genres": [
+          "Dance",
+          "Music",
+          "Electronic"
+        ],
+        "artists": [
+          {
+            "id": 55665,
+            "name": "Axwell /\\ Ingrosso",
+            "image": "https://i.scdn.co/image/ab676161000051749f6e5d736809c4cb40d59a7e"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602567320340",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "6Ei5WWek37m1x9AjpSXTcJ"
+          ],
+          "appleMusic": [
+            "1440906983"
+          ]
+        },
+        "type": "album",
+        "id": 25997
       }
     },
     {
@@ -5412,16 +5459,53 @@
     },
     {
       "position": 144,
+      "streams": 3,
+      "playedMs": 832665,
+      "indicator": null,
+      "album": {
+        "name": "Drive",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/a3/e5/67/a3e5676e-b010-2fd2-a159-9a76ecf54b39/9340813249564_Cover.jpg/768x768bb.jpg",
+        "label": "Garuda",
+        "spotifyPopularity": 43,
+        "totalTracks": 12,
+        "releaseDate": 1396317600000,
+        "genres": [
+          "Trance",
+          "Music",
+          "Dance"
+        ],
+        "artists": [
+          {
+            "id": 11804,
+            "name": "Gareth Emery",
+            "image": "https://i.scdn.co/image/ab67616100005174ab8b3e2e7218ed4714d64d2f"
+          }
+        ],
+        "externalIds": {
+          "upc": "9340813249564",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": [
+            "1284299112"
+          ]
+        },
+        "type": "album",
+        "id": 2025169
+      }
+    },
+    {
+      "position": 145,
       "streams": 4,
       "playedMs": 825064,
       "indicator": null,
       "album": {
-        "name": "Point Of Know Return (Expanded Edition)",
+        "name": "Point Of Know Return",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/05/05/5d/05055d03-fa2b-1848-75a4-6b626477937c/mzi.icapguzh.jpg/768x768bb.jpg",
-        "label": "Epic/Legacy",
-        "spotifyPopularity": 68,
+        "label": "Epic",
+        "spotifyPopularity": 0,
         "totalTracks": 12,
-        "releaseDate": 220924800000,
+        "releaseDate": 220928400000,
         "genres": [
           "Rock",
           "Music",
@@ -5438,121 +5522,20 @@
           }
         ],
         "externalIds": {
-          "upc": "696998538726",
+          "upc": "5099750603222",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "6oU298pdPTCQnMx1PYwyUA"
+            "68af3qqo7baMpfsqRi9cBA"
           ],
-          "appleMusic": [
-            "193730141"
-          ]
+          "appleMusic": []
         },
         "type": "album",
         "id": 7620
       }
     },
     {
-      "position": 145,
-      "streams": 4,
-      "playedMs": 821760,
-      "indicator": null,
-      "album": {
-        "name": "EDM Hits",
-        "image": "https://i.scdn.co/image/ab67616d0000b2736d8a19c3d286b89dd1f2cebb",
-        "label": "UME - Global Clearing House",
-        "spotifyPopularity": 53,
-        "totalTracks": 27,
-        "releaseDate": 1585872000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 174,
-            "name": "Various Artists",
-            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602508983405",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "37bu5iGP8qyG50MbFUKbGi"
-          ],
-          "appleMusic": []
-        },
-        "type": "compilation",
-        "id": 292635
-      }
-    },
-    {
       "position": 146,
-      "streams": 3,
-      "playedMs": 820278,
-      "indicator": null,
-      "album": {
-        "name": "Höstmys",
-        "image": "https://i.scdn.co/image/ab67616d0000b273995c2e3c52f712808af2a2d5",
-        "label": "Warner Music Group - X5 Music Group",
-        "spotifyPopularity": 0,
-        "totalTracks": 50,
-        "releaseDate": 1631844000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 413,
-            "name": "Colbie Caillat",
-            "image": "https://i.scdn.co/image/ab67616100005174e44162a995aa36ae280172c5"
-          }
-        ],
-        "externalIds": {
-          "upc": "5059460098169",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "11MNzMI3Bqxu3ImKUOgJjc"
-          ],
-          "appleMusic": []
-        },
-        "type": "compilation",
-        "id": 28832151
-      }
-    },
-    {
-      "position": 147,
-      "streams": 2,
-      "playedMs": 820192,
-      "indicator": null,
-      "album": {
-        "name": "Until Now",
-        "image": "https://i.scdn.co/image/ab67616d0000b273781f6dd5abe91929df0314e3",
-        "label": "Virgin Records",
-        "spotifyPopularity": 59,
-        "totalTracks": 10,
-        "releaseDate": 1325376000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 17861,
-            "name": "Swedish House Mafia",
-            "image": "https://i.scdn.co/image/ab676161000051742a69903cac5dbe1f233ffb79"
-          }
-        ],
-        "externalIds": {
-          "upc": "05099923236455",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4ljisoNarj0BpQSMIEv88L"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 217345
-      }
-    },
-    {
-      "position": 148,
       "streams": 4,
       "playedMs": 819040,
       "indicator": null,
@@ -5560,7 +5543,7 @@
         "name": "Cannibal (Expanded Edition)",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2f/29/0c/2f290c64-d928-4346-c2fd-e4404c9f316f/884977859713.jpg/768x768bb.jpg",
         "label": "RCA Records Label",
-        "spotifyPopularity": 74,
+        "spotifyPopularity": 70,
         "totalTracks": 12,
         "releaseDate": 1290124800000,
         "genres": [
@@ -5590,7 +5573,7 @@
       }
     },
     {
-      "position": 149,
+      "position": 147,
       "streams": 4,
       "playedMs": 817440,
       "indicator": null,
@@ -5623,7 +5606,7 @@
       }
     },
     {
-      "position": 150,
+      "position": 148,
       "streams": 3,
       "playedMs": 817128,
       "indicator": null,
@@ -5664,7 +5647,7 @@
       }
     },
     {
-      "position": 151,
+      "position": 149,
       "streams": 3,
       "playedMs": 814066,
       "indicator": null,
@@ -5707,7 +5690,7 @@
       }
     },
     {
-      "position": 152,
+      "position": 150,
       "streams": 3,
       "playedMs": 810000,
       "indicator": null,
@@ -5749,7 +5732,7 @@
       }
     },
     {
-      "position": 153,
+      "position": 151,
       "streams": 4,
       "playedMs": 808372,
       "indicator": null,
@@ -5783,15 +5766,52 @@
       }
     },
     {
-      "position": 154,
+      "position": 152,
+      "streams": 3,
+      "playedMs": 802788,
+      "indicator": null,
+      "album": {
+        "name": "AEROSMITH",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e2/87/d9/e287d987-7b92-7749-737f-b5b8a6913f88/22UM1IM38560.rgb.jpg/768x768bb.jpg",
+        "label": "Columbia",
+        "spotifyPopularity": 0,
+        "totalTracks": 8,
+        "releaseDate": 94694400000,
+        "genres": [
+          "Hard Rock",
+          "Music",
+          "Rock"
+        ],
+        "artists": [
+          {
+            "id": 14970,
+            "name": "Aerosmith",
+            "image": "https://i.scdn.co/image/ab67616100005174c5733401b4689b2064458e7d"
+          }
+        ],
+        "externalIds": {
+          "upc": "5099747496226",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4POwouNbBP807ciWs9WIfM"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 1982600
+      }
+    },
+    {
+      "position": 153,
       "streams": 4,
       "playedMs": 794838,
       "indicator": null,
       "album": {
         "name": "After Hours",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/768x768bb.jpg",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/03/e1/67/03e167d6-ee05-eb32-55e9-c5040f55a8bf/20UMGIM21166.rgb.jpg/768x768bb.jpg",
         "label": "Republic Records",
-        "spotifyPopularity": 84,
+        "spotifyPopularity": 86,
         "totalTracks": 14,
         "releaseDate": 1584662400000,
         "genres": [
@@ -5810,19 +5830,15 @@
           "upc": "00602508924224",
           "ean": null,
           "isrc": null,
-          "spotify": [
-            "4yP0hdKOZPNshxUOjY0cZj"
-          ],
-          "appleMusic": [
-            "1499378108"
-          ]
+          "spotify": [],
+          "appleMusic": []
         },
         "type": "album",
         "id": 229491
       }
     },
     {
-      "position": 155,
+      "position": 154,
       "streams": 3,
       "playedMs": 785596,
       "indicator": null,
@@ -5855,7 +5871,7 @@
       }
     },
     {
-      "position": 156,
+      "position": 155,
       "streams": 2,
       "playedMs": 778560,
       "indicator": null,
@@ -5901,40 +5917,7 @@
       }
     },
     {
-      "position": 157,
-      "streams": 4,
-      "playedMs": 776671,
-      "indicator": null,
-      "album": {
-        "name": "Crave – Club Edition mixed by DJ Havana Brown",
-        "image": "https://i.scdn.co/image/ab67616d0000b273d3a78c4dde7db1c956b4ac60",
-        "label": "Universal Music New Zealand Limited",
-        "spotifyPopularity": 0,
-        "totalTracks": 36,
-        "releaseDate": 1325379600000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 2090,
-            "name": "Avicii",
-            "image": "https://i.scdn.co/image/ab67616100005174ae07171f989fb39736674113"
-          }
-        ],
-        "externalIds": {
-          "upc": "00600753389843",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "58MKHIdrhmC8ObAYbU9u5s"
-          ],
-          "appleMusic": []
-        },
-        "type": "compilation",
-        "id": 28420996
-      }
-    },
-    {
-      "position": 158,
+      "position": 156,
       "streams": 3,
       "playedMs": 768044,
       "indicator": null,
@@ -5970,7 +5953,7 @@
       }
     },
     {
-      "position": 159,
+      "position": 157,
       "streams": 3,
       "playedMs": 766753,
       "indicator": null,
@@ -6010,7 +5993,7 @@
       }
     },
     {
-      "position": 160,
+      "position": 158,
       "streams": 3,
       "playedMs": 761466,
       "indicator": null,
@@ -6043,7 +6026,7 @@
       }
     },
     {
-      "position": 161,
+      "position": 159,
       "streams": 3,
       "playedMs": 761040,
       "indicator": null,
@@ -6076,49 +6059,42 @@
       }
     },
     {
-      "position": 162,
+      "position": 160,
       "streams": 3,
-      "playedMs": 757666,
+      "playedMs": 756717,
       "indicator": null,
       "album": {
-        "name": "4 (Expanded)",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1b/ba/5c/1bba5c8d-ba79-9b11-3406-0bbddc5bcb97/603497979752.jpg/768x768bb.jpg",
-        "label": "Rhino Atlantic",
-        "spotifyPopularity": 70,
+        "name": "America",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/20/c6/c4/20c6c488-4791-6c15-323f-e7ea79a01f31/mzi.dbcrqaoq.jpg/768x768bb.jpg",
+        "label": "Warner Records",
+        "spotifyPopularity": 68,
         "totalTracks": 12,
-        "releaseDate": 347155200000,
-        "genres": [
-          "Rock",
-          "Music",
-          "Hard Rock",
-          "Arena Rock",
-          "Pop",
-          "Pop/Rock"
-        ],
+        "releaseDate": 63072000000,
+        "genres": [],
         "artists": [
           {
-            "id": 9462,
-            "name": "Foreigner",
-            "image": "https://i.scdn.co/image/ab67616100005174b338d6964565206f741d5ad1"
+            "id": 3136,
+            "name": "America",
+            "image": "https://i.scdn.co/image/ab676161000051741918619d3b26c6cb16084997"
           }
         ],
         "externalIds": {
-          "upc": "603497979752",
+          "upc": "075992725767",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "2Pw51hAGvWpTA3AYl2WVuu"
+            "0E5IKYhiKgbYQkmfsFonbZ"
           ],
           "appleMusic": [
-            "285143156"
+            "301027593"
           ]
         },
         "type": "album",
-        "id": 797039
+        "id": 230614
       }
     },
     {
-      "position": 163,
+      "position": 161,
       "streams": 4,
       "playedMs": 754284,
       "indicator": null,
@@ -6151,7 +6127,7 @@
       }
     },
     {
-      "position": 164,
+      "position": 162,
       "streams": 2,
       "playedMs": 746359,
       "indicator": null,
@@ -6184,7 +6160,7 @@
       }
     },
     {
-      "position": 165,
+      "position": 163,
       "streams": 3,
       "playedMs": 743932,
       "indicator": null,
@@ -6224,7 +6200,7 @@
       }
     },
     {
-      "position": 166,
+      "position": 164,
       "streams": 3,
       "playedMs": 737061,
       "indicator": null,
@@ -6264,7 +6240,7 @@
       }
     },
     {
-      "position": 167,
+      "position": 165,
       "streams": 3,
       "playedMs": 734480,
       "indicator": null,
@@ -6280,7 +6256,7 @@
           {
             "id": 94027,
             "name": "Fred again..",
-            "image": "https://i.scdn.co/image/ab676161000051742302e6ba3091fcbc6fd5bb54"
+            "image": "https://i.scdn.co/image/ab67616100005174381c41adc678e4ce864eb274"
           }
         ],
         "externalIds": {
@@ -6297,7 +6273,7 @@
       }
     },
     {
-      "position": 168,
+      "position": 166,
       "streams": 3,
       "playedMs": 732141,
       "indicator": null,
@@ -6369,7 +6345,7 @@
       }
     },
     {
-      "position": 169,
+      "position": 167,
       "streams": 2,
       "playedMs": 730212,
       "indicator": null,
@@ -6407,7 +6383,7 @@
       }
     },
     {
-      "position": 170,
+      "position": 168,
       "streams": 3,
       "playedMs": 728679,
       "indicator": null,
@@ -6448,44 +6424,7 @@
       }
     },
     {
-      "position": 171,
-      "streams": 3,
-      "playedMs": 728666,
-      "indicator": null,
-      "album": {
-        "name": "18 Months",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ab/af/22/abaf2296-ed4d-6da2-c24d-503cfdfa4c1f/0617465356858.jpg/768x768bb.jpg",
-        "label": "Columbia",
-        "spotifyPopularity": 78,
-        "totalTracks": 15,
-        "releaseDate": 1351468800000,
-        "genres": [
-          "Dance",
-          "Music",
-          "Rock"
-        ],
-        "artists": [
-          {
-            "id": 366,
-            "name": "Ellie Goulding",
-            "image": "https://i.scdn.co/image/ab67616100005174c3cd7dc428871e8985d62b9a"
-          }
-        ],
-        "externalIds": {
-          "upc": "884977912999",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "7w19PFbxAjwZ7UVNp9z0uT"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 144028
-      }
-    },
-    {
-      "position": 172,
+      "position": 169,
       "streams": 2,
       "playedMs": 726026,
       "indicator": null,
@@ -6530,7 +6469,7 @@
       }
     },
     {
-      "position": 173,
+      "position": 170,
       "streams": 3,
       "playedMs": 719199,
       "indicator": null,
@@ -6563,7 +6502,7 @@
       }
     },
     {
-      "position": 174,
+      "position": 171,
       "streams": 3,
       "playedMs": 708309,
       "indicator": null,
@@ -6601,78 +6540,7 @@
       }
     },
     {
-      "position": 175,
-      "streams": 3,
-      "playedMs": 699810,
-      "indicator": null,
-      "album": {
-        "name": "Reckless (30th Anniversary / Deluxe Edition)",
-        "image": "https://i.scdn.co/image/ab67616d0000b273cf1fee2a55e98e22bf358512",
-        "label": "A&M",
-        "spotifyPopularity": 78,
-        "totalTracks": 32,
-        "releaseDate": 468460800000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 13190,
-            "name": "Bryan Adams",
-            "image": "https://i.scdn.co/image/ab676161000051749333e218db341b192817db03"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602537830817",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "2o2G49EPi4lua5zgxUKhLL"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 650758
-      }
-    },
-    {
-      "position": 176,
-      "streams": 3,
-      "playedMs": 692283,
-      "indicator": null,
-      "album": {
-        "name": "The Martin Garrix Experience",
-        "image": "https://i.scdn.co/image/ab67616d0000b273c6f9783d7f7670d09454ef71",
-        "label": "Epic Amsterdam",
-        "spotifyPopularity": 27,
-        "totalTracks": 20,
-        "releaseDate": 1562716800000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 2308,
-            "name": "Martin Garrix",
-            "image": "https://i.scdn.co/image/ab67616100005174f5b8ee60f1f4ee3453aba40b"
-          },
-          {
-            "id": 12094,
-            "name": "Troye Sivan",
-            "image": "https://i.scdn.co/image/ab6761610000517426e8cb3ff6fc7744b312811b"
-          }
-        ],
-        "externalIds": {
-          "upc": "886447695685",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "3UwcZ5menPSCTvdxyYgxZj"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 2693055
-      }
-    },
-    {
-      "position": 177,
+      "position": 172,
       "streams": 2,
       "playedMs": 692066,
       "indicator": null,
@@ -6709,7 +6577,7 @@
       }
     },
     {
-      "position": 178,
+      "position": 173,
       "streams": 2,
       "playedMs": 682054,
       "indicator": null,
@@ -6744,7 +6612,7 @@
       }
     },
     {
-      "position": 179,
+      "position": 174,
       "streams": 3,
       "playedMs": 670318,
       "indicator": null,
@@ -6762,7 +6630,13 @@
           "Rock",
           "Adult Alternative"
         ],
-        "artists": [],
+        "artists": [
+          {
+            "id": 364,
+            "name": "Maroon 5",
+            "image": "https://i.scdn.co/image/ab67616100005174f8349dfb619a7f842242de77"
+          }
+        ],
         "externalIds": {
           "upc": "00602537109685",
           "ean": null,
@@ -6777,7 +6651,7 @@
       }
     },
     {
-      "position": 180,
+      "position": 175,
       "streams": 3,
       "playedMs": 667529,
       "indicator": null,
@@ -6817,7 +6691,7 @@
       }
     },
     {
-      "position": 181,
+      "position": 176,
       "streams": 2,
       "playedMs": 666612,
       "indicator": null,
@@ -6850,7 +6724,7 @@
       }
     },
     {
-      "position": 182,
+      "position": 177,
       "streams": 2,
       "playedMs": 664906,
       "indicator": null,
@@ -6883,7 +6757,7 @@
       }
     },
     {
-      "position": 183,
+      "position": 178,
       "streams": 3,
       "playedMs": 657090,
       "indicator": null,
@@ -6897,9 +6771,9 @@
         "genres": [],
         "artists": [
           {
-            "id": 15821,
-            "name": "Taio Cruz",
-            "image": "https://i.scdn.co/image/ab67616100005174153171480a6f22912253b9f1"
+            "id": 174,
+            "name": "Various Artists",
+            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
           }
         ],
         "externalIds": {
@@ -6916,7 +6790,7 @@
       }
     },
     {
-      "position": 184,
+      "position": 179,
       "streams": 2,
       "playedMs": 656000,
       "indicator": null,
@@ -6956,7 +6830,7 @@
       }
     },
     {
-      "position": 185,
+      "position": 180,
       "streams": 3,
       "playedMs": 653946,
       "indicator": null,
@@ -6992,7 +6866,43 @@
       }
     },
     {
-      "position": 186,
+      "position": 181,
+      "streams": 2,
+      "playedMs": 652532,
+      "indicator": null,
+      "album": {
+        "name": "Group Therapy",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ae/28/fb/ae28fbae-ff08-74dc-1215-252507762ebd/5039060167496.png/768x768bb.jpg",
+        "label": "Universal Music Australia (Distribution)",
+        "spotifyPopularity": 0,
+        "totalTracks": 15,
+        "releaseDate": 1293843600000,
+        "genres": [
+          "Dance",
+          "Music",
+          "Electronic",
+          "Trance"
+        ],
+        "artists": [
+          {
+            "id": 8777,
+            "name": "Above & Beyond",
+            "image": "https://i.scdn.co/image/ab67616100005174b011823512c7e3372db21b36"
+          }
+        ],
+        "externalIds": {
+          "upc": "09340269019322",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 3215
+      }
+    },
+    {
+      "position": 182,
       "streams": 3,
       "playedMs": 652038,
       "indicator": null,
@@ -7027,6 +6937,41 @@
         },
         "type": "album",
         "id": 9106392
+      }
+    },
+    {
+      "position": 183,
+      "streams": 2,
+      "playedMs": 645812,
+      "indicator": null,
+      "album": {
+        "name": "Tum Mile (Original Motion Picture Soundtrack)",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6b/1c/e4/6b1ce45a-6350-d999-3172-47c3951bd57b/884977348316.jpg/768x768bb.jpg",
+        "label": "Sony Music Entertainment India Pvt. Ltd.",
+        "spotifyPopularity": 70,
+        "totalTracks": 9,
+        "releaseDate": 1252368000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 12997,
+            "name": "Pritam",
+            "image": "https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+          }
+        ],
+        "externalIds": {
+          "upc": "884977348316",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "3Ip9JCpT1IF9GvhAxzufTH"
+          ],
+          "appleMusic": [
+            "330742153"
+          ]
+        },
+        "type": "album",
+        "id": 2340665
       }
     }
   ]
