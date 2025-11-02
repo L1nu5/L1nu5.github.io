@@ -4062,6 +4062,51 @@
     },
     {
       "position": 111,
+      "streams": 33,
+      "playedMs": 8578137,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 546732,
+            "image": "https://i.scdn.co/image/ab67616d0000b273d84f3c17532c5784a7ebb61d",
+            "name": "Summer Anthems 2012"
+          }
+        ],
+        "artists": [
+          {
+            "id": 4036,
+            "name": "Kimbra",
+            "image": "https://i.scdn.co/image/ab67616100005174079dadbde6ecb355b1537fa3"
+          },
+          {
+            "id": 10732,
+            "name": "Tiësto",
+            "image": "https://i.scdn.co/image/ab67616100005174e84e08fb1dfa2bf9b5a61563"
+          },
+          {
+            "id": 28129458,
+            "name": "Gotye",
+            "image": "https://i.scdn.co/image/ab6761610000517445c53413a4f0198251481b0e"
+          }
+        ],
+        "durationMs": 267800,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "7KzjRvvqlV94V1iLvMoEhZ"
+          ],
+          "appleMusic": []
+        },
+        "id": 170049,
+        "name": "Somebody That I Used To Know - Tiësto Remix",
+        "spotifyPopularity": 0,
+        "spotifyPreview": null,
+        "appleMusicPreview": null
+      }
+    },
+    {
+      "position": 112,
       "streams": 61,
       "playedMs": 8546277,
       "indicator": null,
@@ -4108,7 +4153,7 @@
       }
     },
     {
-      "position": 112,
+      "position": 113,
       "streams": 37,
       "playedMs": 8543866,
       "indicator": null,
@@ -4145,7 +4190,7 @@
       }
     },
     {
-      "position": 113,
+      "position": 114,
       "streams": 18,
       "playedMs": 8520684,
       "indicator": null,
@@ -4182,7 +4227,7 @@
       }
     },
     {
-      "position": 114,
+      "position": 115,
       "streams": 40,
       "playedMs": 8411769,
       "indicator": null,
@@ -4211,51 +4256,6 @@
         },
         "id": 204063,
         "name": "If I Lose Myself - Alesso vs OneRepublic",
-        "spotifyPopularity": 0,
-        "spotifyPreview": null,
-        "appleMusicPreview": null
-      }
-    },
-    {
-      "position": 115,
-      "streams": 32,
-      "playedMs": 8338137,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 546732,
-            "image": "https://i.scdn.co/image/ab67616d0000b273d84f3c17532c5784a7ebb61d",
-            "name": "Summer Anthems 2012"
-          }
-        ],
-        "artists": [
-          {
-            "id": 4036,
-            "name": "Kimbra",
-            "image": "https://i.scdn.co/image/ab67616100005174079dadbde6ecb355b1537fa3"
-          },
-          {
-            "id": 10732,
-            "name": "Tiësto",
-            "image": "https://i.scdn.co/image/ab67616100005174e84e08fb1dfa2bf9b5a61563"
-          },
-          {
-            "id": 28129458,
-            "name": "Gotye",
-            "image": "https://i.scdn.co/image/ab6761610000517445c53413a4f0198251481b0e"
-          }
-        ],
-        "durationMs": 267800,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [
-            "7KzjRvvqlV94V1iLvMoEhZ"
-          ],
-          "appleMusic": []
-        },
-        "id": 170049,
-        "name": "Somebody That I Used To Know - Tiësto Remix",
         "spotifyPopularity": 0,
         "spotifyPreview": null,
         "appleMusicPreview": null
@@ -5615,7 +5615,8 @@
         "explicit": false,
         "externalIds": {
           "spotify": [
-            "5lXNcc8QeM9KpAWNHAL0iS"
+            "5lXNcc8QeM9KpAWNHAL0iS",
+            "7LMajLn4v2ZWmLcfE1a7DY"
           ],
           "appleMusic": [
             "1550626760"
@@ -6352,6 +6353,41 @@
     },
     {
       "position": 172,
+      "streams": 28,
+      "playedMs": 7039862,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 25099095,
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/768x768bb.jpg",
+            "name": "Parachutes"
+          }
+        ],
+        "artists": [
+          {
+            "id": 779,
+            "name": "Coldplay",
+            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
+          }
+        ],
+        "durationMs": 269208,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [],
+          "appleMusic": [
+            "1122782283"
+          ]
+        },
+        "id": 13306,
+        "name": "Yellow",
+        "spotifyPopularity": 0,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/c0d9119dc69cae75baf6463e21e43f433fdf5ff4?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/52/a5/d2/52a5d2f1-2501-9f3a-e5c1-420c17c3e244/mzaf_11020025762956009770.plus.aac.p.m4a"
+      }
+    },
+    {
+      "position": 173,
       "streams": 18,
       "playedMs": 7006785,
       "indicator": null,
@@ -6384,7 +6420,7 @@
       }
     },
     {
-      "position": 173,
+      "position": 174,
       "streams": 34,
       "playedMs": 6981092,
       "indicator": null,
@@ -6424,7 +6460,7 @@
       }
     },
     {
-      "position": 174,
+      "position": 175,
       "streams": 26,
       "playedMs": 6968716,
       "indicator": null,
@@ -6457,7 +6493,7 @@
       }
     },
     {
-      "position": 175,
+      "position": 176,
       "streams": 19,
       "playedMs": 6941671,
       "indicator": null,
@@ -6492,7 +6528,7 @@
       }
     },
     {
-      "position": 176,
+      "position": 177,
       "streams": 26,
       "playedMs": 6910361,
       "indicator": null,
@@ -6532,7 +6568,7 @@
       }
     },
     {
-      "position": 177,
+      "position": 178,
       "streams": 26,
       "playedMs": 6887092,
       "indicator": null,
@@ -6567,7 +6603,7 @@
       }
     },
     {
-      "position": 178,
+      "position": 179,
       "streams": 14,
       "playedMs": 6858669,
       "indicator": null,
@@ -6604,7 +6640,7 @@
       }
     },
     {
-      "position": 179,
+      "position": 180,
       "streams": 30,
       "playedMs": 6833163,
       "indicator": null,
@@ -6639,7 +6675,7 @@
       }
     },
     {
-      "position": 180,
+      "position": 181,
       "streams": 20,
       "playedMs": 6826409,
       "indicator": null,
@@ -6673,41 +6709,6 @@
         "spotifyPopularity": 25,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/e6f6464bdcd129766dedeec84f796539e4da8ba1?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2f/cc/35/2fcc358f-f88d-28b5-6dcc-a7791a42c61d/mzaf_2446446474901503697.plus.aac.p.m4a"
-      }
-    },
-    {
-      "position": 181,
-      "streams": 27,
-      "playedMs": 6773089,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 25099095,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/768x768bb.jpg",
-            "name": "Parachutes"
-          }
-        ],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
-        "durationMs": 269208,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "1122782283"
-          ]
-        },
-        "id": 13306,
-        "name": "Yellow",
-        "spotifyPopularity": 0,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/c0d9119dc69cae75baf6463e21e43f433fdf5ff4?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
-        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/52/a5/d2/52a5d2f1-2501-9f3a-e5c1-420c17c3e244/mzaf_11020025762956009770.plus.aac.p.m4a"
       }
     },
     {
@@ -7280,6 +7281,41 @@
     },
     {
       "position": 197,
+      "streams": 61,
+      "playedMs": 6545540,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 8639003,
+            "image": "https://i.scdn.co/image/ab67616d0000b273049af3947e5764c39b0bfd07",
+            "name": "18 Months"
+          }
+        ],
+        "artists": [
+          {
+            "id": 2409,
+            "name": "Calvin Harris",
+            "image": "https://i.scdn.co/image/ab676161000051741e4bcd2bef1896648762dd6b"
+          }
+        ],
+        "durationMs": 107440,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "4HOkIGAgrA6mF4d6Td3sLP"
+          ],
+          "appleMusic": []
+        },
+        "id": 1412697,
+        "name": "School",
+        "spotifyPopularity": 0,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/1149d6bd6eb73bb42a07b94c9efcf0076b205bed?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+        "appleMusicPreview": null
+      }
+    },
+    {
+      "position": 198,
       "streams": 25,
       "playedMs": 6530016,
       "indicator": null,
@@ -7319,7 +7355,7 @@
       }
     },
     {
-      "position": 198,
+      "position": 199,
       "streams": 28,
       "playedMs": 6477176,
       "indicator": null,
@@ -7357,7 +7393,7 @@
       }
     },
     {
-      "position": 199,
+      "position": 200,
       "streams": 12,
       "playedMs": 6473830,
       "indicator": null,
@@ -7392,7 +7428,7 @@
       }
     },
     {
-      "position": 200,
+      "position": 201,
       "streams": 26,
       "playedMs": 6436880,
       "indicator": null,
@@ -7429,7 +7465,7 @@
       }
     },
     {
-      "position": 201,
+      "position": 202,
       "streams": 24,
       "playedMs": 6430641,
       "indicator": null,
@@ -7474,7 +7510,7 @@
       }
     },
     {
-      "position": 202,
+      "position": 203,
       "streams": 17,
       "playedMs": 6415766,
       "indicator": null,
@@ -7511,7 +7547,7 @@
       }
     },
     {
-      "position": 203,
+      "position": 204,
       "streams": 21,
       "playedMs": 6413997,
       "indicator": null,
@@ -7553,7 +7589,7 @@
       }
     },
     {
-      "position": 204,
+      "position": 205,
       "streams": 34,
       "playedMs": 6402941,
       "indicator": null,
@@ -7588,7 +7624,7 @@
       }
     },
     {
-      "position": 205,
+      "position": 206,
       "streams": 30,
       "playedMs": 6401650,
       "indicator": null,
@@ -7633,7 +7669,7 @@
       }
     },
     {
-      "position": 206,
+      "position": 207,
       "streams": 22,
       "playedMs": 6378666,
       "indicator": null,
@@ -7668,7 +7704,7 @@
       }
     },
     {
-      "position": 207,
+      "position": 208,
       "streams": 31,
       "playedMs": 6375895,
       "indicator": null,
@@ -7703,7 +7739,7 @@
       }
     },
     {
-      "position": 208,
+      "position": 209,
       "streams": 39,
       "playedMs": 6365382,
       "indicator": null,
@@ -7746,7 +7782,7 @@
       }
     },
     {
-      "position": 209,
+      "position": 210,
       "streams": 27,
       "playedMs": 6358645,
       "indicator": null,
@@ -7786,7 +7822,7 @@
       }
     },
     {
-      "position": 210,
+      "position": 211,
       "streams": 32,
       "playedMs": 6333656,
       "indicator": null,
@@ -7821,7 +7857,7 @@
       }
     },
     {
-      "position": 211,
+      "position": 212,
       "streams": 17,
       "playedMs": 6332545,
       "indicator": null,
@@ -7858,41 +7894,6 @@
         "spotifyPopularity": 0,
         "spotifyPreview": null,
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/38/3a/4a/383a4ae8-f4bb-ec2b-c0fc-e55f3c33b3d5/mzaf_375855214069643882.plus.aac.p.m4a"
-      }
-    },
-    {
-      "position": 212,
-      "streams": 59,
-      "playedMs": 6330660,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 8639003,
-            "image": "https://i.scdn.co/image/ab67616d0000b273049af3947e5764c39b0bfd07",
-            "name": "18 Months"
-          }
-        ],
-        "artists": [
-          {
-            "id": 2409,
-            "name": "Calvin Harris",
-            "image": "https://i.scdn.co/image/ab676161000051741e4bcd2bef1896648762dd6b"
-          }
-        ],
-        "durationMs": 107440,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [
-            "4HOkIGAgrA6mF4d6Td3sLP"
-          ],
-          "appleMusic": []
-        },
-        "id": 1412697,
-        "name": "School",
-        "spotifyPopularity": 0,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/1149d6bd6eb73bb42a07b94c9efcf0076b205bed?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
-        "appleMusicPreview": null
       }
     },
     {
