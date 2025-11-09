@@ -341,8 +341,8 @@
     },
     {
       "position": 10,
-      "streams": 314,
-      "playedMs": 59225888,
+      "streams": 316,
+      "playedMs": 59567688,
       "indicator": null,
       "album": {
         "name": "18 Months",
@@ -959,6 +959,39 @@
     },
     {
       "position": 26,
+      "streams": 145,
+      "playedMs": 34353212,
+      "indicator": null,
+      "album": {
+        "name": "Forever",
+        "image": "https://i.scdn.co/image/ab67616d0000b273b804bbd11f864902d452b3a7",
+        "label": "Alesso / Def Jam",
+        "spotifyPopularity": 64,
+        "totalTracks": 14,
+        "releaseDate": 1432252800000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 2081,
+            "name": "Alesso",
+            "image": "https://i.scdn.co/image/ab676161000051742828484ea968409a0ea584a6"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602547322777",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "0tRVSbmOwilUucqjzU0fQw"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 2348216
+      }
+    },
+    {
+      "position": 27,
       "streams": 142,
       "playedMs": 34126570,
       "indicator": null,
@@ -996,7 +1029,7 @@
       }
     },
     {
-      "position": 27,
+      "position": 28,
       "streams": 148,
       "playedMs": 34120930,
       "indicator": null,
@@ -1031,39 +1064,6 @@
         },
         "type": "album",
         "id": 1306464
-      }
-    },
-    {
-      "position": 28,
-      "streams": 144,
-      "playedMs": 34053212,
-      "indicator": null,
-      "album": {
-        "name": "Forever",
-        "image": "https://i.scdn.co/image/ab67616d0000b273b804bbd11f864902d452b3a7",
-        "label": "Alesso / Def Jam",
-        "spotifyPopularity": 64,
-        "totalTracks": 14,
-        "releaseDate": 1432252800000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 2081,
-            "name": "Alesso",
-            "image": "https://i.scdn.co/image/ab676161000051742828484ea968409a0ea584a6"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602547322777",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "0tRVSbmOwilUucqjzU0fQw"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 2348216
       }
     },
     {
@@ -1735,46 +1735,8 @@
     },
     {
       "position": 47,
-      "streams": 93,
-      "playedMs": 21981688,
-      "indicator": null,
-      "album": {
-        "name": "Stories",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b8/67/4a/b8674a09-808d-8235-aa22-4016d7cef5e7/15UMGIM35223.rgb.jpg/768x768bb.jpg",
-        "label": "Universal Music AB",
-        "spotifyPopularity": 72,
-        "totalTracks": 14,
-        "releaseDate": 1443751200000,
-        "genres": [
-          "Dance",
-          "Music"
-        ],
-        "artists": [
-          {
-            "id": 2090,
-            "name": "Avicii",
-            "image": "https://i.scdn.co/image/ab67616100005174ae07171f989fb39736674113"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602547564696",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "7dqftJ3kas6D0VAdmt3k3V"
-          ],
-          "appleMusic": [
-            "1440842493"
-          ]
-        },
-        "type": "album",
-        "id": 324939
-      }
-    },
-    {
-      "position": 48,
-      "streams": 56,
-      "playedMs": 21473949,
+      "streams": 57,
+      "playedMs": 21984913,
       "indicator": null,
       "album": {
         "name": "The Division Bell",
@@ -1809,6 +1771,44 @@
         },
         "type": "album",
         "id": 1689287
+      }
+    },
+    {
+      "position": 48,
+      "streams": 93,
+      "playedMs": 21981688,
+      "indicator": null,
+      "album": {
+        "name": "Stories",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/b8/67/4a/b8674a09-808d-8235-aa22-4016d7cef5e7/15UMGIM35223.rgb.jpg/768x768bb.jpg",
+        "label": "Universal Music AB",
+        "spotifyPopularity": 72,
+        "totalTracks": 14,
+        "releaseDate": 1443751200000,
+        "genres": [
+          "Dance",
+          "Music"
+        ],
+        "artists": [
+          {
+            "id": 2090,
+            "name": "Avicii",
+            "image": "https://i.scdn.co/image/ab67616100005174ae07171f989fb39736674113"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602547564696",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "7dqftJ3kas6D0VAdmt3k3V"
+          ],
+          "appleMusic": [
+            "1440842493"
+          ]
+        },
+        "type": "album",
+        "id": 324939
       }
     },
     {
@@ -2730,48 +2730,8 @@
     },
     {
       "position": 73,
-      "streams": 56,
-      "playedMs": 16900664,
-      "indicator": null,
-      "album": {
-        "name": "Raaz (Original Motion Picture Soundtrack)",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5f/7b/51/5f7b51c7-4aa9-b93a-4939-342d385c1617/8901854010998.jpg/768x768bb.jpg",
-        "label": "Tips Industries Ltd",
-        "spotifyPopularity": 64,
-        "totalTracks": 9,
-        "releaseDate": 1012521600000,
-        "genres": [
-          "Bollywood",
-          "Music",
-          "Indian",
-          "Soundtrack"
-        ],
-        "artists": [
-          {
-            "id": 25685,
-            "name": "Nadeem Shravan",
-            "image": "https://i.scdn.co/image/ab67616d00001e029711c40e3ffc7e7f179336ed"
-          }
-        ],
-        "externalIds": {
-          "upc": "8901854010998",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4Q5dbM6TBcyzO05kUx2jJ3"
-          ],
-          "appleMusic": [
-            "1545676791"
-          ]
-        },
-        "type": "album",
-        "id": 1224653
-      }
-    },
-    {
-      "position": 74,
-      "streams": 74,
-      "playedMs": 16851050,
+      "streams": 75,
+      "playedMs": 17078330,
       "indicator": null,
       "album": {
         "name": "Planet Pit (Deluxe Version)",
@@ -2808,6 +2768,46 @@
         },
         "type": "album",
         "id": 315483
+      }
+    },
+    {
+      "position": 74,
+      "streams": 56,
+      "playedMs": 16900664,
+      "indicator": null,
+      "album": {
+        "name": "Raaz (Original Motion Picture Soundtrack)",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5f/7b/51/5f7b51c7-4aa9-b93a-4939-342d385c1617/8901854010998.jpg/768x768bb.jpg",
+        "label": "Tips Industries Ltd",
+        "spotifyPopularity": 64,
+        "totalTracks": 9,
+        "releaseDate": 1012521600000,
+        "genres": [
+          "Bollywood",
+          "Music",
+          "Indian",
+          "Soundtrack"
+        ],
+        "artists": [
+          {
+            "id": 25685,
+            "name": "Nadeem Shravan",
+            "image": "https://i.scdn.co/image/ab67616d00001e029711c40e3ffc7e7f179336ed"
+          }
+        ],
+        "externalIds": {
+          "upc": "8901854010998",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4Q5dbM6TBcyzO05kUx2jJ3"
+          ],
+          "appleMusic": [
+            "1545676791"
+          ]
+        },
+        "type": "album",
+        "id": 1224653
       }
     },
     {
@@ -3519,6 +3519,47 @@
     },
     {
       "position": 94,
+      "streams": 62,
+      "playedMs": 13289310,
+      "indicator": null,
+      "album": {
+        "name": "Nothing but the Beat 2.0",
+        "image": "https://i.scdn.co/image/ab67616d0000b273a197a2ef3ad6704d1f44aa4e",
+        "label": "Parlophone (France)",
+        "spotifyPopularity": 69,
+        "totalTracks": 23,
+        "releaseDate": 1314144000000,
+        "genres": [
+          "Dance",
+          "Music",
+          "Electronic",
+          "Rock",
+          "House"
+        ],
+        "artists": [
+          {
+            "id": 2103,
+            "name": "David Guetta",
+            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
+          }
+        ],
+        "externalIds": {
+          "upc": "5099997943051",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "5aprcHwM1KJhaY9Kbxkfkn"
+          ],
+          "appleMusic": [
+            "693290088"
+          ]
+        },
+        "type": "album",
+        "id": 1110857
+      }
+    },
+    {
+      "position": 95,
       "streams": 44,
       "playedMs": 13170031,
       "indicator": null,
@@ -3557,7 +3598,7 @@
       }
     },
     {
-      "position": 95,
+      "position": 96,
       "streams": 42,
       "playedMs": 13120982,
       "indicator": null,
@@ -3597,47 +3638,6 @@
         },
         "type": "album",
         "id": 614882
-      }
-    },
-    {
-      "position": 96,
-      "streams": 61,
-      "playedMs": 13089630,
-      "indicator": null,
-      "album": {
-        "name": "Nothing but the Beat 2.0",
-        "image": "https://i.scdn.co/image/ab67616d0000b273a197a2ef3ad6704d1f44aa4e",
-        "label": "Parlophone (France)",
-        "spotifyPopularity": 69,
-        "totalTracks": 23,
-        "releaseDate": 1314144000000,
-        "genres": [
-          "Dance",
-          "Music",
-          "Electronic",
-          "Rock",
-          "House"
-        ],
-        "artists": [
-          {
-            "id": 2103,
-            "name": "David Guetta",
-            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
-          }
-        ],
-        "externalIds": {
-          "upc": "5099997943051",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "5aprcHwM1KJhaY9Kbxkfkn"
-          ],
-          "appleMusic": [
-            "693290088"
-          ]
-        },
-        "type": "album",
-        "id": 1110857
       }
     },
     {
@@ -5124,6 +5124,41 @@
     },
     {
       "position": 136,
+      "streams": 56,
+      "playedMs": 10288834,
+      "indicator": null,
+      "album": {
+        "name": "Listen (Deluxe)",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4d/38/32/4d383283-8a12-0b41-f0f8-151e32ac9533/dj.rivvwkds.jpg/768x768bb.jpg",
+        "label": "Atlantic/Parlophone",
+        "spotifyPopularity": 56,
+        "totalTracks": 18,
+        "releaseDate": 1415577600000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 2103,
+            "name": "David Guetta",
+            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
+          }
+        ],
+        "externalIds": {
+          "upc": "825646194070",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "3UEEPh5wsdhP7SKC31yvhu"
+          ],
+          "appleMusic": [
+            "924035374"
+          ]
+        },
+        "type": "album",
+        "id": 2688170
+      }
+    },
+    {
+      "position": 137,
       "streams": 45,
       "playedMs": 10255076,
       "indicator": null,
@@ -5164,7 +5199,7 @@
       }
     },
     {
-      "position": 137,
+      "position": 138,
       "streams": 23,
       "playedMs": 10192125,
       "indicator": null,
@@ -5199,7 +5234,7 @@
       }
     },
     {
-      "position": 138,
+      "position": 139,
       "streams": 34,
       "playedMs": 10186620,
       "indicator": null,
@@ -5244,7 +5279,7 @@
       }
     },
     {
-      "position": 139,
+      "position": 140,
       "streams": 41,
       "playedMs": 10105780,
       "indicator": null,
@@ -5277,7 +5312,7 @@
       }
     },
     {
-      "position": 140,
+      "position": 141,
       "streams": 45,
       "playedMs": 10091161,
       "indicator": null,
@@ -5313,41 +5348,6 @@
         },
         "type": "album",
         "id": 1764234
-      }
-    },
-    {
-      "position": 141,
-      "streams": 55,
-      "playedMs": 10085314,
-      "indicator": null,
-      "album": {
-        "name": "Listen (Deluxe)",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4d/38/32/4d383283-8a12-0b41-f0f8-151e32ac9533/dj.rivvwkds.jpg/768x768bb.jpg",
-        "label": "Atlantic/Parlophone",
-        "spotifyPopularity": 56,
-        "totalTracks": 18,
-        "releaseDate": 1415577600000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 2103,
-            "name": "David Guetta",
-            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
-          }
-        ],
-        "externalIds": {
-          "upc": "825646194070",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "3UEEPh5wsdhP7SKC31yvhu"
-          ],
-          "appleMusic": [
-            "924035374"
-          ]
-        },
-        "type": "album",
-        "id": 2688170
       }
     },
     {
@@ -5943,6 +5943,39 @@
     },
     {
       "position": 158,
+      "streams": 26,
+      "playedMs": 8666919,
+      "indicator": null,
+      "album": {
+        "name": "The Train",
+        "image": "https://i.scdn.co/image/ab67616d0000b27351d1cd8d46cbcd8fd4508356",
+        "label": "T-Series",
+        "spotifyPopularity": 57,
+        "totalTracks": 12,
+        "releaseDate": 1176861600000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 95433,
+            "name": "Mithoon",
+            "image": "https://i.scdn.co/image/ab676161000051749bd641ceb72d35b63fbb314a"
+          }
+        ],
+        "externalIds": {
+          "upc": "8902894621069",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "1GFvChouNq6BNSjhSi6XKP"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 262961
+      }
+    },
+    {
+      "position": 159,
       "streams": 22,
       "playedMs": 8607074,
       "indicator": null,
@@ -5983,7 +6016,7 @@
       }
     },
     {
-      "position": 159,
+      "position": 160,
       "streams": 37,
       "playedMs": 8606021,
       "indicator": null,
@@ -6023,7 +6056,7 @@
       }
     },
     {
-      "position": 160,
+      "position": 161,
       "streams": 25,
       "playedMs": 8585810,
       "indicator": null,
@@ -6056,7 +6089,7 @@
       }
     },
     {
-      "position": 161,
+      "position": 162,
       "streams": 38,
       "playedMs": 8584454,
       "indicator": null,
@@ -6099,7 +6132,7 @@
       }
     },
     {
-      "position": 162,
+      "position": 163,
       "streams": 37,
       "playedMs": 8574961,
       "indicator": null,
@@ -6139,7 +6172,7 @@
       }
     },
     {
-      "position": 163,
+      "position": 164,
       "streams": 25,
       "playedMs": 8537321,
       "indicator": null,
@@ -6180,7 +6213,7 @@
       }
     },
     {
-      "position": 164,
+      "position": 165,
       "streams": 35,
       "playedMs": 8536098,
       "indicator": null,
@@ -6217,7 +6250,7 @@
       }
     },
     {
-      "position": 165,
+      "position": 166,
       "streams": 21,
       "playedMs": 8394105,
       "indicator": null,
@@ -6255,7 +6288,7 @@
       }
     },
     {
-      "position": 166,
+      "position": 167,
       "streams": 34,
       "playedMs": 8390260,
       "indicator": null,
@@ -6288,7 +6321,7 @@
       }
     },
     {
-      "position": 167,
+      "position": 168,
       "streams": 32,
       "playedMs": 8380268,
       "indicator": null,
@@ -6323,7 +6356,7 @@
       }
     },
     {
-      "position": 168,
+      "position": 169,
       "streams": 23,
       "playedMs": 8324510,
       "indicator": null,
@@ -6363,7 +6396,7 @@
       }
     },
     {
-      "position": 169,
+      "position": 170,
       "streams": 42,
       "playedMs": 8279408,
       "indicator": null,
@@ -6401,7 +6434,7 @@
       }
     },
     {
-      "position": 170,
+      "position": 171,
       "streams": 37,
       "playedMs": 8255958,
       "indicator": null,
@@ -6437,7 +6470,7 @@
       }
     },
     {
-      "position": 171,
+      "position": 172,
       "streams": 34,
       "playedMs": 8230395,
       "indicator": null,
@@ -6475,7 +6508,7 @@
       }
     },
     {
-      "position": 172,
+      "position": 173,
       "streams": 35,
       "playedMs": 8199519,
       "indicator": null,
@@ -6518,7 +6551,7 @@
       }
     },
     {
-      "position": 173,
+      "position": 174,
       "streams": 31,
       "playedMs": 8175514,
       "indicator": null,
@@ -6556,7 +6589,7 @@
       }
     },
     {
-      "position": 174,
+      "position": 175,
       "streams": 119,
       "playedMs": 8109632,
       "indicator": null,
@@ -6589,7 +6622,7 @@
       }
     },
     {
-      "position": 175,
+      "position": 176,
       "streams": 21,
       "playedMs": 8109317,
       "indicator": null,
@@ -6622,7 +6655,7 @@
       }
     },
     {
-      "position": 176,
+      "position": 177,
       "streams": 45,
       "playedMs": 8095320,
       "indicator": null,
@@ -6661,7 +6694,7 @@
       }
     },
     {
-      "position": 177,
+      "position": 178,
       "streams": 30,
       "playedMs": 7812422,
       "indicator": null,
@@ -6702,7 +6735,7 @@
       }
     },
     {
-      "position": 178,
+      "position": 179,
       "streams": 33,
       "playedMs": 7752773,
       "indicator": null,
@@ -6739,7 +6772,7 @@
       }
     },
     {
-      "position": 179,
+      "position": 180,
       "streams": 37,
       "playedMs": 7739833,
       "indicator": null,
@@ -6778,7 +6811,7 @@
       }
     },
     {
-      "position": 180,
+      "position": 181,
       "streams": 32,
       "playedMs": 7730970,
       "indicator": null,
@@ -6815,7 +6848,7 @@
       }
     },
     {
-      "position": 181,
+      "position": 182,
       "streams": 35,
       "playedMs": 7723948,
       "indicator": null,
@@ -6851,7 +6884,7 @@
       }
     },
     {
-      "position": 182,
+      "position": 183,
       "streams": 26,
       "playedMs": 7685973,
       "indicator": null,
@@ -6891,7 +6924,7 @@
       }
     },
     {
-      "position": 183,
+      "position": 184,
       "streams": 29,
       "playedMs": 7650991,
       "indicator": null,
@@ -6921,39 +6954,6 @@
         },
         "type": "album",
         "id": 65562
-      }
-    },
-    {
-      "position": 184,
-      "streams": 23,
-      "playedMs": 7641459,
-      "indicator": null,
-      "album": {
-        "name": "The Train",
-        "image": "https://i.scdn.co/image/ab67616d0000b27351d1cd8d46cbcd8fd4508356",
-        "label": "T-Series",
-        "spotifyPopularity": 57,
-        "totalTracks": 12,
-        "releaseDate": 1176861600000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 95433,
-            "name": "Mithoon",
-            "image": "https://i.scdn.co/image/ab676161000051749bd641ceb72d35b63fbb314a"
-          }
-        ],
-        "externalIds": {
-          "upc": "8902894621069",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "1GFvChouNq6BNSjhSi6XKP"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 262961
       }
     },
     {
