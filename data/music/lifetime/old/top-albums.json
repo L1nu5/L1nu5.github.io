@@ -302,6 +302,43 @@
     },
     {
       "position": 9,
+      "streams": 324,
+      "playedMs": 61125833,
+      "indicator": null,
+      "album": {
+        "name": "18 Months",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ab/af/22/abaf2296-ed4d-6da2-c24d-503cfdfa4c1f/0617465356858.jpg/768x768bb.jpg",
+        "label": "Columbia",
+        "spotifyPopularity": 78,
+        "totalTracks": 15,
+        "releaseDate": 1351468800000,
+        "genres": [
+          "Dance",
+          "Music",
+          "Rock"
+        ],
+        "artists": [
+          {
+            "id": 366,
+            "name": "Ellie Goulding",
+            "image": "https://i.scdn.co/image/ab67616100005174c3cd7dc428871e8985d62b9a"
+          }
+        ],
+        "externalIds": {
+          "upc": "884977912999",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "7w19PFbxAjwZ7UVNp9z0uT"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 144028
+      }
+    },
+    {
+      "position": 10,
       "streams": 215,
       "playedMs": 59944953,
       "indicator": null,
@@ -337,43 +374,6 @@
         },
         "type": "album",
         "id": 53946
-      }
-    },
-    {
-      "position": 10,
-      "streams": 316,
-      "playedMs": 59567688,
-      "indicator": null,
-      "album": {
-        "name": "18 Months",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ab/af/22/abaf2296-ed4d-6da2-c24d-503cfdfa4c1f/0617465356858.jpg/768x768bb.jpg",
-        "label": "Columbia",
-        "spotifyPopularity": 78,
-        "totalTracks": 15,
-        "releaseDate": 1351468800000,
-        "genres": [
-          "Dance",
-          "Music",
-          "Rock"
-        ],
-        "artists": [
-          {
-            "id": 366,
-            "name": "Ellie Goulding",
-            "image": "https://i.scdn.co/image/ab67616100005174c3cd7dc428871e8985d62b9a"
-          }
-        ],
-        "externalIds": {
-          "upc": "884977912999",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "7w19PFbxAjwZ7UVNp9z0uT"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 144028
       }
     },
     {
@@ -2425,6 +2425,46 @@
     },
     {
       "position": 65,
+      "streams": 84,
+      "playedMs": 17654558,
+      "indicator": null,
+      "album": {
+        "name": "Talk That Talk (Explicit)",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/16/90/6e/16906e38-2538-9d48-aa30-6eba7405972c/16UMGIM59229.rgb.jpg/768x768bb.jpg",
+        "label": "Def Jam Recordings",
+        "spotifyPopularity": 0,
+        "totalTracks": 12,
+        "releaseDate": 1293843600000,
+        "genres": [
+          "Pop",
+          "Music",
+          "R&B/Soul",
+          "Contemporary R&B",
+          "Dance",
+          "Rock"
+        ],
+        "artists": [
+          {
+            "id": 18521,
+            "name": "Rihanna",
+            "image": "https://i.scdn.co/image/ab67616100005174cb565a8e684e3be458d329ac"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602527906164",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4HGUC0YUVSPBNFKUJN2aWG"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 25996
+      }
+    },
+    {
+      "position": 66,
       "streams": 92,
       "playedMs": 17632477,
       "indicator": null,
@@ -2462,7 +2502,7 @@
       }
     },
     {
-      "position": 66,
+      "position": 67,
       "streams": 65,
       "playedMs": 17621817,
       "indicator": null,
@@ -2499,7 +2539,7 @@
       }
     },
     {
-      "position": 67,
+      "position": 68,
       "streams": 77,
       "playedMs": 17485610,
       "indicator": null,
@@ -2538,46 +2578,6 @@
         },
         "type": "album",
         "id": 315483
-      }
-    },
-    {
-      "position": 68,
-      "streams": 83,
-      "playedMs": 17474558,
-      "indicator": null,
-      "album": {
-        "name": "Talk That Talk (Explicit)",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/16/90/6e/16906e38-2538-9d48-aa30-6eba7405972c/16UMGIM59229.rgb.jpg/768x768bb.jpg",
-        "label": "Def Jam Recordings",
-        "spotifyPopularity": 0,
-        "totalTracks": 12,
-        "releaseDate": 1293843600000,
-        "genres": [
-          "Pop",
-          "Music",
-          "R&B/Soul",
-          "Contemporary R&B",
-          "Dance",
-          "Rock"
-        ],
-        "artists": [
-          {
-            "id": 18521,
-            "name": "Rihanna",
-            "image": "https://i.scdn.co/image/ab67616100005174cb565a8e684e3be458d329ac"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602527906164",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4HGUC0YUVSPBNFKUJN2aWG"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 25996
       }
     },
     {
@@ -3378,13 +3378,7 @@
           "Dance",
           "Electronic"
         ],
-        "artists": [
-          {
-            "id": 11615,
-            "name": "The Weeknd",
-            "image": "https://i.scdn.co/image/ab676161000051749e528993a2820267b97f6aae"
-          }
-        ],
+        "artists": [],
         "externalIds": {
           "upc": "00602557333664",
           "ean": null,
