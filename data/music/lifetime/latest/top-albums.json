@@ -302,8 +302,8 @@
     },
     {
       "position": 9,
-      "streams": 324,
-      "playedMs": 61125833,
+      "streams": 325,
+      "playedMs": 61305833,
       "indicator": null,
       "album": {
         "name": "18 Months",
@@ -762,8 +762,8 @@
     },
     {
       "position": 21,
-      "streams": 196,
-      "playedMs": 38335957,
+      "streams": 199,
+      "playedMs": 38951450,
       "indicator": null,
       "album": {
         "name": "Motion",
@@ -1514,6 +1514,39 @@
     },
     {
       "position": 41,
+      "streams": 63,
+      "playedMs": 23047655,
+      "indicator": null,
+      "album": {
+        "name": "Eric Prydz Presents Pryda (Deluxe Version)",
+        "image": "https://i.scdn.co/image/ab67616d0000b2737c0097b7f0e7dc307f96ab81",
+        "label": "Virgin",
+        "spotifyPopularity": 28,
+        "totalTracks": 37,
+        "releaseDate": 1325376000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 61290,
+            "name": "Eric Prydz",
+            "image": "https://i.scdn.co/image/ab676161000051744170f1e4c72c0a9fc2eddc1d"
+          }
+        ],
+        "externalIds": {
+          "upc": "05099963538151",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4DVFYn77TkkSfGf4sPrqfo"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 2331317
+      }
+    },
+    {
+      "position": 42,
       "streams": 96,
       "playedMs": 22513506,
       "indicator": null,
@@ -1544,39 +1577,6 @@
         },
         "type": "album",
         "id": 26413
-      }
-    },
-    {
-      "position": 42,
-      "streams": 62,
-      "playedMs": 22506723,
-      "indicator": null,
-      "album": {
-        "name": "Eric Prydz Presents Pryda (Deluxe Version)",
-        "image": "https://i.scdn.co/image/ab67616d0000b2737c0097b7f0e7dc307f96ab81",
-        "label": "Virgin",
-        "spotifyPopularity": 28,
-        "totalTracks": 37,
-        "releaseDate": 1325376000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 61290,
-            "name": "Eric Prydz",
-            "image": "https://i.scdn.co/image/ab676161000051744170f1e4c72c0a9fc2eddc1d"
-          }
-        ],
-        "externalIds": {
-          "upc": "05099963538151",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4DVFYn77TkkSfGf4sPrqfo"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 2331317
       }
     },
     {
@@ -2225,6 +2225,46 @@
     },
     {
       "position": 60,
+      "streams": 89,
+      "playedMs": 18695462,
+      "indicator": null,
+      "album": {
+        "name": "Talk That Talk (Explicit)",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/16/90/6e/16906e38-2538-9d48-aa30-6eba7405972c/16UMGIM59229.rgb.jpg/768x768bb.jpg",
+        "label": "Def Jam Recordings",
+        "spotifyPopularity": 0,
+        "totalTracks": 12,
+        "releaseDate": 1293843600000,
+        "genres": [
+          "Pop",
+          "Music",
+          "R&B/Soul",
+          "Contemporary R&B",
+          "Dance",
+          "Rock"
+        ],
+        "artists": [
+          {
+            "id": 18521,
+            "name": "Rihanna",
+            "image": "https://i.scdn.co/image/ab67616100005174cb565a8e684e3be458d329ac"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602527906164",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "4HGUC0YUVSPBNFKUJN2aWG"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 25996
+      }
+    },
+    {
+      "position": 61,
       "streams": 76,
       "playedMs": 18560661,
       "indicator": null,
@@ -2265,7 +2305,7 @@
       }
     },
     {
-      "position": 61,
+      "position": 62,
       "streams": 67,
       "playedMs": 18266254,
       "indicator": null,
@@ -2299,46 +2339,6 @@
         },
         "type": "compilation",
         "id": 1738563
-      }
-    },
-    {
-      "position": 62,
-      "streams": 87,
-      "playedMs": 18265010,
-      "indicator": null,
-      "album": {
-        "name": "Talk That Talk (Explicit)",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/16/90/6e/16906e38-2538-9d48-aa30-6eba7405972c/16UMGIM59229.rgb.jpg/768x768bb.jpg",
-        "label": "Def Jam Recordings",
-        "spotifyPopularity": 0,
-        "totalTracks": 12,
-        "releaseDate": 1293843600000,
-        "genres": [
-          "Pop",
-          "Music",
-          "R&B/Soul",
-          "Contemporary R&B",
-          "Dance",
-          "Rock"
-        ],
-        "artists": [
-          {
-            "id": 18521,
-            "name": "Rihanna",
-            "image": "https://i.scdn.co/image/ab67616100005174cb565a8e684e3be458d329ac"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602527906164",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "4HGUC0YUVSPBNFKUJN2aWG"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 25996
       }
     },
     {
@@ -3386,6 +3386,47 @@
     },
     {
       "position": 91,
+      "streams": 64,
+      "playedMs": 13677443,
+      "indicator": null,
+      "album": {
+        "name": "Nothing but the Beat 2.0",
+        "image": "https://i.scdn.co/image/ab67616d0000b273a197a2ef3ad6704d1f44aa4e",
+        "label": "Parlophone (France)",
+        "spotifyPopularity": 69,
+        "totalTracks": 23,
+        "releaseDate": 1314144000000,
+        "genres": [
+          "Dance",
+          "Music",
+          "Electronic",
+          "Rock",
+          "House"
+        ],
+        "artists": [
+          {
+            "id": 2103,
+            "name": "David Guetta",
+            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
+          }
+        ],
+        "externalIds": {
+          "upc": "5099997943051",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "5aprcHwM1KJhaY9Kbxkfkn"
+          ],
+          "appleMusic": [
+            "693290088"
+          ]
+        },
+        "type": "album",
+        "id": 1110857
+      }
+    },
+    {
+      "position": 92,
       "streams": 55,
       "playedMs": 13513608,
       "indicator": null,
@@ -3424,47 +3465,6 @@
         },
         "type": "album",
         "id": 1570596
-      }
-    },
-    {
-      "position": 92,
-      "streams": 63,
-      "playedMs": 13497443,
-      "indicator": null,
-      "album": {
-        "name": "Nothing but the Beat 2.0",
-        "image": "https://i.scdn.co/image/ab67616d0000b273a197a2ef3ad6704d1f44aa4e",
-        "label": "Parlophone (France)",
-        "spotifyPopularity": 69,
-        "totalTracks": 23,
-        "releaseDate": 1314144000000,
-        "genres": [
-          "Dance",
-          "Music",
-          "Electronic",
-          "Rock",
-          "House"
-        ],
-        "artists": [
-          {
-            "id": 2103,
-            "name": "David Guetta",
-            "image": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f"
-          }
-        ],
-        "externalIds": {
-          "upc": "5099997943051",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "5aprcHwM1KJhaY9Kbxkfkn"
-          ],
-          "appleMusic": [
-            "693290088"
-          ]
-        },
-        "type": "album",
-        "id": 1110857
       }
     },
     {
@@ -3548,6 +3548,39 @@
     },
     {
       "position": 95,
+      "streams": 66,
+      "playedMs": 13185429,
+      "indicator": null,
+      "album": {
+        "name": "EDM Hits",
+        "image": "https://i.scdn.co/image/ab67616d0000b2736d8a19c3d286b89dd1f2cebb",
+        "label": "UME - Global Clearing House",
+        "spotifyPopularity": 53,
+        "totalTracks": 27,
+        "releaseDate": 1585872000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 174,
+            "name": "Various Artists",
+            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602508983405",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "37bu5iGP8qyG50MbFUKbGi"
+          ],
+          "appleMusic": []
+        },
+        "type": "compilation",
+        "id": 292635
+      }
+    },
+    {
+      "position": 96,
       "streams": 44,
       "playedMs": 13170031,
       "indicator": null,
@@ -3586,7 +3619,7 @@
       }
     },
     {
-      "position": 96,
+      "position": 97,
       "streams": 42,
       "playedMs": 13120982,
       "indicator": null,
@@ -3626,39 +3659,6 @@
         },
         "type": "album",
         "id": 614882
-      }
-    },
-    {
-      "position": 97,
-      "streams": 65,
-      "playedMs": 12979989,
-      "indicator": null,
-      "album": {
-        "name": "EDM Hits",
-        "image": "https://i.scdn.co/image/ab67616d0000b2736d8a19c3d286b89dd1f2cebb",
-        "label": "UME - Global Clearing House",
-        "spotifyPopularity": 53,
-        "totalTracks": 27,
-        "releaseDate": 1585872000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 174,
-            "name": "Various Artists",
-            "image": "https://i.scdn.co/image/ab676161000051746b134287e3095d2c84b7932a"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602508983405",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "37bu5iGP8qyG50MbFUKbGi"
-          ],
-          "appleMusic": []
-        },
-        "type": "compilation",
-        "id": 292635
       }
     },
     {
@@ -3916,13 +3916,7 @@
           "Rock",
           "Hard Rock"
         ],
-        "artists": [
-          {
-            "id": 175077,
-            "name": "Threat Signal",
-            "image": "https://i.scdn.co/image/ab67616d00001e022e9276619c4ba56fe010d215"
-          }
-        ],
+        "artists": [],
         "externalIds": {
           "upc": "727361233068",
           "ean": null,
@@ -5992,6 +5986,49 @@
     },
     {
       "position": 160,
+      "streams": 37,
+      "playedMs": 8656265,
+      "indicator": null,
+      "album": {
+        "name": "Wild Ones",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/eb/ca/0d/ebca0d0d-3c73-686a-285a-f5899d1e0f25/075679954046.jpg/768x768bb.jpg",
+        "label": "Poe Boy/Atlantic",
+        "spotifyPopularity": 78,
+        "totalTracks": 10,
+        "releaseDate": 1340323200000,
+        "genres": [
+          "Hip-Hop/Rap",
+          "Music",
+          "Electronic",
+          "Worldwide",
+          "Dance",
+          "Rap"
+        ],
+        "artists": [
+          {
+            "id": 2399,
+            "name": "Flo Rida",
+            "image": "https://i.scdn.co/image/ab67616100005174655ca8f3196953554b479452"
+          }
+        ],
+        "externalIds": {
+          "upc": "075679954053",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "7eLwoxxWs6lfkVYJGkGNbk"
+          ],
+          "appleMusic": [
+            "613867183",
+            "633324290"
+          ]
+        },
+        "type": "album",
+        "id": 98325
+      }
+    },
+    {
+      "position": 161,
       "streams": 22,
       "playedMs": 8607074,
       "indicator": null,
@@ -6032,7 +6069,7 @@
       }
     },
     {
-      "position": 161,
+      "position": 162,
       "streams": 37,
       "playedMs": 8606021,
       "indicator": null,
@@ -6072,7 +6109,7 @@
       }
     },
     {
-      "position": 162,
+      "position": 163,
       "streams": 38,
       "playedMs": 8584454,
       "indicator": null,
@@ -6115,7 +6152,7 @@
       }
     },
     {
-      "position": 163,
+      "position": 164,
       "streams": 37,
       "playedMs": 8574961,
       "indicator": null,
@@ -6155,7 +6192,7 @@
       }
     },
     {
-      "position": 164,
+      "position": 165,
       "streams": 25,
       "playedMs": 8537321,
       "indicator": null,
@@ -6196,7 +6233,7 @@
       }
     },
     {
-      "position": 165,
+      "position": 166,
       "streams": 35,
       "playedMs": 8536098,
       "indicator": null,
@@ -6233,7 +6270,7 @@
       }
     },
     {
-      "position": 166,
+      "position": 167,
       "streams": 21,
       "playedMs": 8394105,
       "indicator": null,
@@ -6271,7 +6308,7 @@
       }
     },
     {
-      "position": 167,
+      "position": 168,
       "streams": 34,
       "playedMs": 8390260,
       "indicator": null,
@@ -6304,7 +6341,7 @@
       }
     },
     {
-      "position": 168,
+      "position": 169,
       "streams": 32,
       "playedMs": 8380268,
       "indicator": null,
@@ -6339,7 +6376,7 @@
       }
     },
     {
-      "position": 169,
+      "position": 170,
       "streams": 23,
       "playedMs": 8324510,
       "indicator": null,
@@ -6379,7 +6416,7 @@
       }
     },
     {
-      "position": 170,
+      "position": 171,
       "streams": 42,
       "playedMs": 8279408,
       "indicator": null,
@@ -6417,7 +6454,7 @@
       }
     },
     {
-      "position": 171,
+      "position": 172,
       "streams": 37,
       "playedMs": 8255958,
       "indicator": null,
@@ -6453,7 +6490,7 @@
       }
     },
     {
-      "position": 172,
+      "position": 173,
       "streams": 34,
       "playedMs": 8230395,
       "indicator": null,
@@ -6488,49 +6525,6 @@
         },
         "type": "album",
         "id": 104775
-      }
-    },
-    {
-      "position": 173,
-      "streams": 35,
-      "playedMs": 8199519,
-      "indicator": null,
-      "album": {
-        "name": "Wild Ones",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/eb/ca/0d/ebca0d0d-3c73-686a-285a-f5899d1e0f25/075679954046.jpg/768x768bb.jpg",
-        "label": "Poe Boy/Atlantic",
-        "spotifyPopularity": 78,
-        "totalTracks": 10,
-        "releaseDate": 1340323200000,
-        "genres": [
-          "Hip-Hop/Rap",
-          "Music",
-          "Electronic",
-          "Worldwide",
-          "Dance",
-          "Rap"
-        ],
-        "artists": [
-          {
-            "id": 2399,
-            "name": "Flo Rida",
-            "image": "https://i.scdn.co/image/ab67616100005174655ca8f3196953554b479452"
-          }
-        ],
-        "externalIds": {
-          "upc": "075679954053",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "7eLwoxxWs6lfkVYJGkGNbk"
-          ],
-          "appleMusic": [
-            "613867183",
-            "633324290"
-          ]
-        },
-        "type": "album",
-        "id": 98325
       }
     },
     {
