@@ -35,14 +35,14 @@
     },
     {
       "position": 2,
-      "streams": 286,
-      "playedMs": 101769272,
+      "streams": 287,
+      "playedMs": 102129272,
       "indicator": null,
       "album": {
         "name": "Eric Prydz Presents Pryda",
         "image": "https://i.scdn.co/image/ab67616d0000b273876fa9eb56940f7dc117d654",
         "label": "Virgin",
-        "spotifyPopularity": 29,
+        "spotifyPopularity": 31,
         "totalTracks": 34,
         "releaseDate": 1325376000000,
         "genres": [],
@@ -68,14 +68,14 @@
     },
     {
       "position": 3,
-      "streams": 273,
-      "playedMs": 99627971,
+      "streams": 274,
+      "playedMs": 99807971,
       "indicator": null,
       "album": {
         "name": "Opus",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e9/6e/5d/e96e5de7-f9ca-792c-014c-646017c2d854/00602547503701.rgb.jpg/768x768bb.jpg",
         "label": "Virgin Records Ltd",
-        "spotifyPopularity": 58,
+        "spotifyPopularity": 59,
         "totalTracks": 19,
         "releaseDate": 1454630400000,
         "genres": [
@@ -300,14 +300,14 @@
     },
     {
       "position": 9,
-      "streams": 328,
-      "playedMs": 61951433,
+      "streams": 329,
+      "playedMs": 62131433,
       "indicator": null,
       "album": {
         "name": "18 Months",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ab/af/22/abaf2296-ed4d-6da2-c24d-503cfdfa4c1f/0617465356858.jpg/768x768bb.jpg",
         "label": "Columbia",
-        "spotifyPopularity": 78,
+        "spotifyPopularity": 79,
         "totalTracks": 15,
         "releaseDate": 1351468800000,
         "genres": [
@@ -957,7 +957,7 @@
         "name": "Forever",
         "image": "https://i.scdn.co/image/ab67616d0000b273b804bbd11f864902d452b3a7",
         "label": "Alesso / Def Jam",
-        "spotifyPopularity": 64,
+        "spotifyPopularity": 65,
         "totalTracks": 14,
         "releaseDate": 1432252800000,
         "genres": [],
@@ -1296,7 +1296,7 @@
         "name": "Eric Prydz Presents Pryda",
         "image": "https://i.scdn.co/image/ab67616d0000b273b79d89136eb23e6f42c12f36",
         "label": "Virgin",
-        "spotifyPopularity": 42,
+        "spotifyPopularity": 43,
         "totalTracks": 36,
         "releaseDate": 1325376000000,
         "genres": [],
@@ -1436,7 +1436,7 @@
         "name": "More Than You Know",
         "image": "https://i.scdn.co/image/ab67616d0000b273fba6de0b38b0168d480b1a27",
         "label": "EMI",
-        "spotifyPopularity": 69,
+        "spotifyPopularity": 70,
         "totalTracks": 15,
         "releaseDate": 1501200000000,
         "genres": [
@@ -1473,7 +1473,7 @@
         "name": "Here Come the Runts",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/98/19/89/9819896f-cfd0-3262-5da3-75b1c57b1b26/844942051825.jpg/768x768bb.jpg",
         "label": "Red Bull Records",
-        "spotifyPopularity": 38,
+        "spotifyPopularity": 39,
         "totalTracks": 14,
         "releaseDate": 1517529600000,
         "genres": [
@@ -1505,8 +1505,8 @@
     },
     {
       "position": 41,
-      "streams": 63,
-      "playedMs": 23047655,
+      "streams": 64,
+      "playedMs": 23388588,
       "indicator": null,
       "album": {
         "name": "Eric Prydz Presents Pryda (Deluxe Version)",
@@ -1810,7 +1810,7 @@
         "name": "Sempiternal (Expanded Edition)",
         "image": "https://i.scdn.co/image/ab67616d0000b273566acaba72c5509e3887c4b0",
         "label": "RCA Records Label",
-        "spotifyPopularity": 73,
+        "spotifyPopularity": 74,
         "totalTracks": 13,
         "releaseDate": 1364781600000,
         "genres": [
@@ -2498,7 +2498,7 @@
         "name": "Liquicity Memoirs",
         "image": "https://i.scdn.co/image/ab67616d0000b273c04a07b8794159793f8c1152",
         "label": "Liquicity Records",
-        "spotifyPopularity": 24,
+        "spotifyPopularity": 25,
         "totalTracks": 31,
         "releaseDate": 1430092800000,
         "genres": [],
@@ -2800,6 +2800,39 @@
     },
     {
       "position": 75,
+      "streams": 52,
+      "playedMs": 16697176,
+      "indicator": null,
+      "album": {
+        "name": "> Album Title Goes Here <",
+        "image": "https://i.scdn.co/image/ab67616d0000b2734adb471799a828cea0263e65",
+        "label": "Parlophone",
+        "spotifyPopularity": 45,
+        "totalTracks": 13,
+        "releaseDate": 1325376000000,
+        "genres": [],
+        "artists": [
+          {
+            "id": 9967,
+            "name": "deadmau5",
+            "image": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7"
+          }
+        ],
+        "externalIds": {
+          "upc": "00883958011034",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "5cpwmGEav9fYtQi33w0YTj"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 131534
+      }
+    },
+    {
+      "position": 76,
       "streams": 65,
       "playedMs": 16453224,
       "indicator": null,
@@ -2837,7 +2870,7 @@
       }
     },
     {
-      "position": 76,
+      "position": 77,
       "streams": 51,
       "playedMs": 16211164,
       "indicator": null,
@@ -2871,39 +2904,6 @@
         },
         "type": "album",
         "id": 777150
-      }
-    },
-    {
-      "position": 77,
-      "streams": 50,
-      "playedMs": 16115838,
-      "indicator": null,
-      "album": {
-        "name": "> Album Title Goes Here <",
-        "image": "https://i.scdn.co/image/ab67616d0000b2734adb471799a828cea0263e65",
-        "label": "Parlophone",
-        "spotifyPopularity": 45,
-        "totalTracks": 13,
-        "releaseDate": 1325376000000,
-        "genres": [],
-        "artists": [
-          {
-            "id": 9967,
-            "name": "deadmau5",
-            "image": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7"
-          }
-        ],
-        "externalIds": {
-          "upc": "00883958011034",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "5cpwmGEav9fYtQi33w0YTj"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 131534
       }
     },
     {
@@ -4004,7 +4004,7 @@
         "name": "Until Now",
         "image": "https://i.scdn.co/image/ab67616d0000b273781f6dd5abe91929df0314e3",
         "label": "Virgin Records",
-        "spotifyPopularity": 60,
+        "spotifyPopularity": 61,
         "totalTracks": 10,
         "releaseDate": 1325376000000,
         "genres": [],
@@ -4105,7 +4105,7 @@
         "name": "7",
         "image": "https://i.scdn.co/image/ab67616d0000b27367e400c9be79e6b0b0086880",
         "label": "Parlophone (France)",
-        "spotifyPopularity": 59,
+        "spotifyPopularity": 60,
         "totalTracks": 27,
         "releaseDate": 1536883200000,
         "genres": [],
@@ -4809,7 +4809,7 @@
         "name": "Nevermind (Remastered)",
         "image": "https://i.scdn.co/image/ab67616d0000b273e175a19e530c898d167d39bf",
         "label": "Geffen",
-        "spotifyPopularity": 77,
+        "spotifyPopularity": 78,
         "totalTracks": 13,
         "releaseDate": 685843200000,
         "genres": [],
@@ -5002,7 +5002,7 @@
         "name": "Less Is More",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/66/23/8b/66238b3e-9568-32d3-a852-7ecb7a2fa607/0617465821356.jpg/768x768bb.jpg",
         "label": "Armada Music Albums",
-        "spotifyPopularity": 72,
+        "spotifyPopularity": 73,
         "totalTracks": 16,
         "releaseDate": 1477008000000,
         "genres": [
@@ -5161,7 +5161,7 @@
         "name": "(What's The Story) Morning Glory? [Remastered]",
         "image": "https://i.scdn.co/image/ab67616d0000b27385e5dcc05cc216a10f141480",
         "label": "Big Brother",
-        "spotifyPopularity": 73,
+        "spotifyPopularity": 74,
         "totalTracks": 40,
         "releaseDate": 812592000000,
         "genres": [],
@@ -5731,7 +5731,7 @@
         "name": "Kabhi Alvida Naa Kehna (Original Motion Picture Soundtrack)",
         "image": "https://i.scdn.co/image/ab67616d0000b273afbf50bfb7b032b69deabade",
         "label": "Sony Music Entertainment India Pvt. Ltd.",
-        "spotifyPopularity": 65,
+        "spotifyPopularity": 64,
         "totalTracks": 7,
         "releaseDate": 1149732000000,
         "genres": [],
@@ -5803,7 +5803,7 @@
         "name": "Singh Is Kinng",
         "image": "https://i.scdn.co/image/ab67616d0000b273bb05368f8042ce8c118ee8f1",
         "label": "Times Music",
-        "spotifyPopularity": 59,
+        "spotifyPopularity": 62,
         "totalTracks": 11,
         "releaseDate": 1214791200000,
         "genres": [],
@@ -5914,7 +5914,7 @@
         "name": "Gravity (Deluxe Edition)",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e2/87/f5/e287f5a4-8944-45ec-185b-8ece65957ddf/5400863115999_cover.jpg/768x768bb.jpg",
         "label": "Spinefarm",
-        "spotifyPopularity": 51,
+        "spotifyPopularity": 52,
         "totalTracks": 19,
         "releaseDate": 1530230400000,
         "genres": [
@@ -6328,6 +6328,38 @@
     },
     {
       "position": 168,
+      "streams": 32,
+      "playedMs": 8431070,
+      "indicator": null,
+      "album": {
+        "name": "X (Expanded Edition)",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a3/3a/e3/a33ae3c7-821c-1531-0436-305fcd91f7fe/886444792073.jpg/768x768bb.jpg",
+        "label": "RCA Records Label",
+        "spotifyPopularity": 0,
+        "totalTracks": 21,
+        "releaseDate": 1410832800000,
+        "genres": [
+          "R&B/Soul",
+          "Music"
+        ],
+        "artists": [],
+        "externalIds": {
+          "upc": "886444257909",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "2Mlg0kD9v2Ba1DaQZuyKi6"
+          ],
+          "appleMusic": [
+            "1457259003"
+          ]
+        },
+        "type": "album",
+        "id": 329130
+      }
+    },
+    {
+      "position": 169,
       "streams": 21,
       "playedMs": 8394105,
       "indicator": null,
@@ -6365,7 +6397,7 @@
       }
     },
     {
-      "position": 169,
+      "position": 170,
       "streams": 32,
       "playedMs": 8380268,
       "indicator": null,
@@ -6401,7 +6433,7 @@
       }
     },
     {
-      "position": 170,
+      "position": 171,
       "streams": 23,
       "playedMs": 8324510,
       "indicator": null,
@@ -6441,7 +6473,7 @@
       }
     },
     {
-      "position": 171,
+      "position": 172,
       "streams": 42,
       "playedMs": 8279408,
       "indicator": null,
@@ -6449,7 +6481,7 @@
         "name": "Let the Light In",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/94/f6/87/94f68757-2fc8-64fc-16ea-8db96fcba789/810539022141.jpg/768x768bb.jpg",
         "label": "BEC Recordings",
-        "spotifyPopularity": 37,
+        "spotifyPopularity": 38,
         "totalTracks": 10,
         "releaseDate": 1509062400000,
         "genres": [
@@ -6479,7 +6511,7 @@
       }
     },
     {
-      "position": 172,
+      "position": 173,
       "streams": 34,
       "playedMs": 8230395,
       "indicator": null,
@@ -6517,7 +6549,7 @@
       }
     },
     {
-      "position": 173,
+      "position": 174,
       "streams": 31,
       "playedMs": 8175514,
       "indicator": null,
@@ -6555,7 +6587,7 @@
       }
     },
     {
-      "position": 174,
+      "position": 175,
       "streams": 37,
       "playedMs": 8125930,
       "indicator": null,
@@ -6591,7 +6623,7 @@
       }
     },
     {
-      "position": 175,
+      "position": 176,
       "streams": 119,
       "playedMs": 8109632,
       "indicator": null,
@@ -6599,7 +6631,7 @@
         "name": "A State Of Trance 1000 - Celebration Mix (Mixed by Armin van Buuren)",
         "image": "https://i.scdn.co/image/ab67616d0000b273a6fb4759567f43a53be8965f",
         "label": "Armada Music Albums",
-        "spotifyPopularity": 38,
+        "spotifyPopularity": 40,
         "totalTracks": 108,
         "releaseDate": 1611878400000,
         "genres": [],
@@ -6624,7 +6656,7 @@
       }
     },
     {
-      "position": 176,
+      "position": 177,
       "streams": 21,
       "playedMs": 8109317,
       "indicator": null,
@@ -6632,7 +6664,7 @@
         "name": "while(1<2)",
         "image": "https://i.scdn.co/image/ab67616d0000b2738bf50dadfe4222e27fd0b297",
         "label": "Virgin Records Ltd",
-        "spotifyPopularity": 37,
+        "spotifyPopularity": 36,
         "totalTracks": 27,
         "releaseDate": 1388538000000,
         "genres": [],
@@ -6657,7 +6689,7 @@
       }
     },
     {
-      "position": 177,
+      "position": 178,
       "streams": 45,
       "playedMs": 8095320,
       "indicator": null,
@@ -6696,7 +6728,7 @@
       }
     },
     {
-      "position": 178,
+      "position": 179,
       "streams": 15,
       "playedMs": 7911090,
       "indicator": null,
@@ -6736,7 +6768,7 @@
       }
     },
     {
-      "position": 179,
+      "position": 180,
       "streams": 30,
       "playedMs": 7873124,
       "indicator": null,
@@ -6744,7 +6776,7 @@
         "name": "Race 2 (Original Motion Picture Soundtrack)",
         "image": "https://i.scdn.co/image/ab67616d0000b2734e335a523158ef70bd1b93b6",
         "label": "Tips Industries Ltd",
-        "spotifyPopularity": 64,
+        "spotifyPopularity": 63,
         "totalTracks": 9,
         "releaseDate": 1327453200000,
         "genres": [],
@@ -6769,7 +6801,7 @@
       }
     },
     {
-      "position": 180,
+      "position": 181,
       "streams": 30,
       "playedMs": 7812422,
       "indicator": null,
@@ -6810,7 +6842,7 @@
       }
     },
     {
-      "position": 181,
+      "position": 182,
       "streams": 33,
       "playedMs": 7752773,
       "indicator": null,
@@ -6847,7 +6879,7 @@
       }
     },
     {
-      "position": 182,
+      "position": 183,
       "streams": 37,
       "playedMs": 7739833,
       "indicator": null,
@@ -6886,7 +6918,7 @@
       }
     },
     {
-      "position": 183,
+      "position": 184,
       "streams": 32,
       "playedMs": 7730970,
       "indicator": null,
@@ -6923,7 +6955,7 @@
       }
     },
     {
-      "position": 184,
+      "position": 185,
       "streams": 26,
       "playedMs": 7685973,
       "indicator": null,
@@ -6960,38 +6992,6 @@
         },
         "type": "album",
         "id": 749786
-      }
-    },
-    {
-      "position": 185,
-      "streams": 29,
-      "playedMs": 7636256,
-      "indicator": null,
-      "album": {
-        "name": "X (Expanded Edition)",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a3/3a/e3/a33ae3c7-821c-1531-0436-305fcd91f7fe/886444792073.jpg/768x768bb.jpg",
-        "label": "RCA Records Label",
-        "spotifyPopularity": 0,
-        "totalTracks": 21,
-        "releaseDate": 1410832800000,
-        "genres": [
-          "R&B/Soul",
-          "Music"
-        ],
-        "artists": [],
-        "externalIds": {
-          "upc": "886444257909",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "2Mlg0kD9v2Ba1DaQZuyKi6"
-          ],
-          "appleMusic": [
-            "1457259003"
-          ]
-        },
-        "type": "album",
-        "id": 329130
       }
     },
     {
