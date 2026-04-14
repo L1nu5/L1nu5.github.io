@@ -4,6 +4,7 @@ import musicEventsData from '../data/musicEvents.json';
 import educationData from '../data/education.json';
 import resumeData from '../data/resume.json';
 import socialsData from '../data/socials.json';
+import architectureData from '../data/architecture.json';
 
 class DataService {
   constructor() {
@@ -12,6 +13,7 @@ class DataService {
     this.education = educationData;
     this.resume = resumeData;
     this.socials = socialsData;
+    this.architecture = architectureData;
   }
 
   // Configuration methods
@@ -162,6 +164,19 @@ class DataService {
 
   getSocialsDescription() {
     return this.socials.description;
+  }
+
+  // Architecture methods
+  getArchitecture() {
+    return this.architecture;
+  }
+
+  getArchitectureHighlights() {
+    return this.architecture.highlights;
+  }
+
+  getArchitectureSecrets() {
+    return this.architecture.secrets;
   }
 
   // Utility methods

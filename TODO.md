@@ -32,6 +32,14 @@ Format: `- [ ] Description` for open, `- [x] Description _(done: Mon YYYY)_` for
 
 ---
 
+## Features — Architecture Diagram
+
+- [x] **Phase 1: Kroki-based diagram generation** _(done: Apr 2026)_ — `architecture.json` defines all nodes, edges, layers and secrets. `scripts/generate-diagram.js` converts it to Mermaid syntax and POSTs to the free Kroki.io render API. GitHub Actions runs the script on every push, writes the SVG to `portfolio/public/images/architecture.svg`, and includes it in the React build. No API key required. New "Architecture" tab in the portfolio displays the diagram alongside feature highlights and the security model.
+- [ ] **Phase 2: Claude API diagram generation** — Replace deterministic Mermaid builder in `generate-diagram.js` with a Claude API call. `architecture.json` becomes the prompt context; Claude produces the Mermaid code. `ANTHROPIC_API_KEY` stored as GitHub secret — same security pattern as Stats.fm. Adds an AI-augmented CI/CD story to the portfolio.
+- [ ] **Phase 3: MCP server wrapper (optional)** — Wrap diagram generation behind a lightweight MCP server (e.g., Cloudflare Worker). GitHub Action calls the MCP server instead of Claude directly. Adds infrastructure showcase; requires hosting and maintenance.
+
+---
+
 ## Done
 
 <!-- Move completed items here with done date -->

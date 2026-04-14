@@ -6,6 +6,7 @@ import Socials from './tabs/Socials';
 import Education from './tabs/Education';
 import Resume from './tabs/Resume';
 import MusicEvents from './tabs/MusicEvents';
+import Architecture from './tabs/Architecture';
 import dataService from './services/dataService';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import ThemeToggle from './components/ThemeToggle';
@@ -78,6 +79,7 @@ function AppContent() {
                     {tab.key === 'education' && <Education />}
                     {tab.key === 'resume' && <Resume />}
                     {tab.key === 'musicEvents' && <MusicEvents />}
+                    {tab.key === 'architecture' && <Architecture />}
                   </div>
                 </Tab>
               ))}
