@@ -138,30 +138,30 @@
       "id": 1,
       "name": "Data-Driven Wizard Framework",
       "tagline": "A declarative, JSON-configured wizard engine shared across multiple engineering teams",
-      "description": "Designed and built a reusable multi-step wizard framework from scratch, allowing engineering teams to define configuration workflows declaratively in JSON. The framework manages all UI chrome (breadcrumb, button panel, header, content area) and exposes a lifecycle callback system to a MATLAB backend via an asynchronous message queue — keeping business logic completely out of the frontend.",
+      "description": "Designed and built a reusable multi-step wizard framework from scratch, allowing engineering teams to define configuration workflows declaratively in JSON. The framework manages all UI chrome (breadcrumb, button panel, header, content area) and exposes a lifecycle callback system to a MATLAB backend — keeping business logic completely out of the frontend.",
       "period": "Feb 2026 – Present",
       "context": "MathWorks Inc. – Internal platform tooling",
       "role": "Sole architect and developer",
       "duration": "~6 weeks (v1)",
       "status": "Production",
-      "technologies": ["JavaScript", "MATLAB", "JSON Schema", "Message Queue", "DOM API"],
+      "technologies": ["JavaScript", "MATLAB", "JSON Schema", "DOM API"],
       "impact": {
         "teams": "5–6 engineering teams",
         "products": "~8 products",
         "note": "Replaced a predecessor system with cyclic JSON references and excessive verbosity, significantly reducing per-wizard definition size while eliminating a class of structural runtime errors"
       },
       "architecture": {
-        "overview": "Backend-driven architecture where a MATLAB layer owns and maintains view models for every rendered option. Teams author wizard definitions in JSON; the framework owns all chrome and routes UI lifecycle events to MATLAB callbacks over an asynchronous message queue. The JavaScript frontend is a stateless renderer — it applies view model diffs published by MATLAB to the DOM without holding any business logic.",
+        "overview": "Backend-driven architecture where a MATLAB layer owns and maintains view models for every rendered option. Teams author wizard definitions in JSON; the framework owns all chrome and routes UI lifecycle events to MATLAB callbacks through an internal communication layer. The JavaScript frontend is a stateless renderer — it applies view model updates from MATLAB to the DOM without holding any business logic.",
         "layers": [
           "JSON Schema Layer — declarative step and option definitions, supporting nested panel composition",
           "MATLAB Orchestration Layer — view models, step lifecycle callbacks (onEntry, onValidate, onUpdate, onExit, onComplete), shared context object",
-          "Message Queue Bridge — asynchronous bidirectional channel between MATLAB and JS; all DOM commands and state updates flow through here",
+          "Communication Layer — structured bidirectional bridge between the MATLAB backend and JavaScript frontend; all lifecycle events and view model updates flow through here",
           "JavaScript Rendering Layer — stateless renderer that applies incoming view model diffs; exposes a DOM control API (setVisible, setEnabled, setValue) callable from MATLAB"
         ],
         "patterns": [
           "Composite — nested panel containers in JSON form a UI node tree, allowing teams to declare arbitrary layout depth without custom code",
           "State Machine — wizard steps are states with guarded transitions; onValidate must pass before the framework advances, preventing invalid state progression",
-          "Observer via Message Queue — MATLAB publishes view model diffs asynchronously; the JS layer subscribes and patches only what changed, avoiding full re-renders",
+          "Observer — MATLAB publishes view model updates asynchronously; the JS layer subscribes and patches only what changed, avoiding full re-renders",
           "View Model — MATLAB holds the single source of truth for UI state; the JS layer is a pure projection, making the frontend trivially replaceable",
           "Strategy — each step supplies its own callback implementations without modifying the wizard orchestrator, enabling independent team iteration",
           "Template Method — the wizard lifecycle sequence (load → onEntry → render → onValidate → onExit → advance) is fixed by the framework; steps only override the hooks they need"
@@ -179,14 +179,14 @@
         "Eliminated duplicated wizard chrome across teams — one framework delivers a consistent UX across ~8 products",
         "Clean separation of concerns: JS owns rendering, MATLAB owns business logic, JSON owns structure — each layer is independently changeable",
         "MATLAB callbacks are pure functions with no UI dependency, making them unit-testable without spinning up a browser or rendering the wizard",
-        "All state transitions flow through the message queue, making them inspectable and replayable for debugging",
+        "All state transitions flow through a single communication layer, making them inspectable and replayable for debugging",
         "New teams onboard by writing JSON and MATLAB callbacks only — zero JavaScript required for standard workflows",
         "Cyclic reference errors of the predecessor system are structurally impossible — the schema enforces a directed acyclic tree at load time"
       ],
       "drawbacks": [
         {
           "issue": "Debugging spans three layers (JSON → MATLAB → JS), which can make root-cause analysis slower than in monolithic implementations",
-          "mitigation": "Structured logging at each message queue boundary with correlation IDs; schema validation surfaces config errors before runtime"
+          "mitigation": "Structured logging at each layer boundary; schema validation surfaces config errors before runtime"
         },
         {
           "issue": "Message queue round-trips add latency for rapid successive DOM updates (e.g., cascading field visibility changes on a single user action)",
