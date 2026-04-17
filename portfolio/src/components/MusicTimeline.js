@@ -1,5 +1,5 @@
-import React from 'react';
-import { Card, Badge, Row, Col, Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Card, Badge, Row, Col, Button, Collapse, ListGroup } from 'react-bootstrap';
 import { useTheme } from '../contexts/ThemeContext';
 
 function MusicTimeline({ events }) {
@@ -27,6 +27,45 @@ function MusicTimeline({ events }) {
 
   const renderStars = (rating) => {
     return '★'.repeat(rating) + '☆'.repeat(5 - rating);
+  };
+
+  const SetlistCollapse = ({ setlist, setlistUrl }) => {
+    const [open, setOpen] = useState(false);
+    return (
+      <div className="mb-3">
+        <Button
+          variant="outline-secondary"
+          size="sm"
+          onClick={() => setOpen(o => !o)}
+          aria-expanded={open}
+          className="mb-2"
+        >
+          📋 Setlist ({setlist.length} songs) {open ? '▲' : '▼'}
+        </Button>
+        <Collapse in={open}>
+          <div>
+            <ListGroup variant="flush" style={{ borderRadius: '6px', overflow: 'hidden' }}>
+              {setlist.map((song, idx) => (
+                <ListGroup.Item
+                  key={idx}
+                  className="py-1 px-3 d-flex align-items-center gap-2"
+                  style={{ backgroundColor: theme.cardBackground, color: theme.textColor, borderColor: theme.borderColor }}
+                >
+                  <small style={{ color: theme.mutedText, minWidth: '1.5rem' }}>{idx + 1}.</small>
+                  <span>{song.name}</span>
+                  {song.encore && <Badge bg="warning" text="dark" className="ms-auto">Encore</Badge>}
+                </ListGroup.Item>
+              ))}
+            </ListGroup>
+            {setlistUrl && (
+              <a href={setlistUrl} target="_blank" rel="noopener noreferrer" className="d-block mt-2 small" style={{ color: theme.mutedText }}>
+                Full setlist on setlist.fm ↗
+              </a>
+            )}
+          </div>
+        </Collapse>
+      </div>
+    );
   };
 
   const ImageCollage = ({ images }) => {
@@ -106,18 +145,34 @@ function MusicTimeline({ events }) {
                   border: 'none',
                   color: theme.textColor
                 }}>
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div>
-                      <h5 className="mb-1" style={{ color: getTypeColor(event.type) }}>
-                        {event.title}
-                      </h5>
-                      <small style={{ color: theme.mutedText }}>
-                        📍 {event.venue} • {new Date(event.date).toLocaleDateString('en-US', { 
-                          year: 'numeric', 
-                          month: 'long', 
-                          day: 'numeric' 
-                        })}
-                      </small>
+                  <div className="d-flex justify-content-between align-items-center gap-2">
+                    <div className="d-flex align-items-center gap-3 flex-grow-1 min-width-0">
+                      {event.enrichment?.artistImage && (
+                        <img
+                          src={event.enrichment.artistImage}
+                          alt={event.title}
+                          style={{
+                            width: '48px',
+                            height: '48px',
+                            borderRadius: '50%',
+                            objectFit: 'cover',
+                            flexShrink: 0,
+                            border: `2px solid ${getTypeColor(event.type)}40`
+                          }}
+                        />
+                      )}
+                      <div>
+                        <h5 className="mb-1" style={{ color: getTypeColor(event.type) }}>
+                          {event.title}
+                        </h5>
+                        <small style={{ color: theme.mutedText }}>
+                          📍 {event.venue} • {new Date(event.date).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                          })}
+                        </small>
+                      </div>
                     </div>
                     <Badge bg={event.type === 'Festival' ? 'info' : event.type === 'Concert' ? 'primary' : 'success'}>
                       {event.type}
@@ -151,48 +206,24 @@ function MusicTimeline({ events }) {
 
                   {/* Setlist from enrichment */}
                   {event.enrichment?.setlist?.length > 0 && (
-                    <div className="mb-3">
-                      <strong style={{ color: theme.secondaryColor }}>Setlist:</strong>
-                      <div className="mt-2">
-                        {event.enrichment.setlist.map((song, idx) => (
-                          <Badge
-                            key={idx}
-                            bg="secondary"
-                            className="me-1 mb-1"
-                            style={{ fontWeight: song.encore ? 'bold' : 'normal' }}
-                          >
-                            {song.encore ? '🔁 ' : ''}{song.name}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
+                    <SetlistCollapse
+                      setlist={event.enrichment.setlist}
+                      setlistUrl={event.enrichment.setlistUrl}
+                    />
                   )}
 
-                  {/* External links from enrichment */}
-                  {(event.enrichment?.setlistUrl || event.enrichment?.ticketUrl) && (
-                    <div className="d-flex gap-2 flex-wrap">
-                      {event.enrichment.setlistUrl && (
-                        <Button
-                          variant="outline-secondary"
-                          size="sm"
-                          href={event.enrichment.setlistUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          📋 Setlist
-                        </Button>
-                      )}
-                      {event.enrichment.ticketUrl && (
-                        <Button
-                          variant="outline-primary"
-                          size="sm"
-                          href={event.enrichment.ticketUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          🎫 Event Page
-                        </Button>
-                      )}
+                  {/* Event page link */}
+                  {event.enrichment?.ticketUrl && (
+                    <div>
+                      <Button
+                        variant="outline-primary"
+                        size="sm"
+                        href={event.enrichment.ticketUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        🎫 Event Page
+                      </Button>
                     </div>
                   )}
                 </Card.Body>

@@ -46,11 +46,12 @@ function makeEnrichment(source, overrides = {}) {
   return {
     source,
     found: false,
-    venue:      null,   // { name, city, state, country, address }
-    setlist:    [],     // [ { name, encore } ]  — setlist.fm only
-    images:     [],     // [ url ]               — ticketmaster only
-    ticketUrl:  null,   //                         ticketmaster only
-    setlistUrl: null,   //                         setlist.fm only
+    venue:       null,   // { name, city, state, country, address }
+    setlist:     [],     // [ { name, encore } ]  — setlist.fm only
+    images:      [],     // [ url ]               — ticketmaster only
+    artistImage: null,   // url                   — deezer
+    ticketUrl:   null,   //                         ticketmaster only
+    setlistUrl:  null,   //                         setlist.fm only
     externalIds: { setlistfm: null, ticketmaster: null },
     ...overrides
   };
@@ -144,6 +145,31 @@ async function queryTicketmaster(apiKey, event) {
   });
 }
 
+// ─────────────────────────────────────────────
+// Source: Deezer (artist image, no key required)
+// ─────────────────────────────────────────────
+const DEEZER_BASE = 'https://api.deezer.com/search/artist';
+
+function primaryArtist(event) {
+  return (event.artists && event.artists[0]) || event.title;
+}
+
+async function fetchArtistImage(event) {
+  const url = `${DEEZER_BASE}?q=${encodeURIComponent(primaryArtist(event))}&limit=1`;
+  try {
+    const data = await makeRequest(url);
+    const hit  = data?.data?.[0];
+    if (!hit) return null;
+    const img = hit.picture_medium;
+    // Deezer returns a generic silhouette when no artist photo exists;
+    // those URLs have an empty segment between /artist/ and the size suffix.
+    if (!img || img.includes('/artist//')) return null;
+    return img;
+  } catch (e) {
+    return null;
+  }
+}
+
 function selectImages(images) {
   if (!images || !images.length) return [];
   const out = [];
@@ -200,7 +226,12 @@ async function enrichEvent(event, cache, sfmKey, tmKey) {
   if (!shouldFetch(cached)) {
     const label = cached.found ? `cache [${cached.source}]` : 'cached miss';
     console.log(`  [${label}] ${event.title} (${event.date})`);
-    return cached.found ? cached : null;
+    // Backfill artist image for legacy cache entries that predate this field
+    if (!('artistImage' in cached)) {
+      cached.artistImage = await fetchArtistImage(event);
+      await delay(200);
+    }
+    return cached;
   }
 
   console.log(`  [fetching]  ${event.title} (${event.date})`);
@@ -212,51 +243,65 @@ async function enrichEvent(event, cache, sfmKey, tmKey) {
       if (result) {
         console.log(`    ✓ Setlist.fm — ${result.setlist.length} songs`);
         cache.entries[key] = { ...result, cachedAt: new Date().toISOString() };
-        return cache.entries[key];
+      } else {
+        console.log('    – Setlist.fm: no match');
       }
-      console.log('    – Setlist.fm: no match');
     } catch (e) { console.warn(`    ⚠ Setlist.fm error: ${e.message}`); }
     await delay(300);
   }
 
-  // 2 — Ticketmaster
-  if (tmKey) {
+  // 2 — Ticketmaster (only if Setlist.fm missed)
+  if (tmKey && !cache.entries[key]?.found) {
     try {
       const result = await queryTicketmaster(tmKey, event);
       if (result) {
         console.log('    ✓ Ticketmaster');
         cache.entries[key] = { ...result, cachedAt: new Date().toISOString() };
-        return cache.entries[key];
+      } else {
+        console.log('    – Ticketmaster: no match');
       }
-      console.log('    – Ticketmaster: no match');
     } catch (e) { console.warn(`    ⚠ Ticketmaster error: ${e.message}`); }
     await delay(250);
   }
 
   // 3 — Not found anywhere
-  console.log('    ✗ Not found — manual entry only');
-  cache.entries[key] = { ...makeEnrichment('not-found'), cachedAt: new Date().toISOString() };
-  return null;
+  if (!cache.entries[key]) {
+    console.log('    ✗ Not found — manual entry only');
+    cache.entries[key] = { ...makeEnrichment('not-found'), cachedAt: new Date().toISOString() };
+  }
+
+  // Fetch artist image regardless of found status
+  cache.entries[key].artistImage = await fetchArtistImage(event);
+  if (cache.entries[key].artistImage) console.log(`    🎨 Artist image found`);
+  await delay(200);
+
+  return cache.entries[key];
 }
 
 // ─────────────────────────────────────────────
 // Output builder
 // ─────────────────────────────────────────────
 function buildOutput(pastPairs, upcomingPairs) {
-  const shape = ([event, enrichment]) => ({
-    ...event,
-    enrichment: enrichment
-      ? {
-          source:      enrichment.source,
-          venue:       enrichment.venue,
-          setlist:     enrichment.setlist,
-          images:      enrichment.images,
-          ticketUrl:   enrichment.ticketUrl,
-          setlistUrl:  enrichment.setlistUrl,
-          externalIds: enrichment.externalIds
-        }
-      : null
-  });
+  const shape = ([event, entry]) => {
+    // entry is always the full cache object (found or not)
+    const artistImage = entry?.artistImage || null;
+    const hasData = entry?.found || artistImage;
+    return {
+      ...event,
+      enrichment: hasData
+        ? {
+            source:      entry?.found ? entry.source : null,
+            venue:       entry?.venue       || null,
+            setlist:     entry?.setlist     || [],
+            images:      entry?.images      || [],
+            artistImage,
+            ticketUrl:   entry?.ticketUrl   || null,
+            setlistUrl:  entry?.setlistUrl  || null,
+            externalIds: entry?.externalIds || { setlistfm: null, ticketmaster: null }
+          }
+        : null
+    };
+  };
 
   return {
     enrichedAt:     new Date().toISOString(),
@@ -309,6 +354,22 @@ async function main() {
     upcomingPairs.push([ev, await enrichEvent(ev, cache, sfmKey, tmKey)]);
   }
 
+  // Propagate artist images across events sharing the same headliner
+  const allPairs = [...pastPairs, ...upcomingPairs];
+  const artistImageMap = {};
+  for (const [ev, entry] of allPairs) {
+    const name = primaryArtist(ev).toLowerCase();
+    if (entry?.artistImage && !artistImageMap[name]) artistImageMap[name] = entry.artistImage;
+  }
+  for (const [ev, entry] of allPairs) {
+    if (!entry || entry.artistImage) continue;
+    const img = artistImageMap[primaryArtist(ev).toLowerCase()];
+    if (img) {
+      entry.artistImage = img;
+      console.log(`  ↩ Artist image reused for ${ev.title} (${ev.date})`);
+    }
+  }
+
   saveCache(cache);
   console.log(`\n✓ Cache saved   → ${CACHE_FILE}`);
 
@@ -316,8 +377,8 @@ async function main() {
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(buildOutput(pastPairs, upcomingPairs), null, 2));
   console.log(`✓ Output saved  → ${OUTPUT_FILE}`);
 
-  const total = pastPairs.length + upcomingPairs.length;
-  const found = [...pastPairs, ...upcomingPairs].filter(([, e]) => e).length;
+  const total = allPairs.length;
+  const found = allPairs.filter(([, e]) => e?.found).length;
   const bySource = {};
   Object.values(cache.entries)
     .filter(e => e.found)
@@ -325,7 +386,7 @@ async function main() {
 
   console.log(`\nResult: ${found}/${total} enriched — by source: ${JSON.stringify(bySource)}`);
 
-  const missed = [...pastPairs, ...upcomingPairs].filter(([, e]) => !e);
+  const missed = allPairs.filter(([, e]) => !e?.found);
   if (missed.length) {
     console.log(`\nNot found (${missed.length}):`);
     missed.forEach(([ev]) => console.log(`  ✗ ${ev.title} (${ev.date})`));
