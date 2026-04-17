@@ -119,8 +119,7 @@ function Architecture() {
             </Card.Header>
             <Card.Body style={{ color: theme.textColor }}>
               <p className="small mb-3" style={{ color: theme.mutedText }}>
-                Every external API key is stored as a GitHub Actions secret and consumed server-side during CI.
-                None are bundled into the React build or reachable via the browser network tab.
+                Every external API key is managed securely and never bundled into the React build or reachable via the browser network tab.
               </p>
               <ListGroup variant="flush">
                 {secrets.map((s, idx) => (
@@ -160,7 +159,7 @@ function Architecture() {
               <ListGroup variant="flush">
                 {[
                   { step: '1', label: 'Trigger', detail: 'git push to main or weekly Sunday midnight UTC' },
-                  { step: '2', label: 'Fetch Stats.fm', detail: 'Music stats via API — key from GitHub secrets' },
+                  { step: '2', label: 'Fetch Stats.fm + Ticketmaster', detail: 'Music stats and event data via external APIs' },
                   { step: '3', label: 'Generate Diagram', detail: 'architecture.json → Mermaid → Kroki → SVG' },
                   { step: '4', label: 'npm run build', detail: 'React compiles all JSON + SVG into static bundle' },
                   { step: '5', label: 'Deploy', detail: 'GitHub Pages serves the static bundle globally' },

@@ -13,13 +13,13 @@ Format: `- [ ] Description` for open, `- [x] Description _(done: Mon YYYY)_` for
 
 ## Content — Music Events
 
-- [ ] **Past events backfill (up to Mar 2026)** — `musicEvents.json` currently has dummy past events only. Replace with real attended concerts/festivals up to March 26, 2026. For each event, minimum needed: `title`, `date`, `venue`, `location`, `type`, `rating`, `review`. Optional: `highlights`, `setlistId` (from setlist.fm).
+- [ ] **Past events backfill (up to Mar 2026)** — `musicEvents.json` currently has dummy past events only. Replace with real attended concerts/festivals up to March 26, 2026. For each event, minimum needed: `title`, `date`, `venue`, `location`, `type`, `rating`, `review`. Optional: `highlights` (songs you remember — fill in manually).
 
 ---
 
 ## Features — Music Events
 
-- [ ] **Setlist.fm integration** — Script + GitHub Actions step to auto-enrich past events that have a `setlistId` with venue details and setlist (songs played). API key stored as `SETLIST_FM_API_KEY` GitHub secret. See conversation notes for design: build-time fetch, never exposed to browser.
+- [x] **Ticketmaster integration** _(done: Apr 2026)_ — `scripts/fetch-ticketmaster-data.js` enriches upcoming events with official images, venue details, and ticket URLs via the Ticketmaster Discovery API. Runs in CI on every push.
 - [ ] **Flatten events to single array** — Merge `upcomingEvents` and `pastEvents` into one `events` array with an `attended: boolean` field. Simplifies adding new entries and moving upcoming → past.
 - [ ] **Drop fake image collage** — `images` array in past events is rendered as placeholder emoji, not real images. Either wire up real image URLs or remove the collage component from `MusicTimeline.js`.
 - [ ] **Fix `settings` binding in JSX** — `favoriteGenre` and `bestConcertEver` are hardcoded strings in `MusicEvents.js` instead of reading from `musicEvents.json > settings`. Fix the component to consume the JSON values.

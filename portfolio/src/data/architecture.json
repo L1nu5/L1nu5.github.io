@@ -37,11 +37,10 @@
           "secret": "STATS_FM_TOKEN"
         },
         {
-          "id": "setlistfm",
-          "label": "Fetch Setlist.fm",
-          "sublabel": "concert setlists",
-          "secret": "SETLIST_FM_API_KEY",
-          "status": "planned"
+          "id": "ticketmaster",
+          "label": "Fetch Ticketmaster",
+          "sublabel": "event details · images · ticket URLs",
+          "secret": "TICKETMASTER_API_KEY"
         },
         {
           "id": "diagram",
@@ -89,10 +88,10 @@
     { "from": "json_files", "to": "git_push" },
     { "from": "git_push", "to": "trigger" },
     { "from": "trigger", "to": "statsfm" },
-    { "from": "trigger", "to": "setlistfm" },
+    { "from": "trigger", "to": "ticketmaster" },
     { "from": "trigger", "to": "diagram" },
     { "from": "statsfm", "to": "npm_build" },
-    { "from": "setlistfm", "to": "npm_build" },
+    { "from": "ticketmaster", "to": "npm_build" },
     { "from": "diagram", "to": "npm_build" },
     { "from": "npm_build", "to": "gh_deploy" },
     { "from": "gh_deploy", "to": "react_app" },
@@ -103,21 +102,21 @@
     {
       "id": "STATS_FM_TOKEN",
       "description": "Stats.fm API Bearer token for music listening stats",
-      "scope": "CI only — never reaches browser",
+      "scope": "Never reaches the browser",
       "usedBy": "statsfm",
       "status": "active"
     },
     {
-      "id": "SETLIST_FM_API_KEY",
-      "description": "Setlist.fm API key for concert setlist enrichment",
-      "scope": "CI only — never reaches browser",
-      "usedBy": "setlistfm",
-      "status": "planned"
+      "id": "TICKETMASTER_API_KEY",
+      "description": "Ticketmaster Discovery API key for event details, images, and ticket URLs",
+      "scope": "Never reaches the browser",
+      "usedBy": "ticketmaster",
+      "status": "active"
     },
     {
       "id": "GITHUB_TOKEN",
       "description": "Auto-provisioned token scoped to this repository for Pages deployment",
-      "scope": "CI only — scoped to repo, auto-rotated by GitHub",
+      "scope": "Auto-provisioned and scoped to this repository",
       "usedBy": "gh_deploy",
       "status": "active"
     }
@@ -131,7 +130,7 @@
     {
       "icon": "🔒",
       "title": "Secret Hygiene",
-      "description": "All external API keys live in GitHub Actions secrets. They are used server-side during CI and are never bundled into the React app or visible in the browser network tab."
+      "description": "All external API keys are managed securely and never bundled into the React app or visible in the browser network tab."
     },
     {
       "icon": "⚙️",

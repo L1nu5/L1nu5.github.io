@@ -51,6 +51,12 @@ jobs:
             git push
           fi
           
+      - name: Fetch Ticketmaster event data
+        if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+        run: node scripts/fetch-ticketmaster-data.js
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+
       - name: Generate architecture diagram
         # Regenerate SVG from architecture.json on every push via Kroki (no API key needed)
         if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
