@@ -51,11 +51,25 @@ jobs:
             git push
           fi
           
-      - name: Fetch Ticketmaster event data
+      - name: Enrich events data
         if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
-        run: node scripts/fetch-ticketmaster-data.js
+        run: node scripts/enrich-events.js
         env:
+          SETLIST_FM_API_KEY: ${{ secrets.SETLIST_FM_API_KEY }}
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+
+      - name: Commit events cache
+        if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/events-cache.json portfolio/public/data/events-enriched.json
+          if git diff --staged --quiet; then
+            echo "No events cache changes"
+          else
+            git commit -m "Update events enrichment cache [skip ci]"
+            git push
+          fi
 
       - name: Generate architecture diagram
         # Regenerate SVG from architecture.json on every push via Kroki (no API key needed)

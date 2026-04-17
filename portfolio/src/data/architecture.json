@@ -37,9 +37,15 @@
           "secret": "STATS_FM_TOKEN"
         },
         {
+          "id": "setlistfm",
+          "label": "Fetch Setlist.fm",
+          "sublabel": "setlists · venue details",
+          "secret": "SETLIST_FM_API_KEY"
+        },
+        {
           "id": "ticketmaster",
           "label": "Fetch Ticketmaster",
-          "sublabel": "event details · images · ticket URLs",
+          "sublabel": "event images · ticket URLs",
           "secret": "TICKETMASTER_API_KEY"
         },
         {
@@ -88,10 +94,12 @@
     { "from": "json_files", "to": "git_push" },
     { "from": "git_push", "to": "trigger" },
     { "from": "trigger", "to": "statsfm" },
-    { "from": "trigger", "to": "ticketmaster" },
+    { "from": "trigger", "to": "setlistfm" },
+    { "from": "setlistfm", "to": "ticketmaster" },
     { "from": "trigger", "to": "diagram" },
     { "from": "statsfm", "to": "npm_build" },
     { "from": "ticketmaster", "to": "npm_build" },
+    { "from": "setlistfm", "to": "npm_build" },
     { "from": "diagram", "to": "npm_build" },
     { "from": "npm_build", "to": "gh_deploy" },
     { "from": "gh_deploy", "to": "react_app" },
@@ -107,8 +115,15 @@
       "status": "active"
     },
     {
+      "id": "SETLIST_FM_API_KEY",
+      "description": "Setlist.fm API key for fetching concert setlists and venue details",
+      "scope": "Never reaches the browser",
+      "usedBy": "setlistfm",
+      "status": "active"
+    },
+    {
       "id": "TICKETMASTER_API_KEY",
-      "description": "Ticketmaster Discovery API key for event details, images, and ticket URLs",
+      "description": "Ticketmaster Discovery API key for event images and ticket URLs",
       "scope": "Never reaches the browser",
       "usedBy": "ticketmaster",
       "status": "active"
