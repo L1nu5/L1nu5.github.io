@@ -324,6 +324,12 @@ async function main() {
     .forEach(e => { bySource[e.source] = (bySource[e.source] || 0) + 1; });
 
   console.log(`\nResult: ${found}/${total} enriched — by source: ${JSON.stringify(bySource)}`);
+
+  const missed = [...pastPairs, ...upcomingPairs].filter(([, e]) => !e);
+  if (missed.length) {
+    console.log(`\nNot found (${missed.length}):`);
+    missed.forEach(([ev]) => console.log(`  ✗ ${ev.title} (${ev.date})`));
+  }
 }
 
 if (require.main === module) {

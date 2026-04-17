@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Row, Col, Card, Badge, Button, ListGroup, Nav } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import MusicTimeline from '../components/MusicTimeline';
@@ -8,14 +8,37 @@ import { useTheme } from '../contexts/ThemeContext';
 
 function MusicEvents() {
   const [activeView, setActiveView] = useState('upcoming');
+  const [enrichedData, setEnrichedData] = useState(null);
   const { theme } = useTheme();
 
   // Get data from the data service
   const upcomingEvents = dataService.getUpcomingEvents();
   const pastEvents = dataService.getPastEvents();
 
-  // Sort past events by date (most recent first) for timeline
-  const timelineEvents = [...pastEvents].sort((a, b) => new Date(b.date) - new Date(a.date));
+  useEffect(() => {
+    fetch('/data/events-enriched.json')
+      .then(r => r.ok ? r.json() : null)
+      .catch(() => null)
+      .then(data => setEnrichedData(data));
+  }, []);
+
+  // Build a lookup map: "title-date" → enrichment object
+  const enrichmentMap = useMemo(() => {
+    if (!enrichedData) return {};
+    const map = {};
+    [...(enrichedData.pastEvents || []), ...(enrichedData.upcomingEvents || [])].forEach(ev => {
+      if (ev.enrichment) map[`${ev.title}-${ev.date}`] = ev.enrichment;
+    });
+    return map;
+  }, [enrichedData]);
+
+  // Sort past events by date (most recent first) and attach enrichment
+  const timelineEvents = useMemo(() =>
+    [...pastEvents]
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .map(ev => ({ ...ev, enrichment: enrichmentMap[`${ev.title}-${ev.date}`] || null })),
+    [pastEvents, enrichmentMap]
+  );
 
   const getStatusVariant = (status) => {
     switch (status) {

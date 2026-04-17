@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Badge, Row, Col } from 'react-bootstrap';
+import { Card, Badge, Row, Col, Button } from 'react-bootstrap';
 import { useTheme } from '../contexts/ThemeContext';
 
 function MusicTimeline({ events }) {
@@ -29,34 +29,27 @@ function MusicTimeline({ events }) {
     return '★'.repeat(rating) + '☆'.repeat(5 - rating);
   };
 
-  const ImageCollage = ({ images, eventTitle }) => (
-    <Row className="g-2 mb-3">
-      {images && images.slice(0, 4).map((image, index) => (
-        <Col xs={6} key={index}>
-          <div 
-            style={{
-              height: '80px',
-              backgroundImage: `url(${image})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              borderRadius: '8px',
-              border: `2px solid ${theme.borderColor}`,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: theme.cardBackground,
-              color: theme.mutedText,
-              fontSize: '12px',
-              textAlign: 'center'
-            }}
-          >
-            {/* Placeholder text for demo - in real app, images would load */}
-            📸 {eventTitle}
-          </div>
-        </Col>
-      ))}
-    </Row>
-  );
+  const ImageCollage = ({ images }) => {
+    if (!images || images.length === 0) return null;
+    return (
+      <Row className="g-2 mb-3">
+        {images.slice(0, 4).map((image, index) => (
+          <Col xs={6} key={index}>
+            <div
+              style={{
+                height: '80px',
+                backgroundImage: `url(${image})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                borderRadius: '8px',
+                border: `2px solid ${theme.borderColor}`
+              }}
+            />
+          </Col>
+        ))}
+      </Row>
+    );
+  };
 
   return (
     <div className="custom-timeline">
@@ -133,11 +126,8 @@ function MusicTimeline({ events }) {
                 </Card.Header>
 
                 <Card.Body style={{ color: theme.textColor }}>
-                  {/* Image Collage */}
-                  <ImageCollage 
-                    images={event.images || []} 
-                    eventTitle={event.title.split(' ')[0]}
-                  />
+                  {/* Images from enrichment */}
+                  <ImageCollage images={event.enrichment?.images} />
 
                   {/* Rating */}
                   <div className="mb-3">
@@ -148,12 +138,9 @@ function MusicTimeline({ events }) {
                   </div>
 
                   {/* Review */}
-                  <Card 
-                    className="border-0 mb-3" 
-                    style={{ 
-                      backgroundColor: theme.lightBlue,
-                      color: theme.textColor
-                    }}
+                  <Card
+                    className="border-0 mb-3"
+                    style={{ backgroundColor: theme.lightBlue, color: theme.textColor }}
                   >
                     <Card.Body className="p-3">
                       <Card.Text className="mb-0 fst-italic" style={{ color: theme.textColor }}>
@@ -162,17 +149,50 @@ function MusicTimeline({ events }) {
                     </Card.Body>
                   </Card>
 
-                  {/* Artists/Highlights */}
-                  {event.highlights && (
-                    <div>
-                      <strong style={{ color: theme.secondaryColor }}>Highlights:</strong>
+                  {/* Setlist from enrichment */}
+                  {event.enrichment?.setlist?.length > 0 && (
+                    <div className="mb-3">
+                      <strong style={{ color: theme.secondaryColor }}>Setlist:</strong>
                       <div className="mt-2">
-                        {event.highlights.map((highlight, idx) => (
-                          <Badge key={idx} bg="outline-secondary" className="me-1 mb-1">
-                            {highlight}
+                        {event.enrichment.setlist.map((song, idx) => (
+                          <Badge
+                            key={idx}
+                            bg="secondary"
+                            className="me-1 mb-1"
+                            style={{ fontWeight: song.encore ? 'bold' : 'normal' }}
+                          >
+                            {song.encore ? '🔁 ' : ''}{song.name}
                           </Badge>
                         ))}
                       </div>
+                    </div>
+                  )}
+
+                  {/* External links from enrichment */}
+                  {(event.enrichment?.setlistUrl || event.enrichment?.ticketUrl) && (
+                    <div className="d-flex gap-2 flex-wrap">
+                      {event.enrichment.setlistUrl && (
+                        <Button
+                          variant="outline-secondary"
+                          size="sm"
+                          href={event.enrichment.setlistUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          📋 Setlist
+                        </Button>
+                      )}
+                      {event.enrichment.ticketUrl && (
+                        <Button
+                          variant="outline-primary"
+                          size="sm"
+                          href={event.enrichment.ticketUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          🎫 Event Page
+                        </Button>
+                      )}
                     </div>
                   )}
                 </Card.Body>
