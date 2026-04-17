@@ -2151,6 +2151,43 @@
     },
     {
       "position": 58,
+      "streams": 85,
+      "playedMs": 19230596,
+      "indicator": null,
+      "album": {
+        "name": "Planet Pit (Deluxe Version)",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/98/11/3598119a-5248-b35a-4d4f-8b8c141d7f8d/mzi.mwslkhwt.jpg/768x768bb.jpg",
+        "label": "Mr.305/Polo Grounds Music/J Records",
+        "spotifyPopularity": 0,
+        "totalTracks": 16,
+        "releaseDate": 1310868000000,
+        "genres": [
+          "Pop",
+          "Music",
+          "Latin"
+        ],
+        "artists": [
+          {
+            "id": 361,
+            "name": "Pitbull",
+            "image": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9"
+          }
+        ],
+        "externalIds": {
+          "upc": "886443007161",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": [
+            "441023605"
+          ]
+        },
+        "type": "album",
+        "id": 315483
+      }
+    },
+    {
+      "position": 59,
       "streams": 91,
       "playedMs": 19125914,
       "indicator": null,
@@ -2190,7 +2227,7 @@
       }
     },
     {
-      "position": 59,
+      "position": 60,
       "streams": 116,
       "playedMs": 18961979,
       "indicator": null,
@@ -2226,7 +2263,7 @@
       }
     },
     {
-      "position": 60,
+      "position": 61,
       "streams": 77,
       "playedMs": 18787527,
       "indicator": null,
@@ -2267,7 +2304,7 @@
       }
     },
     {
-      "position": 61,
+      "position": 62,
       "streams": 101,
       "playedMs": 18697591,
       "indicator": null,
@@ -2298,43 +2335,6 @@
         },
         "type": "album",
         "id": 56271
-      }
-    },
-    {
-      "position": 62,
-      "streams": 82,
-      "playedMs": 18531743,
-      "indicator": null,
-      "album": {
-        "name": "Planet Pit (Deluxe Version)",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/98/11/3598119a-5248-b35a-4d4f-8b8c141d7f8d/mzi.mwslkhwt.jpg/768x768bb.jpg",
-        "label": "Mr.305/Polo Grounds Music/J Records",
-        "spotifyPopularity": 0,
-        "totalTracks": 16,
-        "releaseDate": 1310868000000,
-        "genres": [
-          "Pop",
-          "Music",
-          "Latin"
-        ],
-        "artists": [
-          {
-            "id": 361,
-            "name": "Pitbull",
-            "image": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9"
-          }
-        ],
-        "externalIds": {
-          "upc": "886443007161",
-          "ean": null,
-          "isrc": null,
-          "spotify": [],
-          "appleMusic": [
-            "441023605"
-          ]
-        },
-        "type": "album",
-        "id": 315483
       }
     },
     {
@@ -2833,46 +2833,8 @@
     },
     {
       "position": 76,
-      "streams": 65,
-      "playedMs": 16453224,
-      "indicator": null,
-      "album": {
-        "name": "Viva La Vida or Death and All His Friends",
-        "image": "https://i.scdn.co/image/ab67616d0000b273e21cc1db05580b6f2d2a3b6e",
-        "label": "Parlophone UK",
-        "spotifyPopularity": 76,
-        "totalTracks": 10,
-        "releaseDate": 1211760000000,
-        "genres": [
-          "Alternative",
-          "Music",
-          "Rock",
-          "Adult Alternative"
-        ],
-        "artists": [
-          {
-            "id": 779,
-            "name": "Coldplay",
-            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
-          }
-        ],
-        "externalIds": {
-          "upc": "5099921211454",
-          "ean": null,
-          "isrc": null,
-          "spotify": [
-            "1CEODgTmTwLyabvwd7HBty"
-          ],
-          "appleMusic": []
-        },
-        "type": "album",
-        "id": 50070
-      }
-    },
-    {
-      "position": 77,
-      "streams": 78,
-      "playedMs": 16315460,
+      "streams": 79,
+      "playedMs": 16525553,
       "indicator": null,
       "album": {
         "name": "Nothing but the Beat 2.0",
@@ -2908,6 +2870,44 @@
         },
         "type": "album",
         "id": 1110857
+      }
+    },
+    {
+      "position": 77,
+      "streams": 65,
+      "playedMs": 16453224,
+      "indicator": null,
+      "album": {
+        "name": "Viva La Vida or Death and All His Friends",
+        "image": "https://i.scdn.co/image/ab67616d0000b273e21cc1db05580b6f2d2a3b6e",
+        "label": "Parlophone UK",
+        "spotifyPopularity": 76,
+        "totalTracks": 10,
+        "releaseDate": 1211760000000,
+        "genres": [
+          "Alternative",
+          "Music",
+          "Rock",
+          "Adult Alternative"
+        ],
+        "artists": [
+          {
+            "id": 779,
+            "name": "Coldplay",
+            "image": "https://i.scdn.co/image/ab676161000051741ba8fc5f5c73e7e9313cc6eb"
+          }
+        ],
+        "externalIds": {
+          "upc": "5099921211454",
+          "ean": null,
+          "isrc": null,
+          "spotify": [
+            "1CEODgTmTwLyabvwd7HBty"
+          ],
+          "appleMusic": []
+        },
+        "type": "album",
+        "id": 50070
       }
     },
     {
@@ -3106,7 +3106,7 @@
         "name": "Swedish House Trax Vol. 1",
         "image": "https://i.scdn.co/image/ab67616d0000b2738e8cff6a8fb3d022ea17b00d",
         "label": "X5 Music Group",
-        "spotifyPopularity": 9,
+        "spotifyPopularity": 10,
         "totalTracks": 17,
         "releaseDate": 1309226400000,
         "genres": [],
@@ -5507,8 +5507,8 @@
     },
     {
       "position": 146,
-      "streams": 40,
-      "playedMs": 9622626,
+      "streams": 41,
+      "playedMs": 9864559,
       "indicator": null,
       "album": {
         "name": "The Fame",
@@ -5978,6 +5978,45 @@
     },
     {
       "position": 159,
+      "streams": 36,
+      "playedMs": 8933112,
+      "indicator": null,
+      "album": {
+        "name": "Clarity",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/d9/f2/2b/d9f22b74-8ef3-73d8-5da1-e5268c42f114/12UMGIM52120.rgb.jpg/768x768bb.jpg",
+        "label": "Interscope",
+        "spotifyPopularity": 0,
+        "totalTracks": 10,
+        "releaseDate": 1325376000000,
+        "genres": [
+          "Dance",
+          "Music",
+          "House",
+          "Rock",
+          "Electronic"
+        ],
+        "artists": [
+          {
+            "id": 2085,
+            "name": "Zedd",
+            "image": "https://i.scdn.co/image/ab67616100005174e28762aed82cde1178fb3873"
+          }
+        ],
+        "externalIds": {
+          "upc": "00602537173204",
+          "ean": null,
+          "isrc": null,
+          "spotify": [],
+          "appleMusic": [
+            "1440861402"
+          ]
+        },
+        "type": "album",
+        "id": 84614
+      }
+    },
+    {
+      "position": 160,
       "streams": 38,
       "playedMs": 8812961,
       "indicator": null,
@@ -6017,7 +6056,7 @@
       }
     },
     {
-      "position": 160,
+      "position": 161,
       "streams": 33,
       "playedMs": 8696008,
       "indicator": null,
@@ -6049,7 +6088,7 @@
       }
     },
     {
-      "position": 161,
+      "position": 162,
       "streams": 26,
       "playedMs": 8666919,
       "indicator": null,
@@ -6079,45 +6118,6 @@
         },
         "type": "album",
         "id": 262961
-      }
-    },
-    {
-      "position": 162,
-      "streams": 35,
-      "playedMs": 8661686,
-      "indicator": null,
-      "album": {
-        "name": "Clarity",
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/d9/f2/2b/d9f22b74-8ef3-73d8-5da1-e5268c42f114/12UMGIM52120.rgb.jpg/768x768bb.jpg",
-        "label": "Interscope",
-        "spotifyPopularity": 0,
-        "totalTracks": 10,
-        "releaseDate": 1325376000000,
-        "genres": [
-          "Dance",
-          "Music",
-          "House",
-          "Rock",
-          "Electronic"
-        ],
-        "artists": [
-          {
-            "id": 2085,
-            "name": "Zedd",
-            "image": "https://i.scdn.co/image/ab67616100005174e28762aed82cde1178fb3873"
-          }
-        ],
-        "externalIds": {
-          "upc": "00602537173204",
-          "ean": null,
-          "isrc": null,
-          "spotify": [],
-          "appleMusic": [
-            "1440861402"
-          ]
-        },
-        "type": "album",
-        "id": 84614
       }
     },
     {
@@ -6517,11 +6517,11 @@
       "indicator": null,
       "album": {
         "name": "Viva La Vida (Prospekt's March Edition)",
-        "image": "https://i.scdn.co/image/ab67616d0000b273121b47fdc79958a05e67fb17",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/56/bc/3d/56bc3d9c-0a4a-0466-643e-eb9bd748e8bf/190295978037.jpg/768x768bb.jpg",
         "label": "Parlophone UK",
-        "spotifyPopularity": 52,
+        "spotifyPopularity": 53,
         "totalTracks": 18,
-        "releaseDate": 1227484800000,
+        "releaseDate": 1227488400000,
         "genres": [
           "Alternative",
           "Music",
@@ -6536,13 +6536,15 @@
           }
         ],
         "externalIds": {
-          "upc": "5099926471150",
+          "upc": "5099926649252",
           "ean": null,
           "isrc": null,
           "spotify": [
-            "71pRFAwHBLrjKYRG7V1Q2o"
+            "4XTT0NcNHyvl6h9JX2AfEi"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "1122778377"
+          ]
         },
         "type": "album",
         "id": 104775
