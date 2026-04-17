@@ -1,0 +1,935 @@
+{
+  "enrichedAt": "2026-04-17T21:07:34.705Z",
+  "pastEvents": [
+    {
+      "id": 1,
+      "title": "The Local Train",
+      "date": "2018-06-07",
+      "venue": "Hard Rock Cafe",
+      "location": "Pune, India",
+      "type": "Acoustic",
+      "rating": 4,
+      "review": "Ecstatic, and fun vibes",
+      "enrichment": null
+    },
+    {
+      "id": 2,
+      "title": "Guns N Roses",
+      "date": "2021-08-30",
+      "venue": "",
+      "location": "Phoenix, AZ",
+      "type": "Concert",
+      "rating": 5,
+      "review": "Slash and Axl back together is everything — Welcome to the Jungle live is on another level. One of the loudest crowds I've ever been in.",
+      "enrichment": {
+        "source": "setlist.fm",
+        "venue": {
+          "name": "Footprint Center",
+          "city": "Phoenix",
+          "state": "Arizona",
+          "country": "US",
+          "address": null
+        },
+        "setlist": [
+          {
+            "name": "It's So Easy",
+            "encore": false
+          },
+          {
+            "name": "Mr. Brownstone",
+            "encore": false
+          },
+          {
+            "name": "Chinese Democracy",
+            "encore": false
+          },
+          {
+            "name": "Slither",
+            "encore": false
+          },
+          {
+            "name": "Double Talkin' Jive",
+            "encore": false
+          },
+          {
+            "name": "Welcome to the Jungle",
+            "encore": false
+          },
+          {
+            "name": "Better",
+            "encore": false
+          },
+          {
+            "name": "Estranged",
+            "encore": false
+          },
+          {
+            "name": "Live and Let Die",
+            "encore": false
+          },
+          {
+            "name": "You're Crazy",
+            "encore": false
+          },
+          {
+            "name": "Rocket Queen",
+            "encore": false
+          },
+          {
+            "name": "You Could Be Mine",
+            "encore": false
+          },
+          {
+            "name": "I Wanna Be Your Dog",
+            "encore": false
+          },
+          {
+            "name": "Absurd",
+            "encore": false
+          },
+          {
+            "name": "Civil War",
+            "encore": false
+          },
+          {
+            "name": "Slash Guitar Solo",
+            "encore": false
+          },
+          {
+            "name": "Sweet Child o' Mine",
+            "encore": false
+          },
+          {
+            "name": "November Rain",
+            "encore": false
+          },
+          {
+            "name": "Wichita Lineman",
+            "encore": false
+          },
+          {
+            "name": "Patience",
+            "encore": false
+          },
+          {
+            "name": "Knockin' on Heaven's Door",
+            "encore": false
+          },
+          {
+            "name": "Nightrain",
+            "encore": false
+          },
+          {
+            "name": "Madagascar",
+            "encore": true
+          },
+          {
+            "name": "Don't Cry",
+            "encore": true
+          },
+          {
+            "name": "The Seeker",
+            "encore": true
+          },
+          {
+            "name": "Paradise City",
+            "encore": true
+          }
+        ],
+        "images": [],
+        "ticketUrl": null,
+        "setlistUrl": "https://www.setlist.fm/setlist/guns-n-roses/2021/footprint-center-phoenix-az-638cea43.html",
+        "externalIds": {
+          "setlistfm": "638cea43",
+          "ticketmaster": null
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Born of Osiris & Veil of Maya",
+      "date": "2022-04-30",
+      "venue": "Nile Theater",
+      "location": "Mesa, AZ",
+      "type": "Concert",
+      "rating": 4,
+      "review": "Tight, heavy set from both bands. Nile Theater is the perfect size for this kind of show — close enough to feel the riffs physically.",
+      "enrichment": null
+    },
+    {
+      "id": 4,
+      "title": "Cosmic Gate",
+      "date": "2022-02-12",
+      "venue": "",
+      "location": "Tempe, AZ",
+      "type": "Concert",
+      "rating": 4,
+      "review": "Solid trance set with good energy. Great track selection from the classic catalog and the crowd was locked in all night.",
+      "enrichment": null
+    },
+    {
+      "id": 5,
+      "title": "AWOLNATION",
+      "date": "2022-10-29",
+      "venue": "",
+      "location": "Phoenix, AZ",
+      "type": "Concert",
+      "rating": 5,
+      "review": "Sail live is an experience on its own. Halloween weekend added to the energy and the crowd was absolutely electric.",
+      "enrichment": {
+        "source": "setlist.fm",
+        "venue": {
+          "name": "The Fillmore",
+          "city": "Charlotte",
+          "state": "North Carolina",
+          "country": "US",
+          "address": null
+        },
+        "setlist": [
+          {
+            "name": "Freaking Me Out",
+            "encore": false
+          },
+          {
+            "name": "Slam (Angel Miners)",
+            "encore": false
+          },
+          {
+            "name": "Soul Wars",
+            "encore": false
+          },
+          {
+            "name": "People",
+            "encore": false
+          },
+          {
+            "name": "Kill Your Heroes",
+            "encore": false
+          },
+          {
+            "name": "Run",
+            "encore": false
+          },
+          {
+            "name": "The Best",
+            "encore": false
+          },
+          {
+            "name": "Radical",
+            "encore": false
+          },
+          {
+            "name": "Handyman",
+            "encore": false
+          },
+          {
+            "name": "Passion",
+            "encore": false
+          },
+          {
+            "name": "Hollow Moon (Bad Wolf)",
+            "encore": false
+          },
+          {
+            "name": "Knights of Shame",
+            "encore": false
+          },
+          {
+            "name": "Just a Friend",
+            "encore": true
+          },
+          {
+            "name": "Pacific Coast Highway in the Movies",
+            "encore": true
+          },
+          {
+            "name": "Sail",
+            "encore": true
+          }
+        ],
+        "images": [],
+        "ticketUrl": null,
+        "setlistUrl": "https://www.setlist.fm/setlist/awolnation/2022/the-fillmore-charlotte-nc-4bbecb9e.html",
+        "externalIds": {
+          "setlistfm": "4bbecb9e",
+          "ticketmaster": null
+        }
+      }
+    },
+    {
+      "id": 6,
+      "title": "Coldplay",
+      "date": "2022-05-12",
+      "venue": "",
+      "location": "Glendale, AZ",
+      "type": "Concert",
+      "rating": 5,
+      "review": "The LED wristbands turned the whole stadium into a living light show. More of a full sensory experience than a concert — nothing else comes close visually.",
+      "enrichment": {
+        "source": "setlist.fm",
+        "venue": {
+          "name": "State Farm Stadium",
+          "city": "Glendale",
+          "state": "Arizona",
+          "country": "US",
+          "address": null
+        },
+        "setlist": [
+          {
+            "name": "Light Through the Veins",
+            "encore": false
+          },
+          {
+            "name": "Flying Theme",
+            "encore": false
+          },
+          {
+            "name": "Music of the Spheres",
+            "encore": false
+          },
+          {
+            "name": "Higher Power",
+            "encore": false
+          },
+          {
+            "name": "Adventure of a Lifetime",
+            "encore": false
+          },
+          {
+            "name": "Paradise",
+            "encore": false
+          },
+          {
+            "name": "Charlie Brown",
+            "encore": false
+          },
+          {
+            "name": "The Scientist",
+            "encore": false
+          },
+          {
+            "name": "Viva la Vida",
+            "encore": false
+          },
+          {
+            "name": "Hymn for the Weekend",
+            "encore": false
+          },
+          {
+            "name": "Let Somebody Go",
+            "encore": false
+          },
+          {
+            "name": "In My Place",
+            "encore": false
+          },
+          {
+            "name": "Yellow",
+            "encore": false
+          },
+          {
+            "name": "Sunrise",
+            "encore": false
+          },
+          {
+            "name": "Human Heart",
+            "encore": false
+          },
+          {
+            "name": "People of the Pride",
+            "encore": false
+          },
+          {
+            "name": "Clocks",
+            "encore": false
+          },
+          {
+            "name": "Infinity Sign",
+            "encore": false
+          },
+          {
+            "name": "Something Just Like This",
+            "encore": false
+          },
+          {
+            "name": "Midnight",
+            "encore": false
+          },
+          {
+            "name": "My Universe",
+            "encore": false
+          },
+          {
+            "name": "A Sky Full of Stars",
+            "encore": false
+          },
+          {
+            "name": "Biutyful",
+            "encore": false
+          },
+          {
+            "name": "Sparks",
+            "encore": false
+          },
+          {
+            "name": "Phoenix, AZ",
+            "encore": false
+          },
+          {
+            "name": "Fix You",
+            "encore": false
+          },
+          {
+            "name": "Humankind",
+            "encore": false
+          },
+          {
+            "name": "Biutyful",
+            "encore": false
+          },
+          {
+            "name": "A Wave",
+            "encore": false
+          }
+        ],
+        "images": [],
+        "ticketUrl": null,
+        "setlistUrl": "https://www.setlist.fm/setlist/coldplay/2022/state-farm-stadium-glendale-az-3b7d597.html",
+        "externalIds": {
+          "setlistfm": "3b7d597",
+          "ticketmaster": null
+        }
+      }
+    },
+    {
+      "id": 7,
+      "title": "Eric Prydz",
+      "date": "2024-02-09",
+      "venue": "Big Night Live",
+      "location": "Boston, MA",
+      "type": "Concert",
+      "rating": 5,
+      "review": "First Prydz show and completely blown away by the production. HOLO visuals in that room hit different — left genuinely speechless.",
+      "enrichment": {
+        "source": "setlist.fm",
+        "venue": {
+          "name": "Big Night Live",
+          "city": "Boston",
+          "state": "Massachusetts",
+          "country": "US",
+          "address": null
+        },
+        "setlist": [
+          {
+            "name": "Not Going Home",
+            "encore": false
+          },
+          {
+            "name": "The Gift",
+            "encore": false
+          },
+          {
+            "name": "Equinox",
+            "encore": false
+          },
+          {
+            "name": "Every Day",
+            "encore": false
+          },
+          {
+            "name": "Vega",
+            "encore": false
+          },
+          {
+            "name": "INOX",
+            "encore": false
+          },
+          {
+            "name": "Mighty Love",
+            "encore": false
+          },
+          {
+            "name": "Voices Inside My Head / Standing On The Shore",
+            "encore": false
+          },
+          {
+            "name": "Terminal 5",
+            "encore": false
+          },
+          {
+            "name": "Teenage Crime",
+            "encore": false
+          },
+          {
+            "name": "Midnight City",
+            "encore": false
+          },
+          {
+            "name": "Sol",
+            "encore": false
+          },
+          {
+            "name": "One More Time",
+            "encore": false
+          },
+          {
+            "name": "Pjanoo",
+            "encore": false
+          },
+          {
+            "name": "Viro",
+            "encore": false
+          },
+          {
+            "name": "Allein",
+            "encore": false
+          }
+        ],
+        "images": [],
+        "ticketUrl": null,
+        "setlistUrl": "https://www.setlist.fm/setlist/eric-prydz/2024/big-night-live-boston-ma-43ac575b.html",
+        "externalIds": {
+          "setlistfm": "43ac575b",
+          "ticketmaster": null
+        }
+      }
+    },
+    {
+      "id": 8,
+      "title": "Eric Prydz",
+      "date": "2024-06-07",
+      "venue": "Brooklyn Storehouse",
+      "location": "Brooklyn, NY",
+      "type": "Concert",
+      "rating": 5,
+      "review": "Warehouse setting added a grittier dimension to the show. Different energy from Big Night Live but the set was immaculate from start to finish.",
+      "enrichment": {
+        "source": "setlist.fm",
+        "venue": {
+          "name": "Brooklyn Navy Yard",
+          "city": "Brooklyn",
+          "state": "New York",
+          "country": "US",
+          "address": null
+        },
+        "setlist": [
+          {
+            "name": "Last Days",
+            "encore": false
+          },
+          {
+            "name": "Deep Fear",
+            "encore": false
+          },
+          {
+            "name": "Brooklyn Storehouse 2024 ID",
+            "encore": false
+          },
+          {
+            "name": "The Future",
+            "encore": false
+          },
+          {
+            "name": "Odyssey",
+            "encore": false
+          },
+          {
+            "name": "EPIC Radio 005 ID 01",
+            "encore": false
+          },
+          {
+            "name": "Verboten ID 02",
+            "encore": false
+          },
+          {
+            "name": "Hi Ibiza 2018 ID",
+            "encore": false
+          },
+          {
+            "name": "Tech One",
+            "encore": false
+          },
+          {
+            "name": "Xperimental Scratch",
+            "encore": false
+          },
+          {
+            "name": "Frequency 2024 ID 01",
+            "encore": false
+          },
+          {
+            "name": "Frequency 2024 ID 02",
+            "encore": false
+          },
+          {
+            "name": "Brooklyn Storehouse 2024 ID 01",
+            "encore": false
+          },
+          {
+            "name": "Rebel XX",
+            "encore": false
+          },
+          {
+            "name": "The Ave 2024 ID",
+            "encore": false
+          },
+          {
+            "name": "Brooklyn Storehouse 2024 ID 02",
+            "encore": false
+          },
+          {
+            "name": "EDC Mexico 2023 ID",
+            "encore": false
+          },
+          {
+            "name": "Of Me",
+            "encore": false
+          },
+          {
+            "name": "Womb Tokyo 2023 ID 02",
+            "encore": false
+          },
+          {
+            "name": "Phantom Paris 2023 ID",
+            "encore": false
+          },
+          {
+            "name": "The Return",
+            "encore": false
+          },
+          {
+            "name": "Juletider",
+            "encore": false
+          },
+          {
+            "name": "One Day",
+            "encore": false
+          },
+          {
+            "name": "2Night",
+            "encore": false
+          },
+          {
+            "name": "Take Me With You",
+            "encore": false
+          },
+          {
+            "name": "Every Day",
+            "encore": false
+          },
+          {
+            "name": "Pjanoo",
+            "encore": false
+          },
+          {
+            "name": "Melo",
+            "encore": false
+          },
+          {
+            "name": "Traveling People",
+            "encore": false
+          },
+          {
+            "name": "We Are Mirage",
+            "encore": false
+          },
+          {
+            "name": "Somebody's Watching Me",
+            "encore": false
+          }
+        ],
+        "images": [],
+        "ticketUrl": null,
+        "setlistUrl": "https://www.setlist.fm/setlist/eric-prydz/2024/brooklyn-navy-yard-brooklyn-ny-2b5694ea.html",
+        "externalIds": {
+          "setlistfm": "2b5694ea",
+          "ticketmaster": null
+        }
+      }
+    },
+    {
+      "id": 9,
+      "title": "Eric Prydz",
+      "date": "2025-01-24",
+      "venue": "Big Night Live",
+      "location": "Boston, MA",
+      "type": "Concert",
+      "rating": 5,
+      "review": "Came back for a second time at Big Night Live and it somehow hit harder. Different set, same jaw-dropping production — worth every trip.",
+      "enrichment": null
+    },
+    {
+      "id": 10,
+      "title": "Ben Bohmer",
+      "date": "2025-03-15",
+      "venue": "",
+      "location": "Boston, MA",
+      "type": "Concert",
+      "rating": 5,
+      "review": "Emotional and euphoric in equal measure. Ben Bohmer live is a completely different experience from the records — the builds pull you in and don't let go.",
+      "enrichment": null
+    },
+    {
+      "id": 11,
+      "title": "The Weeknd",
+      "date": "2025-06-10",
+      "venue": "",
+      "location": "Boston, MA",
+      "type": "Concert",
+      "rating": 5,
+      "review": "Massive stage production and incredible presence throughout. Blinding Lights and Starboy live in a packed stadium is something you carry with you.",
+      "enrichment": {
+        "source": "setlist.fm",
+        "venue": {
+          "name": "Gillette Stadium",
+          "city": "Foxborough",
+          "state": "Massachusetts",
+          "country": "US",
+          "address": null
+        },
+        "setlist": [
+          {
+            "name": "The Abyss",
+            "encore": false
+          },
+          {
+            "name": "Wake Me Up",
+            "encore": false
+          },
+          {
+            "name": "After Hours",
+            "encore": false
+          },
+          {
+            "name": "Starboy",
+            "encore": false
+          },
+          {
+            "name": "Heartless",
+            "encore": false
+          },
+          {
+            "name": "Faith",
+            "encore": false
+          },
+          {
+            "name": "Take My Breath",
+            "encore": false
+          },
+          {
+            "name": "Sacrifice",
+            "encore": false
+          },
+          {
+            "name": "How Do I Make You Love Me?",
+            "encore": false
+          },
+          {
+            "name": "Can't Feel My Face",
+            "encore": false
+          },
+          {
+            "name": "Lost in the Fire",
+            "encore": false
+          },
+          {
+            "name": "Kiss Land",
+            "encore": false
+          },
+          {
+            "name": "Often",
+            "encore": false
+          },
+          {
+            "name": "Given Up on Me",
+            "encore": false
+          },
+          {
+            "name": "I Was Never There",
+            "encore": false
+          },
+          {
+            "name": "Given Up on Me",
+            "encore": false
+          },
+          {
+            "name": "The Hills",
+            "encore": false
+          },
+          {
+            "name": "Baptized in Fear",
+            "encore": false
+          },
+          {
+            "name": "Open Hearts",
+            "encore": false
+          },
+          {
+            "name": "Cry for Me",
+            "encore": false
+          },
+          {
+            "name": "I Can't Fucking Sing",
+            "encore": false
+          },
+          {
+            "name": "São Paulo",
+            "encore": false
+          },
+          {
+            "name": "Until We're Skin & Bones",
+            "encore": false
+          },
+          {
+            "name": "Timeless",
+            "encore": false
+          },
+          {
+            "name": "RATHER LIE",
+            "encore": false
+          },
+          {
+            "name": "Creepin'",
+            "encore": false
+          },
+          {
+            "name": "Niagara Falls",
+            "encore": false
+          },
+          {
+            "name": "One of the Girls",
+            "encore": false
+          },
+          {
+            "name": "Stargirl Interlude",
+            "encore": false
+          },
+          {
+            "name": "Out of Time",
+            "encore": false
+          },
+          {
+            "name": "I Feel It Coming",
+            "encore": false
+          },
+          {
+            "name": "Die for You",
+            "encore": false
+          },
+          {
+            "name": "Is There Someone Else?",
+            "encore": false
+          },
+          {
+            "name": "Wicked Games",
+            "encore": false
+          },
+          {
+            "name": "Call Out My Name",
+            "encore": false
+          },
+          {
+            "name": "The Morning",
+            "encore": false
+          },
+          {
+            "name": "Save Your Tears",
+            "encore": false
+          },
+          {
+            "name": "Less Than Zero",
+            "encore": false
+          },
+          {
+            "name": "Blinding Lights",
+            "encore": false
+          },
+          {
+            "name": "Without a Warning",
+            "encore": false
+          },
+          {
+            "name": "Reflections Laughing",
+            "encore": false
+          },
+          {
+            "name": "High for This",
+            "encore": false
+          },
+          {
+            "name": "House of Balloons",
+            "encore": false
+          },
+          {
+            "name": "Moth to a Flame",
+            "encore": false
+          }
+        ],
+        "images": [],
+        "ticketUrl": null,
+        "setlistUrl": "https://www.setlist.fm/setlist/the-weeknd/2025/gillette-stadium-foxborough-ma-2b5a38ba.html",
+        "externalIds": {
+          "setlistfm": "2b5a38ba",
+          "ticketmaster": null
+        }
+      }
+    }
+  ],
+  "upcomingEvents": [
+    {
+      "id": 1,
+      "title": "Summer Music Festival 2025",
+      "date": "2025-07-15",
+      "time": "6:00 PM",
+      "venue": "Central Park Amphitheater",
+      "location": "City Center",
+      "type": "Festival",
+      "status": "Planning to Attend",
+      "description": "Multi-day festival featuring indie rock, electronic, and folk artists",
+      "artists": [
+        "Arctic Monkeys",
+        "Tame Impala",
+        "Bon Iver"
+      ],
+      "ticketUrl": "#",
+      "website": "#",
+      "enrichment": null
+    },
+    {
+      "id": 2,
+      "title": "Jazz at Lincoln Center",
+      "date": "2025-08-20",
+      "time": "8:00 PM",
+      "venue": "Rose Theater",
+      "location": "Lincoln Center",
+      "type": "Concert",
+      "status": "Tickets Purchased",
+      "description": "Evening of contemporary jazz with renowned musicians",
+      "artists": [
+        "Wynton Marsalis",
+        "Esperanza Spalding"
+      ],
+      "ticketUrl": "#",
+      "website": "#",
+      "enrichment": null
+    },
+    {
+      "id": 3,
+      "title": "Local Indie Showcase",
+      "date": "2025-09-10",
+      "time": "7:30 PM",
+      "venue": "The Mercury Lounge",
+      "location": "Lower East Side",
+      "type": "Showcase",
+      "status": "Interested",
+      "description": "Featuring up-and-coming local indie bands",
+      "artists": [
+        "The Midnight Echoes",
+        "Velvet Horizon"
+      ],
+      "ticketUrl": "#",
+      "website": "#",
+      "enrichment": null
+    }
+  ]
+}
