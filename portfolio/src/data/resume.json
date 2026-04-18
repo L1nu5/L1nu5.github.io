@@ -19,16 +19,16 @@
       "type": "Full-time",
       "location": "Natick, MA",
       "responsibilities": [
-        "Engaged in the migration of backend API framework for Simulink.ConfigSet",
-        "Added unit tests for the frontend and backend for Simulink in C++ and MATLAB",
-        "Worked on improving Simulink configuration management systems",
-        "Collaborated with cross-functional teams on MATLAB/Simulink products"
+        "Architected and shipped a data-driven Wizard Framework adopted by 5–6 engineering teams across ~8 products — see Projects for full design detail",
+        "Led migration of the backend API framework for Simulink.ConfigSet, reducing structural coupling between configuration layers",
+        "Built and maintained frontend and backend components for Simulink configuration management in C++, MATLAB, and JavaScript",
+        "Collaborated across product teams to define shared platform conventions and onboarding patterns for the wizard infrastructure"
       ],
       "technologies": ["C++", "JavaScript", "MATLAB", "Simulink"],
       "achievements": [
-        "Successfully migrated critical backend API framework",
-        "Improved test coverage for Simulink components",
-        "Enhanced configuration management reliability"
+        "Designed the Wizard Framework from scratch — replaced a predecessor system with cyclic JSON references, cutting per-wizard definition size and eliminating a class of structural runtime errors",
+        "Delivered v1 of the framework in ~6 weeks as sole architect and developer, now in production use across multiple MathWorks products",
+        "Improved test coverage and reliability of Simulink.ConfigSet configuration management pipeline"
       ]
     },
     {

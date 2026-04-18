@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Terminal } from '@xterm/xterm';
 import { FitAddon } from '@xterm/addon-fit';
 import { COMMANDS } from './terminalCommands';
+import { startSnake } from './terminal/SnakeGame';
 import '@xterm/xterm/css/xterm.css';
 import './TerminalShell.css';
 
@@ -16,12 +17,13 @@ const BOOT_LINES = [
 ];
 
 function TerminalShell({ onExit }) {
-  const containerRef = useRef(null);
-  const termRef      = useRef(null);
-  const inputRef     = useRef('');
-  const historyRef   = useRef([]);
-  const histIdxRef   = useRef(-1);
-  const promptRef    = useRef(true);
+  const containerRef    = useRef(null);
+  const termRef         = useRef(null);
+  const inputRef        = useRef('');
+  const historyRef      = useRef([]);
+  const histIdxRef      = useRef(-1);
+  const promptRef       = useRef(true);
+  const gameHandlerRef  = useRef(null);
 
   useEffect(() => {
     const term = new Terminal({
@@ -67,6 +69,7 @@ function TerminalShell({ onExit }) {
 
     // Input handling
     term.onKey(({ key, domEvent }) => {
+      if (gameHandlerRef.current) { gameHandlerRef.current({ key, domEvent }); return; }
       if (!promptRef.current) return;
 
       const k = domEvent.key;
@@ -76,7 +79,7 @@ function TerminalShell({ onExit }) {
         const raw = inputRef.current;
         inputRef.current = '';
         histIdxRef.current = -1;
-        processCommand(term, raw, onExit, historyRef);
+        processCommand(term, raw, onExit, historyRef, gameHandlerRef, promptRef);
 
       } else if (k === 'Backspace') {
         if (inputRef.current.length > 0) {
@@ -150,7 +153,7 @@ function clearInput(term, current) {
   term.write('\b \b'.repeat(current.length));
 }
 
-function processCommand(term, raw, onExit, historyRef) {
+function processCommand(term, raw, onExit, historyRef, gameHandlerRef, promptRef) {
   const trimmed = raw.trim();
 
   if (trimmed) {
@@ -174,6 +177,16 @@ function processCommand(term, raw, onExit, historyRef) {
   if (cmd === 'clear') {
     term.clear();
     writePrompt(term);
+    return;
+  }
+
+  if (cmd === 'snake') {
+    promptRef.current = false;
+    startSnake(
+      term,
+      (fn) => { gameHandlerRef.current = fn; },
+      () => { promptRef.current = true; writePrompt(term); }
+    );
     return;
   }
 

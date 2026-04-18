@@ -39,8 +39,6 @@ export function buildHelp() {
     cmd('contact',      '',        'Key links and email'),
     flag('-all',                   'All platforms and contact info'),
     blank(),
-    cmd('architecture', '',        'How this portfolio is built'),
-    blank(),
     g('  TERMINAL'),
     rule(),
     cmd('ls',           '',        'Browse all sections and flags'),
@@ -48,6 +46,7 @@ export function buildHelp() {
     cmd('grep',         '<term>',  'Search across all content'),
     cmd('history',      '',        'Command history'),
     cmd('clear',        '',        'Clear the terminal'),
+    cmd('snake',        '',        'Play Snake — WASD/arrows · Q to quit'),
     cmd('exit',         '',        'Return to mode selector'),
     blank(),
     d('  ─── no flags = summary view · add a flag for detail ───'),
@@ -90,8 +89,6 @@ export function buildLs() {
     blank(),
     w('  contact/'),
     e('  └── ', '-all',        'All platforms and contact info'),
-    blank(),
-    w('  architecture/'),
     blank(),
     dg("  type 'help' for full command reference"),
     blank(),
@@ -195,33 +192,3 @@ export function buildGrep(args) {
   return lines;
 }
 
-export function buildArchitecture() {
-  const arch = dataService.getArchitecture();
-  const info = dataService.getResumePersonalInfo();
-  const lines = [blank(), g('  PORTFOLIO ARCHITECTURE'), rule(), blank()];
-
-  lines.push(a('  CI/CD Pipeline'));
-  lines.push(w('  Trigger → Stats.fm → Enrich Events → Generate Diagram → Build → Deploy'));
-  lines.push(blank(), a('  Layers'));
-
-  for (const layer of arch.layers) {
-    lines.push(`  ${w(layer.label.padEnd(12))}${d(layer.sublabel)}`);
-    for (const node of layer.nodes) {
-      const sub    = node.sublabel ? `  —  ${node.sublabel}` : '';
-      const secret = node.secret   ? `  [${node.secret}]`   : '';
-      lines.push(d(`    · ${node.label}${sub}${secret}`));
-    }
-  }
-
-  lines.push(blank(), a('  External APIs'));
-  [
-    ['Stats.fm',     'music stats · weekly'],
-    ['Setlist.fm',   'concert setlists + venues'],
-    ['Ticketmaster', 'event images + ticket URLs'],
-    ['Deezer',       'artist photos · no key required'],
-    ['Kroki.io',     'diagram rendering · no key required'],
-  ].forEach(([api, desc]) => lines.push(`  ${w(api.padEnd(16))}${d(desc)}`));
-
-  lines.push(blank(), d(`  Source: ${info.github}`), blank());
-  return lines;
-}

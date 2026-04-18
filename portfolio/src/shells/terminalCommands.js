@@ -1,4 +1,4 @@
-import { buildHelp, buildLs, buildNeofetch, buildGrep, buildArchitecture } from './terminal/commands/system';
+import { buildHelp, buildLs, buildNeofetch, buildGrep } from './terminal/commands/system';
 import { buildWhoami, buildEducation, buildContact } from './terminal/commands/info';
 import { buildResume } from './terminal/commands/resume';
 import { buildProjects } from './terminal/commands/projects';
@@ -17,8 +17,6 @@ export const COMMANDS = {
   education:    (args) => buildEducation(args),
   contact:      (args) => buildContact(args),
   socials:      (args) => buildContact(args),
-  architecture: ()     => buildArchitecture(),
-  arch:         ()     => buildArchitecture(),
   neofetch:     ()     => buildNeofetch(),
   grep:         (args) => buildGrep(args),
 };

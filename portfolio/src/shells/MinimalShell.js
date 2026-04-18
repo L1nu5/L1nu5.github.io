@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import dataService from '../services/dataService';
 import ExitButton from '../components/ExitButton';
 
@@ -10,6 +10,125 @@ const C = {
   rule:    '#1e1e1e',
   accent:  '#888',
 };
+
+const COLS = 90;
+const ROWS = 36;
+const CELL = 7;
+
+function nextGen(grid) {
+  return grid.map((row, r) =>
+    row.map((cell, c) => {
+      const n = [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]]
+        .reduce((s, [dr, dc]) => s + (grid[r + dr]?.[c + dc] ?? 0), 0);
+      return cell ? (n === 2 || n === 3 ? 1 : 0) : (n === 3 ? 1 : 0);
+    })
+  );
+}
+
+function makeGrid(random = false) {
+  return Array.from({ length: ROWS }, () =>
+    Array.from({ length: COLS }, () => (random ? (Math.random() > 0.78 ? 1 : 0) : 0))
+  );
+}
+
+function drawGrid(canvas, grid) {
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = C.bg;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  grid.forEach((row, r) =>
+    row.forEach((cell, c) => {
+      if (cell) {
+        ctx.fillStyle = '#ffffff18';
+        ctx.fillRect(c * CELL + 1, r * CELL + 1, CELL - 2, CELL - 2);
+      }
+    })
+  );
+}
+
+function GameOfLife() {
+  const canvasRef = useRef(null);
+  const gridRef   = useRef(makeGrid(true));
+  const [running, setRunning] = useState(false);
+  const [gen,     setGen]     = useState(0);
+
+  useEffect(() => {
+    drawGrid(canvasRef.current, gridRef.current);
+  }, []);
+
+  useEffect(() => {
+    if (!running) return;
+    const id = setInterval(() => {
+      gridRef.current = nextGen(gridRef.current);
+      setGen(g => g + 1);
+      drawGrid(canvasRef.current, gridRef.current);
+    }, 80);
+    return () => clearInterval(id);
+  }, [running]);
+
+  function randomize() {
+    gridRef.current = makeGrid(true);
+    setGen(0);
+    drawGrid(canvasRef.current, gridRef.current);
+  }
+
+  function clear() {
+    setRunning(false);
+    gridRef.current = makeGrid(false);
+    setGen(0);
+    drawGrid(canvasRef.current, gridRef.current);
+  }
+
+  function handleCanvasClick(e) {
+    const canvas = canvasRef.current;
+    const rect   = canvas.getBoundingClientRect();
+    const scaleX = (COLS * CELL) / rect.width;
+    const scaleY = (ROWS * CELL) / rect.height;
+    const c = Math.floor((e.clientX - rect.left) * scaleX / CELL);
+    const r = Math.floor((e.clientY - rect.top) * scaleY / CELL);
+    if (r >= 0 && r < ROWS && c >= 0 && c < COLS) {
+      const g = gridRef.current.map(row => [...row]);
+      g[r][c] = g[r][c] ? 0 : 1;
+      gridRef.current = g;
+      drawGrid(canvas, g);
+    }
+  }
+
+  const btn = (label, onClick) => (
+    <button
+      onClick={onClick}
+      style={{
+        background: 'none', border: `1px solid ${C.dim}`, color: C.muted,
+        fontSize: '0.68rem', letterSpacing: '0.1em', padding: '0.25rem 0.8rem',
+        cursor: 'pointer', textTransform: 'uppercase',
+      }}
+      onMouseEnter={e => { e.currentTarget.style.color = C.fg; e.currentTarget.style.borderColor = C.accent; }}
+      onMouseLeave={e => { e.currentTarget.style.color = C.muted; e.currentTarget.style.borderColor = C.dim; }}
+    >
+      {label}
+    </button>
+  );
+
+  return (
+    <div>
+      <canvas
+        ref={canvasRef}
+        width={COLS * CELL}
+        height={ROWS * CELL}
+        style={{ display: 'block', width: '100%', cursor: 'crosshair', border: `1px solid ${C.rule}` }}
+        onClick={handleCanvasClick}
+      />
+      <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.6rem', alignItems: 'center', flexWrap: 'wrap' }}>
+        {btn(running ? 'Pause' : 'Run', () => setRunning(r => !r))}
+        {btn('Randomize', randomize)}
+        {btn('Clear', clear)}
+        <span style={{ fontSize: '0.65rem', color: C.dim, marginLeft: 'auto' }}>
+          gen {gen} · click to toggle cells
+        </span>
+      </div>
+    </div>
+  );
+}
 
 const Rule = () => (
   <div style={{ height: '1px', background: C.rule, margin: '3rem 0' }} />
@@ -25,6 +144,7 @@ const Section = ({ label, children }) => (
 );
 
 function MinimalShell({ onExit }) {
+  const [showLife, setShowLife] = useState(false);
   const info       = dataService.getPersonalInfo();
   const resumeInfo = dataService.getResumePersonalInfo();
   const summary    = dataService.getSummary();
@@ -205,6 +325,31 @@ function MinimalShell({ onExit }) {
               </a>
             ))}
           </div>
+        </Section>
+
+        <Rule />
+
+        {/* Game of Life */}
+        <Section label="Conway's Game of Life">
+          <p style={{ fontSize: '0.82rem', color: C.muted, margin: '0 0 1rem 0', lineHeight: 1.6 }}>
+            A cellular automaton running in your browser. Click cells to draw, or randomize and watch it evolve.
+          </p>
+          {!showLife ? (
+            <button
+              onClick={() => setShowLife(true)}
+              style={{
+                background: 'none', border: `1px solid ${C.dim}`, color: C.muted,
+                fontSize: '0.72rem', letterSpacing: '0.1em', padding: '0.35rem 1rem',
+                cursor: 'pointer', textTransform: 'uppercase',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.color = C.fg; e.currentTarget.style.borderColor = C.accent; }}
+              onMouseLeave={e => { e.currentTarget.style.color = C.muted; e.currentTarget.style.borderColor = C.dim; }}
+            >
+              Launch
+            </button>
+          ) : (
+            <GameOfLife />
+          )}
         </Section>
 
         {/* Footer */}
