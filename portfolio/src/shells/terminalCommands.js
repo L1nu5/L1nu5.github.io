@@ -17,12 +17,6 @@ const stars = r        => '★'.repeat(r) + '☆'.repeat(5 - r);
 const rule  = (n = 58) => d('  ' + '─'.repeat(n));
 const blank = ()       => '';
 
-// Progress bar
-const bar = (lvl, w = 20) => {
-  const filled = Math.round(lvl / 100 * w);
-  return g('█'.repeat(filled)) + d('░'.repeat(w - filled));
-};
-
 // Two-column row: left is green, right is white
 const row = (left, leftW, right) =>
   `  ${g(pad(left, leftW))}  ${w(right)}`;
