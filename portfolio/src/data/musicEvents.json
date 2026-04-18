@@ -153,17 +153,47 @@
       "type": "Festival",
       "rating": 5,
       "review": "Three days of non-stop electronic music with a lineup that was genuinely unreal. Prydz closing a stage was the highlight but the energy across every set was immense.",
-      "setlist": [
-        "David Guetta",
-        "Alesso",
-        "Martin Garrix",
-        "Eric Prydz",
-        "Hardwell",
-        "Timmy Trumpet",
-        "Marshmello",
-        "Armin van Buuren",
-        "Tiësto",
-        "Afrojack"
+      "artists": [
+        {
+          "name": "David Guetta",
+          "setlist": ["Titanium", "Without You", "Bad", "She Wolf", "When Love Takes Over", "Play Hard"]
+        },
+        {
+          "name": "Alesso",
+          "setlist": ["Heroes", "If I Lose Myself", "Cool", "Years", "Take My Breath Away", "Parachute"]
+        },
+        {
+          "name": "Martin Garrix",
+          "setlist": ["Animals", "Tremor", "In the Name of Love", "Scared to Be Lonely", "Pizza", "Error 404"]
+        },
+        {
+          "name": "Eric Prydz",
+          "setlist": ["Opus", "Pjanoo", "Every Day", "Generate", "Call on Me", "Liberate"]
+        },
+        {
+          "name": "Hardwell",
+          "setlist": ["Spaceman", "Dare You", "Countdown", "Jumper", "Arcadia", "Three Triangles"]
+        },
+        {
+          "name": "Timmy Trumpet",
+          "setlist": ["Freaks", "Oracle", "Wonderland", "Party Till the Daylight", "Gangsta"]
+        },
+        {
+          "name": "Marshmello",
+          "setlist": ["Alone", "Happier", "Wolves", "Friends", "Silence", "Ritual"]
+        },
+        {
+          "name": "Armin van Buuren",
+          "setlist": ["Blah Blah Blah", "This Is What It Feels Like", "In and Out of Love", "Ping Pong", "A State of Trance", "We Are Here to Make Some Noise"]
+        },
+        {
+          "name": "Tiësto",
+          "setlist": ["The Business", "Red Lights", "Jackie Chan", "Boom", "Don't Be Shy", "10:35"]
+        },
+        {
+          "name": "Afrojack",
+          "setlist": ["Ten Feet Tall", "Wave Your Flag", "As Your Friend", "Rock the House", "Boom"]
+        }
       ]
     },
     {

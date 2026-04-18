@@ -81,8 +81,11 @@ function buildHelp() {
     flag('-concerts',              'Full chronological table'),
     flag('-reviews',               'Personal concert reviews'),
     flag('-best',                  '5-star shows only'),
-    flag('-setlist',               'Artist lineups for festivals'),
+    flag('-setlist',               'Setlists for any event with data'),
     flag('-stats',                 'Stats.fm lifetime data'),
+    flag('-eventid <id>',          'Scope to a specific event'),
+    flag('-eventid <id> -setlist', 'Setlist for that event'),
+    flag('-eventid <id> -date',    'Date + venue for that event'),
     blank(),
     cmd('education',    '',        'Academic background'),
     flag('-full',                  'Coursework · achievements'),
@@ -365,36 +368,135 @@ function buildProjects(args) {
   ];
 }
 
+// ── Arg parser: -key value or bare -flag ─────────
+function parseArgs(args) {
+  const flags = new Set();
+  const opts  = {};
+  for (let i = 0; i < args.length; i++) {
+    if (args[i].startsWith('-')) {
+      const key  = args[i].slice(1).toLowerCase();
+      const next = args[i + 1];
+      if (next && !next.startsWith('-')) {
+        opts[key] = next;
+        i++;
+      } else {
+        flags.add(key);
+      }
+    }
+  }
+  return { flags, opts };
+}
+
 // ─────────────────────────────────────────────────
 // music
 // ─────────────────────────────────────────────────
+function renderSetlist(ev) {
+  const lines = [];
+  lines.push(`  ${g(ev.title)}  ${d('id:' + ev.id)}`);
+  lines.push(`  ${d(ev.date)}  ·  ${a(ev.venue || ev.location)}  ·  ${d(ev.location)}`);
+  lines.push(d('  ' + '═'.repeat(54)));
+  lines.push(blank());
+
+  if (ev.type === 'Festival' && ev.artists?.length) {
+    // Festival: artist → setlist tree
+    ev.artists.forEach((artist, ai) => {
+      const isLastArtist = ai === ev.artists.length - 1;
+      const branch = isLastArtist ? '└─' : '├─';
+      lines.push(`  ${d(branch)}  ${g(artist.name)}`);
+      if (artist.setlist?.length) {
+        artist.setlist.forEach((track, ti) => {
+          const pipe = isLastArtist ? '   ' : '│  ';
+          lines.push(`  ${d(pipe)}  ${d(String(ti + 1).padStart(2) + '.')}  ${w(track)}`);
+        });
+        if (!isLastArtist) lines.push(`  ${d('│')}`);
+      }
+    });
+  } else if (ev.setlist?.length) {
+    // Regular event: flat song list
+    ev.setlist.forEach((track, i) =>
+      lines.push(`  ${d(String(i + 1).padStart(2) + '.')}  ${w(track)}`)
+    );
+  } else {
+    lines.push(d('  No setlist data for this event.'));
+  }
+
+  lines.push(blank());
+  return lines;
+}
+
 function buildMusic(args) {
   const past     = dataService.getPastEvents();
   const settings = dataService.getMusicSettings();
   const sorted   = [...past].sort((a, b) => new Date(a.date) - new Date(b.date));
   const avg      = (past.reduce((s, e) => s + e.rating, 0) / past.length).toFixed(1);
+  const { flags, opts } = parseArgs(args);
 
   const CD = 12, CA = 26, CL = 20;
   const TW = CD + CA + CL + 8;
   const tableRule = d('  ' + '─'.repeat(TW));
   const tableRow  = ev =>
-    `  ${d(pad(ev.date, CD))}${w(pad(trunc(ev.title, CA - 1), CA))}${a(pad(trunc(ev.location, CL - 1), CL))}${g(stars(ev.rating))}`;
+    `  ${d(pad(ev.id.toString(), 4))}${d(pad(ev.date, CD))}${w(pad(trunc(ev.title, CA - 1), CA))}${a(pad(trunc(ev.location, CL - 1), CL))}${g(stars(ev.rating))}`;
 
-  if (args.includes('-concerts')) {
+  // ── -eventid selector ──────────────────────────
+  if (opts.eventid) {
+    const ev = past.find(e => e.id === parseInt(opts.eventid));
+    if (!ev) return [blank(), rd(`  No event found with id ${opts.eventid}`), blank()];
+
+    if (flags.has('setlist')) return [blank(), g('  SETLIST'), rule(), ...renderSetlist(ev)];
+
+    if (flags.has('date')) {
+      return [
+        blank(),
+        g(`  ${ev.title}`),
+        rule(),
+        blank(),
+        `  ${a(pad('ID', 12))}${w(ev.id)}`,
+        `  ${a(pad('Date', 12))}${w(ev.date)}`,
+        `  ${a(pad('Venue', 12))}${w(ev.venue || '—')}`,
+        `  ${a(pad('Location', 12))}${w(ev.location)}`,
+        `  ${a(pad('Type', 12))}${w(ev.type)}`,
+        blank(),
+      ];
+    }
+
+    // Default: full event detail
+    return [
+      blank(),
+      g(`  ${ev.title}`),
+      rule(),
+      blank(),
+      `  ${a(pad('ID', 12))}${w(ev.id)}`,
+      `  ${a(pad('Date', 12))}${w(ev.date)}`,
+      `  ${a(pad('Venue', 12))}${w(ev.venue || '—')}`,
+      `  ${a(pad('Location', 12))}${w(ev.location)}`,
+      `  ${a(pad('Type', 12))}${w(ev.type)}`,
+      `  ${a(pad('Rating', 12))}${w(stars(ev.rating))}`,
+      blank(),
+      ...(ev.review ? wrapText(`"${ev.review}"`, 68) : []),
+      blank(),
+      ...(ev.setlist?.length || ev.artists?.length
+        ? [dg("  type 'music -eventid " + ev.id + " -setlist' to view setlist"), blank()]
+        : []),
+    ];
+  }
+
+  // ── Global flags ───────────────────────────────
+  if (flags.has('concerts')) {
     return [
       blank(),
       g(`  CONCERTS ATTENDED  (${past.length})`),
       tableRule,
-      `  ${a(pad('DATE', CD))}${a(pad('ARTIST', CA))}${a(pad('LOCATION', CL))}${a('RATING')}`,
+      `  ${a(pad('ID', 4))}${a(pad('DATE', CD))}${a(pad('ARTIST', CA))}${a(pad('LOCATION', CL))}${a('RATING')}`,
       tableRule,
       ...sorted.map(tableRow),
       tableRule,
       d(`  ${past.length} concerts  ·  avg ${avg}/5  ·  ${settings.favoriteGenre}`),
+      d(`  use 'music -eventid <id>' for event details`),
       blank(),
     ];
   }
 
-  if (args.includes('-reviews')) {
+  if (flags.has('reviews')) {
     const lines = [blank(), g('  CONCERT REVIEWS'), rule(), blank()];
     for (const ev of [...sorted].reverse()) {
       lines.push(`  ${g(stars(ev.rating))}  ${ev.rating === 5 ? g(pad(ev.title, 28)) : w(pad(ev.title, 28))}${d(ev.date)}`);
@@ -405,7 +507,7 @@ function buildMusic(args) {
     return lines;
   }
 
-  if (args.includes('-best')) {
+  if (flags.has('best')) {
     const best = sorted.filter(e => e.rating === 5);
     return [
       blank(),
@@ -417,27 +519,17 @@ function buildMusic(args) {
     ];
   }
 
-  if (args.includes('-setlist')) {
-    const withSetlist = sorted.filter(ev => ev.setlist?.length);
-    if (withSetlist.length === 0) {
-      return [blank(), d('  No setlist data available.'), blank()];
-    }
+  if (flags.has('setlist')) {
+    const withData = sorted.filter(ev => ev.setlist?.length || ev.artists?.length);
+    if (withData.length === 0) return [blank(), d('  No setlist data available for any event.'), blank()];
     const lines = [blank(), g('  SETLISTS'), rule(), blank()];
-    for (const ev of [...withSetlist].reverse()) {
-      lines.push(`  ${g(ev.title)}  ${d(ev.date)}  ·  ${a(ev.location)}`);
-      lines.push(d('  ' + '─'.repeat(50)));
-      ev.setlist.forEach((artist, i) =>
-        lines.push(`  ${d(String(i + 1).padStart(2) + '.')}  ${w(artist)}`)
-      );
-      lines.push(blank());
-    }
+    for (const ev of [...withData].reverse()) lines.push(...renderSetlist(ev));
     return lines;
   }
 
-  if (args.includes('-stats')) {
-    return fetchMusicStats();
-  }
+  if (flags.has('stats')) return fetchMusicStats();
 
+  // Default summary
   const recent = [...sorted].reverse().slice(0, 3);
   return [
     blank(),
@@ -446,6 +538,7 @@ function buildMusic(args) {
     blank(),
     w(`  ${past.length} concerts attended  ·  avg rating ${avg}/5`),
     d(`  favorite genre: ${settings.favoriteGenre}`),
+    d(`  favorites: ${settings.favoriteArtists?.join(' · ') ?? '—'}`),
     blank(),
     a('  RECENT SHOWS'),
     d('  ' + '─'.repeat(58)),
@@ -456,6 +549,7 @@ function buildMusic(args) {
     ),
     blank(),
     dg('  music -concerts  · -reviews  · -best  · -setlist  · -stats'),
+    dg('  music -eventid <id> [-setlist | -date]'),
     blank(),
   ];
 }
