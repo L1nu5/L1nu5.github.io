@@ -1,5 +1,5 @@
 import dataService from '../../../services/dataService';
-import { g, dg, w, d, a, blank, rule, row, wrapText } from '../ansi';
+import { g, dg, d, a, blank, rule, row, wrapText } from '../ansi';
 
 export function buildProjects(args) {
   const projects = dataService.getProjects();
