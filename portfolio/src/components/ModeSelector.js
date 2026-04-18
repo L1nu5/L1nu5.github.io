@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import './ModeSelector.css';
 import dataService from '../services/dataService';
 
-const GREEN  = '#00ff41';
-const DGREEN = '#008f11';
-const BLUE   = '#4dabf7';
+const GREEN = '#00ff41';
+const BLUE  = '#4dabf7';
 const WHITE  = '#c9d1d9';
 
 function TerminalPreview() {
