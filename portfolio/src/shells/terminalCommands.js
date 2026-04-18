@@ -81,6 +81,7 @@ function buildHelp() {
     flag('-concerts',              'Full chronological table'),
     flag('-reviews',               'Personal concert reviews'),
     flag('-best',                  '5-star shows only'),
+    flag('-setlist',               'Artist lineups for festivals'),
     flag('-stats',                 'Stats.fm lifetime data'),
     blank(),
     cmd('education',    '',        'Academic background'),
@@ -136,7 +137,8 @@ function buildLs() {
     e('  ├── ', '-concerts',   'Full chronological table'),
     e('  ├── ', '-reviews',    'Personal concert reviews'),
     e('  ├── ', '-best',       '5-star shows only'),
-    e('  └── ', '-stats',      'Stats.fm lifetime data'),
+    e('  ├── ', '-setlist',   'Artist lineups for festivals'),
+    e('  └── ', '-stats',     'Stats.fm lifetime data'),
     blank(),
     w('  education/'),
     e('  └── ', '-full',       'Degrees · coursework · achievements'),
@@ -415,6 +417,23 @@ function buildMusic(args) {
     ];
   }
 
+  if (args.includes('-setlist')) {
+    const withSetlist = sorted.filter(ev => ev.setlist?.length);
+    if (withSetlist.length === 0) {
+      return [blank(), d('  No setlist data available.'), blank()];
+    }
+    const lines = [blank(), g('  SETLISTS'), rule(), blank()];
+    for (const ev of [...withSetlist].reverse()) {
+      lines.push(`  ${g(ev.title)}  ${d(ev.date)}  ·  ${a(ev.location)}`);
+      lines.push(d('  ' + '─'.repeat(50)));
+      ev.setlist.forEach((artist, i) =>
+        lines.push(`  ${d(String(i + 1).padStart(2) + '.')}  ${w(artist)}`)
+      );
+      lines.push(blank());
+    }
+    return lines;
+  }
+
   if (args.includes('-stats')) {
     return fetchMusicStats();
   }
@@ -436,7 +455,7 @@ function buildMusic(args) {
       `  ${w(pad(trunc(ev.title, 27), 28))}${d(pad(trunc(ev.location, 19), 20))}${d(ev.date)}`
     ),
     blank(),
-    dg('  music -concerts  · -reviews  · -best  · -stats'),
+    dg('  music -concerts  · -reviews  · -best  · -setlist  · -stats'),
     blank(),
   ];
 }

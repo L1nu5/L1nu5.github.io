@@ -145,6 +145,28 @@
       "review": "Emotional and euphoric in equal measure. Ben Bohmer live is a completely different experience from the records — the builds pull you in and don't let go."
     },
     {
+      "id": 12,
+      "title": "Ultra Music Festival 2023",
+      "date": "2023-03-24",
+      "venue": "Bayfront Park",
+      "location": "Miami, FL",
+      "type": "Festival",
+      "rating": 5,
+      "review": "Three days of non-stop electronic music with a lineup that was genuinely unreal. Prydz closing a stage was the highlight but the energy across every set was immense.",
+      "setlist": [
+        "David Guetta",
+        "Alesso",
+        "Martin Garrix",
+        "Eric Prydz",
+        "Hardwell",
+        "Timmy Trumpet",
+        "Marshmello",
+        "Armin van Buuren",
+        "Tiësto",
+        "Afrojack"
+      ]
+    },
+    {
       "id": 11,
       "title": "The Weeknd",
       "date": "2025-06-10",
@@ -156,10 +178,11 @@
     }
   ],
   "settings": {
-    "favoriteGenre": "Rock/Metal",
+    "favoriteGenre": "Electronic / Trance",
+    "favoriteArtists": ["Eric Prydz", "Ben Bohmer"],
     "totalConcertsAttended": 15,
     "totalFestivalsAttended": 5,
-    "bestConcertEver": "Metallica",
+    "bestConcertEver": "Eric Prydz",
     "musicPassionDescription": "Music has always been a huge part of my life alongside gaming and chess. I love attending live concerts and experiencing the energy of music festivals. From intimate acoustic sessions to massive stadium shows, each event offers a unique experience that connects people through the power of music."
   }
 }
