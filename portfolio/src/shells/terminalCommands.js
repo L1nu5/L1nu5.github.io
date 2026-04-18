@@ -442,7 +442,25 @@ function buildMusic(args) {
     const ev = past.find(e => e.id === parseInt(opts.eventid));
     if (!ev) return [blank(), rd(`  No event found with id ${opts.eventid}`), blank()];
 
-    if (flags.has('setlist')) return [blank(), g('  SETLIST'), rule(), ...renderSetlist(ev)];
+    if (flags.has('setlist')) {
+      return fetch('/data/events-enriched.json')
+        .then(r => r.json())
+        .then(enriched => {
+          const enrichedEv = [...(enriched.pastEvents || []), ...(enriched.upcomingEvents || [])]
+            .find(e => e.id === ev.id);
+          // Merge enrichment artistSetlists into artists array if available
+          const merged = { ...ev };
+          const artistSetlists = enrichedEv?.enrichment?.artistSetlists;
+          if (artistSetlists && merged.artists) {
+            merged.artists = merged.artists.map(artist => ({
+              ...artist,
+              setlist: artistSetlists[artist.name]?.map(t => t.name ?? t) ?? artist.setlist ?? []
+            }));
+          }
+          return [blank(), g('  SETLIST'), rule(), ...renderSetlist(merged)];
+        })
+        .catch(() => [blank(), g('  SETLIST'), rule(), ...renderSetlist(ev)]);
+    }
 
     if (flags.has('date')) {
       return [

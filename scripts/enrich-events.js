@@ -68,7 +68,7 @@ function toSfmDate(iso) {
 }
 
 async function querySetlistFm(apiKey, event) {
-  const artist = encodeURIComponent((event.artists && event.artists[0]) || event.title);
+  const artist = encodeURIComponent(primaryArtist(event));
   const url = `${SFM_BASE}/search/setlists?artistName=${artist}&date=${toSfmDate(event.date)}&p=1`;
 
   const data = await makeRequest(url, {
@@ -92,9 +92,9 @@ async function querySetlistFm(apiKey, event) {
   return makeEnrichment('setlist.fm', {
     found: true,
     venue: {
-      name:    hit.venue?.name    || null,
-      city:    city?.name         || null,
-      state:   city?.state        || null,
+      name:    hit.venue?.name     || null,
+      city:    city?.name          || null,
+      state:   city?.state         || null,
       country: city?.country?.code || null,
       address: null
     },
@@ -102,6 +102,51 @@ async function querySetlistFm(apiKey, event) {
     setlistUrl: hit.url || null,
     externalIds: { setlistfm: hit.id || null, ticketmaster: null }
   });
+}
+
+// Fetch one artist's setlist at a specific date (for festival enrichment)
+async function fetchArtistSetlistAtEvent(apiKey, artistName, date) {
+  const url = `${SFM_BASE}/search/setlists?artistName=${encodeURIComponent(artistName)}&date=${toSfmDate(date)}&p=1`;
+  try {
+    const data = await makeRequest(url, {
+      'x-api-key': apiKey,
+      'Accept': 'application/json'
+    });
+    const hit = data?.setlist?.[0];
+    if (!hit) return null;
+    const tracks = (hit.sets?.set || []).flatMap(set =>
+      (set.song || []).map(song => ({ name: song.name, encore: !!set.encore }))
+    ).filter(s => s.name);
+    return { tracks, setlistUrl: hit.url || null };
+  } catch {
+    return null;
+  }
+}
+
+// For festival events: fetch each artist's setlist from setlist.fm
+async function enrichFestivalSetlists(apiKey, event, cacheEntry) {
+  const artists = event.artists;
+  if (!Array.isArray(artists) || !artists.length) return;
+  if (typeof artists[0] !== 'object') return;  // not the festival schema
+  if (cacheEntry.setlistsFetched) return;       // already done
+
+  console.log(`    Fetching festival setlists for ${event.title} (${artists.length} artists)…`);
+  cacheEntry.artistSetlists = cacheEntry.artistSetlists || {};
+
+  for (const artist of artists) {
+    if (cacheEntry.artistSetlists[artist.name] !== undefined) continue; // cached
+    const result = await fetchArtistSetlistAtEvent(apiKey, artist.name, event.date);
+    if (result?.tracks?.length) {
+      cacheEntry.artistSetlists[artist.name] = result.tracks;
+      console.log(`      ✓ ${artist.name} — ${result.tracks.length} tracks`);
+    } else {
+      cacheEntry.artistSetlists[artist.name] = null;
+      console.log(`      – ${artist.name}: no setlist found`);
+    }
+    await delay(350);
+  }
+
+  cacheEntry.setlistsFetched = true;
 }
 
 // ─────────────────────────────────────────────
@@ -233,6 +278,10 @@ async function enrichEvent(event, cache, sfmKey, tmKey) {
       cached.artistImage = await fetchArtistImage(event);
       await delay(200);
     }
+    // Backfill festival setlists if not yet fetched
+    if (sfmKey && event.type === 'Festival' && !cached.setlistsFetched) {
+      await enrichFestivalSetlists(sfmKey, event, cached);
+    }
     return cached;
   }
 
@@ -277,6 +326,11 @@ async function enrichEvent(event, cache, sfmKey, tmKey) {
   if (cache.entries[key].artistImage) console.log(`    🎨 Artist image found`);
   await delay(200);
 
+  // For festival events: fetch per-artist setlists
+  if (sfmKey && event.type === 'Festival') {
+    await enrichFestivalSetlists(sfmKey, event, cache.entries[key]);
+  }
+
   return cache.entries[key];
 }
 
@@ -292,14 +346,15 @@ function buildOutput(pastPairs, upcomingPairs) {
       ...event,
       enrichment: hasData
         ? {
-            source:      entry?.found ? entry.source : null,
-            venue:       entry?.venue       || null,
-            setlist:     entry?.setlist     || [],
-            images:      entry?.images      || [],
+            source:         entry?.found ? entry.source : null,
+            venue:          entry?.venue          || null,
+            setlist:        entry?.setlist        || [],
+            artistSetlists: entry?.artistSetlists || null,
+            images:         entry?.images         || [],
             artistImage,
-            ticketUrl:   entry?.ticketUrl   || null,
-            setlistUrl:  entry?.setlistUrl  || null,
-            externalIds: entry?.externalIds || { setlistfm: null, ticketmaster: null }
+            ticketUrl:      entry?.ticketUrl      || null,
+            setlistUrl:     entry?.setlistUrl     || null,
+            externalIds:    entry?.externalIds    || { setlistfm: null, ticketmaster: null }
           }
         : null
     };
