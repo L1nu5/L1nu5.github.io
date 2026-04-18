@@ -1,39 +1,55 @@
 import dataService from '../services/dataService';
 
-// ── palette ──────────────────────────────────────
-const G  = '#00ff41';
-const DG = '#008f11';
-const W  = '#c9d1d9';
-const M  = '#444444';
-const A  = '#777777';
+// ── ANSI helpers ──────────────────────────────────
+const R  = '\x1b[0m';                                   // reset
+const g  = s => `\x1b[38;2;0;255;65m${s}${R}`;         // green  #00ff41
+const dg = s => `\x1b[38;2;0;143;17m${s}${R}`;         // dark green #008f11
+const w  = s => `\x1b[38;2;201;209;217m${s}${R}`;      // white  #c9d1d9
+const d  = s => `\x1b[2m${s}${R}`;                     // dim
+const a  = s => `\x1b[38;2;119;119;119m${s}${R}`;      // accent #777
+const b  = s => `\x1b[1m${s}${R}`;                     // bold
+const rd = s => `\x1b[31m${s}${R}`;                    // red (errors)
 
-// ── primitives ───────────────────────────────────
-const blank  = ()          => ({ text: '' });
-const hdr    = (t)         => ({ text: t,              color: G  });
-const rule   = (n = 44)    => ({ text: '─'.repeat(n),  color: '#1a3a1a' });
-const ln     = (t, c = W)  => ({ text: t,              color: c  });
-const dim    = (t)         => ({ text: t,              color: M  });
-const acc    = (t)         => ({ text: t,              color: A  });
-const tip    = (t)         => ({ text: `  ${t}`,       color: DG });
-const pad    = (s, n)      => String(s).padEnd(n);
-const trunc  = (s, n)      => s.length > n ? s.slice(0, n - 1) + '…' : s;
-const stars  = (r)         => '★'.repeat(r) + '☆'.repeat(5 - r);
-const bar    = (lvl, w=20) => '█'.repeat(Math.round(lvl/100*w)) + '░'.repeat(w - Math.round(lvl/100*w));
+// ── Layout helpers ────────────────────────────────
+const pad   = (s, n)   => String(s).padEnd(n);
+const trunc = (s, n)   => s.length > n ? s.slice(0, n - 1) + '…' : s;
+const stars = r        => '★'.repeat(r) + '☆'.repeat(5 - r);
+const rule  = (n = 58) => d('  ' + '─'.repeat(n));
+const blank = ()       => '';
 
-function wrapText(text, width, indent = '') {
+// Progress bar
+const bar = (lvl, w = 20) => {
+  const filled = Math.round(lvl / 100 * w);
+  return g('█'.repeat(filled)) + d('░'.repeat(w - filled));
+};
+
+// Two-column row: left is green, right is white
+const row = (left, leftW, right) =>
+  `  ${g(pad(left, leftW))}  ${w(right)}`;
+
+// Command + optional flag signature + description
+const cmd  = (c, sig, desc, cw = 22) =>
+  `  ${g(pad(c + (sig ? ` ${sig}` : ''), cw))}  ${w(desc)}`;
+
+// Flag row (indented under its parent command)
+const flag = (f, desc, cw = 22, fw = 14) =>
+  `  ${pad('', cw)}  ${a(pad(f, fw))}  ${d(desc)}`;
+
+// Word wrap — returns string[]
+function wrapText(text, width, indent = '  ') {
   const words = text.split(' ');
-  const out = [];
+  const lines = [];
   let cur = indent;
   for (const word of words) {
     if (cur.length + word.length + 1 > width && cur.trim()) {
-      out.push(ln(cur));
+      lines.push(w(cur));
       cur = indent + word;
     } else {
       cur = cur === indent ? indent + word : cur + ' ' + word;
     }
   }
-  if (cur.trim()) out.push(ln(cur));
-  return out;
+  if (cur.trim()) lines.push(w(cur));
+  return lines;
 }
 
 // ─────────────────────────────────────────────────
@@ -42,38 +58,50 @@ function wrapText(text, width, indent = '') {
 function buildHelp() {
   return [
     blank(),
-    ln('  ┌─────────────────────────────────────────────┐'),
-    ln('  │  PORTFOLIO TERMINAL  ·  ABHISHEK DEORE      │'),
-    ln('  └─────────────────────────────────────────────┘'),
+    d('  ┌─────────────────────────────────────────────────┐'),
+    `  │  ${b('PORTFOLIO TERMINAL')}  ·  ${g('ABHISHEK DEORE')}          │`,
+    d('  └─────────────────────────────────────────────────┘'),
     blank(),
-    hdr('  NAVIGATION'),
-    rule(46),
-    ln(`  ${pad('whoami', 16)}About me and current role`),
-    ln(`  ${pad('resume', 16)}Work history and skills`),
-    ln(`  ${pad('projects', 16)}Engineering projects`),
-    ln(`  ${pad('education', 16)}Academic background`),
-    ln(`  ${pad('music', 16)}Concert history and stats`),
-    ln(`  ${pad('contact', 16)}Social links and contact info`),
-    ln(`  ${pad('architecture', 16)}How this portfolio is built`),
+    g('  NAVIGATION'),
+    rule(),
+    cmd('whoami',       '',        'About me · current role'),
+    flag('-interests',             'Chess · music · gaming details'),
     blank(),
-    hdr('  TERMINAL'),
-    rule(46),
-    ln(`  ${pad('ls', 16)}Browse all sections and flags`),
-    ln(`  ${pad('neofetch', 16)}System information`),
-    ln(`  ${pad('grep [term]', 16)}Search across all content`),
-    ln(`  ${pad('history', 16)}Command history`),
-    ln(`  ${pad('clear', 16)}Clear the terminal`),
-    ln(`  ${pad('exit', 16)}Return to mode selector`),
+    cmd('resume',       '',        'Work history summary'),
+    flag('-timeline',              'Career arc at a glance'),
+    flag('-skills',                'Skill proficiency bars'),
+    flag('-exp',                   'Work experience only'),
+    flag('-full',                  'Full history + skills'),
     blank(),
-    hdr('  FLAGS'),
-    rule(46),
-    dim(`  resume    -timeline  -skills  -exp  -full`),
-    dim(`  music     -concerts  -reviews  -best`),
-    dim(`  projects  -wizard  -portfolio`),
-    dim(`  contact   -all        education  -full`),
+    cmd('projects',     '',        'Engineering projects'),
+    flag('-wizard',                'Wizard framework deep dive'),
+    flag('-portfolio',             'This website deep dive'),
     blank(),
-    tip('plain command = summary view · add a flag for detail'),
-    tip('↑ / ↓ to navigate command history'),
+    cmd('music',        '',        'Concert history and stats'),
+    flag('-concerts',              'Full chronological table'),
+    flag('-reviews',               'Personal concert reviews'),
+    flag('-best',                  '5-star shows only'),
+    flag('-stats',                 'Stats.fm lifetime data'),
+    blank(),
+    cmd('education',    '',        'Academic background'),
+    flag('-full',                  'Coursework · achievements'),
+    blank(),
+    cmd('contact',      '',        'Key links and email'),
+    flag('-all',                   'All platforms and contact info'),
+    blank(),
+    cmd('architecture', '',        'How this portfolio is built'),
+    blank(),
+    g('  TERMINAL'),
+    rule(),
+    cmd('ls',           '',        'Browse all sections and flags'),
+    cmd('neofetch',     '',        'System information'),
+    cmd('grep',         '<term>',  'Search across all content'),
+    cmd('history',      '',        'Command history'),
+    cmd('clear',        '',        'Clear the terminal'),
+    cmd('exit',         '',        'Return to mode selector'),
+    blank(),
+    d('  ─── no flags = summary view · add a flag for detail ───'),
+    d('  ─── ↑ / ↓  navigate history                         ───'),
     blank(),
   ];
 }
@@ -83,37 +111,42 @@ function buildHelp() {
 // ─────────────────────────────────────────────────
 function buildLs() {
   const past = dataService.getPastEvents();
+  const e = (prefix, f, desc) =>
+    `  ${d(prefix)}${a(pad(f, 14))}  ${d(desc)}`;
+
   return [
     blank(),
-    hdr('  SECTIONS'),
-    rule(54),
+    g('  SECTIONS'),
+    rule(),
     blank(),
-    ln('  whoami/           About me · current role'),
+    w('  whoami/'),
+    e('  └── ', '-interests',  'Chess · music · gaming details'),
     blank(),
-    ln('  resume/'),
-    acc('  ├── -timeline     Career arc at a glance'),
-    acc('  ├── -skills       Proficiency bars for every skill'),
-    acc('  ├── -exp          Work experience only'),
-    acc('  └── -full         Complete history and skills'),
+    w('  resume/'),
+    e('  ├── ', '-timeline',   'Career arc at a glance'),
+    e('  ├── ', '-skills',     'Proficiency bars for every skill'),
+    e('  ├── ', '-exp',        'Work experience only'),
+    e('  └── ', '-full',       'Complete history and skills'),
     blank(),
-    ln('  projects/'),
-    acc('  ├── -wizard       Deep dive: wizard framework'),
-    acc('  └── -portfolio    Deep dive: this website'),
+    w('  projects/'),
+    e('  ├── ', '-wizard',     'Deep dive: wizard framework'),
+    e('  └── ', '-portfolio',  'Deep dive: this website'),
     blank(),
-    ln(`  music/            ${past.length} concerts attended`),
-    acc('  ├── -concerts     Full chronological table'),
-    acc('  ├── -reviews      Personal concert reviews'),
-    acc('  └── -best         5-star shows only'),
+    `  ${w('music/')}  ${d(`${past.length} concerts attended`)}`,
+    e('  ├── ', '-concerts',   'Full chronological table'),
+    e('  ├── ', '-reviews',    'Personal concert reviews'),
+    e('  ├── ', '-best',       '5-star shows only'),
+    e('  └── ', '-stats',      'Stats.fm lifetime data'),
     blank(),
-    ln('  education/'),
-    acc('  └── -full         Degrees · coursework · achievements'),
+    w('  education/'),
+    e('  └── ', '-full',       'Degrees · coursework · achievements'),
     blank(),
-    ln('  contact/'),
-    acc('  └── -all          All platforms and contact info'),
+    w('  contact/'),
+    e('  └── ', '-all',        'All platforms and contact info'),
     blank(),
-    ln('  architecture/'),
+    w('  architecture/'),
     blank(),
-    tip("type 'help' for full command reference"),
+    dg("  type 'help' for full command reference"),
     blank(),
   ];
 }
@@ -130,43 +163,43 @@ function buildWhoami(args) {
   if (args.includes('-interests')) {
     const lichess = links.find(l => l.platform === 'Lichess');
     const avg     = (past.reduce((s, e) => s + e.rating, 0) / past.length).toFixed(1);
-    const faves   = [...past].sort((a,b) => b.rating - a.rating).slice(0, 3).map(e => e.title);
+    const faves   = [...past].sort((a, b) => b.rating - a.rating).slice(0, 3).map(e => e.title);
     return [
       blank(),
-      hdr(info.name),
-      rule(info.name.length),
-      ln(`  ${info.title}  ·  ${info.location}`),
+      g(`  ${info.name}`),
+      rule(info.name.length + 2),
+      w(`  ${info.title}  ·  ${info.location}`),
       blank(),
-      ...wrapText(summary, 72, '  '),
+      ...wrapText(summary, 72),
       blank(),
-      hdr('  INTERESTS'),
-      rule(44),
+      g('  INTERESTS'),
+      rule(),
       blank(),
-      ln('  ♟  Chess', G),
-      dim(`     ${lichess ? lichess.url : 'Lichess: @Abhish3k'}`),
-      dim('     Active player · enjoy classical and rapid formats'),
+      `  ${g('♟')}  ${w('Chess')}`,
+      d(`     ${lichess ? lichess.url : 'lichess.org/@Abhish3k'}`),
+      d('     Active player · enjoy classical and rapid formats'),
       blank(),
-      ln('  ♫  Music', G),
-      dim(`     ${past.length} concerts · avg rating ${avg}★`),
-      dim(`     Favorites: ${faves.join(' · ')}`),
+      `  ${g('♫')}  ${w('Music')}`,
+      d(`     ${past.length} concerts · avg rating ${avg}★`),
+      d(`     Favorites: ${faves.join(' · ')}`),
       blank(),
-      ln('  🎮  Gaming', G),
-      dim('     PC gamer · shipped AAA titles at Ubisoft'),
-      dim('     Far Cry 5 · Starlink · Prince of Persia'),
+      `  ${g('🎮')}  ${w('Gaming')}`,
+      d('     PC gamer · shipped AAA titles at Ubisoft'),
+      d('     Far Cry 5 · Starlink · Prince of Persia'),
       blank(),
     ];
   }
 
   return [
     blank(),
-    hdr(info.name),
-    rule(info.name.length),
-    ln(`  ${info.title}  ·  ${info.location}`),
-    acc(`  ${info.website}`),
+    g(`  ${info.name}`),
+    rule(info.name.length + 2),
+    w(`  ${info.title}  ·  ${info.location}`),
+    a(`  ${info.website}`),
     blank(),
-    ...wrapText(summary, 72, '  '),
+    ...wrapText(summary, 72),
     blank(),
-    tip("type 'whoami -interests' for chess · music · gaming details"),
+    dg("  type 'whoami -interests' for chess · music · gaming details"),
     blank(),
   ];
 }
@@ -179,21 +212,24 @@ function buildResume(args) {
   const edu  = dataService.getInstitutions();
 
   if (args.includes('-timeline')) {
-    const lines = [blank(), hdr('  CAREER TIMELINE'), rule(64), blank()];
+    const lines = [blank(), g('  CAREER TIMELINE'), rule(), blank()];
     for (const job of [...work].reverse()) {
       const year    = job.period.slice(0, 4);
       const current = job.period.includes('Present');
       const bullet  = current ? '══' : '──';
-      const marker  = current ? ln : dim;
-      lines.push(marker(`  ${year}  ${bullet}  ${pad(job.position, 28)}${pad(job.company, 22)}${current ? '← present' : ''}`, current ? G : W));
+      const company = pad(job.company, 22);
+      const pos     = pad(job.position, 28);
+      lines.push(current
+        ? `  ${g(year)}  ${g(bullet)}  ${g(pos)}${g(company)}${dg('← present')}`
+        : `  ${d(year)}  ${d(bullet)}  ${d(pos)}${d(company)}`
+      );
     }
     lines.push(blank());
-    // Show education in timeline
     for (const inst of [...edu].reverse()) {
       const year = inst.period.slice(0, 4);
-      lines.push(dim(`  ${year}  ░░  [${inst.degree.split(',')[0]}  ·  GPA ${inst.gpa}]`));
+      lines.push(d(`  ${year}  ░░  [${inst.degree.split(',')[0]}  ·  GPA ${inst.gpa}]`));
     }
-    lines.push(blank(), dim(`  ${work.length} roles · game dev → startup → enterprise`), blank());
+    lines.push(blank(), d(`  ${work.length} roles · game dev → startup → enterprise`), blank());
     return lines;
   }
 
@@ -204,11 +240,11 @@ function buildResume(args) {
       if (!grouped[s.category]) grouped[s.category] = [];
       grouped[s.category].push(s);
     }
-    const lines = [blank(), hdr('  SKILLS'), rule(52), blank()];
+    const lines = [blank(), g('  SKILLS'), rule(), blank()];
     for (const [cat, items] of Object.entries(grouped)) {
-      lines.push(acc(`  ${cat.toUpperCase()}`));
+      lines.push(a(`  ${cat.toUpperCase()}`));
       for (const s of items) {
-        lines.push(ln(`  ${pad(s.name, 20)} ${bar(s.level)}  ${s.level}`));
+        lines.push(`  ${w(pad(s.name, 20))} ${bar(s.level)}  ${d(String(s.level))}`);
       }
       lines.push(blank());
     }
@@ -216,15 +252,13 @@ function buildResume(args) {
   }
 
   if (args.includes('-exp') || args.includes('-full')) {
-    const lines = [blank(), hdr('  WORK EXPERIENCE'), rule(60)];
+    const lines = [blank(), g('  WORK EXPERIENCE'), rule()];
     for (const job of work) {
       lines.push(blank());
-      lines.push(ln(`  ${pad(job.company, 36)}${job.period}`, G));
-      lines.push(acc(`  ${job.position}  ·  ${job.type}  ·  ${job.location}`));
-      for (const r of job.responsibilities) {
-        lines.push(ln(`    · ${trunc(r, 72)}`));
-      }
-      lines.push(dim(`  Stack: ${job.technologies.join(' · ')}`));
+      lines.push(`  ${g(pad(job.company, 36))}${d(job.period)}`);
+      lines.push(a(`  ${job.position}  ·  ${job.type}  ·  ${job.location}`));
+      for (const r of job.responsibilities) lines.push(w(`    · ${trunc(r, 72)}`));
+      lines.push(d(`  Stack: ${job.technologies.join(' · ')}`));
     }
     if (args.includes('-full')) {
       lines.push(...buildResume(['-skills']).slice(1));
@@ -234,20 +268,19 @@ function buildResume(args) {
     return lines;
   }
 
-  // Default: summary (current role + brief)
   const current = work[0];
   return [
     blank(),
-    hdr('  RESUME'),
-    rule(44),
+    g('  RESUME'),
+    rule(),
     blank(),
-    ln(`  ${current.company}`, G),
-    ln(`  ${current.position}  ·  ${current.period}`),
-    dim(`  ${current.location}`),
+    g(`  ${current.company}`),
+    w(`  ${current.position}  ·  ${current.period}`),
+    d(`  ${current.location}`),
     blank(),
-    ...wrapText(dataService.getSummary(), 72, '  '),
+    ...wrapText(dataService.getSummary(), 72),
     blank(),
-    tip('resume -timeline  · -skills  · -exp  · -full'),
+    dg('  resume -timeline  · -skills  · -exp  · -full'),
     blank(),
   ];
 }
@@ -263,87 +296,69 @@ function buildProjects(args) {
   if (args.includes('-wizard') || args.includes('-1')) {
     const lines = [
       blank(),
-      hdr(`  ${wizard.name.toUpperCase()}`),
-      rule(60),
-      acc(`  ${wizard.tagline}`),
-      dim(`  ${wizard.context}  ·  ${wizard.period}  ·  ${wizard.role}`),
-      dim(`  Stack: ${wizard.technologies.join(' · ')}`),
+      g(`  ${wizard.name.toUpperCase()}`),
+      rule(),
+      a(`  ${wizard.tagline}`),
+      d(`  ${wizard.context}  ·  ${wizard.period}  ·  ${wizard.role}`),
+      d(`  Stack: ${wizard.technologies.join(' · ')}`),
       blank(),
-      ...wrapText(wizard.description, 72, '  '),
+      ...wrapText(wizard.description, 72),
       blank(),
-      hdr('  ARCHITECTURE LAYERS'),
-      rule(60),
+      g('  ARCHITECTURE LAYERS'), rule(),
     ];
     for (const layer of wizard.architecture.layers) {
-      lines.push(dim(`  ├─ ${layer.split(' — ')[0]}`));
-      const desc = layer.split(' — ')[1];
-      if (desc) lines.push(dim(`  │  ${trunc(desc, 64)}`));
+      const [name, desc] = layer.split(' — ');
+      lines.push(d(`  ├─ ${name}`));
+      if (desc) lines.push(d(`  │  ${trunc(desc, 64)}`));
     }
-    lines.push(blank(), hdr('  DESIGN PATTERNS'), rule(60));
+    lines.push(blank(), g('  DESIGN PATTERNS'), rule());
     for (const p of wizard.architecture.patterns) {
       const [name, ...rest] = p.split(' — ');
-      lines.push(ln(`  ${pad(name, 18)}`, A));
-      lines.push(dim(`    ${trunc(rest.join(' — '), 66)}`));
+      lines.push(`  ${a(pad(name, 18))}`);
+      lines.push(d(`    ${trunc(rest.join(' — '), 66)}`));
     }
-    lines.push(blank(), hdr('  KEY FEATURES'), rule(60));
-    for (const f of wizard.keyFeatures) {
-      lines.push(dim(`  · ${trunc(f, 70)}`));
-    }
-    lines.push(blank(), hdr('  ROADMAP'), rule(60));
-    for (const i of wizard.improvements) {
-      lines.push(dim(`  · ${trunc(i, 70)}`));
-    }
-    lines.push(
-      blank(),
-      acc(`  Impact: ${wizard.impact.teams} · ${wizard.impact.products} · ${wizard.impact.note.slice(0,60)}…`),
-      blank(),
-    );
+    lines.push(blank(), g('  KEY FEATURES'), rule());
+    for (const f of wizard.keyFeatures) lines.push(d(`  · ${trunc(f, 70)}`));
+    lines.push(blank(), g('  ROADMAP'), rule());
+    for (const i of wizard.improvements) lines.push(d(`  · ${trunc(i, 70)}`));
+    lines.push(blank(), a(`  Impact: ${wizard.impact.teams} · ${wizard.impact.products}`), blank());
     return lines;
   }
 
   if (args.includes('-portfolio') || args.includes('-2')) {
     const lines = [
       blank(),
-      hdr(`  ${site.name.toUpperCase()}`),
-      rule(60),
-      acc(`  ${site.tagline}`),
-      dim(`  ${site.context}  ·  ${site.period}  ·  ${site.role}`),
-      dim(`  Stack: ${site.technologies.join(' · ')}`),
+      g(`  ${site.name.toUpperCase()}`),
+      rule(),
+      a(`  ${site.tagline}`),
+      d(`  ${site.context}  ·  ${site.period}  ·  ${site.role}`),
+      d(`  Stack: ${site.technologies.join(' · ')}`),
       blank(),
-      ...wrapText(site.description, 72, '  '),
+      ...wrapText(site.description, 72),
       blank(),
-      hdr('  FEATURES'),
-      rule(44),
+      g('  FEATURES'), rule(),
     ];
-    for (const f of site.features) {
-      lines.push(dim(`  · ${f}`));
-    }
-    lines.push(
-      blank(),
-      dim(`  Live:   ${site.liveUrl}`),
-      dim(`  Source: ${site.githubUrl}`),
-      blank(),
-    );
+    for (const f of site.features) lines.push(d(`  · ${f}`));
+    lines.push(blank(), d(`  Live:   ${site.liveUrl}`), d(`  Source: ${site.githubUrl}`), blank());
     return lines;
   }
 
-  // Default: brief summary of both
   return [
     blank(),
-    hdr('  PROJECTS'),
-    rule(44),
+    g('  PROJECTS'),
+    rule(),
     blank(),
-    ln(`  [1] ${wizard.name}`, G),
-    acc(`      ${wizard.tagline}`),
-    dim(`      ${wizard.context}  ·  ${wizard.period}`),
-    dim(`      Stack: ${wizard.technologies.join(' · ')}`),
+    row('[1]', 4, wizard.name),
+    a(`      ${wizard.tagline}`),
+    d(`      ${wizard.context}  ·  ${wizard.period}`),
+    d(`      Stack: ${wizard.technologies.join(' · ')}`),
     blank(),
-    ln(`  [2] ${site.name}`, G),
-    acc(`      ${site.tagline}`),
-    dim(`      ${site.context}  ·  ${site.period}`),
-    dim(`      ${site.liveUrl}`),
+    row('[2]', 4, site.name),
+    a(`      ${site.tagline}`),
+    d(`      ${site.context}  ·  ${site.period}`),
+    d(`      ${site.liveUrl}`),
     blank(),
-    tip('projects -wizard  · -portfolio'),
+    dg('  projects -wizard  · -portfolio'),
     blank(),
   ];
 }
@@ -357,33 +372,32 @@ function buildMusic(args) {
   const sorted   = [...past].sort((a, b) => new Date(a.date) - new Date(b.date));
   const avg      = (past.reduce((s, e) => s + e.rating, 0) / past.length).toFixed(1);
 
-  const COL_DATE  = 12;
-  const COL_ART   = 26;
-  const COL_LOC   = 20;
-  const TABLE_W   = COL_DATE + COL_ART + COL_LOC + 5 + 2;
+  const CD = 12, CA = 26, CL = 20;
+  const TW = CD + CA + CL + 8;
+  const tableRule = d('  ' + '─'.repeat(TW));
+  const tableRow  = ev =>
+    `  ${d(pad(ev.date, CD))}${w(pad(trunc(ev.title, CA - 1), CA))}${a(pad(trunc(ev.location, CL - 1), CL))}${g(stars(ev.rating))}`;
 
   if (args.includes('-concerts')) {
     return [
       blank(),
-      hdr(`  CONCERTS ATTENDED  (${past.length})`),
-      rule(TABLE_W),
-      acc(`  ${pad('DATE', COL_DATE)}${pad('ARTIST', COL_ART)}${pad('LOCATION', COL_LOC)}RATING`),
-      rule(TABLE_W),
-      ...sorted.map(ev =>
-        ln(`  ${pad(ev.date, COL_DATE)}${pad(trunc(ev.title, COL_ART-1), COL_ART)}${pad(trunc(ev.location, COL_LOC-1), COL_LOC)}${stars(ev.rating)}`)
-      ),
-      rule(TABLE_W),
-      dim(`  ${past.length} concerts  ·  avg ${avg}/5  ·  ${settings.favoriteGenre}`),
+      g(`  CONCERTS ATTENDED  (${past.length})`),
+      tableRule,
+      `  ${a(pad('DATE', CD))}${a(pad('ARTIST', CA))}${a(pad('LOCATION', CL))}${a('RATING')}`,
+      tableRule,
+      ...sorted.map(tableRow),
+      tableRule,
+      d(`  ${past.length} concerts  ·  avg ${avg}/5  ·  ${settings.favoriteGenre}`),
       blank(),
     ];
   }
 
   if (args.includes('-reviews')) {
-    const lines = [blank(), hdr('  CONCERT REVIEWS'), rule(64), blank()];
+    const lines = [blank(), g('  CONCERT REVIEWS'), rule(), blank()];
     for (const ev of [...sorted].reverse()) {
-      lines.push(ln(`  ${stars(ev.rating)}  ${pad(ev.title, 28)}${ev.date}`, ev.rating === 5 ? G : W));
-      lines.push(dim(`  ${ev.location}`));
-      lines.push(...wrapText(`"${ev.review}"`, 68, '  '));
+      lines.push(`  ${g(stars(ev.rating))}  ${ev.rating === 5 ? g(pad(ev.title, 28)) : w(pad(ev.title, 28))}${d(ev.date)}`);
+      lines.push(d(`  ${ev.location}`));
+      lines.push(...wrapText(`"${ev.review}"`, 68));
       lines.push(blank());
     }
     return lines;
@@ -391,37 +405,38 @@ function buildMusic(args) {
 
   if (args.includes('-best')) {
     const best = sorted.filter(e => e.rating === 5);
-    const lines = [blank(), hdr(`  5-STAR CONCERTS  (${best.length})`), rule(TABLE_W), blank()];
-    for (const ev of best) {
-      lines.push(ln(`  ${pad(ev.date, COL_DATE)}${pad(trunc(ev.title, COL_ART-1), COL_ART)}${ev.location}`, G));
-    }
-    lines.push(blank());
-    return lines;
+    return [
+      blank(),
+      g(`  5-STAR CONCERTS  (${best.length})`),
+      tableRule,
+      blank(),
+      ...best.map(ev => `  ${d(pad(ev.date, CD))}${g(pad(trunc(ev.title, CA - 1), CA))}${a(ev.location)}`),
+      blank(),
+    ];
   }
 
   if (args.includes('-stats')) {
     return fetchMusicStats();
   }
 
-  // Default summary
   const recent = [...sorted].reverse().slice(0, 3);
   return [
     blank(),
-    hdr('  MUSIC'),
-    rule(44),
+    g('  MUSIC'),
+    rule(),
     blank(),
-    ln(`  ${past.length} concerts attended  ·  avg rating ${avg}/5`),
-    dim(`  favorite genre: ${settings.favoriteGenre}`),
+    w(`  ${past.length} concerts attended  ·  avg rating ${avg}/5`),
+    d(`  favorite genre: ${settings.favoriteGenre}`),
     blank(),
-    acc('  RECENT SHOWS'),
-    rule(44),
-    acc(`  ${pad('ARTIST', 28)}${pad('LOCATION', 20)}DATE`),
-    rule(44),
+    a('  RECENT SHOWS'),
+    d('  ' + '─'.repeat(58)),
+    `  ${a(pad('ARTIST', 28))}${a(pad('LOCATION', 20))}${a('DATE')}`,
+    d('  ' + '─'.repeat(58)),
     ...recent.map(ev =>
-      ln(`  ${pad(trunc(ev.title, 27), 28)}${pad(trunc(ev.location, 19), 20)}${ev.date}`)
+      `  ${w(pad(trunc(ev.title, 27), 28))}${d(pad(trunc(ev.location, 19), 20))}${d(ev.date)}`
     ),
     blank(),
-    tip('music -concerts  · -reviews  · -best  · -stats'),
+    dg('  music -concerts  · -reviews  · -best  · -stats'),
     blank(),
   ];
 }
@@ -438,39 +453,35 @@ async function fetchMusicStats() {
     const tracks  = tracksRes.status  === 'fulfilled' && tracksRes.value.ok  ? await tracksRes.value.json()  : null;
     const genres  = genresRes.status  === 'fulfilled' && genresRes.value.ok  ? await genresRes.value.json()  : null;
 
-    const lines = [blank(), hdr('  STATS.FM — ALL TIME'), rule(44), blank()];
+    const lines = [blank(), g('  STATS.FM — ALL TIME'), rule(), blank()];
 
     if (artists?.items?.length) {
-      lines.push(acc('  TOP ARTISTS'));
-      artists.items.slice(0, 5).forEach((a, i) =>
-        lines.push(ln(`  ${i+1}.  ${a.artist?.name ?? a.name ?? '?'}`))
+      lines.push(a('  TOP ARTISTS'));
+      artists.items.slice(0, 5).forEach((item, i) =>
+        lines.push(w(`  ${i + 1}.  ${item.artist?.name ?? item.name ?? '?'}`))
       );
       lines.push(blank());
     }
-
     if (tracks?.items?.length) {
-      lines.push(acc('  TOP TRACKS'));
-      tracks.items.slice(0, 5).forEach((t, i) =>
-        lines.push(ln(`  ${i+1}.  ${t.track?.name ?? t.name ?? '?'}`))
+      lines.push(a('  TOP TRACKS'));
+      tracks.items.slice(0, 5).forEach((item, i) =>
+        lines.push(w(`  ${i + 1}.  ${item.track?.name ?? item.name ?? '?'}`))
       );
       lines.push(blank());
     }
-
     if (genres?.items?.length) {
-      lines.push(acc('  TOP GENRES'));
-      genres.items.slice(0, 5).forEach((g, i) =>
-        lines.push(ln(`  ${i+1}.  ${g.genre?.tag ?? g.tag ?? g.name ?? '?'}`))
+      lines.push(a('  TOP GENRES'));
+      genres.items.slice(0, 5).forEach((item, i) =>
+        lines.push(w(`  ${i + 1}.  ${item.genre?.tag ?? item.tag ?? item.name ?? '?'}`))
       );
       lines.push(blank());
     }
-
     if (!artists && !tracks && !genres) {
-      lines.push(dim('  Stats not yet generated — push to main to trigger the CI pipeline.'), blank());
+      lines.push(d('  Stats not yet generated — push to main to trigger CI.'), blank());
     }
-
     return lines;
   } catch {
-    return [blank(), dim('  Could not load stats data.'), blank()];
+    return [blank(), rd('  Could not load stats data.'), blank()];
   }
 }
 
@@ -481,34 +492,33 @@ function buildEducation(args) {
   const institutions = dataService.getInstitutions();
 
   if (args.includes('-full')) {
-    const lines = [blank(), hdr('  EDUCATION'), rule(44)];
+    const lines = [blank(), g('  EDUCATION'), rule()];
     for (const inst of institutions) {
       lines.push(blank());
-      lines.push(ln(`  ${inst.institution}`, G));
-      lines.push(ln(`  ${inst.degree}`));
-      lines.push(dim(`  ${inst.period}  ·  GPA ${inst.gpa}  ·  ${inst.location}`));
-      lines.push(blank(), acc('  Achievements:'));
-      for (const a of inst.achievements) lines.push(dim(`    · ${a}`));
-      lines.push(acc('  Coursework:'));
-      lines.push(dim(`    ${inst.highlights.slice(0,5).join('  ·  ')}`));
+      lines.push(g(`  ${inst.institution}`));
+      lines.push(w(`  ${inst.degree}`));
+      lines.push(d(`  ${inst.period}  ·  GPA ${inst.gpa}  ·  ${inst.location}`));
+      lines.push(blank(), a('  Achievements:'));
+      for (const achievement of inst.achievements) lines.push(d(`    · ${achievement}`));
+      lines.push(a('  Coursework:'));
+      lines.push(d(`    ${inst.highlights.slice(0, 5).join('  ·  ')}`));
     }
     lines.push(blank());
     return lines;
   }
 
-  // Default: degrees only
   return [
     blank(),
-    hdr('  EDUCATION'),
-    rule(44),
+    g('  EDUCATION'),
+    rule(),
     blank(),
-    ...institutions.map(inst => [
-      ln(`  ${inst.institution}`, G),
-      ln(`  ${inst.degree}`),
-      dim(`  ${inst.period}  ·  GPA ${inst.gpa}  ·  ${inst.location}`),
+    ...institutions.flatMap(inst => [
+      g(`  ${inst.institution}`),
+      w(`  ${inst.degree}`),
+      d(`  ${inst.period}  ·  GPA ${inst.gpa}  ·  ${inst.location}`),
       blank(),
-    ]).flat(),
-    tip('education -full  for coursework and achievements'),
+    ]),
+    dg('  education -full  for coursework and achievements'),
     blank(),
   ];
 }
@@ -521,33 +531,32 @@ function buildContact(args) {
   const info  = dataService.getContactInfo();
 
   if (args.includes('-all')) {
-    const lines = [blank(), hdr('  CONTACT'), rule(44), blank()];
+    const lines = [blank(), g('  CONTACT'), rule(), blank()];
     for (const l of links) {
-      lines.push(ln(`  ${pad(l.platform, 14)}${pad(l.username, 20)}${l.url}`));
+      lines.push(`  ${w(pad(l.platform, 14))}${a(pad(l.username, 20))}${d(l.url)}`);
     }
     lines.push(
       blank(),
-      dim(`  Email       ${info.email}`),
-      dim(`  Location    ${info.location}  ·  ${info.timezone}`),
-      dim(`  Available   ${info.availability}`),
-      dim(`  Response    ${info.responseTime}`),
+      `  ${d(pad('Email', 14))}${w(info.email)}`,
+      `  ${d(pad('Location', 14))}${w(info.location)}  ·  ${d(info.timezone)}`,
+      `  ${d(pad('Available', 14))}${w(info.availability)}`,
+      `  ${d(pad('Response', 14))}${w(info.responseTime)}`,
       blank(),
     );
     return lines;
   }
 
-  // Default: key links only
   const key = links.filter(l => ['LinkedIn', 'GitHub', 'Lichess'].includes(l.platform));
   return [
     blank(),
-    hdr('  CONTACT'),
-    rule(44),
+    g('  CONTACT'),
+    rule(),
     blank(),
-    dim(`  Email       ${info.email}`),
+    `  ${d(pad('Email', 14))}${w(info.email)}`,
     blank(),
-    ...key.map(l => ln(`  ${pad(l.platform, 14)}${l.url}`)),
+    ...key.map(l => `  ${w(pad(l.platform, 14))}${a(l.url)}`),
     blank(),
-    tip('contact -all  for all platforms'),
+    dg('  contact -all  for all platforms'),
     blank(),
   ];
 }
@@ -558,31 +567,31 @@ function buildContact(args) {
 function buildArchitecture() {
   const arch = dataService.getArchitecture();
   const info = dataService.getResumePersonalInfo();
-  const lines = [blank(), hdr('  PORTFOLIO ARCHITECTURE'), rule(54), blank()];
+  const lines = [blank(), g('  PORTFOLIO ARCHITECTURE'), rule(), blank()];
 
-  lines.push(acc('  CI/CD Pipeline'));
-  lines.push(ln('  Trigger → Stats.fm → Enrich Events → Generate Diagram → Build → Deploy'));
-  lines.push(blank(), acc('  Layers'));
+  lines.push(a('  CI/CD Pipeline'));
+  lines.push(w('  Trigger → Stats.fm → Enrich Events → Generate Diagram → Build → Deploy'));
+  lines.push(blank(), a('  Layers'));
 
   for (const layer of arch.layers) {
-    lines.push(ln(`  ${pad(layer.label, 12)}${layer.sublabel}`));
+    lines.push(`  ${w(pad(layer.label, 12))}${d(layer.sublabel)}`);
     for (const node of layer.nodes) {
       const sub    = node.sublabel ? `  —  ${node.sublabel}` : '';
       const secret = node.secret   ? `  [${node.secret}]`   : '';
-      lines.push(dim(`    · ${node.label}${sub}${secret}`));
+      lines.push(d(`    · ${node.label}${sub}${secret}`));
     }
   }
 
-  lines.push(blank(), acc('  External APIs'));
+  lines.push(blank(), a('  External APIs'));
   [
     ['Stats.fm',     'music stats · weekly'],
     ['Setlist.fm',   'concert setlists + venues'],
     ['Ticketmaster', 'event images + ticket URLs'],
     ['Deezer',       'artist photos · no key required'],
     ['Kroki.io',     'diagram rendering · no key required'],
-  ].forEach(([api, desc]) => lines.push(dim(`    ${pad(api, 16)}${desc}`)));
+  ].forEach(([api, desc]) => lines.push(`  ${w(pad(api, 16))}${d(desc)}`));
 
-  lines.push(blank(), dim(`  Source: ${info.github}`), blank());
+  lines.push(blank(), d(`  Source: ${info.github}`), blank());
   return lines;
 }
 
@@ -598,43 +607,38 @@ function buildNeofetch() {
   const lichess = links.find(l => l.platform === 'Lichess');
   const avg     = (past.reduce((s, e) => s + e.rating, 0) / past.length).toFixed(1);
   const user    = `${info.name.toLowerCase().replace(' ', '')}@portfolio`;
-  const sep     = '─'.repeat(user.length);
 
   const logo = [
-    '  ┌─────────┐',
-    '  │  ██ ██  │',
-    '  │  █████  │',
-    '  │  ██ ██  │',
-    '  └─────────┘',
-    '             ',
-    '             ',
+    g('  ┌─────────┐'),
+    g('  │  ██ ██  │'),
+    g('  │  █████  │'),
+    g('  │  ██ ██  │'),
+    g('  └─────────┘'),
+    '',
+    '',
   ];
 
-  const iLines = [
-    { text: user,                                      color: G  },
-    { text: sep,                                       color: DG },
-    { text: `OS        GitHub Pages CDN`,              color: W  },
-    { text: `Shell     React Terminal v1.0`,           color: W  },
-    { text: `Runtime   React 19.1 + Bootstrap 5`,      color: W  },
-    { text: `Stack     C++ · MATLAB · JS · React`,     color: W  },
-    { text: `Role      ${current.position} @ ${current.company}`, color: W },
-    { text: `Location  ${info.location}`,              color: W  },
-    { text: `Chess     ♟  ${lichess?.username ?? '@Abhish3k'} on Lichess`, color: W },
-    { text: `Music     ♫  ${past.length} concerts · ${avg}★ avg`, color: W },
-    { text: `Uptime    Since Sep 2024`,                color: W  },
-    { text: `Source    ${info.github}`,                color: A  },
+  const info_lines = [
+    `${g(user)}`,
+    `${d('─'.repeat(user.length))}`,
+    `${a('OS')}        ${w('GitHub Pages CDN')}`,
+    `${a('Shell')}     ${w('React Terminal v2.0 · xterm.js')}`,
+    `${a('Runtime')}   ${w('React 19.1 + Bootstrap 5')}`,
+    `${a('Stack')}     ${w('C++ · MATLAB · JS · React')}`,
+    `${a('Role')}      ${w(`${current.position} @ ${current.company}`)}`,
+    `${a('Location')}  ${w(info.location)}`,
+    `${a('Chess')}     ${w(`♟  ${lichess?.username ?? '@Abhish3k'} on Lichess`)}`,
+    `${a('Music')}     ${w(`♫  ${past.length} concerts · ${avg}★ avg`)}`,
+    `${a('Uptime')}    ${w('Since Sep 2024')}`,
+    `${a('Source')}    ${d(info.github)}`,
   ];
 
-  const maxLen = Math.max(logo.length, iLines.length);
+  const maxLen = Math.max(logo.length, info_lines.length);
   const lines  = [blank()];
   for (let i = 0; i < maxLen; i++) {
     const l = logo[i] ?? '             ';
-    const r = iLines[i];
-    if (r) {
-      lines.push({ text: `${l}   ${r.text}`, color: i === 0 ? G : i === 1 ? DG : r.color });
-    } else {
-      lines.push(dim(l));
-    }
+    const r = info_lines[i] ?? '';
+    lines.push(`${l}   ${r}`);
   }
   lines.push(blank());
   return lines;
@@ -645,28 +649,26 @@ function buildNeofetch() {
 // ─────────────────────────────────────────────────
 function buildGrep(args) {
   const term = args[0];
-  if (!term) {
-    return [blank(), dim('  usage: grep [term]'), blank()];
-  }
+  if (!term) return [blank(), d('  usage: grep <term>'), blank()];
 
   const q       = term.toLowerCase();
   const results = [];
 
   const hit = (source, label, text) => {
     if (text.toLowerCase().includes(q)) {
-      const idx = text.toLowerCase().indexOf(q);
-      const pre = trunc(text.slice(0, idx), 20);
-      const mid = text.slice(idx, idx + term.length);
+      const idx  = text.toLowerCase().indexOf(q);
+      const pre  = trunc(text.slice(0, idx), 20);
+      const mid  = text.slice(idx, idx + term.length);
       const post = trunc(text.slice(idx + term.length), 40);
       results.push({ source, label, pre, mid, post });
     }
   };
 
   for (const job of dataService.getWorkExperience()) {
-    hit('resume', `${job.company} · ${job.position}`, job.company);
-    hit('resume', `${job.company} · ${job.position}`, job.position);
-    for (const r of job.responsibilities) hit('resume', job.company, r);
-    for (const t of job.technologies)     hit('resume', job.company, t);
+    hit('resume',   `${job.company} · ${job.position}`, job.company);
+    hit('resume',   `${job.company} · ${job.position}`, job.position);
+    for (const r of job.responsibilities) hit('resume',   job.company, r);
+    for (const t of job.technologies)     hit('resume',   job.company, t);
   }
   for (const p of dataService.getProjects()) {
     hit('projects', p.name, p.description);
@@ -674,8 +676,8 @@ function buildGrep(args) {
     for (const t of p.technologies) hit('projects', p.name, t);
   }
   for (const ev of dataService.getPastEvents()) {
-    hit('music', ev.date, ev.title);
-    hit('music', ev.title, ev.location);
+    hit('music',     ev.date,  ev.title);
+    hit('music',     ev.title, ev.location);
     if (ev.review) hit('music', ev.title, ev.review);
   }
   for (const inst of dataService.getInstitutions()) {
@@ -687,14 +689,13 @@ function buildGrep(args) {
   }
 
   if (results.length === 0) {
-    return [blank(), dim(`  no results for '${term}'`), blank()];
+    return [blank(), d(`  no results for '${term}'`), blank()];
   }
 
-  const lines = [blank(), hdr(`  GREP: '${term}'  (${results.length} match${results.length === 1 ? '' : 'es'})`), rule(54), blank()];
+  const lines = [blank(), g(`  GREP: '${term}'  (${results.length} match${results.length === 1 ? '' : 'es'})`), rule(), blank()];
   for (const r of results) {
-    lines.push(acc(`  [${r.source}]  ${r.label}`));
-    lines.push(dim(`    …${r.pre}`) );
-    lines.push(ln(`    ${r.pre}${r.mid}${r.post}…`));
+    lines.push(`  ${a(`[${r.source}]`)}  ${d(r.label)}`);
+    lines.push(`    ${d(r.pre)}${g(r.mid)}${d(r.post)}`);
   }
   lines.push(blank());
   return lines;
