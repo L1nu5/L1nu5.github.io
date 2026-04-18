@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import ModeSelector from './components/ModeSelector';
 import GUIShell from './shells/GUIShell';
 import TerminalShell from './shells/TerminalShell';
 import MinimalShell from './shells/MinimalShell';
+import { setFavicon } from './utils/favicon';
 
 const STORAGE_KEY = 'portfolio-mode';
 
 function App() {
   const [mode, setMode] = useState(() => localStorage.getItem(STORAGE_KEY));
+
+  useEffect(() => { setFavicon(mode); }, [mode]);
 
   const handleSelect = (selected) => {
     localStorage.setItem(STORAGE_KEY, selected);
