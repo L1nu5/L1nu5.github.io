@@ -48,9 +48,8 @@ function MinimalShell({ onExit }) {
 
   return (
     <>
+      <div style={{ background: C.bg, minHeight: '100vh' }}>
       <div style={{
-        background: C.bg,
-        minHeight: '100vh',
         fontFamily: 'Georgia, "Times New Roman", serif',
         color: C.fg,
         padding: 'clamp(2rem, 8vw, 5rem) clamp(1.5rem, 10vw, 12rem)',
@@ -215,6 +214,7 @@ function MinimalShell({ onExit }) {
           </p>
         </div>
 
+      </div>
       </div>
 
       <ExitButton onExit={onExit} />
