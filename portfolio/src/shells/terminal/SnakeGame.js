@@ -11,10 +11,10 @@ const SHOW = '\x1b[?25h';
 const CLR  = '\x1b[2J\x1b[H';
 
 function randFood(snake, W, H) {
-  let pos;
-  do { pos = { x: Math.floor(Math.random() * W), y: Math.floor(Math.random() * H) }; }
-  while (snake.some(s => s.x === pos.x && s.y === pos.y));
-  return pos;
+  while (true) {
+    const pos = { x: Math.floor(Math.random() * W), y: Math.floor(Math.random() * H) };
+    if (!snake.some(s => s.x === pos.x && s.y === pos.y)) return pos;
+  }
 }
 
 export function startSnake(term, setGameHandler, onDone) {
