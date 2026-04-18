@@ -6,6 +6,7 @@ function MinimalShell({ onExit }) {
   const { name, tagline } = dataService.getPersonalInfo();
 
   return (
+    <>
     <div style={{
       background: '#0f0f0f',
       minHeight: '100vh',
@@ -36,6 +37,7 @@ function MinimalShell({ onExit }) {
       </div>
     </div>
     <ExitButton onExit={onExit} />
+    </>
   );
 }
 
