@@ -47,10 +47,12 @@ function TerminalShell({ onExit }) {
   }, [output, bootIndex]);
 
   const run = (raw) => {
-    const cmd = raw.trim().toLowerCase();
+    const trimmed = raw.trim();
+    const [cmdRaw, ...args] = trimmed.split(/\s+/);
+    const cmd = cmdRaw?.toLowerCase() ?? '';
 
-    if (raw.trim()) {
-      setCmdHistory(h => [raw.trim(), ...h]);
+    if (trimmed) {
+      setCmdHistory(h => [trimmed, ...h]);
       setHistoryIdx(-1);
     }
 
@@ -72,9 +74,39 @@ function TerminalShell({ onExit }) {
       return;
     }
 
+    if (cmd === 'history') {
+      const lines = cmdHistory.length === 0
+        ? [{ text: '  (no history)', color: MUTED }, { text: '' }]
+        : [
+            ...cmdHistory.slice().reverse().map((c, i) => ({
+              text: `  ${String(i + 1).padStart(3)}  ${c}`,
+              color: '#c9d1d9'
+            })),
+            { text: '' }
+          ];
+      setOutput(prev => [...prev, inputLine, ...lines]);
+      return;
+    }
+
     const handler = COMMANDS[cmd];
     if (handler) {
-      setOutput(prev => [...prev, inputLine, ...handler()]);
+      const result = handler(args);
+      if (result && typeof result.then === 'function') {
+        const fetchingLine = { text: '  Fetching…', color: MUTED, __fetchId: Date.now() };
+        setOutput(prev => [...prev, inputLine, fetchingLine]);
+        result.then(lines => {
+          setOutput(prev => {
+            let idx = -1;
+            for (let i = prev.length - 1; i >= 0; i--) {
+              if (prev[i].__fetchId === fetchingLine.__fetchId) { idx = i; break; }
+            }
+            if (idx === -1) return [...prev, ...lines];
+            return [...prev.slice(0, idx), ...lines];
+          });
+        });
+      } else {
+        setOutput(prev => [...prev, inputLine, ...result]);
+      }
     } else {
       setOutput(prev => [...prev,
         inputLine,
