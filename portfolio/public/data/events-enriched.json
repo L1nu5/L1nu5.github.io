@@ -1,5 +1,5 @@
 {
-  "enrichedAt": "2026-04-18T05:27:03.046Z",
+  "enrichedAt": "2026-04-18T05:54:08.486Z",
   "pastEvents": [
     {
       "id": 1,
@@ -731,17 +731,115 @@
       "type": "Festival",
       "rating": 5,
       "review": "Three days of non-stop electronic music with a lineup that was genuinely unreal. Prydz closing a stage was the highlight but the energy across every set was immense.",
-      "setlist": [
-        "David Guetta",
-        "Alesso",
-        "Martin Garrix",
-        "Eric Prydz",
-        "Hardwell",
-        "Timmy Trumpet",
-        "Marshmello",
-        "Armin van Buuren",
-        "Tiësto",
-        "Afrojack"
+      "artists": [
+        {
+          "name": "David Guetta",
+          "setlist": [
+            "Titanium",
+            "Without You",
+            "Bad",
+            "She Wolf",
+            "When Love Takes Over",
+            "Play Hard"
+          ]
+        },
+        {
+          "name": "Alesso",
+          "setlist": [
+            "Heroes",
+            "If I Lose Myself",
+            "Cool",
+            "Years",
+            "Take My Breath Away",
+            "Parachute"
+          ]
+        },
+        {
+          "name": "Martin Garrix",
+          "setlist": [
+            "Animals",
+            "Tremor",
+            "In the Name of Love",
+            "Scared to Be Lonely",
+            "Pizza",
+            "Error 404"
+          ]
+        },
+        {
+          "name": "Eric Prydz",
+          "setlist": [
+            "Opus",
+            "Pjanoo",
+            "Every Day",
+            "Generate",
+            "Call on Me",
+            "Liberate"
+          ]
+        },
+        {
+          "name": "Hardwell",
+          "setlist": [
+            "Spaceman",
+            "Dare You",
+            "Countdown",
+            "Jumper",
+            "Arcadia",
+            "Three Triangles"
+          ]
+        },
+        {
+          "name": "Timmy Trumpet",
+          "setlist": [
+            "Freaks",
+            "Oracle",
+            "Wonderland",
+            "Party Till the Daylight",
+            "Gangsta"
+          ]
+        },
+        {
+          "name": "Marshmello",
+          "setlist": [
+            "Alone",
+            "Happier",
+            "Wolves",
+            "Friends",
+            "Silence",
+            "Ritual"
+          ]
+        },
+        {
+          "name": "Armin van Buuren",
+          "setlist": [
+            "Blah Blah Blah",
+            "This Is What It Feels Like",
+            "In and Out of Love",
+            "Ping Pong",
+            "A State of Trance",
+            "We Are Here to Make Some Noise"
+          ]
+        },
+        {
+          "name": "Tiësto",
+          "setlist": [
+            "The Business",
+            "Red Lights",
+            "Jackie Chan",
+            "Boom",
+            "Don't Be Shy",
+            "10:35"
+          ]
+        },
+        {
+          "name": "Afrojack",
+          "setlist": [
+            "Ten Feet Tall",
+            "Wave Your Flag",
+            "As Your Friend",
+            "Rock the House",
+            "Boom"
+          ]
+        }
       ],
       "enrichment": null
     },
@@ -952,97 +1050,5 @@
       }
     }
   ],
-  "upcomingEvents": [
-    {
-      "id": 1,
-      "title": "Summer Music Festival 2025",
-      "date": "2025-07-15",
-      "time": "6:00 PM",
-      "venue": "Central Park Amphitheater",
-      "location": "City Center",
-      "type": "Festival",
-      "status": "Planning to Attend",
-      "description": "Multi-day festival featuring indie rock, electronic, and folk artists",
-      "artists": [
-        "Arctic Monkeys",
-        "Tame Impala",
-        "Bon Iver"
-      ],
-      "ticketUrl": "#",
-      "website": "#",
-      "enrichment": {
-        "source": null,
-        "venue": null,
-        "setlist": [],
-        "images": [],
-        "artistImage": "https://cdn-images.dzcdn.net/images/artist/6c03e4c7c36800897fd468633286db24/250x250-000000-80-0-0.jpg",
-        "ticketUrl": null,
-        "setlistUrl": null,
-        "externalIds": {
-          "setlistfm": null,
-          "ticketmaster": null
-        }
-      }
-    },
-    {
-      "id": 2,
-      "title": "Jazz at Lincoln Center",
-      "date": "2025-08-20",
-      "time": "8:00 PM",
-      "venue": "Rose Theater",
-      "location": "Lincoln Center",
-      "type": "Concert",
-      "status": "Tickets Purchased",
-      "description": "Evening of contemporary jazz with renowned musicians",
-      "artists": [
-        "Wynton Marsalis",
-        "Esperanza Spalding"
-      ],
-      "ticketUrl": "#",
-      "website": "#",
-      "enrichment": {
-        "source": null,
-        "venue": null,
-        "setlist": [],
-        "images": [],
-        "artistImage": "https://cdn-images.dzcdn.net/images/artist/ff91e5e07d7688eb21939334b6e7a328/250x250-000000-80-0-0.jpg",
-        "ticketUrl": null,
-        "setlistUrl": null,
-        "externalIds": {
-          "setlistfm": null,
-          "ticketmaster": null
-        }
-      }
-    },
-    {
-      "id": 3,
-      "title": "Local Indie Showcase",
-      "date": "2025-09-10",
-      "time": "7:30 PM",
-      "venue": "The Mercury Lounge",
-      "location": "Lower East Side",
-      "type": "Showcase",
-      "status": "Interested",
-      "description": "Featuring up-and-coming local indie bands",
-      "artists": [
-        "The Midnight Echoes",
-        "Velvet Horizon"
-      ],
-      "ticketUrl": "#",
-      "website": "#",
-      "enrichment": {
-        "source": null,
-        "venue": null,
-        "setlist": [],
-        "images": [],
-        "artistImage": "https://cdn-images.dzcdn.net/images/artist/79aaf6855bb3fdc0345e690b82e1b15e/250x250-000000-80-0-0.jpg",
-        "ticketUrl": null,
-        "setlistUrl": null,
-        "externalIds": {
-          "setlistfm": null,
-          "ticketmaster": null
-        }
-      }
-    }
-  ]
+  "upcomingEvents": []
 }
