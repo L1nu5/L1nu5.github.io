@@ -1,50 +1,52 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { COMMANDS } from './terminalCommands';
 
 const GREEN  = '#00ff41';
 const DGREEN = '#008f11';
 const MUTED  = '#3a3a3a';
 
 const BOOT_LINES = [
-  { text: 'Initializing portfolio terminal v0.1...', color: MUTED },
-  { text: 'Loading data service..................OK', color: MUTED },
-  { text: 'Mounting filesystem...................OK', color: MUTED },
-  { text: 'Ready.', color: DGREEN },
-  { text: '', color: '' }
+  { text: 'Initializing portfolio terminal v1.0...', color: MUTED  },
+  { text: 'Loading data service..................OK',  color: MUTED  },
+  { text: 'Mounting filesystem...................OK',  color: MUTED  },
+  { text: 'Ready.',                                   color: DGREEN },
+  { text: '' },
+];
+
+const WELCOME = [
+  { text: "  Type 'help' to list available commands.", color: DGREEN },
+  { text: '' },
 ];
 
 function TerminalShell({ onExit }) {
-  const [bootIndex, setBootIndex]     = useState(0);
-  const [bootDone, setBootDone]       = useState(false);
-  const [input, setInput]             = useState('');
-  const [output, setOutput]           = useState([]);
-  const [cmdHistory, setCmdHistory]   = useState([]);
-  const [historyIdx, setHistoryIdx]   = useState(-1);
+  const [bootIndex,  setBootIndex]  = useState(0);
+  const [bootDone,   setBootDone]   = useState(false);
+  const [input,      setInput]      = useState('');
+  const [output,     setOutput]     = useState([]);
+  const [cmdHistory, setCmdHistory] = useState([]);
+  const [historyIdx, setHistoryIdx] = useState(-1);
   const inputRef = useRef(null);
   const bottomRef = useRef(null);
 
-  // Boot sequence
+  // Boot sequence — one line every 160 ms, then show welcome
   useEffect(() => {
     if (bootIndex < BOOT_LINES.length) {
-      const delay = bootIndex === BOOT_LINES.length - 1 ? 250 : 160;
+      const delay = bootIndex === BOOT_LINES.length - 1 ? 280 : 160;
       const t = setTimeout(() => setBootIndex(i => i + 1), delay);
       return () => clearTimeout(t);
     } else {
       setBootDone(true);
+      setOutput(WELCOME);
     }
   }, [bootIndex]);
 
-  useEffect(() => {
-    if (bootDone) inputRef.current?.focus();
-  }, [bootDone]);
+  useEffect(() => { if (bootDone) inputRef.current?.focus(); }, [bootDone]);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [output, bootIndex]);
 
-  const pushOutput = (lines) =>
-    setOutput(prev => [...prev, ...lines]);
-
-  const handleCommand = (raw) => {
+  const run = (raw) => {
     const cmd = raw.trim().toLowerCase();
 
     if (raw.trim()) {
@@ -52,26 +54,40 @@ function TerminalShell({ onExit }) {
       setHistoryIdx(-1);
     }
 
-    pushOutput([{ text: raw, type: 'input' }]);
+    const inputLine = { text: raw, type: 'input' };
 
-    if (cmd === '') return;
-
-    if (cmd === 'exit') {
-      pushOutput([{ text: 'Goodbye.', color: DGREEN, type: 'output' }]);
-      setTimeout(onExit, 400);
+    if (!cmd) {
+      setOutput(prev => [...prev, inputLine]);
       return;
     }
 
-    // Phase 2 placeholder response for all other commands
-    pushOutput([
-      { text: `Command '${cmd}' recognised — full terminal coming in Phase 2.`, color: '#555', type: 'output' },
-      { text: `Type 'exit' to return to the mode selector.`,                    color: MUTED,  type: 'output' }
-    ]);
+    if (cmd === 'exit') {
+      setOutput(prev => [...prev, inputLine, { text: '  Goodbye.', color: DGREEN }, { text: '' }]);
+      setTimeout(onExit, 500);
+      return;
+    }
+
+    if (cmd === 'clear') {
+      setOutput([]);
+      return;
+    }
+
+    const handler = COMMANDS[cmd];
+    if (handler) {
+      setOutput(prev => [...prev, inputLine, ...handler()]);
+    } else {
+      setOutput(prev => [...prev,
+        inputLine,
+        { text: `  command not found: '${cmd}'`, color: '#ff4444' },
+        { text: "  type 'help' for available commands", color: MUTED },
+        { text: '' },
+      ]);
+    }
   };
 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
-      handleCommand(input);
+      run(input);
       setInput('');
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
@@ -120,23 +136,28 @@ function TerminalShell({ onExit }) {
 
       {/* Boot sequence */}
       {BOOT_LINES.slice(0, bootIndex).map((line, i) => (
-        <div key={i} style={{ color: line.color, marginBottom: '1px' }}>
-          {line.text && <span style={{ color: DGREEN, marginRight: '8px', userSelect: 'none' }}>›</span>}
+        <div key={`boot-${i}`} style={{ color: line.color || MUTED, marginBottom: '1px' }}>
+          {line.text && (
+            <span style={{ color: DGREEN, marginRight: '8px', userSelect: 'none' }}>›</span>
+          )}
           {line.text}
         </div>
       ))}
 
       {/* Command output */}
       {bootDone && output.map((line, i) => (
-        <div key={i} style={{ color: line.color || (line.type === 'input' ? GREEN : '#666'), marginBottom: '1px' }}>
+        <div
+          key={`out-${i}`}
+          style={{ color: line.color || (line.type === 'input' ? GREEN : '#c9d1d9'), marginBottom: '1px' }}
+        >
           {line.type === 'input'
             ? <><span style={{ color: DGREEN, marginRight: '8px', userSelect: 'none' }}>$</span>{line.text}</>
-            : <><span style={{ color: DGREEN, marginRight: '8px', userSelect: 'none' }}>›</span>{line.text}</>
+            : line.text
           }
         </div>
       ))}
 
-      {/* Prompt */}
+      {/* Input prompt */}
       {bootDone && (
         <div style={{ display: 'flex', alignItems: 'center', marginTop: '2px' }}>
           <span style={{ color: DGREEN, marginRight: '8px', userSelect: 'none' }}>$</span>
