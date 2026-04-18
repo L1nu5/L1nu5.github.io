@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Card, Badge, ListGroup } from 'react-bootstrap';
+import { Row, Col, Card, Badge } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import dataService from '../services/dataService';
 import { useTheme } from '../contexts/ThemeContext';
@@ -8,7 +8,6 @@ function Architecture() {
   const { theme } = useTheme();
   const arch = dataService.getArchitecture();
   const highlights = dataService.getArchitectureHighlights();
-  const secrets = dataService.getArchitectureSecrets();
 
   const [diagramMeta, setDiagramMeta] = useState(null);
   const [diagramError, setDiagramError] = useState(false);
@@ -28,11 +27,14 @@ function Architecture() {
     });
   };
 
-  const statusBadge = (status) => {
-    if (status === 'active') return <Badge bg="success">Active</Badge>;
-    if (status === 'planned') return <Badge bg="warning" text="dark">Planned</Badge>;
-    return <Badge bg="secondary">{status}</Badge>;
-  };
+  const pipelineSteps = [
+    { icon: '🔔', label: 'Trigger',        detail: 'push to main · weekly schedule', color: '#6c757d'          },
+    { icon: '🎵', label: 'Stats.fm',       detail: 'music stats · top artists',      color: theme.primaryColor  },
+    { icon: '🎸', label: 'Enrich Events',  detail: 'Setlist.fm · Ticketmaster · Deezer', color: theme.secondaryColor },
+    { icon: '🏗️', label: 'Gen Diagram',   detail: 'architecture.json → Kroki → SVG', color: '#6f42c1'          },
+    { icon: '⚛️', label: 'Build',          detail: 'React → static bundle',           color: '#17a2b8'          },
+    { icon: '🚀', label: 'Deploy',         detail: 'GitHub Pages CDN',                color: '#28a745'          },
+  ];
 
   return (
     <PageTemplate
@@ -106,47 +108,9 @@ function Architecture() {
         </Col>
       </Row>
 
-      {/* Security model */}
+      {/* CI/CD Pipeline */}
       <Row className="mb-4">
-        <Col lg={7}>
-          <Card style={{
-            backgroundColor: theme.cardBackground,
-            border: `1px solid ${theme.secondaryColor}`,
-            color: theme.textColor
-          }}>
-            <Card.Header style={{ backgroundColor: theme.lightGreen, border: 'none' }}>
-              <h5 className="mb-0" style={{ color: theme.secondaryColor }}>🔒 Secret Management</h5>
-            </Card.Header>
-            <Card.Body style={{ color: theme.textColor }}>
-              <p className="small mb-3" style={{ color: theme.mutedText }}>
-                Every external API key is managed securely and never bundled into the React build or reachable via the browser network tab.
-              </p>
-              <ListGroup variant="flush">
-                {secrets.map((s, idx) => (
-                  <ListGroup.Item key={idx} className="px-0" style={{
-                    backgroundColor: 'transparent',
-                    borderColor: theme.borderColor,
-                    color: theme.textColor
-                  }}>
-                    <div className="d-flex justify-content-between align-items-start">
-                      <div>
-                        <code style={{ color: theme.primaryColor }}>{s.id}</code>
-                        <p className="mb-1 small mt-1" style={{ color: theme.textColor }}>{s.description}</p>
-                        <small style={{ color: theme.mutedText }}>{s.scope}</small>
-                      </div>
-                      <div className="ms-2 flex-shrink-0">
-                        {statusBadge(s.status)}
-                      </div>
-                    </div>
-                  </ListGroup.Item>
-                ))}
-              </ListGroup>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        {/* Pipeline summary */}
-        <Col lg={5}>
+        <Col>
           <Card style={{
             backgroundColor: theme.cardBackground,
             border: `1px solid ${theme.borderColor}`,
@@ -155,30 +119,45 @@ function Architecture() {
             <Card.Header style={{ backgroundColor: theme.lightBlue, border: 'none' }}>
               <h5 className="mb-0" style={{ color: theme.primaryColor }}>⚙️ CI/CD Pipeline</h5>
             </Card.Header>
-            <Card.Body style={{ color: theme.textColor }}>
-              <ListGroup variant="flush">
-                {[
-                  { step: '1', label: 'Trigger', detail: 'git push to main or weekly Sunday midnight UTC' },
-                  { step: '2', label: 'Fetch Stats.fm + Ticketmaster', detail: 'Music stats and event data via external APIs' },
-                  { step: '3', label: 'Generate Diagram', detail: 'architecture.json → Mermaid → Kroki → SVG' },
-                  { step: '4', label: 'npm run build', detail: 'React compiles all JSON + SVG into static bundle' },
-                  { step: '5', label: 'Deploy', detail: 'GitHub Pages serves the static bundle globally' },
-                ].map((item) => (
-                  <ListGroup.Item key={item.step} className="px-0 d-flex gap-3" style={{
-                    backgroundColor: 'transparent',
-                    borderColor: theme.borderColor,
-                    color: theme.textColor
-                  }}>
-                    <Badge bg="primary" style={{ minWidth: '24px', height: '24px', lineHeight: '16px' }}>
-                      {item.step}
-                    </Badge>
-                    <div>
-                      <div style={{ color: theme.textColor, fontWeight: 600 }}>{item.label}</div>
-                      <small style={{ color: theme.mutedText }}>{item.detail}</small>
+            <Card.Body>
+              <div style={{ display: 'flex', alignItems: 'stretch', overflowX: 'auto', padding: '8px 4px', gap: 0 }}>
+                {pipelineSteps.map((step, idx) => (
+                  <React.Fragment key={idx}>
+                    <div style={{
+                      flex: '1',
+                      minWidth: '110px',
+                      border: `1.5px solid ${step.color}40`,
+                      borderRadius: '10px',
+                      padding: '14px 10px',
+                      backgroundColor: `${step.color}0d`,
+                      textAlign: 'center',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      gap: '4px'
+                    }}>
+                      <span style={{ fontSize: '1.5rem', lineHeight: 1 }}>{step.icon}</span>
+                      <span style={{ fontWeight: 700, color: step.color, fontSize: '0.82rem', lineHeight: 1.2 }}>
+                        {step.label}
+                      </span>
+                      <span style={{ fontSize: '0.7rem', color: theme.mutedText, lineHeight: 1.3 }}>
+                        {step.detail}
+                      </span>
                     </div>
-                  </ListGroup.Item>
+                    {idx < pipelineSteps.length - 1 && (
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        padding: '0 6px',
+                        color: theme.mutedText,
+                        fontSize: '1.1rem',
+                        flexShrink: 0,
+                        userSelect: 'none'
+                      }}>→</div>
+                    )}
+                  </React.Fragment>
                 ))}
-              </ListGroup>
+              </div>
             </Card.Body>
           </Card>
         </Col>
