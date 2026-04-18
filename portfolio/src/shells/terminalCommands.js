@@ -245,11 +245,23 @@ function buildResume(args) {
       if (!grouped[s.category]) grouped[s.category] = [];
       grouped[s.category].push(s);
     }
+    // Compact bar for 2-col layout (12 wide instead of 20)
+    const bar12 = lvl => {
+      const filled = Math.round(lvl / 100 * 12);
+      return g('█'.repeat(filled)) + d('░'.repeat(12 - filled));
+    };
+    // Each cell: 14 name + 1 space + 12 bar + 1 space + 3 level = 31 visible chars
+    const cell = s => `${w(pad(s.name, 14))} ${bar12(s.level)} ${d(pad(String(s.level), 3))}`;
+
     const lines = [blank(), g('  SKILLS'), rule(), blank()];
     for (const [cat, items] of Object.entries(grouped)) {
       lines.push(a(`  ${cat.toUpperCase()}`));
-      for (const s of items) {
-        lines.push(`  ${w(pad(s.name, 20))} ${bar(s.level)}  ${d(String(s.level))}`);
+      for (let i = 0; i < items.length; i += 2) {
+        const right = items[i + 1];
+        lines.push(right
+          ? `  ${cell(items[i])}    ${cell(right)}`
+          : `  ${cell(items[i])}`
+        );
       }
       lines.push(blank());
     }

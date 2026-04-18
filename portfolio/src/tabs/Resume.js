@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Card, Button, ListGroup, Badge, Accordion } from 'react-bootstrap';
+import { Row, Col, Card, Button, Badge, Accordion } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import dataService from '../services/dataService';
 import { useTheme } from '../contexts/ThemeContext';
@@ -276,26 +276,44 @@ function Resume() {
             borderColor: theme.borderColor,
             color: theme.textColor
           }}>
-            <Card.Header style={{ 
-              backgroundColor: theme.lightBlue, 
+            <Card.Header style={{
+              backgroundColor: theme.lightBlue,
               border: 'none',
               color: theme.textColor
             }}>
               <h4 style={{ color: theme.primaryColor }} className="mb-0">Key Skills</h4>
             </Card.Header>
             <Card.Body style={{ color: theme.textColor }}>
-              <ListGroup variant="flush">
+              <Row className="g-2">
                 {Object.values(skills).map((skillCategory, index) => (
-                  <ListGroup.Item key={index} className="px-0" style={{
-                    backgroundColor: 'transparent',
-                    borderColor: theme.borderColor,
-                    color: theme.textColor
-                  }}>
-                    <Badge bg={skillCategory.color} className="me-2">{skillCategory.category}</Badge>
-                    <span style={{ color: theme.textColor }}>{skillCategory.skills.join(', ')}</span>
-                  </ListGroup.Item>
+                  <Col xs={6} key={index}>
+                    <div style={{
+                      backgroundColor: theme.backgroundColor,
+                      border: `1px solid ${theme.borderColor}`,
+                      borderRadius: '6px',
+                      padding: '0.6rem 0.75rem',
+                      height: '100%'
+                    }}>
+                      <Badge bg={skillCategory.color} className="mb-2 d-block text-truncate">
+                        {skillCategory.category}
+                      </Badge>
+                      <div className="d-flex flex-wrap gap-1">
+                        {skillCategory.skills.map((skill, idx) => (
+                          <span key={idx} style={{
+                            fontSize: '0.7rem',
+                            color: theme.mutedText,
+                            backgroundColor: theme.lightBlue,
+                            borderRadius: '3px',
+                            padding: '1px 5px'
+                          }}>
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </Col>
                 ))}
-              </ListGroup>
+              </Row>
             </Card.Body>
           </Card>
         </Col>

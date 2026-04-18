@@ -3,6 +3,7 @@ import { Terminal } from '@xterm/xterm';
 import { FitAddon } from '@xterm/addon-fit';
 import { COMMANDS } from './terminalCommands';
 import '@xterm/xterm/css/xterm.css';
+import './TerminalShell.css';
 
 const BOOT_LINES = [
   'Initializing portfolio terminal v2.0...',
