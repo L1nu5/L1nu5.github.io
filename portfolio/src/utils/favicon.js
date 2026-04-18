@@ -31,8 +31,15 @@ const FAVICONS = {
 };
 
 export function setFavicon(mode) {
-  const svg     = FAVICONS[mode] ?? FAVICONS[null];
+  const svg     = FAVICONS[mode] ?? FAVICONS['null'];
   const dataUrl = `data:image/svg+xml,${encodeURIComponent(svg)}`;
-  const link    = document.querySelector("link[rel~='icon']");
-  if (link) link.href = dataUrl;
+
+  // Remove all existing favicon links — browsers won't re-fetch on href change alone
+  document.querySelectorAll("link[rel*='icon']").forEach(el => el.remove());
+
+  const link  = document.createElement('link');
+  link.rel    = 'icon';
+  link.type   = 'image/svg+xml';
+  link.href   = dataUrl;
+  document.head.appendChild(link);
 }

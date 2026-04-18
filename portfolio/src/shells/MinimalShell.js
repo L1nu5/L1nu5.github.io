@@ -2,41 +2,222 @@ import React from 'react';
 import dataService from '../services/dataService';
 import ExitButton from '../components/ExitButton';
 
+const C = {
+  bg:      '#0f0f0f',
+  fg:      '#e8e8e8',
+  muted:   '#555',
+  dim:     '#333',
+  rule:    '#1e1e1e',
+  accent:  '#888',
+};
+
+const Rule = () => (
+  <div style={{ height: '1px', background: C.rule, margin: '3rem 0' }} />
+);
+
+const Section = ({ label, children }) => (
+  <section>
+    <p style={{ fontSize: '0.7rem', letterSpacing: '0.2em', color: C.muted, textTransform: 'uppercase', margin: '0 0 1.5rem 0' }}>
+      {label}
+    </p>
+    {children}
+  </section>
+);
+
 function MinimalShell({ onExit }) {
-  const { name, tagline } = dataService.getPersonalInfo();
+  const info       = dataService.getPersonalInfo();
+  const resumeInfo = dataService.getResumePersonalInfo();
+  const summary    = dataService.getSummary();
+  const work       = dataService.getWorkExperience();
+  const projects   = dataService.getProjects();
+  const education  = dataService.getInstitutions();
+  const skills     = dataService.getSkills();
+  const links      = dataService.getSocialLinks();
+  const contact    = dataService.getContactInfo();
+  const past       = dataService.getPastEvents();
+  const settings   = dataService.getMusicSettings();
+
+  const avg        = (past.reduce((s, e) => s + e.rating, 0) / past.length).toFixed(1);
+  const keyLinks   = links.filter(l => ['LinkedIn', 'GitHub', 'Lichess', 'Instagram'].includes(l.platform));
+
+  const skillGroups = skills.reduce((acc, s) => {
+    if (!acc[s.category]) acc[s.category] = [];
+    acc[s.category].push(s.name);
+    return acc;
+  }, {});
 
   return (
     <>
-    <div style={{
-      background: '#0f0f0f',
-      minHeight: '100vh',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontFamily: 'Georgia, "Times New Roman", serif',
-      padding: '2rem',
-      textAlign: 'center'
-    }}>
-      <div>
-        <h1 style={{
-          color: '#ffffff',
-          fontSize: 'clamp(2rem, 6vw, 3.5rem)',
-          fontWeight: 400,
-          letterSpacing: '0.04em',
-          margin: '0 0 1rem 0'
-        }}>
-          {name}
-        </h1>
-        <div style={{ width: '40px', height: '1px', background: '#2a2a2a', margin: '0 auto 1.5rem' }} />
-        <p style={{ color: '#3a3a3a', fontSize: '0.85rem', letterSpacing: '0.15em', margin: '0 0 3rem 0' }}>
-          {tagline.toUpperCase()}
-        </p>
-        <p style={{ color: '#252525', fontSize: '0.78rem', letterSpacing: '0.08em', margin: 0 }}>
-          Minimal view — coming soon
-        </p>
+      <div style={{
+        background: C.bg,
+        minHeight: '100vh',
+        fontFamily: 'Georgia, "Times New Roman", serif',
+        color: C.fg,
+        padding: 'clamp(2rem, 8vw, 5rem) clamp(1.5rem, 10vw, 12rem)',
+        maxWidth: '860px',
+        margin: '0 auto',
+        boxSizing: 'border-box',
+      }}>
+
+        {/* Header */}
+        <header style={{ marginBottom: '4rem' }}>
+          <h1 style={{
+            fontSize: 'clamp(2rem, 5vw, 3rem)',
+            fontWeight: 400,
+            letterSpacing: '0.02em',
+            margin: '0 0 0.5rem 0',
+            color: C.fg,
+          }}>
+            {info.name}
+          </h1>
+          <p style={{ fontSize: '0.9rem', color: C.accent, margin: '0 0 0.25rem 0', letterSpacing: '0.05em' }}>
+            {resumeInfo.title}
+          </p>
+          <p style={{ fontSize: '0.8rem', color: C.muted, margin: 0, letterSpacing: '0.08em' }}>
+            {resumeInfo.location}
+          </p>
+        </header>
+
+        {/* Summary */}
+        <Section label="About">
+          <p style={{ fontSize: '1rem', lineHeight: 1.8, color: C.accent, margin: 0 }}>
+            {summary}
+          </p>
+        </Section>
+
+        <Rule />
+
+        {/* Work */}
+        <Section label="Experience">
+          {work.map((job, i) => (
+            <div key={job.id} style={{ marginBottom: i < work.length - 1 ? '2rem' : 0 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                <span style={{ fontSize: '0.95rem', color: C.fg }}>{job.company}</span>
+                <span style={{ fontSize: '0.75rem', color: C.muted, letterSpacing: '0.05em' }}>{job.period}</span>
+              </div>
+              <p style={{ fontSize: '0.8rem', color: C.accent, margin: '0 0 0.75rem 0', letterSpacing: '0.04em' }}>
+                {job.position} · {job.location}
+              </p>
+              <ul style={{ margin: 0, padding: '0 0 0 1.1rem', listStyle: 'none' }}>
+                {job.responsibilities.slice(0, 3).map((r, idx) => (
+                  <li key={idx} style={{ fontSize: '0.85rem', color: C.muted, lineHeight: 1.7, position: 'relative' }}>
+                    <span style={{ position: 'absolute', left: '-1.1rem', color: C.dim }}>—</span>
+                    {r}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </Section>
+
+        <Rule />
+
+        {/* Projects */}
+        <Section label="Projects">
+          {projects.map((p, i) => (
+            <div key={p.id} style={{ marginBottom: i < projects.length - 1 ? '1.75rem' : 0 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                <span style={{ fontSize: '0.95rem', color: C.fg }}>{p.name}</span>
+                <span style={{ fontSize: '0.75rem', color: C.muted }}>{p.period}</span>
+              </div>
+              <p style={{ fontSize: '0.8rem', color: C.accent, margin: '0 0 0.4rem 0' }}>{p.tagline}</p>
+              <p style={{ fontSize: '0.82rem', color: C.muted, margin: '0 0 0.4rem 0', lineHeight: 1.6 }}>
+                {p.description.slice(0, 160)}{p.description.length > 160 ? '…' : ''}
+              </p>
+              <p style={{ fontSize: '0.75rem', color: C.dim, margin: 0, letterSpacing: '0.03em' }}>
+                {p.technologies.join(' · ')}
+              </p>
+            </div>
+          ))}
+        </Section>
+
+        <Rule />
+
+        {/* Skills */}
+        <Section label="Skills">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1.25rem' }}>
+            {Object.entries(skillGroups).map(([cat, items]) => (
+              <div key={cat}>
+                <p style={{ fontSize: '0.7rem', color: C.muted, letterSpacing: '0.12em', textTransform: 'uppercase', margin: '0 0 0.5rem 0' }}>
+                  {cat}
+                </p>
+                <p style={{ fontSize: '0.82rem', color: C.accent, margin: 0, lineHeight: 1.8 }}>
+                  {items.join(', ')}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Section>
+
+        <Rule />
+
+        {/* Education */}
+        <Section label="Education">
+          {education.map((inst, i) => (
+            <div key={inst.id} style={{ marginBottom: i < education.length - 1 ? '1.5rem' : 0 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.2rem' }}>
+                <span style={{ fontSize: '0.95rem', color: C.fg }}>{inst.institution}</span>
+                <span style={{ fontSize: '0.75rem', color: C.muted }}>{inst.period}</span>
+              </div>
+              <p style={{ fontSize: '0.82rem', color: C.accent, margin: 0 }}>
+                {inst.degree} · GPA {inst.gpa}
+              </p>
+            </div>
+          ))}
+        </Section>
+
+        <Rule />
+
+        {/* Music */}
+        <Section label="Music">
+          <p style={{ fontSize: '0.85rem', color: C.accent, margin: '0 0 0.75rem 0', lineHeight: 1.7 }}>
+            {past.length} concerts attended · {avg}★ average rating
+          </p>
+          <p style={{ fontSize: '0.82rem', color: C.muted, margin: '0 0 0.4rem 0' }}>
+            Favorites — {settings.favoriteArtists?.join(', ')}
+          </p>
+          <p style={{ fontSize: '0.82rem', color: C.muted, margin: 0 }}>
+            Genre — {settings.favoriteGenre}
+          </p>
+        </Section>
+
+        <Rule />
+
+        {/* Contact */}
+        <Section label="Contact">
+          <p style={{ fontSize: '0.85rem', color: C.accent, margin: '0 0 1rem 0' }}>
+            {contact.email}
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
+            {keyLinks.map(l => (
+              <a key={l.platform} href={l.url} target="_blank" rel="noreferrer" style={{
+                fontSize: '0.8rem',
+                color: C.muted,
+                textDecoration: 'none',
+                letterSpacing: '0.05em',
+                borderBottom: `1px solid ${C.dim}`,
+                paddingBottom: '1px',
+                transition: 'color 0.2s, border-color 0.2s',
+              }}
+                onMouseEnter={e => { e.target.style.color = C.fg; e.target.style.borderColor = C.accent; }}
+                onMouseLeave={e => { e.target.style.color = C.muted; e.target.style.borderColor = C.dim; }}
+              >
+                {l.platform}
+              </a>
+            ))}
+          </div>
+        </Section>
+
+        {/* Footer */}
+        <div style={{ marginTop: '4rem', paddingTop: '2rem', borderTop: `1px solid ${C.rule}` }}>
+          <p style={{ fontSize: '0.72rem', color: C.dim, margin: 0, letterSpacing: '0.08em' }}>
+            {info.name.toUpperCase()} · {new Date().getFullYear()}
+          </p>
+        </div>
+
       </div>
-    </div>
-    <ExitButton onExit={onExit} />
+
+      <ExitButton onExit={onExit} />
     </>
   );
 }
