@@ -3,6 +3,7 @@ import { Row, Col, Card, Badge, Button, ListGroup, Nav } from 'react-bootstrap';
 import PageTemplate from '../components/PageTemplate';
 import MusicTimeline from '../components/MusicTimeline';
 import MusicStats from '../components/MusicStats';
+import MusicTrivia from './MusicTrivia';
 import dataService from '../services/dataService';
 import { useTheme } from '../contexts/ThemeContext';
 
@@ -126,16 +127,29 @@ function MusicEvents() {
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link 
-                    active={activeView === 'stats'} 
+                  <Nav.Link
+                    active={activeView === 'stats'}
                     onClick={() => setActiveView('stats')}
-                    style={{ 
+                    style={{
                       color: activeView === 'stats' ? theme.primaryColor : theme.mutedText,
                       backgroundColor: activeView === 'stats' ? theme.lightBlue : 'transparent',
                       borderColor: activeView === 'stats' ? theme.primaryColor : 'transparent'
                     }}
                   >
                     📊 Music Stats
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link
+                    active={activeView === 'trivia'}
+                    onClick={() => setActiveView('trivia')}
+                    style={{
+                      color: activeView === 'trivia' ? theme.primaryColor : theme.mutedText,
+                      backgroundColor: activeView === 'trivia' ? theme.lightBlue : 'transparent',
+                      borderColor: activeView === 'trivia' ? theme.primaryColor : 'transparent'
+                    }}
+                  >
+                    🎯 Music Trivia
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
@@ -254,6 +268,8 @@ function MusicEvents() {
           </Row>
         </>
       )}
+
+      {activeView === 'trivia' && <MusicTrivia />}
 
       {activeView === 'stats' && (
         <>

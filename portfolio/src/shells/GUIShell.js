@@ -6,7 +6,6 @@ import Socials from '../tabs/Socials';
 import Education from '../tabs/Education';
 import Resume from '../tabs/Resume';
 import MusicEvents from '../tabs/MusicEvents';
-import MusicTrivia from '../tabs/MusicTrivia';
 import dataService from '../services/dataService';
 import { useTheme } from '../contexts/ThemeContext';
 import ThemeToggle from '../components/ThemeToggle';
@@ -66,7 +65,6 @@ function GUIShell({ onExit }) {
                     {tab.key === 'education'     && <Education />}
                     {tab.key === 'resume'        && <Resume />}
                     {tab.key === 'musicEvents'   && <MusicEvents />}
-                    {tab.key === 'trivia'        && <MusicTrivia />}
                   </div>
                 </Tab>
               ))}

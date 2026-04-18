@@ -3,42 +3,39 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger deployment on pushes to the main branch
+      - main
   schedule:
-    - cron: '0 0 * * 0'  # Run weekly on Sundays at midnight UTC
+    - cron: '0 0 * * 0'  # weekly on Sundays at midnight UTC
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Allow the action to push commits
-      pages: write     # Allow deployment to GitHub Pages
-      id-token: write  # Allow OIDC token generation
+      contents: write
+      pages: write
+      id-token: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
-        
+        uses: actions/checkout@v4
+
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
-          
+          node-version: 20
+
       - name: Fetch Stats.fm Music Data
-        # Only fetch music data if this wasn't triggered by a GitHub Action commit
         if: ${{ !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, 'Update music data from Stats.fm') }}
         run: node scripts/fetch-music-data.js
         env:
           STATS_FM_TOKEN: ${{ secrets.STATS_FM_TOKEN }}
-          
+
       - name: Copy music data to portfolio public folder
-        # Only copy if music data was fetched
         if: ${{ !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, 'Update music data from Stats.fm') }}
         run: |
           mkdir -p portfolio/public/data/music/latest
           cp data/music/latest/*.json portfolio/public/data/music/latest/
-          
+
       - name: Commit and push music data
-        # Only fetch and commit music data if this wasn't triggered by a GitHub Action commit
         if: ${{ !contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, 'Update music data from Stats.fm') }}
         run: |
           git config --local user.email "action@github.com"
@@ -50,7 +47,7 @@ jobs:
             git commit -m "Update music data from Stats.fm [skip ci]"
             git push
           fi
-          
+
       - name: Enrich events data
         if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
         run: node scripts/enrich-events.js
@@ -71,21 +68,16 @@ jobs:
             git push
           fi
 
-      - name: Generate architecture diagram
-        # Regenerate SVG from architecture.json on every push via Kroki (no API key needed)
-        if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
-        run: node scripts/generate-diagram.js
-
       - name: Install dependencies
         run: npm install
         working-directory: portfolio
-        
+
       - name: Build application
         run: npm run build
         working-directory: portfolio
-        
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: portfolio/build
