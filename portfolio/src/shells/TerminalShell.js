@@ -12,7 +12,7 @@ const BOOT_LINES = [
   'Mounting filesystem...................\x1b[32mOK\x1b[0m',
   '\x1b[32mReady.\x1b[0m',
   '',
-  "\x1b[2m  Type '\x1b[0m\x1b[32mhelp\x1b[0m\x1b[2m' to list available commands.\x1b[0m",
+  "\x1b[2m  Type '\x1b[0m\x1b[32mhelp\x1b[0m\x1b[2m' to list available commands  ·  '\x1b[0m\x1b[32msnake\x1b[0m\x1b[2m' to play a game.\x1b[0m",
   '',
 ];
 

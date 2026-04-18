@@ -35,7 +35,7 @@ function MusicEvents() {
   // Sort past events chronologically (oldest first) and attach enrichment
   const timelineEvents = useMemo(() =>
     [...pastEvents]
-      .sort((a, b) => new Date(a.date) - new Date(b.date))
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
       .map(ev => ({ ...ev, enrichment: enrichmentMap[`${ev.title}-${ev.date}`] || null })),
     [pastEvents, enrichmentMap]
   );

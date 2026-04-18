@@ -13,7 +13,7 @@ function TerminalPreview() {
       <div style={{ color: '#777' }}>Abhishek Deore · MathWorks</div>
       <div><span style={{ color: '#444' }}>$ </span>help</div>
       <div style={{ color: '#666' }}>resume    projects  music</div>
-      <div style={{ color: '#666' }}>education architecture</div>
+      <div style={{ color: '#666' }}>education snake</div>
       <div>
         <span style={{ color: '#444' }}>$ </span>
         <span className="cursor-blink" style={{ color: GREEN }}>█</span>
@@ -87,6 +87,7 @@ function ModeSelector({ onSelect }) {
       icon: '>_',
       label: 'TERMINAL',
       description: 'Navigate with keyboard commands. Strictly CLI — no GUI at any point. Type exit anytime to return.',
+      game: 'snake',
       accent: GREEN,
       preview: <TerminalPreview />
     },
@@ -95,6 +96,7 @@ function ModeSelector({ onSelect }) {
       icon: '⊡',
       label: 'CLASSIC',
       description: 'Full-featured GUI with tabs, cards, and all portfolio sections.',
+      game: 'music trivia',
       accent: BLUE,
       preview: <ClassicPreview />
     },
@@ -103,6 +105,7 @@ function ModeSelector({ onSelect }) {
       icon: '—',
       label: 'MINIMAL',
       description: 'Clean typographic layout. Content first, no distractions.',
+      game: 'game of life',
       accent: WHITE,
       preview: <MinimalPreview />
     }
@@ -188,6 +191,19 @@ function ModeSelector({ onSelect }) {
                   <span style={{ color: mode.accent, fontSize: '1rem', fontWeight: 700 }}>{mode.icon}</span>
                   <span style={{ color: mode.accent, fontSize: '0.78rem', fontWeight: 700, letterSpacing: '0.22em' }}>
                     {mode.label}
+                  </span>
+                  <span style={{
+                    marginLeft: 'auto',
+                    fontSize: '0.6rem',
+                    color: mode.accent,
+                    opacity: 0.5,
+                    border: `1px solid ${mode.accent}44`,
+                    borderRadius: '3px',
+                    padding: '1px 5px',
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                  }}>
+                    {mode.game}
                   </span>
                 </div>
                 <p style={{ color: '#484848', fontSize: '0.76rem', margin: '0 0 16px 0', lineHeight: 1.55 }}>
