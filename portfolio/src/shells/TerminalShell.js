@@ -114,7 +114,7 @@ function TerminalShell({ onExit }) {
           PORTFOLIO TERMINAL — ABHISHEK DEORE
         </span>
         <span style={{ color: MUTED, fontSize: '11px', letterSpacing: '0.1em' }}>
-          PHASE 2 PREVIEW
+          type <span style={{ color: DGREEN }}>exit</span> to switch view
         </span>
       </div>
 

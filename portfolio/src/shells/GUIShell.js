@@ -10,6 +10,7 @@ import Architecture from '../tabs/Architecture';
 import dataService from '../services/dataService';
 import { useTheme } from '../contexts/ThemeContext';
 import ThemeToggle from '../components/ThemeToggle';
+import ExitButton from '../components/ExitButton';
 
 function GUIShell({ onExit }) {
   const personalInfo  = dataService.getPersonalInfo();
@@ -83,29 +84,12 @@ function GUIShell({ onExit }) {
               {footerContent.copyright} | {footerContent.builtWith} |{' '}
               <span className="text-success">{footerContent.designNote}</span>
             </small>
-            <div className="mt-2">
-              <button
-                onClick={onExit}
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  color: theme.mutedText,
-                  fontSize: '0.7rem',
-                  cursor: 'pointer',
-                  letterSpacing: '0.08em',
-                  opacity: 0.4,
-                  textDecoration: 'underline',
-                  padding: 0
-                }}
-              >
-                switch view
-              </button>
-            </div>
           </Card.Body>
         </Card>
       </Container>
 
       <ThemeToggle />
+      <ExitButton onExit={onExit} />
     </div>
   );
 }
