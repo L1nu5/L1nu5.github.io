@@ -7,7 +7,7 @@ const GRADES = [
   { min: 18, label: 'S', desc: 'Legendary. You basically ARE the setlist.',  color: '#ffd700' },
   { min: 15, label: 'A', desc: 'Superfan tier. You clearly pay attention.',   color: '#28a745' },
   { min: 12, label: 'B', desc: 'Solid knowledge. Not bad at all.',            color: '#007bff' },
-  { min:  8, label: 'C', desc: 'You've heard some tracks. Keep listening.',   color: '#fd7e14' },
+  { min:  8, label: 'C', desc: "You've heard some tracks. Keep listening.",   color: '#fd7e14' },
   { min:  0, label: 'D', desc: 'Time to revisit the discography.',            color: '#dc3545' },
 ];
 
