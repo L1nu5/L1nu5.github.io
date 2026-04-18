@@ -151,7 +151,9 @@ async function queryTicketmaster(apiKey, event) {
 const DEEZER_BASE = 'https://api.deezer.com/search/artist';
 
 function primaryArtist(event) {
-  return (event.artists && event.artists[0]) || event.title;
+  const first = event.artists && event.artists[0];
+  if (!first) return event.title;
+  return typeof first === 'object' ? (first.name || event.title) : first;
 }
 
 async function fetchArtistImage(event) {
