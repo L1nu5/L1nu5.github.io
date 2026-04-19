@@ -11,8 +11,21 @@ function App() {
 
   useEffect(() => { setFavicon(mode); }, [mode]);
 
-  const handleSelect = (selected) => setMode(selected);
-  const handleExit   = ()         => setMode(null);
+  // Back button → return to mode selector
+  useEffect(() => {
+    const onPop = (e) => setMode(e.state?.mode ?? null);
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  const handleSelect = (selected) => {
+    window.history.pushState({ mode: selected }, '');
+    setMode(selected);
+  };
+
+  // Exit button uses history.back() so the pushed entry is consumed,
+  // keeping the history stack clean rather than growing it.
+  const handleExit = () => window.history.back();
 
   if (!mode)               return <ModeSelector   onSelect={handleSelect} />;
   if (mode === 'terminal') return <TerminalShell  onExit={handleExit} />;
