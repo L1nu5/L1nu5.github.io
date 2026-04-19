@@ -31,8 +31,8 @@
     },
     {
       "position": 2,
-      "streams": 12,
-      "playedMs": 5440431,
+      "streams": 11,
+      "playedMs": 5080431,
       "indicator": null,
       "artist": {
         "externalIds": {
@@ -186,33 +186,6 @@
     },
     {
       "position": 8,
-      "streams": 8,
-      "playedMs": 2486858,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2CIMQHirSU0MQqyYHq0eOx"
-          ],
-          "appleMusic": [
-            "78011850"
-          ]
-        },
-        "followers": 2872638,
-        "genres": [
-          "edm",
-          "progressive house",
-          "dubstep",
-          "dance"
-        ],
-        "id": 9967,
-        "image": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7",
-        "name": "deadmau5",
-        "spotifyPopularity": 65
-      }
-    },
-    {
-      "position": 9,
       "streams": 10,
       "playedMs": 2411108,
       "indicator": null,
@@ -236,7 +209,7 @@
       }
     },
     {
-      "position": 10,
+      "position": 9,
       "streams": 10,
       "playedMs": 2068803,
       "indicator": null,
@@ -257,6 +230,33 @@
         "image": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9",
         "name": "Pitbull",
         "spotifyPopularity": 85
+      }
+    },
+    {
+      "position": 10,
+      "streams": 7,
+      "playedMs": 1991445,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "2CIMQHirSU0MQqyYHq0eOx"
+          ],
+          "appleMusic": [
+            "78011850"
+          ]
+        },
+        "followers": 2872638,
+        "genres": [
+          "edm",
+          "progressive house",
+          "dubstep",
+          "dance"
+        ],
+        "id": 9967,
+        "image": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7",
+        "name": "deadmau5",
+        "spotifyPopularity": 65
       }
     },
     {
@@ -314,6 +314,34 @@
     },
     {
       "position": 13,
+      "streams": 7,
+      "playedMs": 1709245,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "2o5jDhtHVPhrJdv3cEQ99Z"
+          ],
+          "appleMusic": [
+            "4091218"
+          ]
+        },
+        "followers": 8191750,
+        "genres": [
+          "dance",
+          "edm",
+          "trance",
+          "big room",
+          "house"
+        ],
+        "id": 10732,
+        "image": "https://i.scdn.co/image/ab67616100005174f4973f7346a2f35e56b63d57",
+        "name": "Tiësto",
+        "spotifyPopularity": 80
+      }
+    },
+    {
+      "position": 14,
       "streams": 5,
       "playedMs": 1703662,
       "indicator": null,
@@ -340,7 +368,7 @@
       }
     },
     {
-      "position": 14,
+      "position": 15,
       "streams": 6,
       "playedMs": 1600984,
       "indicator": null,
@@ -362,34 +390,6 @@
         "image": "https://i.scdn.co/image/ab676161000051748cadcbb69a08b4aed788923b",
         "name": "Khaled",
         "spotifyPopularity": 58
-      }
-    },
-    {
-      "position": 15,
-      "streams": 6,
-      "playedMs": 1549871,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2o5jDhtHVPhrJdv3cEQ99Z"
-          ],
-          "appleMusic": [
-            "4091218"
-          ]
-        },
-        "followers": 8191750,
-        "genres": [
-          "dance",
-          "edm",
-          "trance",
-          "big room",
-          "house"
-        ],
-        "id": 10732,
-        "image": "https://i.scdn.co/image/ab67616100005174f4973f7346a2f35e56b63d57",
-        "name": "Tiësto",
-        "spotifyPopularity": 80
       }
     },
     {
@@ -470,32 +470,6 @@
     },
     {
       "position": 19,
-      "streams": 5,
-      "playedMs": 1346119,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5JIdaV4V6IaLMQG6uzAhJY",
-            "7CajNmpbOovFoOoasH2HaY"
-          ],
-          "appleMusic": [
-            "201955086"
-          ]
-        },
-        "followers": 23343014,
-        "genres": [
-          "dance",
-          "edm"
-        ],
-        "id": 2409,
-        "image": "https://i.scdn.co/image/ab676161000051748ebba5e60113b48de8c11f6b",
-        "name": "Calvin Harris",
-        "spotifyPopularity": 85
-      }
-    },
-    {
-      "position": 20,
       "streams": 6,
       "playedMs": 1279359,
       "indicator": null,
@@ -522,7 +496,7 @@
       }
     },
     {
-      "position": 21,
+      "position": 20,
       "streams": 5,
       "playedMs": 1239752,
       "indicator": null,
@@ -548,7 +522,7 @@
       }
     },
     {
-      "position": 22,
+      "position": 21,
       "streams": 7,
       "playedMs": 1237057,
       "indicator": null,
@@ -573,7 +547,7 @@
       }
     },
     {
-      "position": 23,
+      "position": 22,
       "streams": 3,
       "playedMs": 1189929,
       "indicator": null,
@@ -596,7 +570,7 @@
       }
     },
     {
-      "position": 24,
+      "position": 23,
       "streams": 7,
       "playedMs": 1087535,
       "indicator": null,
@@ -624,7 +598,7 @@
       }
     },
     {
-      "position": 25,
+      "position": 24,
       "streams": 6,
       "playedMs": 1053809,
       "indicator": null,
@@ -652,7 +626,7 @@
       }
     },
     {
-      "position": 26,
+      "position": 25,
       "streams": 3,
       "playedMs": 1018426,
       "indicator": null,
@@ -677,7 +651,7 @@
       }
     },
     {
-      "position": 27,
+      "position": 26,
       "streams": 4,
       "playedMs": 962388,
       "indicator": null,
@@ -706,7 +680,7 @@
       }
     },
     {
-      "position": 28,
+      "position": 27,
       "streams": 4,
       "playedMs": 962388,
       "indicator": null,
@@ -733,7 +707,7 @@
       }
     },
     {
-      "position": 29,
+      "position": 28,
       "streams": 4,
       "playedMs": 962388,
       "indicator": null,
@@ -759,7 +733,7 @@
       }
     },
     {
-      "position": 30,
+      "position": 29,
       "streams": 4,
       "playedMs": 951639,
       "indicator": null,
@@ -784,7 +758,7 @@
       }
     },
     {
-      "position": 31,
+      "position": 30,
       "streams": 2,
       "playedMs": 916363,
       "indicator": null,
@@ -810,7 +784,7 @@
       }
     },
     {
-      "position": 32,
+      "position": 31,
       "streams": 2,
       "playedMs": 916363,
       "indicator": null,
@@ -836,7 +810,7 @@
       }
     },
     {
-      "position": 33,
+      "position": 32,
       "streams": 2,
       "playedMs": 916363,
       "indicator": null,
@@ -861,7 +835,7 @@
       }
     },
     {
-      "position": 34,
+      "position": 33,
       "streams": 2,
       "playedMs": 835830,
       "indicator": null,
@@ -888,7 +862,7 @@
       }
     },
     {
-      "position": 35,
+      "position": 34,
       "streams": 2,
       "playedMs": 835830,
       "indicator": null,
@@ -915,7 +889,7 @@
       }
     },
     {
-      "position": 36,
+      "position": 35,
       "streams": 2,
       "playedMs": 830390,
       "indicator": null,
@@ -939,7 +913,7 @@
       }
     },
     {
-      "position": 37,
+      "position": 36,
       "streams": 4,
       "playedMs": 793426,
       "indicator": null,
@@ -963,7 +937,7 @@
       }
     },
     {
-      "position": 38,
+      "position": 37,
       "streams": 4,
       "playedMs": 791790,
       "indicator": null,
@@ -988,7 +962,7 @@
       }
     },
     {
-      "position": 39,
+      "position": 38,
       "streams": 2,
       "playedMs": 724226,
       "indicator": null,
@@ -1013,7 +987,7 @@
       }
     },
     {
-      "position": 40,
+      "position": 39,
       "streams": 2,
       "playedMs": 724226,
       "indicator": null,
@@ -1038,7 +1012,7 @@
       }
     },
     {
-      "position": 41,
+      "position": 40,
       "streams": 3,
       "playedMs": 698716,
       "indicator": null,
@@ -1062,7 +1036,7 @@
       }
     },
     {
-      "position": 42,
+      "position": 41,
       "streams": 3,
       "playedMs": 665599,
       "indicator": null,
@@ -1087,7 +1061,7 @@
       }
     },
     {
-      "position": 43,
+      "position": 42,
       "streams": 3,
       "playedMs": 665520,
       "indicator": null,
@@ -1112,7 +1086,7 @@
       }
     },
     {
-      "position": 44,
+      "position": 43,
       "streams": 3,
       "playedMs": 639455,
       "indicator": null,
@@ -1137,7 +1111,7 @@
       }
     },
     {
-      "position": 45,
+      "position": 44,
       "streams": 2,
       "playedMs": 622500,
       "indicator": null,
@@ -1161,7 +1135,7 @@
       }
     },
     {
-      "position": 46,
+      "position": 45,
       "streams": 3,
       "playedMs": 617292,
       "indicator": null,
@@ -1189,7 +1163,7 @@
       }
     },
     {
-      "position": 47,
+      "position": 46,
       "streams": 2,
       "playedMs": 615470,
       "indicator": null,
@@ -1215,7 +1189,7 @@
       }
     },
     {
-      "position": 48,
+      "position": 47,
       "streams": 2,
       "playedMs": 604800,
       "indicator": null,
@@ -1240,7 +1214,7 @@
       }
     },
     {
-      "position": 49,
+      "position": 48,
       "streams": 2,
       "playedMs": 604800,
       "indicator": null,
@@ -1261,7 +1235,7 @@
       }
     },
     {
-      "position": 50,
+      "position": 49,
       "streams": 3,
       "playedMs": 602332,
       "indicator": null,
@@ -1286,7 +1260,7 @@
       }
     },
     {
-      "position": 51,
+      "position": 50,
       "streams": 2,
       "playedMs": 600000,
       "indicator": null,
@@ -1305,6 +1279,32 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02481569d3113a93642f8bf430",
         "name": "Armaan Khan",
         "spotifyPopularity": 71
+      }
+    },
+    {
+      "position": 51,
+      "streams": 3,
+      "playedMs": 582533,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "5JIdaV4V6IaLMQG6uzAhJY",
+            "7CajNmpbOovFoOoasH2HaY"
+          ],
+          "appleMusic": [
+            "201955086"
+          ]
+        },
+        "followers": 23343014,
+        "genres": [
+          "dance",
+          "edm"
+        ],
+        "id": 2409,
+        "image": "https://i.scdn.co/image/ab676161000051748ebba5e60113b48de8c11f6b",
+        "name": "Calvin Harris",
+        "spotifyPopularity": 85
       }
     },
     {
@@ -5568,6 +5568,28 @@
     {
       "position": 222,
       "streams": 1,
+      "playedMs": 159374,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [],
+          "appleMusic": [
+            "21155249"
+          ]
+        },
+        "followers": 0,
+        "genres": [
+          "dance"
+        ],
+        "id": 16679,
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/64/cf/0f/64cf0f31-1293-b9e2-3708-79ce7e00486a/mzl.gmmblbon.jpg/768x768bb.jpg",
+        "name": "MOGUAI",
+        "spotifyPopularity": 0
+      }
+    },
+    {
+      "position": 223,
+      "streams": 1,
       "playedMs": 155590,
       "indicator": null,
       "artist": {
@@ -5592,7 +5614,7 @@
       }
     },
     {
-      "position": 223,
+      "position": 224,
       "streams": 1,
       "playedMs": 155590,
       "indicator": null,
@@ -5618,7 +5640,7 @@
       }
     },
     {
-      "position": 224,
+      "position": 225,
       "streams": 1,
       "playedMs": 155590,
       "indicator": null,
@@ -5644,7 +5666,7 @@
       }
     },
     {
-      "position": 225,
+      "position": 226,
       "streams": 1,
       "playedMs": 155142,
       "indicator": null,
@@ -5664,7 +5686,7 @@
       }
     },
     {
-      "position": 226,
+      "position": 227,
       "streams": 1,
       "playedMs": 147692,
       "indicator": null,
@@ -5689,7 +5711,7 @@
       }
     },
     {
-      "position": 227,
+      "position": 228,
       "streams": 1,
       "playedMs": 141562,
       "indicator": null,
@@ -5716,7 +5738,7 @@
       }
     },
     {
-      "position": 228,
+      "position": 229,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5741,7 +5763,7 @@
       }
     },
     {
-      "position": 229,
+      "position": 230,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5766,7 +5788,7 @@
       }
     },
     {
-      "position": 230,
+      "position": 231,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5791,7 +5813,7 @@
       }
     },
     {
-      "position": 231,
+      "position": 232,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5816,7 +5838,7 @@
       }
     },
     {
-      "position": 232,
+      "position": 233,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5840,7 +5862,7 @@
       }
     },
     {
-      "position": 233,
+      "position": 234,
       "streams": 1,
       "playedMs": 105271,
       "indicator": null,
