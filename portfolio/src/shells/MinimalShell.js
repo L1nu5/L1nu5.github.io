@@ -172,8 +172,8 @@ function MinimalShell({ onExit }) {
       <div style={{
         fontFamily: 'Georgia, "Times New Roman", serif',
         color: C.fg,
-        padding: 'clamp(2rem, 8vw, 5rem) clamp(1.5rem, 10vw, 12rem)',
-        maxWidth: '860px',
+        padding: 'clamp(2rem, 5vw, 4rem) clamp(1.5rem, 5vw, 6rem)',
+        maxWidth: '1100px',
         margin: '0 auto',
         boxSizing: 'border-box',
       }}>

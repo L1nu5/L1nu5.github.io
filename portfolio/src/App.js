@@ -6,22 +6,13 @@ import TerminalShell from './shells/TerminalShell';
 import MinimalShell from './shells/MinimalShell';
 import { setFavicon } from './utils/favicon';
 
-const STORAGE_KEY = 'portfolio-mode';
-
 function App() {
-  const [mode, setMode] = useState(() => localStorage.getItem(STORAGE_KEY));
+  const [mode, setMode] = useState(null);
 
   useEffect(() => { setFavicon(mode); }, [mode]);
 
-  const handleSelect = (selected) => {
-    localStorage.setItem(STORAGE_KEY, selected);
-    setMode(selected);
-  };
-
-  const handleExit = () => {
-    localStorage.removeItem(STORAGE_KEY);
-    setMode(null);
-  };
+  const handleSelect = (selected) => setMode(selected);
+  const handleExit   = ()         => setMode(null);
 
   if (!mode)               return <ModeSelector   onSelect={handleSelect} />;
   if (mode === 'terminal') return <TerminalShell  onExit={handleExit} />;
