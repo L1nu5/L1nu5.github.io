@@ -2,13 +2,17 @@
   "items": [
     {
       "position": 1,
-      "streams": 15,
-      "playedMs": 5587986,
+      "streams": 14,
+      "playedMs": 5168773,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "0SfsnGyD8FpIN4U4WCkBZ5"
+            "0SfsnGyD8FpIN4U4WCkBZ5",
+            "6wFfZpKfRnX0nmnow3v4m2",
+            "28iip3Xb4RNP0Iiji1R6KO",
+            "5LhiEFGfadqRckMXCFxsjg",
+            "25mFVpuABa9GkGcj9eOPce"
           ],
           "appleMusic": [
             "17976294"
@@ -86,10 +90,14 @@
       "artist": {
         "externalIds": {
           "spotify": [
-            "7bXgB6jMjp9ATFy66eO08Z"
+            "7bXgB6jMjp9ATFy66eO08Z",
+            "396wvM69VtHgLZSfFB0pyH"
           ],
           "appleMusic": [
-            "95705522"
+            "1698546001",
+            "95705522",
+            "1515486109",
+            "1120347611"
           ]
         },
         "followers": 30276556,
@@ -98,7 +106,7 @@
           "r&b"
         ],
         "id": 2411,
-        "image": "https://i.scdn.co/image/ab6761610000517401513fbafb66a3ca4f28b299",
+        "image": "https://i.scdn.co/image/ab67616d00001e02533b95d4af7d039df79d6b7a",
         "name": "Chris Brown",
         "spotifyPopularity": 87
       }
@@ -106,35 +114,7 @@
     {
       "position": 5,
       "streams": 12,
-      "playedMs": 3126431,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1wRPtKGflJrBx9BmLsSwlU"
-          ],
-          "appleMusic": [
-            "1752632526",
-            "213157068"
-          ]
-        },
-        "followers": 65839973,
-        "genres": [
-          "bollywood",
-          "hindi pop",
-          "desi",
-          "sufi"
-        ],
-        "id": 12997,
-        "image": "https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca",
-        "name": "Pritam",
-        "spotifyPopularity": 87
-      }
-    },
-    {
-      "position": 6,
-      "streams": 15,
-      "playedMs": 2945342,
+      "playedMs": 2589752,
       "indicator": null,
       "artist": {
         "externalIds": {
@@ -160,32 +140,7 @@
       }
     },
     {
-      "position": 7,
-      "streams": 10,
-      "playedMs": 2822808,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1xNmvlEiICkRlRGqlNFZ43"
-          ],
-          "appleMusic": [
-            "41781292"
-          ]
-        },
-        "followers": 1517035,
-        "genres": [
-          "edm",
-          "dance"
-        ],
-        "id": 19994,
-        "image": "https://i.scdn.co/image/ab6761610000517447df925e56857f312974ff55",
-        "name": "Axwell",
-        "spotifyPopularity": 66
-      }
-    },
-    {
-      "position": 8,
+      "position": 6,
       "streams": 10,
       "playedMs": 2411108,
       "indicator": null,
@@ -209,31 +164,32 @@
       }
     },
     {
-      "position": 9,
-      "streams": 10,
-      "playedMs": 2068803,
+      "position": 7,
+      "streams": 9,
+      "playedMs": 2407613,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "0TnOYISbd1XYRBk9myaseg"
+            "1xNmvlEiICkRlRGqlNFZ43"
           ],
           "appleMusic": [
-            "27044968"
+            "41781292"
           ]
         },
-        "followers": 12490089,
+        "followers": 1517035,
         "genres": [
-          "pop"
+          "edm",
+          "dance"
         ],
-        "id": 361,
-        "image": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9",
-        "name": "Pitbull",
-        "spotifyPopularity": 85
+        "id": 19994,
+        "image": "https://i.scdn.co/image/ab6761610000517447df925e56857f312974ff55",
+        "name": "Axwell",
+        "spotifyPopularity": 66
       }
     },
     {
-      "position": 10,
+      "position": 8,
       "streams": 7,
       "playedMs": 1991445,
       "indicator": null,
@@ -260,7 +216,7 @@
       }
     },
     {
-      "position": 11,
+      "position": 9,
       "streams": 9,
       "playedMs": 1873499,
       "indicator": null,
@@ -287,7 +243,31 @@
       }
     },
     {
-      "position": 12,
+      "position": 10,
+      "streams": 9,
+      "playedMs": 1865323,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "0TnOYISbd1XYRBk9myaseg"
+          ],
+          "appleMusic": [
+            "27044968"
+          ]
+        },
+        "followers": 12490089,
+        "genres": [
+          "pop"
+        ],
+        "id": 361,
+        "image": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9",
+        "name": "Pitbull",
+        "spotifyPopularity": 85
+      }
+    },
+    {
+      "position": 11,
       "streams": 9,
       "playedMs": 1726023,
       "indicator": null,
@@ -313,89 +293,9 @@
       }
     },
     {
-      "position": 13,
+      "position": 12,
       "streams": 7,
-      "playedMs": 1709245,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2o5jDhtHVPhrJdv3cEQ99Z"
-          ],
-          "appleMusic": [
-            "4091218"
-          ]
-        },
-        "followers": 8191750,
-        "genres": [
-          "dance",
-          "edm",
-          "trance",
-          "big room",
-          "house"
-        ],
-        "id": 10732,
-        "image": "https://i.scdn.co/image/ab67616100005174f4973f7346a2f35e56b63d57",
-        "name": "Tiësto",
-        "spotifyPopularity": 80
-      }
-    },
-    {
-      "position": 14,
-      "streams": 5,
-      "playedMs": 1703662,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "55iSNkZYEi5O4nIq37lngW",
-            "1AjG4kPZtTlEhqkrLC1yno"
-          ],
-          "appleMusic": [
-            "21824698"
-          ]
-        },
-        "followers": 5810,
-        "genres": [
-          "trance",
-          "dance",
-          "dubstep"
-        ],
-        "id": 275239,
-        "image": "https://i.scdn.co/image/ab67616100005174fcdd2349afd169396505ae45",
-        "name": "Reflekt",
-        "spotifyPopularity": 4
-      }
-    },
-    {
-      "position": 15,
-      "streams": 6,
-      "playedMs": 1600984,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "28ztjHIXceRRntmTUfnmUX"
-          ],
-          "appleMusic": [
-            "384924"
-          ]
-        },
-        "followers": 1656515,
-        "genres": [
-          "raï",
-          "worldwide"
-        ],
-        "id": 67597,
-        "image": "https://i.scdn.co/image/ab676161000051748cadcbb69a08b4aed788923b",
-        "name": "Khaled",
-        "spotifyPopularity": 58
-      }
-    },
-    {
-      "position": 16,
-      "streams": 6,
-      "playedMs": 1499246,
+      "playedMs": 1709299,
       "indicator": null,
       "artist": {
         "externalIds": {
@@ -420,83 +320,63 @@
       }
     },
     {
-      "position": 17,
+      "position": 13,
       "streams": 4,
-      "playedMs": 1369929,
+      "playedMs": 1523662,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "4mYOtUmFApJtEbaeGt0RCk"
+            "55iSNkZYEi5O4nIq37lngW",
+            "1AjG4kPZtTlEhqkrLC1yno"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "21824698"
+          ]
         },
-        "followers": 3973,
+        "followers": 5810,
         "genres": [
-          "melodic house",
-          "progressive house"
+          "trance",
+          "dance",
+          "dubstep"
         ],
-        "id": 489541,
-        "image": "https://i.scdn.co/image/ab67616d00001e02032147e5cdc6b9871641461a",
-        "name": "delline bass",
-        "spotifyPopularity": 53
+        "id": 275239,
+        "image": "https://i.scdn.co/image/ab67616100005174fcdd2349afd169396505ae45",
+        "name": "Reflekt",
+        "spotifyPopularity": 4
       }
     },
     {
-      "position": 18,
+      "position": 14,
       "streams": 6,
-      "playedMs": 1357542,
+      "playedMs": 1418979,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "60d24wfXkVzDSfLS6hyCjZ"
+            "2o5jDhtHVPhrJdv3cEQ99Z",
+            "41VYEIQ9w2RgVlnFJSf0Gr"
           ],
           "appleMusic": [
-            "430932944"
+            "4091218"
           ]
         },
-        "followers": 15163209,
-        "genres": [
-          "edm",
-          "electronica",
-          "progressive house"
-        ],
-        "id": 2308,
-        "image": "https://i.scdn.co/image/ab67616100005174f5b8ee60f1f4ee3453aba40b",
-        "name": "Martin Garrix",
-        "spotifyPopularity": 74
-      }
-    },
-    {
-      "position": 19,
-      "streams": 6,
-      "playedMs": 1279359,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6zgVdOBoN1Fu4JGqd9SZlG",
-            "10feV0eOe64kjUc95Lnfuv"
-          ],
-          "appleMusic": [
-            "63341948",
-            "202993576"
-          ]
-        },
-        "followers": 13030,
+        "followers": 8191750,
         "genres": [
           "dance",
-          "trance"
+          "edm",
+          "trance",
+          "big room",
+          "house"
         ],
-        "id": 6291,
-        "image": "https://i.scdn.co/image/ab67616100005174bc30c2cae526602aedbb93f2",
-        "name": "Three Drives",
-        "spotifyPopularity": 48
+        "id": 10732,
+        "image": "https://i.scdn.co/image/ab67616d00001e02126c6cab583aa21db32b461f",
+        "name": "Tiësto",
+        "spotifyPopularity": 80
       }
     },
     {
-      "position": 20,
+      "position": 15,
       "streams": 5,
       "playedMs": 1239752,
       "indicator": null,
@@ -522,13 +402,14 @@
       }
     },
     {
-      "position": 21,
+      "position": 16,
       "streams": 7,
       "playedMs": 1237057,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
+            "759wL1SXzQj1fVSxIjCmqP",
             "1Cs0zKBU1kc0i8ypK3B9ai"
           ],
           "appleMusic": [
@@ -547,7 +428,7 @@
       }
     },
     {
-      "position": 22,
+      "position": 17,
       "streams": 3,
       "playedMs": 1189929,
       "indicator": null,
@@ -570,9 +451,32 @@
       }
     },
     {
-      "position": 23,
-      "streams": 7,
-      "playedMs": 1087535,
+      "position": 18,
+      "streams": 3,
+      "playedMs": 1189929,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "4mYOtUmFApJtEbaeGt0RCk"
+          ],
+          "appleMusic": []
+        },
+        "followers": 3973,
+        "genres": [
+          "melodic house",
+          "progressive house"
+        ],
+        "id": 489541,
+        "image": "https://i.scdn.co/image/ab67616d00001e02032147e5cdc6b9871641461a",
+        "name": "delline bass",
+        "spotifyPopularity": 53
+      }
+    },
+    {
+      "position": 19,
+      "streams": 6,
+      "playedMs": 1016028,
       "indicator": null,
       "artist": {
         "externalIds": {
@@ -598,9 +502,9 @@
       }
     },
     {
-      "position": 24,
-      "streams": 6,
-      "playedMs": 1053809,
+      "position": 20,
+      "streams": 5,
+      "playedMs": 979779,
       "indicator": null,
       "artist": {
         "externalIds": {
@@ -626,114 +530,7 @@
       }
     },
     {
-      "position": 25,
-      "streams": 3,
-      "playedMs": 1018426,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "7LTI9KZLhnMbrDojlJK7Li"
-          ],
-          "appleMusic": [
-            "61519933"
-          ]
-        },
-        "followers": 35401,
-        "genres": [
-          "nederpop",
-          "pop"
-        ],
-        "id": 7660,
-        "image": "https://i.scdn.co/image/ab6761610000517418077c48aa8145ff4fb82a7d",
-        "name": "Jacqueline Govaert",
-        "spotifyPopularity": 43
-      }
-    },
-    {
-      "position": 26,
-      "streams": 4,
-      "playedMs": 962388,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "4kq8z3vydHjPDggxb16ErB"
-          ],
-          "appleMusic": [
-            "381334170"
-          ]
-        },
-        "followers": 480871,
-        "genres": [
-          "bollywood",
-          "tollywood",
-          "desi",
-          "telugu pop",
-          "hindi pop",
-          "tamil dance"
-        ],
-        "id": 13139,
-        "image": "https://i.scdn.co/image/ab6761610000517427dcf20a4ef3aea2712aa3e5",
-        "name": "Nakash Aziz",
-        "spotifyPopularity": 67
-      }
-    },
-    {
-      "position": 27,
-      "streams": 4,
-      "playedMs": 962388,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2UwDJeoMqYers5Jmm75zm2"
-          ],
-          "appleMusic": [
-            "290296723",
-            "1143666479"
-          ]
-        },
-        "followers": 2906076,
-        "genres": [
-          "bollywood",
-          "hindi pop",
-          "desi"
-        ],
-        "id": 13148,
-        "image": "https://i.scdn.co/image/ab676161000051745b62eed50d71aabaa1ec2c46",
-        "name": "Antara Mitra",
-        "spotifyPopularity": 65
-      }
-    },
-    {
-      "position": 28,
-      "streams": 4,
-      "playedMs": 962388,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1XUGerdrjDBJxF9ZfxMqDj"
-          ],
-          "appleMusic": [
-            "271652634"
-          ]
-        },
-        "followers": 517666,
-        "genres": [
-          "bollywood",
-          "hindi pop",
-          "desi"
-        ],
-        "id": 5253502,
-        "image": "https://i.scdn.co/image/ab67616100005174f37f48f52bf5dafbceab861c",
-        "name": "Mayur Puri",
-        "spotifyPopularity": 60
-      }
-    },
-    {
-      "position": 29,
+      "position": 21,
       "streams": 4,
       "playedMs": 951639,
       "indicator": null,
@@ -758,162 +555,60 @@
       }
     },
     {
-      "position": 30,
-      "streams": 2,
-      "playedMs": 916363,
+      "position": 22,
+      "streams": 4,
+      "playedMs": 894403,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "3dAnWbqTzCOK1jdiK2v3gI"
+            "60d24wfXkVzDSfLS6hyCjZ"
           ],
           "appleMusic": [
-            "295074588"
+            "430932944"
           ]
         },
-        "followers": 42724,
-        "genres": [
-          "trance",
-          "progressive trance",
-          "dance"
-        ],
-        "id": 7683,
-        "image": "https://i.scdn.co/image/ab676161000051747c8931ab6124fdd6b897599e",
-        "name": "Roger Shah",
-        "spotifyPopularity": 38
-      }
-    },
-    {
-      "position": 31,
-      "streams": 2,
-      "playedMs": 916363,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "39xJyKl2iYCAQywsUk4aWg"
-          ],
-          "appleMusic": [
-            "150155238"
-          ]
-        },
-        "followers": 55025,
-        "genres": [
-          "trance",
-          "progressive trance",
-          "dance"
-        ],
-        "id": 12180,
-        "image": "https://i.scdn.co/image/ab6761610000517466455e4eb5189cb326ff1ec2",
-        "name": "Sunlounger",
-        "spotifyPopularity": 42
-      }
-    },
-    {
-      "position": 32,
-      "streams": 2,
-      "playedMs": 916363,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6wrD0NOeNUdjXAOJdA2J38"
-          ],
-          "appleMusic": [
-            "309873081"
-          ]
-        },
-        "followers": 3962,
-        "genres": [
-          "trance",
-          "progressive trance"
-        ],
-        "id": 12412,
-        "image": "https://i.scdn.co/image/ab67616100005174b5cfc6e32cce3a91ae28ac6c",
-        "name": "Zara Taylor",
-        "spotifyPopularity": 36
-      }
-    },
-    {
-      "position": 33,
-      "streams": 2,
-      "playedMs": 835830,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "521qvhdobR0GzhvU6TFw76"
-          ],
-          "appleMusic": [
-            "283453767"
-          ]
-        },
-        "followers": 236734,
+        "followers": 15163209,
         "genres": [
           "edm",
-          "progressive house",
-          "progressive trance",
-          "dance"
+          "electronica",
+          "progressive house"
         ],
-        "id": 12637,
-        "image": "https://i.scdn.co/image/ab67616100005174b44e5d61a4fd3ccc65045fc7",
-        "name": "Tritonal",
-        "spotifyPopularity": 49
+        "id": 2308,
+        "image": "https://i.scdn.co/image/ab67616100005174f5b8ee60f1f4ee3453aba40b",
+        "name": "Martin Garrix",
+        "spotifyPopularity": 74
       }
     },
     {
-      "position": 34,
-      "streams": 2,
-      "playedMs": 835830,
+      "position": 23,
+      "streams": 4,
+      "playedMs": 864586,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "5BKXCIdVnAwBQKUoGNqfZj"
+            "6zgVdOBoN1Fu4JGqd9SZlG",
+            "10feV0eOe64kjUc95Lnfuv"
           ],
           "appleMusic": [
-            "291814086"
+            "63341948",
+            "202993576"
           ]
         },
-        "followers": 3974,
+        "followers": 13030,
         "genres": [
-          "trance",
-          "chillstep",
-          "melodic bass",
-          "dubstep"
+          "dance",
+          "trance"
         ],
-        "id": 12638,
-        "image": "https://i.scdn.co/image/ab676161000051742576df84de528be18b26de11",
-        "name": "Cristina Soto",
-        "spotifyPopularity": 31
+        "id": 6291,
+        "image": "https://i.scdn.co/image/ab67616100005174bc30c2cae526602aedbb93f2",
+        "name": "Three Drives",
+        "spotifyPopularity": 48
       }
     },
     {
-      "position": 35,
-      "streams": 2,
-      "playedMs": 830390,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2anOd48kSLCgEawhP3LJpJ"
-          ],
-          "appleMusic": [
-            "93589325"
-          ]
-        },
-        "followers": 949,
-        "genres": [
-          "dance"
-        ],
-        "id": 598545,
-        "image": "https://i.scdn.co/image/ab67616d00001e02ce58ec3d5b08b58d06cd244c",
-        "name": "C-Mos",
-        "spotifyPopularity": 19
-      }
-    },
-    {
-      "position": 36,
+      "position": 24,
       "streams": 4,
       "playedMs": 793426,
       "indicator": null,
@@ -937,7 +632,7 @@
       }
     },
     {
-      "position": 37,
+      "position": 25,
       "streams": 4,
       "playedMs": 791790,
       "indicator": null,
@@ -962,7 +657,32 @@
       }
     },
     {
-      "position": 38,
+      "position": 26,
+      "streams": 4,
+      "playedMs": 755696,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "586UieDtNlK2F8hEMayYbb"
+          ],
+          "appleMusic": [
+            "1556367263"
+          ]
+        },
+        "followers": 5936,
+        "genres": [
+          "bhajan",
+          "bollywood"
+        ],
+        "id": 6498703,
+        "image": "https://i.scdn.co/image/ab6761610000517403357900e691d6cef0eefa58",
+        "name": "Sudhir Yaduvanshi",
+        "spotifyPopularity": 64
+      }
+    },
+    {
+      "position": 27,
       "streams": 2,
       "playedMs": 724226,
       "indicator": null,
@@ -987,7 +707,7 @@
       }
     },
     {
-      "position": 39,
+      "position": 28,
       "streams": 2,
       "playedMs": 724226,
       "indicator": null,
@@ -1012,7 +732,7 @@
       }
     },
     {
-      "position": 40,
+      "position": 29,
       "streams": 3,
       "playedMs": 698716,
       "indicator": null,
@@ -1036,57 +756,7 @@
       }
     },
     {
-      "position": 41,
-      "streams": 3,
-      "playedMs": 665599,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6TQj5BFPooTa08A7pk8AQ1"
-          ],
-          "appleMusic": [
-            "2827464"
-          ]
-        },
-        "followers": 1015827,
-        "genres": [
-          "dance",
-          "edm"
-        ],
-        "id": 18066,
-        "image": "https://i.scdn.co/image/ab67616100005174c96f32c30b4c236b5b9c40fa",
-        "name": "Kaskade",
-        "spotifyPopularity": 63
-      }
-    },
-    {
-      "position": 42,
-      "streams": 3,
-      "playedMs": 665520,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2ohlvFf9PBsDELdRstPtlP"
-          ],
-          "appleMusic": [
-            "3688902"
-          ]
-        },
-        "followers": 295020,
-        "genres": [
-          "trance",
-          "progressive trance"
-        ],
-        "id": 10724,
-        "image": "https://i.scdn.co/image/ab6761610000517446de5d8079d01cc1f8b22ced",
-        "name": "Ferry Corsten",
-        "spotifyPopularity": 55
-      }
-    },
-    {
-      "position": 43,
+      "position": 30,
       "streams": 3,
       "playedMs": 639455,
       "indicator": null,
@@ -1111,7 +781,7 @@
       }
     },
     {
-      "position": 44,
+      "position": 31,
       "streams": 2,
       "playedMs": 622500,
       "indicator": null,
@@ -1135,61 +805,35 @@
       }
     },
     {
-      "position": 45,
-      "streams": 3,
-      "playedMs": 617292,
+      "position": 32,
+      "streams": 2,
+      "playedMs": 604800,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "2oSONSC9zQ4UonDKnLqksx"
+            "1wRPtKGflJrBx9BmLsSwlU"
           ],
           "appleMusic": [
-            "300187267"
+            "1752632526",
+            "213157068"
           ]
         },
-        "followers": 44186143,
+        "followers": 65839973,
         "genres": [
           "bollywood",
           "hindi pop",
           "desi",
-          "sufi",
-          "qawwali"
+          "sufi"
         ],
-        "id": 3711,
-        "image": "https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84",
-        "name": "Atif Aslam",
-        "spotifyPopularity": 79
+        "id": 12997,
+        "image": "https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca",
+        "name": "Pritam",
+        "spotifyPopularity": 87
       }
     },
     {
-      "position": 46,
-      "streams": 2,
-      "playedMs": 615470,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5HQ7CCzNIm8g1nysh4gDM7"
-          ],
-          "appleMusic": [
-            "41503476"
-          ]
-        },
-        "followers": 10120,
-        "genres": [
-          "trance",
-          "progressive trance",
-          "dance"
-        ],
-        "id": 67703,
-        "image": "https://i.scdn.co/image/ab6761610000517480faf09075c518a5abf2aff5",
-        "name": "George Acosta",
-        "spotifyPopularity": 23
-      }
-    },
-    {
-      "position": 47,
+      "position": 33,
       "streams": 2,
       "playedMs": 604800,
       "indicator": null,
@@ -1199,6 +843,7 @@
             "2OMafVUM7PrgRrasNPZbKN"
           ],
           "appleMusic": [
+            "1575915766",
             "296992184"
           ]
         },
@@ -1214,16 +859,14 @@
       }
     },
     {
-      "position": 48,
+      "position": 34,
       "streams": 2,
       "playedMs": 604800,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [],
-          "appleMusic": [
-            "1575915766"
-          ]
+          "appleMusic": []
         },
         "followers": 0,
         "genres": [
@@ -1235,7 +878,7 @@
       }
     },
     {
-      "position": 49,
+      "position": 35,
       "streams": 3,
       "playedMs": 602332,
       "indicator": null,
@@ -1260,7 +903,74 @@
       }
     },
     {
-      "position": 50,
+      "position": 36,
+      "streams": 3,
+      "playedMs": 600106,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "1bLQBuSop3ekE5Qustj5nP"
+          ],
+          "appleMusic": [
+            "56383825"
+          ]
+        },
+        "followers": 186590,
+        "genres": [
+          "pop",
+          "bhangra",
+          "desi pop"
+        ],
+        "id": 377761,
+        "image": "https://i.scdn.co/image/ab676161000051747026eddba9d88ad0db0aca0a",
+        "name": "Bombay Rockers",
+        "spotifyPopularity": 38
+      }
+    },
+    {
+      "position": 37,
+      "streams": 3,
+      "playedMs": 600106,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "5Uo28tAylVBPPW2Cs8LFwN"
+          ],
+          "appleMusic": []
+        },
+        "followers": 76175,
+        "genres": [
+          "punjabi pop"
+        ],
+        "id": 28757002,
+        "image": "https://i.scdn.co/image/ab67616d00001e0232f791707c47d5f7636f3982",
+        "name": "Khan Saab",
+        "spotifyPopularity": 71
+      }
+    },
+    {
+      "position": 38,
+      "streams": 3,
+      "playedMs": 600106,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "2TcJ4MwxLUGkZOxXmckEJC"
+          ],
+          "appleMusic": []
+        },
+        "followers": 20,
+        "genres": [],
+        "id": 29463385,
+        "name": "Token",
+        "spotifyPopularity": 17
+      }
+    },
+    {
+      "position": 39,
       "streams": 2,
       "playedMs": 600000,
       "indicator": null,
@@ -1282,7 +992,32 @@
       }
     },
     {
-      "position": 51,
+      "position": 40,
+      "streams": 2,
+      "playedMs": 599213,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "7LTI9KZLhnMbrDojlJK7Li"
+          ],
+          "appleMusic": [
+            "61519933"
+          ]
+        },
+        "followers": 35401,
+        "genres": [
+          "nederpop",
+          "pop"
+        ],
+        "id": 7660,
+        "image": "https://i.scdn.co/image/ab6761610000517418077c48aa8145ff4fb82a7d",
+        "name": "Jacqueline Govaert",
+        "spotifyPopularity": 43
+      }
+    },
+    {
+      "position": 41,
       "streams": 3,
       "playedMs": 582533,
       "indicator": null,
@@ -1308,7 +1043,7 @@
       }
     },
     {
-      "position": 52,
+      "position": 42,
       "streams": 3,
       "playedMs": 560055,
       "indicator": null,
@@ -1335,7 +1070,7 @@
       }
     },
     {
-      "position": 53,
+      "position": 43,
       "streams": 3,
       "playedMs": 555761,
       "indicator": null,
@@ -1355,7 +1090,7 @@
       }
     },
     {
-      "position": 54,
+      "position": 44,
       "streams": 2,
       "playedMs": 547528,
       "indicator": null,
@@ -1364,7 +1099,9 @@
           "spotify": [
             "1vo8zHmO1KzkuU9Xxh6J7W"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "1205547561"
+          ]
         },
         "followers": 265210,
         "genres": [
@@ -1379,144 +1116,15 @@
       }
     },
     {
-      "position": 55,
-      "streams": 3,
-      "playedMs": 545643,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "586UieDtNlK2F8hEMayYbb"
-          ],
-          "appleMusic": [
-            "1556367263"
-          ]
-        },
-        "followers": 5936,
-        "genres": [
-          "bhajan",
-          "bollywood"
-        ],
-        "id": 6498703,
-        "image": "https://i.scdn.co/image/ab6761610000517403357900e691d6cef0eefa58",
-        "name": "Sudhir Yaduvanshi",
-        "spotifyPopularity": 64
-      }
-    },
-    {
-      "position": 56,
-      "streams": 4,
-      "playedMs": 542340,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2JSYASbWU5Y0fVpts3Eq7g"
-          ],
-          "appleMusic": [
-            "14291605"
-          ]
-        },
-        "followers": 6716947,
-        "genres": [
-          "bollywood",
-          "ghazal",
-          "hindi pop",
-          "bangla pop"
-        ],
-        "id": 12539,
-        "image": "https://i.scdn.co/image/ab67616100005174d3b213d51e0ea60f0c768a38",
-        "name": "R. D. Burman",
-        "spotifyPopularity": 73
-      }
-    },
-    {
-      "position": 57,
-      "streams": 4,
-      "playedMs": 542340,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5as8A4G47Ohu9NSWs3Je8U"
-          ],
-          "appleMusic": [
-            "2581435"
-          ]
-        },
-        "followers": 10959431,
-        "genres": [
-          "ghazal",
-          "marathi pop",
-          "bangla pop",
-          "bollywood",
-          "hindi pop"
-        ],
-        "id": 14569,
-        "image": "https://i.scdn.co/image/ab676161000051747c6855a92b408b6f82f3e6d1",
-        "name": "Asha Bhosle",
-        "spotifyPopularity": 73
-      }
-    },
-    {
-      "position": 58,
-      "streams": 4,
-      "playedMs": 542340,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "7ikcALJgPCvpL25820JNYR"
-          ],
-          "appleMusic": [
-            "61744404"
-          ]
-        },
-        "followers": 111486,
-        "genres": [
-          "bollywood"
-        ],
-        "id": 586131,
-        "image": "https://i.scdn.co/image/ab67616d00001e02206e7788d2e4e4aee63046fb",
-        "name": "Majrooh Sultanpuri",
-        "spotifyPopularity": 57
-      }
-    },
-    {
-      "position": 59,
-      "streams": 2,
-      "playedMs": 538531,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5T2I75UlGBcWd5nVyfmL13"
-          ],
-          "appleMusic": [
-            "180519654"
-          ]
-        },
-        "followers": 10069398,
-        "genres": [
-          "bollywood",
-          "desi",
-          "hindi pop"
-        ],
-        "id": 13257,
-        "image": "https://i.scdn.co/image/ab676161000051744f6cee8d7f3c9e35f88c1cc9",
-        "name": "Mika Singh",
-        "spotifyPopularity": 66
-      }
-    },
-    {
-      "position": 60,
+      "position": 45,
       "streams": 2,
       "playedMs": 536718,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "67hb7towEyKvt5Z8Bx306c"
+            "67hb7towEyKvt5Z8Bx306c",
+            "3IhB9M6wqKkGVFawGPOdjB"
           ],
           "appleMusic": [
             "284433289"
@@ -1533,85 +1141,7 @@
       }
     },
     {
-      "position": 61,
-      "streams": 2,
-      "playedMs": 534212,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6OQ7sfN0G1E2pZMhYW9wjG"
-          ],
-          "appleMusic": [
-            "322480591"
-          ]
-        },
-        "followers": 499171,
-        "genres": [
-          "arabic",
-          "egyptian pop"
-        ],
-        "id": 242271,
-        "image": "https://i.scdn.co/image/ab67616d00001e02653a8cc091d7ba1e7dabf6ac",
-        "name": "Hisham Abbas",
-        "spotifyPopularity": 38
-      }
-    },
-    {
-      "position": 62,
-      "streams": 2,
-      "playedMs": 510829,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1Jt7JB3WIWaANzwHoybsVn"
-          ],
-          "appleMusic": [
-            "341335398"
-          ]
-        },
-        "followers": 396484,
-        "genres": [
-          "bollywood",
-          "desi",
-          "hindi pop",
-          "indian pop"
-        ],
-        "id": 200597,
-        "image": "https://i.scdn.co/image/ab676161000051743dafd17cbc4210304de2bd15",
-        "name": "Shefali Alvares",
-        "spotifyPopularity": 59
-      }
-    },
-    {
-      "position": 63,
-      "streams": 3,
-      "playedMs": 508166,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "4ojkMVHjuDZgDXSJy5qs2h"
-          ],
-          "appleMusic": [
-            "641597575"
-          ]
-        },
-        "followers": 272242,
-        "genres": [
-          "bollywood",
-          "hindi pop",
-          "bangla pop"
-        ],
-        "id": 205641,
-        "image": "https://i.scdn.co/image/ab67616100005174d2e401323c697e59fdfd03b8",
-        "name": "Madhubanti Bagchi",
-        "spotifyPopularity": 71
-      }
-    },
-    {
-      "position": 64,
+      "position": 46,
       "streams": 2,
       "playedMs": 502395,
       "indicator": null,
@@ -1639,7 +1169,7 @@
       }
     },
     {
-      "position": 65,
+      "position": 47,
       "streams": 1,
       "playedMs": 480000,
       "indicator": null,
@@ -1666,69 +1196,14 @@
       }
     },
     {
-      "position": 66,
-      "streams": 2,
-      "playedMs": 477060,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "7JMBJmGMqw4H33HECyW4QP"
-          ],
-          "appleMusic": [
-            "457716371"
-          ]
-        },
-        "followers": 538157,
-        "genres": [
-          "desi",
-          "bollywood",
-          "bhangra",
-          "desi pop",
-          "worldwide"
-        ],
-        "id": 182974,
-        "image": "https://i.scdn.co/image/ab67616100005174464c5c4bdee5c5264b6a0d59",
-        "name": "Zack Knight",
-        "spotifyPopularity": 58
-      }
-    },
-    {
-      "position": 67,
-      "streams": 2,
-      "playedMs": 477060,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "4bWGzsNAtfPp8P7pSBukH8"
-          ],
-          "appleMusic": [
-            "1189168526"
-          ]
-        },
-        "followers": 50359,
-        "genres": [
-          "bollywood",
-          "desi",
-          "desi pop",
-          "hindi pop",
-          "indian pop"
-        ],
-        "id": 261815,
-        "image": "https://i.scdn.co/image/ab67616100005174239609a24a1b606a0a71f861",
-        "name": "Jasmin Walia",
-        "spotifyPopularity": 53
-      }
-    },
-    {
-      "position": 68,
+      "position": 48,
       "streams": 2,
       "playedMs": 474946,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
+            "4hYkSuefuEnpCjVeVfd0br",
             "6ieVhWXtOmK6DO6dmX7Eko"
           ],
           "appleMusic": [
@@ -1740,48 +1215,25 @@
           "dance"
         ],
         "id": 103939,
-        "image": "https://i.scdn.co/image/ab6761610000517496fb438c934552364ee6d3f7",
+        "image": "https://i.scdn.co/image/ab67616d00001e022b0b961d9f727ebdab66a10c",
         "name": "Sneaky Sound System",
         "spotifyPopularity": 44
       }
     },
     {
-      "position": 69,
-      "streams": 2,
-      "playedMs": 470476,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6ySxYu68zTsO5ghsThpGtS"
-          ],
-          "appleMusic": [
-            "15029635"
-          ]
-        },
-        "followers": 310272,
-        "genres": [
-          "trance",
-          "progressive trance"
-        ],
-        "id": 6290,
-        "image": "https://i.scdn.co/image/ab67616100005174715f2b0a098b31ba36e14876",
-        "name": "Cosmic Gate",
-        "spotifyPopularity": 54
-      }
-    },
-    {
-      "position": 70,
+      "position": 49,
       "streams": 2,
       "playedMs": 467786,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "3Isy6kedDrgPYoTS1dazA9"
+            "3Isy6kedDrgPYoTS1dazA9",
+            "2ZVEnkCKF0ytNHpj9cLxte"
           ],
           "appleMusic": [
-            "155138"
+            "155138",
+            "163178231"
           ]
         },
         "followers": 5528954,
@@ -1790,13 +1242,13 @@
           "reggae"
         ],
         "id": 2087,
-        "image": "https://i.scdn.co/image/ab6761610000517460c3e9abe7327c0097738f22",
+        "image": "https://i.scdn.co/image/ab67616d00001e02c754220796841aba3308eb72",
         "name": "Sean Paul",
         "spotifyPopularity": 83
       }
     },
     {
-      "position": 71,
+      "position": 50,
       "streams": 1,
       "playedMs": 466800,
       "indicator": null,
@@ -1807,6 +1259,7 @@
           ],
           "appleMusic": [
             "1442098502",
+            "1463660976",
             "118431783"
           ]
         },
@@ -1823,13 +1276,14 @@
       }
     },
     {
-      "position": 72,
+      "position": 51,
       "streams": 2,
       "playedMs": 452328,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
+            "7AKLJAGrmldvnjgXyfGbRc",
             "1bj5GrcLom5gZFF5t949Xl"
           ],
           "appleMusic": [
@@ -1848,7 +1302,7 @@
       }
     },
     {
-      "position": 73,
+      "position": 52,
       "streams": 2,
       "playedMs": 439354,
       "indicator": null,
@@ -1876,7 +1330,7 @@
       }
     },
     {
-      "position": 74,
+      "position": 53,
       "streams": 1,
       "playedMs": 437600,
       "indicator": null,
@@ -1895,7 +1349,7 @@
       }
     },
     {
-      "position": 75,
+      "position": 54,
       "streams": 1,
       "playedMs": 436013,
       "indicator": null,
@@ -1920,7 +1374,7 @@
       }
     },
     {
-      "position": 76,
+      "position": 55,
       "streams": 1,
       "playedMs": 430360,
       "indicator": null,
@@ -1947,7 +1401,7 @@
       }
     },
     {
-      "position": 77,
+      "position": 56,
       "streams": 1,
       "playedMs": 420000,
       "indicator": null,
@@ -1972,17 +1426,19 @@
       }
     },
     {
-      "position": 78,
+      "position": 57,
       "streams": 1,
       "playedMs": 420000,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "2tJIQxQM0X4lCYERyANSdT"
+            "2tJIQxQM0X4lCYERyANSdT",
+            "6CcqUFdB0nTzB5GsrroZE1"
           ],
           "appleMusic": [
-            "4091044"
+            "4091044",
+            "1429325230"
           ]
         },
         "followers": 10677,
@@ -1992,20 +1448,21 @@
           "liquid funk"
         ],
         "id": 12783,
-        "image": "https://i.scdn.co/image/ab676161000051741834ce8bbbe17e792c847e13",
+        "image": "https://i.scdn.co/image/85e5cb7205c14b3530b350328f0c93d2a2937211",
         "name": "Kirsty Hawkshaw",
         "spotifyPopularity": 36
       }
     },
     {
-      "position": 79,
+      "position": 58,
       "streams": 1,
       "playedMs": 419830,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "4hNpdlfPY7R51u4FEkBxJG"
+            "4hNpdlfPY7R51u4FEkBxJG",
+            "3FdWEzpfTjdEwDLCIqnpnh"
           ],
           "appleMusic": [
             "275783591"
@@ -2023,35 +1480,86 @@
       }
     },
     {
-      "position": 80,
-      "streams": 2,
-      "playedMs": 400444,
+      "position": 59,
+      "streams": 1,
+      "playedMs": 419830,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "1xT5p0VBpnZDrvVSjX9sri"
+            "521qvhdobR0GzhvU6TFw76"
           ],
           "appleMusic": [
-            "264403540"
+            "283453767"
           ]
         },
-        "followers": 597157,
+        "followers": 236734,
         "genres": [
-          "trance",
-          "big room",
+          "edm",
+          "progressive house",
           "progressive trance",
-          "electronica",
           "dance"
         ],
-        "id": 11697,
-        "image": "https://i.scdn.co/image/ab676161000051741ccf27955f4dab7d03dc2ef1",
-        "name": "Dash Berlin",
-        "spotifyPopularity": 62
+        "id": 12637,
+        "image": "https://i.scdn.co/image/ab67616100005174b44e5d61a4fd3ccc65045fc7",
+        "name": "Tritonal",
+        "spotifyPopularity": 49
       }
     },
     {
-      "position": 81,
+      "position": 60,
+      "streams": 1,
+      "playedMs": 419830,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "5BKXCIdVnAwBQKUoGNqfZj",
+            "6LgGeFJgMsaaTCnsbQsCBO"
+          ],
+          "appleMusic": [
+            "291814086"
+          ]
+        },
+        "followers": 3974,
+        "genres": [
+          "trance",
+          "chillstep",
+          "melodic bass",
+          "dubstep"
+        ],
+        "id": 12638,
+        "image": "https://i.scdn.co/image/ab676161000051742576df84de528be18b26de11",
+        "name": "Cristina Soto",
+        "spotifyPopularity": 31
+      }
+    },
+    {
+      "position": 61,
+      "streams": 1,
+      "playedMs": 415195,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "2anOd48kSLCgEawhP3LJpJ"
+          ],
+          "appleMusic": [
+            "93589325"
+          ]
+        },
+        "followers": 949,
+        "genres": [
+          "dance"
+        ],
+        "id": 598545,
+        "image": "https://i.scdn.co/image/ab67616d00001e02ce58ec3d5b08b58d06cd244c",
+        "name": "C-Mos",
+        "spotifyPopularity": 19
+      }
+    },
+    {
+      "position": 62,
       "streams": 2,
       "playedMs": 398536,
       "indicator": null,
@@ -2078,74 +1586,7 @@
       }
     },
     {
-      "position": 82,
-      "streams": 2,
-      "playedMs": 390053,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1bLQBuSop3ekE5Qustj5nP"
-          ],
-          "appleMusic": [
-            "56383825"
-          ]
-        },
-        "followers": 186590,
-        "genres": [
-          "pop",
-          "bhangra",
-          "desi pop"
-        ],
-        "id": 377761,
-        "image": "https://i.scdn.co/image/ab676161000051747026eddba9d88ad0db0aca0a",
-        "name": "Bombay Rockers",
-        "spotifyPopularity": 38
-      }
-    },
-    {
-      "position": 83,
-      "streams": 2,
-      "playedMs": 390053,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5Uo28tAylVBPPW2Cs8LFwN"
-          ],
-          "appleMusic": []
-        },
-        "followers": 76175,
-        "genres": [
-          "punjabi pop"
-        ],
-        "id": 28757002,
-        "image": "https://i.scdn.co/image/ab67616d00001e0232f791707c47d5f7636f3982",
-        "name": "Khan Saab",
-        "spotifyPopularity": 71
-      }
-    },
-    {
-      "position": 84,
-      "streams": 2,
-      "playedMs": 390053,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2TcJ4MwxLUGkZOxXmckEJC"
-          ],
-          "appleMusic": []
-        },
-        "followers": 20,
-        "genres": [],
-        "id": 29463385,
-        "name": "Token",
-        "spotifyPopularity": 17
-      }
-    },
-    {
-      "position": 85,
+      "position": 63,
       "streams": 2,
       "playedMs": 377880,
       "indicator": null,
@@ -2169,7 +1610,7 @@
       }
     },
     {
-      "position": 86,
+      "position": 64,
       "streams": 2,
       "playedMs": 377880,
       "indicator": null,
@@ -2195,35 +1636,7 @@
       }
     },
     {
-      "position": 87,
-      "streams": 1,
-      "playedMs": 375470,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "3pno5kSGw5zAubtXtKps2h",
-            "1VJ0briNOlXRtJUAzoUJdt"
-          ],
-          "appleMusic": [
-            "1256012920"
-          ]
-        },
-        "followers": 1237297,
-        "genres": [
-          "tech house",
-          "house",
-          "dance",
-          "trance"
-        ],
-        "id": 65324,
-        "image": "https://i.scdn.co/image/ab6761610000517447847d97516d0e40b01eea5f",
-        "name": "FISHER",
-        "spotifyPopularity": 75
-      }
-    },
-    {
-      "position": 88,
+      "position": 65,
       "streams": 2,
       "playedMs": 369653,
       "indicator": null,
@@ -2247,7 +1660,7 @@
       }
     },
     {
-      "position": 89,
+      "position": 66,
       "streams": 2,
       "playedMs": 363090,
       "indicator": null,
@@ -2256,7 +1669,9 @@
           "spotify": [
             "6Ja6zFB5d7XRihhfMo6KzY"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "1399337702"
+          ]
         },
         "followers": 40066,
         "genres": [],
@@ -2267,7 +1682,7 @@
       }
     },
     {
-      "position": 90,
+      "position": 67,
       "streams": 2,
       "playedMs": 363090,
       "indicator": null,
@@ -2292,39 +1707,38 @@
       }
     },
     {
-      "position": 91,
+      "position": 68,
       "streams": 2,
       "playedMs": 363090,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [],
-          "appleMusic": [
-            "1399337702"
-          ]
+          "appleMusic": []
         },
         "followers": 0,
         "genres": [
           "hip-hop/rap"
         ],
         "id": 8136783,
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/78/96/26/78962614-9174-34be-ce2d-a44bb20530f4/ami-identity-92aa085b1662b550d95f00dcf9ee6881-2025-10-15T04-04-48.829Z_cropped.png/768x768bb.jpg",
         "name": "Jozzy",
         "spotifyPopularity": 0
       }
     },
     {
-      "position": 92,
+      "position": 69,
       "streams": 1,
       "playedMs": 360000,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "4L9PX6lwPWo2NeuXL9kyJK"
+            "4L9PX6lwPWo2NeuXL9kyJK",
+            "5vsgfXoWNAZ0ue4gxzkD3v"
           ],
           "appleMusic": [
-            "185074489"
+            "185074489",
+            "1709691204"
           ]
         },
         "followers": 55201,
@@ -2342,7 +1756,7 @@
       }
     },
     {
-      "position": 93,
+      "position": 70,
       "streams": 1,
       "playedMs": 360000,
       "indicator": null,
@@ -2369,17 +1783,22 @@
       }
     },
     {
-      "position": 94,
+      "position": 71,
       "streams": 1,
       "playedMs": 360000,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "1yoZuH2j43vVSWsOwYuQyn"
+            "1yoZuH2j43vVSWsOwYuQyn",
+            "0DX3V3vaR7bXmHQ8pQg4jx",
+            "7foTPP2LDKcTJz5oIyhrgR"
           ],
           "appleMusic": [
-            "218175632"
+            "474858920",
+            "479896723",
+            "218175632",
+            "1036852347"
           ]
         },
         "followers": 74430,
@@ -2389,13 +1808,13 @@
           "progressive house"
         ],
         "id": 8780,
-        "image": "https://i.scdn.co/image/ab6761610000517454dc6795c9365ac1ae79cee0",
+        "image": "https://i.scdn.co/image/ab67616d00001e02185f434ac092d869617276f1",
         "name": "Ilan Bluestone",
         "spotifyPopularity": 44
       }
     },
     {
-      "position": 95,
+      "position": 72,
       "streams": 1,
       "playedMs": 360000,
       "indicator": null,
@@ -2420,68 +1839,19 @@
       }
     },
     {
-      "position": 96,
-      "streams": 2,
-      "playedMs": 360000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1TUCkGpyFIZj6BPEdW55VT"
-          ],
-          "appleMusic": [
-            "379414190"
-          ]
-        },
-        "followers": 3168,
-        "genres": [
-          "trance",
-          "big room",
-          "progressive trance"
-        ],
-        "id": 12643,
-        "image": "https://i.scdn.co/image/ab67616100005174bda3a7c5e304ba45c1cab0fa",
-        "name": "Linnea Schossow",
-        "spotifyPopularity": 31
-      }
-    },
-    {
-      "position": 97,
+      "position": 73,
       "streams": 1,
       "playedMs": 360000,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "5Ft69LRmkksL2qyqsQ9XXp"
+            "4YRxDV8wJFPHPTeXepOstw",
+            "6zrQkGA8EvD1Y4z35lIc2e"
           ],
           "appleMusic": [
-            "373234520"
+            "484568188"
           ]
-        },
-        "followers": 1519,
-        "genres": [
-          "dance",
-          "trance",
-          "progressive trance"
-        ],
-        "id": 12771,
-        "image": "https://i.scdn.co/image/ab676161000051748e8689e29c31d668224b7fbf",
-        "name": "Jwaydan",
-        "spotifyPopularity": 32
-      }
-    },
-    {
-      "position": 98,
-      "streams": 1,
-      "playedMs": 360000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "4YRxDV8wJFPHPTeXepOstw"
-          ],
-          "appleMusic": []
         },
         "followers": 178981211,
         "genres": [
@@ -2497,77 +1867,7 @@
       }
     },
     {
-      "position": 99,
-      "streams": 2,
-      "playedMs": 360000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "4GWqzTTt2uA9Ms6HfUhWUn"
-          ],
-          "appleMusic": [
-            "487769939"
-          ]
-        },
-        "followers": 66028,
-        "genres": [
-          "dance",
-          "future house",
-          "edm"
-        ],
-        "id": 14844,
-        "image": "https://i.scdn.co/image/ab67616100005174e3af1c4d2093fa50f632226b",
-        "name": "Florian Picasso",
-        "spotifyPopularity": 37
-      }
-    },
-    {
-      "position": 100,
-      "streams": 1,
-      "playedMs": 360000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6avvC0JT93YR8HAcbcI90a"
-          ],
-          "appleMusic": []
-        },
-        "followers": 1059,
-        "genres": [
-          "trance"
-        ],
-        "id": 68381,
-        "image": "https://i.scdn.co/image/ab67616100005174f02665578626da70299f139b",
-        "name": "Aly",
-        "spotifyPopularity": 7
-      }
-    },
-    {
-      "position": 101,
-      "streams": 1,
-      "playedMs": 360000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "151058760"
-          ]
-        },
-        "followers": 0,
-        "genres": [
-          "dance"
-        ],
-        "id": 68382,
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/91/39/74/mzi.emetuuyc.jpg/768x768ac.jpg",
-        "name": "Fila",
-        "spotifyPopularity": 0
-      }
-    },
-    {
-      "position": 102,
+      "position": 74,
       "streams": 1,
       "playedMs": 360000,
       "indicator": null,
@@ -2591,7 +1891,7 @@
       }
     },
     {
-      "position": 103,
+      "position": 75,
       "streams": 1,
       "playedMs": 360000,
       "indicator": null,
@@ -2611,54 +1911,26 @@
       }
     },
     {
-      "position": 104,
+      "position": 76,
       "streams": 1,
       "playedMs": 354051,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [],
-          "appleMusic": [
-            "484568188"
-          ]
+          "appleMusic": []
         },
         "followers": 0,
         "genres": [
           "bollywood"
         ],
         "id": 16444032,
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/e1/e9/56/e1e956fc-919e-b2c9-924d-a8b54be35d3c/pr_source.png/768x768bb.jpg",
         "name": "Arijit Singh",
         "spotifyPopularity": 0
       }
     },
     {
-      "position": 105,
-      "streams": 1,
-      "playedMs": 350014,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "14viaIxpNaKT0mCz5p46jR"
-          ],
-          "appleMusic": [
-            "1504997206"
-          ]
-        },
-        "followers": 21568,
-        "genres": [
-          "gnawa",
-          "weltweit"
-        ],
-        "id": 3236686,
-        "image": "https://i.scdn.co/image/ab676161000051743fa36244592fc6c436ea19ba",
-        "name": "Tissilawen",
-        "spotifyPopularity": 35
-      }
-    },
-    {
-      "position": 106,
+      "position": 77,
       "streams": 2,
       "playedMs": 343592,
       "indicator": null,
@@ -2682,7 +1954,7 @@
       }
     },
     {
-      "position": 107,
+      "position": 78,
       "streams": 1,
       "playedMs": 340933,
       "indicator": null,
@@ -2705,7 +1977,7 @@
       }
     },
     {
-      "position": 108,
+      "position": 79,
       "streams": 1,
       "playedMs": 333733,
       "indicator": null,
@@ -2729,67 +2001,51 @@
       }
     },
     {
-      "position": 109,
-      "streams": 1,
-      "playedMs": 329333,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "10gzBoINW3cLJfZUka8Zoe"
-          ],
-          "appleMusic": [
-            "20318188"
-          ]
-        },
-        "followers": 870607,
-        "genres": [
-          "trance",
-          "progressive trance",
-          "progressive house",
-          "dance"
-        ],
-        "id": 8777,
-        "image": "https://i.scdn.co/image/ab67616100005174b011823512c7e3372db21b36",
-        "name": "Above & Beyond",
-        "spotifyPopularity": 60
-      }
-    },
-    {
-      "position": 110,
-      "streams": 1,
-      "playedMs": 329333,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5JbD3IL6449LrMT8ct6KTB"
-          ],
-          "appleMusic": [
-            "322915451"
-          ]
-        },
-        "followers": 8019,
-        "genres": [
-          "trance",
-          "progressive trance"
-        ],
-        "id": 8794,
-        "image": "https://i.scdn.co/image/ab67616100005174624fea2699b92b3c8a71c293",
-        "name": "Richard Bedford",
-        "spotifyPopularity": 45
-      }
-    },
-    {
-      "position": 111,
+      "position": 80,
       "streams": 2,
       "playedMs": 304400,
       "indicator": null,
       "artist": {
         "externalIds": {
-          "spotify": [],
+          "spotify": [
+            "2oSONSC9zQ4UonDKnLqksx"
+          ],
           "appleMusic": [
-            "19715559"
+            "300187267"
+          ]
+        },
+        "followers": 44186143,
+        "genres": [
+          "bollywood",
+          "hindi pop",
+          "desi",
+          "sufi",
+          "qawwali"
+        ],
+        "id": 3711,
+        "image": "https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84",
+        "name": "Atif Aslam",
+        "spotifyPopularity": 79
+      }
+    },
+    {
+      "position": 81,
+      "streams": 2,
+      "playedMs": 304400,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "0oOet2f43PA68X5RxKobEy",
+            "2nMZ8shyU1lCEU02M9soN8"
+          ],
+          "appleMusic": [
+            "19715559",
+            "1742495684",
+            "1606937378",
+            "1606938488",
+            "1742495619",
+            "1506298036"
           ]
         },
         "followers": 0,
@@ -2797,120 +2053,13 @@
           "bollywood"
         ],
         "id": 14566,
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/80/98/97/80989731-0634-1e70-cd16-85c0cafc17eb/ami-identity-a6be0ae7c704f34412ae01fd260e367e-2025-11-15T07-45-00.738Z_cropped.png/768x768bb.jpg",
+        "image": "https://i.scdn.co/image/ab67616100005174e7ce89a9f5d11e0ba26677eb",
         "name": "Shreya Ghoshal",
         "spotifyPopularity": 0
       }
     },
     {
-      "position": 112,
-      "streams": 1,
-      "playedMs": 300000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1SJOL9HJ08YOn92lFcYf8a"
-          ],
-          "appleMusic": [
-            "19359188"
-          ]
-        },
-        "followers": 14135744,
-        "genres": [
-          "devotional & spiritual",
-          "marathi pop",
-          "bollywood",
-          "devotional",
-          "bhajan",
-          "desi",
-          "tamil dance",
-          "hindi pop",
-          "tamil pop"
-        ],
-        "id": 150899,
-        "image": "https://i.scdn.co/image/ab676161000051743f27a828c24d73cf0427e2e7",
-        "name": "Shankar Mahadevan",
-        "spotifyPopularity": 76
-      }
-    },
-    {
-      "position": 113,
-      "streams": 1,
-      "playedMs": 300000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "279ZItWl3nzCaO4SJJdzAN"
-          ],
-          "appleMusic": [
-            "330140021"
-          ]
-        },
-        "followers": 245032,
-        "genres": [
-          "bollywood",
-          "desi",
-          "hindi pop"
-        ],
-        "id": 205162,
-        "image": "https://i.scdn.co/image/ab676161000051741b14ba50032d7a8fec5e630b",
-        "name": "Alyssa Mendonsa",
-        "spotifyPopularity": 54
-      }
-    },
-    {
-      "position": 114,
-      "streams": 1,
-      "playedMs": 290266,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "2467795"
-          ]
-        },
-        "followers": 0,
-        "genres": [
-          "dance"
-        ],
-        "id": 65759,
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/ba/4d/d1/ba4dd182-5721-b672-0633-c1bdbd2f5fb7/artwork.jpg/768x768ac.jpg",
-        "name": "Haley",
-        "spotifyPopularity": 0
-      }
-    },
-    {
-      "position": 115,
-      "streams": 1,
-      "playedMs": 283139,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2QMCcKIPHnjQaPPgoEst88"
-          ],
-          "appleMusic": [
-            "445823323"
-          ]
-        },
-        "followers": 157349,
-        "genres": [
-          "progressive house",
-          "edm",
-          "big room",
-          "dance"
-        ],
-        "id": 69694,
-        "image": "https://i.scdn.co/image/ab6761610000517439c52cbbd9033dc5d2f04aa4",
-        "name": "Matisse & Sadko",
-        "spotifyPopularity": 53
-      }
-    },
-    {
-      "position": 116,
+      "position": 82,
       "streams": 2,
       "playedMs": 282500,
       "indicator": null,
@@ -2934,7 +2083,7 @@
       }
     },
     {
-      "position": 117,
+      "position": 83,
       "streams": 1,
       "playedMs": 271426,
       "indicator": null,
@@ -2959,7 +2108,7 @@
       }
     },
     {
-      "position": 118,
+      "position": 84,
       "streams": 1,
       "playedMs": 267119,
       "indicator": null,
@@ -2983,14 +2132,16 @@
       }
     },
     {
-      "position": 119,
+      "position": 85,
       "streams": 2,
       "playedMs": 264134,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "6LqNN22kT3074XbTVUrhzX"
+            "6LqNN22kT3074XbTVUrhzX",
+            "3DboBnvy9hBtMmJyFtiRqn",
+            "4dU7s4xRn9USfohQeym6zw"
           ],
           "appleMusic": [
             "334854763"
@@ -3001,23 +2152,25 @@
           "pop"
         ],
         "id": 26,
-        "image": "https://i.scdn.co/image/ab676161000051741c43cbfb50d7ac393df96ae5",
+        "image": "https://i.scdn.co/image/ab67616d00001e029a6dc041d62bf786178393ec",
         "name": "Kesha",
         "spotifyPopularity": 79
       }
     },
     {
-      "position": 120,
+      "position": 86,
       "streams": 1,
       "playedMs": 262266,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "1gR0gsQYfi6joyO1dlp76N"
+            "1gR0gsQYfi6joyO1dlp76N",
+            "4lfKecjE6dhmXwi9gdc5lG"
           ],
           "appleMusic": [
-            "145072812"
+            "145072812",
+            "1744432542"
           ]
         },
         "followers": 1440244,
@@ -3027,13 +2180,13 @@
           "new rave"
         ],
         "id": 4145,
-        "image": "https://i.scdn.co/image/ab67616100005174f140c161d9f9cc9afe85b6ed",
+        "image": "https://i.scdn.co/image/ab67616d00001e02940375b2959f946fbaeb46ad",
         "name": "Justice",
         "spotifyPopularity": 66
       }
     },
     {
-      "position": 121,
+      "position": 87,
       "streams": 1,
       "playedMs": 261093,
       "indicator": null,
@@ -3058,183 +2211,90 @@
       }
     },
     {
-      "position": 122,
-      "streams": 1,
-      "playedMs": 249835,
+      "position": 88,
+      "streams": 2,
+      "playedMs": 260780,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "1RMmK2dEtVEbhSV7qvSXJ1"
+            "2JSYASbWU5Y0fVpts3Eq7g",
+            "4vMKEXQ4cU5hb2BL4omVrT"
           ],
           "appleMusic": [
-            "379453368"
+            "20010049",
+            "14291605",
+            "683772086"
           ]
         },
-        "followers": 335389,
+        "followers": 6716947,
         "genres": [
-          "bhojpuri pop",
-          "bhojiwood",
-          "tamil dance",
-          "telugu pop",
-          "tollywood",
-          "indian folk"
-        ],
-        "id": 274314,
-        "image": "https://i.scdn.co/image/ab67616100005174f7736e6629e79fa422d9418c",
-        "name": "Kalpana Patowary",
-        "spotifyPopularity": 63
-      }
-    },
-    {
-      "position": 123,
-      "streams": 1,
-      "playedMs": 245687,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "4W91bbPB2CTSsHwt7eqNl7"
-          ],
-          "appleMusic": []
-        },
-        "followers": 13179028,
-        "genres": [
-          "sufi",
           "bollywood",
+          "ghazal",
           "hindi pop",
-          "qawwali",
-          "desi",
-          "desi pop"
+          "bangla pop"
         ],
-        "id": 13162,
-        "image": "https://i.scdn.co/image/ab6761610000517484e0829f8e8abff52255fbd3",
-        "name": "Javed Ali",
+        "id": 12539,
+        "image": "https://i.scdn.co/image/ab67616100005174d3b213d51e0ea60f0c768a38",
+        "name": "R. D. Burman",
         "spotifyPopularity": 73
       }
     },
     {
-      "position": 124,
-      "streams": 1,
-      "playedMs": 245687,
+      "position": 89,
+      "streams": 2,
+      "playedMs": 260780,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "00YLzAeCXriW04BIc31rPP"
-          ],
-          "appleMusic": []
-        },
-        "followers": 63700,
-        "genres": [],
-        "id": 262311,
-        "image": "https://i.scdn.co/image/ab67616d00001e02066615589b1ac0c6ac570d64",
-        "name": "Jojo Nathaniel",
-        "spotifyPopularity": 49
-      }
-    },
-    {
-      "position": 125,
-      "streams": 1,
-      "playedMs": 245687,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1EwmySw39cnCNvirD7G0m7"
+            "5as8A4G47Ohu9NSWs3Je8U",
+            "4ka9oOxqpCRXuu7i7JNxCj"
           ],
           "appleMusic": [
-            "1533292233"
+            "2581435"
           ]
         },
-        "followers": 590,
+        "followers": 10959431,
         "genres": [
-          "bangla pop"
+          "ghazal",
+          "marathi pop",
+          "bangla pop",
+          "bollywood",
+          "hindi pop"
         ],
-        "id": 2654862,
-        "image": "https://i.scdn.co/image/ab67616d00001e02e852e55ef2b2f89dd1477848",
-        "name": "Jojo",
-        "spotifyPopularity": 23
+        "id": 14569,
+        "image": "https://i.scdn.co/image/ab676161000051747c6855a92b408b6f82f3e6d1",
+        "name": "Asha Bhosle",
+        "spotifyPopularity": 73
       }
     },
     {
-      "position": 126,
-      "streams": 1,
-      "playedMs": 244936,
+      "position": 90,
+      "streams": 2,
+      "playedMs": 260780,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "65taSIk8y1qNzK8ddRewQe"
+            "7ikcALJgPCvpL25820JNYR"
           ],
           "appleMusic": [
-            "335169458"
+            "61744404"
           ]
         },
-        "followers": 3213,
+        "followers": 111486,
         "genres": [
-          "dance",
-          "trance"
+          "bollywood"
         ],
-        "id": 12635,
-        "image": "https://i.scdn.co/image/ab6761610000517462b7431d51a34bf4f2bc7765",
-        "name": "Tania Zygar",
-        "spotifyPopularity": 34
+        "id": 586131,
+        "image": "https://i.scdn.co/image/ab67616d00001e02206e7788d2e4e4aee63046fb",
+        "name": "Majrooh Sultanpuri",
+        "spotifyPopularity": 57
       }
     },
     {
-      "position": 127,
-      "streams": 1,
-      "playedMs": 244936,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6Mi8IMZ0KukM3LgXCEB3ws"
-          ],
-          "appleMusic": [
-            "332992945"
-          ]
-        },
-        "followers": 1326,
-        "genres": [
-          "trance",
-          "progressive trance"
-        ],
-        "id": 64491,
-        "image": "https://i.scdn.co/image/ab67616d00001e026973c709c4fdfd0206d478cf",
-        "name": "Space RockerZ",
-        "spotifyPopularity": 19
-      }
-    },
-    {
-      "position": 128,
-      "streams": 1,
-      "playedMs": 240000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1t65YxEAtU3iii6bCzSGF8"
-          ],
-          "appleMusic": [
-            "120874124"
-          ]
-        },
-        "followers": 104700,
-        "genres": [
-          "trance",
-          "progressive trance",
-          "dance"
-        ],
-        "id": 7673,
-        "image": "https://i.scdn.co/image/ab676161000051746443b9bd2698b9e4f0c46e8e",
-        "name": "Emma Hewitt",
-        "spotifyPopularity": 47
-      }
-    },
-    {
-      "position": 129,
+      "position": 91,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3259,14 +2319,15 @@
       }
     },
     {
-      "position": 130,
+      "position": 92,
       "streams": 2,
       "playedMs": 240000,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "20L5MecnuNujUE6imrfK0Q"
+            "20L5MecnuNujUE6imrfK0Q",
+            "4TuESreIIQtibHhaZU2DZf"
           ],
           "appleMusic": [
             "4614337"
@@ -3284,7 +2345,7 @@
       }
     },
     {
-      "position": 131,
+      "position": 93,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3310,7 +2371,7 @@
       }
     },
     {
-      "position": 132,
+      "position": 94,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3336,33 +2397,7 @@
       }
     },
     {
-      "position": 133,
-      "streams": 1,
-      "playedMs": 240000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6CXEwIaXYfVJ84biCxqc9k"
-          ],
-          "appleMusic": [
-            "131214888"
-          ]
-        },
-        "followers": 12208017,
-        "genres": [
-          "bollywood",
-          "desi",
-          "hindi pop"
-        ],
-        "id": 13044,
-        "image": "https://i.scdn.co/image/ab6761610000517476328e37a2c1280ab9adb90c",
-        "name": "Vishal Dadlani",
-        "spotifyPopularity": 74
-      }
-    },
-    {
-      "position": 134,
+      "position": 95,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3387,7 +2422,7 @@
       }
     },
     {
-      "position": 135,
+      "position": 96,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3414,7 +2449,7 @@
       }
     },
     {
-      "position": 136,
+      "position": 97,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3424,7 +2459,9 @@
             "2qkvFxeKRMQTqGvsZx1lRo",
             "1ruutHJcECI7cos2n5TqpO"
           ],
-          "appleMusic": []
+          "appleMusic": [
+            "351923776"
+          ]
         },
         "followers": 37,
         "genres": [
@@ -3438,14 +2475,15 @@
       }
     },
     {
-      "position": 137,
+      "position": 98,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "6Wg3akugFVCH4iYhEKk0GM"
+            "6Wg3akugFVCH4iYhEKk0GM",
+            "0JEWGxV4rIovxYpSbLn8pt"
           ],
           "appleMusic": [
             "43271465"
@@ -3456,39 +2494,13 @@
           "bollywood"
         ],
         "id": 153894,
-        "image": "https://i.scdn.co/image/ab67616d00001e025db2483eab6d969c8d589d3c",
+        "image": "https://i.scdn.co/image/ab6761610000517403f916cb96a0350790149f10",
         "name": "Roshan",
         "spotifyPopularity": 64
       }
     },
     {
-      "position": 138,
-      "streams": 1,
-      "playedMs": 240000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6uskWv5K2FA0YOAYr7JOUz"
-          ],
-          "appleMusic": [
-            "517797968"
-          ]
-        },
-        "followers": 640512,
-        "genres": [
-          "bollywood",
-          "desi",
-          "hindi pop"
-        ],
-        "id": 200601,
-        "image": "https://i.scdn.co/image/ab67616100005174e2dba63a46f0b3babc3958d0",
-        "name": "Shalmali Kholgade",
-        "spotifyPopularity": 62
-      }
-    },
-    {
-      "position": 139,
+      "position": 99,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3514,7 +2526,7 @@
       }
     },
     {
-      "position": 140,
+      "position": 100,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3538,7 +2550,7 @@
       }
     },
     {
-      "position": 141,
+      "position": 101,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3558,7 +2570,7 @@
       }
     },
     {
-      "position": 142,
+      "position": 102,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3578,7 +2590,7 @@
       }
     },
     {
-      "position": 143,
+      "position": 103,
       "streams": 1,
       "playedMs": 240000,
       "indicator": null,
@@ -3598,7 +2610,7 @@
       }
     },
     {
-      "position": 144,
+      "position": 104,
       "streams": 1,
       "playedMs": 239894,
       "indicator": null,
@@ -3622,7 +2634,63 @@
       }
     },
     {
-      "position": 145,
+      "position": 105,
+      "streams": 1,
+      "playedMs": 238530,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "7JMBJmGMqw4H33HECyW4QP"
+          ],
+          "appleMusic": [
+            "457716371"
+          ]
+        },
+        "followers": 538157,
+        "genres": [
+          "desi",
+          "bollywood",
+          "bhangra",
+          "desi pop",
+          "worldwide"
+        ],
+        "id": 182974,
+        "image": "https://i.scdn.co/image/ab67616100005174464c5c4bdee5c5264b6a0d59",
+        "name": "Zack Knight",
+        "spotifyPopularity": 58
+      }
+    },
+    {
+      "position": 106,
+      "streams": 1,
+      "playedMs": 238530,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "4bWGzsNAtfPp8P7pSBukH8"
+          ],
+          "appleMusic": [
+            "1189168526"
+          ]
+        },
+        "followers": 50359,
+        "genres": [
+          "bollywood",
+          "desi",
+          "desi pop",
+          "hindi pop",
+          "indian pop"
+        ],
+        "id": 261815,
+        "image": "https://i.scdn.co/image/ab67616100005174239609a24a1b606a0a71f861",
+        "name": "Jasmin Walia",
+        "spotifyPopularity": 53
+      }
+    },
+    {
+      "position": 107,
       "streams": 1,
       "playedMs": 238033,
       "indicator": null,
@@ -3648,14 +2716,16 @@
       }
     },
     {
-      "position": 146,
+      "position": 108,
       "streams": 1,
       "playedMs": 238033,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "4hkB2bR5ek6lJChj6aunCn"
+            "4hkB2bR5ek6lJChj6aunCn",
+            "6yYmSneCCBl97ybdGv4PdF",
+            "6Y9M4Z7A34VrqNUm5pgt2m"
           ],
           "appleMusic": [
             "18485023"
@@ -3669,13 +2739,13 @@
           "ghazal"
         ],
         "id": 42699,
-        "image": "https://i.scdn.co/image/ab676161000051749c22e0ff8c09b0128f67393e",
+        "image": "https://i.scdn.co/image/ab67616d00001e02d43687e0c23a1830a38f4e9b",
         "name": "Anuradha Paudwal",
         "spotifyPopularity": 71
       }
     },
     {
-      "position": 147,
+      "position": 109,
       "streams": 1,
       "playedMs": 238033,
       "indicator": null,
@@ -3697,63 +2767,14 @@
       }
     },
     {
-      "position": 148,
-      "streams": 1,
-      "playedMs": 235872,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2uJPnLW3muLMdYB3H61h5K"
-          ],
-          "appleMusic": [
-            "352918073"
-          ]
-        },
-        "followers": 5281,
-        "genres": [
-          "trance",
-          "progressive trance"
-        ],
-        "id": 29287,
-        "image": "https://i.scdn.co/image/ab67616100005174cc02831aa59894637398ba97",
-        "name": "Sarah Lynn",
-        "spotifyPopularity": 37
-      }
-    },
-    {
-      "position": 149,
-      "streams": 1,
-      "playedMs": 235872,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1hi6iazfUhvaqpt9f0kCcF"
-          ],
-          "appleMusic": [
-            "306754248"
-          ]
-        },
-        "followers": 1137,
-        "genres": [
-          "dance",
-          "breakbeat"
-        ],
-        "id": 335811,
-        "image": "https://i.scdn.co/image/ab676161000051744964e8b1f011f195bfcf54fe",
-        "name": "DJ Mog",
-        "spotifyPopularity": 27
-      }
-    },
-    {
-      "position": 150,
+      "position": 110,
       "streams": 1,
       "playedMs": 235442,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
+            "5v4a7KMte1cSbJxyDPsBMT",
             "3Z02hBLubJxuFJfhacLSDc"
           ],
           "appleMusic": [
@@ -3771,14 +2792,18 @@
       }
     },
     {
-      "position": 151,
+      "position": 111,
       "streams": 1,
       "playedMs": 233168,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "4Ws2otunReOa6BbwxxpCt6"
+            "4Ws2otunReOa6BbwxxpCt6",
+            "3LDWdjazeknYJobH5BEkpM",
+            "5v3dg6lCObgvEBgSUpW7SK",
+            "4wOZOzL1edes3MoMS0IoF8",
+            "0Ul2mQtunYp2S9lCWgos8H"
           ],
           "appleMusic": [
             "15654100"
@@ -3796,7 +2821,7 @@
       }
     },
     {
-      "position": 152,
+      "position": 112,
       "streams": 1,
       "playedMs": 231573,
       "indicator": null,
@@ -3825,7 +2850,32 @@
       }
     },
     {
-      "position": 153,
+      "position": 113,
+      "streams": 1,
+      "playedMs": 230476,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "6ySxYu68zTsO5ghsThpGtS"
+          ],
+          "appleMusic": [
+            "15029635"
+          ]
+        },
+        "followers": 310272,
+        "genres": [
+          "trance",
+          "progressive trance"
+        ],
+        "id": 6290,
+        "image": "https://i.scdn.co/image/ab67616100005174715f2b0a098b31ba36e14876",
+        "name": "Cosmic Gate",
+        "spotifyPopularity": 54
+      }
+    },
+    {
+      "position": 114,
       "streams": 1,
       "playedMs": 230000,
       "indicator": null,
@@ -3847,7 +2897,7 @@
       }
     },
     {
-      "position": 154,
+      "position": 115,
       "streams": 1,
       "playedMs": 228280,
       "indicator": null,
@@ -3873,14 +2923,15 @@
       }
     },
     {
-      "position": 155,
+      "position": 116,
       "streams": 1,
       "playedMs": 226866,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "1bpzpALZwOoKXzwMg2i8WB"
+            "1bpzpALZwOoKXzwMg2i8WB",
+            "05DOgWgkJkj0hiKwVBTvCS"
           ],
           "appleMusic": [
             "82377540"
@@ -3899,7 +2950,7 @@
       }
     },
     {
-      "position": 156,
+      "position": 117,
       "streams": 1,
       "playedMs": 226866,
       "indicator": null,
@@ -3919,59 +2970,33 @@
       }
     },
     {
-      "position": 157,
+      "position": 118,
       "streams": 1,
-      "playedMs": 226285,
+      "playedMs": 224083,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "7e1BNCygl2Gf7CX8LrByPv"
+            "4ojkMVHjuDZgDXSJy5qs2h"
           ],
           "appleMusic": [
-            "269648645"
+            "641597575"
           ]
         },
-        "followers": 616187,
+        "followers": 272242,
         "genres": [
-          "dance",
-          "big room",
-          "edm"
+          "bollywood",
+          "hindi pop",
+          "bangla pop"
         ],
-        "id": 13457,
-        "image": "https://i.scdn.co/image/ab67616100005174093d801d8e6e4b2440ce7109",
-        "name": "Ummet Ozcan",
-        "spotifyPopularity": 59
+        "id": 205641,
+        "image": "https://i.scdn.co/image/ab67616100005174d2e401323c697e59fdfd03b8",
+        "name": "Madhubanti Bagchi",
+        "spotifyPopularity": 71
       }
     },
     {
-      "position": 158,
-      "streams": 1,
-      "playedMs": 224347,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1dpapEdSfcmccxziKtJBn5"
-          ],
-          "appleMusic": [
-            "34501331"
-          ]
-        },
-        "followers": 7904,
-        "genres": [
-          "trance",
-          "progressive trance",
-          "dance"
-        ],
-        "id": 12208,
-        "image": "https://i.scdn.co/image/ab6761610000517428487df04e61e7884a1c0ef4",
-        "name": "Jonas Steur",
-        "spotifyPopularity": 27
-      }
-    },
-    {
-      "position": 159,
+      "position": 119,
       "streams": 1,
       "playedMs": 223080,
       "indicator": null,
@@ -3995,111 +3020,64 @@
       }
     },
     {
-      "position": 160,
+      "position": 120,
       "streams": 1,
-      "playedMs": 222133,
+      "playedMs": 221840,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "7uIbLdzzSEqnX0Pkrb56cR"
+            "2ohlvFf9PBsDELdRstPtlP",
+            "1o4Q3flBxs5Er5TQFYonPa",
+            "24UNI4J61u9NGNpJ6Y6E46",
+            "4k71buWSK4KleHPnBzzIPz"
           ],
           "appleMusic": [
-            "479406160"
+            "3688902"
           ]
         },
-        "followers": 39677758,
+        "followers": 295020,
         "genres": [
-          "bollywood",
-          "hindi hip hop",
-          "desi",
-          "hindi pop",
-          "punjabi pop",
-          "punjabi hip hop"
+          "trance",
+          "progressive trance"
         ],
-        "id": 3715,
-        "image": "https://i.scdn.co/image/ab67616100005174bc7e4fffd515b47ff1ebbc1f",
-        "name": "Yo Yo Honey Singh",
-        "spotifyPopularity": 76
+        "id": 10724,
+        "image": "https://i.scdn.co/image/ab67616d00001e028961e9e6d36bfdbd5a3428c2",
+        "name": "Ferry Corsten",
+        "spotifyPopularity": 55
       }
     },
     {
-      "position": 161,
+      "position": 121,
       "streams": 1,
-      "playedMs": 222133,
+      "playedMs": 220444,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "4fEkbug6kZzzJ8eYX6Kbbp"
+            "1xT5p0VBpnZDrvVSjX9sri",
+            "2yIrxxCeWM8fXOaCjSdNDt"
           ],
           "appleMusic": [
-            "201013231"
+            "264403540"
           ]
         },
-        "followers": 22141152,
+        "followers": 597157,
         "genres": [
-          "bollywood",
-          "hindi pop",
-          "desi"
+          "trance",
+          "big room",
+          "progressive trance",
+          "electronica",
+          "dance"
         ],
-        "id": 13054,
-        "image": "https://i.scdn.co/image/ab67616100005174b09a31f853166e721d4d46b2",
-        "name": "KK",
-        "spotifyPopularity": 77
+        "id": 11697,
+        "image": "https://i.scdn.co/image/ab676161000051741ccf27955f4dab7d03dc2ef1",
+        "name": "Dash Berlin",
+        "spotifyPopularity": 62
       }
     },
     {
-      "position": 162,
-      "streams": 1,
-      "playedMs": 222133,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5DNHuR9u8DFVasxQZgREO5"
-          ],
-          "appleMusic": [
-            "445865629"
-          ]
-        },
-        "followers": 625586,
-        "genres": [
-          "bollywood",
-          "hindi pop",
-          "desi",
-          "hip-hop/rap"
-        ],
-        "id": 4355290,
-        "image": "https://i.scdn.co/image/ab67616100005174a4361c8291b5f0db1af7e385",
-        "name": "Prashant Ingole",
-        "spotifyPopularity": 59
-      }
-    },
-    {
-      "position": 163,
-      "streams": 1,
-      "playedMs": 222133,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "1483962250"
-          ]
-        },
-        "followers": 0,
-        "genres": [
-          "soundtrack"
-        ],
-        "id": 10041258,
-        "image": "https://i.scdn.co/image/ab6761610000e5eb0419b2602935245c7c98d6ab",
-        "name": "KK",
-        "spotifyPopularity": -1
-      }
-    },
-    {
-      "position": 164,
+      "position": 122,
       "streams": 1,
       "playedMs": 220444,
       "indicator": null,
@@ -4121,7 +3099,7 @@
       }
     },
     {
-      "position": 165,
+      "position": 123,
       "streams": 1,
       "playedMs": 220444,
       "indicator": null,
@@ -4147,7 +3125,7 @@
       }
     },
     {
-      "position": 166,
+      "position": 124,
       "streams": 1,
       "playedMs": 220444,
       "indicator": null,
@@ -4173,7 +3151,7 @@
       }
     },
     {
-      "position": 167,
+      "position": 125,
       "streams": 1,
       "playedMs": 219426,
       "indicator": null,
@@ -4197,17 +3175,21 @@
       }
     },
     {
-      "position": 168,
+      "position": 126,
       "streams": 1,
       "playedMs": 218536,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "5ZwD9tfnJ04kM0qgPSMzgy"
+            "6F7oo7GJcnAsXUKi1StZbg",
+            "5ZwD9tfnJ04kM0qgPSMzgy",
+            "6Y0gC0dvA6LfBiIcPhI36W"
           ],
           "appleMusic": [
-            "674326597"
+            "674326597",
+            "1755548969",
+            "1409227801"
           ]
         },
         "followers": 13863,
@@ -4223,7 +3205,7 @@
       }
     },
     {
-      "position": 169,
+      "position": 127,
       "streams": 1,
       "playedMs": 216967,
       "indicator": null,
@@ -4247,13 +3229,15 @@
       }
     },
     {
-      "position": 170,
+      "position": 128,
       "streams": 1,
       "playedMs": 216967,
       "indicator": null,
       "artist": {
         "externalIds": {
-          "spotify": [],
+          "spotify": [
+            "2wX6xSig4Rig5kZU6ePlWe"
+          ],
           "appleMusic": [
             "827795989"
           ]
@@ -4263,13 +3247,13 @@
           "dance"
         ],
         "id": 16681,
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages116/v4/8b/23/6a/8b236a59-ee85-8614-3083-e568279e3567/3af09cea-e400-4e6b-a239-31a7cbad8299_ami-identity-998f4fa9b299bd76101f9789f6e9658f-2023-04-21T22-22-39.713Z_cropped.png/768x768bb.jpg",
+        "image": "https://i.scdn.co/image/ab67616100005174d6375815b4e8a04d9863c22c",
         "name": "KSHMR",
         "spotifyPopularity": 0
       }
     },
     {
-      "position": 171,
+      "position": 129,
       "streams": 1,
       "playedMs": 215720,
       "indicator": null,
@@ -4295,7 +3279,7 @@
       }
     },
     {
-      "position": 172,
+      "position": 130,
       "streams": 1,
       "playedMs": 215720,
       "indicator": null,
@@ -4319,14 +3303,15 @@
       }
     },
     {
-      "position": 173,
+      "position": 131,
       "streams": 1,
       "playedMs": 215583,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "3DiDSECUqqY1AuBP8qtaIa"
+            "3DiDSECUqqY1AuBP8qtaIa",
+            "1Zc6B0DscCuAfwQSJrJ6hC"
           ],
           "appleMusic": [
             "316069"
@@ -4345,17 +3330,19 @@
       }
     },
     {
-      "position": 174,
+      "position": 132,
       "streams": 1,
       "playedMs": 215040,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
+            "3wjcj0YD2UGN0mDa5WCDH4",
             "0DdDnziut7wOo6cAYWVZC5"
           ],
           "appleMusic": [
-            "1082901629"
+            "1082901629",
+            "1477715630"
           ]
         },
         "followers": 333335,
@@ -4370,59 +3357,7 @@
       }
     },
     {
-      "position": 175,
-      "streams": 1,
-      "playedMs": 213887,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6qcIg4IPLulyc03mWR87N8"
-          ],
-          "appleMusic": [
-            "820888407"
-          ]
-        },
-        "followers": 1452542,
-        "genres": [
-          "bollywood",
-          "desi",
-          "hindi pop"
-        ],
-        "id": 13271,
-        "image": "https://i.scdn.co/image/ab676161000051744ac8ab7f87a3c6cd69a49b00",
-        "name": "Kanika Kapoor",
-        "spotifyPopularity": 59
-      }
-    },
-    {
-      "position": 176,
-      "streams": 1,
-      "playedMs": 213887,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5isfxZ3RSdBlSLn3cSFhnI"
-          ],
-          "appleMusic": [
-            "458891872"
-          ]
-        },
-        "followers": 1532686,
-        "genres": [
-          "bollywood",
-          "desi",
-          "hindi pop"
-        ],
-        "id": 95432,
-        "image": "https://i.scdn.co/image/ab67616d00001e02f6371011af4c82fb31d54820",
-        "name": "Meet Bros Anjjan",
-        "spotifyPopularity": 60
-      }
-    },
-    {
-      "position": 177,
+      "position": 133,
       "streams": 1,
       "playedMs": 210093,
       "indicator": null,
@@ -4446,7 +3381,7 @@
       }
     },
     {
-      "position": 178,
+      "position": 134,
       "streams": 1,
       "playedMs": 210093,
       "indicator": null,
@@ -4470,7 +3405,7 @@
       }
     },
     {
-      "position": 179,
+      "position": 135,
       "streams": 1,
       "playedMs": 204056,
       "indicator": null,
@@ -4496,16 +3431,45 @@
       }
     },
     {
-      "position": 180,
+      "position": 136,
+      "streams": 1,
+      "playedMs": 203480,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "28ztjHIXceRRntmTUfnmUX",
+            "2YxK9SbJeVfkfk6QWHqj8K"
+          ],
+          "appleMusic": [
+            "1206938969",
+            "384924"
+          ]
+        },
+        "followers": 1656515,
+        "genres": [
+          "raï",
+          "worldwide"
+        ],
+        "id": 67597,
+        "image": "https://i.scdn.co/image/ab676161000051748cadcbb69a08b4aed788923b",
+        "name": "Khaled",
+        "spotifyPopularity": 58
+      }
+    },
+    {
+      "position": 137,
       "streams": 1,
       "playedMs": 202282,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
+            "5Mw8njZ8wDoXZiJnP6nISG",
             "3UJW5QFKMNUAE4rcW3j9WZ"
           ],
           "appleMusic": [
+            "79345206",
             "79232059"
           ]
         },
@@ -4517,13 +3481,13 @@
           "dance"
         ],
         "id": 11890,
-        "image": "https://i.scdn.co/image/ab67616100005174a4bed16a1112a36ff9001591",
+        "image": "https://i.scdn.co/image/ab67616d00001e028967e3b0bd524be2f87fbead",
         "name": "Signum",
         "spotifyPopularity": 46
       }
     },
     {
-      "position": 181,
+      "position": 138,
       "streams": 1,
       "playedMs": 202282,
       "indicator": null,
@@ -4549,16 +3513,18 @@
       }
     },
     {
-      "position": 182,
+      "position": 139,
       "streams": 1,
       "playedMs": 202282,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "6wfno0FdSaJa3DHHBuY1jy"
+            "6wfno0FdSaJa3DHHBuY1jy",
+            "1cAsz5HmLWJ2GWwinTnBG2"
           ],
           "appleMusic": [
+            "1689496279",
             "212383479"
           ]
         },
@@ -4574,7 +3540,7 @@
       }
     },
     {
-      "position": 183,
+      "position": 140,
       "streams": 1,
       "playedMs": 201267,
       "indicator": null,
@@ -4600,7 +3566,7 @@
       }
     },
     {
-      "position": 184,
+      "position": 141,
       "streams": 1,
       "playedMs": 201267,
       "indicator": null,
@@ -4625,7 +3591,7 @@
       }
     },
     {
-      "position": 185,
+      "position": 142,
       "streams": 1,
       "playedMs": 196965,
       "indicator": null,
@@ -4649,92 +3615,19 @@
       }
     },
     {
-      "position": 186,
-      "streams": 1,
-      "playedMs": 195333,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "4FCzCS0KEgb0rgySWINItO"
-          ],
-          "appleMusic": [
-            "443666401"
-          ]
-        },
-        "followers": 124283,
-        "genres": [
-          "tech house",
-          "future house"
-        ],
-        "id": 57199,
-        "image": "https://i.scdn.co/image/ab67616100005174f8c717534576cbf925626910",
-        "name": "CID",
-        "spotifyPopularity": 55
-      }
-    },
-    {
-      "position": 187,
-      "streams": 1,
-      "playedMs": 193846,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "6diiyZ15AVZoSxzAyjIYJT"
-          ],
-          "appleMusic": [
-            "78989603"
-          ]
-        },
-        "followers": 31363,
-        "genres": [
-          "dance",
-          "trance",
-          "progressive trance"
-        ],
-        "id": 12656,
-        "image": "https://i.scdn.co/image/ab6761610000517484f02747e3e6c5f410fb533a",
-        "name": "Shogun",
-        "spotifyPopularity": 36
-      }
-    },
-    {
-      "position": 188,
-      "streams": 1,
-      "playedMs": 193846,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "4Ae5WVwvqj9QtX7NVr6GHg"
-          ],
-          "appleMusic": [
-            "1742196887"
-          ]
-        },
-        "followers": 1016,
-        "genres": [
-          "pop"
-        ],
-        "id": 15647725,
-        "image": "https://i.scdn.co/image/ab676161000051743bc01722fce4d464ba1631c6",
-        "name": "Hannah Ray",
-        "spotifyPopularity": 19
-      }
-    },
-    {
-      "position": 189,
+      "position": 143,
       "streams": 1,
       "playedMs": 189816,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "5T8x61HRsjZo0CwH1rs6Kf"
+            "5T8x61HRsjZo0CwH1rs6Kf",
+            "4JBJ2MAWeztZIAy2m7yHXf"
           ],
           "appleMusic": [
-            "41644438"
+            "41644438",
+            "1397933161"
           ]
         },
         "followers": 31809,
@@ -4743,157 +3636,25 @@
           "progressive trance"
         ],
         "id": 11818,
-        "image": "https://i.scdn.co/image/ab67616100005174df6c7bbe628219d7a1689707",
+        "image": "https://i.scdn.co/image/ab67616d00001e02f135c49b888db084a22b8664",
         "name": "Susana",
         "spotifyPopularity": 41
       }
     },
     {
-      "position": 190,
-      "streams": 1,
-      "playedMs": 184432,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "4f7KfxeHq9BiylGmyXepGt"
-          ],
-          "appleMusic": [
-            "1086921576"
-          ]
-        },
-        "followers": 6291706,
-        "genres": [
-          "bollywood",
-          "hindi pop",
-          "desi",
-          "desi pop",
-          "gujarati garba"
-        ],
-        "id": 3669,
-        "image": "https://i.scdn.co/image/ab6761610000517496f049daefd1875282baab0a",
-        "name": "Tanishk Bagchi",
-        "spotifyPopularity": 77
-      }
-    },
-    {
-      "position": 191,
-      "streams": 1,
-      "playedMs": 184432,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5f4QpKfy7ptCHwTqspnSJI"
-          ],
-          "appleMusic": [
-            "1465633100"
-          ]
-        },
-        "followers": 49408918,
-        "genres": [
-          "bollywood",
-          "hindi pop",
-          "desi",
-          "desi pop",
-          "gujarati garba"
-        ],
-        "id": 3712,
-        "image": "https://i.scdn.co/image/ab676161000051742c3c6dc56635014fa90b32a6",
-        "name": "Neha Kakkar",
-        "spotifyPopularity": 72
-      }
-    },
-    {
-      "position": 192,
-      "streams": 1,
-      "playedMs": 184432,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "1OPqAyxsQc8mcRmoNBAnVk"
-          ],
-          "appleMusic": [
-            "1259218557"
-          ]
-        },
-        "followers": 6143055,
-        "genres": [
-          "bollywood",
-          "hindi pop",
-          "desi pop",
-          "desi"
-        ],
-        "id": 113936,
-        "image": "https://i.scdn.co/image/ab6761610000517406ce6df7a4ce6ba00dee4e71",
-        "name": "Dhvani Bhanushali",
-        "spotifyPopularity": 64
-      }
-    },
-    {
-      "position": 193,
-      "streams": 1,
-      "playedMs": 184432,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "07iEy1AecUPVzfC2J2gCHR"
-          ],
-          "appleMusic": [
-            "545256421"
-          ]
-        },
-        "followers": 1563692,
-        "genres": [
-          "desi hip hop",
-          "hindi hip hop",
-          "bollywood",
-          "desi",
-          "hindi pop",
-          "indian pop"
-        ],
-        "id": 113944,
-        "image": "https://i.scdn.co/image/ab67616100005174b2dc3a8ce9bf77b9c5363b67",
-        "name": "Ikka",
-        "spotifyPopularity": 60
-      }
-    },
-    {
-      "position": 194,
-      "streams": 1,
-      "playedMs": 184432,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "1407156325"
-          ]
-        },
-        "followers": 0,
-        "genres": [
-          "bollywood"
-        ],
-        "id": 10139053,
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/21/89/da/2189da53-8c22-b46f-6a53-331496981059/8903431798596_cover.jpg/768x768ac.jpg",
-        "name": "Dhvani Bhanusali",
-        "spotifyPopularity": 0
-      }
-    },
-    {
-      "position": 195,
+      "position": 144,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
       "artist": {
         "externalIds": {
           "spotify": [
-            "2DTw633fgdoxrqv7uPdcCw"
+            "2DTw633fgdoxrqv7uPdcCw",
+            "2onHAzfz29VO5gNek5LWyb"
           ],
           "appleMusic": [
-            "274854085"
+            "274854085",
+            "1167787818"
           ]
         },
         "followers": 12966,
@@ -4908,7 +3669,7 @@
       }
     },
     {
-      "position": 196,
+      "position": 145,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -4932,59 +3693,7 @@
       }
     },
     {
-      "position": 197,
-      "streams": 1,
-      "playedMs": 180000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "5d1oOpLkM76Tgr2zWMTYkm"
-          ],
-          "appleMusic": [
-            "253213704"
-          ]
-        },
-        "followers": 22421,
-        "genres": [
-          "hardstyle",
-          "melodic bass",
-          "dance"
-        ],
-        "id": 7682,
-        "image": "https://i.scdn.co/image/ab67616100005174f417523caf94d1523c24c916",
-        "name": "Jonathan Mendelsohn",
-        "spotifyPopularity": 48
-      }
-    },
-    {
-      "position": 198,
-      "streams": 1,
-      "playedMs": 180000,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "478tAnskSff0wa0XxnpwmW"
-          ],
-          "appleMusic": [
-            "1477062824"
-          ]
-        },
-        "followers": 112235,
-        "genres": [
-          "trance",
-          "progressive trance",
-          "breakbeat"
-        ],
-        "id": 11895,
-        "image": "https://i.scdn.co/image/ab6761610000517431fea2dc88614b5c2e639ff1",
-        "name": "Alex M.O.R.P.H.",
-        "spotifyPopularity": 52
-      }
-    },
-    {
-      "position": 199,
+      "position": 146,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5012,7 +3721,7 @@
       }
     },
     {
-      "position": 200,
+      "position": 147,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5038,7 +3747,7 @@
       }
     },
     {
-      "position": 201,
+      "position": 148,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5063,7 +3772,7 @@
       }
     },
     {
-      "position": 202,
+      "position": 149,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5088,7 +3797,7 @@
       }
     },
     {
-      "position": 203,
+      "position": 150,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5114,7 +3823,33 @@
       }
     },
     {
-      "position": 204,
+      "position": 151,
+      "streams": 1,
+      "playedMs": 180000,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "1TUCkGpyFIZj6BPEdW55VT"
+          ],
+          "appleMusic": [
+            "379414190"
+          ]
+        },
+        "followers": 3168,
+        "genres": [
+          "trance",
+          "big room",
+          "progressive trance"
+        ],
+        "id": 12643,
+        "image": "https://i.scdn.co/image/ab67616100005174bda3a7c5e304ba45c1cab0fa",
+        "name": "Linnea Schossow",
+        "spotifyPopularity": 31
+      }
+    },
+    {
+      "position": 152,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5139,7 +3874,7 @@
       }
     },
     {
-      "position": 205,
+      "position": 153,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5164,7 +3899,7 @@
       }
     },
     {
-      "position": 206,
+      "position": 154,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5175,7 +3910,8 @@
           ],
           "appleMusic": [
             "315730588",
-            "1809828003"
+            "1809828003",
+            "1567549087"
           ]
         },
         "followers": 199283,
@@ -5189,7 +3925,33 @@
       }
     },
     {
-      "position": 207,
+      "position": 155,
+      "streams": 1,
+      "playedMs": 180000,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "4GWqzTTt2uA9Ms6HfUhWUn"
+          ],
+          "appleMusic": [
+            "487769939"
+          ]
+        },
+        "followers": 66028,
+        "genres": [
+          "dance",
+          "future house",
+          "edm"
+        ],
+        "id": 14844,
+        "image": "https://i.scdn.co/image/ab67616100005174e3af1c4d2093fa50f632226b",
+        "name": "Florian Picasso",
+        "spotifyPopularity": 37
+      }
+    },
+    {
+      "position": 156,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5213,7 +3975,32 @@
       }
     },
     {
-      "position": 208,
+      "position": 157,
+      "streams": 1,
+      "playedMs": 180000,
+      "indicator": null,
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "6TQj5BFPooTa08A7pk8AQ1"
+          ],
+          "appleMusic": [
+            "2827464"
+          ]
+        },
+        "followers": 1015827,
+        "genres": [
+          "dance",
+          "edm"
+        ],
+        "id": 18066,
+        "image": "https://i.scdn.co/image/ab67616100005174c96f32c30b4c236b5b9c40fa",
+        "name": "Kaskade",
+        "spotifyPopularity": 63
+      }
+    },
+    {
+      "position": 158,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5240,7 +4027,7 @@
       }
     },
     {
-      "position": 209,
+      "position": 159,
       "streams": 1,
       "playedMs": 180000,
       "indicator": null,
@@ -5265,7 +4052,7 @@
       }
     },
     {
-      "position": 210,
+      "position": 160,
       "streams": 1,
       "playedMs": 177249,
       "indicator": null,
@@ -5293,7 +4080,7 @@
       }
     },
     {
-      "position": 211,
+      "position": 161,
       "streams": 1,
       "playedMs": 176561,
       "indicator": null,
@@ -5317,7 +4104,7 @@
       }
     },
     {
-      "position": 212,
+      "position": 162,
       "streams": 1,
       "playedMs": 176561,
       "indicator": null,
@@ -5342,7 +4129,7 @@
       }
     },
     {
-      "position": 213,
+      "position": 163,
       "streams": 1,
       "playedMs": 176561,
       "indicator": null,
@@ -5366,7 +4153,7 @@
       }
     },
     {
-      "position": 214,
+      "position": 164,
       "streams": 1,
       "playedMs": 175238,
       "indicator": null,
@@ -5390,31 +4177,7 @@
       }
     },
     {
-      "position": 215,
-      "streams": 1,
-      "playedMs": 173760,
-      "indicator": null,
-      "artist": {
-        "externalIds": {
-          "spotify": [
-            "2cBh5lVMg222FFuRU7EfDE"
-          ],
-          "appleMusic": [
-            "13130691"
-          ]
-        },
-        "followers": 594733,
-        "genres": [
-          "pop"
-        ],
-        "id": 10618,
-        "image": "https://i.scdn.co/image/ab67616100005174180fed4e1e26cba501660afb",
-        "name": "Sophie Ellis-Bextor",
-        "spotifyPopularity": 65
-      }
-    },
-    {
-      "position": 216,
+      "position": 165,
       "streams": 1,
       "playedMs": 171124,
       "indicator": null,
@@ -5440,7 +4203,7 @@
       }
     },
     {
-      "position": 217,
+      "position": 166,
       "streams": 1,
       "playedMs": 168897,
       "indicator": null,
@@ -5464,7 +4227,7 @@
       }
     },
     {
-      "position": 218,
+      "position": 167,
       "streams": 1,
       "playedMs": 168897,
       "indicator": null,
@@ -5490,7 +4253,7 @@
       }
     },
     {
-      "position": 219,
+      "position": 168,
       "streams": 1,
       "playedMs": 166875,
       "indicator": null,
@@ -5516,7 +4279,7 @@
       }
     },
     {
-      "position": 220,
+      "position": 169,
       "streams": 1,
       "playedMs": 166875,
       "indicator": null,
@@ -5538,7 +4301,7 @@
       }
     },
     {
-      "position": 221,
+      "position": 170,
       "streams": 1,
       "playedMs": 160000,
       "indicator": null,
@@ -5566,13 +4329,15 @@
       }
     },
     {
-      "position": 222,
+      "position": 171,
       "streams": 1,
       "playedMs": 159374,
       "indicator": null,
       "artist": {
         "externalIds": {
-          "spotify": [],
+          "spotify": [
+            "4xgFgBZ7CRtgtHcziClOwQ"
+          ],
           "appleMusic": [
             "21155249"
           ]
@@ -5582,13 +4347,13 @@
           "dance"
         ],
         "id": 16679,
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/64/cf/0f/64cf0f31-1293-b9e2-3708-79ce7e00486a/mzl.gmmblbon.jpg/768x768bb.jpg",
+        "image": "https://i.scdn.co/image/ab676161000051748b7decbff21172289c6c9047",
         "name": "MOGUAI",
         "spotifyPopularity": 0
       }
     },
     {
-      "position": 223,
+      "position": 172,
       "streams": 1,
       "playedMs": 155590,
       "indicator": null,
@@ -5614,7 +4379,7 @@
       }
     },
     {
-      "position": 224,
+      "position": 173,
       "streams": 1,
       "playedMs": 155590,
       "indicator": null,
@@ -5640,7 +4405,7 @@
       }
     },
     {
-      "position": 225,
+      "position": 174,
       "streams": 1,
       "playedMs": 155590,
       "indicator": null,
@@ -5666,7 +4431,7 @@
       }
     },
     {
-      "position": 226,
+      "position": 175,
       "streams": 1,
       "playedMs": 155142,
       "indicator": null,
@@ -5686,7 +4451,7 @@
       }
     },
     {
-      "position": 227,
+      "position": 176,
       "streams": 1,
       "playedMs": 147692,
       "indicator": null,
@@ -5696,6 +4461,7 @@
             "4STmXOXUF3UieHU46NWLVt"
           ],
           "appleMusic": [
+            "1559051188",
             "1414217737"
           ]
         },
@@ -5711,7 +4477,7 @@
       }
     },
     {
-      "position": 228,
+      "position": 177,
       "streams": 1,
       "playedMs": 141562,
       "indicator": null,
@@ -5738,7 +4504,7 @@
       }
     },
     {
-      "position": 229,
+      "position": 178,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5763,7 +4529,7 @@
       }
     },
     {
-      "position": 230,
+      "position": 179,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5788,7 +4554,7 @@
       }
     },
     {
-      "position": 231,
+      "position": 180,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5813,7 +4579,7 @@
       }
     },
     {
-      "position": 232,
+      "position": 181,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5838,7 +4604,7 @@
       }
     },
     {
-      "position": 233,
+      "position": 182,
       "streams": 1,
       "playedMs": 120000,
       "indicator": null,
@@ -5862,7 +4628,7 @@
       }
     },
     {
-      "position": 234,
+      "position": 183,
       "streams": 1,
       "playedMs": 105271,
       "indicator": null,
