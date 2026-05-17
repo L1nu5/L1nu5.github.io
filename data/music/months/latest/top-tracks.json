@@ -2,43 +2,6 @@
   "items": [
     {
       "position": 1,
-      "streams": 8,
-      "playedMs": 3517500,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 59438120,
-            "image": "https://i.scdn.co/image/ab67616d0000b2730c9e30a765a9b75eb252590f",
-            "name": "Ameonna"
-          }
-        ],
-        "artists": [
-          {
-            "id": 9967,
-            "name": "deadmau5",
-            "image": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7"
-          }
-        ],
-        "durationMs": 442500,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [
-            "2QWVzSa39qQ66oJdIXclo1"
-          ],
-          "appleMusic": [
-            "1844744532"
-          ]
-        },
-        "id": 331659945,
-        "name": "Ameonna",
-        "spotifyPopularity": 42,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/dc6a1e7d10f0e1303f2a9795008897d237ecfe91?cid=ef67251d815e4c198c5a35062b12367f",
-        "appleMusicPreview": null
-      }
-    },
-    {
-      "position": 2,
       "streams": 12,
       "playedMs": 3129660,
       "indicator": null,
@@ -78,7 +41,7 @@
       }
     },
     {
-      "position": 3,
+      "position": 2,
       "streams": 3,
       "playedMs": 2636406,
       "indicator": null,
@@ -109,6 +72,43 @@
         "name": "Aftermath",
         "spotifyPopularity": 0,
         "spotifyPreview": null,
+        "appleMusicPreview": null
+      }
+    },
+    {
+      "position": 3,
+      "streams": 6,
+      "playedMs": 2632500,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 59438120,
+            "image": "https://i.scdn.co/image/ab67616d0000b2730c9e30a765a9b75eb252590f",
+            "name": "Ameonna"
+          }
+        ],
+        "artists": [
+          {
+            "id": 9967,
+            "name": "deadmau5",
+            "image": "https://i.scdn.co/image/ab6761610000517489ffabe57a25cedeca3309e7"
+          }
+        ],
+        "durationMs": 442500,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "2QWVzSa39qQ66oJdIXclo1"
+          ],
+          "appleMusic": [
+            "1844744532"
+          ]
+        },
+        "id": 331659945,
+        "name": "Ameonna",
+        "spotifyPopularity": 42,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/dc6a1e7d10f0e1303f2a9795008897d237ecfe91?cid=ef67251d815e4c198c5a35062b12367f",
         "appleMusicPreview": null
       }
     },
@@ -184,41 +184,6 @@
     {
       "position": 6,
       "streams": 5,
-      "playedMs": 1894995,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 25203031,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/d5/24/3d/d5243dac-9574-8d22-5235-6a45802c8b4b/887654304629_Cover.jpg/768x768bb.jpg",
-            "name": "Onelove Sonic Boom Box 2013"
-          }
-        ],
-        "artists": [
-          {
-            "id": 101649,
-            "name": "BURNS",
-            "image": "https://i.scdn.co/image/ab6742d3000052b761af26bef541bc601b1cebc0"
-          }
-        ],
-        "durationMs": 379387,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "1287846429"
-          ]
-        },
-        "id": 4188361,
-        "name": "Lies (Otto Knows Remix)",
-        "spotifyPopularity": 0,
-        "spotifyPreview": null,
-        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/87/08/d9/8708d9fc-8505-4b5f-009d-31e8e420a827/mzaf_1619500350805000522.plus.aac.p.m4a"
-      }
-    },
-    {
-      "position": 7,
-      "streams": 5,
       "playedMs": 1858664,
       "indicator": null,
       "track": {
@@ -252,7 +217,7 @@
       }
     },
     {
-      "position": 8,
+      "position": 7,
       "streams": 7,
       "playedMs": 1841040,
       "indicator": null,
@@ -287,7 +252,7 @@
       }
     },
     {
-      "position": 9,
+      "position": 8,
       "streams": 9,
       "playedMs": 1831356,
       "indicator": null,
@@ -322,7 +287,7 @@
       }
     },
     {
-      "position": 10,
+      "position": 9,
       "streams": 7,
       "playedMs": 1680700,
       "indicator": null,
@@ -357,7 +322,7 @@
       }
     },
     {
-      "position": 11,
+      "position": 10,
       "streams": 3,
       "playedMs": 1587825,
       "indicator": null,
@@ -394,7 +359,7 @@
       }
     },
     {
-      "position": 12,
+      "position": 11,
       "streams": 5,
       "playedMs": 1566399,
       "indicator": null,
@@ -423,13 +388,13 @@
         },
         "id": 1139255,
         "name": "Another Day in Paradise - 2016 Remaster",
-        "spotifyPopularity": 73,
+        "spotifyPopularity": 74,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/6e86a5698f1165e5ffa7a537e4f19018e0e10eb4?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": null
       }
     },
     {
-      "position": 13,
+      "position": 12,
       "streams": 3,
       "playedMs": 1558128,
       "indicator": null,
@@ -466,7 +431,7 @@
       }
     },
     {
-      "position": 14,
+      "position": 13,
       "streams": 8,
       "playedMs": 1556874,
       "indicator": null,
@@ -503,7 +468,7 @@
       }
     },
     {
-      "position": 15,
+      "position": 14,
       "streams": 5,
       "playedMs": 1507944,
       "indicator": null,
@@ -537,13 +502,13 @@
         },
         "id": 989737,
         "name": "Breakn' a Sweat",
-        "spotifyPopularity": 43,
+        "spotifyPopularity": 44,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/6bf9e823e771d5595c8d17774304816d823c8c73?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/15/f8/0615f825-00c3-eb75-d3e8-366c795abb59/mzaf_9819131955756799175.plus.aac.p.m4a"
       }
     },
     {
-      "position": 16,
+      "position": 15,
       "streams": 6,
       "playedMs": 1464399,
       "indicator": null,
@@ -578,7 +543,7 @@
       }
     },
     {
-      "position": 17,
+      "position": 16,
       "streams": 8,
       "playedMs": 1452840,
       "indicator": null,
@@ -623,7 +588,7 @@
       }
     },
     {
-      "position": 18,
+      "position": 17,
       "streams": 4,
       "playedMs": 1440000,
       "indicator": null,
@@ -652,13 +617,13 @@
         },
         "id": 481273,
         "name": "Shadows",
-        "spotifyPopularity": 43,
+        "spotifyPopularity": 45,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 19,
+      "position": 18,
       "streams": 7,
       "playedMs": 1384716,
       "indicator": null,
@@ -698,7 +663,7 @@
       }
     },
     {
-      "position": 20,
+      "position": 19,
       "streams": 6,
       "playedMs": 1351356,
       "indicator": null,
@@ -738,7 +703,7 @@
       }
     },
     {
-      "position": 21,
+      "position": 20,
       "streams": 4,
       "playedMs": 1343784,
       "indicator": null,
@@ -767,13 +732,13 @@
         },
         "id": 219080,
         "name": "Allein",
-        "spotifyPopularity": 43,
+        "spotifyPopularity": 45,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 22,
+      "position": 21,
       "streams": 6,
       "playedMs": 1338480,
       "indicator": null,
@@ -808,7 +773,7 @@
       }
     },
     {
-      "position": 23,
+      "position": 22,
       "streams": 6,
       "playedMs": 1329120,
       "indicator": null,
@@ -853,7 +818,7 @@
       }
     },
     {
-      "position": 24,
+      "position": 23,
       "streams": 5,
       "playedMs": 1311784,
       "indicator": null,
@@ -896,7 +861,7 @@
       }
     },
     {
-      "position": 25,
+      "position": 24,
       "streams": 6,
       "playedMs": 1292665,
       "indicator": null,
@@ -925,13 +890,13 @@
         },
         "id": 366379,
         "name": "Summer",
-        "spotifyPopularity": 36,
+        "spotifyPopularity": 37,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/d5c8b25f7564e6383d0eddb222da646bb67cead0?cid=9f2f11ea35624cda95298bed0e423510",
         "appleMusicPreview": null
       }
     },
     {
-      "position": 26,
+      "position": 25,
       "streams": 6,
       "playedMs": 1284730,
       "indicator": null,
@@ -966,42 +931,7 @@
       }
     },
     {
-      "position": 27,
-      "streams": 6,
-      "playedMs": 1269120,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 1324532,
-            "image": "https://i.scdn.co/image/ab67616d0000b2730a9a8c322204e98a6d5adb6e",
-            "name": "International Love (feat. Chris Brown)"
-          }
-        ],
-        "artists": [
-          {
-            "id": 361,
-            "name": "Pitbull",
-            "image": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9"
-          }
-        ],
-        "durationMs": 229133,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [
-            "62grqPGwtC5a8PG5emVYSa"
-          ],
-          "appleMusic": []
-        },
-        "id": 251979,
-        "name": "International Love (feat. Chris Brown)",
-        "spotifyPopularity": 13,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/796c030b6336cedd4a816f931c818a5507bf4607?cid=21f8e12bad9d44e6a625b8832079a361",
-        "appleMusicPreview": null
-      }
-    },
-    {
-      "position": 28,
+      "position": 26,
       "streams": 2,
       "playedMs": 1224080,
       "indicator": null,
@@ -1036,7 +966,7 @@
       }
     },
     {
-      "position": 29,
+      "position": 27,
       "streams": 6,
       "playedMs": 1207200,
       "indicator": null,
@@ -1081,7 +1011,7 @@
       }
     },
     {
-      "position": 30,
+      "position": 28,
       "streams": 5,
       "playedMs": 1194145,
       "indicator": null,
@@ -1116,7 +1046,7 @@
       }
     },
     {
-      "position": 31,
+      "position": 29,
       "streams": 4,
       "playedMs": 1194024,
       "indicator": null,
@@ -1145,13 +1075,13 @@
         },
         "id": 2012046,
         "name": "Didi",
-        "spotifyPopularity": 7,
+        "spotifyPopularity": 8,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 32,
+      "position": 30,
       "streams": 3,
       "playedMs": 1189929,
       "indicator": null,
@@ -1186,7 +1116,7 @@
       }
     },
     {
-      "position": 33,
+      "position": 31,
       "streams": 4,
       "playedMs": 1162676,
       "indicator": null,
@@ -1226,7 +1156,7 @@
       }
     },
     {
-      "position": 34,
+      "position": 32,
       "streams": 5,
       "playedMs": 1154065,
       "indicator": null,
@@ -1278,7 +1208,44 @@
       }
     },
     {
-      "position": 35,
+      "position": 33,
+      "streams": 3,
+      "playedMs": 1136997,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 1615765,
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/25/84/8e/25848e35-2cdd-8c01-5a51-729fe317bc90/886443481169_cover.jpg/768x768bb.jpg",
+            "name": "Lies"
+          }
+        ],
+        "artists": [
+          {
+            "id": 101649,
+            "name": "BURNS",
+            "image": "https://i.scdn.co/image/ab6742d3000052b761af26bef541bc601b1cebc0"
+          }
+        ],
+        "durationMs": 378999,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "2hEwnK3oW1F4NgV4RPp5qV"
+          ],
+          "appleMusic": [
+            "1402864820"
+          ]
+        },
+        "id": 4188361,
+        "name": "Lies (Otto Knows Remix)",
+        "spotifyPopularity": 37,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/8d24963dac077e54aeaa3fc590523423746bd70b?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/26/c2/10/26c210db-f796-321f-ba87-aa33333981c3/mzaf_5171082818669821329.plus.aac.p.m4a"
+      }
+    },
+    {
+      "position": 34,
       "streams": 3,
       "playedMs": 1108733,
       "indicator": null,
@@ -1313,7 +1280,7 @@
       }
     },
     {
-      "position": 36,
+      "position": 35,
       "streams": 6,
       "playedMs": 1092609,
       "indicator": null,
@@ -1350,7 +1317,7 @@
       }
     },
     {
-      "position": 37,
+      "position": 36,
       "streams": 4,
       "playedMs": 1059752,
       "indicator": null,
@@ -1395,7 +1362,7 @@
       }
     },
     {
-      "position": 38,
+      "position": 37,
       "streams": 2,
       "playedMs": 1057728,
       "indicator": null,
@@ -1434,6 +1401,41 @@
         "spotifyPopularity": 8,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/228b63e7a83fb10f9ee35c94bf7a1dbe3cee7d2f?cid=67a36ed0197d4a34b14ec883a5d5f793",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/91/3e/1d913e97-7d32-07e5-1e70-c1add2903af3/mzaf_9615301015538678411.plus.aac.p.m4a"
+      }
+    },
+    {
+      "position": 38,
+      "streams": 5,
+      "playedMs": 1041840,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 1324532,
+            "image": "https://i.scdn.co/image/ab67616d0000b2730a9a8c322204e98a6d5adb6e",
+            "name": "International Love (feat. Chris Brown)"
+          }
+        ],
+        "artists": [
+          {
+            "id": 361,
+            "name": "Pitbull",
+            "image": "https://i.scdn.co/image/ab676161000051748d8ac7290d0fe2d12fb6e4d9"
+          }
+        ],
+        "durationMs": 229133,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "62grqPGwtC5a8PG5emVYSa"
+          ],
+          "appleMusic": []
+        },
+        "id": 251979,
+        "name": "International Love (feat. Chris Brown)",
+        "spotifyPopularity": 14,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/796c030b6336cedd4a816f931c818a5507bf4607?cid=21f8e12bad9d44e6a625b8832079a361",
+        "appleMusicPreview": null
       }
     },
     {
@@ -1602,7 +1604,7 @@
         },
         "id": 1012005,
         "name": "In The Air Tonight - 2015 Remastered",
-        "spotifyPopularity": 70,
+        "spotifyPopularity": 71,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/31c39a7bd82cc18f28c48ead9b95a0fa03147c3e?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": null
       }
@@ -1797,41 +1799,6 @@
     {
       "position": 49,
       "streams": 4,
-      "playedMs": 974718,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 1203383,
-            "image": "https://i.scdn.co/image/ab67616d0000b2738a226990ca6558f0d2f3370d",
-            "name": "Hangover"
-          }
-        ],
-        "artists": [
-          {
-            "id": 15821,
-            "name": "Taio Cruz",
-            "image": "https://i.scdn.co/image/ab67616100005174153171480a6f22912253b9f1"
-          }
-        ],
-        "durationMs": 245426,
-        "explicit": true,
-        "externalIds": {
-          "spotify": [
-            "2nYffVviOT0u50rR9iANVN"
-          ],
-          "appleMusic": []
-        },
-        "id": 97134,
-        "name": "Hangover",
-        "spotifyPopularity": 26,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/6be2d7ab85535005705858e39f703950d6a4bed7?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
-        "appleMusicPreview": null
-      }
-    },
-    {
-      "position": 50,
-      "streams": 4,
       "playedMs": 969368,
       "indicator": null,
       "track": {
@@ -1875,7 +1842,7 @@
       }
     },
     {
-      "position": 51,
+      "position": 50,
       "streams": 5,
       "playedMs": 969000,
       "indicator": null,
@@ -1910,7 +1877,7 @@
       }
     },
     {
-      "position": 52,
+      "position": 51,
       "streams": 2,
       "playedMs": 965660,
       "indicator": null,
@@ -1943,7 +1910,7 @@
       }
     },
     {
-      "position": 53,
+      "position": 52,
       "streams": 4,
       "playedMs": 962388,
       "indicator": null,
@@ -1995,7 +1962,7 @@
       }
     },
     {
-      "position": 54,
+      "position": 53,
       "streams": 3,
       "playedMs": 961962,
       "indicator": null,
@@ -2032,7 +1999,7 @@
       }
     },
     {
-      "position": 55,
+      "position": 54,
       "streams": 5,
       "playedMs": 953439,
       "indicator": null,
@@ -2072,7 +2039,7 @@
       }
     },
     {
-      "position": 56,
+      "position": 55,
       "streams": 2,
       "playedMs": 952552,
       "indicator": null,
@@ -2117,7 +2084,7 @@
       }
     },
     {
-      "position": 57,
+      "position": 56,
       "streams": 3,
       "playedMs": 946480,
       "indicator": null,
@@ -2152,7 +2119,7 @@
       }
     },
     {
-      "position": 58,
+      "position": 57,
       "streams": 4,
       "playedMs": 939092,
       "indicator": null,
@@ -2194,7 +2161,7 @@
       }
     },
     {
-      "position": 59,
+      "position": 58,
       "streams": 5,
       "playedMs": 914598,
       "indicator": null,
@@ -2223,13 +2190,13 @@
         },
         "id": 3879170,
         "name": "Papercut",
-        "spotifyPopularity": 31,
+        "spotifyPopularity": 32,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 60,
+      "position": 59,
       "streams": 3,
       "playedMs": 905680,
       "indicator": null,
@@ -2264,7 +2231,7 @@
       }
     },
     {
-      "position": 61,
+      "position": 60,
       "streams": 3,
       "playedMs": 901070,
       "indicator": null,
@@ -2293,13 +2260,13 @@
         },
         "id": 11309241,
         "name": "Dawnbreaker",
-        "spotifyPopularity": 30,
+        "spotifyPopularity": 31,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/63066067aa14fd0c7ef562c83b528d8a1a15b9ef?cid=21f8e12bad9d44e6a625b8832079a361",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/3f/6e/84/3f6e84b6-e246-a1d9-ed29-bf1919f240a8/mzaf_12651176936554681787.plus.aac.p.m4a"
       }
     },
     {
-      "position": 62,
+      "position": 61,
       "streams": 5,
       "playedMs": 899050,
       "indicator": null,
@@ -2336,7 +2303,7 @@
       }
     },
     {
-      "position": 63,
+      "position": 62,
       "streams": 3,
       "playedMs": 896799,
       "indicator": null,
@@ -2371,7 +2338,7 @@
       }
     },
     {
-      "position": 64,
+      "position": 63,
       "streams": 4,
       "playedMs": 894510,
       "indicator": null,
@@ -2406,7 +2373,7 @@
       }
     },
     {
-      "position": 65,
+      "position": 64,
       "streams": 4,
       "playedMs": 875172,
       "indicator": null,
@@ -2443,7 +2410,7 @@
       }
     },
     {
-      "position": 66,
+      "position": 65,
       "streams": 4,
       "playedMs": 861120,
       "indicator": null,
@@ -2478,16 +2445,16 @@
       }
     },
     {
-      "position": 67,
+      "position": 66,
       "streams": 4,
       "playedMs": 851400,
       "indicator": null,
       "track": {
         "albums": [
           {
-            "id": 98325,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/eb/ca/0d/ebca0d0d-3c73-686a-285a-f5899d1e0f25/075679954046.jpg/768x768bb.jpg",
-            "name": "Wild Ones"
+            "id": 1124883,
+            "image": "https://i.scdn.co/image/ab6742d3000053b723530240a12f0c2c74a1f707",
+            "name": "I Cry"
           }
         ],
         "artists": [
@@ -2497,26 +2464,23 @@
             "image": "https://i.scdn.co/image/ab67616100005174655ca8f3196953554b479452"
           }
         ],
-        "durationMs": 223800,
+        "durationMs": 235456,
         "explicit": false,
         "externalIds": {
           "spotify": [
-            "4bZd0nRuX8HyjeXAUBczvm"
+            "4wKS6565J4txy9QRUgdw0q"
           ],
-          "appleMusic": [
-            "613867353",
-            "633324298"
-          ]
+          "appleMusic": []
         },
         "id": 314165,
         "name": "I Cry",
-        "spotifyPopularity": 78,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/677818325ecfeb591d3e91779d54c7974c0d3d39?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
-        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/e6/74/6c/e6746c80-cc3d-1d04-8be2-5cddba4bb359/mzaf_3667732722865872412.plus.aac.p.m4a"
+        "spotifyPopularity": 21,
+        "spotifyPreview": null,
+        "appleMusicPreview": null
       }
     },
     {
-      "position": 68,
+      "position": 67,
       "streams": 2,
       "playedMs": 848452,
       "indicator": null,
@@ -2551,7 +2515,7 @@
       }
     },
     {
-      "position": 69,
+      "position": 68,
       "streams": 2,
       "playedMs": 845714,
       "indicator": null,
@@ -2586,7 +2550,7 @@
       }
     },
     {
-      "position": 70,
+      "position": 69,
       "streams": 3,
       "playedMs": 832467,
       "indicator": null,
@@ -2621,7 +2585,7 @@
       }
     },
     {
-      "position": 71,
+      "position": 70,
       "streams": 2,
       "playedMs": 830390,
       "indicator": null,
@@ -2661,7 +2625,7 @@
       }
     },
     {
-      "position": 72,
+      "position": 71,
       "streams": 3,
       "playedMs": 802973,
       "indicator": null,
@@ -2713,7 +2677,7 @@
       }
     },
     {
-      "position": 73,
+      "position": 72,
       "streams": 4,
       "playedMs": 793080,
       "indicator": null,
@@ -2753,7 +2717,7 @@
       }
     },
     {
-      "position": 74,
+      "position": 73,
       "streams": 4,
       "playedMs": 788991,
       "indicator": null,
@@ -2790,7 +2754,7 @@
       }
     },
     {
-      "position": 75,
+      "position": 74,
       "streams": 2,
       "playedMs": 780000,
       "indicator": null,
@@ -2823,7 +2787,7 @@
       }
     },
     {
-      "position": 76,
+      "position": 75,
       "streams": 4,
       "playedMs": 772560,
       "indicator": null,
@@ -2858,7 +2822,7 @@
       }
     },
     {
-      "position": 77,
+      "position": 76,
       "streams": 2,
       "playedMs": 770148,
       "indicator": null,
@@ -2898,7 +2862,7 @@
       }
     },
     {
-      "position": 78,
+      "position": 77,
       "streams": 7,
       "playedMs": 764400,
       "indicator": null,
@@ -2940,7 +2904,7 @@
       }
     },
     {
-      "position": 79,
+      "position": 78,
       "streams": 3,
       "playedMs": 759240,
       "indicator": null,
@@ -2969,13 +2933,13 @@
         },
         "id": 286466,
         "name": "Kiss It Better",
-        "spotifyPopularity": 36,
+        "spotifyPopularity": 37,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 80,
+      "position": 79,
       "streams": 3,
       "playedMs": 755600,
       "indicator": null,
@@ -3010,7 +2974,7 @@
       }
     },
     {
-      "position": 81,
+      "position": 80,
       "streams": 4,
       "playedMs": 747744,
       "indicator": null,
@@ -3045,42 +3009,7 @@
       }
     },
     {
-      "position": 82,
-      "streams": 4,
-      "playedMs": 745732,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 3682826,
-            "image": "https://i.scdn.co/image/ab67616d0000b27320f6fa9c653dce74d3819351",
-            "name": "Onelove Summer Festival Anthems 2013 (Mixed by Generik)"
-          }
-        ],
-        "artists": [
-          {
-            "id": 63036,
-            "name": "Otto Knows",
-            "image": "https://i.scdn.co/image/ab67616100005174d2e39f3f5fd0b6c0896b7f71"
-          }
-        ],
-        "durationMs": 192857,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [
-            "54nxQfVZUAero4CfLNe6w8"
-          ],
-          "appleMusic": []
-        },
-        "id": 238560,
-        "name": "Million Voices (Radio Edit)",
-        "spotifyPopularity": 0,
-        "spotifyPreview": null,
-        "appleMusicPreview": null
-      }
-    },
-    {
-      "position": 83,
+      "position": 81,
       "streams": 3,
       "playedMs": 741517,
       "indicator": null,
@@ -3115,7 +3044,7 @@
       }
     },
     {
-      "position": 84,
+      "position": 82,
       "streams": 3,
       "playedMs": 737985,
       "indicator": null,
@@ -3153,7 +3082,7 @@
       }
     },
     {
-      "position": 85,
+      "position": 83,
       "streams": 2,
       "playedMs": 735893,
       "indicator": null,
@@ -3188,44 +3117,42 @@
       }
     },
     {
-      "position": 86,
-      "streams": 4,
-      "playedMs": 721394,
+      "position": 84,
+      "streams": 3,
+      "playedMs": 729812,
       "indicator": null,
       "track": {
         "albums": [
           {
-            "id": 134758,
-            "image": "https://i.scdn.co/image/ab67616d0000b273811676f4c725351ce8ad0030",
-            "name": "Live Tonight"
+            "id": 1203383,
+            "image": "https://i.scdn.co/image/ab67616d0000b2738a226990ca6558f0d2f3370d",
+            "name": "Hangover"
           }
         ],
         "artists": [
           {
-            "id": 68021,
-            "name": "Basto",
-            "image": "https://i.scdn.co/image/ab676161000051746d9e9e43cdae8e230bcc0077"
+            "id": 15821,
+            "name": "Taio Cruz",
+            "image": "https://i.scdn.co/image/ab67616100005174153171480a6f22912253b9f1"
           }
         ],
-        "durationMs": 181394,
-        "explicit": false,
+        "durationMs": 245426,
+        "explicit": true,
         "externalIds": {
           "spotify": [
-            "0rbQuIGWHXqgybini1oDu9"
+            "2nYffVviOT0u50rR9iANVN"
           ],
-          "appleMusic": [
-            "1837190605"
-          ]
+          "appleMusic": []
         },
-        "id": 327564605,
-        "name": "Again & Again",
-        "spotifyPopularity": 0,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/6e00c5d81d83487ee9d672495f5d02dd86ad6846?cid=9f2f11ea35624cda95298bed0e423510",
+        "id": 97134,
+        "name": "Hangover",
+        "spotifyPopularity": 26,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/6be2d7ab85535005705858e39f703950d6a4bed7?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": null
       }
     },
     {
-      "position": 87,
+      "position": 85,
       "streams": 2,
       "playedMs": 720530,
       "indicator": null,
@@ -3262,7 +3189,7 @@
       }
     },
     {
-      "position": 88,
+      "position": 86,
       "streams": 3,
       "playedMs": 720000,
       "indicator": null,
@@ -3297,7 +3224,7 @@
       }
     },
     {
-      "position": 89,
+      "position": 87,
       "streams": 2,
       "playedMs": 715834,
       "indicator": null,
@@ -3332,7 +3259,7 @@
       }
     },
     {
-      "position": 90,
+      "position": 88,
       "streams": 2,
       "playedMs": 715012,
       "indicator": null,
@@ -3367,7 +3294,7 @@
       }
     },
     {
-      "position": 91,
+      "position": 89,
       "streams": 4,
       "playedMs": 712920,
       "indicator": null,
@@ -3401,13 +3328,13 @@
         },
         "id": 111601,
         "name": "Miami 2 Ibiza - Swedish House Mafia vs. Tinie Tempah",
-        "spotifyPopularity": 56,
+        "spotifyPopularity": 57,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/3a868520a5d99085597ce2c533cdb3ee932b517b?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": null
       }
     },
     {
-      "position": 92,
+      "position": 90,
       "streams": 3,
       "playedMs": 702000,
       "indicator": null,
@@ -3449,7 +3376,7 @@
       }
     },
     {
-      "position": 93,
+      "position": 91,
       "streams": 2,
       "playedMs": 700688,
       "indicator": null,
@@ -3493,7 +3420,7 @@
       }
     },
     {
-      "position": 94,
+      "position": 92,
       "streams": 3,
       "playedMs": 697140,
       "indicator": null,
@@ -3530,7 +3457,7 @@
       }
     },
     {
-      "position": 95,
+      "position": 93,
       "streams": 3,
       "playedMs": 690270,
       "indicator": null,
@@ -3567,7 +3494,7 @@
       }
     },
     {
-      "position": 96,
+      "position": 94,
       "streams": 3,
       "playedMs": 690054,
       "indicator": null,
@@ -3604,7 +3531,7 @@
       }
     },
     {
-      "position": 97,
+      "position": 95,
       "streams": 3,
       "playedMs": 688074,
       "indicator": null,
@@ -3644,7 +3571,7 @@
       }
     },
     {
-      "position": 98,
+      "position": 96,
       "streams": 5,
       "playedMs": 683120,
       "indicator": null,
@@ -3699,7 +3626,7 @@
       }
     },
     {
-      "position": 99,
+      "position": 97,
       "streams": 3,
       "playedMs": 682758,
       "indicator": null,
@@ -3741,7 +3668,7 @@
       }
     },
     {
-      "position": 100,
+      "position": 98,
       "streams": 3,
       "playedMs": 681000,
       "indicator": null,
@@ -3781,7 +3708,7 @@
       }
     },
     {
-      "position": 101,
+      "position": 99,
       "streams": 3,
       "playedMs": 676500,
       "indicator": null,
@@ -3818,7 +3745,7 @@
       }
     },
     {
-      "position": 102,
+      "position": 100,
       "streams": 2,
       "playedMs": 674720,
       "indicator": null,
@@ -3860,7 +3787,7 @@
       }
     },
     {
-      "position": 103,
+      "position": 101,
       "streams": 3,
       "playedMs": 673041,
       "indicator": null,
@@ -3895,7 +3822,7 @@
       }
     },
     {
-      "position": 104,
+      "position": 102,
       "streams": 4,
       "playedMs": 671416,
       "indicator": null,
@@ -3930,7 +3857,7 @@
       }
     },
     {
-      "position": 105,
+      "position": 103,
       "streams": 3,
       "playedMs": 665520,
       "indicator": null,
@@ -3960,12 +3887,12 @@
         "id": 6942362,
         "name": "Made Of Love",
         "spotifyPopularity": 16,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/52be0eb9f55fe7240badf08cddbcd1a0d2170b34?cid=c0cdcce8ec8849efac2a196c391ada1a",
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/52be0eb9f55fe7240badf08cddbcd1a0d2170b34?cid=ef67251d815e4c198c5a35062b12367f",
         "appleMusicPreview": null
       }
     },
     {
-      "position": 106,
+      "position": 104,
       "streams": 2,
       "playedMs": 664906,
       "indicator": null,
@@ -3994,13 +3921,13 @@
         },
         "id": 481277,
         "name": "Sunburst",
-        "spotifyPopularity": 43,
+        "spotifyPopularity": 45,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 107,
+      "position": 105,
       "streams": 2,
       "playedMs": 664600,
       "indicator": null,
@@ -4057,7 +3984,7 @@
       }
     },
     {
-      "position": 108,
+      "position": 106,
       "streams": 2,
       "playedMs": 657208,
       "indicator": null,
@@ -4099,7 +4026,7 @@
       }
     },
     {
-      "position": 109,
+      "position": 107,
       "streams": 3,
       "playedMs": 644439,
       "indicator": null,
@@ -4128,13 +4055,13 @@
         },
         "id": 204063,
         "name": "If I Lose Myself - Alesso vs OneRepublic",
-        "spotifyPopularity": 27,
+        "spotifyPopularity": 28,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/549c7f2dcd2de342ad09e3f3cd722546eac93e98?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/f6/b1/49/f6b14989-c790-eaa1-25c4-6d78f262a156/mzaf_15100494420466051308.plus.aac.p.m4a"
       }
     },
     {
-      "position": 110,
+      "position": 108,
       "streams": 3,
       "playedMs": 644372,
       "indicator": null,
@@ -4174,7 +4101,7 @@
       }
     },
     {
-      "position": 111,
+      "position": 109,
       "streams": 3,
       "playedMs": 643146,
       "indicator": null,
@@ -4214,7 +4141,7 @@
       }
     },
     {
-      "position": 112,
+      "position": 110,
       "streams": 3,
       "playedMs": 642579,
       "indicator": null,
@@ -4249,7 +4176,7 @@
       }
     },
     {
-      "position": 113,
+      "position": 111,
       "streams": 3,
       "playedMs": 642459,
       "indicator": null,
@@ -4289,7 +4216,7 @@
       }
     },
     {
-      "position": 114,
+      "position": 112,
       "streams": 3,
       "playedMs": 622544,
       "indicator": null,
@@ -4334,7 +4261,7 @@
       }
     },
     {
-      "position": 115,
+      "position": 113,
       "streams": 2,
       "playedMs": 622500,
       "indicator": null,
@@ -4371,47 +4298,7 @@
       }
     },
     {
-      "position": 116,
-      "streams": 3,
-      "playedMs": 621306,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 26875214,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/42/70/56/4270565c-2de6-d26b-cc32-a3bf69877a22/5059460240476.jpg/768x768bb.jpg",
-            "name": "Dance Desire"
-          }
-        ],
-        "artists": [
-          {
-            "id": 94027,
-            "name": "Fred again..",
-            "image": "https://i.scdn.co/image/ab67616100005174381c41adc678e4ce864eb274"
-          },
-          {
-            "id": 200063,
-            "name": "Obongjayar",
-            "image": "https://i.scdn.co/image/ab676161000051744ab5fcccf89128dd98b0b815"
-          }
-        ],
-        "durationMs": 220653,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "1711548822"
-          ]
-        },
-        "id": 76557058,
-        "name": "Adore U",
-        "spotifyPopularity": 0,
-        "spotifyPreview": null,
-        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/68/ab/03/68ab0386-e724-3c28-a8d9-83ff93f0e3ba/mzaf_3753133119480150006.plus.aac.p.m4a"
-      }
-    },
-    {
-      "position": 117,
+      "position": 114,
       "streams": 2,
       "playedMs": 619783,
       "indicator": null,
@@ -4456,7 +4343,7 @@
       }
     },
     {
-      "position": 118,
+      "position": 115,
       "streams": 2,
       "playedMs": 617100,
       "indicator": null,
@@ -4501,7 +4388,7 @@
       }
     },
     {
-      "position": 119,
+      "position": 116,
       "streams": 2,
       "playedMs": 612282,
       "indicator": null,
@@ -4539,7 +4426,7 @@
       }
     },
     {
-      "position": 120,
+      "position": 117,
       "streams": 3,
       "playedMs": 607509,
       "indicator": null,
@@ -4574,7 +4461,7 @@
       }
     },
     {
-      "position": 121,
+      "position": 118,
       "streams": 3,
       "playedMs": 606678,
       "indicator": null,
@@ -4609,7 +4496,7 @@
       }
     },
     {
-      "position": 122,
+      "position": 119,
       "streams": 2,
       "playedMs": 604800,
       "indicator": null,
@@ -4651,7 +4538,7 @@
       }
     },
     {
-      "position": 123,
+      "position": 120,
       "streams": 3,
       "playedMs": 600106,
       "indicator": null,
@@ -4722,7 +4609,7 @@
       }
     },
     {
-      "position": 124,
+      "position": 121,
       "streams": 2,
       "playedMs": 594354,
       "indicator": null,
@@ -4759,16 +4646,16 @@
       }
     },
     {
-      "position": 125,
+      "position": 122,
       "streams": 3,
       "playedMs": 592826,
       "indicator": null,
       "track": {
         "albums": [
           {
-            "id": 3046572,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music/e7/9f/6e/mzi.vnykmnrb.jpg/768x768bb.jpg",
-            "name": "De Maxx - Long Player 22"
+            "id": 804688,
+            "image": "https://i.scdn.co/image/ab67616d0000b2736971ce6ed7167ee930641ba5",
+            "name": "Feel So Close"
           }
         ],
         "artists": [
@@ -4778,23 +4665,23 @@
             "image": "https://i.scdn.co/image/ab676161000051748ebba5e60113b48de8c11f6b"
           }
         ],
-        "durationMs": 206813,
+        "durationMs": 207880,
         "explicit": false,
         "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "479833679"
-          ]
+          "spotify": [
+            "62k4UcafNJUZrvWOJYge7d"
+          ],
+          "appleMusic": []
         },
         "id": 464087,
-        "name": "Feel So Close",
+        "name": "Feel So Close - Radio Edit",
         "spotifyPopularity": 0,
-        "spotifyPreview": null,
-        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/52/de/d0/52ded082-c873-5e51-1948-9fd2da73db07/mzaf_7861934324717668322.plus.aac.p.m4a"
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/b8372b1a0b8d09a5004388a654f29bef6bc37021?cid=41310bd6c11e4f9c831a41385c484bcd",
+        "appleMusicPreview": null
       }
     },
     {
-      "position": 126,
+      "position": 123,
       "streams": 3,
       "playedMs": 592800,
       "indicator": null,
@@ -4829,7 +4716,7 @@
       }
     },
     {
-      "position": 127,
+      "position": 124,
       "streams": 1,
       "playedMs": 588750,
       "indicator": null,
@@ -4866,7 +4753,7 @@
       }
     },
     {
-      "position": 128,
+      "position": 125,
       "streams": 1,
       "playedMs": 588000,
       "indicator": null,
@@ -4901,7 +4788,7 @@
       }
     },
     {
-      "position": 129,
+      "position": 126,
       "streams": 2,
       "playedMs": 586352,
       "indicator": null,
@@ -4936,7 +4823,7 @@
       }
     },
     {
-      "position": 130,
+      "position": 127,
       "streams": 1,
       "playedMs": 582266,
       "indicator": null,
@@ -4971,7 +4858,7 @@
       }
     },
     {
-      "position": 131,
+      "position": 128,
       "streams": 3,
       "playedMs": 582000,
       "indicator": null,
@@ -5000,13 +4887,13 @@
         },
         "id": 587917,
         "name": "Play Hard (feat. Ne-Yo & Akon)",
-        "spotifyPopularity": 31,
+        "spotifyPopularity": 33,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 132,
+      "position": 129,
       "streams": 2,
       "playedMs": 578132,
       "indicator": null,
@@ -5035,13 +4922,13 @@
         },
         "id": 917945,
         "name": "Wicked Game",
-        "spotifyPopularity": 35,
+        "spotifyPopularity": 36,
         "spotifyPreview": null,
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/75/43/13/75431301-be04-31fe-7f49-8978dfaacd36/mzaf_5880180899419570009.plus.aac.p.m4a"
       }
     },
     {
-      "position": 133,
+      "position": 130,
       "streams": 2,
       "playedMs": 570000,
       "indicator": null,
@@ -5088,7 +4975,7 @@
       }
     },
     {
-      "position": 134,
+      "position": 131,
       "streams": 2,
       "playedMs": 569732,
       "indicator": null,
@@ -5128,7 +5015,7 @@
       }
     },
     {
-      "position": 135,
+      "position": 132,
       "streams": 1,
       "playedMs": 567106,
       "indicator": null,
@@ -5163,7 +5050,42 @@
       }
     },
     {
-      "position": 136,
+      "position": 133,
+      "streams": 3,
+      "playedMs": 565732,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 3682826,
+            "image": "https://i.scdn.co/image/ab67616d0000b2730fb04771e26f15a112e79496",
+            "name": "Onelove Summer Festival Anthems 2013 (Mixed by Generik)"
+          }
+        ],
+        "artists": [
+          {
+            "id": 63036,
+            "name": "Otto Knows",
+            "image": "https://i.scdn.co/image/ab67616100005174d2e39f3f5fd0b6c0896b7f71"
+          }
+        ],
+        "durationMs": 192857,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "6lmUSMt4Dqw20NDv8v1euq"
+          ],
+          "appleMusic": []
+        },
+        "id": 238560,
+        "name": "Million Voices - Radio Edit",
+        "spotifyPopularity": 0,
+        "spotifyPreview": null,
+        "appleMusicPreview": null
+      }
+    },
+    {
+      "position": 134,
       "streams": 3,
       "playedMs": 559306,
       "indicator": null,
@@ -5197,13 +5119,13 @@
         },
         "id": 1977809,
         "name": "Breathe",
-        "spotifyPopularity": 59,
+        "spotifyPopularity": 60,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/31493d03209436d089268b0581b226ccf798b90c?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9a/a5/fc/9aa5fc22-0e40-be83-4cac-ea9b92978b4e/mzaf_12564748464560679656.plus.aac.p.m4a"
       }
     },
     {
-      "position": 137,
+      "position": 135,
       "streams": 3,
       "playedMs": 555761,
       "indicator": null,
@@ -5227,23 +5149,23 @@
             "image": "https://i.scdn.co/image/ab67616d00001e025917d140fba145abfb23cbae"
           }
         ],
-        "durationMs": 195761,
+        "durationMs": 195760,
         "explicit": false,
         "externalIds": {
           "spotify": [
-            "5pyi5wDSHfdY3R5JQdngQ9"
+            "6ZbsfQytIRu0iIRneI4JN7"
           ],
           "appleMusic": []
         },
         "id": 205270,
         "name": "Feel Right",
         "spotifyPopularity": 0,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/490c16c2558df0d8ce9aefd922be98aa2b9ed4fb?cid=52242e73817e4096ad71500937a1fb58",
+        "spotifyPreview": null,
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0e/53/8c/0e538c2d-7de8-2c56-0181-2327481bc3d4/mzaf_18233728855422934170.plus.aac.p.m4a"
       }
     },
     {
-      "position": 138,
+      "position": 136,
       "streams": 2,
       "playedMs": 552685,
       "indicator": null,
@@ -5279,7 +5201,7 @@
       }
     },
     {
-      "position": 139,
+      "position": 137,
       "streams": 1,
       "playedMs": 547064,
       "indicator": null,
@@ -5314,7 +5236,7 @@
       }
     },
     {
-      "position": 140,
+      "position": 138,
       "streams": 1,
       "playedMs": 543453,
       "indicator": null,
@@ -5349,7 +5271,7 @@
       }
     },
     {
-      "position": 141,
+      "position": 139,
       "streams": 2,
       "playedMs": 541133,
       "indicator": null,
@@ -5389,7 +5311,7 @@
       }
     },
     {
-      "position": 142,
+      "position": 140,
       "streams": 1,
       "playedMs": 540932,
       "indicator": null,
@@ -5418,13 +5340,13 @@
         },
         "id": 1500252,
         "name": "Aftermath - Eric's Edit",
-        "spotifyPopularity": 31,
+        "spotifyPopularity": 32,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 143,
+      "position": 141,
       "streams": 3,
       "playedMs": 540000,
       "indicator": null,
@@ -5459,7 +5381,7 @@
       }
     },
     {
-      "position": 144,
+      "position": 142,
       "streams": 3,
       "playedMs": 540000,
       "indicator": null,
@@ -5499,7 +5421,7 @@
       }
     },
     {
-      "position": 145,
+      "position": 143,
       "streams": 3,
       "playedMs": 536838,
       "indicator": null,
@@ -5541,7 +5463,7 @@
       }
     },
     {
-      "position": 146,
+      "position": 144,
       "streams": 2,
       "playedMs": 536346,
       "indicator": null,
@@ -5576,7 +5498,7 @@
       }
     },
     {
-      "position": 147,
+      "position": 145,
       "streams": 3,
       "playedMs": 535818,
       "indicator": null,
@@ -5613,7 +5535,7 @@
       }
     },
     {
-      "position": 148,
+      "position": 146,
       "streams": 3,
       "playedMs": 534372,
       "indicator": null,
@@ -5650,7 +5572,7 @@
       }
     },
     {
-      "position": 149,
+      "position": 147,
       "streams": 2,
       "playedMs": 534212,
       "indicator": null,
@@ -5687,7 +5609,7 @@
       }
     },
     {
-      "position": 150,
+      "position": 148,
       "streams": 2,
       "playedMs": 531200,
       "indicator": null,
@@ -5724,7 +5646,7 @@
       }
     },
     {
-      "position": 151,
+      "position": 149,
       "streams": 1,
       "playedMs": 527406,
       "indicator": null,
@@ -5759,7 +5681,7 @@
       }
     },
     {
-      "position": 152,
+      "position": 150,
       "streams": 2,
       "playedMs": 526217,
       "indicator": null,
@@ -5786,13 +5708,13 @@
         },
         "id": 6055144,
         "name": "Major Happy",
-        "spotifyPopularity": 29,
+        "spotifyPopularity": 30,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/34ff823aa0232d56c914fc19a2d8598ff9a19803?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b3/73/43/b3734339-fc73-bb1e-a4cb-61a950c87966/mzaf_12765603126457704290.plus.aac.p.m4a"
       }
     },
     {
-      "position": 153,
+      "position": 151,
       "streams": 2,
       "playedMs": 518620,
       "indicator": null,
@@ -5834,7 +5756,7 @@
       }
     },
     {
-      "position": 154,
+      "position": 152,
       "streams": 2,
       "playedMs": 515972,
       "indicator": null,
@@ -5868,13 +5790,13 @@
         },
         "id": 78484232,
         "name": "Escape",
-        "spotifyPopularity": 12,
+        "spotifyPopularity": 14,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/15fccfc414e2b4e3ec291c50a180a40ae881bdc8?cid=41310bd6c11e4f9c831a41385c484bcd",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/29/a4/d129a421-829b-aafa-cb17-9e8b76dd713a/mzaf_6131367952996631397.plus.aac.p.m4a"
       }
     },
     {
-      "position": 155,
+      "position": 153,
       "streams": 2,
       "playedMs": 512052,
       "indicator": null,
@@ -5921,42 +5843,7 @@
       }
     },
     {
-      "position": 156,
-      "streams": 1,
-      "playedMs": 510964,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 1689287,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9f/f8/71/9ff87132-ba8d-9fd9-627f-a379f21efcd7/5099968085353.jpg/768x768bb.jpg",
-            "name": "The Division Bell"
-          }
-        ],
-        "artists": [
-          {
-            "id": 16829,
-            "name": "Pink Floyd",
-            "image": "https://i.scdn.co/image/ab6761610000517497885ce689d644c91dfba05c"
-          }
-        ],
-        "durationMs": 511013,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "704316882"
-          ]
-        },
-        "id": 11047187,
-        "name": "High Hopes",
-        "spotifyPopularity": 64,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/ca855dfe058eb6c34b31d5da69372d45c522984b?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
-        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/b8/e9/06/b8e9067c-ce65-31f1-ca16-3dd613f3d87b/mzaf_2824295779372887721.plus.aac.p.m4a"
-      }
-    },
-    {
-      "position": 157,
+      "position": 154,
       "streams": 2,
       "playedMs": 509186,
       "indicator": null,
@@ -5992,7 +5879,7 @@
       }
     },
     {
-      "position": 158,
+      "position": 155,
       "streams": 1,
       "playedMs": 508850,
       "indicator": null,
@@ -6029,7 +5916,7 @@
       }
     },
     {
-      "position": 159,
+      "position": 156,
       "streams": 3,
       "playedMs": 508166,
       "indicator": null,
@@ -6074,7 +5961,7 @@
       }
     },
     {
-      "position": 160,
+      "position": 157,
       "streams": 2,
       "playedMs": 504938,
       "indicator": null,
@@ -6109,7 +5996,7 @@
       }
     },
     {
-      "position": 161,
+      "position": 158,
       "streams": 2,
       "playedMs": 502200,
       "indicator": null,
@@ -6144,7 +6031,7 @@
       }
     },
     {
-      "position": 162,
+      "position": 159,
       "streams": 3,
       "playedMs": 502169,
       "indicator": null,
@@ -6179,7 +6066,7 @@
       }
     },
     {
-      "position": 163,
+      "position": 160,
       "streams": 1,
       "playedMs": 496363,
       "indicator": null,
@@ -6224,7 +6111,7 @@
       }
     },
     {
-      "position": 164,
+      "position": 161,
       "streams": 1,
       "playedMs": 495413,
       "indicator": null,
@@ -6259,7 +6146,7 @@
       }
     },
     {
-      "position": 165,
+      "position": 162,
       "streams": 2,
       "playedMs": 495219,
       "indicator": null,
@@ -6286,13 +6173,13 @@
         },
         "id": 207858,
         "name": "Raise Your Weapon - Madeon Extended Remix",
-        "spotifyPopularity": 24,
+        "spotifyPopularity": 25,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 166,
+      "position": 163,
       "streams": 1,
       "playedMs": 494429,
       "indicator": null,
@@ -6321,13 +6208,13 @@
         },
         "id": 207141,
         "name": "Miami To Atlanta",
-        "spotifyPopularity": 43,
+        "spotifyPopularity": 45,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 167,
+      "position": 164,
       "streams": 2,
       "playedMs": 491854,
       "indicator": null,
@@ -6367,7 +6254,7 @@
       }
     },
     {
-      "position": 168,
+      "position": 165,
       "streams": 2,
       "playedMs": 489066,
       "indicator": null,
@@ -6402,7 +6289,7 @@
       }
     },
     {
-      "position": 169,
+      "position": 166,
       "streams": 3,
       "playedMs": 488274,
       "indicator": null,
@@ -6439,7 +6326,7 @@
       }
     },
     {
-      "position": 170,
+      "position": 167,
       "streams": 1,
       "playedMs": 485840,
       "indicator": null,
@@ -6474,7 +6361,7 @@
       }
     },
     {
-      "position": 171,
+      "position": 168,
       "streams": 2,
       "playedMs": 485714,
       "indicator": null,
@@ -6511,7 +6398,7 @@
       }
     },
     {
-      "position": 172,
+      "position": 169,
       "streams": 2,
       "playedMs": 485040,
       "indicator": null,
@@ -6546,7 +6433,7 @@
       }
     },
     {
-      "position": 173,
+      "position": 170,
       "streams": 2,
       "playedMs": 483866,
       "indicator": null,
@@ -6579,7 +6466,7 @@
       }
     },
     {
-      "position": 174,
+      "position": 171,
       "streams": 1,
       "playedMs": 483718,
       "indicator": null,
@@ -6619,42 +6506,7 @@
       }
     },
     {
-      "position": 175,
-      "streams": 2,
-      "playedMs": 482932,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 17027968,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f6/3a/d3/f63ad312-ba3a-7d0a-bfee-5ecb442901ca/4050538899627.jpg/768x768bb.jpg",
-            "name": "The Rockafeller Skank EP"
-          }
-        ],
-        "artists": [
-          {
-            "id": 13090,
-            "name": "Fatboy Slim",
-            "image": "https://i.scdn.co/image/ab67616100005174c20ed3229eeced918966a009"
-          }
-        ],
-        "durationMs": 241467,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [],
-          "appleMusic": [
-            "1710130861"
-          ]
-        },
-        "id": 1961769,
-        "name": "The Rockafeller Skank (Short Edit)",
-        "spotifyPopularity": 0,
-        "spotifyPreview": null,
-        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/6c/38/a4/6c38a476-aee4-3138-fe9d-ff6774d25341/mzaf_9625053552309273592.plus.aac.p.m4a"
-      }
-    },
-    {
-      "position": 176,
+      "position": 172,
       "streams": 2,
       "playedMs": 480000,
       "indicator": null,
@@ -6693,7 +6545,7 @@
       }
     },
     {
-      "position": 177,
+      "position": 173,
       "streams": 2,
       "playedMs": 480000,
       "indicator": null,
@@ -6728,7 +6580,7 @@
       }
     },
     {
-      "position": 178,
+      "position": 174,
       "streams": 1,
       "playedMs": 480000,
       "indicator": null,
@@ -6765,52 +6617,7 @@
       }
     },
     {
-      "position": 179,
-      "streams": 2,
-      "playedMs": 480000,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 1765501,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/ec/98/a1/ec98a185-77da-2557-1dae-2e2912b34e48/8718525116152.png/768x768bb.jpg",
-            "name": "Solarstone presents Pure Trance 6"
-          }
-        ],
-        "artists": [
-          {
-            "id": 11912,
-            "name": "Solarstone",
-            "image": "https://i.scdn.co/image/ab67616100005174e50c38a8902f234313f30163"
-          },
-          {
-            "id": 12792,
-            "name": "Scott Bond",
-            "image": "https://i.scdn.co/image/ab6761610000517461f0cb812cf1986943c624aa"
-          },
-          {
-            "id": 13545,
-            "name": "Factor B",
-            "image": "https://i.scdn.co/image/ab676161000051749b2b12c48800ec04d2a0861a"
-          }
-        ],
-        "durationMs": 252173,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [
-            "2bic0m042fYBPQz5ZnYaAg"
-          ],
-          "appleMusic": []
-        },
-        "id": 5298107,
-        "name": "Red Line Highway - Factor B's Back To The Future Remix",
-        "spotifyPopularity": 9,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/58f572d939ad44d102bfc0eed00ae89b220cf94e?cid=78a3e226c97e4e048e7c0803e5376ee6",
-        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1f/06/58/1f065815-a717-7534-33a6-89eac6feaca2/mzaf_12718296734199111250.plus.aac.p.m4a"
-      }
-    },
-    {
-      "position": 180,
+      "position": 175,
       "streams": 2,
       "playedMs": 480000,
       "indicator": null,
@@ -6875,7 +6682,7 @@
       }
     },
     {
-      "position": 181,
+      "position": 176,
       "streams": 2,
       "playedMs": 480000,
       "indicator": null,
@@ -6915,7 +6722,7 @@
       }
     },
     {
-      "position": 182,
+      "position": 177,
       "streams": 2,
       "playedMs": 477060,
       "indicator": null,
@@ -6955,7 +6762,7 @@
       }
     },
     {
-      "position": 183,
+      "position": 178,
       "streams": 2,
       "playedMs": 475760,
       "indicator": null,
@@ -6992,7 +6799,7 @@
       }
     },
     {
-      "position": 184,
+      "position": 179,
       "streams": 1,
       "playedMs": 474226,
       "indicator": null,
@@ -7021,13 +6828,13 @@
         },
         "id": 13044040,
         "name": "Synesthesia (Extended Version) - Remastered",
-        "spotifyPopularity": 19,
+        "spotifyPopularity": 20,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/d6ee2d4b292d415290c4b297736ac98c578d5ede?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d1/f4/9b/d1f49b60-a338-acb3-9f1e-3e9a1597e2c8/mzaf_8358352951847493250.plus.aac.p.m4a"
       }
     },
     {
-      "position": 185,
+      "position": 180,
       "streams": 2,
       "playedMs": 474132,
       "indicator": null,
@@ -7067,7 +6874,7 @@
       }
     },
     {
-      "position": 186,
+      "position": 181,
       "streams": 1,
       "playedMs": 474000,
       "indicator": null,
@@ -7102,49 +6909,7 @@
       }
     },
     {
-      "position": 187,
-      "streams": 2,
-      "playedMs": 472270,
-      "indicator": null,
-      "track": {
-        "albums": [
-          {
-            "id": 4155425,
-            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/bb/e2/ee/bbe2eeba-92b5-38fa-0214-b3505d851320/859726019991_cover.jpg/768x768bb.jpg",
-            "name": "Naani"
-          }
-        ],
-        "artists": [
-          {
-            "id": 940575,
-            "name": "Kenzani",
-            "image": "https://i.scdn.co/image/ab676161000051742b7e19df3d1849b2bcee0032"
-          },
-          {
-            "id": 940576,
-            "name": "Tech Panda",
-            "image": "https://i.scdn.co/image/ab67616100005174753aaeadfe8c5efd93daa327"
-          }
-        ],
-        "durationMs": 236135,
-        "explicit": false,
-        "externalIds": {
-          "spotify": [
-            "3wjTIGcE4bDjdMUVKELEtm"
-          ],
-          "appleMusic": [
-            "1365129040"
-          ]
-        },
-        "id": 24064255,
-        "name": "Naani",
-        "spotifyPopularity": 16,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/d3a73d3a71fcdddc126f664ec7f7bb6b3e7445ae?cid=bfa33b56077343a2ad9d6854b7ba013c",
-        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/1f/87/cd1f87d0-a2ba-55e8-9ece-2c24f0123301/mzaf_15449937008539833030.plus.aac.p.m4a"
-      }
-    },
-    {
-      "position": 188,
+      "position": 182,
       "streams": 2,
       "playedMs": 472266,
       "indicator": null,
@@ -7184,7 +6949,7 @@
       }
     },
     {
-      "position": 189,
+      "position": 183,
       "streams": 2,
       "playedMs": 471264,
       "indicator": null,
@@ -7223,13 +6988,13 @@
         },
         "id": 180451,
         "name": "My Nigga",
-        "spotifyPopularity": 15,
+        "spotifyPopularity": 16,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 190,
+      "position": 184,
       "streams": 2,
       "playedMs": 467608,
       "indicator": null,
@@ -7263,13 +7028,13 @@
         },
         "id": 52564264,
         "name": "Voodoo",
-        "spotifyPopularity": 12,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/48d5eb63cd313d1863b19a460ca4160c30bd1014?cid=ef67251d815e4c198c5a35062b12367f",
+        "spotifyPopularity": 13,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/48d5eb63cd313d1863b19a460ca4160c30bd1014?cid=52242e73817e4096ad71500937a1fb58",
         "appleMusicPreview": null
       }
     },
     {
-      "position": 191,
+      "position": 185,
       "streams": 1,
       "playedMs": 467586,
       "indicator": null,
@@ -7304,7 +7069,7 @@
       }
     },
     {
-      "position": 192,
+      "position": 186,
       "streams": 1,
       "playedMs": 466800,
       "indicator": null,
@@ -7339,7 +7104,7 @@
       }
     },
     {
-      "position": 193,
+      "position": 187,
       "streams": 2,
       "playedMs": 465364,
       "indicator": null,
@@ -7381,7 +7146,7 @@
       }
     },
     {
-      "position": 194,
+      "position": 188,
       "streams": 2,
       "playedMs": 464452,
       "indicator": null,
@@ -7419,7 +7184,7 @@
       }
     },
     {
-      "position": 195,
+      "position": 189,
       "streams": 2,
       "playedMs": 461226,
       "indicator": null,
@@ -7454,7 +7219,7 @@
       }
     },
     {
-      "position": 196,
+      "position": 190,
       "streams": 2,
       "playedMs": 460906,
       "indicator": null,
@@ -7490,7 +7255,7 @@
       }
     },
     {
-      "position": 197,
+      "position": 191,
       "streams": 1,
       "playedMs": 456626,
       "indicator": null,
@@ -7519,13 +7284,13 @@
         },
         "id": 8181238,
         "name": "LYCKA",
-        "spotifyPopularity": 19,
+        "spotifyPopularity": 21,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/bbcac819281b3e571ace3849d3d8d2ca1344ca75?cid=132a73d4a5dd41938391c78fb56604a6",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/37/05/bf/3705bf02-9dbf-804d-3944-b916301c4c47/mzaf_7064763763726647122.plus.aac.p.m4a"
       }
     },
     {
-      "position": 198,
+      "position": 192,
       "streams": 3,
       "playedMs": 456000,
       "indicator": null,
@@ -7560,7 +7325,7 @@
       }
     },
     {
-      "position": 199,
+      "position": 193,
       "streams": 2,
       "playedMs": 455940,
       "indicator": null,
@@ -7598,7 +7363,7 @@
       }
     },
     {
-      "position": 200,
+      "position": 194,
       "streams": 2,
       "playedMs": 455572,
       "indicator": null,
@@ -7633,7 +7398,7 @@
       }
     },
     {
-      "position": 201,
+      "position": 195,
       "streams": 2,
       "playedMs": 455572,
       "indicator": null,
@@ -7670,7 +7435,7 @@
       }
     },
     {
-      "position": 202,
+      "position": 196,
       "streams": 2,
       "playedMs": 453476,
       "indicator": null,
@@ -7699,7 +7464,7 @@
       }
     },
     {
-      "position": 203,
+      "position": 197,
       "streams": 1,
       "playedMs": 447250,
       "indicator": null,
@@ -7734,7 +7499,7 @@
       }
     },
     {
-      "position": 204,
+      "position": 198,
       "streams": 1,
       "playedMs": 445405,
       "indicator": null,
@@ -7771,7 +7536,7 @@
       }
     },
     {
-      "position": 205,
+      "position": 199,
       "streams": 3,
       "playedMs": 444200,
       "indicator": null,
@@ -7813,7 +7578,7 @@
       }
     },
     {
-      "position": 206,
+      "position": 200,
       "streams": 3,
       "playedMs": 443544,
       "indicator": null,
@@ -7863,7 +7628,47 @@
       }
     },
     {
-      "position": 207,
+      "position": 201,
+      "streams": 2,
+      "playedMs": 441306,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 26875214,
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/42/70/56/4270565c-2de6-d26b-cc32-a3bf69877a22/5059460240476.jpg/768x768bb.jpg",
+            "name": "Dance Desire"
+          }
+        ],
+        "artists": [
+          {
+            "id": 94027,
+            "name": "Fred again..",
+            "image": "https://i.scdn.co/image/ab67616100005174381c41adc678e4ce864eb274"
+          },
+          {
+            "id": 200063,
+            "name": "Obongjayar",
+            "image": "https://i.scdn.co/image/ab676161000051744ab5fcccf89128dd98b0b815"
+          }
+        ],
+        "durationMs": 220653,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [],
+          "appleMusic": [
+            "1711548822"
+          ]
+        },
+        "id": 76557058,
+        "name": "Adore U",
+        "spotifyPopularity": 0,
+        "spotifyPreview": null,
+        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/68/ab/03/68ab0386-e724-3c28-a8d9-83ff93f0e3ba/mzaf_3753133119480150006.plus.aac.p.m4a"
+      }
+    },
+    {
+      "position": 202,
       "streams": 2,
       "playedMs": 440328,
       "indicator": null,
@@ -7898,7 +7703,7 @@
       }
     },
     {
-      "position": 208,
+      "position": 203,
       "streams": 2,
       "playedMs": 439300,
       "indicator": null,
@@ -7940,7 +7745,7 @@
       }
     },
     {
-      "position": 209,
+      "position": 204,
       "streams": 3,
       "playedMs": 438490,
       "indicator": null,
@@ -7977,7 +7782,7 @@
       }
     },
     {
-      "position": 210,
+      "position": 205,
       "streams": 2,
       "playedMs": 438346,
       "indicator": null,
@@ -8017,7 +7822,7 @@
       }
     },
     {
-      "position": 211,
+      "position": 206,
       "streams": 1,
       "playedMs": 437600,
       "indicator": null,
@@ -8056,7 +7861,7 @@
       }
     },
     {
-      "position": 212,
+      "position": 207,
       "streams": 1,
       "playedMs": 436637,
       "indicator": null,
@@ -8096,7 +7901,7 @@
       }
     },
     {
-      "position": 213,
+      "position": 208,
       "streams": 1,
       "playedMs": 436013,
       "indicator": null,
@@ -8136,7 +7941,7 @@
       }
     },
     {
-      "position": 214,
+      "position": 209,
       "streams": 3,
       "playedMs": 435600,
       "indicator": null,
@@ -8174,7 +7979,7 @@
       }
     },
     {
-      "position": 215,
+      "position": 210,
       "streams": 2,
       "playedMs": 433674,
       "indicator": null,
@@ -8209,7 +8014,7 @@
       }
     },
     {
-      "position": 216,
+      "position": 211,
       "streams": 1,
       "playedMs": 432566,
       "indicator": null,
@@ -8246,7 +8051,7 @@
       }
     },
     {
-      "position": 217,
+      "position": 212,
       "streams": 2,
       "playedMs": 431160,
       "indicator": null,
@@ -8293,7 +8098,7 @@
       }
     },
     {
-      "position": 218,
+      "position": 213,
       "streams": 1,
       "playedMs": 430360,
       "indicator": null,
@@ -8333,7 +8138,7 @@
       }
     },
     {
-      "position": 219,
+      "position": 214,
       "streams": 2,
       "playedMs": 430298,
       "indicator": null,
@@ -8378,7 +8183,7 @@
       }
     },
     {
-      "position": 220,
+      "position": 215,
       "streams": 2,
       "playedMs": 430080,
       "indicator": null,
@@ -8413,7 +8218,7 @@
       }
     },
     {
-      "position": 221,
+      "position": 216,
       "streams": 2,
       "playedMs": 428418,
       "indicator": null,
@@ -8450,7 +8255,7 @@
       }
     },
     {
-      "position": 222,
+      "position": 217,
       "streams": 1,
       "playedMs": 427445,
       "indicator": null,
@@ -8490,7 +8295,7 @@
       }
     },
     {
-      "position": 223,
+      "position": 218,
       "streams": 1,
       "playedMs": 426720,
       "indicator": null,
@@ -8525,7 +8330,7 @@
       }
     },
     {
-      "position": 224,
+      "position": 219,
       "streams": 1,
       "playedMs": 422853,
       "indicator": null,
@@ -8560,7 +8365,7 @@
       }
     },
     {
-      "position": 225,
+      "position": 220,
       "streams": 1,
       "playedMs": 421331,
       "indicator": null,
@@ -8597,7 +8402,7 @@
       }
     },
     {
-      "position": 226,
+      "position": 221,
       "streams": 1,
       "playedMs": 420000,
       "indicator": null,
@@ -8637,7 +8442,7 @@
       }
     },
     {
-      "position": 227,
+      "position": 222,
       "streams": 1,
       "playedMs": 420000,
       "indicator": null,
@@ -8672,7 +8477,7 @@
       }
     },
     {
-      "position": 228,
+      "position": 223,
       "streams": 1,
       "playedMs": 420000,
       "indicator": null,
@@ -8711,13 +8516,13 @@
         },
         "id": 194582,
         "name": "Feels Like Heaven - Uptempo Version",
-        "spotifyPopularity": 22,
+        "spotifyPopularity": 25,
         "spotifyPreview": "https://p.scdn.co/mp3-preview/80e20cff3f284f0d50b9e008c8ec2794f79c6bed?cid=f66bd29a09ac48289d3bcf410452b31c",
         "appleMusicPreview": null
       }
     },
     {
-      "position": 229,
+      "position": 224,
       "streams": 1,
       "playedMs": 420000,
       "indicator": null,
@@ -8746,13 +8551,13 @@
         },
         "id": 481081,
         "name": "2Night",
-        "spotifyPopularity": 43,
+        "spotifyPopularity": 45,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 230,
+      "position": 225,
       "streams": 1,
       "playedMs": 420000,
       "indicator": null,
@@ -8781,13 +8586,13 @@
         },
         "id": 481308,
         "name": "Mirage",
-        "spotifyPopularity": 43,
+        "spotifyPopularity": 45,
         "spotifyPreview": null,
         "appleMusicPreview": null
       }
     },
     {
-      "position": 231,
+      "position": 226,
       "streams": 1,
       "playedMs": 420000,
       "indicator": null,
@@ -8819,6 +8624,189 @@
         "spotifyPopularity": 0,
         "spotifyPreview": null,
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/0c/2e/1e0c2e3c-e383-902a-af95-69c7b8cc4dcd/mzaf_2392398184821016384.plus.aac.p.m4a"
+      }
+    },
+    {
+      "position": 227,
+      "streams": 1,
+      "playedMs": 420000,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 546726,
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/24/ce/83/24ce8351-334f-7715-46c5-8fdd591e49c4/8717306944908.png/768x768bb.jpg",
+            "name": "Imagine"
+          }
+        ],
+        "artists": [
+          {
+            "id": 3461,
+            "name": "Armin van Buuren",
+            "image": "https://i.scdn.co/image/ab6761610000517460f60edeaa78efbf3d335b2c"
+          }
+        ],
+        "durationMs": 426720,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "7kI26rBjwSuOgpHiSBsNwE"
+          ],
+          "appleMusic": []
+        },
+        "id": 5493790,
+        "name": "Intricacy",
+        "spotifyPopularity": 0,
+        "spotifyPreview": null,
+        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ff/41/fc/ff41fc5f-d9ae-e8ea-c2f6-82b5f30f80ad/mzaf_9456367924520194768.plus.aac.p.m4a"
+      }
+    },
+    {
+      "position": 228,
+      "streams": 1,
+      "playedMs": 420000,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 6785865,
+            "image": "https://i.scdn.co/image/ab67616d0000b273047a29c212b16f3df4f28075",
+            "name": "European Granite EP"
+          }
+        ],
+        "artists": [
+          {
+            "id": 14203,
+            "name": "Pendulum",
+            "image": "https://i.scdn.co/image/ab676161000051744a45def215a47635d17d8a7b"
+          }
+        ],
+        "durationMs": 447200,
+        "explicit": true,
+        "externalIds": {
+          "spotify": [
+            "2dXa6a3rrupR4nqG8kmFkO"
+          ],
+          "appleMusic": []
+        },
+        "id": 14346655,
+        "name": "The Tempest",
+        "spotifyPopularity": 1,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/839cfbdf88807e4d94072ed5aa2548c57bddd7d5?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+        "appleMusicPreview": null
+      }
+    },
+    {
+      "position": 229,
+      "streams": 1,
+      "playedMs": 419830,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 1096306,
+            "image": "https://i.scdn.co/image/ab67616d0000b273e4395126f544ddf2ffa7b4f7",
+            "name": "Once Upon A Night"
+          }
+        ],
+        "artists": [
+          {
+            "id": 11951,
+            "name": "Ashley Wallbridge",
+            "image": "https://i.scdn.co/image/ab676161000051747eca330b4b6744f1ddab23dd"
+          },
+          {
+            "id": 12637,
+            "name": "Tritonal",
+            "image": "https://i.scdn.co/image/ab67616100005174b44e5d61a4fd3ccc65045fc7"
+          },
+          {
+            "id": 12638,
+            "name": "Cristina Soto",
+            "image": "https://i.scdn.co/image/ab676161000051742576df84de528be18b26de11"
+          }
+        ],
+        "durationMs": 419830,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "7BkGsUGPHzvfk0pO3fum0C"
+          ],
+          "appleMusic": []
+        },
+        "id": 17617244,
+        "name": "Forgive Me, Forget You - Ashley Wallbridge Remix",
+        "spotifyPopularity": 0,
+        "spotifyPreview": null,
+        "appleMusicPreview": null
+      }
+    },
+    {
+      "position": 230,
+      "streams": 1,
+      "playedMs": 419420,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 127311,
+            "image": "https://i.scdn.co/image/ab67616d0000b273702389cda417b7b51f6ec3e0",
+            "name": "Hospital: We Are 21"
+          }
+        ],
+        "artists": [
+          {
+            "id": 103613,
+            "name": "Commix",
+            "image": "https://i.scdn.co/image/ab67616100005174708c893988d6a4c102e843c1"
+          }
+        ],
+        "durationMs": 419420,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [],
+          "appleMusic": []
+        },
+        "id": 78688437,
+        "name": "The Light In Your Eyes",
+        "spotifyPopularity": 0,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/2e806b1a915e69c932b50ecc06632b8c9d3232a8?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+        "appleMusicPreview": null
+      }
+    },
+    {
+      "position": 231,
+      "streams": 1,
+      "playedMs": 419146,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 199360,
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/30/48/aa/3048aad8-64f1-fd96-ff2d-b9ae32f26774/8014360154329.jpg/768x768bb.jpg",
+            "name": "Dfc, Vol. 4 (30 Classics from Dance Floor Corporation)"
+          }
+        ],
+        "artists": [
+          {
+            "id": 86992,
+            "name": "Floorfilla",
+            "image": "https://i.scdn.co/image/ab6761610000517476980ac0370fe8095c1a89e4"
+          }
+        ],
+        "durationMs": 419147,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [],
+          "appleMusic": [
+            "1763319000"
+          ]
+        },
+        "id": 1834558,
+        "name": "Anthem #5 (DJ Cerla Floorfiller Mix)",
+        "spotifyPopularity": 0,
+        "spotifyPreview": null,
+        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/dc/1c/f0dc1c83-c55b-9e30-846d-20cde2a064a6/mzaf_7534144061046236566.plus.aac.p.m4a"
       }
     }
   ]
