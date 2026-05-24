@@ -1,5 +1,5 @@
 {
-  "enrichedAt": "2026-05-17T02:42:33.402Z",
+  "enrichedAt": "2026-05-24T02:50:30.073Z",
   "pastEvents": [
     {
       "id": 1,
@@ -717,16 +717,99 @@
       "rating": 5,
       "review": "Emotional and euphoric in equal measure. Ben Bohmer live is a completely different experience from the records — the builds pull you in and don't let go.",
       "enrichment": {
-        "source": null,
-        "venue": null,
-        "setlist": [],
+        "source": "setlist.fm",
+        "venue": {
+          "name": "Citizens House of Blues Boston",
+          "city": "Boston",
+          "state": "Massachusetts",
+          "country": "US",
+          "address": null
+        },
+        "setlist": [
+          {
+            "name": "Rust",
+            "encore": false
+          },
+          {
+            "name": "Beyond Beliefs",
+            "encore": false
+          },
+          {
+            "name": "Phases",
+            "encore": false
+          },
+          {
+            "name": "Breathing",
+            "encore": false
+          },
+          {
+            "name": "Wall of Strings",
+            "encore": false
+          },
+          {
+            "name": "Evermore",
+            "encore": false
+          },
+          {
+            "name": "Hiding",
+            "encore": false
+          },
+          {
+            "name": "Space in Between (Ben Böhmer Remix)",
+            "encore": false
+          },
+          {
+            "name": "Strangers",
+            "encore": false
+          },
+          {
+            "name": "SOL (Ben Böhmer Remix)",
+            "encore": false
+          },
+          {
+            "name": "Callisto (Ben Böhmer)",
+            "encore": false
+          },
+          {
+            "name": "Erase",
+            "encore": false
+          },
+          {
+            "name": "One Last Call",
+            "encore": false
+          },
+          {
+            "name": "In Memoriam",
+            "encore": false
+          },
+          {
+            "name": "Memory Cassettes",
+            "encore": false
+          },
+          {
+            "name": "Hunting",
+            "encore": false
+          },
+          {
+            "name": "Father Ocean (Ben Bohmer Remix)",
+            "encore": false
+          },
+          {
+            "name": "Rain",
+            "encore": false
+          },
+          {
+            "name": "Best Life",
+            "encore": false
+          }
+        ],
         "artistSetlists": null,
         "images": [],
         "artistImage": "https://cdn-images.dzcdn.net/images/artist/66840a9b7da1d5ebf6fe9b6cd65f1a29/250x250-000000-80-0-0.jpg",
         "ticketUrl": null,
-        "setlistUrl": null,
+        "setlistUrl": "https://www.setlist.fm/setlist/ben-bohmer/2025/citizens-house-of-blues-boston-boston-ma-2358e803.html",
         "externalIds": {
-          "setlistfm": null,
+          "setlistfm": "2358e803",
           "ticketmaster": null
         }
       }
@@ -850,7 +933,106 @@
           ]
         }
       ],
-      "enrichment": null
+      "enrichment": {
+        "source": "setlist.fm",
+        "venue": {
+          "name": "LIV",
+          "city": "Miami Beach",
+          "state": "Florida",
+          "country": "US",
+          "address": null
+        },
+        "setlist": [],
+        "artistSetlists": {
+          "David Guetta": null,
+          "Alesso": null,
+          "Martin Garrix": [
+            {
+              "name": "United Through Music III",
+              "encore": false
+            },
+            {
+              "name": "Lions in the Wild",
+              "encore": false
+            },
+            {
+              "name": "Someone You Loved",
+              "encore": false
+            },
+            {
+              "name": "Won't Let You Go",
+              "encore": false
+            },
+            {
+              "name": "Follow",
+              "encore": false
+            },
+            {
+              "name": "Animals",
+              "encore": false
+            },
+            {
+              "name": "Like That / Turn Up The Speakers",
+              "encore": false
+            },
+            {
+              "name": "Limitless / Scared to Be Lonely",
+              "encore": false
+            },
+            {
+              "name": "Good Morning",
+              "encore": false
+            },
+            {
+              "name": "No Sleep",
+              "encore": false
+            },
+            {
+              "name": "Look Inside Our Hearts / If I Lose Myself",
+              "encore": false
+            },
+            {
+              "name": "High on Life",
+              "encore": false
+            },
+            {
+              "name": "Waiting for Love",
+              "encore": false
+            },
+            {
+              "name": "Tremor",
+              "encore": false
+            },
+            {
+              "name": "Aurora / In the Name of Love",
+              "encore": false
+            },
+            {
+              "name": "Hero",
+              "encore": false
+            },
+            {
+              "name": "Starlight (Keep Me Afloat)",
+              "encore": false
+            }
+          ],
+          "Eric Prydz": null,
+          "Hardwell": null,
+          "Timmy Trumpet": null,
+          "Marshmello": null,
+          "Armin van Buuren": null,
+          "Tiësto": null,
+          "Afrojack": null
+        },
+        "images": [],
+        "artistImage": "https://cdn-images.dzcdn.net/images/artist/2d527fa03e106ed82a28f161694278d3/250x250-000000-80-0-0.jpg",
+        "ticketUrl": null,
+        "setlistUrl": "https://www.setlist.fm/setlist/david-guetta/2023/liv-miami-beach-fl-3bbbdc5c.html",
+        "externalIds": {
+          "setlistfm": "3bbbdc5c",
+          "ticketmaster": null
+        }
+      }
     },
     {
       "id": 11,
