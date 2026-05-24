@@ -640,19 +640,102 @@
       "artistImage": "https://cdn-images.dzcdn.net/images/artist/0adb6d9882303b2429a5ec930fbbd2f5/250x250-000000-80-0-0.jpg"
     },
     "ben-bohmer-2025-03-15": {
-      "source": "not-found",
-      "found": false,
-      "venue": null,
-      "setlist": [],
+      "source": "setlist.fm",
+      "found": true,
+      "venue": {
+        "name": "Citizens House of Blues Boston",
+        "city": "Boston",
+        "state": "Massachusetts",
+        "country": "US",
+        "address": null
+      },
+      "setlist": [
+        {
+          "name": "Rust",
+          "encore": false
+        },
+        {
+          "name": "Beyond Beliefs",
+          "encore": false
+        },
+        {
+          "name": "Phases",
+          "encore": false
+        },
+        {
+          "name": "Breathing",
+          "encore": false
+        },
+        {
+          "name": "Wall of Strings",
+          "encore": false
+        },
+        {
+          "name": "Evermore",
+          "encore": false
+        },
+        {
+          "name": "Hiding",
+          "encore": false
+        },
+        {
+          "name": "Space in Between (Ben Böhmer Remix)",
+          "encore": false
+        },
+        {
+          "name": "Strangers",
+          "encore": false
+        },
+        {
+          "name": "SOL (Ben Böhmer Remix)",
+          "encore": false
+        },
+        {
+          "name": "Callisto (Ben Böhmer)",
+          "encore": false
+        },
+        {
+          "name": "Erase",
+          "encore": false
+        },
+        {
+          "name": "One Last Call",
+          "encore": false
+        },
+        {
+          "name": "In Memoriam",
+          "encore": false
+        },
+        {
+          "name": "Memory Cassettes",
+          "encore": false
+        },
+        {
+          "name": "Hunting",
+          "encore": false
+        },
+        {
+          "name": "Father Ocean (Ben Bohmer Remix)",
+          "encore": false
+        },
+        {
+          "name": "Rain",
+          "encore": false
+        },
+        {
+          "name": "Best Life",
+          "encore": false
+        }
+      ],
       "images": [],
+      "artistImage": "https://cdn-images.dzcdn.net/images/artist/66840a9b7da1d5ebf6fe9b6cd65f1a29/250x250-000000-80-0-0.jpg",
       "ticketUrl": null,
-      "setlistUrl": null,
+      "setlistUrl": "https://www.setlist.fm/setlist/ben-bohmer/2025/citizens-house-of-blues-boston-boston-ma-2358e803.html",
       "externalIds": {
-        "setlistfm": null,
+        "setlistfm": "2358e803",
         "ticketmaster": null
       },
-      "cachedAt": "2026-04-17T21:07:31.560Z",
-      "artistImage": "https://cdn-images.dzcdn.net/images/artist/66840a9b7da1d5ebf6fe9b6cd65f1a29/250x250-000000-80-0-0.jpg"
+      "cachedAt": "2026-05-24T02:50:23.144Z"
     },
     "the-weeknd-2025-06-10": {
       "source": "setlist.fm",
@@ -898,19 +981,25 @@
       "artistImage": "https://cdn-images.dzcdn.net/images/artist/79aaf6855bb3fdc0345e690b82e1b15e/250x250-000000-80-0-0.jpg"
     },
     "ultra-music-festival-2023-2023-03-24": {
-      "source": "not-found",
-      "found": false,
-      "venue": null,
+      "source": "setlist.fm",
+      "found": true,
+      "venue": {
+        "name": "LIV",
+        "city": "Miami Beach",
+        "state": "Florida",
+        "country": "US",
+        "address": null
+      },
       "setlist": [],
       "images": [],
-      "artistImage": null,
+      "artistImage": "https://cdn-images.dzcdn.net/images/artist/2d527fa03e106ed82a28f161694278d3/250x250-000000-80-0-0.jpg",
       "ticketUrl": null,
-      "setlistUrl": null,
+      "setlistUrl": "https://www.setlist.fm/setlist/david-guetta/2023/liv-miami-beach-fl-3bbbdc5c.html",
       "externalIds": {
-        "setlistfm": null,
+        "setlistfm": "3bbbdc5c",
         "ticketmaster": null
       },
-      "cachedAt": "2026-04-18T05:27:02.595Z",
+      "cachedAt": "2026-05-24T02:50:24.114Z",
       "artistSetlists": {
         "David Guetta": null,
         "Alesso": null,
