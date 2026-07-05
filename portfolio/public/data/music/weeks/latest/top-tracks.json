@@ -1,3 +1,39 @@
 {
-  "items": []
+  "items": [
+    {
+      "position": 1,
+      "streams": 1,
+      "playedMs": 272394,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 112875,
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/cc/0f/2d/cc0f2d02-5ff1-10e7-eea2-76863a55dbad/887828031795.png/768x768bb.jpg",
+            "name": "AM"
+          }
+        ],
+        "artists": [
+          {
+            "id": 58332,
+            "name": "Arctic Monkeys",
+            "image": "https://i.scdn.co/image/ab676161000051747da39dea0a72f581535fb11f"
+          }
+        ],
+        "durationMs": 272394,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "3rq5w4bQGigXOfdN30ATJt"
+          ],
+          "appleMusic": []
+        },
+        "id": 576146,
+        "name": "Do I Wanna Know?",
+        "spotifyPopularity": 0,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/006bc465fe3d1c04dae93a050eca9d402a7322b8?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/df/c3/9c/dfc39caa-a559-b5ac-5b50-472a1c300ca6/mzaf_14741548917211029550.plus.aac.p.m4a"
+      }
+    }
+  ]
 }
