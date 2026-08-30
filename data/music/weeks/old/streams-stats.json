@@ -1,29 +1,29 @@
 {
   "items": {
-    "durationMs": 236080,
-    "count": 1,
+    "durationMs": 0,
+    "count": 0,
     "playedMs": {
       "percentiles": {
         "values": {
-          "1.0": 236080,
-          "5.0": 236080,
-          "25.0": 236080,
-          "50.0": 236080,
-          "75.0": 236080,
-          "95.0": 236080,
-          "99.0": 236080
+          "1.0": null,
+          "5.0": null,
+          "25.0": null,
+          "50.0": null,
+          "75.0": null,
+          "95.0": null,
+          "99.0": null
         }
       },
-      "count": 1,
-      "min": 236080,
-      "max": 236080,
-      "avg": 236080,
-      "sum": 236080
+      "count": 0,
+      "min": null,
+      "max": null,
+      "avg": null,
+      "sum": 0
     },
     "cardinality": {
-      "tracks": 1,
-      "artists": 2,
-      "albums": 1
+      "tracks": 0,
+      "artists": 0,
+      "albums": 0
     }
   }
 }
