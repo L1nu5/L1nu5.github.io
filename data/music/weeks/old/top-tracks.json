@@ -1,3 +1,41 @@
 {
-  "items": []
+  "items": [
+    {
+      "position": 1,
+      "streams": 1,
+      "playedMs": 362360,
+      "indicator": null,
+      "track": {
+        "albums": [
+          {
+            "id": 15782098,
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/dd/90/52/dd905254-4954-053f-3a34-0d70b9e35093/cover.jpg/768x768bb.jpg",
+            "name": "Future Sound Of Cambridge"
+          }
+        ],
+        "artists": [
+          {
+            "id": 3316,
+            "name": "Logistics",
+            "image": "https://i.scdn.co/image/ab6761610000517460e84afd8a721a928ee5a558"
+          }
+        ],
+        "durationMs": 362360,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "3yrnISitdrskHsZOne0Syc"
+          ],
+          "appleMusic": [
+            "1684614218"
+          ]
+        },
+        "id": 190469,
+        "name": "Together",
+        "spotifyPopularity": 13,
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/5d0f644da492a29870ee51c1da5b12f9b0b17fdb?cid=f6315c6a5925458e89eeed669685afe7",
+        "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/b8/86/5d/b8865d35-1318-4d66-4b90-601222297a47/mzaf_11934291354389705077.plus.aac.p.m4a"
+      }
+    }
+  ]
 }
