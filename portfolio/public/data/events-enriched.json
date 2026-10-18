@@ -1,5 +1,5 @@
 {
-  "enrichedAt": "2026-10-11T03:38:07.341Z",
+  "enrichedAt": "2026-10-18T02:46:17.884Z",
   "pastEvents": [
     {
       "id": 1,
@@ -693,16 +693,75 @@
       "rating": 5,
       "review": "Came back for a second time at Big Night Live and it somehow hit harder. Different set, same jaw-dropping production — worth every trip.",
       "enrichment": {
-        "source": null,
-        "venue": null,
-        "setlist": [],
+        "source": "setlist.fm",
+        "venue": {
+          "name": "Big Night Live",
+          "city": "Boston",
+          "state": "Massachusetts",
+          "country": "US",
+          "address": null
+        },
+        "setlist": [
+          {
+            "name": "Digweed ID",
+            "encore": false
+          },
+          {
+            "name": "RYMD",
+            "encore": false
+          },
+          {
+            "name": "Muranyi",
+            "encore": false
+          },
+          {
+            "name": "Armed",
+            "encore": false
+          },
+          {
+            "name": "Javlar",
+            "encore": false
+          },
+          {
+            "name": "Kraft",
+            "encore": false
+          },
+          {
+            "name": "Frankfurt",
+            "encore": false
+          },
+          {
+            "name": "Bus 605",
+            "encore": false
+          },
+          {
+            "name": "Remember",
+            "encore": false
+          },
+          {
+            "name": "Clapham",
+            "encore": false
+          },
+          {
+            "name": "Aftermath",
+            "encore": false
+          },
+          {
+            "name": "Sol",
+            "encore": false
+          },
+          {
+            "name": "One More Time",
+            "encore": false
+          }
+        ],
         "artistSetlists": null,
         "images": [],
         "artistImage": "https://cdn-images.dzcdn.net/images/artist/0adb6d9882303b2429a5ec930fbbd2f5/250x250-000000-80-0-0.jpg",
         "ticketUrl": null,
-        "setlistUrl": null,
+        "setlistUrl": "https://www.setlist.fm/setlist/eric-prydz/2025/big-night-live-boston-ma-4b7c83ca.html",
         "externalIds": {
-          "setlistfm": null,
+          "setlistfm": "4b7c83ca",
           "ticketmaster": null
         }
       }

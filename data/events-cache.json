@@ -625,19 +625,78 @@
       "artistImage": "https://cdn-images.dzcdn.net/images/artist/0adb6d9882303b2429a5ec930fbbd2f5/250x250-000000-80-0-0.jpg"
     },
     "eric-prydz-2025-01-24": {
-      "source": "not-found",
-      "found": false,
-      "venue": null,
-      "setlist": [],
+      "source": "setlist.fm",
+      "found": true,
+      "venue": {
+        "name": "Big Night Live",
+        "city": "Boston",
+        "state": "Massachusetts",
+        "country": "US",
+        "address": null
+      },
+      "setlist": [
+        {
+          "name": "Digweed ID",
+          "encore": false
+        },
+        {
+          "name": "RYMD",
+          "encore": false
+        },
+        {
+          "name": "Muranyi",
+          "encore": false
+        },
+        {
+          "name": "Armed",
+          "encore": false
+        },
+        {
+          "name": "Javlar",
+          "encore": false
+        },
+        {
+          "name": "Kraft",
+          "encore": false
+        },
+        {
+          "name": "Frankfurt",
+          "encore": false
+        },
+        {
+          "name": "Bus 605",
+          "encore": false
+        },
+        {
+          "name": "Remember",
+          "encore": false
+        },
+        {
+          "name": "Clapham",
+          "encore": false
+        },
+        {
+          "name": "Aftermath",
+          "encore": false
+        },
+        {
+          "name": "Sol",
+          "encore": false
+        },
+        {
+          "name": "One More Time",
+          "encore": false
+        }
+      ],
       "images": [],
+      "artistImage": "https://cdn-images.dzcdn.net/images/artist/0adb6d9882303b2429a5ec930fbbd2f5/250x250-000000-80-0-0.jpg",
       "ticketUrl": null,
-      "setlistUrl": null,
+      "setlistUrl": "https://www.setlist.fm/setlist/eric-prydz/2025/big-night-live-boston-ma-4b7c83ca.html",
       "externalIds": {
-        "setlistfm": null,
+        "setlistfm": "4b7c83ca",
         "ticketmaster": null
       },
-      "cachedAt": "2026-04-17T21:07:30.523Z",
-      "artistImage": "https://cdn-images.dzcdn.net/images/artist/0adb6d9882303b2429a5ec930fbbd2f5/250x250-000000-80-0-0.jpg"
+      "cachedAt": "2026-10-18T02:46:16.878Z"
     },
     "ben-bohmer-2025-03-15": {
       "source": "setlist.fm",
