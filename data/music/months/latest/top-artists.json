@@ -4,7 +4,7 @@
       "position": 1,
       "streams": 1,
       "playedMs": 362360,
-      "indicator": "UP",
+      "indicator": "SAME",
       "artist": {
         "externalIds": {
           "spotify": [
@@ -30,8 +30,32 @@
     {
       "position": 2,
       "streams": 1,
+      "playedMs": 299240,
+      "indicator": "NEW",
+      "artist": {
+        "externalIds": {
+          "spotify": [
+            "7lzordPuZEXxwt9aoVZYmG"
+          ],
+          "appleMusic": [
+            "550949"
+          ]
+        },
+        "followers": 2967881,
+        "genres": [
+          "rock"
+        ],
+        "id": 23137,
+        "image": "https://i.scdn.co/image/ab6761610000517469408d3a9d82c2307dd8699d",
+        "name": "Billy Idol",
+        "spotifyPopularity": 76
+      }
+    },
+    {
+      "position": 3,
+      "streams": 1,
       "playedMs": 272394,
-      "indicator": "UP",
+      "indicator": "DOWN",
       "artist": {
         "externalIds": {
           "spotify": [
@@ -54,7 +78,7 @@
       }
     },
     {
-      "position": 3,
+      "position": 4,
       "streams": 1,
       "playedMs": 236080,
       "indicator": "DOWN",
@@ -83,10 +107,10 @@
       }
     },
     {
-      "position": 4,
+      "position": 5,
       "streams": 1,
       "playedMs": 236080,
-      "indicator": "SAME",
+      "indicator": "DOWN",
       "artist": {
         "externalIds": {
           "spotify": [

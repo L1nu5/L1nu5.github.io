@@ -1,29 +1,29 @@
 {
   "items": {
-    "durationMs": 870834,
-    "count": 3,
+    "durationMs": 1170074,
+    "count": 4,
     "playedMs": {
       "percentiles": {
         "values": {
           "1.0": 236080,
           "5.0": 236080,
-          "25.0": 236080,
-          "50.0": 272394,
+          "25.0": 272394,
+          "50.0": 299240,
           "75.0": 362360,
           "95.0": 362360,
           "99.0": 362360
         }
       },
-      "count": 3,
+      "count": 4,
       "min": 236080,
       "max": 362360,
-      "avg": 290278,
-      "sum": 870834
+      "avg": 292518.5,
+      "sum": 1170074
     },
     "cardinality": {
-      "tracks": 3,
-      "artists": 4,
-      "albums": 3
+      "tracks": 4,
+      "artists": 5,
+      "albums": 4
     }
   }
 }

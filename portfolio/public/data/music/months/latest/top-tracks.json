@@ -33,15 +33,50 @@
         "id": 190469,
         "name": "Together",
         "spotifyPopularity": 15,
-        "spotifyPreview": "https://p.scdn.co/mp3-preview/5d0f644da492a29870ee51c1da5b12f9b0b17fdb?cid=67a36ed0197d4a34b14ec883a5d5f793",
+        "spotifyPreview": "https://p.scdn.co/mp3-preview/5d0f644da492a29870ee51c1da5b12f9b0b17fdb?cid=476be6aa4fa2456c986fad3895931dea",
         "appleMusicPreview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/b8/86/5d/b8865d35-1318-4d66-4b90-601222297a47/mzaf_11934291354389705077.plus.aac.p.m4a"
       }
     },
     {
       "position": 2,
       "streams": 1,
+      "playedMs": 299240,
+      "indicator": "NEW",
+      "track": {
+        "albums": [
+          {
+            "id": 30119512,
+            "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/47/c4/af47c4b6-acc2-1b5d-05fe-84ed9ed45b04/24UM1IM19065.rgb.jpg/768x768bb.jpg",
+            "name": "Rebel Yell"
+          }
+        ],
+        "artists": [
+          {
+            "id": 23137,
+            "name": "Billy Idol",
+            "image": "https://i.scdn.co/image/ab6761610000517469408d3a9d82c2307dd8699d"
+          }
+        ],
+        "durationMs": 299240,
+        "explicit": false,
+        "externalIds": {
+          "spotify": [
+            "0pUVeEgZuNyFzIMKp67RbS"
+          ],
+          "appleMusic": []
+        },
+        "id": 353089582,
+        "name": "Eyes Without A Face",
+        "spotifyPopularity": 76,
+        "spotifyPreview": null,
+        "appleMusicPreview": null
+      }
+    },
+    {
+      "position": 3,
+      "streams": 1,
       "playedMs": 272394,
-      "indicator": "SAME",
+      "indicator": "DOWN",
       "track": {
         "albums": [
           {
@@ -73,10 +108,10 @@
       }
     },
     {
-      "position": 3,
+      "position": 4,
       "streams": 1,
       "playedMs": 236080,
-      "indicator": "SAME",
+      "indicator": "DOWN",
       "track": {
         "albums": [
           {
