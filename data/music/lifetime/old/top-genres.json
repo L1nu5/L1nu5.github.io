@@ -4151,8 +4151,8 @@
           "artist": {
             "externalIds": {
               "spotify": [
-                "7zi3Jw8wYOGUnYhWY5VZqM",
-                "2fizRsm6KDWZvysU00yZrX"
+                "2fizRsm6KDWZvysU00yZrX",
+                "7zi3Jw8wYOGUnYhWY5VZqM"
               ],
               "appleMusic": [
                 "29541187",
@@ -4280,8 +4280,8 @@
           "artist": {
             "externalIds": {
               "spotify": [
-                "7zi3Jw8wYOGUnYhWY5VZqM",
-                "2fizRsm6KDWZvysU00yZrX"
+                "2fizRsm6KDWZvysU00yZrX",
+                "7zi3Jw8wYOGUnYhWY5VZqM"
               ],
               "appleMusic": [
                 "29541187",
@@ -5127,9 +5127,119 @@
     },
     {
       "position": 46,
+      "streams": 869,
+      "playedMs": 157109388,
+      "indicator": "UP",
+      "previewArtists": [
+        {
+          "position": 49,
+          "streams": 196,
+          "playedMs": 48476266,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "3B8Bws0xi45LCMW42h8jys"
+              ],
+              "appleMusic": [
+                "1413791442"
+              ]
+            },
+            "followers": 17799,
+            "genres": [
+              "soundtrack"
+            ],
+            "id": 78133,
+            "image": "https://i.scdn.co/image/ab67616d0000b2730a67f1d260e5f29701f27bae",
+            "name": "Yoann Laulan",
+            "spotifyPopularity": 37
+          }
+        },
+        {
+          "position": 108,
+          "streams": 202,
+          "playedMs": 26762269,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "07vycW8ICLf5hKb22PFWXw"
+              ],
+              "appleMusic": [
+                "446646984"
+              ]
+            },
+            "followers": 103087,
+            "genres": [
+              "medieval",
+              "soundtrack"
+            ],
+            "id": 144068,
+            "image": "https://i.scdn.co/image/ab6761610000e5ebf1e54d1ce1d7cc63560ecc11",
+            "name": "Marcin Przybyłowicz",
+            "spotifyPopularity": 59
+          }
+        },
+        {
+          "position": 128,
+          "streams": 139,
+          "playedMs": 22151995,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "13kMpt8IdcHcdxPLcJrgU2",
+                "7716LXyzVAjUrhxluMzyYE"
+              ],
+              "appleMusic": [
+                "168436294"
+              ]
+            },
+            "followers": 230488,
+            "genres": [
+              "soundtrack"
+            ],
+            "id": 210275,
+            "image": "https://i.scdn.co/image/ab6761610000e5eb22c3ebc48fc86c3bfdc47dfe",
+            "name": "Christopher Larkin",
+            "spotifyPopularity": 68
+          }
+        },
+        {
+          "position": 183,
+          "streams": 98,
+          "playedMs": 16367286,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "5ppJZFMF0gAfrHfZTGuHe4"
+              ],
+              "appleMusic": [
+                "294290841"
+              ]
+            },
+            "followers": 44235,
+            "genres": [
+              "soundtrack",
+              "score"
+            ],
+            "id": 494011,
+            "image": "https://i.scdn.co/image/ab6761610000e5ebec924733a70eaf15be2a3850",
+            "name": "Dan Romer",
+            "spotifyPopularity": 53
+          }
+        }
+      ],
+      "genre": {
+        "tag": "soundtrack"
+      }
+    },
+    {
+      "position": 47,
       "streams": 579,
       "playedMs": 150637033,
-      "indicator": "SAME",
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 50,
@@ -5249,10 +5359,10 @@
       }
     },
     {
-      "position": 47,
+      "position": 48,
       "streams": 634,
       "playedMs": 149512776,
-      "indicator": "SAME",
+      "indicator": "DOWN",
       "previewArtists": [
         {
           "position": 40,
@@ -5368,116 +5478,6 @@
       ],
       "genre": {
         "tag": "electro house"
-      }
-    },
-    {
-      "position": 48,
-      "streams": 790,
-      "playedMs": 145107044,
-      "indicator": "SAME",
-      "previewArtists": [
-        {
-          "position": 49,
-          "streams": 196,
-          "playedMs": 48476266,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "3B8Bws0xi45LCMW42h8jys"
-              ],
-              "appleMusic": [
-                "1413791442"
-              ]
-            },
-            "followers": 17799,
-            "genres": [
-              "soundtrack"
-            ],
-            "id": 78133,
-            "image": "https://i.scdn.co/image/ab67616d0000b2730a67f1d260e5f29701f27bae",
-            "name": "Yoann Laulan",
-            "spotifyPopularity": 37
-          }
-        },
-        {
-          "position": 108,
-          "streams": 202,
-          "playedMs": 26762269,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "07vycW8ICLf5hKb22PFWXw"
-              ],
-              "appleMusic": [
-                "446646984"
-              ]
-            },
-            "followers": 103087,
-            "genres": [
-              "medieval",
-              "soundtrack"
-            ],
-            "id": 144068,
-            "image": "https://i.scdn.co/image/ab6761610000e5ebf1e54d1ce1d7cc63560ecc11",
-            "name": "Marcin Przybyłowicz",
-            "spotifyPopularity": 59
-          }
-        },
-        {
-          "position": 128,
-          "streams": 139,
-          "playedMs": 22151995,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "13kMpt8IdcHcdxPLcJrgU2",
-                "7716LXyzVAjUrhxluMzyYE"
-              ],
-              "appleMusic": [
-                "168436294"
-              ]
-            },
-            "followers": 230488,
-            "genres": [
-              "soundtrack"
-            ],
-            "id": 210275,
-            "image": "https://i.scdn.co/image/ab6761610000e5eb22c3ebc48fc86c3bfdc47dfe",
-            "name": "Christopher Larkin",
-            "spotifyPopularity": 68
-          }
-        },
-        {
-          "position": 183,
-          "streams": 98,
-          "playedMs": 16367286,
-          "indicator": null,
-          "artist": {
-            "externalIds": {
-              "spotify": [
-                "5ppJZFMF0gAfrHfZTGuHe4"
-              ],
-              "appleMusic": [
-                "294290841"
-              ]
-            },
-            "followers": 44235,
-            "genres": [
-              "soundtrack",
-              "score"
-            ],
-            "id": 494011,
-            "image": "https://i.scdn.co/image/ab6761610000e5ebec924733a70eaf15be2a3850",
-            "name": "Dan Romer",
-            "spotifyPopularity": 53
-          }
-        }
-      ],
-      "genre": {
-        "tag": "soundtrack"
       }
     },
     {
@@ -7069,8 +7069,8 @@
           "artist": {
             "externalIds": {
               "spotify": [
-                "650f4R2Eu3U52PLmP9Scai",
-                "0vkpFzbSTmwPuGGnhsblFI"
+                "0vkpFzbSTmwPuGGnhsblFI",
+                "650f4R2Eu3U52PLmP9Scai"
               ],
               "appleMusic": [
                 "415109379"
@@ -8709,8 +8709,8 @@
           "artist": {
             "externalIds": {
               "spotify": [
-                "650f4R2Eu3U52PLmP9Scai",
-                "0vkpFzbSTmwPuGGnhsblFI"
+                "0vkpFzbSTmwPuGGnhsblFI",
+                "650f4R2Eu3U52PLmP9Scai"
               ],
               "appleMusic": [
                 "415109379"
@@ -9744,8 +9744,8 @@
           "artist": {
             "externalIds": {
               "spotify": [
-                "650f4R2Eu3U52PLmP9Scai",
-                "0vkpFzbSTmwPuGGnhsblFI"
+                "0vkpFzbSTmwPuGGnhsblFI",
+                "650f4R2Eu3U52PLmP9Scai"
               ],
               "appleMusic": [
                 "415109379"
@@ -11434,6 +11434,42 @@
       ],
       "genre": {
         "tag": "slap house"
+      }
+    },
+    {
+      "position": 155,
+      "streams": 79,
+      "playedMs": 12002344,
+      "indicator": "NEW",
+      "previewArtists": [
+        {
+          "position": 250,
+          "streams": 79,
+          "playedMs": 12002344,
+          "indicator": null,
+          "artist": {
+            "externalIds": {
+              "spotify": [
+                "1I9Hqy4QnMyVhZwRM2r41B"
+              ],
+              "appleMusic": [
+                "444813042"
+              ]
+            },
+            "followers": 67028,
+            "genres": [
+              "video game music",
+              "soundtrack"
+            ],
+            "id": 120325,
+            "image": "https://i.scdn.co/image/ab6761610000e5eb4a4b0f0781c669cfffb11ebc",
+            "name": "Gareth Coker",
+            "spotifyPopularity": 54
+          }
+        }
+      ],
+      "genre": {
+        "tag": "video game music"
       }
     }
   ]
